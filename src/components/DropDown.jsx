@@ -26,7 +26,7 @@ export default function DropDown({ name, links }) {
       <BiChevronDown className={`font-medium ${isOpen? 'rotate-180' : ''} transition-all duration-300`} onClick={() => setIsOpen(!isOpen)} />
       </div>
       {isOpen && (
-        <div className="flex flex-col bg-white">
+        <div className="flex flex-col">
           {Object.keys(links).map((key, index) => (
             <Link key={index} href={links[key]} className="ml-2 font-medium p-2 px-3">{key}</Link>
           ))}

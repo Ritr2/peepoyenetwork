@@ -1,0 +1,17 @@
+.backgroundImage {
+  background-image: url("/assets/images/akassh_footer.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  position: relative;
+}
+
+.backgroundOverlay {
+  background-color: rgba(52, 87, 140, 0.88);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
