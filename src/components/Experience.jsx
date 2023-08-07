@@ -8,19 +8,23 @@ export default function Experience() {
   const [visibleRange, setVisibleRange] = React.useState([0, 1]);
 
   const handlescrollright = () => {
-    if (visibleRange[1] < images.length-1) {
-      setVisibleRange([visibleRange[0] + 2, visibleRange[1] + 2]);
-    }
-    else {
+    if (visibleRange[1] < images.length - 1) {
+      setVisibleRange([visibleRange[0] + 1, visibleRange[1] + 1]);
+    } else {
       setVisibleRange([0, 1]);
     }
   }
 
   useEffect(() => {
-    setInterval(() => {
-      handlescrollright();
+    const interval = setInterval(() => {
+      if (visibleRange[1] < images.length - 1) {
+        setVisibleRange([visibleRange[0] + 1, visibleRange[1] + 1]);
+      } else {
+        setVisibleRange([0, 1]);
+      }
     }, 3000);
-  }, []);
+    return () => clearInterval(interval);
+  }, [visibleRange]);
 
   return (
     <section className='px-2 md:px-20 w-full'>

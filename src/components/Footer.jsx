@@ -36,16 +36,13 @@ export default function Footer() {
       <div className="flex md:flex-row flex-col gap-3 mt-10 w-full items-center justify-between z-10">
         <p className="text-sm font-sans font-thin md:text-xl text-left text-white flex-1">© The PeepoyeNetwork. All rights reserved.</p>
         <div className="flex flex-row flex-1 justify-center">
-          <p>
             <Link href="/careers" className="text-base font-sans font-thin md:text-xl text-left px-2 cursor-pointer border-r-2 border-white text-white">Careers</Link>
             <Link href="/help-center" className="text-base font-sans font-thin md:text-xl text-left px-2 cursor-pointer border-r-2 border-white text-white">Help Center</Link>
             <a href="https://merchit.in/pages/peepoye" className="text-base font-sans font-thin cursor-pointer md:text-xl text-left text-white px-2" target="_blank" rel="noopener noreferrer">Shop</a>
-          </p>
         </div>
-        <div className="flex flex-col md:flex-row flex-1 justify-center">
-          <p><Link href="/refund-policy" className="text-base font-sans cursor-pointer font-thin md:text-xl text-center md:text-left px-1 border-r-2 border-white text-white">Refund Policy</Link>
-            <Link href="/privacy-policy" className="text-base font-sans cursor-pointer font-thin md:text-xl text-center md:text-left px-1 border-r-2 border-white text-white">Privacy Policy</Link>
-          </p>
+        <div className="flex flex-row flex-wrap flex-1 justify-center">
+          <Link href="/refund-policy" className="text-base font-sans cursor-pointer font-thin md:text-xl text-center md:text-left px-1 border-r-2 border-white text-white">Refund Policy</Link>
+          <Link href="/privacy-policy" className="text-base font-sans cursor-pointer font-thin md:text-xl text-center md:text-left px-1 border-r-2 border-white text-white">Privacy Policy</Link>
           <Link href="/terms-of-service" className="text-base font-sans cursor-pointer font-thin md:text-xl text-center md:text-left text-white px-1">Terms of Service</Link>
         </div>
       </div>
