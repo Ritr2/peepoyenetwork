@@ -14,7 +14,7 @@ const dmSans = DM_Sans({
 
 export default function Home() {
   return (
-    <main className={`relative flex min-h-screen flex-col items-center mt-20 ${dmSans.className}`}>
+    <main className={`relative flex min-h-screen flex-col items-center mt-20 ${dmSans.className} overflow-x-hidden`}>
       <section className="flex flex-col md:flex-row items-center justify-center px-5 md:px-20">
         <div className="flex flex-col justify-center flex-1 md:gap-2">
           <h1 className="text-3xl md:text-6xl font-bold text-center md:text-left text-neutral-700 md:mb-3">I Breathe Passion</h1>
