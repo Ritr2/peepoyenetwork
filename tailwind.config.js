@@ -8,7 +8,7 @@ module.exports = {
   theme: {
     fontFamily: {
       sans: ['DM Sans', 'sans-serif'],
-      serif: ['Merriweather', 'serif'],
+      serif: ['Roboto', 'serif'],
     },
     extend: {
       backgroundImage: {

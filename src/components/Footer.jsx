@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 export default function Footer() {
   return (
-    <footer className={`${style.backgroundImage} flex flex-col items-center p-4 md:p-20`}>
+    <footer className={`${style.backgroundImage} flex flex-col items-center py-4 px-1 md:p-20`}>
       <div className={`${style.backgroundOverlay}`} />
       <div className="flex flex-col md:flex-row gap-2 md:gap-36 z-10">
         <div className="flex flex-col gap-2 flex-1">

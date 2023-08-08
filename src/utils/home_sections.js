@@ -5,23 +5,11 @@ const data = {
     button: {
       text: 'Read More',
       link: '/community'
-  },
-  image: {
-    src: '/assets/images/community.jpg',
-    alt: 'Community',
-  },
-  },
-  mentoring: {
-    h2: 'Our Learning Community',
-    p: 'Join our new-age world-class learning platform,"<strong>Skool</strong>", which brings together classroom and community features in one place. It allows you to <strong>collaborate</strong> with other members easily, promoting learning in a community format rather than one-on-one. The platform uses gamification and rewards to keep you engaged and motivated throughout your learning journey.',
-    button: {
-      text: 'Read More',
-      link: '/community'
-  },
-  image: {
-    src: '/assets/images/community.jpg',
-    alt: 'Community',
-  },
+    },
+    image: {
+      src: '/assets/images/community.jpg',
+      alt: 'Community',
+    },
   },
   mentoring: {
     h2: 'Our Mentorship Program',
@@ -29,11 +17,11 @@ const data = {
     button: {
       text: 'Read More',
       link: '/mentorship'
-  },
-  image: {
-    src: '/assets/images/mentorship.png',
-    alt: 'Mentorship',
-  },
+    },
+    image: {
+      src: '/assets/images/mentorship.png',
+      alt: 'Mentorship',
+    },
   },
   popularBlog: {
     h2: 'Our Most Popular Blog',
@@ -41,11 +29,11 @@ const data = {
     button: {
       text: 'Read More',
       link: '/blog'
-  },
-  image: {
-    src: '/assets/images/career-blog.png',
-    alt: 'Blog',
-  },
+    },
+    image: {
+      src: '/assets/images/career-blog.png',
+      alt: 'Blog',
+    },
   }
 }
 
