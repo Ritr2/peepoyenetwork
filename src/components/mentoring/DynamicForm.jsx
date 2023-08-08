@@ -4,7 +4,7 @@ import axios from 'axios'
 import { AnimatePresence, motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
-export default function DynamicForm() {
+export default function DynamicForm({animation = true, closeFunc = false}) {
   const { ref, inView } = useInView();
   const nameRef = useRef(null);
   const emailRef = useRef(null);
@@ -22,6 +22,11 @@ export default function DynamicForm() {
       first_name
     }
     axios.post('https://api.convertkit.com/v3/forms/3776523/subscribe/', data)
+    if (closeFunc) {
+      setTimeout(() => {
+        closeFunc(false);
+      }, 2000);
+    }
   }
 
   const variants1 = {
@@ -60,7 +65,7 @@ export default function DynamicForm() {
         {
           formVisible ?
             <motion.form
-              variants={variants1}
+              variants={animation ? variants1 : ''}
               initial="hidden"
               animate={inView ? "visible" : "hidden"}
               className="flex flex-col gap-5" onSubmit={handleSubmit}>
@@ -75,7 +80,7 @@ export default function DynamicForm() {
               </div>
             </motion.form> :
             <motion.div
-              variants={variants2}
+              variants={animation ? variants2 : ''}
               initial="hidden"
               animate="visible"
               className="flex flex-col gap-5">
