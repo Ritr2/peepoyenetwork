@@ -9,8 +9,22 @@ const roboto = Roboto({
 })
 
 export const metadata = {
-  title: 'Peepoye Network',
-  description: 'Work for all',
+  metadataBase: new URL('https://peepoye.com'),
+  title: 'Peepoye',
+  description: 'With Peepoye, Discover the path to awareness and happiness through our transformative content, empowering courses, and engaging masterminds.',
+  image: '/assets/images/akassh_signature.jpg',
+  url: 'https://peepoye.com',
+  type: 'website',
+  openGraph: {
+    type: 'website',
+    locale: 'en_IE',
+    url: 'https://peepoye.com',
+    title: 'Peepoye',
+    description: 'With Peepoye, Discover the path to awareness and happiness through our transformative content, empowering courses, and engaging masterminds.',
+    image: '/assets/images/akassh_signature.jpg',
+    site_name: 'Peepoye',
+  },
+  canonical: 'https://peepoye.com',
 }
 
 export default function RootLayout({ children }) {

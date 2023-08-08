@@ -7,6 +7,25 @@ import FeatureSection from '@/components/FeatureSection';
 import Experience from '@/components/Experience';
 import data from '@/utils/home_sections';
 
+export const metadata = {
+  title: 'Enabling Awareness & Happiness Via Content & Courses - Peepoye',
+  description: 'With Peepoye, Discover the path to awareness and happiness through our transformative content, empowering courses, and engaging masterminds.',
+  image: '/assets/images/akassh_signature.jpg',
+  url: 'https://peepoye.com',
+  type: 'website',
+  openGraph: {
+    type: 'website',
+    locale: 'en_IE',
+    url: 'https://peepoye.com',
+    title: 'Enabling Awareness & Happiness Via Content & Courses - Peepoye',
+    description: 'With Peepoye, Discover the path to awareness and happiness through our transformative content, empowering courses, and engaging masterminds.',
+    image: '/assets/images/akassh_signature.jpg',
+    site_name: 'Peepoye',
+  },
+  canonical: 'https://peepoye.com',
+};
+
+
 const dmSans = DM_Sans({
   weight: '500',
   subsets: ['latin'],
