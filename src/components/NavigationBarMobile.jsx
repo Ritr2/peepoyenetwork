@@ -20,7 +20,7 @@ export default function NavigationBarMobile() {
             exit={{ opacity: 0, x: -300 }}
             transition={{ duration: 0.7 }}
             className="flex flex-col gap-5 items-center justify-center lg:hidden fixed top-0 left-0 w-full h-screen  z-30 backdrop-blur-md">
-              <NavItems />
+              <NavItems setIsOpen={setIsOpen} />
           </ motion.div>
         )}
       </AnimatePresence>

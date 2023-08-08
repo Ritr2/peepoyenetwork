@@ -3,7 +3,7 @@ import React from 'react'
 import Link from 'next/link'
 import { BiChevronDown } from 'react-icons/bi'
 
-export default function DropDown({ name, links }) {
+export default function DropDown({ name, links, setIsOpen2 }) {
   const [isOpen, setIsOpen] = React.useState(false)
   return (
     <>
@@ -28,7 +28,7 @@ export default function DropDown({ name, links }) {
       {isOpen && (
         <div className="flex flex-col">
           {Object.keys(links).map((key, index) => (
-            <Link key={index} href={links[key]} className="ml-2 font-medium p-2 px-3">{key}</Link>
+            <Link key={index} href={links[key]} className="ml-2 font-medium p-2 px-3" onClick={() => setIsOpen2(false)}>{key}</Link>
           ))}
         </div>
       )}
