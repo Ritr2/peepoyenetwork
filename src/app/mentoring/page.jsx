@@ -49,8 +49,9 @@ export default function Mentoring() {
             <img src="/assets/images/mentoring/akasshashokgupta.png" alt="Akassh ashok Gupta" className="w-full" draggable={false} />
           </div>
         </div>
-
       </section>
+      <section className="flex flex-col items-center w-full justify-center gap-8 bg-stone-100 px-5 py-16 md:px-52 overflow-hidden">
+        
     </main>
   )
 }
