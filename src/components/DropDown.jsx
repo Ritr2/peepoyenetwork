@@ -22,7 +22,7 @@ export default function DropDown({ name, links, setIsOpen2 }) {
     </div>
     <div className="lg:hidden flex flex-col gap-1">
       <div className='flex flex-row gap-1 items-center justify-center'>
-      <span className="font-medium cursor-pointer">{name}</span>
+      <span className="font-medium cursor-pointer" onClick={() => setIsOpen(!isOpen)}>{name}</span>
       <BiChevronDown className={`font-medium ${isOpen? 'rotate-180' : ''} transition-all duration-300`} onClick={() => setIsOpen(!isOpen)} />
       </div>
       {isOpen && (
