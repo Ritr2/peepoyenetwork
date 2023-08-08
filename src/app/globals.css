@@ -21,3 +21,34 @@
 ::-webkit-scrollbar-thumb:hover {
   background: rgb(112, 112, 112);
 }
+
+.loader {
+  border: 16px solid #b6b6b6;
+  border-radius: 50%;
+  border-top: 16px solid #51c07f;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
