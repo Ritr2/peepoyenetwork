@@ -12,19 +12,19 @@ export default function Footer() {
           <p className="text-base font-sans mt-2 md:mt-4 font-thin md:text-xl text-center md:text-left text-white">Akassh Ashok Gupta is an excellent choice for building online authority through YouTube due to his extensive experience in both business consulting and YouTube content creation. With 20 years of experience in business consulting, he has developed a deep understanding of strategy and tactics, which makes him well-equipped to develop effective approaches to growing and maintaining online authority.</p>
           <h2 className="md:mt-4 mt-2 text-lg md:text-2xl font-sans font-semibold text-center md:text-left text-stone-300">Media Coverage</h2>
           <div className="flex flex-row flex-wrap gap-5 justify-center md:justify-start md:gap-10 items-center mt-1 md:mt-2">
-            <img src="/assets/images/media_coverage/for-men.png" className="w-24 md:w-32 h-auto" />
-            <img src="/assets/images/media_coverage/great-companies.png" className="w-24 md:w-32 h-auto" />
-            <img src="/assets/images/media_coverage/innovative-zone.png" className="w-24 md:w-32 h-auto" />
-            <img src="/assets/images/media_coverage/prime-Insight.png" className="w-24 md:w-32 h-auto" />
+          <a href='https://formenindia.in/akassh-ashok-gupta-raises-his-voice-against-the-gender-biased-laws-and-the-harassments-faced-by-men-in-india/' target="_blank" rel="noopener noreferrer"><img src="/assets/images/media_coverage/for-men.png" className="w-24 md:w-32 h-auto" /></a>
+            <a href='https://www.greatcompanies.in/post/akassh-ashok-gupta-founder-ceo-at-peepoye-network' target="_blank" rel="noopener noreferrer"><img src="/assets/images/media_coverage/great-companies.png" className="w-24 md:w-32 h-auto" /></a>
+            <a href='https://innovativezoneindia.com/peepoye-network/' target="_blank" rel="noopener noreferrer"><img src="/assets/images/media_coverage/innovative-zone.png" className="w-24 md:w-32 h-auto" /></a>
+            <a href='https://primeinsights.in/peepoye-network/' target="_blank" rel="noopener noreferrer"><img src="/assets/images/media_coverage/prime-Insight.png" className="w-24 md:w-32 h-auto" /></a>
           </div>
         </div>
         <div className="flex flex-col gap-5 justify-start">
           <h2 className="mt-2 md:mt-0 text-xl md:text-2xl font-sans font-semibold text-center md:text-left text-white">Stay connected with Akassh Daily</h2>
           <div className="flex flex-row gap-5 items-center justify-between">
-            <img src="/assets/images/social_media/youtube.png" className="w-14 md:w-16 h-auto" />
-            <img src="/assets/images/social_media/instagram.png" className="w-14 md:w-16 h-auto" />
-            <img src="/assets/images/social_media/facebook.png" className="w-14 md:w-16 h-auto" />
-            <img src="/assets/images/social_media/twitter.png" className="w-14 md:w-16 h-auto" />
+          <a href='https://www.youtube.com/@peepoye' target="_blank" rel="noopener noreferrer"><img src="/assets/images/social_media/youtube.png" className="w-14 md:w-16 h-auto" /></a>
+            <a href='https://www.instagram.com/peepoye/' target="_blank" rel="noopener noreferrer"><img src="/assets/images/social_media/instagram.png" className="w-14 md:w-16 h-auto" /></a>
+            <a href='https://www.facebook.com/peepoye' target="_blank" rel="noopener noreferrer"><img src="/assets/images/social_media/facebook.png" className="w-14 md:w-16 h-auto" /></a>
+            <a href='https://twitter.com/peepoye_' target="_blank" rel="noopener noreferrer"><img src="/assets/images/social_media/twitter.png" className="w-14 md:w-16 h-auto" /></a>
           </div>
         </div>
       </div>
