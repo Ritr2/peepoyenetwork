@@ -37,7 +37,7 @@ export async function generateMetadata({ params }) {
 export const fetchPosts = async (slug) => {
   let res;
   try {
-    res = await fetch(`${url}/api/personal-blog/${slug}`)
+    res = await fetch(`${url}/api/personal-blog/${slug}`, {cache: "no-cache"})
     if (!res.ok) {
       throw new Error('Failed to fetch data')
     }
