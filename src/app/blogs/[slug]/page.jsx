@@ -12,10 +12,32 @@ const dmSans = DM_Sans({
   subsets: ['latin'],
 })
 
-const fetchPosts = async (slug) => {
+export async function generateMetadata({ params }) {
+  const { slug } = params
+  const data = await fetchPosts(slug)
+  return {
+    title: `${data.blog.title} - Peepoye`,
+    description: data.blog.description,
+    image: data.blog.image.src,
+    url: `https://peepoye.com/blogs/${data.blog.slug}`,
+    type: 'article',
+    openGraph: {
+      title: `${data.blog.title} - Peepoye`,
+      description: data.blog.description,
+      image: data.blog.image.src,
+      url: `https://peepoye.com/blogs/${data.blog.slug}`,
+      type: 'article',
+      article: {
+        publishedTime: data.blog.date,
+      }
+    },
+  }
+}
+
+export const fetchPosts = async (slug) => {
   let res;
   try {
-    res = await fetch(`${url}/api/personal-blog/${slug}`, { cache: 'no-cache' })
+    res = await fetch(`${url}/api/personal-blog/${slug}`)
     if (!res.ok) {
       throw new Error('Failed to fetch data')
     }
@@ -35,7 +57,7 @@ export default async function page({ params }) {
         <section className="flex flex-col flex-1 w-full gap-5 justify-center">
           <div className="flex flex-col justify-center w-full border-y-2 border-stone-200  py-2 flex-1 gap-2 md:gap-5">
             <span className='text-left text-base text-neutral-500'>
-              <Link href={`/blogs`}>Primary Blog</Link> / <Link href={`/blogs/category/${data.category.slug}`}>{data.category.name}</Link> / <Link href={`/blogs/${data.blog.slug}`}>{data.blog.title}</Link>
+              <Link href={`/blogs`}>Primary Blog</Link> / <Link href={`/blogs/categories/${data.category.slug}`}>{data.category.name}</Link> / <Link href={`/blogs/${data.blog.slug}`}>{data.blog.title}</Link>
             </span>
           </div>
           <div className="flex flex-col justify-center flex-1 gap-2">
@@ -48,7 +70,7 @@ export default async function page({ params }) {
             </div>
             <div className="flex flex-col justify-center flex-1 gap-2 rounded-lg bg-neutral-300 p-4">
               <h2 className="text-lg md:text-xl font-bold text-left text-neutral-700">30-sec summary</h2>
-              <p className="text-base md:text-lg font-light text-left text-neutral-900">{data.blog.summary}</p>
+              <p className="text-base md:text-lg font-light text-left text-neutral-900">{parse(data.blog.summary)}</p>
             </div>
             <section className="sectionAnchor flex flex-col justify-center flex-1 gap-5 rounded-lg  p-4">
               {

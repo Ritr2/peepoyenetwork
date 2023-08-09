@@ -19,7 +19,6 @@ const fetchCategories = async () => {
 
 export default async function Profile() {
   const data = await fetchCategories();
-  console.log(data)
   return (
     <div className='flex flex-col flex-1 gap-1 items-center self-start max-w-xs justify-center w-full bg-neutral-200 p-4 pb-10 rounded-lg'>
       <div className='flex flex-col gap-1 items-center justify-center'>
@@ -35,7 +34,7 @@ export default async function Profile() {
         <div className='flex flex-col gap-2 justify-center'>
           {
             data.map((category, index) => (
-              <Link key={index} href={`/blogs/category/${category.slug}`} className='flex flex-col gap-2 justify-center text-sm md:text-base text-neutral-700 hover:text-neutral-800 hover:underline active:underline'>
+              <Link key={index} href={`/blogs/categories/${category.slug}`} className='flex flex-col gap-2 justify-center text-sm md:text-base text-neutral-700 hover:text-neutral-800 hover:underline active:underline'>
                 {category.name}
               </Link>
             ))
