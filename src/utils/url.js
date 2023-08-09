@@ -1,3 +1,3 @@
-const url = 'http://peepoyenetwork.vercel.app/'
+const url = 'https://peepoyenetwork.vercel.app/'
 
 export default url;
