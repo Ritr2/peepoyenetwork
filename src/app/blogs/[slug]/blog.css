@@ -1,0 +1,12 @@
+.sectionAnchor a {
+  color: #0070f3;
+  text-decoration: none;
+}
+
+.sectionAnchor a:hover {
+  text-decoration: underline;
+}
+
+.sectionAnchor a:active {
+  color: #025abe;
+}
