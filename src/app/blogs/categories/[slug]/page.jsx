@@ -12,7 +12,7 @@ const dmSans = DM_Sans({
 async function category(slug) {
   let res;
   try {
-    res = await fetch(`${url}/api/personal-blog/categories/${slug}`)
+    res = await fetch(`${url}/api/personal-blog/categories/${slug}`, { cache: 'no-cache' })
     if (!res.ok) {
       throw new Error('Failed to fetch data')
     }
