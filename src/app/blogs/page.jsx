@@ -24,7 +24,7 @@ export const metadata = {
 }
 
 async function getBlogs() {
-  const res = await fetch(`${url}/api/personal-blog`, { cache: 'no-cache' })
+  const res = await fetch(`${url}/api/personal-blog`)
   if (!res.ok) {
     throw new Error('Failed to fetch data')
   }
