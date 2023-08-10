@@ -1,31 +1,14 @@
-'use client'
 import React from 'react'
-import makePayment from '@/utils/payments/makePayment'
 import {AnimatePresence, motion} from 'framer-motion'
+import makePayment from '@/utils/payments/makePayment'
 import { IoClose } from 'react-icons/io5'
 
-export default function Button() {
-  const [loading, setLoading] = React.useState(false)
-  const [dataFormVisible, setDataFormVisible] = React.useState(false)
+export default function PaymentForm({setDataFormVisible,query, product,amount}) {
   const [name, setName] = React.useState('')
   const [email, setEmail] = React.useState('')
   const [phone, setPhone] = React.useState('')
-
-  const handleClick = () => {
-    setDataFormVisible(true)
-  }
-
-  const formHandler = async (e) => {
-    e.preventDefault()
-    setDataFormVisible(false)
-    setLoading(true)
-    const details = {
-      name,
-      email,
-      phone,
-    }
-    makePayment(details, setLoading, 'if-guide')
-  }
+  const [loading, setLoading] = React.useState(false)
+  const [showForm, setShowForm] = React.useState(true)
 
   const variants = {
     hidden: {
@@ -42,21 +25,31 @@ export default function Button() {
     }
   }
 
+  const formHandler = async (e) => {
+    e.preventDefault()
+    setLoading(true)
+    setShowForm(false)
+    const details = {
+      name,
+      email,
+      phone,
+    }
+    makePayment(details, setLoading, setDataFormVisible,query,product,amount)
+  }
+
   return (
     <>
-      <button className="flex rounded-lg p-2 text-base md:text-xl font-bold text-white flex-row items-center justify-center gap-2 w-full bg-emerald-600 hover:bg-emerald-700 hover:shadow-lg hover:drop-shadow-lg hover:scale-105 active:bg-emerald-800 active:shadow-none active:drop-shadow-none active:scale-95" onClick={handleClick}>
-        BUY THE INFLUENCER GUIDE ONLY FOR TODAY AT AN UNBELIEVEABLE 90% DISCOUNT
-      </button>
-      {
+    {
         loading && (
-          <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex flex-col justify-center items-center z-50 backdrop-filter backdrop-blur-sm">
+          <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex flex-col gap-6 justify-center items-center z-50 backdrop-filter backdrop-blur-sm">
+            <h2 className="text-xl md:text-3xl font-bold text-center text-white">Please wait while we redirect you to the payment Gateway...</h2>
             <div className="loader" />
           </div>
         )
       }
       <AnimatePresence>
       {
-        dataFormVisible &&
+        showForm &&
         <motion.div
         initial={{ opacity: 1 }}
         animate={{ opacity: 1 }}
@@ -83,6 +76,7 @@ export default function Button() {
       </motion.div>
       }
       </AnimatePresence>
+
     </>
   )
 }

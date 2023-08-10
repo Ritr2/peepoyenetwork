@@ -52,3 +52,17 @@
     transform: rotate(360deg);
   }
 }
+
+@keyframes width0to100 {
+  0% {
+    width: 20%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+
+.animate-percentage {
+  animation: width0to100 20s linear infinite forwards;
+}

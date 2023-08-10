@@ -10,6 +10,7 @@ export async function POST(req) {
     key_secret: process.env.RAZORPAY_SECRET,
   });
   const body = await req.json();
+  console.log(body.product);
 
   // Create an order -> generate the OrderID -> Send it to the Front-end
   const payment_capture = 1;

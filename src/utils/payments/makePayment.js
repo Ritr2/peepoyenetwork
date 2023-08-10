@@ -1,6 +1,6 @@
 import initializeRazorpay from "./initializeRazorpay";
 
-const makePayment = async (details, setLoading, product) => {
+const makePayment = async (details, setLoading,setDataFormVisible, query, product, amount) => {
   const res = await initializeRazorpay();
 
   if (!res) {
@@ -8,11 +8,13 @@ const makePayment = async (details, setLoading, product) => {
     return;
   }
 
+  console.log(query, product);
+
   // Make API call to the serverless API
   const data = await fetch("/api/razorpay", {
     method: "POST",
     body: JSON.stringify({
-        product: product,
+        product: amount,
     }),
     headers: {
       "Content-Type": "application/json",
@@ -27,10 +29,9 @@ const makePayment = async (details, setLoading, product) => {
     amount: data.amount,
     order_id: data.id,
     description: "Thankyou for your test donation",
-    image: "https://localhost:3000/favicon.ico",
+    image: "/assets/images/logo.png",
     handler: function (response) {
-      // Validate payment at server - using webhooks is a better idea.
-      console.log(response);
+      window.location.href = `/${query}?product=${product}`
     },
     prefill: {
       name: details.name,
@@ -48,6 +49,7 @@ const makePayment = async (details, setLoading, product) => {
   const paymentObject = new window.Razorpay(options);
   paymentObject.open();
   setLoading(false);
+  setDataFormVisible(false);
 };
 
 export default makePayment;

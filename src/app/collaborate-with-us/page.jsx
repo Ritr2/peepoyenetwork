@@ -53,11 +53,11 @@ export default function page() {
       </section>
       <section className="flex flex-col w-full items-center justify-center gap-2 py-5 md:py-10">
         <h2 className="text-lg md:text-4xl font-bold text-center md:text-left text-neutral-900">Trusted by Top Brands</h2>
-        <p className="text-base md:text-xl font-bold text-center rounded-lg px-3 text-stone-700">Powerful Results from <span className='bg-yellow-500 rounded-lg text-stone-900 text-base md:text-2xl font-bold px-2'>Past Collaborations</span></p>
+        <p className="text-sm md:text-xl font-bold text-center rounded-lg px-3 text-stone-700">Powerful Results from <span className='bg-yellow-500 rounded-lg text-stone-900 text-sm md:text-2xl font-bold px-1 md:px-2'>Past Collaborations</span></p>
         <PastCollab />
         <div className="flex flex-col md:flex-row w-full justify-center gap-3 md:gap-10 py-5 md:py-10 px-2 md:px-40">
           <div className="flex flex-col items-center md:w-1/2 justify-center gap-2">
-            <p className="text-lg md:text-3xl font-normal md:pl-5 text-center md:text-left text-neutral-900">Our massive <span className='bg-yellow-500 rounded-lg text-stone-900 text-lg md:text-2xl font-bold px-2'>SOCIAL MEDIA REACH</span> can help in bridging the gap between you and your potential customers.
+            <p className="text-base md:text-3xl font-normal md:pl-5 text-center md:text-left text-neutral-900">Our massive <span className='bg-yellow-500 rounded-lg text-stone-900 text-lg md:text-2xl font-bold px-2'>SOCIAL MEDIA REACH</span> can help in bridging the gap between you and your potential customers.
               Let’s Talk <span className='bg-yellow-500 rounded-lg text-stone-900 text-lg md:text-2xl font-bold px-2'>NUMBERS!</span></p>
             <div className="flex flex-col">
               <img src='/assets/images/collaborate_with_us/demographic_1.png' alt='Akassh Ashok Gupta' className='w-full h-auto border-2 border-yellow-500 drop-shadow-lg shadow-lg rounded-xl' draggable={false} />
@@ -79,7 +79,7 @@ export default function page() {
             </div>
           </div>
           <div className="flex flex-col items-center flex-1 justify-between gap-2 order-1 md:order-2">
-            <p className="text-lg md:text-3xl font-normal md:pl-5 text-center md:text-left text-neutral-900">Our <span className='bg-yellow-500 rounded-lg text-stone-900 text-lg md:text-2xl font-bold px-2'>Demographic Insights</span> to Align Your Brand with the <span className='bg-yellow-500 rounded-lg text-stone-900 text-lg md:text-2xl font-bold px-2'>Right Audience</span></p>
+            <p className="text-base md:text-3xl font-normal md:pl-5 text-center md:text-left text-neutral-900">Our <span className='bg-yellow-500 rounded-lg text-stone-900 text-lg md:text-2xl font-bold px-2'>Demographic Insights</span> to Align Your Brand with the <span className='bg-yellow-500 rounded-lg text-stone-900 text-lg md:text-2xl font-bold px-2'>Right Audience</span></p>
             <div className="flex flex-col">
               <img src='/assets/images/collaborate_with_us/demographic_6.png' alt='Akassh Ashok Gupta' className='w-full h-auto border-2 border-yellow-500 drop-shadow-lg shadow-lg rounded-xl' draggable={false} />
             </div>
@@ -89,7 +89,7 @@ export default function page() {
       <section className="relative flex flex-col w-full items-center justify-center gap-2 py-5 md:py-10">
         <img src='/assets/images/collaborate_with_us/collab_3.png' alt='Akassh Ashok Gupta' className='w-full h-96 object-center block object-cover' draggable={false} />
         <div className="absolute top-0 left-0 w-full h-full flex gap-4 md:gap-10 flex-col justify-center bg-black/75 backdrop-blur-md md:px-32">
-          <h2 className="text-lg md:text-5xl font-medium text-left text-white">Seamless Integration, Maximum Impact: How We Align<br />
+          <h2 className="text-lg md:text-5xl font-medium text-left text-white">Seamless Integration, Maximum Impact: How We Align<br className='hidden md:flex' />
             Your Brand with Our <span className='bg-stone-400 rounded-lg text-stone-900 text-lg md:text-4xl font-bold px-2'>Engaged Audience?</span></h2>
           <div className="flex flex-col gap-2 text-stone-200 font-normal">
             <div className="flex flex-row gap-2">

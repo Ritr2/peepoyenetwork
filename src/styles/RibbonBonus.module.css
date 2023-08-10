@@ -1,0 +1,13 @@
+.ribbon {
+  top: 56px;
+  right: 37px;
+}
+
+@media (min-width: 768px) {
+
+  .ribbon {
+    top:100px;
+    right:63px;
+  }
+
+}
