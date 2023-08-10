@@ -2,8 +2,8 @@ import React from 'react'
 import { DM_Sans } from 'next/font/google';
 import Experience from '@/components/Experience';
 import { FaCheck } from 'react-icons/fa';
-import Button from '@/components/guide_if/Button';
-import FunnelFooter from '@/components/guide_if/FunnelFooter';
+import Button from '@/components/funnels/Button';
+import FunnelFooter from '@/components/funnels/FunnelFooter';
 
 const dmSans = DM_Sans({
   weight: ['400', '500', '700'],
@@ -27,7 +27,7 @@ export default function page() {
             </div>
           </div>
           <div className="flex flex-col md:w-10/12">
-          <Button />
+          <Button query='/donot' product='if-guide' text='BUY THE INFLUENCER GUIDE ONLY FOR TODAY AT AN UNBELIEVEABLE 90% DISCOUNT' bgcolor={{normal:'bg-emerald-600', hover:'bg-emerald-700', active:'bg-emerald-800'}} txcolor='text-white' />
           </div>
         </div>
         <div className="flex flex-col items-center justify-center flex-1 order-2">
@@ -73,7 +73,7 @@ export default function page() {
               </div>
             </div>
             <div className="flex flex-col">
-              <Button />
+            <Button query='/donot' product='if-guide' text='BUY THE INFLUENCER GUIDE ONLY FOR TODAY AT AN UNBELIEVEABLE 90% DISCOUNT' bgcolor={{normal:'bg-emerald-600', hover:'bg-emerald-700', active:'bg-emerald-800'}} txcolor='text-white' />
             </div>
           </div>
         </div>
