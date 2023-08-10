@@ -7,6 +7,7 @@ export const LayoutProvider = ({ children }) => {
   const pathname = usePathname();
   const LandingPage = [
     "/guide-brb",
+    "/donot",
   ]
   return (
       <>

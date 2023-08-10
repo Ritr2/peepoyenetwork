@@ -3,7 +3,7 @@ import {AnimatePresence, motion} from 'framer-motion'
 import makePayment from '@/utils/payments/makePayment'
 import { IoClose } from 'react-icons/io5'
 
-export default function PaymentForm({setDataFormVisible,query, product}) {
+export default function PaymentForm({setDataFormVisible,query, product,amount}) {
   const [name, setName] = React.useState('')
   const [email, setEmail] = React.useState('')
   const [phone, setPhone] = React.useState('')
@@ -34,7 +34,7 @@ export default function PaymentForm({setDataFormVisible,query, product}) {
       email,
       phone,
     }
-    makePayment(details, setLoading, setDataFormVisible,query,product)
+    makePayment(details, setLoading, setDataFormVisible,query,product,amount)
   }
 
   return (

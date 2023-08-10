@@ -1,6 +1,6 @@
 import initializeRazorpay from "./initializeRazorpay";
 
-const makePayment = async (details, setLoading,setDataFormVisible, query, product) => {
+const makePayment = async (details, setLoading,setDataFormVisible, query, product, amount) => {
   const res = await initializeRazorpay();
 
   if (!res) {
@@ -8,11 +8,13 @@ const makePayment = async (details, setLoading,setDataFormVisible, query, produc
     return;
   }
 
+  console.log(query, product);
+
   // Make API call to the serverless API
   const data = await fetch("/api/razorpay", {
     method: "POST",
     body: JSON.stringify({
-        product: product,
+        product: amount,
     }),
     headers: {
       "Content-Type": "application/json",
@@ -29,7 +31,7 @@ const makePayment = async (details, setLoading,setDataFormVisible, query, produc
     description: "Thankyou for your test donation",
     image: "/assets/images/logo.png",
     handler: function (response) {
-      window.location.href = `${query}?product=${product}`
+      window.location.href = `/${query}?product=${product}`
     },
     prefill: {
       name: details.name,

@@ -1,7 +1,7 @@
 const data = {
-  "if-guide": {
+  "guide-brb": {
     amount: 29,
-    notes: "if-guide",
+    notes: "guide-brb",
   },
   "donot": {
     amount: 99,

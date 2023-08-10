@@ -27,7 +27,7 @@ export default function page() {
             </div>
           </div>
           <div className="flex flex-col md:w-10/12">
-          <Button query='/donot' product='if-guide' text='BUY THE INFLUENCER GUIDE ONLY FOR TODAY AT AN UNBELIEVEABLE 90% DISCOUNT' bgcolor={{normal:'bg-emerald-600', hover:'bg-emerald-700', active:'bg-emerald-800'}} txcolor='text-white' />
+          <Button query='donot' product='guide-brb-1'amount='guide-brb' text='BUY THE INFLUENCER GUIDE ONLY FOR TODAY AT AN UNBELIEVEABLE 90% DISCOUNT' padding='p-2' bgcolor={{normal:'bg-emerald-600', hover:'bg-emerald-700', active:'bg-emerald-800'}} txcolor='text-white' />
           </div>
         </div>
         <div className="flex flex-col items-center justify-center flex-1 order-2">
@@ -73,7 +73,7 @@ export default function page() {
               </div>
             </div>
             <div className="flex flex-col">
-            <Button query='/donot' product='if-guide' text='BUY THE INFLUENCER GUIDE ONLY FOR TODAY AT AN UNBELIEVEABLE 90% DISCOUNT' bgcolor={{normal:'bg-emerald-600', hover:'bg-emerald-700', active:'bg-emerald-800'}} txcolor='text-white' />
+            <Button query='donot' product='guide-brb-1'amount='guide-brb' text='BUY THE INFLUENCER GUIDE ONLY FOR TODAY AT AN UNBELIEVEABLE 90% DISCOUNT' padding='p-2' bgcolor={{normal:'bg-emerald-600', hover:'bg-emerald-700', active:'bg-emerald-800'}} txcolor='text-white' />
             </div>
           </div>
         </div>
