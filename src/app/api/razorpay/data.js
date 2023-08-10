@@ -1,8 +1,12 @@
 const data = {
   "if-guide": {
     amount: 29,
-    notes: "Influencer Guide",
-  }
+    notes: "if-guide",
+  },
+  "donot": {
+    amount: 99,
+    notes: "donot",
+  },
 }
 
 export default data
