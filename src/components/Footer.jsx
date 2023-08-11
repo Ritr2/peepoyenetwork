@@ -41,7 +41,7 @@ export default function Footer() {
             <a href="https://merchit.in/pages/peepoye" className="text-base font-sans font-thin cursor-pointer md:text-xl text-left text-white px-2" target="_blank" rel="noopener noreferrer">Shop</a>
         </div>
         <div className="flex flex-row flex-wrap flex-1 justify-center">
-          <Link href="/refund-policy" className="text-base font-sans cursor-pointer font-thin md:text-xl text-center md:text-left px-1 border-r-2 border-white text-white">Refund Policy</Link>
+          <Link href="/cancellation-refund-policy" className="text-base font-sans cursor-pointer font-thin md:text-xl text-center md:text-left px-1 border-r-2 border-white text-white">Refund Policy</Link>
           <Link href="/privacy-policy" className="text-base font-sans cursor-pointer font-thin md:text-xl text-center md:text-left px-1 border-r-2 border-white text-white">Privacy Policy</Link>
           <Link href="/terms-of-service" className="text-base font-sans cursor-pointer font-thin md:text-xl text-center md:text-left text-white px-1">Terms of Service</Link>
         </div>

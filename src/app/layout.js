@@ -5,7 +5,7 @@ import Footer from '@/components/Footer'
 import { LayoutProvider } from './LayoutProvider'
 
 const roboto = Roboto({
-  weight: '500',
+  weight: ['100', '300', '400', '500', '700'],
   subsets: ['latin'],
 })
 
