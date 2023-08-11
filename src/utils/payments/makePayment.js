@@ -8,8 +8,6 @@ const makePayment = async (details, setLoading,setDataFormVisible, query, produc
     return;
   }
 
-  console.log(query, product);
-
   // Make API call to the serverless API
   const data = await fetch("/api/razorpay", {
     method: "POST",
