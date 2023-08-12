@@ -32,13 +32,13 @@ export default async function Profile() {
       <div className='flex flex-col gap-1 md:gap-2 justify-center w-full'>
         <h2 className='text-xl md:text-2xl font-bold text-left text-neutral-800'>Blog Category</h2>
         <div className='flex flex-col gap-1 justify-center'>
-          {
+          {/* {
             data.map((category, index) => (
               <Link key={index} href={`/blogs/categories/${category.slug}`} className='flex flex-col gap-2 justify-center text-base md:text-base text-neutral-700 hover:text-neutral-800 hover:underline active:underline'>
                 {category.name}
               </Link>
             ))
-          }
+          } */}
         </div>
       </div>
     </div>
