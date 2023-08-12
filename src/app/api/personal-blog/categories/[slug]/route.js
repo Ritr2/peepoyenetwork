@@ -1,16 +1,26 @@
 import { NextResponse } from "next/server";
-import data from "../../data";
+import blogdata from "../../blog";
+import categoryData from "../../category";
 
 export async function GET(req, { params }) {
   const { slug } = params;
-  let category = false;
-  data.forEach((cat) => {
+  let cat_id = false;
+  categoryData.forEach((cat) => {
     if (cat.slug === slug) {
-      category = cat;
+      cat_id = cat;
     }
   });
-  if (!category) {
+  if (!cat_id) {
     return NextResponse.json({ error: "Category not found" }, { status: 404 });
   }
-  return NextResponse.json(category);
+
+  let data = blogdata.filter((blog) => {
+    return blog.category_id === cat_id.id;
+  });
+
+  data = data.sort((a, b) => {
+    return b.id - a.id;
+  });
+
+  return NextResponse.json({ blogs: data, category: cat_id });
 }

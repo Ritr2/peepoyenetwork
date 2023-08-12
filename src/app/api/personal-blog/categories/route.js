@@ -1,8 +1,8 @@
-import data from "../data";
 import { NextResponse } from "next/server";
+import categoryData from "../category";
 
 export async function GET(req) {
-  const categoryList = data.map((cat) => {
+  const categoryList = categoryData.map((cat) => {
     return {
       name: cat.name,
       slug: cat.slug,

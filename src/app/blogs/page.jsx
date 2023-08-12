@@ -44,11 +44,8 @@ export default async function page() {
           <div className=' flex flex-col w-full flex-1'>
             <section className="flex flex-col md:flex-row w-full bg-white items-center justify-center">
               <div className="flex flex-col md:flex-row flex-1 gap-5 md:gap-6 justify-center">
-                {
-                  data.map((category, index) => (
-                    <Fragment key={index}>
                       {
-                        category.blogs.map((blog, index2) => (
+                        data.map((blog, index2) => (
                           <div key={index2} className="flex flex-col w-full md:w-3/12 gap-3 rounded-lg items-center justify-between shadow-lg drop-shadow-lg bg-stone-100">
                             <div className="flex flex-col w-full justify-center items-center">
                               <img src={blog.image.src} alt={blog.image.alt} className="w-full rounded-t-lg h-auto" draggable={false} />
@@ -60,9 +57,6 @@ export default async function page() {
                           </div>
                         ))
                       }
-                    </Fragment>
-                  ))
-                }
               </div>
             </section>
           </div>

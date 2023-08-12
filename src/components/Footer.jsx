@@ -37,7 +37,7 @@ export default function Footer() {
         <p className="text-sm font-sans font-thin md:text-xl text-left text-white flex-1">© The PeepoyeNetwork. All rights reserved.</p>
         <div className="flex flex-row flex-1 justify-center">
             <Link href="/careers" className="text-base font-sans font-thin md:text-xl text-left px-2 cursor-pointer border-r-2 border-white text-white">Careers</Link>
-            <Link href="/help-center" className="text-base font-sans font-thin md:text-xl text-left px-2 cursor-pointer border-r-2 border-white text-white">Help Center</Link>
+            <Link href="/help" className="text-base font-sans font-thin md:text-xl text-left px-2 cursor-pointer border-r-2 border-white text-white">Help Center</Link>
             <a href="https://merchit.in/pages/peepoye" className="text-base font-sans font-thin cursor-pointer md:text-xl text-left text-white px-2" target="_blank" rel="noopener noreferrer">Shop</a>
         </div>
         <div className="flex flex-row flex-wrap flex-1 justify-center">
