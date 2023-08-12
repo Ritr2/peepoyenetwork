@@ -1,4 +1,5 @@
 import initializeRazorpay from "./initializeRazorpay";
+import url from "../url";
 
 const makePayment = async (details, setLoading,setDataFormVisible, query, product, amount) => {
   const res = await initializeRazorpay();
@@ -7,6 +8,7 @@ const makePayment = async (details, setLoading,setDataFormVisible, query, produc
     alert("Razorpay SDK Failed to load");
     return;
   }
+
 
   // Make API call to the serverless API
   const data = await fetch("/api/razorpay", {
@@ -29,7 +31,7 @@ const makePayment = async (details, setLoading,setDataFormVisible, query, produc
     description: "Thankyou for your test donation",
     image: "/assets/images/logo.png",
     handler: function (response) {
-      window.location.href = `/${query}?product=${product}`
+      window.location.href = `${url}/${query}?product=${product}`
     },
     prefill: {
       name: details.name,

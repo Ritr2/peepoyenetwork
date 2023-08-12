@@ -89,7 +89,7 @@ export default async function page({ searchParams }) {
             </div>
           </div>
           <div className="flex flex-col w-full md:w-8/12 gap-3">
-            <Button query={data ? `/${data.yes.query}` : '/thankyou'} product={data ? `/${data.yes.product}` : '/donot'} amount='donot' text='GET YOUR COURSE ACCESS NOW' padding='py-3' bgcolor={{ normal: 'bg-red-700', hover: 'bg-red-600', active: 'bg-red-800' }} txcolor='text-white' />
+            <Button query={data ? `${data.yes.query}` : 'thankyou'} product={data ? `/${data.yes.product}` : 'donot'} amount='donot' text='GET YOUR COURSE ACCESS NOW' padding='py-3' bgcolor={{ normal: 'bg-red-700', hover: 'bg-red-600', active: 'bg-red-800' }} txcolor='text-white' />
             {
               data && (
                 <Link href={`/${data.no.query}?product=${data.no.product}`} className='text-stone-500 text-lg md:text-2xl underline text-center hover:text-stone-700'>

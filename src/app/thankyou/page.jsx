@@ -43,17 +43,17 @@ export default async function page({ searchParams }) {
         <div className="flex flex-col w-full md:w-6/12 gap-2 md:gap-7 order-2 md:order-1">
           {
             data.query.h1 && (
-              <h1 className="text-xl md:text-5xl font-bold text-center md:text-left text-neutral-700">{parse(data.query.h1)}</h1>
+              <h1 className="text-xl md:text-4xl font-bold text-center md:text-left text-neutral-700">{parse(data.query.h1)}</h1>
             )
           }
           {
             data.query.p1 && (
-              <p className="text-lg md:text-xl font-medium text-center md:text-left text-neutral-700">{parse(data.query.p1)}</p>
+              <p className="text-base md:text-lg font-medium text-center md:text-left text-neutral-700">{parse(data.query.p1)}</p>
             )
           }
           {
             data.query.p2 && (
-              <p className="text-lg md:text-xl font-medium text-center md:text-left text-neutral-700">{parse(data.query.p2)}</p>
+              <p className="text-base md:text-lg font-medium text-center md:text-left text-neutral-700">{parse(data.query.p2)}</p>
             )
           }
           {
@@ -71,9 +71,9 @@ export default async function page({ searchParams }) {
           <img src='/assets/images/guide_if/thankyou.png' alt="Akassh ashok Gupta" className="w-full" draggable={false} />
         </div>
         <div className="flex flex-col justify-center gap-2 md:gap-5 pb-8 w-full md:w-6/12">
-          <h1 className="text-xl md:text-5xl font-bold text-center md:text-left text-neutral-700">To Learn More from <br /><span className='text-red-600'>Akassh Ashok Gupta</span>
+          <h1 className="text-xl md:text-4xl font-bold text-center md:text-left text-neutral-700">To Learn More from <br /><span className='text-red-600'>Akassh Ashok Gupta</span>
           </h1>
-          <p className="text-lg md:text-2xl font-medium text-center md:text-left text-neutral-600">You can start your learning by reading some insightful Blog by Akassh.</p>
+          <p className="text-lg md:text-xl font-medium text-center md:text-left text-neutral-600">You can start your learning by reading some insightful Blog by Akassh.</p>
           <div className="flex flex-col w-full md:w-8/12">
             <Link href='/blog' className='flex flex-col items-center text-white font-bold w-full p-3 rounded-lg bg-red-700 hover:scale-105 active:scale-95 transform transition-all duration-200 ease-in-out'>
               CLICK TO READ THE BLOG

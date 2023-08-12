@@ -6,7 +6,7 @@ const data = [
       levelPercentage: 50,
     },
     yes: {
-      query: 'accelerator',
+      query: 'thankyou',
       product: 'guide-brb-2',
     },
     no: {
