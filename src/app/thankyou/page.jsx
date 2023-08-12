@@ -39,8 +39,8 @@ export default async function page({ searchParams }) {
   }
   return (
     <main className={`relative flex min-h-screen flex-col items-center ${dmSans.className} mt-16 py-5 px-2 md:px-40 overflow-x-hidden`}>
-      <section className="flex flex-row w-full items-center pb-8 border-b-2 border-stone-500 ">
-        <div className="flex flex-col w-full md:w-6/12 gap-2 md:gap-7">
+      <section className="flex flex-col md:flex-row w-full items-center pb-8 border-b-2 border-stone-500 ">
+        <div className="flex flex-col w-full md:w-6/12 gap-2 md:gap-7 order-2 md:order-1">
           {
             data.query.h1 && (
               <h1 className="text-xl md:text-5xl font-bold text-center md:text-left text-neutral-700">{parse(data.query.h1)}</h1>
@@ -62,7 +62,7 @@ export default async function page({ searchParams }) {
             )
           }
         </div>
-        <div className="flex flex-col items-center justify-center flex-1">
+        <div className="flex flex-col items-center justify-center flex-1 order-1 md:order-2">
           <img src={data.query.image.src} alt={data.query.image.alt} className="w-full md:w-8/12" draggable={false} />
         </div>
       </section>
