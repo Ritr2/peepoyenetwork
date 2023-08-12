@@ -4,6 +4,7 @@ import Profile from '@/components/blogs/Profile';
 import Link from 'next/link';
 import { DM_Sans } from 'next/font/google';
 import { notFound } from 'next/navigation';
+import BlogsList from '@/components/blogs/BlogsList';
 
 const dmSans = DM_Sans({
   weight: ['400', '500', '700'],
@@ -36,23 +37,7 @@ export default async function page({ params }) {
       </section>
       <div className='flex flex-col md:flex-row w-full gap-8 px-7 py-7 md:py-14 md:px-36'>
         <div className=' flex flex-col w-full flex-1'>
-          <section className="flex flex-col md:flex-row w-full bg-white items-center justify-center">
-            <div className="flex flex-col md:flex-row flex-1 gap-5 md:gap-6 justify-center">
-              {
-                data.blogs.map((blog, index) => (
-                  <div key={index} className="flex flex-col w-full md:w-4/12 gap-3 rounded-lg items-center justify-between shadow-lg drop-shadow-lg bg-stone-100">
-                    <div className="flex flex-col w-full justify-center items-center">
-                      <img src={blog.image.src} alt={blog.image.alt} className="w-full rounded-t-lg h-auto" draggable={false} />
-                    </div>
-                    <h1 className="text-base md:text-base text-center text-neutral-700 px-3">{blog.title}</h1>
-                    <Link href={`/blogs/${blog.slug}`} className="flex rounded-b-lg p-2 text-base md:text-lg text-white flex-row items-center justify-center gap-2 w-full bg-neutral-600 hover:bg-neutral-700 active:bg-neutral-800">
-                      Read More
-                    </Link>
-                  </div>
-                ))
-              }
-            </div>
-          </section>
+          <BlogsList data={data.blogs} />
         </div>
         <Profile />
       </div>

@@ -77,10 +77,10 @@ export default async function page({ params }) {
                 data.blog.sections.map((section, index) => (
                   <div key={index} className="flex flex-col justify-center flex-1 gap-1">
                     {
-                      section.h1 && <h2 className="text-lg md:text-xl font-bold text-left text-neutral-900">{section.h1}</h2>
+                      section.h1 && <h2 className="text-lg md:text-xl font-bold text-left text-neutral-900">{parse(section.h1)}</h2>
                     }
                     {
-                      section.h2 && <h3 className="text-base md:text-lg font-bold text-left text-neutral-700">{section.h2}</h3>
+                      section.h2 && <h3 className="text-base md:text-lg font-bold text-left text-neutral-700">{parse(section.h2)}</h3>
                     }
                     {
                       section.p && <p className="text-base md:text-lg font-light text-left text-neutral-600">{parse(section.p)}</p>
@@ -95,10 +95,10 @@ export default async function page({ params }) {
                             section.subSections.map((subSection, index2) => (
                               <div key={index2} className="flex flex-col justify-center flex-1 gap-1">
                                 {
-                                  subSection.h1 && <h2 className="text-lg md:text-xl font-bold text-left text-neutral-900">{subSection.h1}</h2>
+                                  subSection.h1 && <h2 className="text-lg md:text-xl font-bold text-left text-neutral-900">{parse(subSection.h1)}</h2>
                                 }
                                 {
-                                  subSection.h2 && <h3 className="text-base md:text-lg font-bold text-left text-neutral-700">{subSection.h2}</h3>
+                                  subSection.h2 && <h3 className="text-base md:text-lg font-bold text-left text-neutral-700">{parse(subSection.h2)}</h3>
                                 }
                                 {
                                   subSection.p && <p className="text-base md:text-lg font-light text-left text-neutral-600">{parse(subSection.p)}</p>
@@ -122,16 +122,16 @@ export default async function page({ params }) {
             data.blog.advertisements.show && (
               <div className="flex flex-col md:flex-row justify-center flex-1 gap-2 border-y-2 border-neutral-500 py-5">
                 {data.blog.advertisements.image &&
-                  <div className="flex flex-col justify-center gap-2 rounded-lg  p-4">
+                  <div className="flex flex-col justify-center self-center gap-2 rounded-lg w-8/12 md:w-3/12 p-4">
                     <img src={data.blog.advertisements.image.src} alt={data.blog.advertisements.image.alt} className="w-full rounded-lg h-auto" draggable={false} />
                   </div>
                 }
-                <div className="flex flex-col justify-center gap-2 rounded-lg p-4">
+                <div className="flex flex-col justify-center gap-2 rounded-lg p-4 flex-1">
                   {
-                    data.blog.advertisements.h1 && <h2 className="text-lg md:text-xl font-bold text-left text-neutral-900">{data.blog.advertisements.h1}</h2>
+                    data.blog.advertisements.h1 && <h2 className="text-lg md:text-xl font-bold text-left text-neutral-900">{parse(data.blog.advertisements.h1)}</h2>
                   }
                   {
-                    data.blog.advertisements.h2 && <h3 className="text-base md:text-lg font-bold text-left text-neutral-700">{data.blog.advertisements.h2}</h3>
+                    data.blog.advertisements.h2 && <h3 className="text-base md:text-lg font-bold text-left text-neutral-700">{parse(data.blog.advertisements.h2)}</h3>
                   }
                   {
                     data.blog.advertisements.p && <p className="text-base md:text-lg font-light text-left text-neutral-600">{parse(data.blog.advertisements.p)}</p>
