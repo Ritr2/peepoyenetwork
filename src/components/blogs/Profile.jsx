@@ -34,7 +34,7 @@ export default async function Profile() {
         <div className='flex flex-col gap-1 justify-center'>
           {
             data.map((category, index) => (
-              <Link key={index} href={`/blogs/categories/${category.slug}`} className='flex flex-col gap-2 justify-center text-base md:text-base text-neutral-700 hover:text-neutral-800 hover:underline active:underline'>
+              <Link key={index} href={`/categories/${category.slug}`} className='flex flex-col gap-2 justify-center text-base md:text-base text-neutral-700 hover:text-neutral-800 hover:underline active:underline'>
                 {category.name}
               </Link>
             ))

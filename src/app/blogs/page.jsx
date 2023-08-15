@@ -4,6 +4,7 @@ import Link from 'next/link'
 import url from '@/utils/url'
 import Profile from '@/components/blogs/Profile'
 import BlogsList from '@/components/blogs/BlogsList'
+import { notFound } from 'next/navigation'
 
 const dmSans = DM_Sans({
   weight: '500',
@@ -25,9 +26,15 @@ export const metadata = {
 }
 
 async function getBlogs() {
-  const res = await fetch(`${url}/api/personal-blog`, { cache: 'no-cache' })
+  let res
+  try {
+    res = await fetch(`${url}/api/personal-blog`, { cache: 'no-cache' })
   if (!res.ok) {
     throw new Error('Failed to fetch data')
+  }
+  }
+  catch(err) {
+    notFound()
   }
   return res.json()
 }
