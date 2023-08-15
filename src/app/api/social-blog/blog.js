@@ -19,22 +19,15 @@ const blogdata = [
         h2: false,
         p: `During the second sawari of Baba Mahakal in Ujjain, some mischievous people climbed on the rooftop of a building and began spitting down below as the Mahakal Sawari passed on the street near Tanki Chowraha. This disrespectful and offensive act continued even after devotees warned them to stop. Shockingly, some people at the event recorded videos of the culprits spitting and shared them on social media platforms.<br/>As the videos went viral, officials from the Vishva Hindu Parishad and Bajrang Dal were deeply angered by the offensive act and protested at the police station. The authorities responded by registering a case against the accused individuals involved in this unacceptable behavior.<br/>Such actions of disrespect and insensitivity are deeply disheartening and should not be tolerated in any community. The Mahakal Sawari is a sacred event, and everyone should show respect during such religious processions. We must remember that we live in a diverse society where people from different faiths and beliefs coexist. It is crucial to have respect and tolerance among all community members. Acts of disrespect and provocation can only lead to tension and disharmony.`,
         image: false,
-        bulletPoints: false,
         html: false,
         subSections: false,
       }
     ],
     advertisements: {
       show: true,
-      h1: false,
-      h2: false,
-      p: false,
       image: {
         src: "/assets/images/social_awareness/blogs/private-club.png",
         alt: "Private Club",
-      },
-      button: {
-        text: "learn more",
         link: "https://akassh.co/dfy-yt",
       },
     }
@@ -59,22 +52,15 @@ const blogdata = [
         h2: false,
         p: `For the past two months, the 10-year-old girl had been working at the home of Poornima, a pilot at Indigo Airlines, and Kaushik, who works as ground staff for another airline. Tragically, the situation took a turn for the worse when the couple reportedly physically abused the young girl. The girl's relative witnessed their actions. Upon learning about the incident, a crowd gathered outside the couple's residence, expressing their anger and frustration at the mistreatment of an innocent child.<br/>The police were notified, and they acted swiftly by registering a case against Poornima and Kaushik under various sections of the Indian Penal Code, Child Labour Act, and Juvenile Justice Act. These legal actions were taken to ensure justice for the young girl and to send a strong message that child labor and abuse will not be tolerated in society.<br/>This incident is deeply troubling and disheartening. Children are meant to be protected, nurtured, and given access to education and opportunities to grow. It is unacceptable for adults, especially those in respectable positions, to exploit and mistreat innocent children in this manner.`,
         image: false,
-        bulletPoints: false,
         html: false,
-        subSections: false,
+        subSections: false
       }
     ],
     advertisements: {
       show: true,
-      h1: false,
-      h2: false,
-      p: false,
       image: {
         src: "/assets/images/social_awareness/blogs/private-club.png",
         alt: "Private Club",
-      },
-      button: {
-        text: "learn more",
         link: "https://akassh.co/dfy-yt",
       },
     }
