@@ -29,7 +29,7 @@ export default async function SideBar() {
           data.recentFive.map((blog, index) => (
             <div key={index} className='flex flex-row w-full gap-5'>
                 <Link href={`/social-awareness/blogs/${blog.slug}`} className='hover:underline'>
-                  <p className='text-lg text-neutral-600 line-clamp-3'>{blog.title}</p>
+                  <p className='text-base md:text-lg text-neutral-600 line-clamp-2'>{blog.title}</p>
                 </Link>
             </div>
           ))
@@ -41,7 +41,7 @@ export default async function SideBar() {
           data.monthlyArchive.map((blog, index) => (
             <div key={index} className='flex flex-row w-full gap-5'>
                 <Link href={`/social-awareness/archive/${blog}`} className='hover:underline'>
-                  <p className='text-lg text-neutral-600 line-clamp-3'>{converblogtomonth(blog)}</p>
+                  <p className='text-base md:text-lg text-neutral-600 line-clamp-2'>{converblogtomonth(blog)}</p>
                 </Link>
             </div>
           ))
@@ -52,8 +52,8 @@ export default async function SideBar() {
         {
           data.category.map((blog, index) => (
             <div key={index} className='flex flex-row w-full gap-5'>
-                <Link href={`/social-awareness/category/${blog.slug}`} className='hover:underline'>
-                  <p className='text-lg text-neutral-600 line-clamp-3'>{blog.name}</p>
+                <Link href={`/social-awareness/categories/${blog.slug}`} className='hover:underline'>
+                  <p className='text-base md:text-lg text-neutral-600 line-clamp-2'>{blog.name}</p>
                 </Link>
                 </div>
           ))

@@ -38,13 +38,13 @@ export default async function page() {
         <div className=' flex flex-col w-full md:w-8/12 gap-10'>
           {
             data.map((blog, index) => (
-              <div key={index} className='flex flex-row w-full gap-8'>
-                <div className='flex flex-col gap-2 w-7/12'>
-                  <h1 className='text-2xl font-bold text-neutral-700'>{blog.title}</h1>
-                  <p className='text-lg text-neutral-600 line-clamp-3'>{blog.summary}</p>
-                  <Link href={`/social-awareness/blogs/${blog.slug}`} className='text-lg text-primary-500 font-semibold'>Read More</Link>
+              <div key={index} className='flex flex-col md:flex-row w-full gap-8'>
+                <div className='flex flex-col gap-2 w-full md:w-7/12 order-2 md:order-1'>
+                  <h1 className='text-xl md:text-2xl font-bold text-neutral-700'>{blog.title}</h1>
+                  <p className='text-base md:text-lg text-neutral-600 line-clamp-3'>{blog.summary}</p>
+                  <Link href={`/social-awareness/blogs/${blog.slug}`} className='text-base md:text-lg text-primary-500 font-semibold'>Read More</Link>
                 </div>
-                <div className='flex flex-col w-full flex-1'>
+                <div className='flex flex-col w-full flex-1 order-1 md:order-2'>
                   <Link href={`/social-awareness/blogs/${blog.slug}`} className='hover:scale-105 '>
                     <img src={blog.image.src} alt={blog.image.alt} className='w-full h-full rounded-xl' />
                   </Link>
