@@ -39,7 +39,7 @@ export default async function page({params}) {
       <div className='flex flex-col md:flex-row w-full gap-8 px-7 py-7 md:py-14 md:px-36'>
         <div className=' flex flex-col w-full md:w-8/12 gap-10'>
           {
-            data.blog.length === 0 ? <h1 className='text-5xl font-bold text-center text-neutral-700'>No Blogs Found</h1>:<BlogsList blogs={data.blog} />
+            data.blog.length === 0 ? <h1 className='text-5xl font-bold text-center text-neutral-700'>No Blogs Found</h1>:<BlogsList data={data.blog} />
           }
         </div>
         <div className='flex flex-col w-full flex-1'>
