@@ -31,7 +31,7 @@ const blogdata = [
       image: {
         src: "/assets/images/social_awareness/blogs/private-club.png",
         alt: "Private Club",
-        link: "https://akassh.co/dfy-yt",
+        link: "https://akassh.co/support-peepoye",
       },
     },
     referBlog: {
@@ -111,7 +111,7 @@ const blogdata = [
       image: {
         src: "/assets/images/social_awareness/blogs/private-club.png",
         alt: "Private Club",
-        link: "https://akassh.co/dfy-yt",
+        link: "https://akassh.co/support-peepoye",
       },
     },
     referBlog: {
@@ -152,7 +152,7 @@ const blogdata = [
       image: {
         src: "/assets/images/social_awareness/blogs/private-club.png",
         alt: "Private Club",
-        link: "https://akassh.co/dfy-yt",
+        link: "https://akassh.co/support-peepoye",
       },
     },
     referBlog: {
@@ -193,7 +193,7 @@ const blogdata = [
       image: {
         src: "/assets/images/social_awareness/blogs/private-club.png",
         alt: "Private Club",
-        link: "https://akassh.co/dfy-yt",
+        link: "https://akassh.co/support-peepoye",
       },
     },
     referBlog: {
@@ -254,7 +254,7 @@ const blogdata = [
       image: {
         src: "/assets/images/social_awareness/blogs/private-club.png",
         alt: "Private Club",
-        link: "https://akassh.co/dfy-yt",
+        link: "https://akassh.co/support-peepoye",
       },
     },
     referBlog: {
@@ -289,7 +289,7 @@ const blogdata = [
       image: {
         src: "/assets/images/social_awareness/blogs/private-club.png",
         alt: "Private Club",
-        link: "https://akassh.co/dfy-yt",
+        link: "https://akassh.co/support-peepoye",
       },
     },
     referBlog: {
@@ -327,7 +327,7 @@ const blogdata = [
       image: {
         src: "/assets/images/social_awareness/blogs/private-club.png",
         alt: "Private Club",
-        link: "https://akassh.co/dfy-yt",
+        link: "https://akassh.co/support-peepoye",
       },
     },
     referBlog: {
@@ -365,7 +365,7 @@ const blogdata = [
       image: {
         src: "/assets/images/social_awareness/blogs/private-club.png",
         alt: "Private Club",
-        link: "https://akassh.co/dfy-yt",
+        link: "https://akassh.co/support-peepoye",
       },
     },
     referBlog: {
