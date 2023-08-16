@@ -62,12 +62,12 @@ export default async function page({ params }) {
   const { slug } = params
   const data = await fetchPosts(slug)
   return (
-    <main className={`relative flex min-h-screen flex-col items-center mt-16 ${dmSans.className} overflow-x-hidden`}>
+    <main className={`relative flex min-h-screen social-blog-section flex-col items-center mt-16 ${dmSans.className} overflow-x-hidden`}>
       <div className=' flex flex-col md:flex-row w-full gap-8 px-2 py-12 md:py-24 md:px-40'>
         <section className="flex flex-col w-full gap-5 justify-center md:w-8/12">
           <div className="flex flex-col justify-center w-full border-y-2 border-stone-200  py-2 flex-1 gap-2 md:gap-5">
             <span className='text-left text-base text-neutral-500'>
-              <Link href={`/blogs`}>Social Blog</Link> / <Link href={`/social-awareness/blogs/categories/${data.category.slug}`}>{data.category.name}</Link> / <Link href={`/social-awareness/blogs/${data.blog.slug}`}>{data.blog.title}</Link>
+              <Link href={`/social-awareness/blogs`}>Social Blog</Link> / <Link href={`/social-awareness/categories/${data.category.slug}`}>{data.category.name}</Link> / <Link href={`/social-awareness/blogs/${data.blog.slug}`}>{data.blog.title}</Link>
             </span>
           </div>
           <div className="flex flex-col justify-center flex-1 gap-2">
@@ -161,12 +161,20 @@ export default async function page({ params }) {
             </section>
           </div>
           {
+            data.blog.referBlog.show && (
+              <div className="flex flex-col justify-center flex-1 gap-2 rounded-lg bg-neutral-300 p-4">
+                <p className="text-base md:text-lg text-left font-bold text-neutral-900"> Also Read : <Link href={`/social-awareness/blogs/${data.blog.referBlog.slug}`} className='font-light hover:underline text-blue-700'>{data.blog.referBlog.title}</Link>
+                </p>
+              </div>
+            )
+          }
+          {
             data.blog.advertisements.show && (
               <div className="flex flex-col md:flex-row justify-center flex-1 gap-2 border-y-2 border-neutral-500 py-5">
                 {data.blog.advertisements.image &&
                   <div className="flex flex-col justify-center self-center gap-2 rounded-lg w-full p-4">
-                    <Link href = {data.blog.advertisements.image.link} target="_blank" rel="noopener noreferrer">
-                    <img src={data.blog.advertisements.image.src} alt={data.blog.advertisements.image.alt} className="w-full rounded-lg h-auto" draggable={false} />
+                    <Link href={data.blog.advertisements.image.link} target="_blank" rel="noopener noreferrer">
+                      <img src={data.blog.advertisements.image.src} alt={data.blog.advertisements.image.alt} className="w-full rounded-lg h-auto" draggable={false} />
                     </Link>
                   </div>
                 }
@@ -177,7 +185,7 @@ export default async function page({ params }) {
         <div className='w-full flex-1 flex flex-col'>
           <SideBar />
         </div>
-      </div>
-    </main>
+      </div >
+    </main >
   )
 }

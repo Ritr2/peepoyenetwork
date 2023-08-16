@@ -15,6 +15,8 @@ export async function GET(req, { params }) {
 
   const blog = blogdata.filter((blog) => {
     return blog.category_id === category.id;
+  }).sort((a, b) => {
+    return new Date(b.date) - new Date(a.date);
   });
 
   return NextResponse.json({blog, category});

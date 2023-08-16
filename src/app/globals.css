@@ -66,3 +66,9 @@
 .animate-percentage {
   animation: width0to100 20s linear infinite forwards;
 }
+
+.social-blog-section br{
+  display: block;
+  content: "";
+  margin: 18px 0;
+}
