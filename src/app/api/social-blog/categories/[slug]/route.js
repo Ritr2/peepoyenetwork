@@ -13,10 +13,24 @@ export async function GET(req, { params }) {
     return NextResponse.json({ error: "Category not found" }, { status: 404 });
   }
 
-  const blog = blogdata.filter((blog) => {
+  const tempdata = blogdata.filter((blog) => {
     return blog.category_id === category.id;
   }).sort((a, b) => {
     return new Date(b.date) - new Date(a.date);
+  });
+
+  const blog = tempdata.map((item) => {
+    return {
+      id: item.id,
+      title: item.title,
+      slug: item.slug,
+      date: item.date,
+      summary: item.summary,
+      image: {
+        src: item.image.src,
+        alt: item.image.alt,
+      }
+    };
   });
 
   return NextResponse.json({blog, category});

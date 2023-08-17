@@ -21,16 +21,16 @@ export default function Footer() {
         <div className="flex flex-col gap-5 justify-start">
           <h2 className="mt-2 md:mt-0 text-xl md:text-2xl font-sans font-semibold text-center md:text-left text-white">Stay connected with Akassh Daily</h2>
           <div className="flex flex-row gap-5 items-center justify-between">
-          <a href='https://www.youtube.com/@peepoye' target="_blank" rel="noopener noreferrer"><img src="/assets/images/social_media/youtube.png" className="w-14 md:w-16 h-auto" /></a>
-            <a href='https://www.instagram.com/peepoye/' target="_blank" rel="noopener noreferrer"><img src="/assets/images/social_media/instagram.png" className="w-14 md:w-16 h-auto" /></a>
-            <a href='https://www.facebook.com/peepoye' target="_blank" rel="noopener noreferrer"><img src="/assets/images/social_media/facebook.png" className="w-14 md:w-16 h-auto" /></a>
-            <a href='https://twitter.com/peepoye_' target="_blank" rel="noopener noreferrer"><img src="/assets/images/social_media/twitter.png" className="w-14 md:w-16 h-auto" /></a>
+          <a href='https://www.youtube.com/@peepoye' target="_blank" rel="noopener noreferrer"><img src="https://i.postimg.cc/sD2qVC87/youtube.png" className="w-14 md:w-16 h-auto" /></a>
+            <a href='https://www.instagram.com/peepoye/' target="_blank" rel="noopener noreferrer"><img src="https://i.postimg.cc/t4Zcxt9g/instagram.png" className="w-14 md:w-16 h-auto" /></a>
+            <a href='https://www.facebook.com/peepoye' target="_blank" rel="noopener noreferrer"><img src="https://i.postimg.cc/1Xvdpvg8/facebook.png" className="w-14 md:w-16 h-auto" /></a>
+            <a href='https://twitter.com/peepoye_' target="_blank" rel="noopener noreferrer"><img src="https://i.postimg.cc/hP3wv3Ww/twitter.png" className="w-14 md:w-16 h-auto" /></a>
           </div>
         </div>
       </div>
       <div className='flex flex-row gap-2 mt-10 w-full items-center z-10'>
         <div className="flex flex-col gap-2 w-2 border-b-2 flex-1" />
-        <img src="/assets/images/akassh_signature.jpg" className="w-40 md:w-52 h-auto" />
+        <img src="https://i.postimg.cc/pXPLWrYr/akassh-signature.png" className="w-40 md:w-52 h-auto" />
         <div className="flex flex-col gap-2 w-2 border-b-2 flex-1" />
       </div>
       <div className="flex md:flex-row flex-col gap-3 mt-10 w-full items-center justify-between z-10">

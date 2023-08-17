@@ -3,7 +3,7 @@ const data = {
     count: 1.14,
     countSuffix: 'M+',
     image: {
-      src: '/assets/images/social_media/youtube.png',
+      src: 'https://i.postimg.cc/sD2qVC87/youtube.png',
       alt: 'Youtube',
     },
     bottomText: 'Subscribers',
@@ -12,7 +12,7 @@ const data = {
     count: 51.5,
     countSuffix: 'K+',
     image: {
-      src: '/assets/images/social_media/instagram.png',
+      src: 'https://i.postimg.cc/t4Zcxt9g/instagram.png',
       alt: 'Instagram',
     },
     bottomText: 'Followers',
@@ -21,7 +21,7 @@ const data = {
     count: 62.9,
     countSuffix: 'K+',
     image: {
-      src: '/assets/images/social_media/twitter.png',
+      src: 'https://i.postimg.cc/hP3wv3Ww/twitter.png',
       alt: 'Twitter',
     },
     bottomText: 'Followers',
@@ -30,7 +30,7 @@ const data = {
     count: 102,
     countSuffix: 'K+',
     image: {
-      src: '/assets/images/social_media/facebook.png',
+      src: 'https://i.postimg.cc/1Xvdpvg8/facebook.png',
       alt: 'Facebook',
     },
     bottomText: 'Followers',

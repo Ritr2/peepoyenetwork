@@ -145,7 +145,7 @@ export default async function page({ searchParams }) {
           </div>
         </div>
         <div className="flex flex-col items-center self-end flex-1 w-full">
-          <img src="/assets/images/akasshashokgupta.webp" alt="Akassh ashok Gupta" className="w-full" draggable={false} />
+          <img src="https://i.postimg.cc/HW9ThHDg/akasshashokgupta.webp" alt="Akassh ashok Gupta" className="w-full" draggable={false} />
         </div>
       </section>
       <section className="flex w-full flex-col py-10 px-2 md:px-40">

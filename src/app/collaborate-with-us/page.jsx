@@ -141,7 +141,7 @@ export default function page() {
         <SocialMediaDetails />
         <div className="flex flex-col md:flex-row w-full justify-center gap-0 md:gap-10">
           <div className="flex flex-col items-center md:w-1/2 justify-end gap-2">
-            <img src='/assets/images/collaborate_with_us/akasshashokgupta.png' alt='Akassh Ashok Gupta' className='w-full h-auto' />
+            <img src='https://i.postimg.cc/7YhrNSK7/akasshashokgupta.png' alt='Akassh Ashok Gupta' className='w-full h-auto' />
           </div>
           <div className="flex flex-col flex-1 gap-1 md:gap-2">
             <h2 className="text-xl md:text-3xl font-bold text-center md:text-left text-neutral-600">ABOUT AKASSH ASHOK GUPTA</h2>

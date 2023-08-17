@@ -7,7 +7,7 @@ const data = {
       link: '/community'
     },
     image: {
-      src: '/assets/images/community.jpg',
+      src: 'https://i.postimg.cc/KjfFk7rz/community.jpg',
       alt: 'Community',
     },
   },
@@ -19,7 +19,7 @@ const data = {
       link: '/mentorship'
     },
     image: {
-      src: '/assets/images/mentorship.png',
+      src: 'https://i.postimg.cc/NFBBjCXS/mentorship.png',
       alt: 'Mentorship',
     },
   },
@@ -31,7 +31,7 @@ const data = {
       link: '/blog'
     },
     image: {
-      src: '/assets/images/career-blog.png',
+      src: 'https://i.postimg.cc/8kmfQgBD/choosing-the-right-career-the-4p-rule.png',
       alt: 'Blog',
     },
   }

@@ -68,7 +68,7 @@ export default async function page({ searchParams }) {
       </section>
       <section className="flex flex-col md:flex-row items-center justify-center md:gap-10 py-20">
         <div className="flex flex-col items-center self-end flex-1">
-          <img src='/assets/images/guide_if/thankyou.png' alt="Akassh ashok Gupta" className="w-full" draggable={false} />
+          <img src='https://i.postimg.cc/fTzmqRdY/thankyou.png' alt="Akassh ashok Gupta" className="w-full" draggable={false} />
         </div>
         <div className="flex flex-col justify-center gap-2 md:gap-5 pb-8 w-full md:w-6/12">
           <h1 className="text-xl md:text-4xl font-bold text-center md:text-left text-neutral-700">To Learn More from <br /><span className='text-red-600'>Akassh Ashok Gupta</span>

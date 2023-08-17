@@ -7,7 +7,7 @@ const data = {
       link: 'https://opinions.peepoye.com/'
     },
     image: {
-      src: '/assets/images/social_awareness/bekhauf_opinion.png',
+      src: 'https://i.postimg.cc/sgmM5Smt/bekhauf-opinion.png',
       alt: 'Bekhauf Opinion',
     },
   },
@@ -19,7 +19,7 @@ const data = {
       link: 'https://www.youtube.com/@peepoye'
     },
     image: {
-      src: '/assets/images/social_awareness/bekhauf_videos.png',
+      src: 'https://i.postimg.cc/g00nsJBr/bekhauf-videos.png',
       alt: 'Bekhauf Videos',
     },
   },
@@ -31,7 +31,7 @@ const data = {
       link: 'https://peepoye.com/blog'
     },
     image: {
-      src: '/assets/images/social_awareness/bekhauf_blogs.png',
+      src: 'https://i.postimg.cc/Nfh2tQLP/bekhauf-blogs.png',
       alt: 'Bekhauf Blogs',
     },
   },

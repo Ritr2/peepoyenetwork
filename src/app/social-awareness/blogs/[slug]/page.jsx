@@ -109,6 +109,14 @@ export default async function page({ params }) {
                             <VideoPlayer url={section.html.value} />
                           </div>
                         }
+                        {
+                          section.html.type === 'poll' &&
+                          <div className='flex flex-col justify-center items-center'>
+                            <Link href={section.html.value} target="_blank" rel="noopener noreferrer">
+                              <img src={section.html.image.src} alt={section.html.image.alt} className="w-full rounded-lg h-auto" draggable={false} />
+                            </Link>
+                          </div>
+                        }
                       </div>
                     }
                     {
@@ -124,7 +132,7 @@ export default async function page({ params }) {
                                   subSection.h1 && <h2 className="text-lg md:text-xl font-bold text-left text-neutral-900">{parse(subSection.h1)}</h2>
                                 }
                                 {
-                                  subSection.h2 && <h3 className="text-base md:text-lg font-bold text-left text-neutral-700">{parse(subSection.h2)}</h3>
+                                  subSection.h2 && <h3 className="text-base md:text-lg font-bold text-left text-neutral-600">{parse(subSection.h2)}</h3>
                                 }
                                 {
                                   subSection.p && <p className="text-base md:text-lg font-light text-left text-neutral-600">{parse(subSection.p)}</p>
@@ -141,6 +149,14 @@ export default async function page({ params }) {
                                       subSection.html.type === 'youtube' &&
                                       <div className='flex flex-col justify-center items-center'>
                                         <VideoPlayer url={subSection.html.value} />
+                                      </div>
+                                    }
+                                    {
+                                      subSection.html.type === 'poll' &&
+                                      <div className='flex flex-col justify-center items-center'>
+                                        <Link href={subSection.html.value} target="_blank" rel="noopener noreferrer">
+                                          <img src={subSection.html.image.src} alt={subSection.html.image.alt} className="w-full rounded-lg h-auto" draggable={false} />
+                                        </Link>
                                       </div>
                                     }
                                   </div>

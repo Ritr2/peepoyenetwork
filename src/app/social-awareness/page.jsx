@@ -1,8 +1,5 @@
 import React from 'react'
 import { DM_Sans } from 'next/font/google'
-import Image from 'next/image'
-import image from '@/assets/akasshashokgupta3.png'
-import image2 from '@/assets/akassh_signature.jpg'
 import SocialMediaDetails from '@/components/SocialMediaDetails'
 import data from '@/utils/socialawareness_sections'
 import FeatureSection from '@/components/FeatureSection'
@@ -21,10 +18,10 @@ export default function page() {
           <span className="text-xl md:text-2xl font-normal text-center md:text-left text-neutral-700">यहाँ मिलेगी बस</span>
           <h1 className="text-3xl md:text-6xl font-bold text-center md:text-left text-neutral-700">Bekhauf Opinion</h1>
           <h2 className="text-lg md:text-2xl font-normal text-center md:text-left text-neutral-700">Kyuki Ab Kuch Nahi Chupega</h2>
-          <Image src={image2} alt="Akassh ashok Gupta" width={400} height={400} className="w-8/12 md:w-5/12 mt-3 self-center md:self-start" />
+          <img src="https://i.postimg.cc/W1qXYNFp/akassh-signature.jpg" alt="Akassh ashok Gupta" className="w-8/12 md:w-5/12 mt-3 self-center md:self-start" />
         </div>
         <div className="flex flex-col items-center justify-center flex-1">
-          <Image src={image} alt="Akassh ashok Gupta" width={1000} height={1000} className="w-full"  draggable={false} />
+          <img src="https://i.postimg.cc/sgKHZ6h7/akasshashokgupta3.png" alt="Akassh ashok Gupta" className="w-full"  draggable={false} />
         </div>
       </section>
       <SocialMediaDetails />

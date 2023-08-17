@@ -1,7 +1,5 @@
 import React from 'react'
 import { DM_Sans } from 'next/font/google'
-import Image from 'next/image'
-import image from '@/assets/akasshashokgupta.webp'
 import data from '@/utils/mentoring/expect_sections'
 import BoxContainer from '@/components/mentoring/BoxContainer'
 import DynamicForm from '@/components/mentoring/DynamicForm'
@@ -29,7 +27,7 @@ export default function Mentoring() {
           </div>
         </div>
         <div className="flex flex-col items-center justify-center flex-1 order-2">
-          <Image src={image} alt="Akassh ashok Gupta" width={1000} height={1000} className="w-full" draggable={false} />
+          <img src='https://i.postimg.cc/HW9ThHDg/akasshashokgupta.webp' alt="Akassh ashok Gupta" className="w-full" draggable={false} />
         </div>
       </section>
       <section className="flex flex-col items-center w-full justify-center gap-10 bg-stone-100 px-5 py-16 md:px-52 overflow-hidden">
@@ -49,7 +47,7 @@ export default function Mentoring() {
         <div className="flex flex-col md:flex-row w-full justify-center items-center gap-7">
           <DynamicForm />
           <div className="flex flex-col flex-1 justify-center items-center gap-2 w-full md:w-1/2">
-            <img src="/assets/images/mentoring/akasshashokgupta.png" alt="Akassh ashok Gupta" className="w-full" draggable={false} />
+            <img src="https://i.postimg.cc/yYCs7DjS/akasshashokgupta.png" alt="Akassh ashok Gupta" className="w-full" draggable={false} />
           </div>
         </div>
       </section>

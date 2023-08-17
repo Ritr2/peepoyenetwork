@@ -1,7 +1,5 @@
 import React from 'react'
 import { DM_Sans } from 'next/font/google'
-import Image from 'next/image'
-import image from '@/assets/akasshashokgupta2.png'
 import Experience from '@/components/Experience'
 import FeatureSection from '@/components/FeatureSection'
 import data from '@/utils/about_sections'
@@ -19,7 +17,7 @@ export default function About() {
           <h1 className="text-3xl md:text-6xl font-bold text-center md:text-left text-neutral-700 md:mb-3">Founder&apos;s Journey</h1>
         </div>
         <div className="flex flex-col items-center justify-center flex-1">
-          <Image src={image} alt="Akassh ashok Gupta" width={1000} height={1000} className="w-full"  draggable={false} />
+          <img src="https://i.postimg.cc/wj9bM879/akasshashokgupta2.png" alt="Akassh ashok Gupta" className="w-full"  draggable={false} />
         </div>
       </section>
       <Experience />
