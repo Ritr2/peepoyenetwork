@@ -72,3 +72,13 @@
   content: "";
   margin: 18px 0;
 }
+
+.social-anchor-tag a {
+  color: #1e00b5;
+  text-decoration: none;
+}
+
+.social-anchor-tag a:hover {
+  color: #1e00b5;
+  text-decoration: underline;
+}

@@ -7,6 +7,7 @@ import url from '@/utils/url'
 import SideBar from '@/components/social-blogs/SideBar'
 import { Tweet } from 'react-tweet';
 import dynamic from "next/dynamic";
+import InstagramPost from '@/components/InstagramPost'
 
 
 const VideoPlayer = dynamic(() => import('@/components/VideoPlayer'), { ssr: false });
@@ -63,7 +64,7 @@ export default async function page({ params }) {
   const data = await fetchPosts(slug)
   return (
     <main className={`relative flex min-h-screen social-blog-section flex-col items-center mt-16 ${dmSans.className} overflow-x-hidden`}>
-      <div className=' flex flex-col md:flex-row w-full gap-8 px-2 py-12 md:py-24 md:px-40'>
+      <div className=' flex flex-col md:flex-row w-full gap-8 px-2 py-12 md:py-24 md:px-40 items-start'>
         <section className="flex flex-col w-full gap-5 justify-center md:w-8/12">
           <div className="flex flex-col justify-center w-full border-y-2 border-stone-200  py-2 flex-1 gap-2 md:gap-5">
             <span className='text-left text-base text-neutral-500'>
@@ -78,28 +79,29 @@ export default async function page({ params }) {
             <div className="flex flex-col justify-center flex-1 gap-2">
               <img src={data.blog.image.src} alt={data.blog.image.alt} className="w-full rounded-lg h-auto" draggable={false} />
             </div>
-            <div className="flex flex-col justify-center flex-1 gap-2 rounded-lg bg-neutral-300 p-4">
-              <h2 className="text-lg md:text-xl font-bold text-left text-neutral-700">30-sec summary</h2>
-              <p className="text-base md:text-lg font-light text-left text-neutral-900">{parse(data.blog.summary)}</p>
-            </div>
+            {data.blog.summary &&
+              <div className="flex flex-col justify-center flex-1 gap-2 rounded-lg bg-neutral-300 p-4">
+                <h2 className="text-lg md:text-xl font-bold text-left text-neutral-700">30-sec summary</h2>
+                <p className="text-base md:text-lg font-light text-left text-neutral-900">{parse(data.blog.summary)}</p>
+              </div>}
             <section className="sectionAnchor flex flex-col justify-center flex-1 gap-5 rounded-lg  p-4">
               {
                 data.blog.sections.map((section, index) => (
                   <div key={index} className="flex flex-col justify-center flex-1 gap-1">
                     {
-                      section.h1 && <h2 className="text-lg md:text-xl font-bold text-left text-neutral-900">{parse(section.h1)}</h2>
+                      section.h1 && <h2 className="text-lg md:text-xl font-bold text-left social-anchor-tag text-neutral-900">{parse(section.h1)}</h2>
                     }
                     {
-                      section.h2 && <h3 className="text-base md:text-lg font-bold text-left text-neutral-700">{parse(section.h2)}</h3>
+                      section.h2 && <h3 className="text-base md:text-lg font-bold text-left social-anchor-tag text-neutral-700">{parse(section.h2)}</h3>
                     }
                     {
-                      section.p && <p className="text-base md:text-lg font-light text-left text-neutral-600">{parse(section.p)}</p>
+                      section.p && <p className="text-base md:text-lg font-light social-anchor-tag text-left text-neutral-600">{parse(section.p)}</p>
                     }
                     {
-                      section.html && <div className="self-center text-base md:text-lg font-light text-left text-neutral-600">
+                      section.html && <div className="self-center text-base md:text-lg font-light text-left text-neutral-600 w-full my-6">
                         {
                           section.html.type === 'twitter' &&
-                          <div data-theme="light">
+                          <div className='flex flex-col justify-center items-center' data-theme="light">
                             <Tweet id={section.html.value} />
                           </div>
                         }
@@ -107,6 +109,12 @@ export default async function page({ params }) {
                           section.html.type === 'youtube' &&
                           <div className='flex flex-col justify-center items-center'>
                             <VideoPlayer url={section.html.value} />
+                          </div>
+                        }
+                        {
+                          section.html.type === 'instagram' &&
+                          <div className='flex flex-col justify-center items-center w-full'>
+                            <InstagramPost url={section.html.value} />
                           </div>
                         }
                         {
@@ -129,19 +137,19 @@ export default async function page({ params }) {
                             section.subSections.map((subSection, index2) => (
                               <div key={index2} className="flex flex-col justify-center flex-1 gap-1">
                                 {
-                                  subSection.h1 && <h2 className="text-lg md:text-xl font-bold text-left text-neutral-900">{parse(subSection.h1)}</h2>
+                                  subSection.h1 && <h2 className="text-lg md:text-xl font-bold text-left social-anchor-tag text-neutral-900">{parse(subSection.h1)}</h2>
                                 }
                                 {
-                                  subSection.h2 && <h3 className="text-base md:text-lg font-bold text-left text-neutral-600">{parse(subSection.h2)}</h3>
+                                  subSection.h2 && <h3 className="text-base md:text-lg font-bold text-left social-anchor-tag text-neutral-600">{parse(subSection.h2)}</h3>
                                 }
                                 {
-                                  subSection.p && <p className="text-base md:text-lg font-light text-left text-neutral-600">{parse(subSection.p)}</p>
+                                  subSection.p && <p className="text-base md:text-lg font-light text-left social-anchor-tag text-neutral-600">{parse(subSection.p)}</p>
                                 }
                                 {
-                                  subSection.html && <div className="self-center text-base md:text-lg font-light text-left text-neutral-600">
+                                  subSection.html && <div className="self-center text-base md:text-lg font-light social-anchor-tag text-left text-neutral-600 w-full my-6">
                                     {
                                       subSection.html.type === 'twitter' &&
-                                      <div data-theme="light">
+                                      <div className='flex flex-col justify-center items-center' data-theme="light">
                                         <Tweet id={subSection.html.value} />
                                       </div>
                                     }
@@ -149,6 +157,12 @@ export default async function page({ params }) {
                                       subSection.html.type === 'youtube' &&
                                       <div className='flex flex-col justify-center items-center'>
                                         <VideoPlayer url={subSection.html.value} />
+                                      </div>
+                                    }
+                                    {
+                                      subSection.html.type === 'instagram' &&
+                                      <div className='flex flex-col justify-center items-center w-full'>
+                                        <InstagramPost url={subSection.html.value} />
                                       </div>
                                     }
                                     {

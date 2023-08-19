@@ -29,7 +29,8 @@ export async function GET(req, { params }) {
       image: {
         src: item.image.src,
         alt: item.image.alt,
-      }
+      },
+      description: item.description,
     };
   });
 

@@ -7,6 +7,13 @@ export default function VideoPlayer({url}) {
     <div className='w-full h-full'>
        <ReactPlayer
         url={url}
+        width={'100%'}
+        height={'400px'}
+        style={{
+          selfAlign: 'center',
+          margin: 'auto',
+        }}
+        controls={true}
       />
     </div>
   )

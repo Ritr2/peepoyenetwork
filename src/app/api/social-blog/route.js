@@ -17,7 +17,8 @@ export async function GET(req) {
       image: {
         src: item.image.src,
         alt: item.image.alt,
-      }
+      },
+      description: item.description,
     };
   });
   return NextResponse.json(data);

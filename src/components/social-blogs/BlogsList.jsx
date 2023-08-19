@@ -6,7 +6,7 @@ import ReactPaginate from 'react-paginate';
 
 export default function BlogsList({data}) {
   const [itemOffset, setItemOffset] = useState(0);
-  const itemsPerPage = 6;
+  const itemsPerPage = 8;
 
   const endOffset = itemOffset + itemsPerPage;
 
@@ -27,7 +27,10 @@ export default function BlogsList({data}) {
               <div key={index} className='flex flex-col md:flex-row w-full gap-8'>
                 <div className='flex flex-col gap-2 w-full md:w-7/12 order-2 md:order-1'>
                   <h1 className='text-xl md:text-2xl font-bold text-neutral-700'>{blog.title}</h1>
-                  <p className='text-base md:text-lg text-neutral-600 line-clamp-3'>{blog.summary}</p>
+                  {
+                    blog.summary ? <p className='text-base md:text-lg text-neutral-600 line-clamp-3'>{blog.summary}</p> :
+                    <p className='text-base md:text-lg text-neutral-600 line-clamp-3'>{blog.description}</p>
+                  }
                   <Link href={`/social-awareness/blogs/${blog.slug}`} className='text-base md:text-lg text-primary-500 font-semibold text-blue-700 hover:underline'>Read More</Link>
                 </div>
                 <div className='flex flex-col w-full flex-1 order-1 md:order-2'>
