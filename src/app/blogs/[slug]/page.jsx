@@ -80,7 +80,7 @@ export default async function page({ params }) {
                       section.h1 && <h2 className="text-lg md:text-xl font-bold text-left text-neutral-900">{parse(section.h1)}</h2>
                     }
                     {
-                      section.h2 && <h3 className="text-base md:text-lg font-bold text-left text-neutral-700">{parse(section.h2)}</h3>
+                      section.h2 && <h3 className="text-lg md:text-xl font-bold text-left text-neutral-700">{parse(section.h2)}</h3>
                     }
                     {
                       section.p && <p className="text-base md:text-lg font-light text-left text-neutral-600">{parse(section.p)}</p>
@@ -98,7 +98,7 @@ export default async function page({ params }) {
                                   subSection.h1 && <h2 className="text-lg md:text-xl font-bold text-left text-neutral-900">{parse(subSection.h1)}</h2>
                                 }
                                 {
-                                  subSection.h2 && <h3 className="text-base md:text-lg font-bold text-left text-neutral-700">{parse(subSection.h2)}</h3>
+                                  subSection.h2 && <h3 className="text-lg md:text-xl font-bold text-left text-neutral-700">{parse(subSection.h2)}</h3>
                                 }
                                 {
                                   subSection.p && <p className="text-base md:text-lg font-light text-left text-neutral-600">{parse(subSection.p)}</p>
