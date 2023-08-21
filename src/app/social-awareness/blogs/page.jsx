@@ -12,7 +12,7 @@ const dmSans = DM_Sans({
   subsets: ['latin'],
 })
 
-async function getSocialBlogs() {
+export async function getSocialBlogs() {
   let res
   try {
     res = await fetch(`${url}/api/social-blog`, { cache: 'no-cache' })

@@ -25,7 +25,7 @@ export const metadata = {
   canonical: 'https://peepoye.com/blogs'
 }
 
-async function getBlogs() {
+export async function getBlogs() {
   let res
   try {
     res = await fetch(`${url}/api/personal-blog`, { cache: 'no-cache' })

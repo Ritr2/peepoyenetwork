@@ -10,7 +10,7 @@ const data = {
       },
       button: {
         text: 'Read More',
-        link: 'https://peepoye.com/audit'
+        link: 'https://akassh.peepoye.com/audit-report'
       },
     },
     {
@@ -34,7 +34,7 @@ const data = {
       },
       button: {
         text: 'Read More',
-        link: 'https://peepoye.com/revenue-prediction-tool'
+        link: 'https://akassh.peepoye.com/youtube-revenue-calculator'
       },
     },
   ],
@@ -48,7 +48,7 @@ const data = {
       },
       button: {
         text: 'Read More',
-        link: '/guide-brb'
+        link: 'https://akassh.peepoye.com/guide-brb'
       },
     }
   ],
