@@ -26,7 +26,7 @@ export default function BlogsList({data}) {
             currentItems.map((blog, index) => (
               <div key={index} className='flex flex-col md:flex-row w-full gap-8'>
                 <div className='flex flex-col gap-2 w-full md:w-7/12 order-2 md:order-1'>
-                  <h1 className='text-xl md:text-2xl font-bold text-neutral-700'>{blog.title}</h1>
+                <Link href={`/social-awareness/blogs/${blog.slug}`}><h1 className='text-xl md:text-2xl font-bold text-neutral-700'>{blog.title}</h1></Link>
                   {
                     blog.summary ? <p className='text-base md:text-lg text-neutral-600 line-clamp-3'>{blog.summary}</p> :
                     <p className='text-base md:text-lg text-neutral-600 line-clamp-3'>{blog.description}</p>
