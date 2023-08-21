@@ -17,7 +17,7 @@ const data = [ {
     active: true,
     button: {
       text: 'Read More',
-      link: 'https://peepoye.com/white-membership'
+      link: 'https://akassh.co/accelerator-prebook'
   },
   },
  {
