@@ -24,7 +24,12 @@ export async function generateMetadata({ params }) {
     openGraph: {
       title: `${data.blog.title} - Peepoye`,
       description: data.blog.description,
-      image: data.blog.image.src,
+      images: [
+        {
+          url: data.blog.image.src,
+          alt: data.blog.image.alt,
+        },
+      ],
       url: `https://peepoye.com/blogs/${data.blog.slug}`,
       type: 'article',
       article: {
