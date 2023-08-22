@@ -1,32 +1,6 @@
+import { getBlogs } from "./blogs/page"
+import { getSocialBlogs } from "./social-awareness/blogs/page";
 import url from "@/utils/url";
-
-export async function getBlogs() {
-  let res
-  try {
-    res = await fetch(`${url}/api/personal-blog`, { cache: 'no-cache' })
-  if (!res.ok) {
-    throw new Error('Failed to fetch data')
-  }
-  }
-  catch(err) {
-    notFound()
-  }
-  return res.json()
-}
-
-export async function getSocialBlogs() {
-  let res
-  try {
-    res = await fetch(`${url}/api/social-blog`, { cache: 'no-cache' })
-    if (!res.ok) {
-      throw new Error('Failed to fetch data')
-    }
-  }
-  catch (err) {
-    notFound()
-  }
-  return res.json()
-}
 
 export default async function sitemap() {
   const blogs = await getBlogs();
@@ -44,13 +18,11 @@ export default async function sitemap() {
     }
   })
 
-  const date = new Date(2021, 8, 20);
-
+  const date = new Date();
   return [
     {
       url: `${url}`,
       lastModified: date,
-      priority: 1,
     },
     {
       url: `${url}/mentoring`,
