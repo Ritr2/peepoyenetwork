@@ -4487,6 +4487,61 @@ const blogdata = [
       title: "Karan Sangwan Vs Unacademy – Who’s Right and Who’s Wrong?",
       slug: "karan-sangwan-vs-unacademy-whos-right-and-whos-wrong",
     },
+  },
+  {
+    title: `Is Dillon Danis Crossing the Line with His Attacks on Logan Paul's Fiancee?2`,
+    slug: `is-dillon-danis-crossing-the-line-with-his-attacks-on-logan-pauls-fiancee2`,
+    id: 73,
+    category_id: 7,
+    description: `Dillon Danis has been making headlines for his controversial comments about Logan Paul's fiancee. Is he crossing the line? Let's find out.`,
+    image: {
+      src: `https://i.postimg.cc/WbRfQxdy/logan-Paul-vs-Dillon-Danis.png`,
+      alt: `Is Dillon Danis Crossing the Line with His Attacks on Logan Paul's Fiancee?`,
+    },
+    owner: `Rohit Bhatt`,
+    tags: [`Dillon Danis`, `Logan Paul`, `Fiancee`, `Crossing the Line`],
+    date: `2023-08-22`,
+    summary: `In the world of fighting sports, where rivalries and competitive spirit are exceedingly aggressive, the lines between competition and personal boundaries sometimes become blurred. The upcoming boxing match between Dillon Danis and Logan Paul has gone too far in the wrong way by involving Nina Agdal, Logan Paul's fiancée. As Dillon Danis takes his mental warfare tactics to a new level by slut-shaming her, the question arises: Is his approach towards Nina Agdal right or wrong?`,
+    sections: [
+      {
+        h1: `The social media battle between Danis and Paul`,
+        h2: false,
+        p: `The high-profile matchups of Dillon Danis vs. Logan Paul and KSI vs. Tommy Fury are set to take place on Saturday, October 14, 2023. As the verbal fight through social media between Danis and Paul escalated, Dillon Danis seemed to have found another way to play mental games with Paul by targeting Nina Agdal's past relationships. What began as a tactic to get under Logan Paul's skin quickly accelerated into a dirty online war that gained attention from fans and the media.<br/>Some argue that psychological tactics are common in combat sports, with fighters attempting to get into their opponents' heads to gain an edge. By digging into Nina Agdal's dating history, Danis seems to be attempting to undermine Logan Paul's focus and confidence before the fight. However, this approach raises an important question: Is it acceptable to use someone's personal life as a tool to gain the upper hand in a competition?`,
+        image: false,
+        html: {
+          type: `twitter`,
+          value: `1692597438329319555`,
+        },
+        subSections: false,
+      },
+      {
+        h1: `Has Danis Gone Too Far?`,
+        h2: false,
+        p: `Danis has crossed a line by involving a third party in the mental games. Nina Agdal, a Danish model and Logan Paul's fiancée was unwittingly thrust into the spotlight. Dragging her dating history into the public eye is not only unnecessary but also disrespectful and invasive. Nina Agdal's dating history became a public spectacle due to Danis' actions.<br/>Even though famous people are used to being watched by the public, using this attention to bother a woman who struggles with anxiety is really not okay. Just because there's a lot of talk on the internet supporting it doesn't make it right. We need to understand that it's not fair to hurt someone just to win a fight, and it's important to tell the difference between healthy competition and doing something hurtful.<br/>What's Your Opinion on This? Let Us Know by Participating in the Poll. Click on the Image to Vote.`,
+        image: false,
+        html: {
+          type: `poll`,
+          value: `https://opinions.peepoye.com/polls/global-trends/dillon_danis_logan_paul`,
+          image: {
+            src: `https://i.postimg.cc/RFYw7MJF/Dillon-Danis-vs-logan-paul-1.png`,
+            alt: `Dillon Danis vs logan paul`,
+          }
+        },
+      }
+    ],
+    advertisements: {
+      show: true,
+      image: {
+        src: "https://i.postimg.cc/c4Xj2Ptb/private-club.png",
+        alt: "Private Club",
+        link: "https://akassh.co/support-peepoye",
+      },
+    },
+    referBlog: {
+      show: true,
+      title: "Karan Sangwan Vs Unacademy – Who’s Right and Who’s Wrong?",
+      slug: "karan-sangwan-vs-unacademy-whos-right-and-whos-wrong",
+    },
   }
 ];
 
