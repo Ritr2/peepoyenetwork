@@ -12,7 +12,7 @@ export default function page() {
   return (
     <main className={`relative flex min-h-screen flex-col ${dmSans.className} mt-16 py-5 px-2 md:px-40 overflow-x-hidden`}>
       <section className="flex flex-col items-center gap-3 md:gap-10 w-full py-3 md:py-8">
-        <h1 className="text-xl md:text-5xl font-bold text-center md:text-left text-neutral-700">Privacy Policy</h1>
+        <h1 className="text-xl md:text-5xl font-bold text-center md:text-left text-neutral-700">Refund Policy</h1>
         <DataWriter data={data} />
       </section>
     </main>
