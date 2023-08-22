@@ -120,7 +120,7 @@ export default async function page({ params }) {
                         {
                           section.html.type === 'poll' &&
                           <div className='flex flex-col justify-center items-center'>
-                            <Link href={section.html.value} target="_blank" rel="noopener noreferrer">
+                            <Link href={section.html.value} target="_blank" rel="noopener noreferrer" className='hover:scale-105'>
                               <img src={section.html.image.src} alt={section.html.image.alt} className="w-full rounded-lg h-auto" draggable={false} />
                             </Link>
                           </div>
