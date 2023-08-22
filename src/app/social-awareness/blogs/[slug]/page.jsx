@@ -32,14 +32,23 @@ export async function generateMetadata({ params }) {
       images: [
         {
           url: data.blog.image.src,
+          width: 730,
+          height: 410,
           alt: data.blog.image.alt,
         },
       ],
       url: `https://peepoye.com/blogs/${data.blog.slug}`,
       type: 'article',
       article: {
-        publishedTime: data.blog.date,
+        publishedTime: new Date(data.blog.date).toISOString(),
       }
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: `${data.blog.title} - Peepoye`,
+      description: data.blog.description,
+      images: [data.blog.image.src],
+      creator: '@peepoye',
     },
   }
 }
