@@ -21,5 +21,6 @@ export async function GET(req) {
       description: item.description,
     };
   });
+  
   return NextResponse.json(data);
 }
