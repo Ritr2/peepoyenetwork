@@ -4279,7 +4279,13 @@ const blogdata = [
       {
         h1: "Is Badrinath-Kedarnath Committee Decision right?",
         h2: false,
-        p: `After the video went viral, the Badrinath-Kedarnath Committee wrote to the Kedarnath Dham Police requesting a ban on making videos and reels around the temple area. The Committee also prohibited photography and videography within the temple premises.<br/>President of the Shri Badrinath Kedarnath Temple Committee, Ajay Ajendra, stated that pilgrims visiting Kedarnath Dham have been urged to dress modestly, and these guidelines have been released in light of certain obscene behavior reported in the past.<br/>The Badrinath Kedarnath Temple Committee's decision to take a tough stand on the matter is justified and necessary to protect the religious sanctity of the revered temple. Creating videos or reels on the temple premises, especially for personal or frivolous reasons, can be seen as disrespectful and may disturb the peaceful environment that pilgrims and devotees seek when visiting such sacred places.<br/>The committee's call for action against those making such videos sends a clear message that any behavior undermining the spiritual significance of the temple will not be tolerated. By enforcing guidelines against the use of mobile phones, photography, and videography inside the temple, the committee aims to ensure that visitors focus on prayer, meditation, and experiencing the divine presence without unnecessary distractions.<br/>Every place has its dress code, and respecting a modest dress code when visiting religious places is a sign of showing acknowledgment of the sacredness of the site. It fosters a sense of decorum and harmony among all visitors, creating an atmosphere conducive to prayer and reflection.`
+        p: `After the video went viral, the Badrinath-Kedarnath Committee wrote to the Kedarnath Dham Police requesting a ban on making videos and reels around the temple area. The Committee also prohibited photography and videography within the temple premises.<br/>President of the Shri Badrinath Kedarnath Temple Committee, Ajay Ajendra, stated that pilgrims visiting Kedarnath Dham have been urged to dress modestly, and these guidelines have been released in light of certain obscene behavior reported in the past.<br/>The Badrinath Kedarnath Temple Committee's decision to take a tough stand on the matter is justified and necessary to protect the religious sanctity of the revered temple. Creating videos or reels on the temple premises, especially for personal or frivolous reasons, can be seen as disrespectful and may disturb the peaceful environment that pilgrims and devotees seek when visiting such sacred places.<br/>The committee's call for action against those making such videos sends a clear message that any behavior undermining the spiritual significance of the temple will not be tolerated. By enforcing guidelines against the use of mobile phones, photography, and videography inside the temple, the committee aims to ensure that visitors focus on prayer, meditation, and experiencing the divine presence without unnecessary distractions.<br/>Every place has its dress code, and respecting a modest dress code when visiting religious places is a sign of showing acknowledgment of the sacredness of the site. It fosters a sense of decorum and harmony among all visitors, creating an atmosphere conducive to prayer and reflection.`,
+        image: false,
+        html: {
+          type: `youtube`,
+          value: `https://youtu.be/Tr-FeiwNt-M`,
+        },
+        subSections: false,
       }
     ],
     advertisements: {
@@ -4316,7 +4322,10 @@ const blogdata = [
         h2: false,
         p: `For the past two months, the 10-year-old girl had been working at the home of Poornima, a pilot at Indigo Airlines, and Kaushik, who works as ground staff for another airline. Tragically, the situation took a turn for the worse when the couple reportedly physically abused the young girl. The girl's relative witnessed their actions. Upon learning about the incident, a crowd gathered outside the couple's residence, expressing their anger and frustration at the mistreatment of an innocent child.<br/>The police were notified, and they acted swiftly by registering a case against Poornima and Kaushik under various sections of the Indian Penal Code, Child Labour Act, and Juvenile Justice Act. These legal actions were taken to ensure justice for the young girl and to send a strong message that child labor and abuse will not be tolerated in society.<br/>This incident is deeply troubling and disheartening. Children are meant to be protected, nurtured, and given access to education and opportunities to grow. It is unacceptable for adults, especially those in respectable positions, to exploit and mistreat innocent children in this manner.`,
         image: false,
-        html: false,
+        html: {
+          type: `youtube`,
+          value: `https://youtu.be/Tr-FeiwNt-M`,
+        },
         subSections: false
       }
     ],
@@ -4354,7 +4363,10 @@ const blogdata = [
         h2: false,
         p: `During the second sawari of Baba Mahakal in Ujjain, some mischievous people climbed on the rooftop of a building and began spitting down below as the Mahakal Sawari passed on the street near Tanki Chowraha. This disrespectful and offensive act continued even after devotees warned them to stop. Shockingly, some people at the event recorded videos of the culprits spitting and shared them on social media platforms.<br/>As the videos went viral, officials from the Vishva Hindu Parishad and Bajrang Dal were deeply angered by the offensive act and protested at the police station. The authorities responded by registering a case against the accused individuals involved in this unacceptable behavior.<br/>Such actions of disrespect and insensitivity are deeply disheartening and should not be tolerated in any community. The Mahakal Sawari is a sacred event, and everyone should show respect during such religious processions. We must remember that we live in a diverse society where people from different faiths and beliefs coexist. It is crucial to have respect and tolerance among all community members. Acts of disrespect and provocation can only lead to tension and disharmony.`,
         image: false,
-        html: false,
+        html: {
+          type: `youtube`,
+          value: `https://youtu.be/Tr-FeiwNt-M`,
+        },
         subSections: false,
       }
     ],
@@ -4488,6 +4500,68 @@ const blogdata = [
       slug: "karan-sangwan-vs-unacademy-whos-right-and-whos-wrong",
     },
   },
+  {
+    title: `End of Sunny Deol's Backup Plan as a Politician After the Success of Gadar 2`,
+    slug: `end-of-sunny-deols-backup-plan-as-a-politician-after-the-success-of-gadar-2`,
+    id: 73,
+    category_id: 10,
+    description: `Sunny Deol's political journey takes a turn post 'Gadar 2' success. Will he continue as a politician or return to acting? Let's find out.`,
+    image: {
+      src: `https://i.postimg.cc/zGvx8hHc/Sunny-Deol.png`,
+      alt: `End of Sunny Deol's Backup Plan as a Politician After the Success of Gadar 2`,
+    },
+    owner: `Rohit Bhatt`,
+    tags: [`Sunny Deol`, `Gadar 2`, `Backup Plan`, `Politician`],
+    date: `2023-08-23`,
+    summary: `In recent times, there's been talk about educated politicians should be elected for parliament. But things seem to be quite different when it comes to Bollywood celebrities. For some of them, politics appears to be a backup plan. When their movies don't do well, they consider joining politics. However, as soon as their movies start doing better, they might leave politics behind. This can be disappointing for the people who voted for them and hoped they would work hard to bring progress to their area. A recent example is Sunny Deol, who, after a successful movie like Gadar 2, is now expressing his desire to step away from politics, suggesting that he feels politics might not be the best fit for him.`,
+    sections: [
+      {
+        h1: `Sunny Deol: From Actor to Politician`,
+        h2: false,
+        p: `Sunny Deol stepped into the world of movies with the romantic film "Betaab" in 1983, which turned out to be the second highest-earning Indian film of that year. He continued to deliver hit movies like "Paap Ki Duniya" (1988), "Tridev" (1989), "ChaalBaaz" (1989), and "Ghayal" in the 1990s. "Ghayal" was a big success and marked a period of great achievement for Deol throughout the 90s. He kept giving one hit after another from 1991 to 2001.<br/>However, things changed after 2004 as Deol struggled to create successful movies. Most of his films faced failure except for a few like "Yamla Pagla Deewana" and "Apne." In the face of numerous setbacks, Deol decided to join the Bharatiya Janata Party (BJP) on 23 April 2019.<br/>He took part in the 2019 Lok Sabha Elections and emerged victorious from the Gurdaspur constituency in Punjab, defeating his rival Sunil Jakhar of the Indian National Congress by a margin of 82,459 votes. This marked the beginning of his political career.`,
+        image: false,
+        html: false,
+        subSections: false,
+      },
+      {
+        h1: `Deol Politics Statitcs and future plans`,
+        h2: false,
+        p: `Sunny Deol had promised many things to the people when he was elected as part of the Lok Sabha in 2019. But during his time in office, he only asked one question in the parliament and didn't talk much. In the 12 parliament sessions of about 246 days, he only went for 45 days, which is about 18.26% of the time. Most MPs ask around 156 questions on average, but he only asked one. He also didn't join any discussions in the parliament, while most MPs take part in about 42.7 debates. This shows that he didn't take part in the work as much as people might have expected.<br/>After facing challenges in his film career, "Gadar 2" marked a turning point for Sunny Deol as it became a huge success and an all-time blockbuster. Following this achievement, Sunny Deol developed a sense that he might be better suited for his career as an actor than as a politician. He made a decision not to participate in the 2024 Lok Sabha elections. Sunny Deol expressed, "When I joined politics, I thought certain things would happen, but now I realize I can do those things as an actor. People are showing me a lot of love. When things don't seem right, I think about exploring other paths." He also added that he is too good for politics and he won't be contesting any elections in 2024 and will maintain his identity as an actor.`,
+        image: false,
+        html: false,
+        subSections: false,
+      },
+      {
+        h1: `Other Celebs with Limited Engagement in Parliament`,
+        h2: false,
+        p: `During the 2004 Lok Sabha elections, Govinda contested as a candidate from the Congress party and triumphed in the North Mumbai constituency by defeating veteran BJP leader Ram Naik. However, as his Bollywood career regained momentum, he seemed to disappear from both his elected position and the Parliament. Records of Parliament attendance indicate that Govinda only attended around 10% of all the Parliament sessions, which is quite low considering his responsibility as an elected representative.<br/>Shatrughan Sinha, on the other hand, has a reasonably good attendance record of 66% in Parliament. But the problem is he didn't ask even a single question throughout his entire term. He refrained from participating in any debates as well, essentially becoming a silent figure in the Lok Sabha, merely holding a seat without an active voice in parliamentary proceedings.`,
+        image: false,
+        html: false,
+        subSections: false,
+      },
+      {
+        h1: `Our Opinion`,
+        h2: false,
+        p: `It's concerning to see how some individuals, especially those with influence and fame, can treat their roles as elected representatives in our country so casually. It becomes problematic when those who hold positions of power take their roles lightly and fail to live up to the promises they made during their election campaigns. In a country like ours, where every vote counts and where political decisions can impact millions of lives, it's essential that elected members take their roles seriously. Those who enter politics should honor the trust placed in them by their constituents and actively engage in the tasks they've been entrusted with.<br/>True representation requires consistent participation, constructive questioning, and meaningful debates. When celebrities prioritize other pursuits without delivering on their political promises, it's the people who suffer the consequences. As voters, we should hold our elected representatives accountable for their actions and remind them that public office is not just a backup plan, but a commitment to serve the nation and its citizens.<br/>What do you think?`,
+        image: false,
+        html: false,
+        subSections: false,
+      },
+    ],
+    advertisements: {
+      show: true,
+      image: {
+        src: "https://i.postimg.cc/c4Xj2Ptb/private-club.png",
+        alt: "Private Club",
+        link: "https://akassh.co/support-peepoye",
+      },
+    },
+    referBlog: {
+      show: true,
+      title: "Karan Sangwan Vs Unacademy – Who’s Right and Who’s Wrong?",
+      slug: "karan-sangwan-vs-unacademy-whos-right-and-whos-wrong",
+    },
+  }
 ];
 
 export default blogdata;

@@ -21,6 +21,7 @@ export async function generateMetadata({ params }) {
     image: data.blog.image.src,
     url: `https://peepoye.com/blogs/${data.blog.slug}`,
     type: 'article',
+    keywords: data.blog.tags,
     openGraph: {
       title: `${data.blog.title} - Peepoye`,
       description: data.blog.description,
