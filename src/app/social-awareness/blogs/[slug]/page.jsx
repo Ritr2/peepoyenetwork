@@ -161,7 +161,7 @@ export default async function page({ params }) {
                                   subSection.p && <p className="text-base md:text-lg font-light text-left social-anchor-tag text-neutral-600">{parse(subSection.p)}</p>
                                 }
                                 {
-                                  subSection.html && <div className="self-center text-base md:text-lg font-light social-anchor-tag text-left text-neutral-600 w-full my-6">
+                                  subSection.html && <div className="self-center text-base md:text-lg font-light text-left text-neutral-600 w-full my-6">
                                     {
                                       subSection.html.type === 'twitter' &&
                                       <div className='flex flex-col justify-center items-center' data-theme="light">

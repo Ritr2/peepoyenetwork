@@ -4561,6 +4561,98 @@ const blogdata = [
       title: "Karan Sangwan Vs Unacademy – Who’s Right and Who’s Wrong?",
       slug: "karan-sangwan-vs-unacademy-whos-right-and-whos-wrong",
     },
+  },
+  {
+    title: `Chandrayaan 3 Success: Reply for the Jealous UK Journalists`,
+    slug: `chandrayaan-3-success-reply-for-the-jealous-uk-journalists`,
+    id: 74,
+    category_id: 7,
+    description: `India's successful Chandrayaan-3 moon landing met with criticism from Western media. Strong response to the UK journalists' jealousy and the  benefits of the Chandrayaan-3 mission.`,
+    image: {
+      src: `https://i.postimg.cc/jdfQh317/chandrayaan.png`,
+      alt: `Chandrayaan 3 Success: Reply for the Jealous UK Journalists`,
+    },
+    owner: `Rohit Bhatt`,
+    tags: [`Chandrayaan 3`, `Success`, `Jealous UK Journalists`],
+    date: `2023-08-27`,
+    summary: `When Chandrayaan-3 safely reached the moon's surface, a big wave of joy spread across the entire country. However, as people often say, it's not always possible to make everyone happy. Some individuals might feel unhappy despite your achievements, and a few could even try to suppress your success with strong opposition. The same thing happened with Chandrayaan 3's successful landing on the Moon when some international media platforms made negative comments about it.`,
+    sections: [
+      {
+        h1: `The Success of Chandrayaan`,
+        h2: false,
+        p: `The successful landing of Chandrayaan-3 on the Moon's South Pole marks a significant achievement for India. India's third lunar mission made history by becoming the first to land on the moon's southern region. This milestone not only fills us with national pride but also brings a lot of other benefits too.`,
+        image: false,
+        html: false,
+        subSections: [
+          {
+            h1: false,
+            h2: `Advancing Science`,
+            p: `The Chandrayaan-3 mission is all about discovering more about the Moon. Scientists are eager to learn about its composition, the kind of atmosphere it has, and whether it holds valuable resources. By gathering this data, we can gain deeper insights into the Moon's role in the development of our Solar System.`,
+            image: false,
+            html: false,
+          },
+          {
+            h1: false,
+            h2: `Growth of Technology`,
+            p: `Space exploration requires cutting-edge technology, and that's a major focus of this mission. Chandrayaan-3 serves as a platform to test innovative ideas and equipment for space travel. This effort will not only enhance India's space capabilities but also position the country as a competitive player in the global space arena.`,
+            image: false,
+            html: false,
+          },
+          {
+            h1: false,
+            h2: `Boosting Economy`,
+            p: `The success of Chandrayaan-3 goes beyond scientific achievement; it's an economic win too. It's anticipated to open up opportunities for job creation within the space sector and attract foreign investments. Additionally, this achievement amplifies India's presence on the international stage, showcasing our scientific and technological prowess.`,
+            image: false,
+            html: false,
+          },
+          {
+            h1: false,
+            h2: `National Pride`,
+            p: `The successful landing of Chandrayaan-3 fills us with immense pride. India created its position as a leading contender in the field of space exploration by showing our dedication to reaching new heights.`,
+            image: false,
+            html: false,
+          },
+          {
+            h1: false,
+            h2: `Other Impacts`,
+            p: `Beyond its immediate effects, Chandrayaan-3 could inspire a new generation of young minds to pursue careers in science and engineering. it also open up the gates for international collaboration, as nations come together to explore and uncover the mysteries of space.`,
+            image: false,
+            html: {
+              type: `twitter`,
+              value: `1694615401735520377`,
+            },
+          }
+        ],
+      },
+      {
+        h1: `The Jealous west media`,
+        h2: false,
+        p: `After the successful landing of chandrayaan 3 Western media agencies like BBC World and CNN-IBN have argued that India should prioritize solving the poverty issue before working on space exploration. The West are trying to sell us the idea that we should fix poverty before even thinking about our space program. Seriously? Do they think progress works like a conveyor belt, where we can't move forward until every single person is rich and educated? That's like saying we should've waited until everyone had a golden toilet seat before developing COVID vaccines!<br/>Throughout history, and even today, when we look at the global economy, we see that only around 4% of people are considered wealthy. Another 6% are managing their finances well. However, a significant 90% of the population is struggling financially, with about 50% possibly living below the poverty line. If we refer to a report by Statisa, it becomes evident that the Global Wealth Pyramid is heavily skewed, with 1% of the world's population holding half of its wealth. The top 10% of adults possess 85% of the world's wealth, leaving only 15% for the remaining 90%. Another fact is that 55% of the world's population shares only 1.3% of the wealth.<br/>This data suggests that without substantial efforts, the rich are likely to continue getting richer while the poor struggle to escape poverty. The key lies in education, job creation, and innovative initiatives like successful space programs. With Lunar programs like Chandrayaan, we can achieve remarkable advancements for humanity and uncover endless possibilities.  If we come to the UK, where poverty rates are only 3% lower than in India. It raises questions about why developed nations don't seem to tackle this issue more effectively, especially considering their historical Loots from India. Still, if UK thinks that India is facing poverty then they should return us the loot they took from us which destroyed the golden bird and  they should also return us our precious diamond Kohinoor which again they looted from us in the name of gift.<br/>What do you think? Cast your vote now by clicking on the image.⬇️`,
+        image: false,
+        html: {
+          type: `poll`,
+          value: `https://opinions.peepoye.com/polls/global-trends/kohinoor_india`,
+          image: {
+            src: `https://i.postimg.cc/hjnZ9CTG/temp2.png`,
+            alt: `Kohinoor India`,
+          },
+        },
+        subSections: false,
+      }
+    ],
+    advertisements: {
+      show: true,
+      image: {
+        src: "https://i.postimg.cc/c4Xj2Ptb/private-club.png",
+        alt: "Private Club",
+        link: "https://akassh.co/support-peepoye",
+      },
+    },
+    referBlog: {
+      show: true,
+      title: `Is Dillon Danis Crossing the Line with His Attacks on Logan Paul's Fiancee?`,
+      slug: `is-dillon-danis-crossing-the-line-with-his-attacks-on-logan-pauls-fiancee`,
+    },
   }
 ];
 
