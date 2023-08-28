@@ -4618,8 +4618,8 @@ const blogdata = [
             p: `Beyond its immediate effects, Chandrayaan-3 could inspire a new generation of young minds to pursue careers in science and engineering. it also open up the gates for international collaboration, as nations come together to explore and uncover the mysteries of space.`,
             image: false,
             html: {
-              type: `twitter`,
-              value: `1694615401735520377`,
+              type: `youtube`,
+              value: `https://youtu.be/j1mmE6W8LW8`,
             },
           }
         ],
@@ -4652,6 +4652,90 @@ const blogdata = [
       show: true,
       title: `Is Dillon Danis Crossing the Line with His Attacks on Logan Paul's Fiancee?`,
       slug: `is-dillon-danis-crossing-the-line-with-his-attacks-on-logan-pauls-fiancee`,
+    },
+  },
+  {
+    title: `West Bengal couple sells their baby to buy an iPhone for making reels on Instagram`,
+    slug: `west-bengal-couple-sells-their-baby-to-buy-an-iphone-for-making-reels-on-instagram`,
+    id: 75,
+    category_id: 13,
+    description: `A couple from West Bengal sold their baby to buy an iPhone for making reels on Instagram. The incident has sparked outrage on social media.`,
+    image: {
+      src: `https://i.postimg.cc/8zDXc5Sj/West-Bengal-couple-sells-their-baby.png`,
+      alt: `West Bengal couple sells their baby to buy an iPhone for making reels on Instagram`,
+    },
+    owner: `Rohit Bhatt`,
+    tags: [`West Bengal`, `Couple`, `Sells their baby`, `iPhone`, `Instagram`],
+    date: `2023-08-28`,
+    summary: `In a disturbing incident that sheds light on the moral depths some parents can sink to, a couple residing in West Bengal's North 24 Parganas district recently shocked their neighbors and the community by trading their own child for an iPhone. The couple, Jaydev and Sathi Ghosh, not only betrayed the sacred bond between parent and child but also raised questions about the changing values within our society.`,
+    sections: [
+      {
+        h1: `Innocence Betrayed: When an iPhone Took Priority Over Parenthood`,
+        h2: false,
+        p: `Jaydev and Sathi Ghosh live in North 24 Parganas, West Bengal. People around them got worried because they didn't seem to care much about their 8-month-old baby, who was missing for a while. The Ghosh couple also bought a new and expensive iPhone 14 even though they had financial issues. This surprised their neighbors because they didn't understand how they suddenly had so much money for such a costly thing.<br/>Because of this odd behavior, the neighbors got worried and talked to a local leader named Tarak Guha. He understood that something might be wrong, so he got the police involved. The police started to look into the situation very carefully.<br/>During police questioning, the mother, Sathi Ghosh, reportedly admitted to the unthinkable act of selling her own baby for the iPhone. The shocking confession sent shockwaves through the community. Even worse, they found out that the Ghosh couple had tried to sell their 7-year-old daughter before this.`,
+        image: false,
+        html: false,
+        subSections: false,
+      },
+      {
+        h1: `Legal Action Taken`,
+        h2: false,
+        p: `The police acted quickly and filed a formal complaint against Jaydev and Sathi Ghosh. The person who bought the 8-month-old baby was also charged with a crime called human trafficking. The police managed to rescue the baby from Priyanka Ghosh, a resident of Khardah, West Bengal, who had bought the child. Both the mother and Ms. Ghosh were arrested, while Jaydev Ghosh, hasn't been caught by the police yet. The police are actively looking for him to make sure he faces the consequences for what he did according to the law.<br/>This disturbing incident raises questions that affect us as a society, How did we reach a point where the very essence of our humanity is compromised for material gains? In an era where viral trends and online fame dictate our choices, we must stop and think about the values we really care about. We should make sure that progress doesn't become more important than how we care for each other and show kindness.`,
+        image: false,
+        html: false,
+        subSections: false,
+      }
+    ],
+    advertisements: {
+      show: true,
+      image: {
+        src: "https://i.postimg.cc/c4Xj2Ptb/private-club.png",
+        alt: "Private Club",
+        link: "https://akassh.co/support-peepoye",
+      },
+    },
+    referBlog: {
+      show: true,
+      title: `Is Dillon Danis Crossing the Line with His Attacks on Logan Paul's Fiancee?`,
+      slug: `is-dillon-danis-crossing-the-line-with-his-attacks-on-logan-pauls-fiancee`,
+    },
+  },
+  {
+    title: `Vande Bharat Express Incident: Cockroach in Passenger Food`,
+    slug: `vande-bharat-express-incident-cockroach-in-passenger-food`,
+    id: 76,
+    category_id: 9,
+    description: `A passenger on the Vande Bharat Express found a cockroach in his food. The incident has sparked outrage on social media. Can incidents like this trigger positive improvements?`,
+    image: {
+      src: `https://i.postimg.cc/QN2yLmYg/Vande-Bharat-Express-Incident.png`,
+      alt: `Vande Bharat Express Incident: Cockroach in Passenger Food`,
+    },
+    owner: `Rohit Bhatt`,
+    tags: [`Vande Bharat Express`, `Incident`, `Cockroach`, `Passenger Food`],
+    date: `2023-08-28`,
+    summary: `The Indian Railways, known for its vast network and diverse passenger experiences. Millions of passengers use to travel, though it is either for a long journey trip or local with their own journey, story, and expectations. Sometimes, these journeys lead to unexpected encounters, which reveal where systems lack and demand attention and improvement.`,
+    sections: [
+      {
+        h1: `A Tweet That Started It All`,
+        h2: false,
+        p: `Imagine sitting down to enjoy a meal during your train journey, and you found something creepy in your food. This is exactly what happened to Subodh Pahalajan, a passenger traveling on the Vande Bharat Express from Bhopal to Gwalior. Subodh took to Twitter to share his shocking experience with the world. He tweeted a picture of his meal, which had an unwanted addition – a cockroach! He tagged the official Twitter handle of the Indian Railway Catering and Tourism Corporation (IRCTC) and wrote, "@IRCTCofficial found a cockroach in my food, in the Vande Bharat train." His tweet quickly gained attention and when it went too viral, The Indian Railways responded to Subodh's complaint. Railway Seva, the official Twitter handle for railway-related grievances, issued an apology to Subodh for the unpleasant experience. They assured him and the public that the necessary actions would be taken to address the issue and prevent such incidents from occurring again in the future.<br/>The Divisional Railway Manager of Bhopal, not wanting to take the matter lightly, also joined the conversation on Twitter. He confirmed that immediate steps were taken to address the situation. The IRCTC promptly organized alternative food for the affected passenger and took punitive measures against the licensee.<br/>The Vande Bharat Express, considered as a premium travel service cockroach in its meal, has raised valid concerns about the quality of food provided on Indian trains. The question remains the same: who should bear the ultimate responsibility for such incidents? Is it solely the catering service provider who prepared and served the meal, or does the railway administration also share a part of the blame for granting licenses to these service providers? Can strict actions alone guarantee that such incidents won't be repeated in the future?<br/>As we continue to travel and rely on the railway system for our journeys, it's essential that these incidents serve as turning points for positive change. Ensuring the well-being and satisfaction of passengers should be a top priority, and incidents like these need improvements.`,
+        image: false,
+        html: false,
+        subSections: false,
+      }
+    ],
+    advertisements: {
+      show: true,
+      image: {
+        src: "https://i.postimg.cc/c4Xj2Ptb/private-club.png",
+        alt: "Private Club",
+        link: "https://akassh.co/support-peepoye",
+      },
+    },
+    referBlog: {
+      show: true,
+      title: `West Bengal couple sells their baby to buy an iPhone for making reels on Instagram`,
+      slug: `west-bengal-couple-sells-their-baby-to-buy-an-iphone-for-making-reels-on-instagram`,
     },
   }
 ];
