@@ -1,0 +1,44 @@
+.blueTextShadow {
+  text-shadow: 0 1.5px 3px #1d9cf0be;
+}
+
+.blueTextShadow span {
+  text-shadow: none;
+  color: #1d9bf0;
+}
+
+.normalText span {
+  text-shadow: none;
+  color: #1d9bf0;
+  font-weight: 700;
+}
+
+.lineHeight {
+  line-height: 1.1;
+}
+
+.xlogoBg {
+  background-image: url(https://i.postimg.cc/65JymMFx/x-logo.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right center;
+  background-repeat: no-repeat;
+}
+
+.buttonShadow {
+  box-shadow: 2px 2px 4px 2px #002239cb;
+  transition: all 0.2s ease-in-out;
+}
+
+.buttonShadow:hover {
+  box-shadow: 2px -2px 4px 2px #002239cb;
+}
+
+.buttonShadow:active {
+  box-shadow: 2px 2px 4px 2px #002239cb;
+}
+
+.containerShadow {
+  background: linear-gradient(203deg, #333232 11.62%, #101010 96.76%);
+  box-shadow: 0px 0px 13px 0px #1D9BF0;
+}

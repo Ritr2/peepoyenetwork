@@ -16,7 +16,7 @@ export default function Button({query, product,amount, text,bgcolor,txcolor,padd
       </button>
       {
         dataFormVisible &&
-        <PaymentForm setDataFormVisible={setDataFormVisible} query={query} product={product} amount={amount} />
+        <PaymentForm setDataFormVisible={setDataFormVisible} query={query} product={product} amount={amount} bgcolor= {bgcolor} txcolor= {txcolor} />
       }
     </>
   )

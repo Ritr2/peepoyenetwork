@@ -1,12 +1,14 @@
-import React from 'react'
+'use client'
+import React, { useEffect } from 'react'
 import {AnimatePresence, motion} from 'framer-motion'
 import makePayment from '@/utils/payments/makePayment'
 import { IoClose } from 'react-icons/io5'
+import ls from 'localstorage-slim';
 
-export default function PaymentForm({setDataFormVisible,query, product,amount}) {
-  const [name, setName] = React.useState('')
-  const [email, setEmail] = React.useState('')
-  const [phone, setPhone] = React.useState('')
+export default function PaymentForm({setDataFormVisible,query, product,amount,bgcolor,txcolor}) {
+  const [name, setName] = React.useState(ls.get('name') ? ls.get('name') : '')
+  const [email, setEmail] = React.useState(ls.get('email') ? ls.get('email') : '')
+  const [phone, setPhone] = React.useState(ls.get('phone') ? ls.get('phone') : '')
   const [loading, setLoading] = React.useState(false)
   const [showForm, setShowForm] = React.useState(true)
 
@@ -34,6 +36,9 @@ export default function PaymentForm({setDataFormVisible,query, product,amount}) 
       email,
       phone,
     }
+    ls.set('name', name)
+    ls.set('email', email)
+    ls.set('phone', phone)
     makePayment(details, setLoading, setDataFormVisible,query,product,amount)
   }
 
@@ -69,7 +74,7 @@ export default function PaymentForm({setDataFormVisible,query, product,amount}) 
               <input type="text" placeholder="Name" className="flex-1 rounded-lg p-2 text-base md:text-xl font-normal text-center md:text-left text-neutral-700 bg-neutral-100 border-2 border-neutral-200 border-dashed focus:outline-none focus:ring-2 focus:ring-emerald-600 focus:border-transparent" value={name} onChange={(e) => setName(e.target.value)} required />
               <input type="email" placeholder="Email" className="flex-1 rounded-lg p-2 text-base md:text-xl font-normal text-center md:text-left text-neutral-700 bg-neutral-100 border-2 border-neutral-200 border-dashed focus:outline-none focus:ring-2 focus:ring-emerald-600 focus:border-transparent" value={email} onChange={(e) => setEmail(e.target.value)} required />
               <input type="tel" placeholder="Phone" className="flex-1 rounded-lg p-2 text-base md:text-xl font-normal text-center md:text-left text-neutral-700 bg-neutral-100 border-2 border-neutral-200 border-dashed focus:outline-none focus:ring-2 focus:ring-emerald-600 focus:border-transparent" value={phone} onChange={(e) => setPhone(e.target.value)} required />
-              <button type="submit" className="flex rounded-lg p-2 text-base md:text-xl font-bold text-white flex-row items-center justify-center gap-2 w-full bg-emerald-600 hover:bg-emerald-700 hover:shadow-lg hover:drop-shadow-lg hover:scale-105 active:bg-emerald-800 active:shadow-none active:drop-shadow-none active:scale-95">Make Payment</button>
+              <button type="submit" className={`flex rounded-lg p-2 ${txcolor} ${bgcolor.normal} hover:${bgcolor.hover} active:${bgcolor.active} text-base md:text-xl font-bold flex-row items-center justify-center gap-2 w-full  hover:shadow-lg hover:drop-shadow-lg hover:scale-105 active:shadow-none active:drop-shadow-none active:scale-95`}>Make Payment</button>
             </form>
           </div>
         </motion.div>

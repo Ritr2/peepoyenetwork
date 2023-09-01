@@ -39,7 +39,10 @@ const makePayment = async (details, setLoading,setDataFormVisible, query, produc
       contact: details.phone,
     },
     notes: {
-      product: data.notes
+      product: data.notes,
+      name: details.name,
+      email: details.email,
+      phone: details.phone,
     },
     theme: {
       color: "#3399cc",

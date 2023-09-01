@@ -4,7 +4,7 @@
 
 /* width */
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 8px;
 }
 
 /* Track */
@@ -14,7 +14,7 @@
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgb(212, 212, 212);
+  background: rgb(79, 79, 79)
 }
 
 /* Handle on hover */
@@ -81,4 +81,9 @@
 .social-anchor-tag a:hover {
   color: #1e00b5;
   text-decoration: underline;
+}
+
+.bluecontainerShadow {
+  background: linear-gradient(203deg, #333232 11.62%, #101010 96.76%);
+  box-shadow: 0px 0px 13px 0px #1D9BF0;
 }

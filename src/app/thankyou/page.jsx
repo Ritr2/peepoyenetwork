@@ -75,7 +75,7 @@ export default async function page({ searchParams }) {
           </h1>
           <p className="text-lg md:text-xl font-medium text-center md:text-left text-neutral-600">You can start your learning by reading some insightful Blog by Akassh.</p>
           <div className="flex flex-col w-full md:w-8/12">
-            <Link href='/blog' className='flex flex-col items-center text-white font-bold w-full p-3 rounded-lg bg-red-700 hover:scale-105 active:scale-95 transform transition-all duration-200 ease-in-out'>
+            <Link href='/blogs' className='flex flex-col items-center text-white font-bold w-full p-3 rounded-lg bg-red-700 hover:scale-105 active:scale-95 transform transition-all duration-200 ease-in-out'>
               CLICK TO READ THE BLOG
             </Link>
           </div>

@@ -7,6 +7,10 @@ const data = {
     amount: 99,
     notes: "donot",
   },
+  "guide-x" : {
+    amount: 199,
+    notes: "guide-x",
+  },
 }
 
 export default data

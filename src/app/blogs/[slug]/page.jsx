@@ -72,7 +72,7 @@ export default async function page({ params }) {
         <section className="flex flex-col flex-1 w-full gap-5 justify-center">
           <div className="flex flex-col justify-center w-full border-y-2 border-stone-200  py-2 flex-1 gap-2 md:gap-5">
             <span className='text-left text-base text-neutral-500'>
-              <Link href={`/blogs`}>Primary Blog</Link> / <Link href={`/blogs/categories/${data.category.slug}`}>{data.category.name}</Link> / <Link href={`/blogs/${data.blog.slug}`}>{data.blog.title}</Link>
+              <Link href={`/blogs`}>Primary Blog</Link> / <Link href={`/categories/${data.category.slug}`}>{data.category.name}</Link> / <Link href={`/blogs/${data.blog.slug}`}>{data.blog.title}</Link>
             </span>
           </div>
           <div className="flex flex-col justify-center flex-1 gap-2">
