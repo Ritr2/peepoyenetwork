@@ -127,7 +127,7 @@ export default function GuideX() {
   return (
     <div className='flex w-full flex-col'>
       <section className="flex flex-col w-full justify-center py-3 items-center bg-neutral-800 overflow-hidden">
-        <motion.h1 className={`text-2xl text-white font-medium ${style.blueTextShadow}`}
+        <motion.h1 className={`text-lg md:text-2xl text-white text-center md:text-left font-medium ${style.blueTextShadow}`}
           initial={{ opacity: 0, y: -100 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, type: 'spring', bounce: 0.5 }}
@@ -135,14 +135,14 @@ export default function GuideX() {
           Tired of sleeping with regret after wasting hours on <span className='font-semibold'>Social Media</span>?
         </motion.h1>
       </section>
-      <section className="flex flex-row justify-center py-10 items-center overflow-hidden px-28 gap-14">
-        <div className="flex flex-col flex-1 justify-center items-start gap-5">
-          <motion.h2 className={`text-5xl select-none relative text-white font-medium ${style.blueTextShadow} ${style.lineHeight}`}
+      <section className="flex flex-col md:flex-row justify-center py-10 px-5 md:px-28 items-center overflow-hidden gap-5 md:gap-14">
+        <div className="flex flex-col flex-1 justify-center items-start gap-5 order-2 md:order-1">
+          <motion.h2 className={`text-2xl md:text-5xl select-none relative text-white font-medium ${style.blueTextShadow} ${style.lineHeight}`}
             initial={{ opacity: 0, x: -100 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 1, type: 'spring', bounce: 0.5, delay: 0.5 }}>
             Convert your<br /> distraction into a<br /><span className='font-semibold'>money-making engine!</span>
-            <span className={`absolute top-0 right-10 w-32 h-32 ${style.xlogoBg}`} />
+            <span className={`absolute top-0 right-5 w-16 h-16 md:right-10 md:w-32 md:h-32 ${style.xlogoBg}`} />
           </motion.h2>
           <motion.p className={`text-xl text-white select-none font-normal ${roboto.className}`}
             initial={{ opacity: 0, x: -100 }}
@@ -150,7 +150,7 @@ export default function GuideX() {
             transition={{ duration: 1, type: 'spring', bounce: 0.5, delay: 1 }}>
             Welcome to a guide that unveils the secrets to turning Twitter, now referred to as X, into a source of real and substantial income. Crafted through meticulous study of prominent influencers who have conquered X and even drawing inspiration from the brilliant mind of Elon Musk, this guidebook is your essential resource for monetizing your presence on this dynamic platform.
           </motion.p>
-          <motion.div className="flex flex-col justify-start w-8/12 gap-5"
+          <motion.div className="flex flex-col justify-start w-full gap-5"
             initial={{ opacity: 0, x: -100 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 1, type: 'spring', bounce: 0.5, delay: 1.5 }}
@@ -164,25 +164,25 @@ export default function GuideX() {
             </div>
           </motion.div>
         </div>
-        <motion.div className="flex flex-col w-5/12 justify-center items-center"
+        <motion.div className="flex flex-col w-full md:w-5/12 justify-center items-center order-1 md:order-2"
           initial={{ opacity: 0, x: 100 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1, type: 'spring', bounce: 0.5, delay: 0.5 }}>
           <img src="https://i.postimg.cc/P5T8VS9F/akasshashokgupta.png" alt="Akash Shashok Gupta" />
         </motion.div>
       </section>
-      <section className="flex flex-col w-full justify-center py-10 px-28 items-center overflow-hidden gap-10">
-        <h2 className={`text-4xl text-white font-medium ${style.blueTextShadow}`}>
+      <section className="flex flex-col w-full justify-center py-10 px-5 md:px-28 items-center overflow-hidden gap-10">
+        <h2 className={`text-2xl text-center md:text-left md:text-4xl text-white font-medium ${style.blueTextShadow}`}>
           Why Do I Need This <span className='font-semibold'>Guidebook</span> Now?
         </h2>
-        <div className="flex flex-row flex-wrap justify-center gap-16 w-7/12 " ref={ref1}>
+        <div className="flex flex-col md:flex-row flex-wrap justify-center gap-5 w-full md:gap-16 md:w-7/12 " ref={ref1}>
           {
             needData.map((item, index) => (
               <motion.div key={index}
                 initial={index % 2 === 0 ? { opacity: 0, x: -100 } : { opacity: 0, x: 100 }}
                 animate={inView ? { opacity: 1, x: 0 } : index % 2 === 0 ? { opacity: 0, x: -100 } : { opacity: 0, x: 100 }}
                 transition={{ duration: 1, type: 'ease' }}
-                className={`flex flex-col justify-between rounded-xl gap-5 w-5/12 ${style.containerShadow}`}>
+                className={`flex flex-col justify-between rounded-xl gap-5 w-full md:w-5/12 ${style.containerShadow}`}>
                 <div className="flex flex-col justify-center items-center w-full">
                   <img src={item.img} alt={item.h2} className='w-full rounded-t-xl' />
                 </div>
@@ -199,18 +199,18 @@ export default function GuideX() {
             )
           }
         </div>
-        <div className="flex flex-col justify-center w-4/12 gap-5">
+        <div className="flex flex-col justify-center w-full md:w-4/12 gap-5">
           <Button query='thankyou' product='guide-x' amount='guide-x' text='Buy X Guide only for today at an unblelieveable 80% Discount' padding='px-5 py-2' bgcolor={{ normal: 'bg-blue-500', hover: 'bg-blue-700', active: 'bg-blue-800' }} txcolor='text-white' />
         </div>
       </section>
-      <section className="flex flex-col w-full justify-center py-10 px-28 items-center overflow-hidden gap-5">
+      <section className="flex flex-col w-full justify-center py-10 px-5 md:px-28 items-center overflow-hidden gap-5">
         <div className="flex flex-col w-full justify-center py-3 items-center overflow-hidden gap-5">
-          <h2 className={`text-4xl text-white font-medium ${style.blueTextShadow}`}>
+          <h2 className={`text-2xl text-center md:text-left md:text-4xl text-white font-medium ${style.blueTextShadow}`}>
             Before vs After: The <span className='font-semibold'>GuideBook</span> Impact
           </h2>
         </div>
-        <div className="flex flex-row flex-wrap w-full justify-center py-3 gap-16">
-          <BsArrowLeftCircle className={`text-5xl text-blue-500 self-center ${curImpactIndex === 0 && 'opacity-0'}`} onClick={() => impactClickHandler('prev')} />
+        <div className="flex flex-row w-full md:w-7/12 justify-center py-3 gap-5 md:gap-16">
+          <BsArrowLeftCircle className={`text-2xl md:text-5xl text-blue-500 self-center ${curImpactIndex === 0 && 'opacity-0'}`} onClick={() => impactClickHandler('prev')} />
           {
             impactData.map((item, index) => (
               <AnimatePresence key={index}>
@@ -220,7 +220,7 @@ export default function GuideX() {
                       initial={{ opacity: 0, x: 100 }}
                       animate={{ opacity: 1, x: 0 }}
                       transition={{ duration: 1, type: 'ease' }}
-                      className={`flex flex-col rounded-xl p-5 gap-5 w-6/12 ${style.containerShadow} h-96 cursor-pointer`} onClick={() => impactClickHandler('next')}>
+                      className={`flex flex-col rounded-xl p-2 md:p-5 gap-5 flex-1 ${style.containerShadow} md:h-96 cursor-pointer`} onClick={() => impactClickHandler('next')}>
                       {
                         item.img && (
                           <div className="flex flex-col flex-1 justify-center items-center h-10">
@@ -228,7 +228,7 @@ export default function GuideX() {
                           </div>
                         )
                       }
-                      <p className={`text-lg text-white self-center h-fit font-light ${roboto.className} ${style.normalText}`}>
+                      <p className={`text-base md:text-lg text-white self-center h-fit font-light ${roboto.className} ${style.normalText}`}>
                         {parse(item.p)}
                       </p>
                     </motion.div>
@@ -238,11 +238,11 @@ export default function GuideX() {
             )
             )
           }
-          <BsArrowRightCircle className={`text-5xl text-blue-500 self-center`} onClick={() => impactClickHandler('next')} />
+          <BsArrowRightCircle className={`text-2xl md:text-5xl text-blue-500 self-center`} onClick={() => impactClickHandler('next')} />
         </div>
         {
           curImpactIndex === impactData.length - 1 && (
-            <div className={`flex flex-col w-4/12 gap-5`}>
+            <div className={`flex flex-col w-full md:w-4/12 gap-5`}>
               <div className={`flex flex-col items-center w-full p-3 rounded-lg bg-neutral-100 border-2 border-neutral-200 border-dashed`}>
                 <span className="flex-1 text-base md:text-xl font-normal text-left text-neutral-700">Regular Price: <s>₹999</s>/-</span>
                 <span className="text-base md:text-2xl font-normal md:font-bold text-center md:text-left text-blue-500">Today’s Offer: ₹199/-</span>
@@ -252,18 +252,18 @@ export default function GuideX() {
           )
         }
       </section>
-      <section className="flex flex-col w-full justify-center py-10 px-28 items-center overflow-hidden gap-10">
+      <section className="flex flex-col w-full justify-center py-10 px-5 md:px-28 items-center overflow-hidden gap-10">
         <h2 className={`text-4xl text-white font-medium ${style.blueTextShadow}`}>
           Here&apos;s What You Get Exactly
         </h2>
-        <div className="flex flex-row flex-wrap justify-center gap-16 w-7/12 " ref={ref2}>
+        <div className="flex flex-col md:flex-row flex-wrap justify-center gap-10 md:gap-16 w-full md:w-7/12" ref={ref2}>
           {
             insideData.map((item, index) => (
               <motion.div key={index}
                 initial={index % 2 === 0 ? { opacity: 0, x: -100 } : { opacity: 0, x: 100 }}
                 animate={inView2 ? { opacity: 1, x: 0 } : index % 2 === 0 ? { opacity: 0, x: -100 } : { opacity: 0, x: 100 }}
                 transition={{ duration: 1, type: 'ease' }}
-                className={`flex flex-col justify-between py-5 px-2 rounded-xl gap-5 w-5/12 ${style.containerShadow}`}>
+                className={`flex flex-col justify-between py-5 px-2 rounded-xl gap-10 w-full md:w-5/12 ${style.containerShadow}`}>
                 <div className="flex flex-col justify-center items-center">
                   <img src={item.img} alt={item.h2} className='h-24 rounded-t-xl' />
                 </div>
@@ -277,47 +277,47 @@ export default function GuideX() {
             )
           }
         </div>
-        <div className="flex flex-col justify-center w-4/12 gap-5">
+        <div className="flex flex-col justify-center w-full md:w-4/12 gap-5">
           <Button query='thankyou' product='guide-x' amount='guide-x' text='Buy X Guide only for today at an unblelieveable 80% Discount' padding='px-5 py-2' bgcolor={{ normal: 'bg-blue-500', hover: 'bg-blue-700', active: 'bg-blue-800' }} txcolor='text-white' />
         </div>
       </section>
-      <section className="flex flex-col w-full justify-center py-10 px-28 items-center overflow-hidden gap-10">
+      <section className="flex flex-col w-full justify-center py-10 px-5 md:px-28 items-center overflow-hidden gap-10">
         <div className='flex flex-col items-center'>
-          <h2 className={`text-xl text-white font-medium ${style.blueTextShadow}`}>
+          <h2 className={`text-base md:text-xl text-white font-medium ${style.blueTextShadow}`}>
             <span className='font-semibold'>Meet Your Coach, Guide, and Mentor</span>
           </h2>
-          <h3 className={`text-5xl text-white font-medium ${style.blueTextShadow}`}>
+          <h3 className={`text-3xl md:text-5xl text-white font-medium ${style.blueTextShadow}`}>
             Akassh Ashok Gupta
           </h3>
         </div>
-        <div className="flex flex-row justify-center items-center gap-10">
-          <div className={`flex flex-col w-6/12 rounded-xl ${style.containerShadow}`}>
+        <div className="flex flex-col md:flex-row justify-center items-center gap-10">
+          <div className={`flex flex-col w-full md:w-6/12 rounded-xl ${style.containerShadow}`}>
             <img src="https://i.postimg.cc/9Fj1WTfz/akassh-1.png" alt="Akassh Ashok Gupta" className='rounded-xl' />
           </div>
           <div className="flex flex-col flex-1">
-            <p className={`text-xl text-white font-light ${roboto.className} ${style.normalText}`}>
+            <p className={`text-base md:text-xl text-white font-light ${roboto.className} ${style.normalText}`}>
               Hi! I’m Akassh, and I thank you for taking an interest in reading about me!<br />In my career, I have been fortunate enough to <span>experience 20+ years of corporate life</span> at leadership positions consulting big firms and <span>5 years of YouTube experience</span>, gaining over <span>1 million+ subscribers</span>.<br />I attribute much of these experiences to how I run my day, every day.<br />While most of us feel lost and feel like we are wasting time, I have, over the past 20 years, built a wonderful relationship with time, processes, methods, and systems.
             </p>
           </div>
         </div>
-        <div className="flex flex-row justify-center items-center gap-10">
-          <div className={`flex flex-col w-6/12 rounded-xl order-1 md:order-2 ${style.containerShadow}`}>
+        <div className="flex flex-col md:flex-row justify-center items-center gap-10">
+          <div className={`flex flex-col w-full md:w-6/12 rounded-xl order-1 md:order-2 ${style.containerShadow}`}>
             <img src="https://i.postimg.cc/Njs4Xcmc/akassh-2.png" alt="Akassh Ashok Gupta" className='rounded-xl' />
           </div>
           <div className="flex flex-col flex-1 order-2 md:order-1">
-            <p className={`text-xl text-white font-light ${roboto.className} ${style.normalText}`}>Through those systems and processes, I have been able to create <span>multiple revenue streams</span> for myself by just doing what I love.<br />With the launch of <span>X monetization policy</span>, I dived deeper into it and gained a hefty amount from the platform in the first month itself.<br />I am on a mission to <span>educate 1 lac people</span> on how to leverage social media to create multiple revenue streams.<br />In this <span>guidebook</span>, I share how I managed to earn this amount from X, and at the time, I have also shared some interesting case studies of top X influencers and some <span>practical tasks to implement.</span>
+            <p className={`text-base md:text-xl text-white font-light ${roboto.className} ${style.normalText}`}>Through those systems and processes, I have been able to create <span>multiple revenue streams</span> for myself by just doing what I love.<br />With the launch of <span>X monetization policy</span>, I dived deeper into it and gained a hefty amount from the platform in the first month itself.<br />I am on a mission to <span>educate 1 lac people</span> on how to leverage social media to create multiple revenue streams.<br />In this <span>guidebook</span>, I share how I managed to earn this amount from X, and at the time, I have also shared some interesting case studies of top X influencers and some <span>practical tasks to implement.</span>
             </p>
           </div>
         </div>
-        <div className="flex flex-col justify-center w-4/12 gap-5">
+        <div className="flex flex-col justify-center w-full md:w-4/12 gap-5">
           <Button query='thankyou' product='guide-x' amount='guide-x' text='Buy X Guide only for today at an unblelieveable 80% Discount' padding='px-5 py-2' bgcolor={{ normal: 'bg-blue-500', hover: 'bg-blue-700', active: 'bg-blue-800' }} txcolor='text-white' />
         </div>
       </section>
-      <section className="flex flex-col w-full justify-center py-10 pb-16 px-28 items-center overflow-hidden gap-10">
+      <section className="flex flex-col w-full justify-center py-10 pb-16 px-5 md:px-28 items-center overflow-hidden gap-10">
         <h2 className={`text-4xl text-white font-medium ${style.blueTextShadow}`}>
           Frequently Asked Questions
         </h2>
-        <div className={`flex flex-col w-8/12 ${roboto.className}`}>
+        <div className={`flex flex-col w-full md:w-8/12 ${roboto.className}`}>
           <FAQ data={faq} bgcolor={{ question: 'bluecontainerShadow', answer: 'bluecontainerShadow' }} textcolor={{ question: 'text-white', answer: 'text-white' }} />
           </div>
       </section>
