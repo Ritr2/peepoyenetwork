@@ -20,7 +20,7 @@ export const metadata = {
     },
   ],
   url: 'https://peepoye.com/guide-x',
-  type: 'page',
+  type: 'website',
   keywords: ['guide', 'ultimate guide', 'monetization', 'x', 'passion', 'profits', 'money', 'earn', 'earn money', 'earn money online', 'earn money from home', 'earn money online free', 'earn money app', 'earn money online without investment', 'earn money online app', 'earn money online without investment for students', 'earn money online without investment by typing', 'earn money online without investment by clicking ads', 'earn money online without investment for students in india', 'earn money online without investment for students in pakistan', 'earn money online without investment for students in bangladesh', 'earn money online without investment for students in tamil', 'earn money online without investment for students in telugu', 'earn money online without investment for students in hindi', 'earn money online without investment for students in malayalam', 'earn money online without investment for students in india 2021', 'earn money online without investment for students in india 2020'],
   openGraph: {
     title: 'The Ultimate Guide to X Monetization: Transforming Tweets into Profits',
@@ -34,7 +34,7 @@ export const metadata = {
       },
     ],
     url: 'https://peepoye.com/guide-x',
-    type: 'page',
+    type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
