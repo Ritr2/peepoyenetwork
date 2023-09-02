@@ -150,7 +150,7 @@ export default function GuideX() {
             transition={{ duration: 1, type: 'spring', bounce: 0.5, delay: 1 }}>
             Welcome to a guide that unveils the secrets to turning Twitter, now referred to as X, into a source of real and substantial income. Crafted through meticulous study of prominent influencers who have conquered X and even drawing inspiration from the brilliant mind of Elon Musk, this guidebook is your essential resource for monetizing your presence on this dynamic platform.
           </motion.p>
-          <motion.div className="flex flex-col justify-start w-full gap-5"
+          <motion.div className="flex flex-col justify-start w-full md:w-7/12 gap-5"
             initial={{ opacity: 0, x: -100 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 1, type: 'spring', bounce: 0.5, delay: 1.5 }}
