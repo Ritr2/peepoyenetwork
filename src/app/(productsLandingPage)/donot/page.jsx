@@ -19,7 +19,7 @@ export const metadata = {
   description: 'Do Not Do This On Youtube',
   url: 'https://peepoye.com/donot',
   type: 'article',
-  image: '/assets/images/donot/donot_1.png',
+  image: 'https://i.ibb.co/cyzwFyF/guide-1.png',
   keywords: 'Do Not Do This On Youtube',
   openGraph: {
     title: 'Do Not Do This On Youtube',
@@ -76,7 +76,7 @@ export default async function page({ searchParams }) {
       </div>
       <section className="flex flex-col md:flex-row items-center justify-center md:gap-20 py-10 px-2 md:px-40">
         <div className="flex flex-col w-5/12 items-center justify-center">
-          <img src="/assets/images/donot/donot_1.png" alt="donot" className="w-full md:w-8/12" draggable={false} />
+          <img src="https://i.ibb.co/cyzwFyF/guide-1.png" alt="donot" className="w-full md:w-8/12" draggable={false} />
         </div>
         <div className="flex flex-col justify-center w-full flex-1 gap-2 md:gap-5">
           <span className="text-base md:text-2xl font-bold text-center md:text-left text-neutral-600">21 CONCEPTS OVER 21 DAYS</span>
@@ -145,7 +145,7 @@ export default async function page({ searchParams }) {
           </div>
         </div>
         <div className="flex flex-col items-center self-end flex-1 w-full">
-          <img src="https://i.postimg.cc/HW9ThHDg/akasshashokgupta.webp" alt="Akassh ashok Gupta" className="w-full" draggable={false} />
+          <img src="https://i.ibb.co/GdRJ5sw/akasshashokgupta.webp" alt="Akassh ashok Gupta" className="w-full" draggable={false} />
         </div>
       </section>
       <section className="flex w-full flex-col py-10 px-2 md:px-40">

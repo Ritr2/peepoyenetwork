@@ -27,7 +27,7 @@ export default function Mentoring() {
           </div>
         </div>
         <div className="flex flex-col items-center justify-center flex-1 order-2">
-          <img src='https://i.postimg.cc/HW9ThHDg/akasshashokgupta.webp' alt="Akassh ashok Gupta" className="w-full" draggable={false} />
+          <img src='https://i.ibb.co/GdRJ5sw/akasshashokgupta.webp' alt="Akassh ashok Gupta" className="w-full" draggable={false} />
         </div>
       </section>
       <section className="flex flex-col items-center w-full justify-center gap-10 bg-stone-100 px-5 py-16 md:px-52 overflow-hidden">
@@ -47,7 +47,7 @@ export default function Mentoring() {
         <div className="flex flex-col md:flex-row w-full justify-center items-center gap-7">
           <DynamicForm />
           <div className="flex flex-col flex-1 justify-center items-center gap-2 w-full md:w-1/2">
-            <img src="https://i.postimg.cc/yYCs7DjS/akasshashokgupta.png" alt="Akassh ashok Gupta" className="w-full" draggable={false} />
+            <img src="https://i.ibb.co/WkhY1Wh/akasshashokgupta.png" alt="Akassh ashok Gupta" className="w-full" draggable={false} />
           </div>
         </div>
       </section>

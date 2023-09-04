@@ -6,7 +6,7 @@ const blogdata = [
     category_id: 5,
     description: `On 18th May'22, a social activist Tamanna Hashm filed a case against popular Bollywood actors Ranveer Singh, Ajay Devgan, Shahrukh Khan, and Amitabh Bachchan under sections 467, 468 , 439, and 120B.`,
     image: {
-      src: `https://i.postimg.cc/yxPtzYdj/image.png`,
+      src: `https://i.ibb.co/D8ZtTzJ/image.png`,
       alt: `Bollywood pseudo-heroism being challenged`,
     },
     owner: `Dewanshi Jain`,
@@ -55,7 +55,7 @@ const blogdata = [
     category_id: 13,
     description: `A controversy is making rounds on the internet wherein both Kunal Kamra and the YouTube channel Peeing Human allegedly uploaded morphed videos of a child`,
     image: {
-      src: `https://i.postimg.cc/VvTcrkqR/image.png`,
+      src: `https://i.ibb.co/JC5m4cP/image.png`,
       alt: `kunal kamra and the morphed mentality`,
     },
     owner: `Anirudh Damani`,
@@ -115,7 +115,7 @@ const blogdata = [
     category_id: 13,
     description: `These were the tear-soaked words of the aging father of Karan Raju, who lost his life in a hit-and-run accident on Monday, the 16th of May.`,
     image: {
-      src: `https://i.postimg.cc/Zqg0m4gr/image.png`,
+      src: `https://i.ibb.co/G5PZjQg/image.png`,
       alt: `Instant delivery: the victim, the culprit and the call to action`,
     },
     owner: `Anirudh Damani`,
@@ -191,7 +191,7 @@ const blogdata = [
     category_id: 8,
     description: `Sugar addiction and alcoholism are two of the most common addictions in the world. They are also two of the most dangerous. Sugar addiction can lead to obesity, diabetes, heart disease, and other health problems. Alcoholism can lead to liver disease, cancer, and other health problems. The link between sugar addiction and alcoholism is not well understood, but it is clear that they are both addictive substances that can lead to serious health problems.`,
     image: {
-      src: `https://i.postimg.cc/bwsnbCQN/image.png`,
+      src: `https://i.ibb.co/sjxPzQ5/image.png`,
       alt: `Sugar Addiction And Alcoholism Link`,
     },
     owner: `Dewanshi Jain`,
@@ -277,7 +277,7 @@ const blogdata = [
     category_id: 13,
     description: `Sidhu Moose Wala – a name that ruled the hearts of millions is now an endless river of tears that could probably never wash away the stain of his absence.`,
     image: {
-      src: `https://i.postimg.cc/GmkcZbQ8/image.png`,
+      src: `https://i.ibb.co/fSRfGJH/image.png`,
       alt: `Sidhu Moose Wala – can security be blamed?`,
     },
     owner: `Anirudh Damani`,
@@ -353,7 +353,7 @@ const blogdata = [
     category_id: 3,
     description: `His story appears to be an overnight success, but even overnight successes are born after a thousand nights soaked in sweat.`,
     image: {
-      src: `https://i.postimg.cc/tJ7wyzGv/image.png`,
+      src: `https://i.ibb.co/HdfN7tg/image.png`,
       alt: `Carry Minati: The Secret to Success`,
     },
     owner: `Anirudh Damani`,
@@ -426,7 +426,7 @@ const blogdata = [
     category_id: 13,
     description: `A group of bikers were riding close to Arjan Garh metro station when they got into an argument with a man driving a Scorpio vehicle, following which the driver of the four-wheeler hit the biker and dashed off.`,
     image: {
-      src: `https://i.postimg.cc/Fs57YC74/image.png`,
+      src: `https://i.ibb.co/P61BQFw/image.png`,
       alt: `BIKER GETS HIT IN DELHI FOR RAGE!`,
     },
     owner: `Dewanshi Jain`,
@@ -478,7 +478,7 @@ const blogdata = [
     category_id: 6,
     description: `World Blood Donor Day is celebrated on 14th June every year to raise global awareness of the need for safe blood and blood products for transfusion and to highlight the critical contribution that the blood donors make to national health systems.`,
     image: {
-      src: `https://i.postimg.cc/QCjrc75j/image.png`,
+      src: `https://i.ibb.co/2P0pMmS/image.png`,
       alt: `WORLD BLOOD DONOR DAY: Donating blood is an act of solidarity`,
     },
     owner: `Dewanshi Jain`,
@@ -524,7 +524,7 @@ const blogdata = [
     category_id: 4,
     description: `On Sunday, July 17, K Rajyakkodi, a 55-year-old farmer from the Madurai district of Tamil Nadu, showed up to attempt the National Entrance Eligibility Test (NEET) at the Velammal Vidyalaya Center.`,
     image: {
-      src: `https://i.postimg.cc/pXnm0b54/image.png`,
+      src: `https://i.ibb.co/NxtYGGF/image.png`,
       alt: `55-Year-Old Man Appears For NEET 2022 To Chase His Life-Long Dream Of Becoming A Doctor`,
     },
     owner: `Dewanshi Jain`,
@@ -562,7 +562,7 @@ const blogdata = [
     category_id: 13,
     description: `Did you know that by 2016, 14–19 million tonnes of plastic have entered the seas, covering around 60–90% of the marine surface? Are people to blame?`,
     image: {
-      src: `https://i.postimg.cc/K8HsmT8R/image.png`,
+      src: `https://i.ibb.co/R7FGWpP/image.png`,
       alt: `MUMBAI BEACH BECOMES A GARBAGE DUMP, LOOKS LIKE THE ARABIAN SEA SENT A ‘RETURN GIFT’`,
     },
     owner: `Dewanshi Jain`,
@@ -600,7 +600,7 @@ const blogdata = [
     category_id: 13,
     description: `In a viral video, Shrikant Tyagi was seen abusing and assaulting a woman who was taking a stand against him for an illegal encroachment at the Grand Omaxe society in Noida, sector 93 on 5th August.`,
     image: {
-      src: `https://i.postimg.cc/c13W2sTR/image.png`,
+      src: `https://i.ibb.co/Yj9JqNk/image.png`,
       alt: `SHRIKANT TYAGI ARRESTED BUT THE MYSTERY REMAINS`,
     },
     owner: `Dewanshi Jain`,
@@ -638,7 +638,7 @@ const blogdata = [
     category_id: 13,
     description: `On 30th august 2022, Amit Kumar, an employee in Optum Global Solutions Pvt. Ltd. (a UHG company), Gurgaon, committed suicide due to the sexual allegations placed on him by a female colleague`,
     image: {
-      src: `https://i.postimg.cc/PJPwXg7s/image.png`,
+      src: `https://i.ibb.co/tM2mnX7/image.png`,
       alt: `FALSE ALLEGATION led to an innocent’s suicide`,
     },
     owner: `Ibtisam Hussain`,
@@ -676,7 +676,7 @@ const blogdata = [
     category_id: 13,
     description: `Acid attack: A shocking incident comes to light where a 17-year-old School Girl got burnt after 3 boys decided to throw acid to avenge a breakup in Delhi.`,
     image: {
-      src: `https://i.postimg.cc/XJWLvYKM/image.png`,
+      src: `https://i.ibb.co/93zksJM/image.png`,
       alt: `Delhi Acid Attack: How Safe Are Delhi’s Streets For Young Women?`,
     },
     owner: `Shruti Jain`,
@@ -734,7 +734,7 @@ const blogdata = [
     category_id: 5,
     description: `Sajid Khan exits Bigg Boss 16 after promoting his film on his exit day. Was this a stunt all along? Did Bigg Boss 16 and Sajid Khan fool the audience?`,
     image: {
-      src: `https://i.postimg.cc/kXYbHgBJ/image.png`,
+      src: `https://i.ibb.co/KzQyYzG/image.png`,
       alt: `HOW BIGG BOSS 16 WHITEWASHED SAJID KHAN’S IMAGE ?`,
     },
     owner: `Rohit Bhatt`,
@@ -815,7 +815,7 @@ const blogdata = [
     category_id: 11,
     description: `Explore the controversy surrounding spiritual leader Bageshwar Dham's head Dhirendra Krishna Shastri and his claimed Divine Power.`,
     image: {
-      src: `https://i.postimg.cc/Fz9rr3CM/image.png`,
+      src: `https://i.ibb.co/0XwHxL3/image.png`,
       alt: `Bageshwar Dham & Dhirendra Shastri: Divine Power or Science of Mentalism?`,
     },
     owner: `Rohit Bhatt`,
@@ -899,7 +899,7 @@ const blogdata = [
     category_id: 7,
     description: `An overview of Pakistan's current economic crisis, including rising inflation, depleting foreign exchange reserves, and debt and tense relations with India.`,
     image: {
-      src: `https://i.postimg.cc/pLGfQdJM/image.png`,
+      src: `https://i.ibb.co/Jv6YN4Z/image.png`,
       alt: `A Nation in Distress: Reality of Pakistan’s Economic Crisis`,
     },
     owner: `Rohit Bhatt`,
@@ -965,7 +965,7 @@ const blogdata = [
     category_id: 5,
     description: `Get to know MC Stan, the underground rapper from Pune who took the Indian hip-hop scene by storm and won over the hearts of audiences in Bigg Boss season 16.`,
     image: {
-      src: `https://i.postimg.cc/02hXYckC/image.png`,
+      src: `https://i.ibb.co/xHZnVDy/image.png`,
       alt: `The Rise of MC Stan : The Underdog Rapper Who Conquered Bigg Boss`,
     },
     owner: `Rohit Bhatt`,
@@ -1057,7 +1057,7 @@ const blogdata = [
     category_id: 12,
     description: `Carding fraud is a significant issue in the gaming community, with cybercriminals using stolen credit card information to make fraudulent purchases in games.`,
     image: {
-      src: `https://i.postimg.cc/WzLzRPSW/image.png`,
+      src: `https://i.ibb.co/TLpjnMx/image.png`,
       alt: `Carding Fraud in Indian Gaming Community`,
     },
     owner: `Rohit Bhatt`,
@@ -1133,7 +1133,7 @@ const blogdata = [
     category_id: 3,
     description: `Learn about the dangers of inappropriate content on YouTube and the responsibility of creators and the platform to promote respectful and responsible content.`,
     image: {
-      src: `https://i.postimg.cc/zXQvCKYS/image.png`,
+      src: `https://i.ibb.co/RgvCwMs/image.png`,
       alt: `YouTube Creator: The Harmful Influence of Payal Zone`,
     },
     owner: `Rohit Bhatt`,
@@ -1209,7 +1209,7 @@ const blogdata = [
     category_id: 12,
     description: `This blog highlights gigolo scam in India, provides red flags to watch out for, and emphasizes health, legal and emotional risks`,
     image: {
-      src: `https://i.postimg.cc/3NBr00Cp/image.png`,
+      src: `https://i.ibb.co/Bqx08m5/image.png`,
       alt: `Gigolo Scam : What are the Red Flags to watch out for`,
     },
     owner: `Rohit Bhatt`,
@@ -1362,7 +1362,7 @@ const blogdata = [
     category_id: 13,
     description: `Prithvi Shaw recent assault by fans highlights the importance of respecting celebrity privacy. Read on for the full story and its implications.`,
     image: {
-      src: `https://i.postimg.cc/sXgVWgxZ/image.png`,
+      src: `https://i.ibb.co/TW5KDFV/image.png`,
       alt: `Prithvi Shaw Assaulted by Fans: A Stark Reminder of Celebrity Privacy Breach`,
     },
     owner: `Rohit Bhatt`,
@@ -1470,7 +1470,7 @@ const blogdata = [
     category_id: 13,
     description: `Shehnaaz Gill's admirable gesture at the Lokmat Digital Creator Awards is a powerful reminder of respecting religious beliefs & promoting peaceful coexistence.`,
     image: {
-      src: `https://i.postimg.cc/VNFTX90K/image.png`,
+      src: `https://i.ibb.co/8PTvrTH/image.png`,
       alt: `Shehnaaz Gill Sets Example of Religious Respect at Awards`,
     },
     owner: `Rohit Bhatt`,
@@ -1527,7 +1527,7 @@ const blogdata = [
     category_id: 7,
     description: `Renowned screenwriter and poet Javed Akhtar slams Pakistani media for their negative portrayal of India and highlights issues at Faiz Festival in Pakistan.`,
     image: {
-      src: `https://i.postimg.cc/v82hR2dr/image.png`,
+      src: `https://i.ibb.co/kJrDbZW/image.png`,
       alt: `Javed Akhtar Takes Potshots at Pakistani reporter`,
     },
     owner: `Rohit Bhatt`,
@@ -1584,7 +1584,7 @@ const blogdata = [
     category_id: 13,
     description: `The blog discusses how Anant Ambani viral video highlights the cultural practice of touching feet in India and its relationship with wealth and power.`,
     image: {
-      src: `https://i.postimg.cc/0jSbBNsH/image.png`,
+      src: `https://i.ibb.co/Cw56dkW/image.png`,
       alt: `Is wealth of Anant Ambani greater than Indian Culture?`,
     },
     owner: `Rohit Bhatt`,
@@ -1636,7 +1636,7 @@ const blogdata = [
     category_id: 13,
     description: `This blog sheds light on false accusations against YouTuber Elvish Yadav for a viral video of flowerpot theft, highlighting the need for responsible journalism`,
     image: {
-      src: `https://i.postimg.cc/DwP70X6c/image.png`,
+      src: `https://i.ibb.co/xqt8BD4/image.png`,
       alt: `Elvish Yadav being called as “Gamla Chor?” What’s the truth?`,
     },
     owner: `Rohit Bhatt`,
@@ -1693,7 +1693,7 @@ const blogdata = [
     category_id: 13,
     description: `Bharat Matrimony's Holi ad sparked controversy over its link to harassment against women. Find out why it sparked backlash`,
     image: {
-      src: `https://i.postimg.cc/MpRdmZRX/image.png`,
+      src: `https://i.ibb.co/CPs83m7/image.png`,
       alt: `Bharat Matrimony Holi Ad: Social message or Propoganda?`,
     },
     owner: `Rohit Bhatt`,
@@ -1754,7 +1754,7 @@ const blogdata = [
     category_id: 13,
     description: `A viral video of a man sexually assaulting a woman health worker in Bihar has sparked outrage and a call for action to improve women's safety.`,
     image: {
-      src: `https://i.postimg.cc/9M44y0Rn/image.png`,
+      src: `https://i.ibb.co/2SSp7Qs/image.png`,
       alt: `Bihar Diaries: Serial Killer? Now Be Aware of Kissman`,
     },
     owner: `Rohit Bhatt`,
@@ -1803,7 +1803,7 @@ const blogdata = [
     category_id: 7,
     description: `Khalistani sympathizers attack Indian embassies and establishments in the UK, the US, Australia, and Canada. Who is behind the recent Khalistani attacks?`,
     image: {
-      src: `https://i.postimg.cc/2yd7dsQB/image.png`,
+      src: `https://i.ibb.co/K9Zy1Bp/image.png`,
       alt: `Khalistani Protest or Propaganda to Decelerate Indian Growth`,
     },
     owner: `Rohit Bhatt`,
@@ -1898,7 +1898,7 @@ const blogdata = [
     category_id: 10,
     description: `Get to know Amritpal Singh, the controversial Khalistan movement leader. Discover 5 surprising facts about his early life, sudden rise and creation of AKF.`,
     image: {
-      src: `https://i.postimg.cc/KYhD1vSD/image.png`,
+      src: `https://i.ibb.co/F3mDhyq/image.png`,
       alt: `5 Shocking facts about Amritpal Singh: early life to sudden rise`,
     },
     owner: `Rohit Bhatt`,
@@ -1971,7 +1971,7 @@ const blogdata = [
     category_id: 10,
     description: `Discover the unknown history of the Khalistan movement, from its origins to conspiracy theories surrounding its controversial leader, Bhindranwale.`,
     image: {
-      src: `https://i.postimg.cc/CKcmBpFP/image.png`,
+      src: `https://i.ibb.co/FzGsL7C/image.png`,
       alt: `Unknown History of Khalistan : Origin to Conspiracy`,
     },
     owner: `Rohit Bhatt`,
@@ -2092,7 +2092,7 @@ const blogdata = [
     category_id: 10,
     description: `Amritpal Singh leads Waris Punjab De, spreading Khalistan ideology via social media. Plans to expand, create local cells, and Hindu cells.`,
     image: {
-      src: `https://i.postimg.cc/fW3g91nk/image.png`,
+      src: `https://i.ibb.co/sbqVqLP/image.png`,
       alt: `Impact of Clubhouse in the rise of Amritpal Singh`,
     },
     owner: `Rohit Bhatt`,
@@ -2158,7 +2158,7 @@ const blogdata = [
     category_id: 4,
     description: `A video that recently went viral on social media showed former teachers of Indian education technology start-up Physics Wallah breaking down into tears while interacting with students.`,
     image: {
-      src: `https://i.postimg.cc/1RTf3VPb/image.png`,
+      src: `https://i.ibb.co/9pZzD3r/image.png`,
       alt: `Physics Wallah VS Sankalp Controversy- Who is right?`,
     },
     owner: `Rohit Bhatt`,
@@ -2218,7 +2218,7 @@ const blogdata = [
     category_id: 13,
     description: `Teacher suspended after brutally beating student in India. The incident raises concerns about the use of corporal punishment in schools.`,
     image: {
-      src: `https://i.postimg.cc/Rhf9FFLz/image.png`,
+      src: `https://i.ibb.co/xXtS8fr/image.png`,
       alt: `Student Beaten Up by Teacher: Is It the Right Punishment?`,
     },
     owner: `Rohit Bhatt`,
@@ -2275,7 +2275,7 @@ const blogdata = [
     category_id: 4,
     description: `Discover the latest ed-tech controversy in India as Physics Wallah and Sankalp Teachers debate over student impact and business ethics. Read now.`,
     image: {
-      src: `https://i.postimg.cc/wv86LLfG/image.png`,
+      src: `https://i.ibb.co/kgfj2Kk/image.png`,
       alt: `8 Critical Observations During Physics Wallah Controversy`,
     },
     owner: `Rohit Bhatt`,
@@ -2396,7 +2396,7 @@ const blogdata = [
     category_id: 13,
     description: `This Blog discusses the Delhi Metro girl's video and highlights the importance of common sense in attire choices, respecting laws and social etiquette.`,
     image: {
-      src: `https://i.postimg.cc/PrNCQzf6/image.png`,
+      src: `https://i.ibb.co/MDt1s4r/image.png`,
       alt: `Delhi metro girl: Personal Expression or Attention-Seeking?`,
     },
     owner: `Rohit Bhatt`,
@@ -2457,7 +2457,7 @@ const blogdata = [
     category_id: 13,
     description: `Discover the #jasneetkaurFormula used by influencers to gain followers. Discover how Jasneet Kaur used her content to blackmail people and how she was caught.`,
     image: {
-      src: `https://i.postimg.cc/LXrCbWVD/image.png`,
+      src: `https://i.ibb.co/3mMnNxt/image.png`,
       alt: `Jasneet Kaur and the 5 Stage Formula of Instagram Influencer`,
     },
     owner: `Rohit Bhatt`,
@@ -2548,7 +2548,7 @@ const blogdata = [
     category_id: 13,
     description: `A controversial video of two girls disrespecting India's national anthem sparks outrage. Learn why national symbols are important and share your opinion.`,
     image: {
-      src: `https://i.postimg.cc/NG9kzbS9/image.png`,
+      src: `https://i.ibb.co/GvkTzYD/image.png`,
       alt: `National Anthem Disrespect: Modesty or Stupidity?`,
     },
     owner: `Rohit Bhatt`,
@@ -2597,7 +2597,7 @@ const blogdata = [
     category_id: 13,
     description: `Recent religious mockery in a Noida bar sparks outrage. Let's respect each other's beliefs and prevent such incidents by educating ourselves and taking action.`,
     image: {
-      src: `https://i.postimg.cc/sxyPWJ2w/image.png`,
+      src: `https://i.ibb.co/23tk1Ws/image.png`,
       alt: `Noida Bar Incident Sparks Outrage over Religious Mockery`,
     },
     owner: `Rohit Bhatt`,
@@ -2658,7 +2658,7 @@ const blogdata = [
     category_id: 13,
     description: `The blog covers the incident where a man from Bihar was allegedly harassed for not knowing Kannada in Bengaluru and highlights the need for inclusivity.`,
     image: {
-      src: `https://i.postimg.cc/Bv09z497/image.png`,
+      src: `https://i.ibb.co/WWT1HQL/image.png`,
       alt: `Man from Bihar Allegedly Harassed for Not Knowing Kannada`,
     },
     owner: `Rohit Bhatt`,
@@ -2719,7 +2719,7 @@ const blogdata = [
     category_id: 7,
     description: `Uncover the truth behind the Dalai Lama controversy sparked by a viral video. Read about the support from Ladakh and an apology from Peepoye.`,
     image: {
-      src: `https://i.postimg.cc/gJgpCQG9/image.png`,
+      src: `https://i.ibb.co/DwDddcR/image.png`,
       alt: `The Misunderstood Dalai Lama Controversy`,
     },
     owner: `Rohit Bhatt`,
@@ -2787,7 +2787,7 @@ const blogdata = [
     category_id: 11,
     description: `Discover why VIP Darshan at temples in India goes against the principle of equality and humility. Learn about recent controversies around VIP culture in temple.`,
     image: {
-      src: `https://i.postimg.cc/zfYBJsW4/VIP-Dharsan-Temple.png`,
+      src: `https://i.ibb.co/njnYgn8/VIP-Dharsan-Temple.png`,
       alt: `VIP Darshan at Temples: A Question of Equality and Humility`,
     },
     owner: `Rohit Bhatt`,
@@ -2837,7 +2837,7 @@ const blogdata = [
     category_id: 13,
     description: `Discover the shocking sexual harassment case with Korean vlogger Jenn Bae in India, sparking outrage and highlighting the issue of assault on women.`,
     image: {
-      src: `https://i.postimg.cc/R07Wfsd2/image.png`,
+      src: `https://i.ibb.co/NxNf55q/image.png`,
       alt: `2 Korean Vlogger Shocking Harassment Case`,
     },
     owner: `Rohit Bhatt`,
@@ -2895,7 +2895,7 @@ const blogdata = [
     category_id: 13,
     description: `Join #SupportAnshNishi to help combat caste discrimination and threats against their love story. Let's make a difference together with Peepoye's campaign.`,
     image: {
-      src: `https://i.postimg.cc/4dLgtXTn/image.png`,
+      src: `https://i.ibb.co/WWDvGcc/image.png`,
       alt: `Love vs. Caste: Ansh & Nishi’s Fight for Safety`,
     },
     owner: `Rohit Bhatt`,
@@ -2955,7 +2955,7 @@ const blogdata = [
     category_id: 14,
     description: `Wrestlers in India's wrestling community protest against sexual harassment allegations involving top wrestlers & WFI president. Get the full story here.`,
     image: {
-      src: `https://i.postimg.cc/wBjjLQ6n/Wrestlers-Protesting.png`,
+      src: `https://i.ibb.co/mXJC5yh/Wrestlers-Protesting.png`,
       alt: `Wrestlers Protesting against Sexual Harassment: The Real Truth`,
     },
     owner: `Rohit Bhatt`,
@@ -3058,7 +3058,7 @@ const blogdata = [
     category_id: 3,
     description: `Discover the dangers of reckless moto vlogging on YouTube following the tragic death of Pro Rider 1000. Learn about potential solutions and the need for responsible riding.`,
     image: {
-      src: `https://i.postimg.cc/wv294t0n/prorider-1000-1.png`,
+      src: `https://i.ibb.co/sF09Bjg/prorider-1000-1.png`,
       alt: `Pro Rider 1000 died due to motovlogging Over-Speeding Culture`,
     },
     owner: `Rohit Bhatt`,
@@ -3157,7 +3157,7 @@ const blogdata = [
     category_id: 3,
     description: `Flying Beast's recent campaign called &quot;Desh Ka Dhoni&quot; has mixed reactions. Is Desh Ka Dhoni a genuine tribute or a publicity stunt? Read on to find out.`,
     image: {
-      src: `https://i.postimg.cc/8CGff636/The-Confusing-Campaign-of-Desh-Ka-Dhoni-by-Flying-Beast.png`,
+      src: `https://i.ibb.co/f9mV1WD/The-Confusing-Campaign-of-Desh-Ka-Dhoni-by-Flying-Beast.png`,
       alt: `The Confusing Campaign of Desh Ka Dhoni by Flying Beast`,
     },
     owner: `Rohit Bhatt`,
@@ -3214,7 +3214,7 @@ const blogdata = [
     category_id: 13,
     description: `Dhruv Rathee's video on Kerala's development has sparked controversy. Learn more about the core issues and the truth behind the propaganda.`,
     image: {
-      src: `https://i.postimg.cc/L8kxLHJJ/Kerala-Story.png`,
+      src: `https://i.ibb.co/3W5c42Q/Kerala-Story.png`,
       alt: `The Kerala Story: Core Issues vs Dhruv Rathee Propaganda`,
     },
     owner: `Rohit Bhatt`,
@@ -3288,7 +3288,7 @@ const blogdata = [
     category_id: 2,
     description: `The Chaiwala business has become extremely popular. However, there are many myths and realities associated with this business model.`,
     image: {
-      src: `https://i.postimg.cc/0jHv0Yry/Chaiwala.png`,
+      src: `https://i.ibb.co/yFHqpzm/Chaiwala.png`,
       alt: `The Viral Chaiwala Business Model: Myths and Realities`,
     },
     owner: `Rohit Bhatt`,
@@ -3377,7 +3377,7 @@ const blogdata = [
     category_id: 3,
     description: `Carryminati's new roast video has sparked outrage among MC Stan fans. Learn more about the controversy and the reasons behind it.`,
     image: {
-      src: `https://i.postimg.cc/h422MTdL/mc-stan-fans-rampage-on-carryminatis-new-roast-video.png`,
+      src: `https://i.ibb.co/qgtbRcF/mc-stan-fans-rampage-on-carryminatis-new-roast-video.png`,
       alt: `MC Stan Fan’s Rampage on Carryminati’s New Roast Video`,
     },
     owner: `Rohit Bhatt`,
@@ -3446,7 +3446,7 @@ const blogdata = [
     category_id: 9,
     description: `Devastating Odisha train accident raises concerns over Indian Railway's safety measures and infrastructure. Learn more about causes and necessary improvements.`,
     image: {
-      src: `https://i.postimg.cc/25TWmFmT/odisha-train-accident-a-wake-up-call-for-indian-railway-and-government.png`,
+      src: `https://i.ibb.co/1Zv3sts/odisha-train-accident-a-wake-up-call-for-indian-railway-and-government.png`,
       alt: `Odisha Train Accident A Wake-Up Call for Indian Railway and Government`,
     },
     owner: `Rohit Bhatt`,
@@ -3519,7 +3519,7 @@ const blogdata = [
     category_id: 13,
     description: `A Dutch vlogger was harassed by a local vendor in Bengaluru's Chickpet market . The incident, which was caught on camera, has sparked outrage on social media.`,
     image: {
-      src: `https://i.postimg.cc/j5HgqfW5/a-disturbing-incident-dutch-vlogger-attacked-in-bengaluru-market.png`,
+      src: `https://i.ibb.co/2nd88Tw/a-disturbing-incident-dutch-vlogger-attacked-in-bengaluru-market.png`,
       alt: `A Disturbing Incident: Dutch Vlogger Attacked in Bengaluru Market`,
     },
     owner: `Rohit Bhatt`,
@@ -3595,7 +3595,7 @@ const blogdata = [
     category_id: 1,
     description: `The makers of Adipurush have been accused of distorting the epic Ramayana for commercial gain. This blog exposes the mistakes made by the filmmakers`,
     image: {
-      src: `https://i.postimg.cc/9FpwyYw2/fallacies-and-mistakes-in-adipurush-manoj-muntashirs-doglapan.png`,
+      src: `https://i.ibb.co/1fmRzFp/fallacies-and-mistakes-in-adipurush-manoj-muntashirs-doglapan.png`,
       alt: `Fallacies and Mistakes in Adipurush: Manoj Muntashir’s Doglapan`,
     },
     owner: `Rohit Bhatt`,
@@ -3707,7 +3707,7 @@ const blogdata = [
     category_id: 5,
     description: `Curious about the rankings of Bigg Boss OTT Season 2 contestants? Dive into the drama and discover who's leading the race in this exciting reality show.`,
     image: {
-      src: `https://i.postimg.cc/8P5NnRnN/bigg-boss-ott-season-2-check-out-the-ranking-of-contestants.png`,
+      src: `https://i.ibb.co/g7ngN1M/bigg-boss-ott-season-2-check-out-the-ranking-of-contestants.png`,
       alt: `Bigg Boss OTT Season 2: Check Out the Ranking of Contestants`,
     },
     owner: `Rohit Bhatt`,
@@ -3848,7 +3848,7 @@ const blogdata = [
     category_id: 13,
     description: `Political and ethnic tensions erupt in Manipur, India. Learn about the root causes, recent violent clashes, and the quest for justice. #Manipur`,
     image: {
-      src: `https://i.postimg.cc/dQWKd7QX/the-manipur-files-complexities-of-ethnic-clashes.png`,
+      src: `https://i.ibb.co/B4PZ0pm/the-manipur-files-complexities-of-ethnic-clashes.png`,
       alt: `The Manipur Files: Complexities of Ethnic Clashes`,
     },
     owner: `Rohit Bhatt`,
@@ -3963,7 +3963,7 @@ const blogdata = [
     category_id: 1,
     description: `Kajol's comments on education in politics sparked debates. Know about her controversial remarks about &quot;uneducated&quot; leaders and why she was trolled .`,
     image: {
-      src: `https://i.postimg.cc/nzz3tL8j/kajols-remarks-on-education-in-politics.png`,
+      src: `https://i.ibb.co/zSQMBcq/kajols-remarks-on-education-in-politics.png`,
       alt: `Kajol’s Remarks on Education in Politics`,
     },
     owner: `Rohit Bhatt`,
@@ -4005,7 +4005,7 @@ const blogdata = [
     category_id: 13,
     description: `Inhumane Treatment of School Children in Maharashtra: Forced to endure scorching heat for hours to welcome a minister. Outrage sparks as video goes viral.`,
     image: {
-      src: `https://i.postimg.cc/g0MfhQmh/students-made-to-wait-for-hours-to-salute-minister.png`,
+      src: `https://i.ibb.co/hY9xzct/students-made-to-wait-for-hours-to-salute-minister.png`,
       alt: `Students Made to Wait for Hours to Salute Minister`,
     },
     owner: `Rohit Bhatt`,
@@ -4046,7 +4046,7 @@ const blogdata = [
     category_id: 5,
     description: `Bigg Boss Maker's Drama Strategy: Elvish Yadav's Controversial Weekend & Emotional Manipulation. Salman Khan's Role Questioned. Opinions & Backlash`,
     image: {
-      src: `https://i.postimg.cc/fbbPMCmR/bigg-boss-makers-strategy-to-stir-drama-around-elvish-yadav.png`,
+      src: `https://i.ibb.co/Pmqr8Fz/bigg-boss-makers-strategy-to-stir-drama-around-elvish-yadav.png`,
       alt: `Bigg Boss Maker’s Strategy to Stir Drama Around Elvish Yadav`,
     },
     owner: `Rohit Bhatt`,
@@ -4125,7 +4125,7 @@ const blogdata = [
     category_id: 13,
     description: `A viral video from Saharanpur, Uttar Pradesh, has captured a disturbing incident where three women were involved in a fight with a policeman. The women were visibly intoxicated and, in their agitated state, verbally abused the police officer.`,
     image: {
-      src: `https://i.postimg.cc/YS4xXsQY/viral-video-raises-questions-on-gender-equality-and-power-misuse.png`,
+      src: `https://i.ibb.co/88tv4wG/viral-video-raises-questions-on-gender-equality-and-power-misuse.png`,
       alt: `Viral Video Raises Questions on Gender Equality and Power Misuse`,
     },
     owner: `Rohit Bhatt`,
@@ -4166,7 +4166,7 @@ const blogdata = [
     category_id: 13,
     description: `Viral video sparks debate on pet owner-residents dispute. Tense lift encounter raises concerns about safety, communication, and resolving conflicts.`,
     image: {
-      src: `https://i.postimg.cc/5NxSc0wx/viral-video-lift-disagreement-between-pet-owner-and-residents.png`,
+      src: `https://i.ibb.co/rF7CTp7/viral-video-lift-disagreement-between-pet-owner-and-residents.png`,
       alt: `Viral Video: Lift Disagreement Between Pet Owner and Residents`,
     },
     owner: `Rohit Bhatt`,
@@ -4208,7 +4208,7 @@ const blogdata = [
     category_id: 13,
     description: `Nuh Communal Riots: Tragic clashes during a religious Yatra in Haryana's Nuh district left 5 dead & 70 injured. Let's explore the root cause of violence`,
     image: {
-      src: `https://i.postimg.cc/PJfp7C09/nuh-communal-riots-an-in-depth-analysis-of-causes-and-consequences.png`,
+      src: `https://i.ibb.co/nf9jRgb/nuh-communal-riots-an-in-depth-analysis-of-causes-and-consequences.png`,
       alt: `Nuh Communal Riots: An In-Depth Analysis of Causes and Consequences`,
     },
     owner: `Rohit Bhatt`,
@@ -4268,7 +4268,7 @@ const blogdata = [
     category_id: 13,
     description: "YouTuber's proposal video at Kedarnath sparks debate on temple respect. Analyzing the decision by the Badrinath-Kedarnath Committee to uphold sanctity.",
     image: {
-      src: "https://i.postimg.cc/c1DrH4p1/the-viral-proposal-at-kedarnath-temple-impact-on-religious-sanctity.png",
+      src: "https://i.ibb.co/5W5mfN0/the-viral-proposal-at-kedarnath-temple-impact-on-religious-sanctity.png",
       alt: "The Viral Proposal at Kedarnath Temple: Impact on Religious Sanctity",
     },
     owner: "Rohit Bhatt",
@@ -4309,7 +4309,7 @@ const blogdata = [
     category_id: 13,
     description: "In a shocking case in Delhi, a 10-year-old girl was found working as a domestic helper for a pilot and subjected to abuse. Learn about the incident and our take on this distressing situation.",
     image: {
-      src: "https://i.postimg.cc/g23zvYTZ/dwarkas-child-labor-and-abuse-horror-beaten-up-by-the-mob.png",
+      src: "https://i.ibb.co/k1wRxNw/dwarkas-child-labor-and-abuse-horror-beaten-up-by-the-mob.png",
       alt: "Dwarka’s Child Labor and Abuse Horror: Beaten up by the Mob",
     },
     owner: "Rohit Bhatt",
@@ -4350,7 +4350,7 @@ const blogdata = [
     category_id: 13,
     description: "Disrespectful act mars Mahakal Sawari in Ujjain as mischievous individuals spit from rooftops. Our perspective on the incident highlights unity and reverence.",
     image: {
-      src: "https://i.postimg.cc/Vv3wCT9g/a-disturbing-incident-spitting-on-the-mahakal-sawari-in-ujjain.png",
+      src: "https://i.ibb.co/wwKfVK3/a-disturbing-incident-spitting-on-the-mahakal-sawari-in-ujjain.png",
       alt: "A Disturbing Incident: Spitting on the Mahakal Sawari in Ujjain",
     },
     owner: "Rohit Bhatt",
@@ -4391,7 +4391,7 @@ const blogdata = [
     category_id: 4,
     description: `Karan Sangwan Vs. Unacademy Controversy. Understand the intersection of politics and ethics in this thought-provoking analysis. Who gains, and who loses?`,
     image: {
-      src: "https://i.postimg.cc/jdttFn9N/image.png",
+      src: "https://i.ibb.co/Yj3Tyyj/image.png",
       alt: "Karan Sangwan Vs Unacademy – Who’s Right and Who’s Wrong?",
     },
     owner: "Rohit Bhatt",
@@ -4452,7 +4452,7 @@ const blogdata = [
     category_id: 7,
     description: `Dillon Danis has been making headlines for his controversial comments about Logan Paul's fiancee. Is he crossing the line? Let's find out.`,
     image: {
-      src: `https://i.postimg.cc/WbRfQxdy/logan-Paul-vs-Dillon-Danis.png`,
+      src: `https://i.ibb.co/nk9GbW2/logan-Paul-vs-Dillon-Danis.png`,
       alt: `Is Dillon Danis Crossing the Line with His Attacks on Logan Paul's Fiancee?`,
     },
     owner: `Rohit Bhatt`,
@@ -4507,7 +4507,7 @@ const blogdata = [
     category_id: 10,
     description: `Sunny Deol's political journey takes a turn post 'Gadar 2' success. Will he continue as a politician or return to acting? Let's find out.`,
     image: {
-      src: `https://i.postimg.cc/zGvx8hHc/Sunny-Deol.png`,
+      src: `https://i.ibb.co/6nF7VWM/Sunny-Deol.png`,
       alt: `End of Sunny Deol's Backup Plan as a Politician After the Success of Gadar 2`,
     },
     owner: `Rohit Bhatt`,
@@ -4661,7 +4661,7 @@ const blogdata = [
     category_id: 13,
     description: `A couple from West Bengal sold their baby to buy an iPhone for making reels on Instagram. The incident has sparked outrage on social media.`,
     image: {
-      src: `https://i.postimg.cc/8zDXc5Sj/West-Bengal-couple-sells-their-baby.png`,
+      src: `https://i.ibb.co/9TnzVDP/West-Bengal-couple-sells-their-baby.png`,
       alt: `West Bengal couple sells their baby to buy an iPhone for making reels on Instagram`,
     },
     owner: `Rohit Bhatt`,
@@ -4707,7 +4707,7 @@ const blogdata = [
     category_id: 9,
     description: `A passenger on the Vande Bharat Express found a cockroach in his food. The incident has sparked outrage on social media. Can incidents like this trigger positive improvements?`,
     image: {
-      src: `https://i.postimg.cc/QN2yLmYg/Vande-Bharat-Express-Incident.png`,
+      src: `https://i.ibb.co/6RR7XrC/Vande-Bharat-Express-Incident.png`,
       alt: `Vande Bharat Express Incident: Cockroach in Passenger Food`,
     },
     owner: `Rohit Bhatt`,

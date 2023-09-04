@@ -23,50 +23,50 @@ export default function GuideX() {
     {
       h2: 'First-Mover Advantage',
       p: `X has just launched the monetization program, and it is the best time to grab the opportunity and make some real $$$.`,
-      img: 'https://i.postimg.cc/MK0Z8NS2/First-Mover-Advantage.png'
+      img: 'https://i.ibb.co/85wQ82j/First-Mover-Advantage.png'
     },
     {
       h2: `Hit & Trial doesn’t work`,
       p: `If you keep experimenting with X to find out the right strategies, you may lose the best time to grow your presence on X`,
-      img: 'https://i.postimg.cc/Jz1r7xry/Hit-Trial-doesn-t-work.png',
+      img: 'https://i.ibb.co/qjBqGYF/Hit-Trial-doesn-t-work.png',
     }
     ,
     {
       h2: `Passive Income`,
       p: `While you were just wasting your time on social media till now, it is the opportunity for you to generate passive income by just doing what you love.`,
-      img: 'https://i.postimg.cc/nzscbLH0/Passive-Income.png',
+      img: 'https://i.ibb.co/tzs9Nj7/Passive-Income.png',
     }
     ,
     {
       h2: `Copy-Paste Method`,
       p: `You need a copy-paste method to start your X journey as quickly as possible to gain the first mover advantage.`,
-      img: 'https://i.postimg.cc/8CcTMCrN/Copy-Paste-Method.png',
+      img: 'https://i.ibb.co/1qqtwqy/Copy-Paste-Method.png',
     }
   ]
 
   const impactData = [
     {
-      img: 'https://i.postimg.cc/VNKLQCjh/1.png',
+      img: 'https://i.ibb.co/QKmwz6x/1.png',
       p: '<span className="text-2xl">Say hello to Jack!</span>',
     },
     {
-      img: 'https://i.postimg.cc/7LHYWVT7/2.png',
+      img: 'https://i.ibb.co/SXy3fyC/2.png',
       p: 'He was just an everyday guy caught in the <span>scrolling loop on social media</span>. Hours disappeared as he flipped through random stuff, leaving him feeling empty.',
     },
     {
-      img: 'https://i.postimg.cc/QtVNXdmd/3.png',
+      img: 'https://i.ibb.co/Pg5rRMY/3.png',
       p: 'Bills piled up, and he <span>wished for some extra cash</span> without the 9-to-5 grind.',
     },
     {
-      img: 'https://i.postimg.cc/2SFSGJ3r/4.png',
+      img: 'https://i.ibb.co/ryQSjWK/4.png',
       p: 'Ever catch yourself looking at those big-shot influencers and thinking, "I wish that could be me?" Jack sure did. But negativity hit him hard – parents and others nagging him, <span>bad comments online making him doubt himself</span>.',
     },
     {
-      img: 'https://i.postimg.cc/d3bVNc8t/5.png',
+      img: 'https://i.ibb.co/2NdGpQ6/5.png',
       p: `Then, boom! Jack got his hands on this <span>X guidebook</span> that flipped his story.<br/>No more pointless scrolling. <span>Jack started creating content.</span>`,
     },
     {
-      img: 'https://i.postimg.cc/nhtLvZF3/6.png',
+      img: 'https://i.ibb.co/khvmMj8/6.png',
       p: `Guess what? His social media hobby <span>turned into a real income</span>.<br/>Jack felt happier – like he found his thing.`,
     },
     {
@@ -78,19 +78,19 @@ export default function GuideX() {
   const insideData = [
     {
       p: `<span>6 Secret Nuggets with Practical Methods</span> to create the right strategies for your X account and generate high income from the platform.`,
-      img: `https://i.postimg.cc/Rh5zCz4n/1.png`,
+      img: `https://i.ibb.co/41Gq4qR/1.png`,
     },
     {
       p: `<span>Case studies</span> of some top influencers on X and their approach to leveraging X. `,
-      img: `https://i.postimg.cc/vB6sdmFs/2.png`,
+      img: `https://i.ibb.co/Ryh0X3D/2.png`,
     },
     {
       p: `<span>Implementation Tasks</span> at the end of each chapter so that you don’t just learn but apply. `,
-      img: `https://i.postimg.cc/90dHrNQg/3.png`,
+      img: `https://i.ibb.co/q7hV3gP/3.png`,
     },
     {
       p: `<span>Ready to Use Templates</span> to take the printouts or make one for yourself for easy implementation of the tasks.`,
-      img: `https://i.postimg.cc/ZqnmVcw0/4.png`,
+      img: `https://i.ibb.co/yfGBcBy/4.png`,
     }
   ]
 
@@ -168,7 +168,7 @@ export default function GuideX() {
           initial={{ opacity: 0, x: 100 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1, type: 'spring', bounce: 0.5, delay: 0.5 }}>
-          <img src="https://i.postimg.cc/P5T8VS9F/akasshashokgupta.png" alt="Akash Shashok Gupta" />
+          <img src="https://i.ibb.co/XtNM2D8/akasshashokgupta.png" alt="Akash Shashok Gupta" />
         </motion.div>
       </section>
       <section className="flex flex-col w-full justify-center py-10 px-5 md:px-28 items-center overflow-hidden gap-10">
@@ -292,7 +292,7 @@ export default function GuideX() {
         </div>
         <div className="flex flex-col md:flex-row justify-center items-center gap-10">
           <div className={`flex flex-col w-full md:w-6/12 rounded-xl ${style.containerShadow}`}>
-            <img src="https://i.postimg.cc/9Fj1WTfz/akassh-1.png" alt="Akassh Ashok Gupta" className='rounded-xl' />
+            <img src="https://i.ibb.co/SNBgrWD/akassh-1.png" alt="Akassh Ashok Gupta" className='rounded-xl' />
           </div>
           <div className="flex flex-col flex-1">
             <p className={`text-base md:text-xl text-white font-light ${roboto.className} ${style.normalText}`}>
@@ -302,7 +302,7 @@ export default function GuideX() {
         </div>
         <div className="flex flex-col md:flex-row justify-center items-center gap-10">
           <div className={`flex flex-col w-full md:w-6/12 rounded-xl order-1 md:order-2 ${style.containerShadow}`}>
-            <img src="https://i.postimg.cc/Njs4Xcmc/akassh-2.png" alt="Akassh Ashok Gupta" className='rounded-xl' />
+            <img src="https://i.ibb.co/3TcB93w/akassh-2.png" alt="Akassh Ashok Gupta" className='rounded-xl' />
           </div>
           <div className="flex flex-col flex-1 order-2 md:order-1">
             <p className={`text-base md:text-xl text-white font-light ${roboto.className} ${style.normalText}`}>Through those systems and processes, I have been able to create <span>multiple revenue streams</span> for myself by just doing what I love.<br />With the launch of <span>X monetization policy</span>, I dived deeper into it and gained a hefty amount from the platform in the first month itself.<br />I am on a mission to <span>educate 1 lac people</span> on how to leverage social media to create multiple revenue streams.<br />In this <span>guidebook</span>, I share how I managed to earn this amount from X, and at the time, I have also shared some interesting case studies of top X influencers and some <span>practical tasks to implement.</span>

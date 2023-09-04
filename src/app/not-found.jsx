@@ -4,7 +4,7 @@ import {FaRegSadTear} from 'react-icons/fa'
 export const metadata = {
   title: 'Page Not Found - Peepoye',
   description: 'Page Not Found - Peepoye',
-  image: 'https://i.postimg.cc/pXPLWrYr/akassh-signature.png',
+  image: 'https://i.ibb.co/6vX34KQ/akassh-signature.png',
   url: 'https://peepoye.com',
   type: 'website'
 }

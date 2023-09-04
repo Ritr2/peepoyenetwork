@@ -7,24 +7,24 @@ import PaymentSection from './PaymentSection'
 export default function AcceleratorInd() {
   const firstSectionData = [
     {
-      image: 'https://i.postimg.cc/qvd6s12Q/1.png',
+      image: 'https://i.ibb.co/VLzWq14/1.png',
       p1: '21 Modules in 3 Days',
       p2: 'to learn everything about youtube',
     },
     {
-      image: 'https://i.postimg.cc/XYcGQ98W/2.png',
+      image: 'https://i.ibb.co/sQqgGHN/2.png',
       p1: 'A Copy-Paste Method',
       p2: 'to strategize your youtube growth',
     }
     ,
     {
-      image: 'https://i.postimg.cc/Zqb9g07d/3.png',
+      image: 'https://i.ibb.co/hBBNXCq/3.png',
       p1: 'Lifetime Access',
       p2: 'to the course to learn and implement ',
     }
     ,
     {
-      image: 'https://i.postimg.cc/R0g3z9yb/4.png',
+      image: 'https://i.ibb.co/sW1LcLQ/4.png',
       p1: 'Weekly Coffee Chats',
       p2: 'to solve all your doubts on a live call.',
     }
@@ -79,7 +79,7 @@ export default function AcceleratorInd() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 1, type: 'spring', bounce: 0.5, delay: 1 }}
           >
-            <img src="https://i.postimg.cc/g0X19Fhm/06e2c4da0e7eea3255aa3117ce558def.png" alt="akasshashokgupta" className='w-full h-auto' />
+            <img src="https://i.ibb.co/VLrMK0g/06e2c4da0e7eea3255aa3117ce558def.png" alt="akasshashokgupta" className='w-full h-auto' />
           </motion.div>
         </div>
         <div className="flex flex-col gap-5 items-center">

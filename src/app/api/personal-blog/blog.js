@@ -6,7 +6,7 @@ const blogdata = [
     category_id: 2,
     description: "The blog discusses the importance of starting a YouTube channel in 2023 and how it can help you grow your business or personal brand.",
     image: {
-      src: "https://i.postimg.cc/26fyM01V/the-reason-you-must-start-a-youtube-channel-in-the-year-2023.jpg",
+      src: "https://i.ibb.co/GxBpHVT/the-reason-you-must-start-a-youtube-channel-in-the-year-2023.jpg",
       alt: "The reason you must start a YouTube Channel in the year 2023!",
     },
     owner: "Akassh Ashok Gupta",
@@ -95,7 +95,7 @@ const blogdata = [
     category_id: 2,
     description: "Want to grow fast on YouTube? Here are 5 top mistakes which you should avoid to grow your channel fast. Hack to YouTube channel growth",
     image: {
-      src: "https://i.postimg.cc/fRr02779/grow-fast-on-youtube-5-common-mistakes-to-avoid.jpg",
+      src: "https://i.ibb.co/CsSfxKp/grow-fast-on-youtube-5-common-mistakes-to-avoid.jpg",
       alt: "Grow fast on YouTube: 5 Common Mistakes to Avoid",
     },
     owner: "Akassh Ashok Gupta",
@@ -155,7 +155,7 @@ const blogdata = [
       h2: false,
       p: `Unlock the secrets to YouTube success now! 45-Minutes 1x1 Audit Call With Akassh, Founder Of Peepoye Network(1M+ Subscriber On YouTube) To Discuss the Strategy For Your YouTube Channel & Accelerate Your Growth & help you create Multiple Revenue Streams.`,
       image: {
-        src: "https://i.postimg.cc/JhdWL47y/audit-call.png",
+        src: "https://i.ibb.co/HXFn7mb/audit-call.png",
         alt: "Audit Call",
       },
       button: {
@@ -171,7 +171,7 @@ const blogdata = [
     category_id: 2,
     description: "Find the best niche for your YouTube channel. YouTube niche ideas. Key to identify the best niche for your YouTube channel growth. ",
     image: {
-      src: "https://i.postimg.cc/fRpJjzZ7/niche-understanding-key-to-Success-in-You-Tube-Video-Creation.jpg",
+      src: "https://i.ibb.co/XCnjW4j/niche-understanding-key-to-Success-in-You-Tube-Video-Creation.jpg",
       alt: "Niche Understanding: Key to Success in YouTube Video Creation",
     },
     owner: "Akassh Ashok Gupta",
@@ -252,7 +252,7 @@ const blogdata = [
     category_id: 1,
     description: "The blog explains how influencer marketing has become a more effective method of promoting brands in the digital age, especially for startups and niche industries",
     image: {
-      src: "https://i.postimg.cc/vBLTs5nX/why-influence-marketing-is-becoming-the-number-1-tool-for-modern-brands.jpg",
+      src: "https://i.ibb.co/2NqQMvy/why-influence-marketing-is-becoming-the-number-1-tool-for-modern-brands.jpg",
       alt: "Why Influence Marketing is becoming the #1 tool for Modern Brands?",
     },
     owner: "Akassh Ashok Gupta",
@@ -322,7 +322,7 @@ const blogdata = [
     category_id: 2,
     description: "Learn how to grow a successful YouTube channel by leveraging the expertise of consultants and improving your strategy.",
     image: {
-      src: "https://i.postimg.cc/X7NGn1Q5/grow-on-youtube-like-a-bullet-train.png",
+      src: "https://i.ibb.co/jkLJPMw/grow-on-youtube-like-a-bullet-train.png",
       alt: "Grow on YouTube like a Bullet Train",
     },
     owner: "Akassh Ashok Gupta",
@@ -427,7 +427,7 @@ const blogdata = [
     category_id: 2,
     description: "Learn how to create engaging and eye-catching YouTube thumbnails with Canva and increase your views with the best YouTube video titles.",
     image: {
-      src: "https://i.postimg.cc/gkMwjyTT/maximize-views-guide-to-engaging-youtube-thumbnails-and-titles.jpg",
+      src: "https://i.ibb.co/JvdrvPz/maximize-views-guide-to-engaging-youtube-thumbnails-and-titles.jpg",
       alt: "Maximize Views: Guide to Engaging YouTube Thumbnails & Titles",
     },
     owner: "Akassh Ashok Gupta",
@@ -521,7 +521,7 @@ const blogdata = [
     category_id: 2,
     description: "Here is how you can make your YouTube content more engaging. Follow these tips to make the best and most unique YouTube videos.",
     image: {
-      src: "https://i.postimg.cc/d36h8GtD/increase-your-audience-retention-tips-to-create-engaging-youtube-videos.png",
+      src: "https://i.ibb.co/YQzsnwB/increase-your-audience-retention-tips-to-create-engaging-youtube-videos.png",
       alt: "Increase your audience retention: Tips to create engaging YouTube videos",
     },
     owner: "Akassh Ashok Gupta",
@@ -601,7 +601,7 @@ const blogdata = [
     category_id: 2,
     description: "Steps to rank high on YouTube search results. Understanding YouTube SEO, meta tags, keyword research etc. Rank your channel high on YouTube.",
     image: {
-      src: "https://i.postimg.cc/pVCrcYRL/youtube-seo-rank-your-video-channel-high-on-youtube.png",
+      src: "https://i.ibb.co/hL3MDFS/youtube-seo-rank-your-video-channel-high-on-youtube.png",
       alt: "YouTube SEO: Rank your Video & Channel High on YouTube",
     },
     owner: "Akassh Ashok Gupta",
@@ -662,7 +662,7 @@ const blogdata = [
     category_id: 1,
     description: "In today's digital age, having a website is a necessity, not a luxury.",
     image: {
-      src: "https://i.postimg.cc/NfPMBsyh/4-reasons-why-you-need-a-website-necessity-not-a-luxury.jpg",
+      src: "https://i.ibb.co/w7Ncxqp/4-reasons-why-you-need-a-website-necessity-not-a-luxury.jpg",
       alt: "4 Reasons Why You Need a Website: Necessity, Not a Luxury!",
     },
     owner: "Akassh Ashok Gupta",
@@ -681,7 +681,7 @@ const blogdata = [
             h2: "1. Credibility and Professionalism",
             p: `In today's digital age, having a website has become more important than ever before. It has become a symbol of credibility and professionalism, especially for businesses and personal brands. A <a href='https://akassh.co/namecheap' target='_blank'>website offers </a> an opportunity to showcase your products, services, and ideas to a global audience, and it provides a sense of trust and legitimacy to your audience. By having a website, you can show that you take your business or personal brand seriously and that you are committed to providing value to your customers. For example, On my website, peepoye.com, you'll find courses that I offer specifically on the topic of YouTube growth.`,
             image: {
-              src: "https://i.postimg.cc/jSwjjpND/akasshwebsite.png",
+              src: "https://i.ibb.co/TYgRmnF/akasshwebsite.png",
               alt: "Akassh Ashok Gupta's Website",
             }
           },
@@ -732,7 +732,7 @@ const blogdata = [
     category_id: 3,
     description: "Discover how doctors promote healthy communities. Learn about advocating for initiatives, addressing social determinants & encouraging support networks.",
     image: {
-      src: "https://i.postimg.cc/SNKsB2x7/a-doctors-community-guide-building-trust-and-connection.jpg",
+      src: "https://i.ibb.co/nfcYztx/a-doctors-community-guide-building-trust-and-connection.jpg",
       alt: "A Doctor's Community Guide: Building Trust and Connection",
     },
     owner: "Akassh Ashok Gupta",
@@ -856,7 +856,7 @@ const blogdata = [
     category_id: 2,
     description: "Learn why getting your YouTube channel audited is essential for success in the digital world. Our blog explains the benefits of a professional review.",
     image: {
-      src: "https://i.postimg.cc/vTYBHDLy/why-you-should-get-your-youtube-channel-audited.jpg",
+      src: "https://i.ibb.co/SNWxLs6/why-you-should-get-your-youtube-channel-audited.jpg",
       alt: "Why You Should Get Your YouTube Channel Audited?",
     },
     owner: "Akassh Ashok Gupta",
@@ -956,7 +956,7 @@ const blogdata = [
     category_id: 1,
     description: "The blog discusses the importance of marketing and its various techniques and strategies. It then highlights the three best ways of marketing in 2023",
     image: {
-      src: "https://i.postimg.cc/zBnbG9sC/best-ways-of-marketing-in-2023.png",
+      src: "https://i.ibb.co/vqTSq3J/best-ways-of-marketing-in-2023.png",
       alt: "Best ways of Marketing in 2023",
     },
     owner: "Akassh Ashok Gupta",
@@ -1024,7 +1024,7 @@ const blogdata = [
     category_id: 4,
     description: "Discover the potential of becoming a full-time influencer for financial stability. Get tips on starting the influencer journey & identifying your niche",
     image: {
-      src: "https://i.postimg.cc/Jznk5YX8/becoming-an-influencer-while-studying-or-working-breaking-myths-and-taking-step.jpg",
+      src: "https://i.ibb.co/6NFYvPW/becoming-an-influencer-while-studying-or-working-breaking-myths-and-taking-step.jpg",
       alt: "Becoming an Influencer while Studying or Working: Breaking Myths & Taking step",
     },
     owner: "Akassh Ashok Gupta",
@@ -1080,7 +1080,7 @@ const blogdata = [
       h2: false,
       p: `Are you passionate about becoming a <strong className="font-bold text-black">social media influencer</strong>, but feel like you're hitting roadblocks along the way?<br/>If so, you're not alone! Don't let roadblocks hold you back any longer – it's time to <strong className="font-bold text-black">unlock the secrets to becoming a successful influencer!</strong>`,
       image: {
-        src: "https://i.postimg.cc/t4bfMP52/guide-1.png",
+        src: "https://i.ibb.co/cyzwFyF/guide-1.png",
         alt: "Influencer Guidebook",
       },
       button: {
@@ -1096,7 +1096,7 @@ const blogdata = [
     category_id: 4,
     description: "Unlock the power of effective communication with the golden rule of conversation: wearing someone else's shoes. Discover the importance of empathy",
     image: {
-      src: "https://i.postimg.cc/JzGskDw4/the-golden-rule-of-conversation-wearing-someone-elses-shoes.jpg",
+      src: "https://i.ibb.co/fMmh2Jx/the-golden-rule-of-conversation-wearing-someone-elses-shoes.jpg",
       alt: "The Golden Rule of Conversation: Wearing Someone Else's Shoes",
     },
     owner: "Akassh Ashok Gupta",
@@ -1166,7 +1166,7 @@ const blogdata = [
     category_id: 5,
     description: "Artificial intelligence (AI) is rapidly changing the world, and one of the most significant impacts is on the job market. Many people are concerned that AI will",
     image: {
-      src: "https://i.postimg.cc/j2MjWKZ7/will-ai-take-over-all-jobs-unveiling-the-truth-and-exploring-new-opportunities.png",
+      src: "https://i.ibb.co/jL5bMSJ/will-ai-take-over-all-jobs-unveiling-the-truth-and-exploring-new-opportunities.png",
       alt: "Will AI Take Over All Jobs? Unveiling the Truth and Exploring New Opportunities",
     },
     owner: "Akassh Ashok Gupta",
@@ -1242,7 +1242,7 @@ const blogdata = [
     category_id: 2,
     description: "Learn how to do thorough research and create a well-crafted script to make your videos more engaging, informative, and successful.",
     image: {
-      src: "https://i.postimg.cc/VNt5KxLx/research-and-scripting-the-foundation-of-great-content.png",
+      src: "https://i.ibb.co/rv78RtR/research-and-scripting-the-foundation-of-great-content.png",
       alt: "Research and Scripting: The Foundation of Great Content",
     },
     owner: "Akassh Ashok Gupta",
@@ -1293,7 +1293,7 @@ const blogdata = [
     category_id: 2,
     description: "Discover how YouTube's relaxed monetization rules open up exciting opportunities for creators to make money.  Learn more and unleash your creativity now!",
     image: {
-      src: "https://i.postimg.cc/FzNfdTv2/making-money-with-youtube-has-never-been-easier.png",
+      src: "https://i.ibb.co/X2RyTsf/making-money-with-youtube-has-never-been-easier.png",
       alt: "Making Money with YouTube Has Never Been Easier!",
     },
     owner: "Akassh Ashok Gupta",
@@ -1382,7 +1382,7 @@ const blogdata = [
     category_id: 6,
     description: "Master the art of salary negotiation and unlock your worth with effective techniques. Learn how to navigate salary discussions, assess market rates",
     image: {
-      src: "https://i.postimg.cc/BvPPd8Nw/mastering-the-art-of-salary-negotiation-unlocking-your-worth.jpg",
+      src: "https://i.ibb.co/Qbbhkmn/mastering-the-art-of-salary-negotiation-unlocking-your-worth.jpg",
       alt: "Mastering the Art of Salary Negotiation: Unlocking Your Worth",
     },
     owner: "Akassh Ashok Gupta",
@@ -1495,7 +1495,7 @@ const blogdata = [
     category_id: 7,
     description: "Discover the 4P Rule for choosing the right career path.  Make informed decisions, embrace exploration, and find your suitable career.",
     image: {
-      src: "https://i.postimg.cc/8kmfQgBD/choosing-the-right-career-the-4p-rule.png",
+      src: "https://i.ibb.co/Bj8ZbJV/choosing-the-right-career-the-4p-rule.png",
       alt: "Choosing the Right Career: The 4P Rule",
     },
     owner: "Akassh Ashok Gupta",
@@ -1565,7 +1565,7 @@ const blogdata = [
     category_id: 3,
     description: "Grow your reach and engagement on Instagram with Threads. First-mover advantage to engage with an active community and promote your content.",
     image: {
-      src: "https://i.postimg.cc/pTN5x26V/instagrams-threads-app-a-golden-opportunity-for-creators.jpg",
+      src: "https://i.ibb.co/0K7Mz4v/instagrams-threads-app-a-golden-opportunity-for-creators.jpg",
       alt: "Instagram's Threads App: A Golden Opportunity for Creators",
     },
     owner: "Akassh Ashok Gupta",
@@ -1649,7 +1649,7 @@ const blogdata = [
     category_id: 6,
     description: "Explore preparation, practice, presentation, and active participation techniques. Learn the crucial dos and don'ts for a confident and impactful interview experience.",
     image: {
-      src: "https://i.postimg.cc/P5N8ZRhF/Acing-an-Interview.png",
+      src: "https://i.ibb.co/Xp1DsKM/Acing-an-Interview.png",
       alt: "Mastering the Art of Acing Interviews: Your 4-Step Guide",
     },
     owner: "Akassh Ashok Gupta",

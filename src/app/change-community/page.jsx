@@ -40,7 +40,7 @@ export default function page() {
         <div className="flex flex-col md:flex-row items-center justify-center gap-20 mt-5">
           <div className="flex flex-col justify-center gap-4 bg-neutral-100 shadow-lg drop-shadow-lg rounded-lg p-3 max-w-xs">
             <div className="flex items-center justify-center">
-              <img src="https://i.postimg.cc/vHxNQsBG/image.png" alt="Akassh Ashok Gupta" className="w-4/12" draggable={false} />
+              <img src="https://i.ibb.co/LPB1GRM/image.png" alt="Akassh Ashok Gupta" className="w-4/12" draggable={false} />
             </div>
             <h3 className="text-lg md:text-2xl self-center font-bold text-neutral-900">Change Catalyst</h3>
             <p className="text-sm md:text-lg text-neutral-700 text-center">Change Catalysts work in different campaigns with Peepoye to bring a positive change in the social environment.</p>
@@ -52,7 +52,7 @@ export default function page() {
           </div>
           <div className="flex flex-col justify-center gap-4 bg-neutral-100 shadow-lg drop-shadow-lg rounded-lg p-3 max-w-xs">
             <div className="flex items-center justify-center">
-              <img src="https://i.postimg.cc/7ZFCpSRx/image.png" alt="Akassh Ashok Gupta" className="w-4/12" draggable={false} />
+              <img src="https://i.ibb.co/Ns1TnM8/image.png" alt="Akassh Ashok Gupta" className="w-4/12" draggable={false} />
             </div>
             <h3 className="text-lg md:text-2xl self-center font-bold text-neutral-900">Change Leader</h3>
             <p className="text-sm md:text-lg text-neutral-700 text-center">Change Leaders drive change initiatives and collaborate with Team Peepoye to plan future campaigns.</p>
@@ -71,35 +71,35 @@ export default function page() {
           <p className="text-lg md:text-2xl text-neutral-700">Loyalty badges next to your name in comments and live chat</p>
         </div>
         <div className="flex flex-col items-center gap-2">
-          <img src="https://i.postimg.cc/NfhjGQ44/AB-KUCH-NAHI-CHUPEGA-5-1.png" alt="Akassh Ashok Gupta" className="w-4/12" draggable={false} />
+          <img src="https://i.ibb.co/xHfVMfb/image.png" alt="Akassh Ashok Gupta" className="w-4/12" draggable={false} />
         </div>
         <div className="flex flex-row items-center gap-2">
           <AiOutlineCheck className="text-3xl text-red-600 w-10" />
           <p className="text-lg md:text-2xl text-neutral-700">Custom emoji to use in comments and live chat</p>
         </div>
         <div className="flex flex-col items-center gap-2">
-          <img src="https://i.postimg.cc/ncvcCNSt/AB-KUCH-NAHI-CHUPEGA-6-1.png" alt="Akassh Ashok Gupta" className="w-4/12" draggable={false} />
+          <img src="https://i.ibb.co/CtB6VCD/AB-KUCH-NAHI-CHUPEGA-6-1.png" alt="Akassh Ashok Gupta" className="w-4/12" draggable={false} />
         </div>
         <div className="flex flex-row items-center gap-2">
           <AiOutlineCheck className="text-3xl text-red-600 w-10" />
           <p className="text-lg md:text-2xl text-neutral-700">Priority reply to comments received in the first week subject to uniqueness, relevance etc</p>
         </div>
         <div className="flex flex-col items-center gap-2">
-          <img src="https://i.postimg.cc/3x18ZmHS/AB-KUCH-NAHI-CHUPEGA-16.png" alt="Akassh Ashok Gupta" className="w-10/12" draggable={false} />
+          <img src="https://i.ibb.co/9gKZ6v1/AB-KUCH-NAHI-CHUPEGA-16.png" alt="Akassh Ashok Gupta" className="w-10/12" draggable={false} />
         </div>
         <div className="flex flex-row items-center gap-2">
           <AiOutlineCheck className="text-3xl text-red-600 w-10" />
           <p className="text-lg md:text-2xl text-neutral-700">Private Club Access where you can get updates on upcoming videos from me</p>
         </div>
         <div className="flex flex-col items-center gap-2">
-          <img src="https://i.postimg.cc/PqqtVJXt/AB-KUCH-NAHI-CHUPEGA-15.png" alt="Akassh Ashok Gupta" className="w-10/12" draggable={false} />
+          <img src="https://i.ibb.co/n0Zhcvj/AB-KUCH-NAHI-CHUPEGA-15.png" alt="Akassh Ashok Gupta" className="w-10/12" draggable={false} />
         </div>
         <div className="flex flex-row items-center gap-2">
           <AiOutlineCheck className="text-3xl text-red-600 w-10" />
           <p className="text-lg md:text-2xl text-neutral-700">Monthly virtual video collaborations with Akassh and Team Peepoye</p>
         </div>
         <div className="flex flex-col items-center gap-2">
-          <img src="https://i.postimg.cc/xjm94W2b/Group-6.png" alt="Akassh Ashok Gupta" className="w-10/12" draggable={false} />
+          <img src="https://i.ibb.co/jrnj4nD/Group-6.png" alt="Akassh Ashok Gupta" className="w-10/12" draggable={false} />
         </div>
       </section>
       <section className="flex flex-col w-full justify-center py-10 px-2 md:px-60 gap-10">
@@ -107,12 +107,12 @@ export default function page() {
         <div className="flex flex-col md:flex-row items-center justify-center gap-20">
           <div className="flex flex-col justify-center gap-4">
             <Link href="https://www.youtube.com/channel/UCyR0KBccWM6RnAMweDTWS1g/join" >
-              <img src="https://i.postimg.cc/bYC23JKL/Change-Catalyst-2.png" alt="Akassh Ashok Gupta" className="w-10/12" draggable={false} />
+              <img src="https://i.ibb.co/xL3Ry1C/Change-Catalyst-2.png" alt="Akassh Ashok Gupta" className="w-10/12" draggable={false} />
             </Link>
           </div>
           <div className="flex flex-col justify-center gap-4">
             <Link href="https://www.youtube.com/channel/UCyR0KBccWM6RnAMweDTWS1g/join" >
-              <img src="https://i.postimg.cc/Gh4TNRRR/Change-leader-2.png" alt="Akassh Ashok Gupta" className="w-10/12" draggable={false} />
+              <img src="https://i.ibb.co/44PWxkw/Change-leader-2.png" alt="Akassh Ashok Gupta" className="w-10/12" draggable={false} />
             </Link>
           </div>
         </div>
@@ -120,7 +120,7 @@ export default function page() {
       <section className="flex flex-col w-full justify-center py-10 px-2 md:px-60 gap-10 bg-neutral-100">
         <h2 className="text-2xl md:text-4xl text-center font-bold text-neutral-900">Desired traits of Private Club Member</h2>
         <div className="flex flex-col items-center justify-center gap-10">
-          <img src="https://i.postimg.cc/76BbssQb/AB-KUCH-NAHI-CHUPEGA-1264-872px-1024x666.png" alt="Akassh Ashok Gupta" className="w-10/12" draggable={false} />
+          <img src="https://i.ibb.co/ypTDwKn/AB-KUCH-NAHI-CHUPEGA-1264-872px-1024x666.png" alt="Akassh Ashok Gupta" className="w-10/12" draggable={false} />
           </div>
         </section>
     </main>

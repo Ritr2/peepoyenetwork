@@ -31,7 +31,7 @@ export default function page() {
           </div>
         </div>
         <div className="flex flex-col items-center justify-center flex-1 order-2">
-          <img src="https://i.postimg.cc/t4bfMP52/guide-1.png" alt="Guide" className="w-full" draggable={false} />
+          <img src="https://i.ibb.co/cyzwFyF/guide-1.png" alt="Guide" className="w-full" draggable={false} />
         </div>
       </section>
       <section className="flex w-full">
@@ -39,7 +39,7 @@ export default function page() {
       </section>
       <section className="flex flex-col md:flex-row items-center justify-center md:gap-10 pt-10 px-2 md:px-40">
         <div className="flex flex-col items-center self-end w-full">
-          <img src="https://i.postimg.cc/HW9ThHDg/akasshashokgupta.webp" alt="Akassh ashok Gupta" className="w-full -scale-x-100" draggable={false} />
+          <img src="https://i.ibb.co/GdRJ5sw/akasshashokgupta.webp" alt="Akassh ashok Gupta" className="w-full -scale-x-100" draggable={false} />
         </div>
         <div className="flex flex-col justify-center gap-2 md:gap-5 pb-8">
           <h2 className="text-2xl md:text-5xl font-bold text-center md:text-left text-neutral-700">Why It Is Must For You?</h2>
