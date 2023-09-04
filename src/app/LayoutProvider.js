@@ -16,8 +16,8 @@ export const LayoutProvider = ({ children }) => {
       <>
           {LandingPage.includes(pathname) ? null : <NavigationBar />}
           {children}
-          {LandingPage.includes(pathname) ? null : <EnquiryBot />}
           {LandingPage.includes(pathname) ? null : <Footer />}
+          {LandingPage.includes(pathname) ? null : <EnquiryBot />}
       </>
   )
 };

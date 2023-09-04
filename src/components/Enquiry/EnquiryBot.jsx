@@ -9,16 +9,22 @@ export default function EnquiryBot() {
   const [show, setShow] = React.useState(false)
   const [hover, setHover] = React.useState(false)
   const [bounce, setBounce] = React.useState(false)
+  const [bounceCount, setBounceCount] = React.useState(0)
 
   useEffect(() => {
-    if (!bounce) {
-      setTimeout(() => {
-        setBounce(true)
-      }, 10000)
+    if (bounceCount < 4) {
+      if (!bounce) {
+        setTimeout(() => {
+          setBounce(true)
+          setHover(true)
+          setBounceCount(bounceCount + 1)
+        }, 2000)
+      }
     }
     if (bounce) {
       setTimeout(() => {
         setBounce(false)
+        setHover(false)
       }, 3000)
     }
   }, [show, bounce])
@@ -40,10 +46,10 @@ export default function EnquiryBot() {
 
   return (
     <>
-    <div className={`fixed bottom-10 right-10 z-10 bg-neutral-600 rounded-full hover:scale-105 cursor-pointer ${bounce ? 'animate-bounce': ''} drop-shadow-2xl shadow-2xl`} onClick={() => setShow(true)} onMouseEnter={() => setHover(true)} onMouseLeave={() => setHover(false)}>
-      <img src="https://i.postimg.cc/W3nCyqkr/image.png" alt="EnquiryBot" className='w-10 md:w-14 h-auto' />
-      <div className={`absolute -top-10 -left-5 p-2 rounded-md bg-neutral-600 ${hover ? 'flex' : 'hidden'} justify-center items-center text-white text-xs transition-all duration-300`}>
-        Click to Enquiry
+    <div className={`fixed bottom-10 right-10 z-10 rounded-full hover:scale-105 cursor-pointer ${bounce ? 'animate-bounce': ''}`} onClick={() => setShow(true)} onMouseEnter={() => setHover(true)} onMouseLeave={() => setHover(false)}>
+      <img src="https://i.ibb.co/w0qNKBC/image.png" alt="EnquiryBot" className='w-10 md:w-14 h-auto' />
+      <div className={`absolute -top-12 -left-5 p-2 rounded-md bg-yellow-600 ${hover ? 'flex' : 'hidden'} justify-center items-center text-white text-xs transition-all duration-300`}>
+        Click for help
       </div>
     </div>
     <AnimatePresence>

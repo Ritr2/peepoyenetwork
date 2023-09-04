@@ -18,8 +18,7 @@ export default function FeatureSection({ data, reverse, backgroundColor, about =
       x: 0,
       transition: {
         type: 'spring',
-        delay: 0.5,
-        duration: 1
+        duration: 0.5
       }
     }
   }
@@ -34,8 +33,7 @@ export default function FeatureSection({ data, reverse, backgroundColor, about =
       x: 0,
       transition: {
         type: 'spring',
-        delay: 0.5,
-        duration: 1
+        duration: 0.5
       }
     }
   }
