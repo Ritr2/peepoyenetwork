@@ -4737,6 +4737,76 @@ const blogdata = [
       title: `West Bengal couple sells their baby to buy an iPhone for making reels on Instagram`,
       slug: `west-bengal-couple-sells-their-baby-to-buy-an-iphone-for-making-reels-on-instagram`,
     },
+  },
+  {
+    title: `Privacy Breach at Netra Jyoti Institute: Students Recorded Video Inside Girls' Restroom`,
+    slug: `privacy-breack-at-netra-jyoti-institute-students-recorded-video`,
+    id: 77,
+    category_id: 13,
+    description: `Disturbing incident at Netra Jyothi Institute raises concerns about education & future mindsets transcending religion. Protecting privacy is crucial.`,
+    image: {
+      src: `https://i.ibb.co/GsDB6k9/privacy-breach-at-netra-jyoti-institute.png`,
+      alt: `Privacy Breach at Netra Jyoti Institute: Students Recorded Video Inside Girls' Restroom`,
+    },
+    owner: `Ayushi Rajput`,
+    tags: [`Privacy Breach`, `Netra Jyoti Institute`, `Students`, `Recorded Video`],
+    date: `2023-09-02`,
+    summary: `In a disturbing incident at Netra Jyothi Institute of Allied Health Sciences, three second-year students had recorded a video of their classmate when she was inside the washroom. The incident sparked outrage when the victim told her friends, who then formed the college management. This incident raises concerns about the state of education and the future mindset of students, transcending religious boundaries and emphasizing the need for basic humanity. This blog discusses the incident, its implications, and the need for education to address such disturbing mindsets.`,
+    sections: [
+      {
+        h1: `Introduction`,
+        h2: false,
+        p: `A shocking incident occurred at Netra Jyoti Institute of Allied Health Sciences involving three second-year female students studying Optometry on July 20. They allegedly recorded a video of their classmate while she was in the washroom. The accused claimed they intended to record some other girl but mistakenly recorded another. The video was subsequently deleted in front of the victim, and an apology was offered. However, the victim told her other friends about the incident, and the matter was reported to the management. The college management involved the police in the matter and handed over the phone to them. There were angry protests by other students over the violation of privacy and demanding strict action against the accused. The three students were suspended the very next day of the Incident.<br/>According to the college director Rashmi Krishna Prasad, the accused were suspended for two reasons- first, for bringing mobile phones to college, which is not allowed, and second, they used them to record a video in privacy and invade someone’s privacy.`,
+        image: false,
+        html: false,
+        subSections: false,
+      },
+      {
+        h1: `Legal Actions and Consequences`,
+        h2: false,
+        p: `Rashmi Krishna Prasad said, “We suspended the three girls immediately. Though the victim was reluctant to lodge a police complaint for some reason, we petitioned the police, informing them about the incident. We also handed over the mobile phones used in videography for forensic examination." An FIR was filed against the three female students, along with the institute itself, over the same at Malpe police station in Udupi under sections 509 (acts intended to insult the modesty of a woman), 204 (destruction of evi­dence), 175 (omission to produce document or electronic record) and 34 (acts done by several persons in furtherance of common intention) of the Indian Penal Code (IPC) and 66(E) (punishment for violation of privacy) of the Information Technology (IT) Act. These legal measures underscore the seriousness of such actions, emphasizing the need to protect individual privacy and dignity.`,
+        image: false,
+        html: false,
+        subSections: false,
+      },
+      {
+        h1: `Concerns about Education and Future Mindsets`,
+        h2: false,
+        p: `This incident raises significant concerns about the state of education and the mindset of students. These students crossed a line that should never be crossed. It questions the values and ethics imparted in educational institutions and highlights the need for better guidance on respecting privacy and consent. It also makes us wonder about the direction in which our youth is heading. This incident forces us to confront a pressing question: Is education truly on the right path? Our opinion aligns with the belief that the incident is utterly repulsive and unacceptable. It's deeply unsettling to witness girls involved in such acts that defame others. This incident highlights the pressing need for education that cultivates empathy, respect, and ethical conduct.`,
+        image: false,
+        html: false,
+        subSections: false,
+      },
+      {
+        h1: `A Matter of Humanity, not Religion`,
+        h2: false,
+        p: `Some voices have tried to turn this incident into a religious conflict, but let's be clear: this isn't about religion; it's about humanity. It's about basic human decency and respect for one another. Incidents such as these should not be used to divide people based on their religion. We must focus on teaching values that transcend religious affiliations and emphasize the importance of treating every individual with respect. The incident highlights a larger issue – the worrying mindset of some individuals and its potential implications for our society's future. Our opinion resonates with this sentiment, and we believe that education plays a crucial role in shaping attitudes and preventing such incidents from happening.<br/>The college director said, “Using this incident, false news is being spread that videos of hundreds of girls are taken. We don’t see religion in college students. The people belonging to the religion of the three girls have staged a protest condemning their act. I request not to spread false news.”`,
+        image: false,
+        html: false,
+        subSections: false,
+      },
+      {
+        h1: `Conclusion`,
+        h2: false,
+        p: `This incident at Netra Jyothi Institute is deeply disturbing, and it serves as a grim reminder that education needs to focus on more than just academic growth but also nurturing values, empathy, and respect. It's deeply disheartening to see that young girls are involved in such incidents, tarnishing the reputation and dignity of their peers. The mindset displayed by the students involved raises serious concerns about the future of our nation. Some might try to polarize it along religious lines, but this is not about religion; it's about humanity.`,
+        image: false,
+        html: false,
+        subSections: false,
+      },
+    ],
+    advertisements: {
+      show: true,
+      image: {
+        src: "https://i.postimg.cc/c4Xj2Ptb/private-club.png",
+        alt: "Private Club",
+        link: "https://akassh.co/support-peepoye",
+      },
+    },
+    referBlog: {
+      show: true,
+      title: `West Bengal couple sells their baby to buy an iPhone for making reels on Instagram`,
+      slug: `west-bengal-couple-sells-their-baby-to-buy-an-iphone-for-making-reels-on-instagram`,
+    },
   }
 ];
 
