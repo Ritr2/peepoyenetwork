@@ -47,8 +47,8 @@ export default function EnquiryBot() {
   return (
     <>
     <div className={`fixed bottom-10 right-10 z-10 rounded-full hover:scale-105 cursor-pointer ${bounce ? 'animate-bounce': ''}`} onClick={() => setShow(true)} onMouseEnter={() => setHover(true)} onMouseLeave={() => setHover(false)}>
-      <img src="https://i.ibb.co/w0qNKBC/image.png" alt="EnquiryBot" className='w-10 md:w-14 h-auto' />
-      <div className={`absolute -top-12 -left-5 p-2 rounded-md bg-yellow-600 ${hover ? 'flex' : 'hidden'} justify-center items-center text-white text-xs transition-all duration-300`}>
+      <img src="https://i.ibb.co/xS9gmWD/enquiry.png" alt="EnquiryBot" className='w-10 md:w-14 h-auto' />
+      <div className={`absolute -top-12 -left-5 p-2 rounded-md bg-neutral-500 ${hover ? 'flex' : 'hidden'} justify-center items-center text-white text-xs transition-all duration-300`}>
         Click for help
       </div>
     </div>
