@@ -101,7 +101,7 @@ export default async function page({ params }) {
                       section.p && <p className="text-base md:text-lg font-light text-left text-neutral-600">{parse(section.p)}</p>
                     }
                     {
-                      section.image && <img src={section.img.src} alt={section.image.alt} className="w-full rounded-lg h-auto" draggable={false} />
+                      section.image && <img src={section.image.src} alt={section.image.alt} className="w-full rounded-lg h-auto" draggable={false} />
                     }
                     {
                       section.subSections && (

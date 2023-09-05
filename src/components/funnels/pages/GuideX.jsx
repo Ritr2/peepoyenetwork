@@ -19,6 +19,7 @@ export default function GuideX() {
   const { ref: ref1, inView } = useInView();
   const { ref: ref2, inView: inView2 } = useInView();
   const [curImpactIndex, setCurImpactIndex] = React.useState(0);
+  const [curEarningIndex, setCurEarningIndex] = React.useState(0);
   const needData = [
     {
       h2: 'First-Mover Advantage',
@@ -94,6 +95,10 @@ export default function GuideX() {
     }
   ]
 
+  const earning = [
+    `https://i.ibb.co/7GF8JdV/image.png`, `https://i.ibb.co/BBBk90y/image.png`, `https://i.ibb.co/Q80d3pq/image-2023-09-05-14-00-50.png`,
+  ]
+
   const faq = [
     {
       question: `In which language is the guidebook available?`,
@@ -102,6 +107,10 @@ export default function GuideX() {
     {
       question: `Will it really change my life?`,
       answer: `If you really apply the method and do the tasks given in the book, then yes, it will definitely change your life to a better one!`,
+    },
+    {
+      question: `How to use the templates given in the Guidebook?`,
+      answer: `You can simply take out as many printouts of the templates as you need and use them for efficient workflow.`,
     }
   ]
 
@@ -123,6 +132,17 @@ export default function GuideX() {
       }
     }
   }
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      if (curEarningIndex === earning.length - 1) {
+        setCurEarningIndex(0);
+      } else {
+        setCurEarningIndex(curEarningIndex + 1);
+      }
+    }, 3000);
+    return () => clearInterval(interval);
+  }, [curEarningIndex]);
 
   return (
     <div className='flex w-full flex-col'>
@@ -313,6 +333,35 @@ export default function GuideX() {
           <Button query='thankyou' product='guide-x' amount='guide-x' text='Buy X Guide only for today at an unblelieveable 80% Discount' padding='px-5 py-2' bgcolor={{ normal: 'bg-blue-500', hover: 'bg-blue-700', active: 'bg-blue-800' }} txcolor='text-white' />
         </div>
       </section>
+      <section className="flex flex-col w-full justify-center py-10 px-5 md:px-28 items-center overflow-hidden gap-10">
+        <h2 className={`text-4xl text-white font-medium ${style.blueTextShadow}`}>
+          See what other People are <span className='font-semibold'>earning!!</span>
+          </h2>
+          {
+            earning.map((item, index) => (
+              <AnimatePresence key={index}>
+                {
+                  index === curEarningIndex && (
+                    <motion.div key={index}
+                      initial={{ opacity: 0, x: 100 }}
+                      animate={{ opacity: 1, x: 0 }}
+                      transition={{ duration: 1, type: 'ease' }}
+                      className={`flex flex-col rounded-xl ${style.containerShadow} md:h-96 cursor-pointer`}>
+                      {
+                        item && (
+                          <div className="flex flex-col w-full h-full flex-1 justify-center items-center">
+                            <img src={item} alt="twitter earning" className='h-full w-full rounded-xl' />
+                          </div>
+                        )
+                      }
+                    </motion.div>
+                  )
+                }
+              </AnimatePresence>
+            )
+            )
+          }
+        </section>
       <section className="flex flex-col w-full justify-center py-10 pb-16 px-5 md:px-28 items-center overflow-hidden gap-10">
         <h2 className={`text-4xl text-white font-medium ${style.blueTextShadow}`}>
           Frequently Asked Questions

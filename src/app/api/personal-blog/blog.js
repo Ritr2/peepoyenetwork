@@ -1790,6 +1790,86 @@ const blogdata = [
       },
     },
   },
+  {
+    title: "The New Twitter: “X” can make you RICH!",
+    slug: "the-new-twitter-x-can-make-you-rich",
+    id: 22,
+    category_id: 1,
+    description: "Discover X, the new face of Twitter that's revolutionizing content monetization. Learn how to earn from your content's visibility, not just engagement.",
+    image: {
+      src: "https://i.ibb.co/CtqH59X/the-new-twitter-x-can-make-you-rich.png",
+      alt: "The New Twitter: “X” can make you RICH!",
+    },
+    owner: "Akassh Ashok Gupta",
+    tags: ["twitter", "twitter x can make you rich", "Twitter", "X", "Elon Musk", "Monetization", "Twitter Monetization", "X Monetization", "Twitter Monetization Terms", "Impressions", "Tweet"],
+    date: "Tuesday, September 05, 2023",
+    summary: `Introducing X, the revamped Twitter that's your ticket to monetization success. We've cracked the code, earning big from X this month, and we're ready to spill the secrets. Get paid for eyeballs on your content, not just likes. X's IMPRESSIONS-based model is the game-changer. Eligibility is simple: subscriptions are on, play nice, and share content you love. But the real game-changer? Our guidebook - "The Ultimate Guide to Monetize X." We've distilled 6 secret nuggets, practical methods, and case studies from top X influencers inspired by the genius Elon Musk. There are implementing tasks and ready-to-use templates, all for just Rs 199. Buy now and transform your X game.`,
+    sections: [
+      {
+        h1: false,
+        h2: false,
+        p: `Hey there, content creators and future money-makers! We've got some electrifying news to share that'll make your content creation journey even more exciting. Hold onto your hats as we introduce you to the brand new X, the platform that used to be known as Twitter. With X's launch, a world of opportunities has opened up, and guess what? You're invited to be part of the action!<br/>We know you've been hustling hard to turn your passion into profit, and we're thrilled to announce that <strong className= "font-bold">we've raked in a substantial sum from X this month</strong>. But hold on, it's not just about us – it's about YOU! We're here to show you the ropes, help you navigate the monetization landscape on X, and empower you to earn like a pro.`,
+        image: {
+          src: "https://i.ibb.co/hZxZqg9/image.png",
+          alt: "The New Twitter: “X” can make you RICH!",
+        },
+        subSections: false,
+      },
+      {
+        h1: `Why X is Your Golden Ticket to Monetization Success?`,
+        h2: false,
+        p: `Imagine getting paid based on how many people see your content. That's X's magic formula – it's all about IMPRESSIONS. While other platforms like Facebook and YouTube focus on engagement and views, X values those eyeballs on your content. No more chasing likes or comments. It's time to cash in on the attention you deserve.`,
+        image: false,
+        subSections: false,
+      },
+      {
+        h1: `The Lowdown on X Monetization Terms`,
+        h2: false,
+        p: `Let's keep things simple and clear, just the way you like it. To start earning on X, here's what you need:`,
+        image: false,
+        subSections: [
+          {
+            h1: false,
+            h2: false,
+            p: `<strong className= "font-bold text-black">Eligibility:</strong> You've got to be 18 or older, have an active X account for at least 3 months, and have a complete profile with a bio and pics, a verified email, and two-factor authentication. Oh, and be on good terms with X – no rule-breaking streaks, please!<br/><strong className= "font-bold text-black">Subscriptions:</strong> If subscriptions are your thing, make sure you have 500 active followers, tweeted in the last 30 days, and are okay with the Subscriptions Creator Terms.<br/><strong className= "font-bold text-black">Play Nice:</strong> Be cool, avoid shady stuff like asking for money for illegal things or being sketchy about it. Also, no funny business with platform manipulation or violating local laws.<br/><strong className= "font-bold text-black">Content Love:</strong> Share content that plays by X's rules and avoids illegal goods, violence, fake news, and adult stuff.`,
+            image: false,
+          }
+        ],
+      },
+      {
+        h1: `IS THAT IT?`,
+        h2: false,
+        p: `Well, this is all about the terms, but you will need a smart method and strategy to make the most out of this amazing opportunity. This month, we earned a big amount of money from X just by spending half an hour a day on the platform. Do you want to know how?<br/>Well, the formula is a SECRET, but you can be one of them who gets a chance to know it!`,
+        image: false,
+        subSections: false,
+      },
+      {
+        h1: `Get "The Ultimate Guide to Monetize X" Now!`,
+        h2: false,
+        p:`Are you excited to dive into the world of monetization on X? Well, buckle up because we're about to take you on a ride through our exclusive guidebook – "The Ultimate Guide to Monetize X," – designed to be your secret weapon for making the most out of your content. We won't leave you hanging with generic advice. This guidebook is all about YOU, your niche, and your unique style.`,
+        image: false,
+        subSections: false,
+      },
+      {
+        h1: `Secure Your Copy of "The Ultimate Guide to Monetize X"!`,
+        h2: false,
+        p: `Ready to level up your monetization game? Hold onto your seat because "The Ultimate Guide to Monetize X" is here! We're all about making things easy and breezy, so if you're serious about turning your content into a money-making machine, grab your copy right now for just Rs 199.<br/><a href="/guide-x" className="pb-5">👉Buy Now</a><br/>Imagine learning from the best, getting the inside scoop on the strategies that work, and seizing the chance to monetize your content in ways you never thought possible.<br/>X is the place where big things are happening. The doors are wide open for you to become a content creator on X and ride the wave of fresh features and endless possibilities. Let's make this journey together – where your content isn't just seen, it's monetized!<br/>Note: Information shared in this post is based on current details. Monetization terms may change in the future.<br/>Join us; let's make waves on X and turn your content into cash with "The Ultimate Guide to Monetize X"!`,
+        image: false,
+        subSections: false,
+      },
+    ],
+    advertisements: {
+      show: false,
+      h1: "Convert your distraction into a money-making engine!",
+      h2: false,
+      p: `Introducing the Ultimate Guide to Monetize X, a practical guidebook to help you earn big from X. We've distilled 6 secret nuggets, practical methods, and case studies. There are implementing tasks and ready-to-use templates.`,
+      image: false,
+      button: {
+        text: "learn more",
+        link: "guide-x",
+      },
+    },
+  }
 ]
 
 export default blogdata;
