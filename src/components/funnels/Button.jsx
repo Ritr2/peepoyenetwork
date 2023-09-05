@@ -2,7 +2,7 @@
 import React from 'react'
 import PaymentForm from '../payments/PaymentForm'
 
-export default function Button({query, product,amount, text,bgcolor,txcolor,padding}) {
+export default function Button({amount, text,bgcolor,txcolor,padding, successUrl}) {
   const [dataFormVisible, setDataFormVisible] = React.useState(false)
 
   const handleClick = () => {
@@ -16,7 +16,7 @@ export default function Button({query, product,amount, text,bgcolor,txcolor,padd
       </button>
       {
         dataFormVisible &&
-        <PaymentForm setDataFormVisible={setDataFormVisible} query={query} product={product} amount={amount} bgcolor= {bgcolor} txcolor= {txcolor} />
+        <PaymentForm setDataFormVisible={setDataFormVisible} successUrl= {successUrl} amount={amount} bgcolor= {bgcolor} txcolor= {txcolor} />
       }
     </>
   )

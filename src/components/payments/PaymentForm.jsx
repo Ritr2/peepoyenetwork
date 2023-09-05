@@ -5,7 +5,7 @@ import makePayment from '@/utils/payments/makePayment'
 import { IoClose } from 'react-icons/io5'
 import ls from 'localstorage-slim';
 
-export default function PaymentForm({setDataFormVisible,query, product,amount,bgcolor,txcolor}) {
+export default function PaymentForm({setDataFormVisible,amount,bgcolor,txcolor, successUrl}) {
   const [name, setName] = React.useState(ls.get('name') ? ls.get('name') : '')
   const [email, setEmail] = React.useState(ls.get('email') ? ls.get('email') : '')
   const [phone, setPhone] = React.useState(ls.get('phone') ? ls.get('phone') : '')
@@ -39,7 +39,7 @@ export default function PaymentForm({setDataFormVisible,query, product,amount,bg
     ls.set('name', name)
     ls.set('email', email)
     ls.set('phone', phone)
-    makePayment(details, setLoading, setDataFormVisible,query,product,amount)
+    makePayment(details, setLoading, setDataFormVisible, successUrl,amount)
   }
 
   return (

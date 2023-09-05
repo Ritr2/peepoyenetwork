@@ -4682,7 +4682,10 @@ const blogdata = [
         h2: false,
         p: `The police acted quickly and filed a formal complaint against Jaydev and Sathi Ghosh. The person who bought the 8-month-old baby was also charged with a crime called human trafficking. The police managed to rescue the baby from Priyanka Ghosh, a resident of Khardah, West Bengal, who had bought the child. Both the mother and Ms. Ghosh were arrested, while Jaydev Ghosh, hasn't been caught by the police yet. The police are actively looking for him to make sure he faces the consequences for what he did according to the law.<br/>This disturbing incident raises questions that affect us as a society, How did we reach a point where the very essence of our humanity is compromised for material gains? In an era where viral trends and online fame dictate our choices, we must stop and think about the values we really care about. We should make sure that progress doesn't become more important than how we care for each other and show kindness.`,
         image: false,
-        html: false,
+        html: {
+          type: `youtube`,
+          value: `https://www.youtube.com/watch?v=FSMgxEieXbQ`,
+        },
         subSections: false,
       }
     ],
@@ -4720,7 +4723,10 @@ const blogdata = [
         h2: false,
         p: `Imagine sitting down to enjoy a meal during your train journey, and you found something creepy in your food. This is exactly what happened to Subodh Pahalajan, a passenger traveling on the Vande Bharat Express from Bhopal to Gwalior. Subodh took to Twitter to share his shocking experience with the world. He tweeted a picture of his meal, which had an unwanted addition – a cockroach! He tagged the official Twitter handle of the Indian Railway Catering and Tourism Corporation (IRCTC) and wrote, "@IRCTCofficial found a cockroach in my food, in the Vande Bharat train." His tweet quickly gained attention and when it went too viral, The Indian Railways responded to Subodh's complaint. Railway Seva, the official Twitter handle for railway-related grievances, issued an apology to Subodh for the unpleasant experience. They assured him and the public that the necessary actions would be taken to address the issue and prevent such incidents from occurring again in the future.<br/>The Divisional Railway Manager of Bhopal, not wanting to take the matter lightly, also joined the conversation on Twitter. He confirmed that immediate steps were taken to address the situation. The IRCTC promptly organized alternative food for the affected passenger and took punitive measures against the licensee.<br/>The Vande Bharat Express, considered as a premium travel service cockroach in its meal, has raised valid concerns about the quality of food provided on Indian trains. The question remains the same: who should bear the ultimate responsibility for such incidents? Is it solely the catering service provider who prepared and served the meal, or does the railway administration also share a part of the blame for granting licenses to these service providers? Can strict actions alone guarantee that such incidents won't be repeated in the future?<br/>As we continue to travel and rely on the railway system for our journeys, it's essential that these incidents serve as turning points for positive change. Ensuring the well-being and satisfaction of passengers should be a top priority, and incidents like these need improvements.`,
         image: false,
-        html: false,
+        html: {
+          type: `youtube`,
+          value: `https://www.youtube.com/watch?v=FSMgxEieXbQ`,
+        },
         subSections: false,
       }
     ],
@@ -4774,7 +4780,10 @@ const blogdata = [
         h2: false,
         p: `This incident raises significant concerns about the state of education and the mindset of students. These students crossed a line that should never be crossed. It questions the values and ethics imparted in educational institutions and highlights the need for better guidance on respecting privacy and consent. It also makes us wonder about the direction in which our youth is heading. This incident forces us to confront a pressing question: Is education truly on the right path? Our opinion aligns with the belief that the incident is utterly repulsive and unacceptable. It's deeply unsettling to witness girls involved in such acts that defame others. This incident highlights the pressing need for education that cultivates empathy, respect, and ethical conduct.`,
         image: false,
-        html: false,
+        html: {
+          type: `youtube`,
+          value: `https://www.youtube.com/watch?v=FSMgxEieXbQ`,
+        },
         subSections: false,
       },
       {
@@ -4806,6 +4815,130 @@ const blogdata = [
       show: true,
       title: `West Bengal couple sells their baby to buy an iPhone for making reels on Instagram`,
       slug: `west-bengal-couple-sells-their-baby-to-buy-an-iphone-for-making-reels-on-instagram`,
+    },
+  },
+  {
+    title: `Privacy Invasion At Lulu Mall: A techie planted a hidden camera inside women's restroom`,
+    slug: `privacy-invasion-at-lulu-mall-a-techie-planted-a-hidden-camera-inside-womens-restroom`,
+    id: 78,
+    category_id: 13,
+    description: `In a shocking incident at Lulu Mall in Kochi, Kerala, a techie disguised in burqa planted a hidden camera in the women's restroom.`,
+    image: {
+      src: `https://i.ibb.co/ZJ6d383/Privacy-Invasion-At-Lulu-Mall-A-techie-planted-a-hidden-camera-inside-women-s-restroom.png`,
+      alt: `privacy-invasion-at-lulu-mall-a-techie-planted-a-hidden-camera-inside-womens-restroom`,
+    },
+    owner: `Ayushi Rajput`,
+    tags: [`Privacy Invasion`, `Lulu Mall`, `Techie`, `Hidden Camera`],
+    date: `2023-09-05`,
+    summary: `In Kochi, Kerala, a shocking incident occurred at Lulu Mall. A man disguised in a burqa allegedly entered the women’s restroom and planted a hidden camera inside to film videos of women inside the restroom. He was caught and arrested by Kochi Police and was sent to judicial custody. This incident raises several concerns about privacy, ethics, and the direction our society is headed, emphasizing the need for better awareness and value education.`,
+    sections: [
+      {
+        h1: `Facts of the case`,
+        h2: false,
+        p: `On August 16th, a 23-year-old engineering graduate named Abhimanyu from Karivellur in Kannur, Kerala, working as a techie in Kochi Infopark, committed a disturbing act at Lulu Mall in Kochi. He entered the mall, disguising himself by wearing a burqa. Then, he allegedly entered the women's restroom and placed a mobile phone with a hidden camera inside a box. He even made a hole in the box for the camera's lens, invading the privacy of women. As per the police, he stuck it to the bathroom door. The police, mentioned in their press release, have said that Abhimanyu was found acting suspiciously near the main door of the restroom, leading mall security guards to question him, who informed police about their suspicion. Upon investigation, it was discovered that he had disguised himself in a burqa and had placed a camera inside the restroom with a video recorder switched on.`,
+        image: false,
+        html: false,
+        subSections: false,
+      },
+      {
+        h1: `Legal Consequences of the case`,
+        h2: false,
+        p: `After investigation, the police seized his mobile phone and burqa, arrested him, and charged him under sections 354(C) (voyeurism), 419 (punishment for cheating by personation) of the Indian Penal Code, and section 66(E) (Punishment for violation of privacy) of the Information Technology Act. The case was filed at Kalamassery police station. A local court has remanded him for 14 days in judicial custody. The police are also investigating if the man has performed such acts elsewhere.`,
+        image: false,
+        html: false,
+        subSections: false,
+      },
+      {
+        h1: `A call for awareness and education`,
+        h2: false,
+        p: `This incident raises broader questions about our society's direction concerning personal boundaries, consent, and the safety of public spaces, not just for women but for everyone. It raises an important question about our society and the values we uphold. The fact that even educated individuals like Abhimanyu, who is a B.Tech. Graduate can engage in such unethical behavior is concerning. <br/>Education should not only provide knowledge but also instill values, ethics, and a sense of responsibility. We need to focus not only on academic education but also on promoting respect for others' privacy and dignity.<br/>Abhimanyu's disguise while entering the mall using a burqa highlights the lengths individuals can go to for unethical activities. It's a wake-up call for authorities to improve security measures and employ vigilant staff capable of identifying suspicious behavior.<br/>Moreover, this incident questions where our society is headed regarding respecting personal boundaries and consent. Privacy is a fundamental human right, and we must work towards a society where such violations are not just legally punishable but also socially unacceptable. Respect for personal privacy should be an integral part of our culture and values.<br/>Public places must remain sanctuaries where everyone feels safe, and it is our collective responsibility to ensure this.`,
+        image: false,
+        html: false,
+        subSections: false,
+      },
+      {
+        h1: `Opinion`,
+        h2: false,
+        p: `In our opinion, this incident is a stark reminder that public places, including restrooms, need to be safe for everyone, regardless of gender. It shows that education alone doesn't guarantee responsible behavior. It is vital to impart values and ethics along with academic knowledge. The shocking part of this incident is that Abhimanyu, an educated individual holding a tech job, engaged in such invasive and unethical behavior. This highlights a crucial point: Education should not only focus on academics but also instill values, ethics, and a sense of responsibility in individuals. Academic knowledge alone does not make a person responsible or ethical. We need to foster a culture that respects personal privacy and dignity, regardless of one's gender or background.<br/>This incident should lead authorities to enhance security protocols to identify suspicious behavior and ensure that public places are safe for everyone.`,
+        image: false,
+        html: false,
+        subSections: false,
+      }
+    ],
+    advertisements: {
+      show: true,
+      image: {
+        src: "https://i.postimg.cc/c4Xj2Ptb/private-club.png",
+        alt: "Private Club",
+        link: "https://akassh.co/support-peepoye",
+      },
+    },
+    referBlog: {
+      show: true,
+      title: `Privacy Breach at Netra Jyoti Institute: Students Recorded Video Inside Girls' Restroom`,
+      slug: `privacy-breack-at-netra-jyoti-institute-students-recorded-video`,
+    },
+  },
+  {
+    title: `The Violent Parking Dispute: Man beat up Security Guard in Dwarka`,
+    slug: `the-violent-parking-dispute-man-beat-up-security-guard-in-dwarka`,
+    id: 79,
+    category_id: 13,
+    description: `A recent parking dispute turned violent in Dwarka's Manglik Apartments, and delve into the consequences of this incident.`,
+    image: {
+      src: `https://i.ibb.co/Cs27ns3/The-Violent-Parking-Dispute-Man-beat-up-Security-Guard-in-Dwarka.png`,
+      alt: `The Violent Parking Dispute: Man beat up Security Guard in Dwarka`,
+    },
+    owner: `Ayushi Rajput`,
+    tags: [`Violent Parking Dispute`, `Man beat up Security Guard`, `Dwarka`],
+    date: `2023-09-05`,
+    summary: `In Sector 6, Dwarka, Delhi, a heated argument over a parking space escalated into violence. A resident under the influence of alcohol thrashed a security guard multiple times, causing injury. The resident claimed the guard used an abusive word, which angered him enough to make him resort to violence. The incident sparked a debate among residents. What's concerning is that instead of holding Sahil accountable, his parents defended him. Sahil was also under the influence of alcohol, emphasizing the importance of responsible drinking. The incident raises concerns about responsible behavior, responsible parenting, and social accountability.`,
+    sections: [
+      {
+        h1: `Introduction`,
+        h2: false,
+        p: `On August 20th, an argument over a parking space in Dwarka Sector 6’s Manglik Apartments between the security guard, Sadashiv Jha, and a resident named Sahil turned into a violent altercation. Sahil, under the influence of alcohol, thrashed the guard multiple times using his fist, which led to an injury over his left eyebrow. The incident came to light when some residents brought the guard to the accused's house to confront him. The guard was covered in blood stains. The residents accused the man of hitting the guard for no reason; however, Sahil claimed that he was provoked by Sadashiv Jha, who didn’t allow him to park the car at his spot and used the abusive word “Saala,” triggering him. Sahil also confiscated his ID card over this. He added, “If he calls me saala, I won’t spare him.”`,
+        image: false,
+        html: false,
+        subSections: false,
+      },
+      {
+        h1: `The Aftermath and Legal Consequences`,
+        h2: false,
+        p:`Instead of holding their son accountable for his actions, Sahil’s parents defended him, engaging in heated arguments with the residents rather than apologizing to the guard.<br/>The police conducted a medical examination of Sahil, revealing that he was under the influence of alcohol during the altercation, a concerning factor that impaired his judgment and self-control, leading to aggressive behavior. Harsha M. Vardhan, DCP (Dwarka), said,” We received a PCR call at PS Dwarka South around midnight regarding a quarrel at Manglik Apartment, Sector 6, Dwarka. It was found that the guard, Sadashiv Jha, was beaten up by a man, Sahil, over a parking issue. The guard’s medical examination was done, and it was found that he sustained an injury over his left eyebrow. The doctor said the nature of the injury was simple and blunt.” <br/>A case has been registered against Sahil under sections of assault, wrongful restraint, and criminal intimidation. <br/>"The statement of the guard has been taken, and a case u/s 323/341/506 IPC has been registered. Medical examination of the accused, Sahil, was also conducted, and he was found to be under the influence of alcohol,” the DCP added. Later on, the FIR was taken back by the guard, as he was asked to settle and was given some money.`,
+        image: false,
+        html: false,
+        subSections: false,
+      },
+      {
+        h1: `The confrontation video went viral`,
+        h2: false,
+        p:`In a purported video of the incident that is widely being shared on social media, the guard can be seen outside the man’s house covered in blood stains with a few other residents. In the video, Sahil says that the guard used abusive language by calling him 'saala.' To this, the man's mother can be heard asking 'to mar dega ise (so you will beat him?). The guard says he was hit by some kind of pipe when the woman asks him about the object with which Sahil allegedly beat him. The spat deepens into a serious fight after Sahil says he is the president of the society, to which the man with the camera says it is his (Sahil's) mother and not Sahil who is the president. The parents of Sahil start forcing the two men with the guard to leave while they keep shouting that anyone cannot beat the guard doing his duty. During this, Sahil continues to abuse the two men from inside his house after his mother locks the main door.<br/>Meanwhile, the mother of one of the two men comes, and the matter gets more tense, with both sides hurling abuse and threatening each other. One of the men can be heard saying, Sahil is drunk, while they dial to call the police.`,
+        image: false,
+        html: false,
+        subSections: false,
+      },
+      {
+        h1: `Our Opinion`,
+        h2: false,
+        p:`Resorting to violence in any situation is never the right way to handle conflicts or disagreements. The fact that Sahil was under the influence of alcohol during the incident is deeply concerning, emphasizing the importance of responsible drinking. Intoxicated individuals are more likely to exhibit aggressive behavior due to impaired judgment and self-control.<br/>Moreover, the response of Sahil's parents is equally troubling. Instead of holding their son accountable for his actions, they defended him, which raises questions about responsible parenting. Parents should teach their children to take responsibility for their actions and apologize when they are in the wrong. This incident also emphasizes the importance of social responsibility and accountability. We should strive to create a society where violence is condemned, and empathy and understanding are valued. Moreover, security companies must ensure the safety and well-being of their employees. Security guards often work in challenging conditions and deserve protection and support from their employers.`,
+        image: false,
+        html: false,
+        subSections: false,
+      }
+    ],
+    advertisements: {
+      show: true,
+      image: {
+        src: "https://i.postimg.cc/c4Xj2Ptb/private-club.png",
+        alt: "Private Club",
+        link: "https://akassh.co/support-peepoye",
+      },
+    },
+    referBlog: {
+      show: true,
+      title: `Privacy Invasion At Lulu Mall: A techie planted a hidden camera inside women's restroom`,
+      slug: `privacy-invasion-at-lulu-mall-a-techie-planted-a-hidden-camera-inside-womens-restroom`,
     },
   }
 ];

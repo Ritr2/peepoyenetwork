@@ -63,7 +63,7 @@ export default async function page({ searchParams }) {
           }
         </div>
         <div className="flex flex-col items-center justify-center flex-1 order-1 md:order-2">
-          <img src={data.query.image.src} alt={data.query.image.alt} className="w-full md:w-8/12" draggable={false} />
+          <img src={data.query.image.src} alt={data.query.image.alt} className={`w-full md:${data.query.image.width}`} draggable={false} />
         </div>
       </section>
       <section className="flex flex-col md:flex-row items-center justify-center md:gap-10 py-20">

@@ -1,7 +1,7 @@
 import initializeRazorpay from "./initializeRazorpay";
 import url from "../url";
 
-const makePayment = async (details, setLoading,setDataFormVisible, query, product, amount) => {
+const makePayment = async (details, setLoading,setDataFormVisible, successUrl, amount) => {
   const res = await initializeRazorpay();
 
   if (!res) {
@@ -31,7 +31,7 @@ const makePayment = async (details, setLoading,setDataFormVisible, query, produc
     description: "Thankyou for your test donation",
     image: "/assets/images/logo.png",
     handler: function (response) {
-      window.location.href = `${url}/${query}?product=${product}`
+      window.location.href = successUrl
     },
     prefill: {
       name: details.name,
