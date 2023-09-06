@@ -57,7 +57,7 @@ export default function Testimonials() {
                 data.map((item, index) => (
                     <div key={index} className="flex flex-row items-center justify-center w-full md:w-5/12 p-4 bg-neutral-200 rounded-lg shadow-lg">
                         <div className="flex flex-col w-8/12 gap-2">
-                            <p className=" text-sm md:text-base text-neutral-600">"{item.say}"</p>
+                            <p className=" text-sm md:text-base text-neutral-600">&quot;{item.say}&quot;</p>
                             <div className="flex flex-col justify-center">
                                 <h3 className="text-base md:text-lg font-medium">{item.name}</h3>
                                 <p className="text-sm md:text-base font-medium">{item.position}</p>
