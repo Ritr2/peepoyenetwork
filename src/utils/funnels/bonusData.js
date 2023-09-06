@@ -11,7 +11,8 @@ const data = {
       src: 'https://i.ibb.co/mHQBF7n/The-World-Class-Community.png',
       alt: 'World-Class Community',
     },
-    value: '9,999'
+    value:{ ind: '9,999', int: '150'},
+    symbol: {ind: '₹', int: '$'},
   },
   community2: {
     h1: "World-Class Community",
@@ -26,7 +27,8 @@ const data = {
       src: 'https://i.ibb.co/mHQBF7n/The-World-Class-Community.png',
       alt: 'World-Class Community',
     },
-    value: '9,999'
+    value:{ ind: '9,999', int: '150'},
+    symbol: {ind: '₹', int: '$'},
   },
   donot: {
     h1: "Donot Do This On Youtube",
@@ -41,7 +43,8 @@ const data = {
       src: 'https://i.ibb.co/Y36s3QL/Donot-Do-This-On-Youtube.png',
       alt: 'Donot Do This On Youtube',
     },
-    value: '2,999'
+    value:{ ind: '2,999', int: '49'},
+    symbol: {ind: '₹', int: '$'},
   },
   scriptSecret: {
     h1: "Scripting Secrets for YouTube",
@@ -56,7 +59,8 @@ const data = {
       src: 'https://i.ibb.co/SPMN1py/Scripting-Secrets-for-You-Tube.png',
       alt: 'Scripting Secrets for YouTube',
     },
-    value: '4,999'
+    value:{ ind: '4,999', int: '60'},
+    symbol: {ind: '₹', int: '$'},
   },
   acc1: {
     h1: "Content Strategy Doc",
@@ -71,7 +75,8 @@ const data = {
       src: 'https://i.ibb.co/tDTYf1w/Content-Strategy-Doc.png',
       alt: 'Content Strategy Doc',
     },
-    value: '2,999'
+    value:{ ind: '2,999', int: '49'},
+    symbol: {ind: '₹', int: '$'},
   },
   acc2: {
     h1: "Video Editing Checklist",
@@ -86,7 +91,8 @@ const data = {
       src: 'https://i.ibb.co/qnbcHVt/Video-Editing-Checklist.png',
       alt: 'Video Editing Checklist',
     },
-    value: '2,999'
+    value:{ ind: '2,999', int: '49'},
+    symbol: {ind: '₹', int: '$'},
   },
   acc3: {
     h1: "Video Research Template",
@@ -101,7 +107,8 @@ const data = {
       src: 'https://i.ibb.co/CtYhqYb/Video-Research-Template.png',
       alt: 'Video Research Template',
     },
-    value: '2,999'
+    value:{ ind: '2,999', int: '49'},
+    symbol: {ind: '₹', int: '$'},
   },
   acc4: {
     h1: "Thumbnail Designing Hack",
@@ -116,7 +123,8 @@ const data = {
       src: 'https://i.ibb.co/BB3m2Fy/Thumbnail-Designing-Hack.png',
       alt: 'Thumbnail Designing Hack',
     },
-    value: '2,999'
+    value:{ ind: '2,999', int: '49'},
+    symbol: {ind: '₹', int: '$'},
   },
   acc5: {
     h1: "Video Optimization Doc",
@@ -131,7 +139,8 @@ const data = {
       src: 'https://i.ibb.co/4Vw8GCf/Video-Optimization-Doc.png',
       alt: 'Video Optimization Doc',
     },
-    value: '2,999'
+    value:{ ind: '2,999', int: '49'},
+    symbol: {ind: '₹', int: '$'},
   },
   acc6: {
     h1: "Revenue Prediction Tool",
@@ -146,7 +155,8 @@ const data = {
       src: 'https://i.ibb.co/DRzrtKm/Revenue-Prediction-Tool.png',
       alt: 'Revenue Prediction Tool',
     },
-    value: '2,999'
+    value:{ ind: '2,999', int: '49'},
+    symbol: {ind: '₹', int: '$'},
   }
 }
 

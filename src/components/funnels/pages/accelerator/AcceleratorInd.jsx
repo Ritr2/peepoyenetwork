@@ -2,6 +2,7 @@
 import React, { useEffect } from 'react'
 import { motion } from 'framer-motion'
 import { Link } from 'react-scroll'
+import Link2 from 'next/link'
 import PaymentSection from './PaymentSection'
 import { Sora } from 'next/font/google'
 import dynamic from "next/dynamic";
@@ -14,6 +15,8 @@ import WhoIsThisFor from './WhoIsThisFor'
 import YoutubeneurStruction from './YoutubeneurStruction'
 import Testimonials from './Testimonials'
 import FAQ from '@/components/FAQ'
+import parse from 'html-react-parser';
+import url from '@/utils/url'
 
 const ReactPlayer = dynamic(() => import('react-player/lazy'), { ssr: false });
 
@@ -22,7 +25,7 @@ const sora = Sora({
   subsets: ['latin'],
 })
 
-export default function AcceleratorInd() {
+export default function AcceleratorInd({loc, data}) {
   const { ref, inView } = useInView();
   const [videoMutted, setVideoMutted] = React.useState(true)
   const [playing, setPlaying] = React.useState(true)
@@ -76,7 +79,7 @@ export default function AcceleratorInd() {
           initial={{ opacity: 0, y: -100 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, type: 'spring', bounce: 0.5 }}>
-          ⚠️Do you know that <span className='italic font-medium'>99 out of 100 people</span> start YouTube the wrong way?
+          {data ? parse(data.query.message) : parse("⚠️Do you know that <span className='italic font-medium'>99 out of 100 people</span> start YouTube the wrong way?")}
         </motion.h1>
       </div>
       <section ref={ref} className="flex flex-col py-10 px-5 md:px-40 md:gap-16 gap-5 bg-gradient-to-r from-red-500/20 to-neutral-200">
@@ -95,28 +98,28 @@ export default function AcceleratorInd() {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 1, type: 'spring', bounce: 0.5, delay: 1 }}
             >
-              <p className={`text-2xl text-center md:text-left md:text-5xl text-neutral-800 font-bold ${style.headlineLineHeight} ${sora.className}`}
+              <p className={`text-2xl text-center md:text-left md:text-5xl select-none text-neutral-800 font-bold ${style.headlineLineHeight} ${sora.className}`}
                 initial={{ opacity: 0, x: -100 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 1, type: 'spring', bounce: 0.5, delay: 1 }}>
                 Accelerate your online growth strategy using <br /> <span className={`text-red-500 font-bold ${style.lineBg}`}>YouTube in 3 Days</span>
               </p>
-              <div className="flex flex-col items-center md:flex-row flex-wrap gap-5">
+              <div className="flex flex-col md:flex-row flex-wrap gap-5">
                 {
                   firstSectionData.map((item, index) => (
-                    <div key={index} className="flex flex-row w-10/12 md:w-5/12 items-center gap-2 bg-red-500/90 text-white px-5 py-1 rounded-md hover:scale-105 shadow-md drop-shadow-md">
+                    <div key={index} className="flex flex-row w-10/12 md:w-5/12 items-center gap-2 bg-red-500/90 text-white px-5 py-1 rounded-md hover:scale-105 shadow-md drop-shadow-md cursor-pointer select-none">
                       <div className="flex flex-col gap-1">
                         <img src={item.image} alt={index + 1} className='w-auto h-10' />
                       </div>
                       <div className="flex flex-col gap-1">
-                        <span className='text-lg'>{item.p1}</span>
+                        <span className='text-base'>{item.p1}</span>
                       </div>
                     </div>
                   ))
                 }
               </div>
             </motion.div>
-            <motion.div className={`flex order-1 md:order-2 flex-col z-40 md:h-auto ${(inView || notClosed) ? 'md:flex-1 relative h-52' : ' fixed top-4 right-4 h-24 md:h-48 w-40 md:w-80'}`}
+            <motion.div className={`flex order-1 md:order-2 flex-col z-40 md:h-auto ${(inView || notClosed) ? 'md:flex-1 relative h-52' : ' fixed top-4 right-4 h-24 md:h-48 w-40 md:w-72'}`}
               initial={{ opacity: 0, x: 100 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 1, type: 'spring', bounce: 0.5, delay: 1 }}
@@ -127,6 +130,7 @@ export default function AcceleratorInd() {
                 height={'100%'}
                 playing={playing}
                 muted={videoMutted}
+                loop={true}
               />
               <div className="absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center"
                 onClick={() => setVideoMutted(false)}
@@ -145,19 +149,25 @@ export default function AcceleratorInd() {
               </div>
               {
                 !inView && (
-                  <AiFillCloseCircle className='absolute top-2 right-2 text-white text-2xl cursor-pointer' onClick={() => setNotClosed(true)} />
+                  <AiFillCloseCircle className='absolute top-0 right-0 md:top-0 md:right-2 text-white text-2xl cursor-pointer' onClick={() => setNotClosed(true)} />
                 )
               }
             </motion.div>
           </div>
-          <div className="flex flex-col gap-5 w-full md:w-6/12">
+          <div className="flex flex-col gap-2 w-full md:w-6/12">
             <Link activeClass='activestatus' spy={true} to='paymentPage' smooth={true} duration={1000} offset={-150} className="flex flex-col items-center cursor-pointer bg-red-600 rounded-lg px-5 py-3 hover:scale-105 shadow-sm drop-shadow-sm">
               <span className='text-white text-xl md:text-3xl font-medium'>Book Now at 50% discount</span>
               <span className='text-white text-sm md:text-base font-light'>and reserve your spot at a discounted price!</span>
             </Link>
+            {
+              data && (
+                <Link2 className='self-center text-xl text-neutral-500 hover:underline' href={`${url}/${data.no.query}?product=${data.no.product}`} >
+                  No, I don't want this offer
+                </Link2>
+              )
+            }
           </div>
         </div>
-
       </section>
       <section className="flex flex-col py-10 px-5 md:px-40 gap-5">
         <div className={`flex flex-col gap-2 ${sora.className}`}>
@@ -190,11 +200,18 @@ export default function AcceleratorInd() {
                 <span className=' flex-1 text-sm md:text-lg text-neutral-800'>Not able to stay disciplined?<br /><span className='font-semibold'> Get your accountability partner who will always keep a check on you.</span></span>
               </div>
             </div>
-            <div className="flex flex-col gap-5 w-full md:w-8/12">
+            <div className="flex flex-col gap-2 w-full md:w-8/12">
               <Link activeClass='activestatus' spy={true} to='paymentPage' smooth={true} duration={1000} offset={-150} className="flex flex-col items-center cursor-pointer bg-red-600 rounded-lg px-5 py-3 hover:scale-105 shadow-sm drop-shadow-sm">
                 <span className='text-white text-xl md:text-3xl font-medium'>Book Now at 50% discount</span>
                 <span className='text-white text-sm md:text-base font-light'>and reserve your spot at a discounted price!</span>
               </Link>
+              {
+              data && (
+                <Link2 className='self-center text-xl text-neutral-500 hover:underline' href={`${url}/${data.no.query}?product=${data.no.product}`} >
+                  No, I don't want this offer
+                </Link2>
+              )
+            }
             </div>
           </div>
         </div>
@@ -210,13 +227,20 @@ export default function AcceleratorInd() {
             </p>
           </div>
           <div className="flex flex-col gap-10 md:gap-20 w-10/12">
-            <RibbonBonus data={['community2', 'donot', 'scriptSecret', 'acc1', 'acc2', 'acc3', 'acc4', 'acc5', 'acc6',]} />
+            <RibbonBonus data={['community2', 'donot', 'scriptSecret', 'acc1', 'acc2', 'acc3', 'acc4', 'acc5', 'acc6',]} loc={loc} />
           </div>
-          <div className="flex flex-col gap-5 w-full md:w-8/12">
+          <div className="flex flex-col gap-2 w-full md:w-8/12">
             <Link activeClass='activestatus' spy={true} to='paymentPage' smooth={true} duration={1000} offset={-150} className="flex flex-col items-center cursor-pointer bg-red-600 rounded-lg px-5 py-3 hover:scale-105 shadow-sm drop-shadow-sm">
               <span className='text-white text-xl md:text-3xl font-medium'>Book Now at 50% discount</span>
               <span className='text-white text-sm md:text-base font-light'>and reserve your spot at a discounted price!</span>
             </Link>
+            {
+              data && (
+                <Link2 className='self-center text-xl text-neutral-500 hover:underline' href={`${url}/${data.no.query}?product=${data.no.product}`} >
+                  No, I don't want this offer
+                </Link2>
+              )
+            }
           </div>
         </div>
       </section>
@@ -253,6 +277,13 @@ export default function AcceleratorInd() {
             <span className='text-white text-xl md:text-3xl font-medium'>Book Now at 50% discount</span>
             <span className='text-white text-sm md:text-base font-light'>and reserve your spot at a discounted price!</span>
           </Link>
+          {
+              data && (
+                <Link2 className='self-center text-xl text-neutral-500 hover:underline' href={`${url}/${data.no.query}?product=${data.no.product}`} >
+                  No, I don't want this offer
+                </Link2>
+              )
+            }
         </div>
       </section>
       <section className="flex flex-col py-10 px-5 md:px-40 gap-5 md:gap-10 bg-gradient-to-r from-red-500/20 to-neutral-200">
@@ -274,7 +305,7 @@ export default function AcceleratorInd() {
         <YoutubeneurStruction />
       </section>
       <section className="flex flex-col py-20 px-40 gap-5 bg-neutral-300 bg-gradient-to-r from-red-500/20 to-neutral-200">
-        <PaymentSection />
+        <PaymentSection loc= {loc} data={data} />
       </section>
       <section className="flex flex-col py-10 px-5 md:px-40 gap-5 md:gap-10">
         <div className={`flex flex-col gap-10 ${sora.className}`}>

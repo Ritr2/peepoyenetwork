@@ -4,6 +4,7 @@ import Experience from '@/components/Experience';
 import { FaCheck } from 'react-icons/fa';
 import Button from '@/components/funnels/Button';
 import FunnelFooter from '@/components/funnels/FunnelFooter';
+import { notFound } from 'next/navigation';
 
 const dmSans = DM_Sans({
   weight: ['400', '500', '700'],

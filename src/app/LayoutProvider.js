@@ -10,7 +10,8 @@ export const LayoutProvider = ({ children }) => {
     "/guide-brb",
     "/donot",
     '/guide-x',
-    '/foundation-accelerator-pre-book-ind',
+    '/accelerator-ind',
+    '/accelerator-int',
   ]
   return (
       <>

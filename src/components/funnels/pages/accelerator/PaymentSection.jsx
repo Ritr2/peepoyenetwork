@@ -2,67 +2,143 @@ import React, { useState } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
 import { BsFillCaretRightFill } from 'react-icons/bs'
 import parse from 'html-react-parser'
+import Link2 from 'next/link'
+import url from '@/utils/url'
 
-export default function PaymentSection() {
-  const [currentPlan, setCurrentPlan] = useState('monthly')
+export default function PaymentSection({ loc, data }) {
+  const dataP = {
+    ind: {
+      monthly: {
+        selectortext: 'Monthly',
+        recommended: false,
+        price: 15,
+        currency: '$',
+        buttonText: {
+          main: 'Book Now at $15/month',
+          sub: 'Able to cancel anytime'
+        },
+        link: 'https://www.skool.com/youtubeneur',
+      },
+      yearly: {
+        selectortext: 'Yearly',
+        recommended: false,
+        price: 99,
+        currency: '$',
+        buttonText: {
+          main: 'Book Now at $99/year',
+          sub: 'Able to cancel anytime'
+        },
+        link: 'https://www.skool.com/youtubeneur',
+      },
+      lifetime: {
+        selectortext: 'Lifetime',
+        recommended: true,
+        price: 2499,
+        currency: '₹',
+        buttonText: {
+          main: 'Book Now at ₹2499/- only',
+          sub: 'Limited Time Offer'
+        },
+        link: 'https://akassh.co/accelerator-pre-book',
+      },
+    },
+    int: {
+      monthly: {
+        selectortext: 'Monthly',
+        recommended: false,
+        price: 15,
+        currency: '$',
+        buttonText: {
+          main: 'Book Now at $15/month',
+          sub: 'Able to cancel anytime'
+        },
+        link: 'https://www.skool.com/youtubeneur',
+      },
+      yearly: {
+        selectortext: 'Yearly',
+        recommended: false,
+        price: 99,
+        currency: '$',
+        buttonText: {
+          main: 'Book Now at $99/year',
+          sub: 'Able to cancel anytime'
+        },
+        link: 'https://www.skool.com/youtubeneur',
+      },
+      lifetime: {
+        selectortext: 'Lifetime',
+        recommended: true,
+        price: 99,
+        currency: '$',
+        buttonText: {
+          main: 'Book Now at $99/- only',
+          sub: 'Limited Time Offer'
+        },
+        link: 'https://akassh.co/accelerator-pre-book',
+      },
+    }
+  }
+  const [currentPlan, setCurrentPlan] = useState('lifetime')
   const items = [
     '<span className="font-bold text-black">Lifetime access to Youtubeneur Foundation Accelerator </span> our flagship Course to Build Online Authority',
-    'Instant access to our Private Youtubeneur Community to collaborate while learning',
-    `Bonus #1: Donot Do This On Youtube`,
-    `Bonus #2: Scripting Secret Course`,
-    `Bonus #3: Thumbnail Designing Hack`,
-    `Bonus #4: Video Editing Checklist`,
-    `Bonus #5: Video Optimization Doc`,
-    `Bonus #6: Revenue Prediction Tool`,
+    '<span className="font-bold text-black">Instant access</span> to our Private Youtubeneur Community to collaborate while learning',
+    `<span className="font-bold text-black">Bonus #1:</span> Donot Do This On Youtube`,
+    `<span className="font-bold text-black">Bonus #2:</span> Scripting Secret Course`,
+    `<span className="font-bold text-black">Bonus #3:</span> Thumbnail Designing Hack`,
+    `<span className="font-bold text-black">Bonus #4:</span> Video Editing Checklist`,
+    `<span className="font-bold text-black">Bonus #5:</span> Video Optimization Doc`,
+    `<span className="font-bold text-black">Bonus #6:</span> Revenue Prediction Tool`,
   ]
+
+  const handlePayment = () => {
+    if(!data){
+      window.open(dataP[loc][currentPlan].link, '_blank')
+    }
+    else{
+      window.open(data.paymentLink[currentPlan][loc], '_blank')
+    }
+  }
   return (
     <div className="flex flex-col items-center gap-10" id="paymentPage">
-      <div className="flex flex-col gap-5">
-        <h1 className="text-4xl text-center font-bold text-red-600">Choose The Plan which suits you the best</h1>
-        <div className="flex flex-row justify-center items-end gap-5">
-          <div className="flex flex-col flex-1">
-            <button className={`px-5 py-2 rounded-md ${currentPlan === 'monthly' ? 'bg-red-700 text-white' : 'bg-white text-red-700'}`} onClick={() => setCurrentPlan('monthly')}>Monthly</button>
-          </div>
-          <div className="flex flex-col flex-1">
-            <button className={`px-5 py-2 rounded-md ${currentPlan === 'yearly' ? 'bg-red-700 text-white' : 'bg-white text-red-700'}`} onClick={() => setCurrentPlan('yearly')}>Yearly</button>
-          </div>
-          <div className="flex flex-col flex-1">
-            <span className="text-2xl bg-red-500 px-4 text-white rounded-t-lg">Recommended</span>
-            <button className={`px-5 py-2 rounded-b-md ${currentPlan === 'lifetime' ? 'bg-red-700 text-white' : 'bg-white text-red-700'}`} onClick={() => setCurrentPlan('lifetime')}>Lifetime</button>
-          </div>
+      <div className="flex flex-col gap-2 w-6/12 bg-gradient-to-br from-neutral-100 to-neutral-300 shadow-md rounded-xl p-5 drop-shadow-md">
+        <h2 className="text-4xl text-center font-bold text-red-600">Are you ready to become a Youtubeneur?</h2>
+        <h3 className=' text-2xl text-center font-bold'>Here is what you get</h3>
+        <div className="flex flex-col gap-5">
+          {
+            items.map((item, index) => (
+              <div className="flex flex-row gap-2" key={index}>
+                <BsFillCaretRightFill className="text-2xl text-red-700 w-6 mt-px" />
+                <p className="text-lg flex-1">{parse(item)}</p>
+              </div>
+            ))
+          }
         </div>
-      </div>
-      <div className="flex flex-col gap-5 w-6/12 bg-gradient-to-br from-neutral-100 to-neutral-300 shadow-md rounded-xl p-5 drop-shadow-md">
-      <h2 className=' text-3xl text-center fon font-bold'>Are You Ready To Join Now?</h2>
-      <h3 className=' text-xl text-center font-bold'>Here is what you get</h3>
-      <div className="flex flex-col gap-5">
-        {
-          items.map((item, index) => (
-            <div className="flex flex-row gap-2" key={index}>
-              <BsFillCaretRightFill className="text-2xl text-red-700 w-6 mt-px" />
-              <p className="text-lg flex-1">{parse(item)}</p>
-            </div>
-          ))
-        }
+        <div className="flex flex-row justify-center items-end gap-5 w-full">
+          {
+            Object.keys(dataP[loc]).map((key, index) => (
+              <div className="flex flex-col flex-1" key={index}>
+                {
+                  dataP[loc][key].recommended && (
+                    <p className="bg-red-500 text-white text-center font-bold px-2 py-1 rounded-t-md">Recommended</p>
+                  )
+                }
+                <button className={`px-5 py-2 ${dataP[loc][key].recommended ? 'rounded-b-md' : 'rounded-md'} ${currentPlan === key ? 'bg-red-700 text-white' : 'bg-white text-red-700'}`} onClick={() => setCurrentPlan(key)}>{dataP[loc][key].selectortext}</button>
+              </div>
+            ))
+          }
         </div>
+        <button className="text-2xl bg-red-500 text-white px-3 py-2 rounded-md hover:bg-red-700 hover:scale-105 active:scale-95 transition duration-300 ease-in-out shadow-md" onClick={() => handlePayment()}>
+          {
+            dataP[loc][currentPlan].buttonText.main
+          }
+          <p className="text-sm text-white">{dataP[loc][currentPlan].buttonText.sub}</p>
+        </button>
         {
-          currentPlan === 'monthly' &&
-          <div className="flex flex-col gap-5">
-            <h2 className="text-2xl text-center font-bold">Monthly Plan</h2>
-          </div>
-
-        }
-        {
-          currentPlan === 'yearly' &&
-          <div className="flex flex-col gap-5">
-            <h2 className="text-2xl text-center font-bold"> Yearly Plan</h2>
-          </div>
-        }
-        {
-          currentPlan === 'lifetime' &&
-          <div className="flex flex-col gap-5">
-            <h2 className="text-2xl text-center font-bold">Lifetime Plan</h2>
-          </div>
+          data && (
+            <Link2 className='self-center text-xl text-neutral-500 hover:underline' href={`${url}/${data.no.query}?product=${data.no.product}`} >
+              No, I don't want this offer
+            </Link2>
+          )
         }
       </div>
     </div>

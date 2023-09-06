@@ -7,6 +7,7 @@ import FunnelFooter from '@/components/funnels/FunnelFooter';
 import url from '@/utils/url';
 import parse from 'html-react-parser';
 import Link from 'next/link';
+import { notFound } from 'next/navigation';
 
 
 const dmSans = DM_Sans({
