@@ -181,7 +181,7 @@ export default function GuideX() {
                 <span className="flex-1 text-base md:text-xl font-normal text-left text-neutral-700">Regular Price: <s>₹999</s>/-</span>
                 <span className="text-base md:text-2xl font-normal md:font-bold text-center md:text-left text-blue-500">Today’s Offer: ₹199/-</span>
               </div>
-              <Button successUrl= {`https://akassh.peepoye.com/foundational-accelerator-x-ind`} amount='guide-x' text='Buy X Guide only for today at an unblelieveable 80% Discount' padding='px-5 py-2' bgcolor={{ normal: 'bg-blue-500', hover: 'bg-blue-700', active: 'bg-blue-800' }} txcolor='text-white' />
+              <Button successUrl= {`https://akassh.peepoye.com/foundational-accelerator-x-ind`} amount='guide-x' text='Buy X Guide only for today at an unbelievable 80% Discount' padding='px-5 py-2' bgcolor={{ normal: 'bg-blue-500', hover: 'bg-blue-700', active: 'bg-blue-800' }} txcolor='text-white' />
             </div>
           </motion.div>
         </div>
@@ -221,7 +221,7 @@ export default function GuideX() {
           }
         </div>
         <div className="flex flex-col justify-center w-full md:w-4/12 gap-5">
-          <Button successUrl= {`https://akassh.peepoye.com/foundational-accelerator-x-ind`} amount='guide-x' text='Buy X Guide only for today at an unblelieveable 80% Discount' padding='px-5 py-2' bgcolor={{ normal: 'bg-blue-500', hover: 'bg-blue-700', active: 'bg-blue-800' }} txcolor='text-white' />
+          <Button successUrl= {`https://akassh.peepoye.com/foundational-accelerator-x-ind`} amount='guide-x' text='Buy X Guide only for today at an unbelievable 80% Discount' padding='px-5 py-2' bgcolor={{ normal: 'bg-blue-500', hover: 'bg-blue-700', active: 'bg-blue-800' }} txcolor='text-white' />
         </div>
       </section>
       <section className="flex flex-col w-full justify-center py-10 px-5 md:px-28 items-center overflow-hidden gap-5">
@@ -268,7 +268,7 @@ export default function GuideX() {
                 <span className="flex-1 text-base md:text-xl font-normal text-left text-neutral-700">Regular Price: <s>₹999</s>/-</span>
                 <span className="text-base md:text-2xl font-normal md:font-bold text-center md:text-left text-blue-500">Today’s Offer: ₹199/-</span>
               </div>
-              <Button successUrl= {`https://akassh.peepoye.com/foundational-accelerator-x-ind`} amount='guide-x' text='Buy X Guide only for today at an unblelieveable 80% Discount' padding='px-5 py-2' bgcolor={{ normal: 'bg-blue-500', hover: 'bg-blue-700', active: 'bg-blue-800' }} txcolor='text-white' />
+              <Button successUrl= {`https://akassh.peepoye.com/foundational-accelerator-x-ind`} amount='guide-x' text='Buy X Guide only for today at an unbelievable 80% Discount' padding='px-5 py-2' bgcolor={{ normal: 'bg-blue-500', hover: 'bg-blue-700', active: 'bg-blue-800' }} txcolor='text-white' />
             </div>
           )
         }
@@ -299,7 +299,7 @@ export default function GuideX() {
           }
         </div>
         <div className="flex flex-col justify-center w-full md:w-4/12 gap-5">
-          <Button successUrl= {`https://akassh.peepoye.com/foundational-accelerator-x-ind`} amount='guide-x' text='Buy X Guide only for today at an unblelieveable 80% Discount' padding='px-5 py-2' bgcolor={{ normal: 'bg-blue-500', hover: 'bg-blue-700', active: 'bg-blue-800' }} txcolor='text-white' />
+          <Button successUrl= {`https://akassh.peepoye.com/foundational-accelerator-x-ind`} amount='guide-x' text='Buy X Guide only for today at an unbelievable 80% Discount' padding='px-5 py-2' bgcolor={{ normal: 'bg-blue-500', hover: 'bg-blue-700', active: 'bg-blue-800' }} txcolor='text-white' />
         </div>
       </section>
       <section className="flex flex-col w-full justify-center py-10 px-5 md:px-28 items-center overflow-hidden gap-10">
@@ -331,7 +331,7 @@ export default function GuideX() {
           </div>
         </div>
         <div className="flex flex-col justify-center w-full md:w-4/12 gap-5">
-          <Button successUrl= {`https://akassh.peepoye.com/foundational-accelerator-x-ind`} amount='guide-x' text='Buy X Guide only for today at an unblelieveable 80% Discount' padding='px-5 py-2' bgcolor={{ normal: 'bg-blue-500', hover: 'bg-blue-700', active: 'bg-blue-800' }} txcolor='text-white' />
+          <Button successUrl= {`https://akassh.peepoye.com/foundational-accelerator-x-ind`} amount='guide-x' text='Buy X Guide only for today at an unbelievable 80% Discount' padding='px-5 py-2' bgcolor={{ normal: 'bg-blue-500', hover: 'bg-blue-700', active: 'bg-blue-800' }} txcolor='text-white' />
         </div>
       </section>
       <section className="flex flex-col w-full justify-center py-10 px-5 md:px-28 items-center overflow-hidden gap-10">
