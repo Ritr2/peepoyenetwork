@@ -1,7 +1,7 @@
 import React from 'react'
 import { DM_Sans } from 'next/font/google'
 import EnquiryForm from '@/components/EnquiryForm'
-import data from '@/utils/enquiry_form/enquiryformData'
+import {enquiryformDataLead as data} from '@/utils/enquiry_form/enquiryformData'
 
 const dmSans = DM_Sans({
   weight: ['400', '500', '700'],

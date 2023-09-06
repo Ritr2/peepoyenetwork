@@ -1,0 +1,14 @@
+.headlineLineHeight {
+    line-height: 1.11;
+}
+
+.lineBg {
+    background-image: url(https://i.ibb.co/ypLzWsJ/Line-1.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    padding-bottom: 10px;
+}
+
+.redShadow {
+    box-shadow: 0px 0px 10px 2px #f64a4d84;
+}

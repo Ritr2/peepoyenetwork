@@ -97,7 +97,7 @@ export default function EnquiryForm({ data, closePopup = false }) {
                           {data.questions[question].inputs && (
                             <form className='flex flex-col w-full justify-center gap-5' onSubmit={(e) => handleSelector({ question: question, submit: e })}>
                               {Object.keys(data.questions[question].inputs).map((input, index2) => (
-                                <input key={index2} className='bg-neutral-400 px-5 py-2 rounded-md placeholder:text-black border-t-4 border-blue-500' type={data.questions[question].inputs[input].type} placeholder={data.questions[question].inputs[input].placeholder} required={data.questions[question].inputs[input].required} name={data.questions[question].inputs[input].name} onChange={(e) => setAnswerList({ ...answerList, [e.target.name]: e.target.value })} />
+                                <input key={index2} className='bg-neutral-100 px-5 py-2 rounded-md placeholder:text-black border-t-4 border-blue-500' type={data.questions[question].inputs[input].type} placeholder={data.questions[question].inputs[input].placeholder} required={data.questions[question].inputs[input].required} name={data.questions[question].inputs[input].name} onChange={(e) => setAnswerList({ ...answerList, [e.target.name]: e.target.value })} />
                               )
                               )}
                               <button type='submit' className='bg-neutral-400 px-5 py-2 rounded-md hover:scale-105'>

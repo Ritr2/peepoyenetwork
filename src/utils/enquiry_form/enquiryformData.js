@@ -131,4 +131,103 @@ const enquiryformData = {
   }
 }
 
+export const enquiryformDataLead = {
+  title: 'Let us help you customize your YouTube growth!',
+  questions: {
+    reason: {
+      question: 'What is the main goal for your YouTube channel?',
+      options: {
+        1: {
+          value: 'To generate business leads organically using YouTube',
+          next: 'prefer',
+          transferLink: false,
+        },
+        2: {
+          value: 'Creating YouTube content as a hobby',
+          next: 'work',
+          transferLink: false,
+        },
+        3: {
+          value: 'Building influence',
+          next: 'work',
+          transferLink: false,
+        },
+        4: {
+          value: 'Creating a revenue stream',
+          next: 'work',
+          transferLink: false,
+        }
+      },
+    },
+    work: {
+      question: 'What is your occupation?',
+      options: {
+        1: {
+          value: 'Working Professional',
+          next: 'prefer',
+          transferLink: false,
+        },
+        2: {
+          value: 'Founder/Entrepreneur',
+          next: 'prefer',
+          transferLink: false,
+        },
+        3: {
+          value: 'Student',
+          next: 'data',
+          transferLink: {
+            name: 'Youtubeneur Community',
+            link: 'https://www.skool.com/youtubeneur',
+            text: `You are eligible for the Youtubeneur Membership Program, where you'll learn how to grow your YouTube channel and gain access to all the tools and resources you need for its expansion.`,
+            send: true,
+          }
+        },
+      },
+    },
+    prefer: {
+      question: 'What do you prefer?',
+      options: {
+        1: {
+          value: 'I want to learn how to do YouTube on my own',
+          next: 'data',
+          transferLink: {
+            name: 'Youtubeneur Community',
+            link: 'https://www.skool.com/youtubeneur',
+            text: `You are eligible for the Youtubeneur Membership Program, where you'll learn how to grow your YouTube channel and gain access to all the tools and resources you need for its expansion.`,
+            send: true,
+          }
+        },
+        2: {
+          value: 'I want help regarding YouTube growth services',
+          next: 'data',
+          transferLink: {
+            name: 'DFY- Content Service',
+            link: 'https://akassh.co/dfy-yt',
+            text: `You are eligible for the DFY Youtube Growth Service, where you'll get all the help you need to grow your YouTube channel.`,
+            send: true,
+          }
+        },
+      },
+    },
+    data: {
+      question: 'Please fill the form below',
+      inputs: {
+        name: {
+          type: 'text',
+          name: 'first_name',
+          placeholder: 'First Name',
+          required: true,
+        },
+        email: {
+          type: 'email',
+          name: 'email',
+          placeholder: 'Email',
+          required: true,
+        },
+      },
+    },
+
+  },
+}
+
 export default enquiryformData;

@@ -10,7 +10,7 @@ const robo = Lato({
 
 export default function page() {
   return (
-    <main className={`relative flex min-h-screen flex-col items-center overflow-x-hidden bg-gradient-to-b from-neutral-200 via-neutral-100 to-neutral-200 ${robo.className}`}>
+    <main className={`relative flex min-h-screen flex-col items-center overflow-x-hidden ${robo.className}`}>
       <AcceleratorInd />
     </main>
   )
