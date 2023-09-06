@@ -174,7 +174,7 @@ export default function AcceleratorInd() {
           </div>
           <div className='flex flex-col flex-1 gap-5 md:gap-6'>
             <h3 className={`text-base md:text-xl text-center md:text-left text-neutral-700 font-bold ${sora.className}`}>
-              Let Akassh answer your biggest and smallest "YouTube Growth" Challenges/Doubts/Questions.
+              Let Akassh answer your biggest and smallest &quot;YouTube Growth&quot; Challenges/Doubts/Questions.
             </h3>
             <div className="flex flex-col gap-5">
               <div className="flex flex-row gap-2">
