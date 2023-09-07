@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import parse from 'html-react-parser'
 import { AiOutlineDown } from 'react-icons/ai';
 import { motion, AnimatePresence } from 'framer-motion'
+import { BsFillCaretDownFill } from 'react-icons/bs';
 
 export default function YoutubeneurStruction() {
     const data = [
@@ -10,12 +11,32 @@ export default function YoutubeneurStruction() {
             p: `The Influence Engine`,
             modules: [
                 {
-                    h3: '1: The YouTube Ecosystem',
-                    time: '4 Hours',
+                    h3: '1. You have made it',
+                    time: '1:30',
                 },
                 {
-                    h3: '2: The YouTube Algorithm',
-                    time: '2 Hours',
+                    h3: '2. Launch the Missile',
+                    time: '18:08',
+                },
+                {
+                    h3: '3. Methods work, People fail',
+                    time: '23:51',
+                },
+                {
+                    h3: '4. Dig the Beast',
+                    time: '2:57',
+                },
+                {
+                    h3: '5. Shift the Paradigm',
+                    time: '20:25',
+                },
+                {
+                    h3: '6. The Success Guarantee',
+                    time: '6:08',
+                },
+                {
+                    h3: '7. Get that Golden Niche',
+                    time: '8:02',
                 }
             ]
         },
@@ -24,9 +45,29 @@ export default function YoutubeneurStruction() {
             p: `The Content Engine`,
             modules: [
                 {
-                    h3: 'Module 2: The Content Strategy',
-                    time: '4 Hours',
+                    h3: '8. The Platform of Choice',
+                    time: '7:55',
                 },
+                {
+                    h3: '9. Building the Content Strategy',
+                    time: '15:28',
+                },
+                {
+                    h3: '10. Produce the Value Content',
+                    time: '28:22',
+                },
+                {
+                    h3: '11. Optimize Content for Algorithm',
+                    time: '17:34',
+                },
+                {
+                    h3: '12. Explode the Reach',
+                    time: '5:30',
+                },
+                {
+                    h3: '13. Build the Influence Foundation',
+                    time: '8:48',
+                }
             ],
         },
         {
@@ -34,8 +75,8 @@ export default function YoutubeneurStruction() {
             p: `The Money Engine`,
             modules: [
                 {
-                    h3: 'Module 3: The Monetization Strategy',
-                    time: '4 Hours',
+                    h3: 'Work In Progress',
+                    time: false,
                 }
             ],
         }
@@ -51,7 +92,7 @@ export default function YoutubeneurStruction() {
 
     return (
         <div className="flex flex-row justify-center w-full">
-            <div className="flex flex-col gap-5 self-center items-center justify-center mb-5 w-full md:w-6/12 animate-text bg-gradient-to-r from-red-500/90 via-red-500/90 to-red-500 p-4 rounded-lg">
+            <div className="flex flex-col gap-5 self-center items-center justify-center mb-5 w-full md:w-6/12 animate-text bg-gradient-to-r from-red-500/90 via-red-500/90 to-red-500 p-4 rounded-3xl">
                 {
                     data.map((item, index) => (
                         <div key={index} className="flex flex-col items-center w-full">
@@ -60,7 +101,7 @@ export default function YoutubeneurStruction() {
                                     <h2 className="text-sm md:text-lg text-white" >{parse(item.h2)}</h2>
                                     <p className="text-lg md:text-xl font-bold text-white" >{parse(item.p)}</p>
                                 </div>
-                                <AiOutlineDown className={`text-3xl w-10 text-white transform transition-all duration-1000 ease-in-out ${show[index] ? 'rotate-180' : ''}`} onClick={() => {
+                                <BsFillCaretDownFill className={`text-3xl w-10 text-white transform transition-all duration-1000 ease-in-out ${show[index] ? 'rotate-180' : ''}`} onClick={() => {
                                     setShow(prev => {
                                         return prev.map((item, index3) => {
                                             if (index3 === index) {
@@ -87,7 +128,11 @@ export default function YoutubeneurStruction() {
                                                         <div key={index2} className="flex flex-col items-center justify-center w-full">
                                                             <div className="flex flex-row items-center justify-between gap-5 w-full">
                                                                 <h3 className="text-sm md:text-base text-white" >{parse(module.h3)}</h3>
-                                                                <span className="text-sm md:text-base font-bold text-white" >{parse(module.time)}</span>
+                                                                {
+                                                                    module.time && (
+                                                                        <span className="text-sm md:text-base font-bold text-white" >{parse(module.time)}</span>
+                                                                    )
+                                                                }
                                                             </div>
                                                         </div>
                                                     ))

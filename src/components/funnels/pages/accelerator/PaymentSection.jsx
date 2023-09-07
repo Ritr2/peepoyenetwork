@@ -100,20 +100,20 @@ export default function PaymentSection({ loc, data }) {
   }
   return (
     <div className="flex flex-col items-center gap-10" id="paymentPage">
-      <div className="flex flex-col gap-2 w-6/12 bg-gradient-to-br from-neutral-100 to-neutral-300 shadow-md rounded-xl p-5 drop-shadow-md">
-        <h2 className="text-4xl text-center font-bold text-red-600">Are you ready to become a Youtubeneur?</h2>
-        <h3 className=' text-2xl text-center font-bold'>Here is what you get</h3>
+      <div className="flex flex-col gap-2 w-full md:w-6/12 bg-gradient-to-br from-neutral-100 to-neutral-300 shadow-md rounded-xl p-2 md:p-5 drop-shadow-md">
+        <h2 className="text-2xl md:text-4xl text-center font-bold text-red-600">Are you ready to become a Youtubeneur?</h2>
+        <h3 className='text-xl md:text-2xl text-center font-bold'>Here is what you get</h3>
         <div className="flex flex-col gap-5">
           {
             items.map((item, index) => (
               <div className="flex flex-row gap-2" key={index}>
                 <BsFillCaretRightFill className="text-2xl text-red-700 w-6 mt-px" />
-                <p className="text-lg flex-1">{parse(item)}</p>
+                <p className="text-base md:text-lg flex-1">{parse(item)}</p>
               </div>
             ))
           }
         </div>
-        <div className="flex flex-row justify-center items-end gap-5 w-full">
+        <div className="flex flex-row justify-center items-end gap-1 md:gap-5 w-full">
           {
             Object.keys(dataP[loc]).map((key, index) => (
               <div className="flex flex-col flex-1" key={index}>
@@ -122,12 +122,12 @@ export default function PaymentSection({ loc, data }) {
                     <p className="bg-red-500 text-white text-center font-bold px-2 py-1 rounded-t-md">Recommended</p>
                   )
                 }
-                <button className={`px-5 py-2 ${dataP[loc][key].recommended ? 'rounded-b-md' : 'rounded-md'} ${currentPlan === key ? 'bg-red-700 text-white' : 'bg-white text-red-700'}`} onClick={() => setCurrentPlan(key)}>{dataP[loc][key].selectortext}</button>
+                <button className={` px-2 py-1 md:px-5 md:py-2 ${dataP[loc][key].recommended ? 'rounded-b-md' : 'rounded-md'} ${currentPlan === key ? 'bg-red-700 text-white' : 'bg-white text-red-700'}`} onClick={() => setCurrentPlan(key)}>{dataP[loc][key].selectortext}</button>
               </div>
             ))
           }
         </div>
-        <button className="text-2xl bg-red-500 text-white px-3 py-2 rounded-md hover:bg-red-700 hover:scale-105 active:scale-95 transition duration-300 ease-in-out shadow-md" onClick={() => handlePayment()}>
+        <button className="text-lg md:text-2xl bg-red-500 text-white px-3 py-2 rounded-md hover:bg-red-700 hover:scale-105 active:scale-95 transition duration-300 ease-in-out shadow-md" onClick={() => handlePayment()}>
           {
             dataP[loc][currentPlan].buttonText.main
           }

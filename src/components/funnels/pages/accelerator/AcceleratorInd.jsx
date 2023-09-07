@@ -25,7 +25,7 @@ const sora = Sora({
   subsets: ['latin'],
 })
 
-export default function AcceleratorInd({loc, data}) {
+export default function AcceleratorInd({ loc, data }) {
   const { ref, inView } = useInView();
   const [videoMutted, setVideoMutted] = React.useState(true)
   const [playing, setPlaying] = React.useState(true)
@@ -104,7 +104,7 @@ export default function AcceleratorInd({loc, data}) {
                 transition={{ duration: 1, type: 'spring', bounce: 0.5, delay: 1 }}>
                 Accelerate your online growth strategy using <br /> <span className={`text-red-500 font-bold ${style.lineBg}`}>YouTube in 3 Days</span>
               </p>
-              <div className="flex flex-col md:flex-row flex-wrap gap-5">
+              <div className="flex flex-col md:flex-row items-center md:items-stretch flex-wrap gap-5">
                 {
                   firstSectionData.map((item, index) => (
                     <div key={index} className="flex flex-row w-10/12 md:w-5/12 items-center gap-2 bg-red-500/90 text-white px-5 py-1 rounded-md hover:scale-105 shadow-md drop-shadow-md cursor-pointer select-none">
@@ -155,9 +155,9 @@ export default function AcceleratorInd({loc, data}) {
             </motion.div>
           </div>
           <div className="flex flex-col gap-2 w-full md:w-6/12">
-            <Link activeClass='activestatus' spy={true} to='paymentPage' smooth={true} duration={1000} offset={-150} className="flex flex-col items-center cursor-pointer bg-red-600 rounded-lg px-5 py-3 hover:scale-105 shadow-sm drop-shadow-sm">
+            <Link activeClass='activestatus' spy={true} to='paymentPage' smooth={true} duration={1000} offset={-150} className="flex flex-col items-center cursor-pointer bg-red-600 rounded-lg px-2 py-1 md:px-5 md:py-3 hover:scale-105 shadow-sm drop-shadow-sm">
               <span className='text-white text-xl md:text-3xl font-medium'>Book Now at 50% discount</span>
-              <span className='text-white text-sm md:text-base font-light'>and reserve your spot at a discounted price!</span>
+              <span className='text-white text-center text-sm md:text-base font-light'>and reserve your spot at a discounted price!</span>
             </Link>
             {
               data && (
@@ -201,17 +201,17 @@ export default function AcceleratorInd({loc, data}) {
               </div>
             </div>
             <div className="flex flex-col gap-2 w-full md:w-8/12">
-              <Link activeClass='activestatus' spy={true} to='paymentPage' smooth={true} duration={1000} offset={-150} className="flex flex-col items-center cursor-pointer bg-red-600 rounded-lg px-5 py-3 hover:scale-105 shadow-sm drop-shadow-sm">
+              <Link activeClass='activestatus' spy={true} to='paymentPage' smooth={true} duration={1000} offset={-150} className="flex flex-col items-center cursor-pointer bg-red-600 rounded-lg px-2 py-1 md:px-5 md:py-3 hover:scale-105 shadow-sm drop-shadow-sm">
                 <span className='text-white text-xl md:text-3xl font-medium'>Book Now at 50% discount</span>
-                <span className='text-white text-sm md:text-base font-light'>and reserve your spot at a discounted price!</span>
+                <span className='text-white text-center text-sm md:text-base font-light'>and reserve your spot at a discounted price!</span>
               </Link>
               {
-              data && (
-                <Link2 className='self-center text-xl text-neutral-500 hover:underline' href={`${url}/${data.no.query}?product=${data.no.product}`} >
-                  No, I don't want this offer
-                </Link2>
-              )
-            }
+                data && (
+                  <Link2 className='self-center text-xl text-neutral-500 hover:underline' href={`${url}/${data.no.query}?product=${data.no.product}`} >
+                    No, I don't want this offer
+                  </Link2>
+                )
+              }
             </div>
           </div>
         </div>
@@ -226,21 +226,49 @@ export default function AcceleratorInd({loc, data}) {
               Also get some amazing bonuses with this course!
             </p>
           </div>
-          <div className="flex flex-col gap-10 md:gap-20 w-10/12">
-            <RibbonBonus data={['community2', 'donot', 'scriptSecret', 'acc1', 'acc2', 'acc3', 'acc4', 'acc5', 'acc6',]} loc={loc} />
-          </div>
-          <div className="flex flex-col gap-2 w-full md:w-8/12">
-            <Link activeClass='activestatus' spy={true} to='paymentPage' smooth={true} duration={1000} offset={-150} className="flex flex-col items-center cursor-pointer bg-red-600 rounded-lg px-5 py-3 hover:scale-105 shadow-sm drop-shadow-sm">
-              <span className='text-white text-xl md:text-3xl font-medium'>Book Now at 50% discount</span>
-              <span className='text-white text-sm md:text-base font-light'>and reserve your spot at a discounted price!</span>
-            </Link>
-            {
-              data && (
-                <Link2 className='self-center text-xl text-neutral-500 hover:underline' href={`${url}/${data.no.query}?product=${data.no.product}`} >
-                  No, I don't want this offer
-                </Link2>
-              )
-            }
+          <div className="flex flex-col gap-10 md:gap-20 w-full md:w-10/12">
+            <RibbonBonus data={['community2', 'donot', 'scriptSecret',]} loc={loc} />
+            <div className="flex flex-col self-center gap-2 w-full md:w-8/12">
+              <Link activeClass='activestatus' spy={true} to='paymentPage' smooth={true} duration={1000} offset={-150} className="flex flex-col items-center cursor-pointer bg-red-600 rounded-lg px-2 py-1 md:px-5 md:py-3 hover:scale-105 shadow-sm drop-shadow-sm">
+                <span className='text-white text-xl md:text-3xl font-medium'>Book Now at 50% discount</span>
+                <span className='text-white text-center text-sm md:text-base font-light'>and reserve your spot at a discounted price!</span>
+              </Link>
+              {
+                data && (
+                  <Link2 className='self-center text-xl text-neutral-500 hover:underline' href={`${url}/${data.no.query}?product=${data.no.product}`} >
+                    No, I don't want this offer
+                  </Link2>
+                )
+              }
+            </div>
+            <RibbonBonus data={['acc1', 'acc2', 'acc3']} loc={loc} />
+            <div className="flex flex-col self-center gap-2 w-full md:w-8/12">
+              <Link activeClass='activestatus' spy={true} to='paymentPage' smooth={true} duration={1000} offset={-150} className="flex flex-col items-center cursor-pointer bg-red-600 rounded-lg px-2 py-1 md:px-5 md:py-3 hover:scale-105 shadow-sm drop-shadow-sm">
+                <span className='text-white text-xl md:text-3xl font-medium'>Book Now at 50% discount</span>
+                <span className='text-white text-center text-sm md:text-base font-light'>and reserve your spot at a discounted price!</span>
+              </Link>
+              {
+                data && (
+                  <Link2 className='self-center text-xl text-neutral-500 hover:underline' href={`${url}/${data.no.query}?product=${data.no.product}`} >
+                    No, I don't want this offer
+                  </Link2>
+                )
+              }
+            </div>
+            <RibbonBonus data={['acc4', 'acc5', 'acc6']} loc={loc} />
+            <div className="flex flex-col self-center gap-2 w-full md:w-8/12">
+              <Link activeClass='activestatus' spy={true} to='paymentPage' smooth={true} duration={1000} offset={-150} className="flex flex-col items-center cursor-pointer bg-red-600 rounded-lg px-2 py-1 md:px-5 md:py-3 hover:scale-105 shadow-sm drop-shadow-sm">
+                <span className='text-white text-xl md:text-3xl font-medium'>Book Now at 50% discount</span>
+                <span className='text-white text-center text-sm md:text-base font-light'>and reserve your spot at a discounted price!</span>
+              </Link>
+              {
+                data && (
+                  <Link2 className='self-center text-xl text-neutral-500 hover:underline' href={`${url}/${data.no.query}?product=${data.no.product}`} >
+                    No, I don't want this offer
+                  </Link2>
+                )
+              }
+            </div>
           </div>
         </div>
       </section>
@@ -273,17 +301,17 @@ export default function AcceleratorInd({loc, data}) {
           </div>
         </div>
         <div className="flex flex-col gap-5 self-center w-full md:w-8/12">
-          <Link activeClass='activestatus' spy={true} to='paymentPage' smooth={true} duration={1000} offset={-150} className="flex flex-col items-center cursor-pointer bg-red-600 rounded-lg px-5 py-3 hover:scale-105 shadow-sm drop-shadow-sm">
+          <Link activeClass='activestatus' spy={true} to='paymentPage' smooth={true} duration={1000} offset={-150} className="flex flex-col items-center cursor-pointer bg-red-600 rounded-lg px-2 py-1 md:px-5 md:py-3 hover:scale-105 shadow-sm drop-shadow-sm">
             <span className='text-white text-xl md:text-3xl font-medium'>Book Now at 50% discount</span>
-            <span className='text-white text-sm md:text-base font-light'>and reserve your spot at a discounted price!</span>
+            <span className='text-white text-center text-sm md:text-base font-light'>and reserve your spot at a discounted price!</span>
           </Link>
           {
-              data && (
-                <Link2 className='self-center text-xl text-neutral-500 hover:underline' href={`${url}/${data.no.query}?product=${data.no.product}`} >
-                  No, I don't want this offer
-                </Link2>
-              )
-            }
+            data && (
+              <Link2 className='self-center text-xl text-neutral-500 hover:underline' href={`${url}/${data.no.query}?product=${data.no.product}`} >
+                No, I don't want this offer
+              </Link2>
+            )
+          }
         </div>
       </section>
       <section className="flex flex-col py-10 px-5 md:px-40 gap-5 md:gap-10 bg-gradient-to-r from-red-500/20 to-neutral-200">
@@ -304,8 +332,8 @@ export default function AcceleratorInd({loc, data}) {
         </div>
         <YoutubeneurStruction />
       </section>
-      <section className="flex flex-col py-20 px-40 gap-5 bg-neutral-300 bg-gradient-to-r from-red-500/20 to-neutral-200">
-        <PaymentSection loc= {loc} data={data} />
+      <section className="flex flex-col py-20 px-5 md:px-40 gap-5 bg-neutral-300 bg-gradient-to-r from-red-500/20 to-neutral-200">
+        <PaymentSection loc={loc} data={data} />
       </section>
       <section className="flex flex-col py-10 px-5 md:px-40 gap-5 md:gap-10">
         <div className={`flex flex-col gap-10 ${sora.className}`}>
@@ -324,8 +352,8 @@ export default function AcceleratorInd({loc, data}) {
           </h2>
         </div>
         <div className={`flex w-full md:w-8/12 self-center flex-col ${sora.className}`}>
-          <FAQ data={faqData} bgcolor={{question: 'bg-white', answer: 'bg-neutral-300'}} textSize={{ question: 'text-base md:text-xl', answer: 'text-sm md:text-base' }} />
-          </div>
+          <FAQ data={faqData} bgcolor={{ question: 'bg-white', answer: 'bg-neutral-300' }} textSize={{ question: 'text-base md:text-xl', answer: 'text-sm md:text-base' }} />
+        </div>
       </section>
     </div >
   )
