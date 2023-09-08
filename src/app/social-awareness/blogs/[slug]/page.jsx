@@ -23,13 +23,20 @@ export async function generateMetadata({ params }) {
   return {
     title: `${data.blog.title} - Peepoye`,
     description: data.blog.description,
-    image: data.blog.image.src,
-    url: `https://peepoye.com/social-blog/blogs/${data.blog.slug}`,
+    images: [
+      {
+        url: data.blog.image.src,
+        width: 800,
+        height: 500,
+        alt: data.blog.image.alt,
+      },
+    ],
+    url: `https://peepoye.com/social-awareness/blogs/${data.blog.slug}`,
     type: 'article',
+    keywords: data.blog.tags,
     openGraph: {
       title: `${data.blog.title} - Peepoye`,
       description: data.blog.description,
-      keywords: data.blog.tags,
       images: [
         {
           url: data.blog.image.src,
@@ -38,7 +45,7 @@ export async function generateMetadata({ params }) {
           alt: data.blog.image.alt,
         },
       ],
-      url: `https://peepoye.com/blogs/${data.blog.slug}`,
+      url: `https://peepoye.com/social-awareness/blogs/${data.blog.slug}`,
       type: 'article',
       article: {
         publishedTime: new Date(data.blog.date).toISOString(),

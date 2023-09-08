@@ -18,7 +18,14 @@ export async function generateMetadata({ params }) {
   return {
     title: `${data.blog.title} - Peepoye`,
     description: data.blog.description,
-    image: data.blog.image.src,
+    images: [
+      {
+        url: data.blog.image.src,
+        width: 800,
+        height: 500,
+        alt: data.blog.image.alt,
+      },
+    ],
     url: `https://peepoye.com/blogs/${data.blog.slug}`,
     type: 'article',
     keywords: data.blog.tags,
