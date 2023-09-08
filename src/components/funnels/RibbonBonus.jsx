@@ -5,7 +5,7 @@ import { GoDotFill } from 'react-icons/go'
 import style from '@/styles/RibbonBonus.module.css'
 import { AiOutlineCheckCircle } from 'react-icons/ai'
 
-export default function RibbonBonus({ data, loc }) {
+export default function RibbonBonus({ data, loc="ind" }) {
 
   return (
     <>

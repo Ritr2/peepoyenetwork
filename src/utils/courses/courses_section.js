@@ -20,49 +20,28 @@ const data = [ {
       link: 'https://akassh.co/accelerator-prebook'
   },
   },
- {
-    name: 'Green Membership',
+  {
+    name: 'Donot Do This on YouTube',
     image: {
-      src: '/assets/images/courses/green_membership.png',
-      alt: 'Green Membership',
+      src: 'https://i.ibb.co/rM8xPLc/image.png',
+      alt: 'Donot Do This on YouTube',
     },
     currency: '₹',
-    price: '49,999',
+    price: '999',
     type: 'One-Time Fee',
     features: [
-      'Everything in White Membership +',
-      'Hackathons and Live Sessions' ,
-      'Setup Challenge',
+      `Experienced influencer's growth solutions`,
+      `Building a strong influencer foundation`,
+      `Comprehensive approach with mindset training`,
+      `Proven strategies for YouTube growth`,
+      `Time and effort-saving guidance`,
     ],
-    active: false,
+    active: true,
     button: {
-      text: 'Comming Soon',
-      link: ''
-  },
-  },
- {
-    name: 'Black Membership',
-    image: {
-      src: '/assets/images/courses/black_membership.png',
-      alt: 'Black Membership',
+      text: 'Read More',
+      link: '/donot',
     },
-    currency: '₹',
-    price: '2,99,999',
-    type: 'Annual Subscription',
-    features: [
-      'Everything in Green Membership +',
-      'Partner Program',
-      'Silver button challenge',
-      'Youtube Algorithm mastery',
-      'Weekly mastermind session',
-      'Seperate exclusive community',
-    ],
-    active: false,
-    button: {
-      text: 'Comming Soon',
-      link: ''
-  },
-  },
+  }
 ]
 
 export default data;

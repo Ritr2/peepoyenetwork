@@ -1,8 +1,8 @@
 const data = {
   tools: [
     {
-      headline: 'Where are you getting Stuck in your YouTube growth? Find in this Audit report',
-      description: "Revive your YouTube channel with our FREE Channel Audit Report. Get instant action items, insights on mistakes, validation of content strategy, and expert recommendations to align with the YouTube algorithm. Unlock your channel's full potential now!",
+      headline: 'YouTube Channel Audit Report by Akassh',
+      description: "Benefit from Akassh's 1 Million+ subscriber expertise. Receive personalized insights and proven strategies in a report to enhance your YouTube channel's performance and growth potential.",
       image: {
         src: 'https://i.ibb.co/0tyKd3X/tool-1.png',
         alt: 'Audit Report',
@@ -14,20 +14,8 @@ const data = {
       },
     },
     {
-      headline: 'Ready to Take Your Influence to the Next Level? Join the Youtubeneur Community Today!',
-      description: "A new-age learning platform that has both classroom and community capabilities combined at one place that promotes collaboration with other members on the go that enables learning in a community format powered by Gamification and Rewards.",
-      image: {
-        src: 'https://i.ibb.co/Jr6cst3/tool-2.png',
-        alt: 'Youtubeneur Community',
-      },
-      button: {
-        text: 'Read More',
-        link: 'https://akassh.peepoye.com/youtubeneur-skool'
-      },
-    },
-    {
-      headline: "Curious About Your YouTube Earnings? Discover Your Channel's Revenue with Our Powerful Tool",
-      description: "Our YouTube Revenue Prediction Tool can help by analyzing your channel's key metrics, such as views, engagement & Get insights into your YouTube earnings potential with our Tool. Try it now!",
+      headline: "YouTube Income Prediction Tool",
+      description: "Discover Your Monthly Earnings Potential with Our YouTube Income Prediction Tool. Calculate Your Channel's Income and Gain Insights into Your YouTube Revenue Stream.",
       image: {
         src: 'https://i.ibb.co/mR8m06M/tool-3.png',
         alt: 'Revenue Prediction Tool',
@@ -40,8 +28,8 @@ const data = {
   ],
   guides: [
     {
-      headline: 'Want To Become An Influencer But Still Not Sure?',
-      description: "Are you passionate about becoming a <strong>social media influencer</strong>, but feel like you're hitting roadblocks along the way? If so, you're not alone! Don't let roadblocks hold you back any longer – it's time to <strong>unlock the secrets</strong> to becoming a <strong>successful influencer</strong>!",
+      headline: 'Influencer Guide',
+      description: "Navigate the path to becoming an influencer smoothly with Our comprehensive guide. Overcome roadblocks and <strong>learn the secrets to establishing your influence.</strong>",
       image: {
         src: 'https://i.ibb.co/xYMqMn2/guide-1.jpg',
         alt: 'Influencer Guide',
@@ -49,6 +37,18 @@ const data = {
       button: {
         text: 'Read More',
         link: 'https://akassh.peepoye.com/guide-brb'
+      },
+    },
+    {
+      headline: 'The Ultimate Guide to Monetize X',
+      description: "Unlock the power of monetizing X with our guide. Discover 6 secret nuggets to earn money by sharing your opinions on X. Turn your insights into income today!",
+      image: {
+        src: 'https://i.ibb.co/jRWd4sF/guide-x.png',
+        alt: 'Monetize X',
+      },
+      button: {
+        text: 'Read More',
+        link: '/guide-x'
       },
     }
   ],

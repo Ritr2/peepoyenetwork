@@ -20,7 +20,7 @@ export const metadata = {
   description: 'Do Not Do This On Youtube',
   url: 'https://peepoye.com/donot',
   type: 'article',
-  image: 'https://i.ibb.co/cyzwFyF/guide-1.png',
+  image: 'https://i.ibb.co/rM8xPLc/image.png',
   keywords: 'Do Not Do This On Youtube',
   openGraph: {
     title: 'Do Not Do This On Youtube',
@@ -77,7 +77,7 @@ export default async function page({ searchParams }) {
       </div>
       <section className="flex flex-col md:flex-row items-center justify-center md:gap-20 py-10 px-2 md:px-40">
         <div className="flex flex-col w-5/12 items-center justify-center">
-          <img src="https://i.ibb.co/cyzwFyF/guide-1.png" alt="donot" className="w-full md:w-8/12" draggable={false} />
+          <img src="https://i.ibb.co/rM8xPLc/image.png" alt="donot" className="w-full md:w-8/12" draggable={false} />
         </div>
         <div className="flex flex-col justify-center w-full flex-1 gap-2 md:gap-5">
           <span className="text-base md:text-2xl font-bold text-center md:text-left text-neutral-600">21 CONCEPTS OVER 21 DAYS</span>
@@ -90,7 +90,7 @@ export default async function page({ searchParams }) {
             </div>
           </div>
           <div className="flex flex-col w-full md:w-8/12 gap-3">
-            <Button query={data ? `${data.yes.query}` : 'thankyou'} product={data ? `${data.yes.product}` : 'donot'} amount='donot' text='GET YOUR COURSE ACCESS NOW' padding='py-3' bgcolor={{ normal: 'bg-red-700', hover: 'bg-red-600', active: 'bg-red-800' }} txcolor='text-white' />
+            <Button successUrl= {data ? `${url}/${data.yes.query}?product=${data.yes.product}`:  `${url}/thankyou?product=donot`} amount='donot' text='GET YOUR COURSE ACCESS NOW' padding='py-3' bgcolor={{ normal: 'bg-red-700', hover: 'bg-red-600', active: 'bg-red-800' }} txcolor='text-white' />
             {
               data && (
                 <Link href={`/${data.no.query}?product=${data.no.product}`} className='text-stone-500 text-lg md:text-2xl underline text-center hover:text-stone-700'>
@@ -134,7 +134,7 @@ export default async function page({ searchParams }) {
               </div>
             </div>
             <div className="flex flex-col w-full md:w-8/12 gap-3">
-              <Button query={data ? `${data.yes.query}` : 'thankyou'} product={data ? `${data.yes.product}` : 'donot'} amount='donot' text='GET YOUR COURSE ACCESS NOW' padding='py-3' bgcolor={{ normal: 'bg-red-700', hover: 'bg-red-600', active: 'bg-red-800' }} txcolor='text-white' />
+              <Button successUrl= {data ? `${url}/${data.yes.query}?product=${data.yes.product}`:  `${url}/thankyou?product=donot`} amount='donot' text='GET YOUR COURSE ACCESS NOW' padding='py-3' bgcolor={{ normal: 'bg-red-700', hover: 'bg-red-600', active: 'bg-red-800' }} txcolor='text-white' />
               {
                 data && (
                   <Link href={`/${data.no.query}?product=${data.no.product}`} className='text-stone-500 text-lg md:text-2xl underline text-center hover:text-stone-700'>
@@ -152,7 +152,7 @@ export default async function page({ searchParams }) {
       <section className="flex w-full flex-col py-10 px-2 md:px-40">
         <img src="/assets/images/donot/donot_2.png" alt="donot" className="w-full" draggable={false} />
         <div className="flex flex-col w-full self-center md:w-8/12 gap-3">
-          <Button query={data ? `${data.yes.query}` : 'thankyou'} product={data ? `${data.yes.product}` : 'donot'} amount='donot' text='GET YOUR COURSE ACCESS NOW' padding='py-3' bgcolor={{ normal: 'bg-red-700', hover: 'bg-red-600', active: 'bg-red-800' }} txcolor='text-white' />
+          <Button successUrl= {data ? `${url}/${data.yes.query}?product=${data.yes.product}`:  `${url}/thankyou?product=donot`} amount='donot' text='GET YOUR COURSE ACCESS NOW' padding='py-3' bgcolor={{ normal: 'bg-red-700', hover: 'bg-red-600', active: 'bg-red-800' }} txcolor='text-white' />
           {
             data && (
               <Link href={`/${data.no.query}?product=${data.no.product}`} className='text-stone-500 text-lg md:text-2xl underline text-center hover:text-stone-700'>
@@ -169,7 +169,7 @@ export default async function page({ searchParams }) {
           <RibbonBonus data={['community']} />
         </div>
         <div className="flex flex-col w-full md:w-8/12 gap-3">
-          <Button query={data ? `${data.yes.query}` : 'thankyou'} product={data ? `${data.yes.product}` : 'donot'} amount='donot' text='GET YOUR COURSE ACCESS NOW' padding='py-3' bgcolor={{ normal: 'bg-red-700', hover: 'bg-red-600', active: 'bg-red-800' }} txcolor='text-white' />
+          <Button successUrl= {data ? `${url}/${data.yes.query}?product=${data.yes.product}`:  `${url}/thankyou?product=donot`} amount='donot' text='GET YOUR COURSE ACCESS NOW' padding='py-3' bgcolor={{ normal: 'bg-red-700', hover: 'bg-red-600', active: 'bg-red-800' }} txcolor='text-white' />
           {
             data && (
               <Link href={`/${data.no.query}?product=${data.no.product}`} className='text-stone-500 text-lg md:text-2xl underline text-center hover:text-stone-700'>
