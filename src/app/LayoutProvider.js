@@ -12,6 +12,7 @@ export const LayoutProvider = ({ children }) => {
     '/guide-x',
     '/accelerator-ind',
     '/accelerator-int',
+    '/youtubeneur-temp',
   ]
   return (
       <>

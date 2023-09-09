@@ -1,0 +1,60 @@
+.ribbon {
+  width: 180px;
+  height: 180px;
+  overflow: hidden;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.ribbon::before,
+.ribbon::after {
+  position: absolute;
+  z-index: -1;
+  content: '';
+  display: block;
+  border: 5px solid #9f292d;
+}
+.ribbon span {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 48px;
+  margin: 0 0 68px 50px;
+  padding: 15px 0;
+  background-color: #c13438;
+  box-shadow: 0 5px 10px rgba(0,0,0,.1);
+  color: #fff;
+  font: 700 18px/1 'Lato', sans-serif;
+  text-shadow: 0 1px 1px rgba(0,0,0,.2);
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.ribbonTopRight {
+  top: -10px;
+  right: -10px;
+}
+.ribbonTopRight::before,
+.ribbonTopRight::after {
+  border-top-color: transparent;
+  border-right-color: transparent;
+}
+.ribbonTopRight::before {
+  top: 0;
+  left: 24.9px;
+}
+.ribbonTopRight::after {
+  bottom: 24.9px;
+  right: 0;
+}
+.ribbonTopRight span {
+  transform: rotate(45deg);
+}
+
+.redShadow {
+  box-shadow: 0 0px 1px rgba(0,0,0,.1), 0 0 10px #c13438;
+}

@@ -74,7 +74,7 @@ export default function AcceleratorInd({ loc, data }) {
 
   return (
     <div className='flex flex-col w-full'>
-      <div className="flex flex-col w-full justify-center py-3 items-center bg-red-500/90 overflow-hidden">
+      <div className="flex flex-col w-full justify-center py-3 items-center bg-neutral-800 overflow-hidden">
         <motion.h1 className={`text-lg md:text-2xl text-center px-2 text-white font-light ${sora.className}`}
           initial={{ opacity: 0, y: -100 }}
           animate={{ opacity: 1, y: 0 }}

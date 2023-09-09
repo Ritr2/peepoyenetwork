@@ -15,7 +15,7 @@ export const metadata = {
   description: 'Accelerate your online growth strategy using YouTube in 3 days & create multiple revenue streams doing what you love the most..',
   images: [
     {
-      url: 'https://i.ibb.co/s1XDKpX/73fa1a29124dd8461ce556c036250940.png',
+      url: 'https://i.ibb.co/JRjfHhr/accelerator.png',
       width: 572,
       height: 715,
       alt: 'Foundation accelerator',
@@ -29,7 +29,7 @@ export const metadata = {
     description: 'Accelerate your online growth strategy using YouTube in 3 days & create multiple revenue streams doing what you love the most..',
     images: [
       {
-        url: 'https://i.ibb.co/s1XDKpX/73fa1a29124dd8461ce556c036250940.png',
+        url: 'https://i.ibb.co/JRjfHhr/accelerator.png',
         width: 572,
         height: 715,
         alt: 'Foundation accelerator',
@@ -42,7 +42,7 @@ export const metadata = {
     card: 'summary_large_image',
     title: 'Foundation accelerator',
     description: 'Accelerate your online growth strategy using YouTube in 3 days & create multiple revenue streams doing what you love the most..',
-    images: ['https://i.ibb.co/s1XDKpX/73fa1a29124dd8461ce556c036250940.png'],
+    images: ['https://i.ibb.co/JRjfHhr/accelerator.png'],
     creator: '@peepoye',
   },
 }
