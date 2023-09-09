@@ -34,10 +34,10 @@ export default function PaymentSection({ loc, data }) {
       lifetime: {
         selectortext: 'Lifetime',
         recommended: true,
-        price: 5999,
+        price: 4999,
         currency: '₹',
         buttonText: {
-          main: 'Book Now at ₹2499/- only',
+          main: 'Book Now at ₹4999/- only',
           sub: 'Limited Time Offer'
         },
         link: 'https://akassh.co/accelerator-pre-book',
@@ -72,7 +72,7 @@ export default function PaymentSection({ loc, data }) {
         price: 199,
         currency: '$',
         buttonText: {
-          main: 'Book Now at $99/- only',
+          main: 'Book Now at $199/- only',
           sub: 'Limited Time Offer'
         },
         link: 'https://akassh.co/accelerator-pre-book',
