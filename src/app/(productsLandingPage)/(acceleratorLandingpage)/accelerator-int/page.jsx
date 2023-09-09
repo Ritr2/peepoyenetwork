@@ -1,6 +1,6 @@
 import React from 'react'
 import { Lato } from 'next/font/google'
-import AcceleratorInd from '@/components/funnels/pages/accelerator/AcceleratorInd'
+import AcceleratorInd from '@/components/funnels/pages/youtubeneur/AcceleratorInd'
 import { notFound } from 'next/navigation';
 import url from '@/utils/url';
 
