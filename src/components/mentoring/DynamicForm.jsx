@@ -17,11 +17,11 @@ export default function DynamicForm({animation = true, closeFunc = false}) {
     const email = emailRef.current.value;
 
     const data = {
-      api_key: process.env.NEXT_PUBLIC_CONVERTKIT_API_KEY,
+      listkey: "3z23b92183b64713c40ed71feef5794847a9f98c9edd98244826c9cc05288735d8",
       email,
-      first_name
+      first_name,
     }
-    axios.post('https://api.convertkit.com/v3/forms/3776523/subscribe/', data)
+    axios.post('https://peepoye-user-database.onrender.com/add_contact', data)
     if (closeFunc) {
       setTimeout(() => {
         closeFunc(false);
