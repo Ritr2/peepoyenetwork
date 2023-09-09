@@ -69,7 +69,7 @@ export default async function page({ searchParams }) {
       }
   }
   return (
-      <main className={`relative flex min-h-screen flex-col items-center overflow-x-hidden ${robo.className}`}>
+      <main className={`relative flex min-h-screen flex-col items-center overflow-x-hidden ${robo.className} bg-gradient-to-r from-neutral-900 to-neutral-950`}>
           <AcceleratorInd loc={"ind"} data = {data} />
       </main>
   )
