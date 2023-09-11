@@ -13,9 +13,9 @@ export const metadata = {
   description: 'Unlock the power of X with our ultimate guide! Discover six secret nuggets to monetize your presence and turn your passion into profits.',
   images: [
     {
-      url: 'https://i.ibb.co/XtNM2D8/akasshashokgupta.png',
-      width: 840,
-      height: 900,
+      url: 'https://i.ibb.co/PhbgBmZ/x-guide.png',
+        width: 550,
+        height: 720,
       alt: 'The Ultimate Guide to X Monetization: Transforming Tweets into Profits',
     },
   ],
@@ -27,9 +27,9 @@ export const metadata = {
     description: 'Unlock the power of X with our ultimate guide! Discover six secret nuggets to monetize your presence and turn your passion into profits.',
     images: [
       {
-        url: 'https://i.ibb.co/XtNM2D8/akasshashokgupta.png',
-        width: 840,
-        height: 900,
+        url: 'https://i.ibb.co/PhbgBmZ/x-guide.png',
+        width: 550,
+        height: 720,
         alt: 'The Ultimate Guide to X Monetization: Transforming Tweets into Profits',
       },
     ],
@@ -40,7 +40,7 @@ export const metadata = {
     card: 'summary_large_image',
     title: 'The Ultimate Guide to X Monetization: Transforming Tweets into Profits',
     description: 'Unlock the power of X with our ultimate guide! Discover six secret nuggets to monetize your presence and turn your passion into profits.',
-    images: ['https://i.ibb.co/XtNM2D8/akasshashokgupta.png'],
+    images: ['https://i.ibb.co/PhbgBmZ/x-guide.png'],
     creator: '@peepoye',
   },
 }

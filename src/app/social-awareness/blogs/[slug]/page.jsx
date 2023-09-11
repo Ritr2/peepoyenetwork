@@ -106,7 +106,7 @@ export default async function page({ params }) {
                 <h2 className="text-lg md:text-xl font-bold text-left text-neutral-700">30-sec summary</h2>
                 <p className="text-base md:text-lg font-light text-left text-neutral-900">{parse(data.blog.summary)}</p>
               </div>}
-            <section className="sectionAnchor flex flex-col justify-center flex-1 gap-5 rounded-lg  p-4">
+            <section className="sectionAnchor flex flex-col justify-center flex-1 gap-7 rounded-lg  p-4">
               {
                 data.blog.sections.map((section, index) => (
                   <div key={index} className="flex flex-col justify-center flex-1 gap-1">
@@ -154,7 +154,7 @@ export default async function page({ params }) {
                     }
                     {
                       section.subSections && (
-                        <section className="flex flex-col justify-center flex-1 gap-2 rounded-lg px-2 pt-2">
+                        <section className="flex flex-col justify-center flex-1 gap-5 rounded-lg pt-5">
                           {
                             section.subSections.map((subSection, index2) => (
                               <div key={index2} className="flex flex-col justify-center flex-1 gap-1">
