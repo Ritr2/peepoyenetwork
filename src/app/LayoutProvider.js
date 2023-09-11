@@ -13,6 +13,8 @@ export const LayoutProvider = ({ children }) => {
     '/accelerator-ind',
     '/accelerator-int',
     '/youtubeneur-temp',
+    '/linktree',
+    '/monetize-x-free',
   ]
   return (
       <>
