@@ -4743,6 +4743,12 @@ const blogdata = [
       title: `West Bengal couple sells their baby to buy an iPhone for making reels on Instagram`,
       slug: `west-bengal-couple-sells-their-baby-to-buy-an-iphone-for-making-reels-on-instagram`,
     },
+    linktree: {
+      image: {
+        src: `https://i.ibb.co/1sJZSJq/Vande-Bharat-Express-Incident-Cockroach-in-Passenger-Food.png`,
+        alt: `Vande Bharat Express Incident: Cockroach in Passenger Food`,
+      }
+    },
   },
   {
     title: `Privacy Breach at Netra Jyoti Institute: Students Recorded Video Inside Girls' Restroom`,
@@ -4878,6 +4884,12 @@ const blogdata = [
       title: `Privacy Breach at Netra Jyoti Institute: Students Recorded Video Inside Girls' Restroom`,
       slug: `privacy-breack-at-netra-jyoti-institute-students-recorded-video`,
     },
+    linktree: {
+      image: {
+        src: `https://i.ibb.co/kD4FSp5/Privacy-Invasion-At-Lulu-Mall-A-techie-planted-a-hidden-camera-inside-women-s-restroom.png`,
+        alt: `Privacy Invasion At Lulu Mall: A techie planted a hidden camera inside women's restroom`,
+      }
+    },
   },
   {
     title: `The Violent Parking Dispute: Man beat up Security Guard in Dwarka`,
@@ -4939,6 +4951,12 @@ const blogdata = [
       show: true,
       title: `Privacy Invasion At Lulu Mall: A techie planted a hidden camera inside women's restroom`,
       slug: `privacy-invasion-at-lulu-mall-a-techie-planted-a-hidden-camera-inside-womens-restroom`,
+    },
+    linktree: {
+      image: {
+        src: `https://i.ibb.co/QCVK47P/The-Violent-Parking-Dispute-Man-beat-up-Security-Guard-in-Dwarka.png`,
+        alt: `The Violent Parking Dispute: Man beat up Security Guard in Dwarka`,
+      }
     },
   },
   {
@@ -5038,6 +5056,12 @@ const blogdata = [
       title: `Privacy Invasion At Lulu Mall: A techie planted a hidden camera inside women's restroom`,
       slug: `privacy-invasion-at-lulu-mall-a-techie-planted-a-hidden-camera-inside-womens-restroom`,
     },
+    linktree: {
+      image: {
+        src: `https://i.ibb.co/9txTnL0/Gambhir-Vs-Kohli-The-Asia-Cup-2023-Incident.png`,
+        alt: `Gambhir Vs Kohli: The Asia Cup 2023 Incident`,
+      }
+    },
   },
   {
     title: `Tragedy Strikes at Jadavpur University: A student lost his life due to Ragging`,
@@ -5107,6 +5131,12 @@ const blogdata = [
       show: true,
       title: `Privacy Invasion At Lulu Mall: A techie planted a hidden camera inside women's restroom`,
       slug: `privacy-invasion-at-lulu-mall-a-techie-planted-a-hidden-camera-inside-womens-restroom`,
+    },
+    linktree: {
+      image: {
+        src: `https://i.ibb.co/g6Hnt9Z/Tragedy-Strikes-at-Jadavpur-University-A-student-lost-his-life-due-to-Ragging.png`,
+        alt: `Tragedy Strikes at Jadavpur University: A student lost his life due to Ragging`,
+      }
     },
   },
   {
@@ -5232,6 +5262,12 @@ const blogdata = [
       title: `Tragedy Strikes at Jadavpur University: A student lost his life due to Ragging`,
       slug: `tragedy-strikes-at-jadavpur-university-a-student-lost-his-life-due-to-ragging`,
     },
+    linktree: {
+      image: {
+        src: `https://i.ibb.co/V3Kq6NW/sunny-deol-gurdaspur.png`,
+        alt: `Sunny Deol's gurdaspur`,
+      }
+    }
   }
 ];
 
