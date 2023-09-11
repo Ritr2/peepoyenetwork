@@ -5116,7 +5116,7 @@ const blogdata = [
     category_id: 10,
     description: `The truth behind Sunny Deol's dual role as an actor and Member of Parliament in India and how he's making money from politics without fulfilling his responsibilities in Gurdaspur.`,
     image: {
-      src: `https://i.ibb.co/KNJM1JG/Gadar-2-s-Hero-to-Gurdaspur-s-Zero-Sunny-Deol-s-Political-Absence.png`,
+      src: `https://i.ibb.co/R6zyZs2/Gadar-2-s-Hero-to-Gurdaspur-s-Zero-Sunny-Deol-s-Political-Absence.png`,
       alt: `Gadar 2's Hero to Gurdaspur's Zero: Sunny Deol's Political Absence`,
     },
     owner: `Ayushi Rajput`,
