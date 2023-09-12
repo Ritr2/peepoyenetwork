@@ -22,7 +22,7 @@
   justify-content: center;
   align-items: center;
   width: 300px;
-  height: 48px;
+  height: 40px;
   margin: 0 0 68px 50px;
   padding: 15px 0;
   background-color: #c13438;
@@ -45,10 +45,10 @@
 }
 .ribbonTopRight::before {
   top: 0;
-  left: 24.9px;
+  left: 30.5px;
 }
 .ribbonTopRight::after {
-  bottom: 24.9px;
+  bottom: 30.5px;
   right: 0;
 }
 .ribbonTopRight span {

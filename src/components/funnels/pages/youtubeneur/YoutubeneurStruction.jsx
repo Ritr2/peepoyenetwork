@@ -75,7 +75,7 @@ export default function YoutubeneurStruction() {
             p: `The Money Engine`,
             modules: [
                 {
-                    h3: 'Work In Progress',
+                    h3: 'Day 3 will be comming soon',
                     time: false,
                 }
             ],

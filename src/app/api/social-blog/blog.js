@@ -2540,6 +2540,12 @@ const blogdata = [
       title: `A Disturbing Incident: Dutch Vlogger Attacked in Bengaluru Market`,
       slug: `a-disturbing-incident-dutch-vlogger-attacked-in-bengaluru-market`,
     },
+    linktree: {
+      image: {
+        src: `https://i.ibb.co/cYzMGJD/Jasneet-Kaur-and-the-5-Stage-Formula-of-Instagram-Influencer.png`,
+        alt: `Jasneet Kaur and the 5 Stage Formula of Instagram Influencer`,
+      }
+    },
   },
   {
     title: `National Anthem Disrespect: Modesty or Stupidity?`,
@@ -2588,6 +2594,12 @@ const blogdata = [
       show: true,
       title: `VIP Darshan at Temples: A Question of Equality and Humility`,
       slug: `vip-darshan-at-temples-a-question-of-equality-and-humility`,
+    },
+    linktree: {
+      image: {
+        src: `https://i.ibb.co/Ybh7bWK/National-Anthem-Disrespect-Modesty-or-Stupidity.png`,
+        alt: `National Anthem Disrespect: Modesty or Stupidity?`,
+      }
     },
   },
   {
@@ -2649,7 +2661,12 @@ const blogdata = [
       title: `VIP Darshan at Temples: A Question of Equality and Humility`,
       slug: `vip-darshan-at-temples-a-question-of-equality-and-humility`,
     },
-
+    linktree: {
+      image: {
+        src: `https://i.ibb.co/52QxkvC/Noida-Bar-Incident-Sparks-Outrage-over-Religious-Mockery.png`,
+        alt: `Noida Bar Incident Sparks Outrage over Religious Mockery`,
+      }
+    },
   },
   {
     title: `Man from Bihar Allegedly Harassed for Not Knowing Kannada`,
@@ -2710,7 +2727,12 @@ const blogdata = [
       title: `VIP Darshan at Temples: A Question of Equality and Humility`,
       slug: `vip-darshan-at-temples-a-question-of-equality-and-humility`,
     },
-
+    linktree: {
+      image: {
+        src: `https://i.ibb.co/HH6F1VB/Man-from-Bihar-Allegedly-Harassed-for-Not-Knowing-Kannada.png`,
+        alt: `Man from Bihar Allegedly Harassed for Not Knowing Kannada`,
+      }
+    },
   },
   {
     title: `The Misunderstood Dalai Lama Controversy`,
@@ -2779,6 +2801,12 @@ const blogdata = [
       title: `2 Korean Vlogger Shocking Harassment Case`,
       slug: `2-korean-vlogger-shocking-harassment-case`,
     },
+    linktree: {
+      image: {
+        src: `https://i.ibb.co/xM0DzWw/The-Misunderstood-Dalai-Lama-Controversy.png`,
+        alt: `The Misunderstood Dalai Lama Controversy`,
+      }
+    },
   },
   {
     title: `VIP Darshan at Temples: A Question of Equality and Humility`,
@@ -2828,7 +2856,12 @@ const blogdata = [
       title: `2 Korean Vlogger Shocking Harassment Case`,
       slug: `2-korean-vlogger-shocking-harassment-case`,
     },
-
+    linktree: {
+      image: {
+        src: `https://i.ibb.co/gFc5kMJ/VIP-Darshan-at-Temples-A-Question-of-Equality-and-Humility.png`,
+        alt: `VIP Darshan at Temples: A Question of Equality and Humility`,
+      }
+    },
   },
   {
     title: `2 Korean Vlogger Shocking Harassment Case`,
@@ -2886,8 +2919,13 @@ const blogdata = [
       title: `Pro Rider 1000 died due to motovlogging Over-Speeding Culture`,
       slug: `pro-rider-1000-died-due-to-motovlogging-over-speeding-culture`,
     },
+    linktree: {
+      image: {
+        src: `https://i.ibb.co/7vx22LM/2-Korean-Vlogger-Shocking-Harassment-Case.png`,
+        alt: `2 Korean Vlogger Shocking Harassment Case`,
+      }
+    },
   },
-
   {
     title: `Love vs. Caste: Ansh & Nishi’s Fight for Safety`,
     slug: `love-vs-caste-ansh-nishis-fight-for-safety`,
@@ -2946,6 +2984,12 @@ const blogdata = [
       show: true,
       title: `Pro Rider 1000 died due to motovlogging Over-Speeding Culture`,
       slug: `pro-rider-1000-died-due-to-motovlogging-over-speeding-culture`,
+    },
+    linktree: {
+      image: {
+        src: `https://i.ibb.co/d2k2htp/Love-vs-Caste-Ansh-Nishi-s-Fight-for-Safety.png`,
+        alt: `Love vs. Caste: Ansh & Nishi’s Fight for Safety`,
+      }
     },
   },
   {
@@ -3050,6 +3094,12 @@ const blogdata = [
       title: `Pro Rider 1000 died due to motovlogging Over-Speeding Culture`,
       slug: `pro-rider-1000-died-due-to-motovlogging-over-speeding-culture`,
     },
+    linktree: {
+      image: {
+        src: `https://i.ibb.co/HNrmQNB/Wrestlers-Protesting-against-Sexual-Harassment-The-Real-Truth.png`,
+        alt: `Wrestlers Protesting against Sexual Harassment: The Real Truth`,
+      }
+    },
   },
   {
     title: `Pro Rider 1000 died due to motovlogging Over-Speeding Culture`,
@@ -3149,6 +3199,12 @@ const blogdata = [
       title: `The Viral Chaiwala Business Model: Myths and Realities`,
       slug: `the-viral-chaiwala-business-model-myths-and-realities`,
     },
+    linktree: {
+      image: {
+        src: `https://i.ibb.co/nw43wZ5/Pro-Rider-1000-died-due-to-motovlogging-Over-Speeding-Culture.png`,
+        alt: `Pro Rider 1000 died due to motovlogging Over-Speeding Culture`,
+      }
+    },
   },
   {
     title: `The Confusing Campaign of Desh Ka Dhoni by Flying Beast`,
@@ -3205,6 +3261,12 @@ const blogdata = [
       show: true,
       title: `The Viral Chaiwala Business Model: Myths and Realities`,
       slug: `the-viral-chaiwala-business-model-myths-and-realities`,
+    },
+    linktree: {
+      image: {
+        src: `https://i.ibb.co/Snkfyv7/The-Confusing-Campaign-of-Desh-Ka-Dhoni-by-Flying-Beast.png`,
+        alt: `The Confusing Campaign of Desh Ka Dhoni by Flying Beast`,
+      }
     },
   },
   {
@@ -3279,6 +3341,12 @@ const blogdata = [
       show: true,
       title: `The Viral Chaiwala Business Model: Myths and Realities`,
       slug: `the-viral-chaiwala-business-model-myths-and-realities`,
+    },
+    linktree: {
+      image: {
+        src: `https://i.ibb.co/CVBfjfv/The-Kerala-Story-Core-Issues-vs-Dhruv-Rathee-Propaganda.png`,
+        alt: `The Kerala Story: Core Issues vs Dhruv Rathee Propaganda`,
+      }
     },
   },
   {
@@ -3368,7 +3436,12 @@ const blogdata = [
       title: `Bigg Boss Maker’s Strategy to Stir Drama Around Elvish Yadav`,
       slug: `bigg-boss-makers-strategy-to-stir-drama-around-elvish-yadav`,
     },
-
+    linktree: {
+      image: {
+        src: `https://i.ibb.co/z4LdTMq/The-Viral-Chaiwala-Business-Model-Myths-and-Realities.png`,
+        alt: `The Viral Chaiwala Business Model: Myths and Realities`,
+      }
+    },
   },
   {
     title: `MC Stan Fan’s Rampage on Carryminati’s New Roast Video`,
@@ -3437,7 +3510,12 @@ const blogdata = [
       title: `Bigg Boss Maker’s Strategy to Stir Drama Around Elvish Yadav`,
       slug: `bigg-boss-makers-strategy-to-stir-drama-around-elvish-yadav`,
     },
-
+    linktree: {
+      image: {
+        src: `https://i.ibb.co/rG8Msp1/MC-Stan-Fan-s-Rampage-on-Carryminati-s-New-Roast-Video.png`,
+        alt: `MC Stan Fan’s Rampage on Carryminati’s New Roast Video`,
+      }
+    },
   },
   {
     title: `Odisha Train Accident A Wake-Up Call for Indian Railway and Government`,
@@ -3510,6 +3588,12 @@ const blogdata = [
       show: true,
       title: `A Disturbing Incident: Dutch Vlogger Attacked in Bengaluru Market`,
       slug: `a-disturbing-incident-dutch-vlogger-attacked-in-bengaluru-market`,
+    },
+    linktree: {
+      image: {
+        src: `https://i.ibb.co/mSd33h3/Odisha-Train-Accident-A-Wake-Up-Call-for-Indian-Railway-and-Government.png`,
+        alt: `Odisha Train Accident A Wake-Up Call for Indian Railway and Government`,
+      }
     },
   },
   {
@@ -3586,6 +3670,12 @@ const blogdata = [
       show: true,
       title: `Kajol’s Remarks on Education in Politics`,
       slug: `kajols-remarks-on-education-in-politics`,
+    },
+    linktree: {
+      image: {
+        src: `https://i.ibb.co/qM5FWZf/A-Disturbing-Incident-Dutch-Vlogger-Attacked-in-Bengaluru-Market.png`,
+        alt: `A Disturbing Incident: Dutch Vlogger Attacked in Bengaluru Market`,
+      }
     },
   },
   {
@@ -3698,7 +3788,12 @@ const blogdata = [
       title: `Bigg Boss Maker’s Strategy to Stir Drama Around Elvish Yadav`,
       slug: `bigg-boss-makers-strategy-to-stir-drama-around-elvish-yadav`,
     },
-
+    linktree: {
+      image: {
+        src: `https://i.ibb.co/xjZ5gp9/Fallacies-and-Mistakes-in-Adipurush-Manoj-Muntashir-s-Doglapan.png`,
+        alt: `Fallacies and Mistakes in Adipurush: Manoj Muntashir’s Doglapan`,
+      }
+    },
   },
   {
     title: `Bigg Boss OTT Season 2: Check Out the Ranking of Contestants`,
@@ -3840,6 +3935,12 @@ const blogdata = [
       title: `Bigg Boss Maker’s Strategy to Stir Drama Around Elvish Yadav`,
       slug: `bigg-boss-makers-strategy-to-stir-drama-around-elvish-yadav`,
     },
+    linktree: {
+      image: {
+        src: `https://i.ibb.co/s5VVbqb/Bigg-Boss-OTT-Season-2-Check-Out-the-Ranking-of-Contestants.png`,
+        alt: `Bigg Boss OTT Season 2: Check Out the Ranking of Contestants`,
+      }
+    },
   },
   {
     title: `The Manipur Files: Complexities of Ethnic Clashes`,
@@ -3954,7 +4055,12 @@ const blogdata = [
       title: `Bigg Boss Maker’s Strategy to Stir Drama Around Elvish Yadav`,
       slug: `bigg-boss-makers-strategy-to-stir-drama-around-elvish-yadav`,
     },
-
+    linktree: {
+      image: {
+        src: `https://i.ibb.co/6gS7Szh/The-Manipur-Files-Complexities-of-Ethnic-Clashes.png`,
+        alt: `The Manipur Files: Complexities of Ethnic Clashes`,
+      }
+    },
   },
   {
     title: `Kajol’s Remarks on Education in Politics`,
@@ -3996,7 +4102,12 @@ const blogdata = [
       title: `Bigg Boss Maker’s Strategy to Stir Drama Around Elvish Yadav`,
       slug: `bigg-boss-makers-strategy-to-stir-drama-around-elvish-yadav`,
     },
-
+    linktree: {
+      image: {
+        src: `https://i.ibb.co/RgWRvQ4/Kajol-s-Remarks-on-Education-in-Politics.png`,
+        alt: `Kajol’s Remarks on Education in Politics`,
+      }
+    },
   },
   {
     title: `Students Made to Wait for Hours to Salute Minister`,
@@ -4037,6 +4148,12 @@ const blogdata = [
       show: true,
       title: `Bigg Boss Maker’s Strategy to Stir Drama Around Elvish Yadav`,
       slug: `bigg-boss-makers-strategy-to-stir-drama-around-elvish-yadav`,
+    },
+    linktree: {
+      image: {
+        src: `https://i.ibb.co/q5px3SZ/Students-Made-to-Wait-for-Hours-to-Salute-Minister.png`,
+        alt: `Students Made to Wait for Hours to Salute Minister`,
+      }
     },
   },
   {
@@ -4117,6 +4234,12 @@ const blogdata = [
       title: `Nuh Communal Riots: An In-Depth Analysis of Causes and Consequences`,
       slug: `nuh-communal-riots-an-in-depth-analysis-of-causes-and-consequences`,
     },
+    linktree: {
+      image: {
+        src: `https://i.ibb.co/xJLLxB9/Bigg-Boss-Maker-s-Strategy-to-Stir-Drama-Around-Elvish-Yadav.png`,
+        alt: `Bigg Boss Maker’s Strategy to Stir Drama Around Elvish Yadav`,
+      }
+    },
   },
   {
     title: `Viral Video Raises Questions on Gender Equality and Power Misuse`,
@@ -4157,6 +4280,12 @@ const blogdata = [
       show: true,
       title: `Nuh Communal Riots: An In-Depth Analysis of Causes and Consequences`,
       slug: `nuh-communal-riots-an-in-depth-analysis-of-causes-and-consequences`,
+    },
+    linktree: {
+      image: {
+        src: `https://i.ibb.co/pxj5VvS/Viral-Video-Raises-Questions-on-Gender-Equality-and-Power-Misuse.png`,
+        alt: `viral-video-raises-questions-on-gender-equality-and-power-misuse`,
+      }
     },
   },
   {
@@ -4199,7 +4328,12 @@ const blogdata = [
       title: `Nuh Communal Riots: An In-Depth Analysis of Causes and Consequences`,
       slug: `nuh-communal-riots-an-in-depth-analysis-of-causes-and-consequences`,
     },
-
+    linktree: {
+      image: {
+        src: `https://i.ibb.co/W2C87NM/Viral-Video-Lift-Disagreement-Between-Pet-Owner-and-Residents.png`,
+        alt: `Viral Video: Lift Disagreement Between Pet Owner and Residents`,
+      }
+    },
   },
   {
     title: `Nuh Communal Riots: An In-Depth Analysis of Causes and Consequences`,
@@ -4260,6 +4394,12 @@ const blogdata = [
       title: "A Disturbing Incident: Spitting on the Mahakal Sawari in Ujjain",
       slug: "a-disturbing-incident-spitting-on-the-mahakal-sawari-in-ujjain",
     },
+    linktree: {
+      image: {
+        src: `https://i.ibb.co/wzRmnT7/Nuh-Communal-Riots-An-In-Depth-Analysis-of-Causes-and-Consequences.png`,
+        alt: `Nuh Communal Riots: An In-Depth Analysis of Causes and Consequences`,
+      }
+    },
   },
   {
     title: "The Viral Proposal at Kedarnath Temple: Impact on Religious Sanctity",
@@ -4300,6 +4440,12 @@ const blogdata = [
       show: true,
       title: "A Disturbing Incident: Spitting on the Mahakal Sawari in Ujjain",
       slug: "a-disturbing-incident-spitting-on-the-mahakal-sawari-in-ujjain",
+    },
+    linktree: {
+      image: {
+        src: `https://i.ibb.co/XWbWBdK/The-Viral-Proposal-at-Kedarnath-Temple-Impact-on-Religious-Sanctity.png`,
+        alt: `The Viral Proposal at Kedarnath Temple: Impact on Religious Sanctity`,
+      }
     },
   },
   {
@@ -4342,6 +4488,12 @@ const blogdata = [
       title: "A Disturbing Incident: Spitting on the Mahakal Sawari in Ujjain",
       slug: "a-disturbing-incident-spitting-on-the-mahakal-sawari-in-ujjain",
     },
+    linktree: {
+      image: {
+        src: `https://i.ibb.co/Vgn9Gnr/Dwarka-s-Child-Labor-and-Abuse-Horror-Beaten-up-by-the-Mob.png`,
+        alt: `Dwarka’s Child Labor and Abuse Horror: Beaten up by the Mob`,
+      }
+    },
   },
   {
     title: "A Disturbing Incident: Spitting on the Mahakal Sawari in Ujjain",
@@ -4382,6 +4534,12 @@ const blogdata = [
       show: true,
       title: "Dwarka’s Child Labor and Abuse Horror: Beaten up by the Mob",
       slug: "dwarkas-child-labor-and-abuse-horror-beaten-up-by-the-mob",
+    },
+    linktree: {
+      image: {
+        src: `https://i.ibb.co/rpyxcML/A-Disturbing-Incident-Spitting-on-the-Mahakal-Sawari-in-Ujjain.png`,
+        alt: `A Disturbing Incident: Spitting on the Mahakal Sawari in Ujjain`,
+      }
     },
   },
   {
@@ -4443,7 +4601,12 @@ const blogdata = [
       title: "Dwarka’s Child Labor and Abuse Horror: Beaten up by the Mob",
       slug: "dwarkas-child-labor-and-abuse-horror-beaten-up-by-the-mob",
     },
-
+    linktree: {
+      image: {
+        src: `https://i.ibb.co/gSDqkr4/Karan-Sangwan-Vs-Unacademy-Who-s-Right-and-Who-s-Wrong.png`,
+        alt: `Karan Sangwan Vs Unacademy – Who’s Right and Who’s Wrong?`,
+      }
+    },
   },
   {
     title: `Is Dillon Danis Crossing the Line with His Attacks on Logan Paul's Fiancee?`,
@@ -4498,6 +4661,12 @@ const blogdata = [
       show: true,
       title: "Karan Sangwan Vs Unacademy – Who’s Right and Who’s Wrong?",
       slug: "karan-sangwan-vs-unacademy-whos-right-and-whos-wrong",
+    },
+    linktree: {
+      image: {
+        src: `https://i.ibb.co/p44z6RF/Is-Dillon-Danis-Crossing-the-Line-with-His-Attacks-on-Logan-Paul-s-Fiancee.png`,
+        alt: `Is Dillon Danis Crossing the Line with His Attacks on Logan Paul's Fiancee?`,
+      }
     },
   },
   {
@@ -4652,6 +4821,12 @@ const blogdata = [
       show: true,
       title: `Is Dillon Danis Crossing the Line with His Attacks on Logan Paul's Fiancee?`,
       slug: `is-dillon-danis-crossing-the-line-with-his-attacks-on-logan-pauls-fiancee`,
+    },
+    linktree: {
+      image: {
+        src: `https://i.ibb.co/Qkh7r1B/Chandrayaan-3-Success-Reply-for-the-Jealous-UK-Journalists.png`,
+        alt: `Chandrayaan 3 Success: Reply for the Jealous UK Journalists`,
+      }
     },
   },
   {

@@ -12,15 +12,15 @@ export default function AccRibbonBonus({ data, loc = "ind" }) {
       {
         data.map((item, index) => (
           <div key={index} className={`relative ${style.redShadow} w-full md:w-4/12 gap-8 flex flex-col border-2 border-white bg-white/5 rounded-lg px-2 py-3`}>
-            <div className={`${style.ribbon} ${style.ribbonTopRight}`}>
-              <span><p className='text-lg md:text-2xl'>{bonus[item].symbol[loc]}{bonus[item].value[loc]}/-</p></span>
+            <div className={`${style.ribbon} z-10 ${style.ribbonTopRight}`}>
+              <span><p className='text-lg md:text-xl'>Included</p></span>
             </div>
             <div className="flex flex-col items-center">
               <div className="flex flex-col w-full">
-                <img src={bonus[item].image.src} alt={bonus[item].image.alt} className="object-contain object-center h-40 w-96" draggable={false} />
+                <img src={bonus[item].image.src} alt={bonus[item].image.alt} className={`object-contain object-center h-40 w-96`} draggable={false} />
               </div>
               <div className="flex flex-col w-full items-center">
-                <p className="text-base md:text-lg font-bold text-center text-yellow-600">Total Value: {bonus[item].symbol[loc]}<s>{bonus[item].value[loc]}</s>/-</p>
+                <p className="text-base md:text-lg font-bold text-center text-red-500">Total Value: {bonus[item].symbol[loc]}<s>{bonus[item].value[loc]}</s>/-</p>
                 <p className="text-sm md:text-base font-bold text-center text-green-700">Included in This Exclusive Offer!</p>
               </div>
             </div>

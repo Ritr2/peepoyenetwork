@@ -1,9 +1,9 @@
-import NavigationBar from '@/components/NavigationBar'
 import './globals.css'
 import { Roboto } from 'next/font/google'
-import Footer from '@/components/Footer'
 import { LayoutProvider } from './LayoutProvider'
 import { Analytics } from '@vercel/analytics/react';
+import GoogleAnalytic from '@/components/GoogleAnalytic';
+
 
 const roboto = Roboto({
   weight: ['100', '300', '400', '500', '700'],
@@ -34,6 +34,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={roboto.className}>
         <LayoutProvider>
+          <GoogleAnalytic />
           {children}
         </LayoutProvider>
         <Analytics />
