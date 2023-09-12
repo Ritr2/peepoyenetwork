@@ -3,18 +3,28 @@ import blogdata from "../blog";
 import { notFound } from 'next/navigation';
 
 export async function GET(req) {
-  const tempdata = blogdata.sort((a, b) => {
+  let tempdata = blogdata.sort((a, b) => {
     let aDate = new Date(a.date);
     let bDate = new Date(b.date);
     return bDate - aDate;
   }).filter((item) => {
     return item.linktree;
   });
+  
+  let page = req.nextUrl.searchParams.get("page")
+  let search = req.nextUrl.searchParams.get("search")
+
+  if (search) {
+    search = decodeURIComponent(search);
+    tempdata = tempdata.filter((item) => {
+      return item.title.toLowerCase().includes(search.toLowerCase());
+    });
+  }
+
   let total = tempdata.length;
   let count = 12;
   let totalPage = Math.ceil(total / count);
-  
-  let page = req.nextUrl.searchParams.get("page")
+
   page ? page = parseInt(page) : page = 1;
   let range;
 
@@ -28,7 +38,9 @@ export async function GET(req) {
     range = [(page - 1) * count, page * count - 1];
   }
 
-  const data = tempdata.slice(range[0], range[1] + 1).map((item) => {
+  tempdata = tempdata.slice(range[0], range[1] + 1)
+
+  const data = tempdata.map((item) => {
     return {
       title: item.title,
       slug: item.slug,
