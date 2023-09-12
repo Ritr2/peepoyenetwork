@@ -113,6 +113,16 @@ export default async function page({ searchParams }) {
                         </Link>
                     </div>
                 ))}
+                {
+                    data.length === 0 && (
+                        <div className="flex flex-col items-center justify-center gap-2">
+                            <h1 className="text-2xl md:text-4xl font-medium text-neutral-800">No Blogs Found</h1>
+                            <Link href="/linktree">
+                                <button type="button" className="px-2 py-1 rounded-md shadow-md drop-shadow-md bg-primary-100 text-primary-800 hover:bg-primary-200 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2">Go Back</button>
+                            </Link>
+                        </div>
+                    )
+                }
             </div>
             {
                 totalPage > 1 && (
