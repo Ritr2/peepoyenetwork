@@ -5443,6 +5443,113 @@ const blogdata = [
         alt: `Sunny Deol's gurdaspur`,
       }
     }
+  },
+  {
+    title: `MSRTC Bus Mishaps Raise Alarms for Passenger Safety`,
+    slug: `msrtc-bus-mishaps-raise-alarms-for-passenger-safety`,
+    id: 83,
+    category_id: 13,
+    description: `The viral video of an MSRTC bus driver navigating a leaking roof amid heavy rains with an umbrella in hand.`,
+    image: {
+      src: `https://i.ibb.co/Ydmb7jM/MSRTC-Bus-Mishaps-Raise-Alarms-for-Passenger-Safety.png`,
+      alt: `MSRTC Bus Mishaps Raise Alarms for Passenger Safety`,
+    },
+    owner: `Ayushi Rajput`,
+    tags: [`MSRTC Bus Mishaps`, `Passenger Safety`, `MSRTC`, `MSRTC Bus`, `MSRTC Bus Mishaps`, `MSRTC Bus Mishaps Raise Alarms for Passenger Safety`],
+    date: `2023-09-12`,
+    summary: `In a recent incident, a bus driver from the Maharashtra State Road Transport Corporation (MSRTC) drove a leaking bus roof amid heavy rains. He was seen driving the bus with an umbrella in one hand while the roof leaked above him. This incident raises serious concerns about passenger safety and poor infrastructure and management of the corporation.`,
+    sections: [
+      {
+        h1: `Video gets Viral: MSRTC Bus with Leaking Rooftop Runs on Road`,
+        h2: false,
+        p: `The video of a bus driver holding an umbrella in one hand while driving a bus with a leaking roof in Aheri, Gadchiroli, went viral on August 25th. Heavy rains had caused the roof to leak.<br/>Mumbai Congress shared the video online and wrote, This video is of Aheri of Gadchiroli. When the roof of the bus started leaking when it rained, it came to light that the driver was driving the bus with an umbrella! This is the condition of Maharashtra's @msrtcofficial bus service, the safety of the passengers is now in the hands of the almighty!”`,
+        image: false,
+        html: {
+          type: `twitter`,
+          value: `1695364123914363380`,
+        },
+        subSections: false,
+      },
+      {
+        h1: `Déjà Vu: The July Incident`,
+        h2: false,
+        p: `Just a month prior, on July 26th, a similar incident occurred on the Gadchiroli-Aheri route when the rooftop of an MSRTC bus detached from one side, flapping in the wind while the bus was in motion. This dangerous event was captured on video and swiftly went viral. Authorities were forced to intervene due to public outcry. Following the incident, an investigation was launched, leading to the suspension of the engineer responsible for the bus’s condition. This action is a step in the right direction, highlighting the importance of accountability in ensuring passenger safety.<br/>"The crew of the bus and passengers were unaware of the broken rooftop. After people from from some other vehicle pointed it out to the bus crew members, the latter asked them to shoot a video," an MSRTC official said. <br/>The manager of Aheri Bus Depot said that an investigation is underway regarding the video. He added that since the number plate of the bus and the face of the driver seen in the video are not clearly identifiable, it is difficult to identify him.`,
+        image: false,
+        html: false,
+        subSections: false,
+      },
+      {
+        h1: `Our Opinion`,
+        h2: false,
+        p: `Both of the situations were undeniably dangerous, safety should never be compromised, especially during the monsoon season when such incidents are more likely to occur. Our opinions around these incidents are-`,
+        image: false,
+        html: false,
+        subSections: [
+          {
+            h1: false,
+            h2: `1. Passenger Safety Above All`,
+            p: `In light of these incidents, it is evident that passenger safety must be the top priority in public transportation. Allowing a bus with a leaking roof to continue its journey is simply unacceptable and endangers not only the passengers but also other road users.`,
+            image: false,
+            html: false,
+          },
+          {
+            h1: false,
+            h2: `2. A Call for Improved Safety Measures`,
+            p: `It is crucial for the government to take proactive measures in order to prevent similar incidents from occurring again. Inspections and maintenance should be performed regularly on public transportation vehicles, especially during monsoon season.`,
+            image: false,
+            html: false,
+          },
+          {
+            h1: false,
+            h2: `3. Lack of Urgency`,
+            p: `The decision to ask bystanders to record a video of the hazardous situation raises serious concerns. It reflects a lack of urgency and indifference towards passenger safety. In such situations, buses should be immediately pulled over, and passengers should be evacuated to a safer location.`,
+            image: false,
+            html: false,
+          },
+          {
+            h1: false,
+            h2: `4. Accountability Matters`,
+            p: `The suspension of the engineer responsible for bus maintenance is a step in the right direction. Accountability must be upheld to prevent such incidents from happening again. The government should also take proactive measures to ensure that all public transport vehicles undergo regular safety inspections and maintenance.`,
+            image: false,
+            html: false,
+          },
+          {
+            h1: false,
+            h2: `5. Professional Training is Crucial`,
+            p: `Investing in the training of bus drivers and crew members to handle unexpected situations professionally and responsibly is crucial. While a leaky roof might seem minor, it can quickly escalate into a life-threatening situation, as seen in this case.`,
+            image: false,
+            html: false,
+          },
+        ],
+      },
+      {
+        h1: false,
+        h2: false,
+        p: `In conclusion, the recent incidents involving MSRTC buses with roof-related safety issues are alarming and emphasize the need for strict safety protocols. The government, transport authorities, and MSRTC must collaborate to ensure that public transportation is safe, reliable, and capable of protecting passengers during challenging situations.`,
+        image: false,
+        html: false,
+        subSections: false,
+      }
+    ],
+    advertisements: {
+      show: true,
+      image: {
+        src: "https://i.postimg.cc/c4Xj2Ptb/private-club.png",
+        alt: "Private Club",
+        link: "https://akassh.co/support-peepoye",
+      },
+    },
+    referBlog: {
+      show: true,
+      title: `Gadar 2's Hero to Gurdaspur's Zero: Sunny Deol's Political Absence`,
+      slug: `gadar-2s-hero-to-gurdaspurs-zero-sunny-deols-political-absence`,
+    },
+    linktree: {
+      image: {
+        src: `https://i.ibb.co/fdVNppv/MSRTC-Bus-Mishaps-Raise-Alarms-for-Passenger-Safety-1.png`,
+        alt: `MSRTC Bus Mishaps Raise Alarms for Passenger Safety`,
+      }
+    },
   }
 ];
 
