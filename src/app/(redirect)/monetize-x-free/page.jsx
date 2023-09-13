@@ -1,6 +1,5 @@
 import React from 'react'
 import { Roboto_Serif } from 'next/font/google'
-import GuideX from '@/components/funnels/pages/guide-x-free/GuideX'
 
 const robo = Roboto_Serif({
   weight: ['100', '300', '400', '500', '700', '900'],
