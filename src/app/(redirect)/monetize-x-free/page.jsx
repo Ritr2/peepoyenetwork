@@ -47,7 +47,6 @@ export const metadata = {
 export default function page() {
   return (
     <main className={`relative flex min-h-screen flex-col items-center overflow-x-hidden bg-gradient-to-r from-black via-neutral-800 to-black ${robo.className}`}>
-      <GuideX />
     </main>
   )
 }

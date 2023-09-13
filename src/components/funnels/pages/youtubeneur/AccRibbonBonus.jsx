@@ -11,7 +11,7 @@ export default function AccRibbonBonus({ data, loc = "ind" }) {
     <div className=' flex flex-col md:flex-row gap-12 justify-center'>
       {
         data.map((item, index) => (
-          <div key={index} className={`relative ${style.redShadow} w-full md:w-4/12 gap-8 flex flex-col border-2 border-white bg-white/5 rounded-lg px-2 py-3`}>
+          <div key={index} className={`relative ${style.redShadow} w-full md:w-4/12 gap-8 flex flex-col border-2 border-white bg-white/5 rounded-lg px-2 md:px-4 py-3`}>
             <div className={`${style.ribbon} z-10 ${style.ribbonTopRight}`}>
               <span><p className='text-lg md:text-xl'>Included</p></span>
             </div>
@@ -36,8 +36,8 @@ export default function AccRibbonBonus({ data, loc = "ind" }) {
                     {
                       bonus[item].list2.map((list, index2) => (
                         <div key={index2} className="flex flex-row gap-2 md:gap-2">
-                          <AiOutlineCheckCircle className="text-red-500/90 bg-white rounded-full w-4 h-4 md:w-5 md:h-5 mt-1 text-2xl" />
-                          <span className="flex-1 text-sm md:text-base font-light text-left text-white">{list}</span>
+                          <AiOutlineCheckCircle className="text-red-500/90 rounded-full w-4 h-4 md:w-5 md:h-5 mt-1 text-2xl" />
+                          <span className="flex-1 text-sm md:text-base text-left text-white">{list}</span>
                         </div>
                       ))
                     }

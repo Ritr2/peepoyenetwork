@@ -5,7 +5,7 @@ export default function WhoIsThisFor() {
     const data = [
         {
             h1: 'Content Creators',
-            p: `Learn how to optimize your content, grow your audience, and monetize your channel effectively.`,
+            p: `Learn how to optimize your content, grow your audience, build your online authority and monetize your channel effectively.`,
             image: `https://i.ibb.co/3cFdQKD/who-can-take-1.webp`,
         },
         {

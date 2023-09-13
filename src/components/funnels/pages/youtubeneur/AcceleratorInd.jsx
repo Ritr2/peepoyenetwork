@@ -75,7 +75,7 @@ export default function AcceleratorInd({ loc, data }) {
           initial={{ opacity: 0, y: -100 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, type: 'spring', bounce: 0.5 }}>
-          {data ? parse(data.query.message) : parse("⚠️Do you know that <span className='italic font-medium'>99 out of 100 people</span> start YouTube the wrong way?")}
+          {data ? parse(data.query.message) : parse("⚠️Do you know that <span className='italic font-medium'>99 out of 100 people</span> start and grow in YouTube the wrong way?")}
         </motion.h1>
       </div>
       <section className="relative flex flex-col py-8 px-5 md:px-40">
@@ -261,20 +261,31 @@ export default function AcceleratorInd({ loc, data }) {
           </div>
           <div className="flex flex-col md:flex-row justify-center items-center gap-10">
             <div className={`flex flex-col w-full md:w-6/12 rounded-xl`}>
-              <img src="https://i.ibb.co/SNBgrWD/akassh-1.png" alt="Akassh Ashok Gupta" className='rounded-xl shadow-lg drop-shadow-lg' />
+              <img src="https://i.ibb.co/c1qy6Mc/akassh-3.png" alt="Akassh Ashok Gupta" className='rounded-xl shadow-lg drop-shadow-lg' />
             </div>
             <div className="flex flex-col flex-1">
               <p className={`text-base md:text-xl text-white font-normal`}>
-                Hi! I’m Akassh, and I thank you for taking an interest in reading about me!<br />In my career, I have been fortunate enough to <span className={`${style.textRed} font-bold`}>experience 20+ years of corporate life</span> at leadership positions consulting big firms and <span className={`${style.textRed} font-bold`}>5 years of YouTube experience</span>, gaining over <span className={`${style.textRed} font-bold`}>1 million+ subscribers</span>.<br />I attribute much of these experiences to how I run my day, every day.<br />While most of us feel lost and feel like we are wasting time, I have, over the past 20 years, built a wonderful relationship with time, processes, methods, and systems.
+                Hey there, I'm Akassh Ashok Gupta! Thanks for stopping by to learn more about me. I'm excited to share how I can help you navigate the world of YouTube and turn it into a powerhouse for generating multiple revenue streams and business leads.<br /><br />With over <span className={`${style.textRed} font-bold`}>19 years of experience in the corporate world</span> and more than <span className={`${style.textRed} font-bold`}>5 years dedicated to mastering the art of YouTube</span>, I bring a unique blend of skills to the table. My background as a business consultant, coupled with my status as an influencer, sets me apart as the ideal mentor for this journey.
               </p>
             </div>
           </div>
           <div className="flex flex-col md:flex-row justify-center items-center gap-10">
             <div className={`flex flex-col w-full md:w-6/12 rounded-xl order-1 md:order-2`}>
-              <img src="https://i.ibb.co/3TcB93w/akassh-2.png" alt="Akassh Ashok Gupta" className='rounded-xl shadow-lg drop-shadow-lg' />
+              <img src="https://i.ibb.co/Tt0R4KB/akassh-2.png" alt="Akassh Ashok Gupta" className='rounded-xl shadow-lg drop-shadow-lg' />
             </div>
             <div className="flex flex-col flex-1 order-2 md:order-1">
-              <p className={`text-base md:text-xl text-white font-normal`}>Through those systems and processes, I have been able to create <span className={`${style.textRed} font-bold`}>multiple revenue streams</span> for myself by just doing what I love.<br />With the launch of <span className={`${style.textRed} font-bold`}>X monetization policy</span>, I dived deeper into it and gained a hefty amount from the platform in the first month itself.<br />I am on a mission to <span className={`${style.textRed} font-bold`}>educate 1 lac people</span> on how to leverage social media to create multiple revenue streams.<br />In this <span className={`${style.textRed} font-bold`}>guidebook</span>, I share how I managed to earn this amount from X, and at the time, I have also shared some interesting case studies of top X influencers and some <span className={`${style.textRed} font-bold`}>practical tasks to implement.</span>
+              <p className={`text-base md:text-xl text-white font-normal`}>
+                Imagine this: in less than a year after leaving a high-profile leadership position, I managed to build an impressive online presence with over <span className={`${style.textRed} font-bold`}>1 million followers</span> across various social media platforms. This success is a result of my distinctive approach to consulting and influence, all fueled by the vast experience I gained from mentoring some of the <span className={`${style.textRed} font-bold`}>world's biggest brands.</span><br /><br />What sets me apart further are my <span className={`${style.textRed} font-bold`}>incredible collaborations with legends</span> like Sonu Nigam and Shruti Haasan. Additionally, I've gained the admiration of top YouTube influencers including Ashish Chanchlani, Harsh Beniwal, Triggered Insaan, Sourav Joshi, and many more.
+              </p>
+            </div>
+          </div>
+          <div className="flex flex-col md:flex-row justify-center items-center gap-10">
+            <div className={`flex flex-col w-full md:w-6/12 rounded-xl`}>
+              <img src="https://i.ibb.co/wsTGfLb/akassh-1.png" alt="Akassh Ashok Gupta" className='rounded-xl shadow-lg drop-shadow-lg' />
+            </div>
+            <div className="flex flex-col flex-1">
+              <p className={`text-base md:text-xl text-white font-normal`}>
+              I believe in the power of YouTube not just as a platform for entertainment but as a strategic tool for business growth.<br/><br/>Let's embark on this exciting journey together, and <span className={`${style.textRed} font-bold`}>I'll guide you every step of the way in leveraging YouTube to its fullest potential.</span><br/><br/>Whether you're looking to diversify your revenue streams or attract valuable business leads, I've got the expertise to make it happen. Let's make your YouTube venture a resounding success!
               </p>
             </div>
           </div>
@@ -332,26 +343,26 @@ export default function AcceleratorInd({ loc, data }) {
       </section>
       <div className={`flex flex-col relative`}>
         <img src="https://i.ibb.co/PWVzSQt/texture-BG3.jpg" alt="texture" className="z-0 absolute top-0 left-0 w-full h-full object-cover opacity-10" />
-      <section className="z-10 flex flex-col py-10 px-5 md:px-40 gap-5 md:gap-10">
-        <div className={`flex flex-col gap-10 ${sora.className}`}>
-          <h2 className='text-xl md:text-3xl text-center text-red-500/90 font-bold'>
-            Featured Testimonials From The Community & Clients
-          </h2>
-          <div className="flex flex-col">
-            <Testimonials />
+        <section className="z-10 flex flex-col py-10 px-5 md:px-40 gap-5 md:gap-10">
+          <div className={`flex flex-col gap-10 ${sora.className}`}>
+            <h2 className='text-xl md:text-3xl text-center text-red-500/90 font-bold'>
+              Featured Testimonials From The Community & Clients
+            </h2>
+            <div className="flex flex-col">
+              <Testimonials />
+            </div>
           </div>
-        </div>
-      </section>
-      <section className="z-10 flex flex-col py-10 px-5 md:px-40 gap-5 md:gap-10 bg-white/5">
-        <div className={`flex flex-col gap-2 ${sora.className}`}>
-          <h2 className={`text-xl md:text-3xl text-center text-white font-bold`}>
-            Frequently Asked Questions
-          </h2>
-        </div>
-        <div className={`flex w-full md:w-8/12 self-center flex-col ${sora.className}`}>
-          <FAQ data={faqData} bgcolor={{ question: 'bg-white/5 border-white border-2', answer: 'bg-white/10' }} textSize={{ question: 'text-base md:text-xl text-white', answer: 'text-sm md:text-base text-white' }} />
-        </div>
-      </section>
+        </section>
+        <section className="z-10 flex flex-col py-10 px-5 md:px-40 gap-5 md:gap-10 bg-white/5">
+          <div className={`flex flex-col gap-2 ${sora.className}`}>
+            <h2 className={`text-xl md:text-3xl text-center text-white font-bold`}>
+              Frequently Asked Questions
+            </h2>
+          </div>
+          <div className={`flex w-full md:w-8/12 self-center flex-col ${sora.className}`}>
+            <FAQ data={faqData} bgcolor={{ question: 'bg-white/5 border-white border-2', answer: 'bg-white/10' }} textSize={{ question: 'text-base md:text-xl text-white', answer: 'text-sm md:text-base text-white' }} />
+          </div>
+        </section>
       </div>
       <FunnelFooter />
       {

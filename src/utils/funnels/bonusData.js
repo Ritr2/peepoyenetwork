@@ -104,7 +104,7 @@ const data = {
       'Step-by-step guide for effective research and it’s usage in the scripts.',
     ],
     image: {
-      src: 'https://i.ibb.co/CtYhqYb/Video-Research-Template.png',
+      src: 'https://i.ibb.co/D5jNn1g/Video-Research-Template.png',
       alt: 'Video Research Template',
     },
     value:{ ind: '2,999', int: '49'},
@@ -152,7 +152,7 @@ const data = {
       'A tool to make a data-driven revenue growth strategy based on predictions and trends.',
     ],
     image: {
-      src: 'https://i.ibb.co/DRzrtKm/Revenue-Prediction-Tool.png',
+      src: 'https://i.ibb.co/KGh1Pxn/Revenue-Prediction-Tool.png',
       alt: 'Revenue Prediction Tool',
     },
     value:{ ind: '2,999', int: '49'},

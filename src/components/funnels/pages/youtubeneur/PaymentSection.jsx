@@ -23,10 +23,10 @@ export default function PaymentSection({ loc, data }) {
       yearly: {
         selectortext: 'Yearly',
         recommended: false,
-        price: 99,
-        currency: '$',
+        price: 2499,
+        currency: '₹',
         buttonText: {
-          main: 'Book Now at $99/year',
+          main: 'Book Now at ₹2499/year',
           sub: 'Able to cancel anytime'
         },
         link: 'https://www.skool.com/youtubeneur',
@@ -82,13 +82,15 @@ export default function PaymentSection({ loc, data }) {
   const [currentPlan, setCurrentPlan] = useState('lifetime')
   const items = [
     '<span className="font-normal text-neutral-100">Lifetime access to Youtubeneur Foundation Accelerator </span> our flagship Course to Build Online Authority',
-    '<span className="font-normal text-neutral-100">Instant access</span> to our Private Youtubeneur Community to collaborate while learning',
-    `<span className="font-normal text-neutral-100">Bonus #1:</span> Donot Do This On Youtube`,
-    `<span className="font-normal text-neutral-100">Bonus #2:</span> Scripting Secret Course`,
-    `<span className="font-normal text-neutral-100">Bonus #3:</span> Thumbnail Designing Hack`,
-    `<span className="font-normal text-neutral-100">Bonus #4:</span> Video Editing Checklist`,
-    `<span className="font-normal text-neutral-100">Bonus #5:</span> Video Optimization Doc`,
-    `<span className="font-normal text-neutral-100">Bonus #6:</span> Revenue Prediction Tool`,
+    '<span className="font-normal text-neutral-100">Bonus #1:</span> Instant access to our Private Youtubeneur Community to collaborate while learning',
+    `<span className="font-normal text-neutral-100">Bonus #2:</span> Donot Do This On Youtube`,
+    `<span className="font-normal text-neutral-100">Bonus #3:</span> Scripting Secret Course`,
+    `<span className="font-normal text-neutral-100">Bonus #4:</span> Content Strategy Doc`,
+    `<span className="font-normal text-neutral-100">Bonus #5:</span> Video Editing Checklist`,
+    `<span className="font-normal text-neutral-100">Bonus #6:</span> Video Research Template`,
+    `<span className="font-normal text-neutral-100">Bonus #7:</span> Thumbnail Designing Hack`,
+    `<span className="font-normal text-neutral-100">Bonus #8:</span> Video Optimization Doc`,
+    `<span className="font-normal text-neutral-100">Bonus #9:</span> Revenue Prediction Tool`,
   ]
 
   const handlePayment = () => {
