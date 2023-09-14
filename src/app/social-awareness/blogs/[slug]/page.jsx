@@ -8,6 +8,8 @@ import SideBar from '@/components/social-blogs/SideBar'
 import { Tweet } from 'react-tweet';
 import dynamic from "next/dynamic";
 import InstagramPost from '@/components/InstagramPost'
+import Script from 'next/script'
+import Head from 'next/head'
 
 
 const VideoPlayer = dynamic(() => import('@/components/VideoPlayer'), { ssr: false });
@@ -85,6 +87,13 @@ export default async function page({ params }) {
   const { slug } = params
   const data = await fetchPosts(slug)
   return (
+    <>
+      <Script
+        async
+        strategy="lazyOnload"
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8328474876522258"
+        crossOrigin="anonymous"
+      />
     <main className={`relative flex min-h-screen social-blog-section flex-col items-center mt-16 ${dmSans.className} overflow-x-hidden`}>
       <div className=' flex flex-col md:flex-row w-full gap-8 px-2 py-12 md:py-24 md:px-40 items-start'>
         <section className="flex flex-col w-full gap-5 justify-center md:w-8/12">
@@ -239,5 +248,6 @@ export default async function page({ params }) {
         </div>
       </div >
     </main >
+    </>
   )
 }
