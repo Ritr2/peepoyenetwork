@@ -12,8 +12,12 @@ export default function FunnelFooter({bgcolor = false, textcolor = false}) {
             Privacy Policy
           </Link>
           <span className="mx-1">|</span>
-          <Link href="/terms-and-conditions" className="hover:underline">
+          <Link href="/terms-of-service" className="hover:underline">
             Terms and Conditions
+          </Link>
+          <span className="mx-1">|</span>
+          <Link href="/cancellation-refund-policy" className="hover:underline">
+            Refund Policy
           </Link>
         </p>
       </div>
