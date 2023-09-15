@@ -5550,6 +5550,139 @@ const blogdata = [
         alt: `MSRTC Bus Mishaps Raise Alarms for Passenger Safety`,
       }
     },
+  },
+  {
+    title: `G20 Summit Budget Controversy: The truth behind misleading claims`,
+    slug: `g20-summit-budget-controversy-the-truth-behind-misleading-claims`,
+    id: 84,
+    category_id: 7,
+    description: `The truth behind the controversy surrounding India's G20 summit budget. This blog covers the facts, opposition claims, and the government's defense.`,
+    image: {
+      src: `https://i.ibb.co/0YBXW0V/G20-Summit-Budget-Controversy-The-truth-behind-misleading-claims.png`,
+      alt: `G20 Summit Budget Controversy: The truth behind misleading claims`,
+    },
+    owner: `Ayushi Rajput`,
+    tags: [`G20 Summit Budget Controversy`, `G20 Summit Budget`, `G20 Summit`, `G20 Summit Budget Controversy: The truth behind misleading claims`],
+    date: `2023-09-15`,
+    summary: `As the Indian Presidency of the G20 summit in New Delhi wrapped up after a weekend that brought the world to Delhi for an extraordinarily successful leaders’ summit, New Delhi can breathe a sigh of relief that all went well. It can take justifiable pride in its achievements, but the whopping 4,100 crore rupees spent on it sparked criticism. Opposition leaders and critics accused the government of overspending and misusing funds. However, digging deeper into the facts reveals a different story. Let's break down the misconceptions surrounding the G20 budget and set the record straight.`,
+    sections: [
+      {
+        h1: `The Grand G20 Summit in New Delhi`,
+        h2: false,
+        p: `The G20 summit in New Delhi marked a significant event in India's presidency. It hosted world leaders like US President Joe Biden, UK Prime Minister Rishi Sunak, and Italy Prime Minister Giorgia Meloni, emphasizing its global importance. The event occurred on September 9 and 10 at Bharat Mandapam of the International Exhibition-Convention Centre (IECC) in Pragati Maidan. Among the participants were more than 30 heads of state and top officials from the European Union, delegates from guest centuries, and 14 leaders of international organizations.`,
+        image: false,
+        html: false,
+        subSections: false,
+      },
+      {
+        h1: `The Budget Controversy`,
+        h2: false,
+        p: false,
+        image: false,
+        html: false,
+        subSections: [
+          {
+            h1: false,
+            h2: `1. Budget Allocation Vs. Actual Expenditure`,
+            p: `The heart of the controversy lies in the budget allocation and actual expenditure. The government initially allocated Rs 990 crore for summit preparations, but allegations are being made that Rs 4100 crore was spent on summit preparations`,
+            image: false,
+            html: false,
+          },
+          {
+            h1: false,
+            h2: `2. Opposition Allegations`,
+            p: `Members of the opposition party, including TMC and Congress, accused the government of overspending and misallocating funds. They have suggested hidden such as diverting funds for political campaigns.<br/>Gokahle, the national spokesperson of Mamata Banerjee's party, wrote on X, “The fund allocated for the G20 summit in the last Union Budget was Rs 990 crore, but the government spent up to Rs 4100 crore. That's 300 percent (or Rs 3110 crore) over the budget. Where has this money gone? Why shouldn't the BJP be made to pay this extra Rs 3110 crore, since it was clearly non-essential spending purely for Modi's self-advertisement and personal PR for the 2024 elections?”`,
+            image: false,
+            html: {
+              type: `twitter`,
+              value: `1701069352504865202`,
+            }
+          },
+          {
+            h1: false,
+            h2: false,
+            p: `Also, Congress MP KC Venugopal criticized the government for allegedly spending a massive amount for a day event. “This govt that cannot ensure cheap LPG or petrol/diesel refuses to compensate farmers who faced crop destruction does not release adequate funds for the restoration of flood-devastated Himachal Pradesh, has overshot the budget for this image-building exercise by 10x,” he said.`,
+            image: false,
+            html: {
+              type: `twitter`,
+              value: `1701184326677745936`,
+            },
+          },
+        ]
+      },
+      {
+        h1: `Government’s Defense`,
+        h2: false,
+        p: `The central government defended its spending, emphasizing that the funds were invested in permanent asset creation and infrastructure development, going beyond the summit itself. This included projects by the India Trade Promotion Organisation (ITPO) and other long-term investments.`,
+        image: false,
+        html: false,
+        subSections: false,
+      },
+      {
+        h1: `FACT CHECK AND CLARIFICATION`,
+        h2: false,
+        p: false,
+        image: false,
+        html: false,
+        subSections: [
+          {
+            h1: false,
+            h2: `1. Press Information Bureau's Response`,
+            p: `On Monday, September 11, to address the misinformation, the Press Information Bureau published a fact-check post on X, refuting the claims as 'misleading.' They claimed that the Indian government spent 300 crore percent more on the G20 event than the funds that were allocated for the event in the budget.`,
+            image: false,
+            html: {
+              type: `twitter`,
+              value: `1701158567561351498`,
+            },
+          },
+          {
+            h1: false,
+            h2: `2. Debunking Flooding Claims`,
+            p: `On the second day of the summit, flooding allegations emerged after heavy rainfall in Delhi, but the PIB contested them, stating that it was minor waterlogging due to heavy rain, which was quickly resolved.<br/>TMC's Saket Gokhale wrote on X, formerly Twitter, "According to a video by a journalist, the VENUE OF THE G20 SUMMIT has gotten flooded today due to rain. After spending Rs 4000 crore, THIS is the state of infrastructure. How much of these 4000 crores of G20 funds was embezzled by the Modi Government?"`,
+            image: false,
+            html: {
+              type: `twitter`,
+              value: `1700765772585541709`,
+            },
+          }
+        ]
+      },
+      {
+        h1: `Opposition's Motive`,
+        h2: false,
+        p: `<strong className="font-medium text-neutral-800">However, the critical question arises:</strong> Why are opposition parties attempting to cast a shadow on India's international event? Some argue that the timing of these allegations raises concerns about the intent behind the criticism. Hosting a global summit like the G20 is a diplomatic achievement and an opportunity to bolster India's standing on the world stage.`,
+        image: false,
+        html: false,
+        subSections: false,
+      },
+      {
+        h1: `Opinion`,
+        h2: false,
+        p: `However, the critical question arises: Why are opposition parties attempting to cast a shadow on India's international event? Some argue that the timing of these allegations raises concerns about the intent behind the criticism. Hosting a global summit like the G20 is a diplomatic achievement and an opportunity to bolster India's standing on the world stage. Hosting such an event should ideally be a time for unity and national pride. Instead, the opposition's allegations have sparked division and heated debates, distracting from the larger diplomatic achievements. <br/>Our actions and debates must reflect a united and strong nation in an era where the world is closely watching India's role in international affairs. The G20 budget controversy underscores the importance of constructive dialogue and responsible criticism, ensuring that our focus remains on the positive impact of such global events rather than getting entangled in partisan disputes that ultimately weaken our international image. <br/>While accountability is crucial, it's equally essential that criticism is based on verified facts and does not harm the nation's reputation on the global stage. The controversy surrounding the G20 budget is a classic case of misinformation leading to misguided criticism. The government's investment in long-term infrastructure development is an essential step towards progress, not merely a show-off. As India holds the G20 presidency for the year 2023, the impact of this geopolitical event will extend far beyond the immediate moment, benefiting the country in the coming years and decades. We must focus on the facts and avoid unnecessary political rhetoric in discussing such critical matters.`,
+        image: false,
+        html: false,
+        subSections: false,
+      }
+    ],
+    advertisements: {
+      show: true,
+      image: {
+        src: "https://i.postimg.cc/c4Xj2Ptb/private-club.png",
+        alt: "Private Club",
+        link: "https://akassh.co/support-peepoye",
+      },
+    },
+    referBlog: {
+      show: true,
+      title: `Gadar 2's Hero to Gurdaspur's Zero: Sunny Deol's Political Absence`,
+      slug: `gadar-2s-hero-to-gurdaspurs-zero-sunny-deols-political-absence`,
+    },
+    linktree: {
+      image: {
+        src: `https://i.ibb.co/tC0jJZT/G20-Summit-Budget-controversy-The-truth-about-misleading-claims.png`,
+        alt: `G20 Summit Budget Controversy: The truth behind misleading claims`,
+      }
+    },
   }
 ];
 
