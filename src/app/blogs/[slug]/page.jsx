@@ -75,7 +75,7 @@ export default async function page({ params }) {
   const data = await fetchPosts(slug)
   return (
     <main className={`relative flex min-h-screen flex-col items-center mt-16 ${dmSans.className} overflow-x-hidden`}>
-      <div className=' flex flex-col md:flex-row w-full gap-8 px-2 py-12 md:py-24 md:px-40'>
+      <div className=' flex flex-col md:flex-row w-full gap-8 px-2 py-12 md:px-40'>
         <section className="flex flex-col flex-1 w-full gap-5 justify-center">
           <div className="flex flex-col justify-center w-full border-y-2 border-stone-200  py-2 flex-1 gap-2 md:gap-5">
             <span className='text-left text-base text-neutral-500'>
