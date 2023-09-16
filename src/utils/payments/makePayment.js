@@ -28,7 +28,7 @@ const makePayment = async (details, setLoading,setDataFormVisible, successUrl, a
     currency: data.currency,
     amount: data.amount,
     order_id: data.id,
-    description: "Thankyou for your test donation",
+    description: "Thankyou for your payment",
     image: "/assets/images/logo.png",
     handler: function (response) {
       window.location.href = successUrl

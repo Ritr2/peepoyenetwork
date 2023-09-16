@@ -5,50 +5,44 @@ import parse from 'html-react-parser'
 import Link2 from 'next/link'
 import url from '@/utils/url'
 import style from '@/styles/AcceleratorInd.module.css'
+import PaymentForm from './PaymentForm'
 
 export default function PaymentSection({ loc, data }) {
+  const [dataFormVisible, setDataFormVisible] = useState(false);
   const dataP = {
     ind: {
       monthly: {
         selectortext: 'Monthly',
         recommended: false,
-        price: 15,
-        currency: '$',
         buttonText: {
           main: 'Book Now at $15/month',
           sub: 'Able to cancel anytime'
         },
-        link: 'https://www.skool.com/youtubeneur',
+        successlink: `${url}/thankyou?product=accelerator`,
       },
       yearly: {
         selectortext: 'Yearly',
         recommended: false,
-        price: 2499,
-        currency: '₹',
         buttonText: {
           main: 'Book Now at ₹2499/year',
           sub: 'Able to cancel anytime'
         },
-        link: 'https://www.skool.com/youtubeneur',
+        successlink: `${url}/thankyou?product=accelerator`,
       },
       lifetime: {
         selectortext: 'Lifetime',
         recommended: true,
-        price: 4999,
-        currency: '₹',
         buttonText: {
           main: 'Book Now at ₹4999/- only',
           sub: 'Limited Time Offer'
         },
-        link: 'https://akassh.co/accelerator-pre-book',
+        successlink: `${url}/thankyou?product=accelerator`,
       },
     },
     int: {
       monthly: {
         selectortext: 'Monthly',
         recommended: false,
-        price: 15,
-        currency: '$',
         buttonText: {
           main: 'Book Now at $15/month',
           sub: 'Able to cancel anytime'
@@ -58,8 +52,6 @@ export default function PaymentSection({ loc, data }) {
       yearly: {
         selectortext: 'Yearly',
         recommended: false,
-        price: 99,
-        currency: '$',
         buttonText: {
           main: 'Book Now at $99/year',
           sub: 'Able to cancel anytime'
@@ -69,8 +61,6 @@ export default function PaymentSection({ loc, data }) {
       lifetime: {
         selectortext: 'Lifetime',
         recommended: true,
-        price: 199,
-        currency: '$',
         buttonText: {
           main: 'Book Now at $199/- only',
           sub: 'Limited Time Offer'
@@ -94,12 +84,17 @@ export default function PaymentSection({ loc, data }) {
   ]
 
   const handlePayment = () => {
-    if (!data) {
-      window.open(dataP[loc][currentPlan].link, '_blank')
-    }
-    else {
-      window.open(data.paymentLink[currentPlan][loc], '_blank')
-    }
+    if(loc === 'ind') {
+      setDataFormVisible(true)
+    }    
+    
+    // if (!data) {
+    //   setDataFormVisible(true)
+    //   window.open(dataP[loc][currentPlan].link, '_blank')
+    // }
+    // else {
+    //   window.open(data.paymentLink[currentPlan][loc], '_blank')
+    // }
   }
   return (
     <div className="flex flex-col items-center gap-10" id="paymentPage">
@@ -138,6 +133,11 @@ export default function PaymentSection({ loc, data }) {
           }
           <p className="text-sm text-white">{dataP[loc][currentPlan].buttonText.sub}</p>
         </button>
+        {
+          dataFormVisible && (
+            <PaymentForm setDataFormVisible={setDataFormVisible} currentPlan={currentPlan} />
+          )
+        }
         {
           data && (
             <Link2 className='self-center text-xl text-white hover:underline' href={`${url}/${data.no.query}?product=${data.no.product}`} >

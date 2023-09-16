@@ -1,6 +1,7 @@
 'use client'
 import React from 'react'
 import PaymentForm from '../payments/PaymentForm'
+import parse from 'html-react-parser'
 
 export default function Button({amount, text,bgcolor,txcolor,padding, successUrl}) {
   const [dataFormVisible, setDataFormVisible] = React.useState(false)
@@ -12,7 +13,7 @@ export default function Button({amount, text,bgcolor,txcolor,padding, successUrl
   return (
     <>
       <button className={`flex rounded-lg ${padding} text-base md:text-xl font-bold flex-row items-center justify-center gap-2 w-full ${txcolor} ${bgcolor.normal} hover:${bgcolor.hover} hover:shadow-lg hover:drop-shadow-lg hover:scale-105 active:${bgcolor.active} active:shadow-none active:drop-shadow-none active:scale-95`} onClick={handleClick}>
-        {text}
+        {parse(text)}
       </button>
       {
         dataFormVisible &&

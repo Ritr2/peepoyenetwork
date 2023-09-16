@@ -5683,6 +5683,101 @@ const blogdata = [
         alt: `G20 Summit Budget Controversy: The truth behind misleading claims`,
       }
     },
+  },
+  {
+    title: `Jaahnavi Kandula: The indian student who was killed by US cop in Seattle`,
+    slug: `jaahnavi-kandula-the-indian-student-who-was-killed-by-us-cop-in-seattle`,
+    id: 85,
+    category_id: 7,
+    description: `The heart-wrenching story of Jaahnavi, an Indian student pursuing her dreams in Seattle, tragically lost to a high-speed police incident. Uncover the shocking remarks by a police union leader and the urgent questions it raise about accountability and the value of every human life.`,
+    image: {
+      src: `https://i.ibb.co/WVWCfWv/Jaahnavi-Kandula-The-indian-student-who-was-killed-by-US-cop-in-Seattle.png`,
+      alt: `Jaahnavi Kandula: The indian student who was killed by US cop in Seattle`,
+    },
+    owner: `Ayushi Rajput`,
+    tags: [`Jaahnavi Kandula`, `Jaahnavi Kandula: The indian student who was killed by US cop in Seattle`, `Jaahnavi Kandula: The indian student who was killed by US cop in Seattle`, `Jaahnavi Kandula: The indian student who was killed by US cop in Seattle`],
+    date: `2023-09-16`,
+    summary: `In a heartbreaking incident, an Indian student lost her life in Seattle, where she was pursuing her master's degree. She was struck by a car driven by a Seattle officer responding to a high-priority call. The incident also exposed disturbing comments by a police union leader about the value of the deceased’s life. This incident raises questions about the accountability of emergency responders and the value placed on human life.`,
+    sections: [
+      {
+        h1: `Introduction`,
+        h2: false,
+        p: `In 2021, Jaahnavi, a bright student from Bengaluru, India, came to Seattle with dreams of getting a Master's degree. She was pursuing a Master of Science in Information Systems from the Northeastern University campus in South Lake Union. Tragically, her journey took an abrupt and devastating turn on January 23, 2023, when she was hit by a speeding police vehicle at the intersection of Dexter Avenue North and Thomas Street. She was taken to Harbourview Medical Centre but died of her injuries. According to The Seattle Times, Kevin Dave, the police officer driving the car, was going 119 mph, and she was thrown more than 100 feet.`,
+        image: false,
+        html: false,
+        subSections: false,
+      },
+      {
+        h1: `Officer Kevin Dave’s Actions`,
+        h2: false,
+        p: `This incident highlights a crucial question - how accountable should emergency responders be for their actions? Officer Kevin Dave was responding to a high-priority call when Jaahnavi was struck by his vehicle. While he did intermittently activate his sirens, the inconsistent use raises questions about the protocols followed during such critical situations. Even in high-pressure moments, the safety of civilians must always come first.<br/>Kevin Dave's acknowledgment of his mistake with the words "I f–ked up" underscores his responsibility, but words alone cannot heal the pain Jaahnavi's family is enduring. It is crucial that he faces the legal. consequences of his actions, as well as any internal disciplinary measures if found guilty.`,
+        image: false,
+        html: false,
+        subSections: false,
+      },
+      {
+        h1: `Proper Use of Sirens for Public Safety`,
+        h2: false,
+        p: `Body camera footage reveals that Kevin Dave had his sirens chirping but not consistently running. This oversight in alerting other road users to the emergency situation raises doubts about whether enough was done to prevent this tragedy. Properly functioning sirens can be a matter of life and death, and officers must be held accountable for their effective use.`,
+        image: false,
+        html: false,
+        subSections: false,
+      },
+      {
+        h1: `Disturbing Remarks by Daniel Auderer`,
+        h2: false,
+        p: `One of the most disturbing aspects of this case is the reprehensible remarks made by Daniel Auderer, a Seattle Police Department union leader. In late September, a bodycam captured how he callously stated that Jaahnavi's life had "limited value" and that the city should "just write a check." The Police department released the recording. Daniel Auderer, who is a drug recognition expert, was asked to examine whether Kevin was impaired. Such comments are abhorrent and reveal a lack of empathy and respect for human life. They tarnish the reputation of law enforcement and emphasize the urgent need for a cultural shift within the department.<br/>the Consulate General of India in San Francisco also took cognizance of the video and called the matter “deeply troubling.” The Consulate stated that they have taken the matter up with Seattle and Washington, DC authorities. “Recent reports, including in media, of the handling of Ms Jaahnavi Kandula’s death in a road accident in Seattle in January are deeply troubling. We have taken up the matter strongly with local authorities in Seattle & Washington State and senior officials in Washington DC for a thorough investigation & action against those involved in this tragic case. The Consulate & Embassy will continue to closely follow up on this matter with all concerned authorities (cis),” the Consulate wrote on X.`,
+        image: false,
+        html: {
+          type: `twitter`,
+          value: `1701961201884795055`,
+        },
+        subSections: false,
+      },
+      {
+        h1: `What did Officer Audrer say after the outrage?`,
+        h2: false,
+        p: `Officer Auderer said his comments were taken out of context. Jason Rantz, a radio host, said he has a written statement from the police officer saying his comments were meant to mimic how the city attorney might try to minimize liability for the woman's death. He said the comment was “not made with malice or a hard heart” but “quite the opposite.”`,
+        image: false,
+        html: false,
+        subSections: false,
+      },
+      {
+        h1: `The value of every life`,
+        h2: false,
+        p: `Jaahnavi's uncle, Ashok Mandula, raises a poignant question: Do these men's daughters or granddaughters have value? It's a question that demands an answer not just from law enforcement but from society as a whole. Ms Kandula's family is deeply distressed by the revelations. Her grandfather told NDTV that the family had not recovered from the loss, and the policeman's behavior worsened it. "How can anyone speak like that after a tragic accident?" he asked. We must advocate for transparency, accountability, and a commitment to uphold the sanctity of every human life. Jaahnavi's tragic loss reminds us that every life is precious and no one should be reduced to a mere statistic. This incident should spark a broader conversation about the value we place on human life and the need for systemic change within law enforcement.`,
+        image: false,
+        html: false,
+        subSections: false,
+      },
+      {
+        h1: `Opinion`,
+        h2: false,
+        p: `This incident involving the tragic loss of Jaahnavi Kandula's life should serve as a powerful wake-up call for law enforcement and society as a whole. It reveals the pressing need for empathy, accountability, and a profound reevaluation of how we value human life.<br/>The shocking comments made by Daniel Auderer, a representative of the police union, are a stark reminder of how far we still have to go in fostering a culture of compassion and respect within our law enforcement agencies. It's disheartening that such attitudes persist in positions of authority.<br/>Moreover, this incident underscores the importance of transparency and public trust in the police force. To regain the confidence of the communities they serve, law enforcement agencies must hold their own accountable and actively work to bridge the divide between officers and the public.<br/>In memory of Jaahnavi, we must strive for a society where every life is truly valued, empathy guides our actions, and accountability is the foundation of justice.`,
+        image: false,
+        html: false,
+        subSections: false,
+      },
+    ],
+    advertisements: {
+      show: true,
+      image: {
+        src: "https://i.ibb.co/c24wbZW/X-guide-banner.png",
+        alt: "Guide X",
+        link: "/guide-x",
+      },
+    },
+    referBlog: {
+      show: true,
+      title: `Gadar 2's Hero to Gurdaspur's Zero: Sunny Deol's Political Absence`,
+      slug: `gadar-2s-hero-to-gurdaspurs-zero-sunny-deols-political-absence`,
+    },
+    linktree: {
+      image: {
+        src: `https://i.ibb.co/M52YQDT/Jaahnavi-Kandula-The-indian-student-who-was-killed-by-US-cop-in-Seattle-2.png`,
+        alt: `Jaahnavi Kandula: The indian student who was killed by US cop in Seattle`,
+      }
+    },
   }
 ];
 
