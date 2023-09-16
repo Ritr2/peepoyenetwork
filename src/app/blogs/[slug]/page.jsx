@@ -59,7 +59,7 @@ export async function generateMetadata({ params }) {
 export const fetchPosts = async (slug) => {
   let res;
   try {
-    res = await fetch(`${url}/api/personal-blog/${slug}`, {cache: "no-cache"})
+    res = await fetch(`${url}/api/personal-blog/${slug}`, { cache: "no-cache" })
     if (!res.ok) {
       throw new Error('Failed to fetch data')
     }
@@ -163,7 +163,7 @@ export default async function page({ params }) {
                       <Link href={data.blog.advertisements.button.link} className='flex rounded-lg p-3 text-lf md:text-xl text-white flex-row items-center justify-center gap-2 w-full bg-neutral-600 hover:bg-neutral-700 active:bg-neutral-800'>{data.blog.advertisements.button.text}</Link>
                     </div>
                   }
-                  </div>
+                </div>
               </div>
             )
           }

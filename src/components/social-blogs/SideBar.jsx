@@ -3,6 +3,7 @@ import url from '@/utils/url'
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import converblogtomonth from '@/utils/social-blogs/convertblogtomonths'
+import Search from './Search'
 
 const getrecentfiveblogs = async () => {
   let res
@@ -19,10 +20,13 @@ const getrecentfiveblogs = async () => {
 }
 
 
-export default async function SideBar() {
+export default async function SideBar({search, afterurl}) {
   const data = await getrecentfiveblogs();
   return (
     <div className='flex flex-col w-full gap-5 bg-neutral-100 p-5 rounded-xl'>
+      <div className='flex flex-row gap-2 border-b-2 border-neutral-300 pb-8'>
+        <Search search={search} afterurl={afterurl} />
+        </div>
       <div className='flex flex-col gap-2 pb-8 border-b-2 border-neutral-300'>
         <h2 className='text-2xl font-bold text-blue-800'>Recent Blogs</h2>
         {

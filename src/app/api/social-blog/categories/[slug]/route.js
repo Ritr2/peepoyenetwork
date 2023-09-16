@@ -13,11 +13,40 @@ export async function GET(req, { params }) {
     return NextResponse.json({ error: "Category not found" }, { status: 404 });
   }
 
-  const tempdata = blogdata.filter((blog) => {
+  let tempdata = blogdata.filter((blog) => {
     return blog.category_id === category.id;
   }).sort((a, b) => {
     return new Date(b.date) - new Date(a.date);
   });
+
+  let page = req.nextUrl.searchParams.get("page")
+  let search = req.nextUrl.searchParams.get("search")
+
+  if (search) {
+    search = decodeURIComponent(search);
+    tempdata = tempdata.filter((item) => {
+      return item.title.toLowerCase().includes(search.toLowerCase());
+    });
+  }
+
+  let total = tempdata.length;
+  let count = 8;
+  let totalPage = Math.ceil(total / count);
+
+  page ? page = parseInt(page) : page = 1;
+  let range;
+
+  if (page > totalPage) {
+    range = [0, count - 1];
+  }
+  else if (page <= 0) {
+    range = [0, count - 1];
+  }
+  else {
+    range = [(page - 1) * count, page * count - 1];
+  }
+
+  tempdata = tempdata.slice(range[0], range[1] + 1)
 
   const blog = tempdata.map((item) => {
     return {
@@ -34,6 +63,6 @@ export async function GET(req, { params }) {
     };
   });
 
-  return NextResponse.json({blog, category});
+  return NextResponse.json({blog, category, totalPage});
 }
 

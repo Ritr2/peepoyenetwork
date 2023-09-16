@@ -3,7 +3,7 @@ import blogdata from "../../blog";
 
 export async function GET(req, { params }) {
   const yearMonth = params.slug;
-  const tempdata = blogdata.filter((blog) => {
+  let tempdata = blogdata.filter((blog) => {
     const date = new Date(blog.date);
     const month = date.getMonth()+1;
     const year = date.getFullYear();
@@ -11,13 +11,42 @@ export async function GET(req, { params }) {
     return key === yearMonth;
   });
 
-  const tempdata2 = tempdata.sort((a, b) => {
+  tempdata = tempdata.sort((a, b) => {
     const dateA = new Date(a.date);
     const dateB = new Date(b.date);
     return dateB - dateA;
   });
 
-  const data = tempdata2.map((item) => {
+  let page = req.nextUrl.searchParams.get("page")
+  let search = req.nextUrl.searchParams.get("search")
+
+  if (search) {
+    search = decodeURIComponent(search);
+    tempdata = tempdata.filter((item) => {
+      return item.title.toLowerCase().includes(search.toLowerCase());
+    });
+  }
+
+  let total = tempdata.length;
+  let count = 8;
+  let totalPage = Math.ceil(total / count);
+
+  page ? page = parseInt(page) : page = 1;
+  let range;
+
+  if (page > totalPage) {
+    range = [0, count - 1];
+  }
+  else if (page <= 0) {
+    range = [0, count - 1];
+  }
+  else {
+    range = [(page - 1) * count, page * count - 1];
+  }
+
+  tempdata = tempdata.slice(range[0], range[1] + 1)
+
+  const data = tempdata.map((item) => {
     return {
       id: item.id,
       title: item.title,
@@ -32,6 +61,6 @@ export async function GET(req, { params }) {
     };
   });
 
-  return NextResponse.json(data);
+  return NextResponse.json({data, totalPage});
 }
 
