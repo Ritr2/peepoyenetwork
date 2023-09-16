@@ -12,10 +12,10 @@ const dmSans = DM_Sans({
   subsets: ['latin'],
 })
 
-export async function getSocialBlogs(page, search) {
+export async function getSocialBlogs(page=false, search=false, all=false) {
   let res
   try {
-    res = await fetch(`${url}/api/social-blog${page ? `?page=${page}` : ''}${search ? `&search=${search}` : ''}`, { cache: 'no-cache' })
+    res = await fetch(`${url}/api/social-blog${page ? `?page=${page}` : ''}${search ? `&search=${search}` : ''}${all ? `?all=${true}` : ''}`)
     if (!res.ok) {
       throw new Error('Failed to fetch data')
     }

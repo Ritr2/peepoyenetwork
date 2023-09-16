@@ -10,32 +10,34 @@ export async function GET(req) {
 
   let page = req.nextUrl.searchParams.get("page")
   let search = req.nextUrl.searchParams.get("search")
-
-  if (search) {
-    search = decodeURIComponent(search);
-    tempdata = tempdata.filter((item) => {
-      return item.title.toLowerCase().includes(search.toLowerCase());
-    });
-  }
+  let all = req.nextUrl.searchParams.get("all")
 
   let total = tempdata.length;
   let count = 8;
   let totalPage = Math.ceil(total / count);
+  
+  if (!all) {
+    if (search) {
+      search = decodeURIComponent(search);
+      tempdata = tempdata.filter((item) => {
+        return item.title.toLowerCase().includes(search.toLowerCase());
+      });
+    }
+    page ? page = parseInt(page) : page = 1;
+    let range;
 
-  page ? page = parseInt(page) : page = 1;
-  let range;
+    if (page > totalPage) {
+      range = [0, count - 1];
+    }
+    else if (page <= 0) {
+      range = [0, count - 1];
+    }
+    else {
+      range = [(page - 1) * count, page * count - 1];
+    }
 
-  if (page > totalPage) {
-    range = [0, count - 1];
+    tempdata = tempdata.slice(range[0], range[1] + 1)
   }
-  else if (page <= 0) {
-    range = [0, count - 1];
-  }
-  else {
-    range = [(page - 1) * count, page * count - 1];
-  }
-
-  tempdata = tempdata.slice(range[0], range[1] + 1)
 
   const data = tempdata.map((item) => {
     return {
@@ -51,6 +53,6 @@ export async function GET(req) {
       description: item.description,
     };
   });
-  
-  return NextResponse.json({data, totalPage});
+
+  return NextResponse.json({ data, totalPage });
 }
