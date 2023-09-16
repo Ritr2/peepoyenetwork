@@ -6,7 +6,6 @@ import Link from 'next/link'
 import SideBar from '@/components/social-blogs/SideBar'
 import BlogsList from '@/components/social-blogs/BlogsList'
 
-
 const dmSans = DM_Sans({
   weight: '500',
   subsets: ['latin'],
@@ -58,6 +57,7 @@ export default async function page({ searchParams }) {
             ) :
           <BlogsList data={data} totalPage={totalPage} page={page} search={search} afterurl='social-awareness/blogs' />
         }
+
         </div>
         <div className='flex flex-col w-full flex-1'>
           <SideBar search={search} afterurl='social-awareness/blogs' />

@@ -8,11 +8,11 @@ import SideBar from '@/components/social-blogs/SideBar'
 import { Tweet } from 'react-tweet';
 import dynamic from "next/dynamic";
 import InstagramPost from '@/components/InstagramPost'
-import Script from 'next/script'
 import { AiFillFacebook, AiFillRedditCircle } from 'react-icons/ai'
 import { RiTwitterXFill } from 'react-icons/ri'
 import { BsLinkedin } from 'react-icons/bs'
 import { BiLogoWhatsapp } from 'react-icons/bi'
+import { Adsense } from "@ctrl/react-adsense";
 
 
 const VideoPlayer = dynamic(() => import('@/components/VideoPlayer'), { ssr: false });
