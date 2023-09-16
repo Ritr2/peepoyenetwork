@@ -60,6 +60,9 @@ export async function generateMetadata({ params }) {
       images: [data.blog.image.src],
       creator: '@peepoye',
     },
+    alternates: {
+      canonical: `/social-awareness/blogs/${data.blog.slug}`,
+    },
   }
 }
 

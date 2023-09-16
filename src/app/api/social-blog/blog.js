@@ -5689,20 +5689,20 @@ const blogdata = [
     slug: `jaahnavi-kandula-the-indian-student-who-was-killed-by-us-cop-in-seattle`,
     id: 85,
     category_id: 7,
-    description: `The heart-wrenching story of Jaahnavi, an Indian student pursuing her dreams in Seattle, tragically lost to a high-speed police incident. Uncover the shocking remarks by a police union leader and the urgent questions it raise about accountability and the value of every human life.`,
+    description: `The heart-wrenching story of Jaahnavi Kandula, an Indian student who was killed by a US cop in Seattle. Uncover the shocking remarks by a police union leader.`,
     image: {
       src: `https://i.ibb.co/WVWCfWv/Jaahnavi-Kandula-The-indian-student-who-was-killed-by-US-cop-in-Seattle.png`,
       alt: `Jaahnavi Kandula: The indian student who was killed by US cop in Seattle`,
     },
     owner: `Ayushi Rajput`,
-    tags: [`Jaahnavi Kandula`, `Jaahnavi Kandula: The indian student who was killed by US cop in Seattle`, `Jaahnavi Kandula: The indian student who was killed by US cop in Seattle`, `Jaahnavi Kandula: The indian student who was killed by US cop in Seattle`],
+    tags: [`Jaahnavi Kandula`, `Jaahnavi Kandula`, `Jaahnavi Kandula accident`, `Jaahnavi Kandula parents`, `Jaahnavi Kandula Instagram`],
     date: `2023-09-16`,
     summary: `In a heartbreaking incident, an Indian student lost her life in Seattle, where she was pursuing her master's degree. She was struck by a car driven by a Seattle officer responding to a high-priority call. The incident also exposed disturbing comments by a police union leader about the value of the deceased’s life. This incident raises questions about the accountability of emergency responders and the value placed on human life.`,
     sections: [
       {
         h1: `Introduction`,
         h2: false,
-        p: `In 2021, Jaahnavi, a bright student from Bengaluru, India, came to Seattle with dreams of getting a Master's degree. She was pursuing a Master of Science in Information Systems from the Northeastern University campus in South Lake Union. Tragically, her journey took an abrupt and devastating turn on January 23, 2023, when she was hit by a speeding police vehicle at the intersection of Dexter Avenue North and Thomas Street. She was taken to Harbourview Medical Centre but died of her injuries. According to The Seattle Times, Kevin Dave, the police officer driving the car, was going 119 mph, and she was thrown more than 100 feet.`,
+        p: `In 2021, Jaahnavi Kandula, a bright student from Bengaluru, India, came to Seattle with dreams of getting a Master's degree. She was pursuing a Master of Science in Information Systems from the Northeastern University campus in South Lake Union. Tragically, her journey took an abrupt and devastating turn on January 23, 2023, when she was hit by a speeding police vehicle at the intersection of Dexter Avenue North and Thomas Street. She was taken to Harbourview Medical Centre but died of her injuries. According to The Seattle Times, Kevin Dave, the police officer driving the car, was going 119 mph, and she was thrown more than 100 feet.`,
         image: false,
         html: false,
         subSections: false,
@@ -5710,7 +5710,7 @@ const blogdata = [
       {
         h1: `Officer Kevin Dave’s Actions`,
         h2: false,
-        p: `This incident highlights a crucial question - how accountable should emergency responders be for their actions? Officer Kevin Dave was responding to a high-priority call when Jaahnavi was struck by his vehicle. While he did intermittently activate his sirens, the inconsistent use raises questions about the protocols followed during such critical situations. Even in high-pressure moments, the safety of civilians must always come first.<br/>Kevin Dave's acknowledgment of his mistake with the words "I f–ked up" underscores his responsibility, but words alone cannot heal the pain Jaahnavi's family is enduring. It is crucial that he faces the legal. consequences of his actions, as well as any internal disciplinary measures if found guilty.`,
+        p: `This incident highlights a crucial question - how accountable should emergency responders be for their actions? Officer Kevin Dave was responding to a high-priority call when Jaahnavi Kandula was struck by his vehicle. While he did intermittently activate his sirens, the inconsistent use raises questions about the protocols followed during such critical situations. Even in high-pressure moments, the safety of civilians must always come first.<br/>Kevin Dave's acknowledgment of his mistake with the words "I f–ked up" underscores his responsibility, but words alone cannot heal the pain Jaahnavi's family is enduring. It is crucial that he faces the legal. consequences of his actions, as well as any internal disciplinary measures if found guilty.`,
         image: false,
         html: false,
         subSections: false,
@@ -5745,7 +5745,7 @@ const blogdata = [
       {
         h1: `The value of every life`,
         h2: false,
-        p: `Jaahnavi's uncle, Ashok Mandula, raises a poignant question: Do these men's daughters or granddaughters have value? It's a question that demands an answer not just from law enforcement but from society as a whole. Ms Kandula's family is deeply distressed by the revelations. Her grandfather told NDTV that the family had not recovered from the loss, and the policeman's behavior worsened it. "How can anyone speak like that after a tragic accident?" he asked. We must advocate for transparency, accountability, and a commitment to uphold the sanctity of every human life. Jaahnavi's tragic loss reminds us that every life is precious and no one should be reduced to a mere statistic. This incident should spark a broader conversation about the value we place on human life and the need for systemic change within law enforcement.`,
+        p: `Jaahnavi Kandula's uncle, Ashok Mandula, raises a poignant question: Do these men's daughters or granddaughters have value? It's a question that demands an answer not just from law enforcement but from society as a whole. Ms Kandula's family is deeply distressed by the revelations. Her grandfather told NDTV that the family had not recovered from the loss, and the policeman's behavior worsened it. "How can anyone speak like that after a tragic accident?" he asked. We must advocate for transparency, accountability, and a commitment to uphold the sanctity of every human life. Jaahnavi's tragic loss reminds us that every life is precious and no one should be reduced to a mere statistic. This incident should spark a broader conversation about the value we place on human life and the need for systemic change within law enforcement.`,
         image: false,
         html: false,
         subSections: false,
