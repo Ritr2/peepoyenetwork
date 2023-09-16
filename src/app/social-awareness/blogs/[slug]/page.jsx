@@ -10,6 +10,10 @@ import dynamic from "next/dynamic";
 import InstagramPost from '@/components/InstagramPost'
 import Script from 'next/script'
 import Head from 'next/head'
+import { AiFillFacebook, AiFillRedditCircle } from 'react-icons/ai'
+import { RiTwitterXFill } from 'react-icons/ri'
+import { BsLinkedin } from 'react-icons/bs'
+import { BiLogoWhatsapp } from 'react-icons/bi'
 
 
 const VideoPlayer = dynamic(() => import('@/components/VideoPlayer'), { ssr: false });
@@ -97,160 +101,180 @@ export default async function page({ params }) {
         src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8328474876522258"
         crossOrigin="anonymous"
       />
-    <main className={`relative flex min-h-screen social-blog-section flex-col items-center mt-16 ${dmSans.className} overflow-x-hidden`}>
-      <div className='flex flex-col md:flex-row w-full gap-8 px-2 py-12 md:px-40 items-start'>
-        <section className="flex flex-col w-full gap-5 justify-center md:w-8/12">
-          <div className="flex flex-col justify-center w-full border-y-2 border-stone-200  py-2 flex-1 gap-2 md:gap-5">
-            <span className='text-left text-base text-neutral-500'>
-              <Link href={`/social-awareness/blogs`}>Social Blog</Link> / <Link href={`/social-awareness/categories/${data.category.slug}`}>{data.category.name}</Link> / <Link href={`/social-awareness/blogs/${data.blog.slug}`}>{data.blog.title}</Link>
-            </span>
-          </div>
-          <div className="flex flex-col justify-center flex-1 gap-2">
-            <h1 className="text-xl md:text-3xl font-bold text-left text-neutral-700">{data.blog.title}</h1>
-            <p className="text-xs md:text-sm text-left text-neutral-500"> Posted at {longdateConvert(data.blog.date)} / Written by {data.blog.owner}</p>
-          </div>
-          <div className="flex flex-col justify-center flex-1 gap-2">
-            <div className="flex flex-col justify-center flex-1 gap-2">
-              <img src={data.blog.image.src} alt={data.blog.image.alt} className="w-full rounded-lg h-auto" draggable={false} />
+      <main className={`relative flex min-h-screen social-blog-section flex-col items-center mt-16 ${dmSans.className} overflow-x-hidden`}>
+        <div className='flex flex-col md:flex-row w-full gap-8 px-2 py-12 md:px-40 items-start'>
+          <section className="flex flex-col w-full gap-5 justify-center md:w-8/12">
+            <div className="flex flex-col justify-center w-full border-y-2 border-stone-200  py-2 flex-1 gap-2 md:gap-5">
+              <span className='text-left text-base text-neutral-500'>
+                <Link href={`/social-awareness/blogs`}>Social Blog</Link> / <Link href={`/social-awareness/categories/${data.category.slug}`}>{data.category.name}</Link> / <Link href={`/social-awareness/blogs/${data.blog.slug}`}>{data.blog.title}</Link>
+              </span>
             </div>
-            {data.blog.summary &&
-              <div className="flex flex-col justify-center flex-1 gap-2 rounded-lg bg-neutral-300 p-4">
-                <h2 className="text-lg md:text-xl font-bold text-left text-neutral-700">30-sec summary</h2>
-                <p className="text-base md:text-lg font-light text-left text-neutral-900">{parse(data.blog.summary)}</p>
-              </div>}
-            <section className="sectionAnchor flex flex-col justify-center flex-1 gap-7 rounded-lg  p-4">
-              {
-                data.blog.sections.map((section, index) => (
-                  <div key={index} className="flex flex-col justify-center flex-1 gap-1">
-                    {
-                      section.h1 && <h2 className="text-lg md:text-xl font-bold text-left social-anchor-tag text-neutral-900">{parse(section.h1)}</h2>
-                    }
-                    {
-                      section.h2 && <h3 className="text-base md:text-lg font-bold text-left social-anchor-tag text-neutral-700">{parse(section.h2)}</h3>
-                    }
-                    {
-                      section.p && <p className="text-base md:text-lg font-light social-anchor-tag text-left text-neutral-600">{parse(section.p)}</p>
-                    }
-                    {
-                      section.html && <div className="self-center text-base md:text-lg font-light text-left text-neutral-600 w-full my-6">
-                        {
-                          section.html.type === 'twitter' &&
-                          <div className='flex flex-col justify-center items-center' data-theme="light">
-                            <Tweet id={section.html.value} />
-                          </div>
-                        }
-                        {
-                          section.html.type === 'youtube' &&
-                          <div className='flex flex-col justify-center items-center'>
-                            <VideoPlayer url={section.html.value} />
-                          </div>
-                        }
-                        {
-                          section.html.type === 'instagram' &&
-                          <div className='flex flex-col justify-center items-center w-full'>
-                            <InstagramPost url={section.html.value} />
-                          </div>
-                        }
-                        {
-                          section.html.type === 'poll' &&
-                          <div className='flex flex-col justify-center items-center'>
-                            <Link href={section.html.value} target="_blank" rel="noopener noreferrer" className='hover:scale-105'>
-                              <img src={section.html.image.src} alt={section.html.image.alt} className="w-full rounded-lg h-auto" draggable={false} />
-                            </Link>
-                          </div>
-                        }
-                      </div>
-                    }
-                    {
-                      section.image && <img src={section.image.src} alt={section.image.alt} className="w-full rounded-lg h-auto" draggable={false} />
-                    }
-                    {
-                      section.subSections && (
-                        <section className="flex flex-col justify-center flex-1 gap-5 rounded-lg pt-5">
+            <div className="flex flex-col justify-center flex-1 gap-2">
+              <h1 className="text-xl md:text-3xl font-bold text-left text-neutral-700">{data.blog.title}</h1>
+              <p className="text-xs md:text-sm text-left text-neutral-500"> Posted at {longdateConvert(data.blog.date)} / Written by {data.blog.owner}</p>
+            </div>
+            <div className="flex flex-col justify-center flex-1 gap-2">
+              <div className="flex flex-col justify-center flex-1 gap-2">
+                <img src={data.blog.image.src} alt={data.blog.image.alt} className="w-full rounded-lg h-auto" draggable={false} />
+              </div>
+              {data.blog.summary &&
+                <div className="flex flex-col justify-center flex-1 gap-2 rounded-lg bg-neutral-300 p-4">
+                  <h2 className="text-lg md:text-xl font-bold text-left text-neutral-700">30-sec summary</h2>
+                  <p className="text-base md:text-lg font-light text-left text-neutral-900">{parse(data.blog.summary)}</p>
+                </div>}
+              <section className="sectionAnchor flex flex-col justify-center flex-1 gap-7 rounded-lg  p-4">
+                {
+                  data.blog.sections.map((section, index) => (
+                    <div key={index} className="flex flex-col justify-center flex-1 gap-1">
+                      {
+                        section.h1 && <h2 className="text-lg md:text-xl font-bold text-left social-anchor-tag text-neutral-900">{parse(section.h1)}</h2>
+                      }
+                      {
+                        section.h2 && <h3 className="text-base md:text-lg font-bold text-left social-anchor-tag text-neutral-700">{parse(section.h2)}</h3>
+                      }
+                      {
+                        section.p && <p className="text-base md:text-lg font-light social-anchor-tag text-left text-neutral-600">{parse(section.p)}</p>
+                      }
+                      {
+                        section.html && <div className="self-center text-base md:text-lg font-light text-left text-neutral-600 w-full my-6">
                           {
-                            section.subSections.map((subSection, index2) => (
-                              <div key={index2} className="flex flex-col justify-center flex-1 gap-1">
-                                {
-                                  subSection.h1 && <h2 className="text-lg md:text-xl font-bold text-left social-anchor-tag text-neutral-900">{parse(subSection.h1)}</h2>
-                                }
-                                {
-                                  subSection.h2 && <h3 className="text-base md:text-lg font-bold text-left social-anchor-tag text-neutral-600">{parse(subSection.h2)}</h3>
-                                }
-                                {
-                                  subSection.p && <p className="text-base md:text-lg font-light text-left social-anchor-tag text-neutral-600">{parse(subSection.p)}</p>
-                                }
-                                {
-                                  subSection.html && <div className="self-center text-base md:text-lg font-light text-left text-neutral-600 w-full my-6">
-                                    {
-                                      subSection.html.type === 'twitter' &&
-                                      <div className='flex flex-col justify-center items-center' data-theme="light">
-                                        <Tweet id={subSection.html.value} />
-                                      </div>
-                                    }
-                                    {
-                                      subSection.html.type === 'youtube' &&
-                                      <div className='flex flex-col justify-center items-center'>
-                                        <VideoPlayer url={subSection.html.value} />
-                                      </div>
-                                    }
-                                    {
-                                      subSection.html.type === 'instagram' &&
-                                      <div className='flex flex-col justify-center items-center w-full'>
-                                        <InstagramPost url={subSection.html.value} />
-                                      </div>
-                                    }
-                                    {
-                                      subSection.html.type === 'poll' &&
-                                      <div className='flex flex-col justify-center items-center'>
-                                        <Link href={subSection.html.value} target="_blank" rel="noopener noreferrer">
-                                          <img src={subSection.html.image.src} alt={subSection.html.image.alt} className="w-full rounded-lg h-auto" draggable={false} />
-                                        </Link>
-                                      </div>
-                                    }
-                                  </div>
-                                }
-                                {
-                                  subSection.image && <img src={subSection.image.src} alt={subSection.image.alt} className="w-full rounded-lg h-auto" draggable={false} />
-                                }
-                              </div>
-                            ))
+                            section.html.type === 'twitter' &&
+                            <div className='flex flex-col justify-center items-center' data-theme="light">
+                              <Tweet id={section.html.value} />
+                            </div>
                           }
-                        </section>
-                      )
-                    }
-                  </div>
-                )
-                )
-              }
-            </section>
-          </div>
-          {
-            data.blog.referBlog.show && (
-              <div className="flex flex-col justify-center flex-1 gap-2 rounded-lg bg-neutral-300 p-4">
-                <p className="text-base md:text-lg text-left font-bold text-neutral-900"> Also Read : <Link href={`/social-awareness/blogs/${data.blog.referBlog.slug}`} className='font-light hover:underline text-blue-700'>{data.blog.referBlog.title}</Link>
-                </p>
-              </div>
-            )
-          }
-          {
-            data.blog.advertisements.show && (
-              <div className="flex flex-col md:flex-row justify-center flex-1 gap-2 border-y-2 border-neutral-500 py-5">
-                {data.blog.advertisements.image &&
-                  <div className="flex flex-col justify-center self-center gap-2 rounded-lg w-full p-4">
-                    <Link href={data.blog.advertisements.image.link} target="_blank" rel="noopener noreferrer">
-                      <img src={data.blog.advertisements.image.src} alt={data.blog.advertisements.image.alt} className="w-full rounded-lg h-auto" draggable={false} />
-                    </Link>
-                  </div>
+                          {
+                            section.html.type === 'youtube' &&
+                            <div className='flex flex-col justify-center items-center'>
+                              <VideoPlayer url={section.html.value} />
+                            </div>
+                          }
+                          {
+                            section.html.type === 'instagram' &&
+                            <div className='flex flex-col justify-center items-center w-full'>
+                              <InstagramPost url={section.html.value} />
+                            </div>
+                          }
+                          {
+                            section.html.type === 'poll' &&
+                            <div className='flex flex-col justify-center items-center'>
+                              <Link href={section.html.value} target="_blank" rel="noopener noreferrer" className='hover:scale-105'>
+                                <img src={section.html.image.src} alt={section.html.image.alt} className="w-full rounded-lg h-auto" draggable={false} />
+                              </Link>
+                            </div>
+                          }
+                        </div>
+                      }
+                      {
+                        section.image && <img src={section.image.src} alt={section.image.alt} className="w-full rounded-lg h-auto" draggable={false} />
+                      }
+                      {
+                        section.subSections && (
+                          <section className="flex flex-col justify-center flex-1 gap-5 rounded-lg pt-5">
+                            {
+                              section.subSections.map((subSection, index2) => (
+                                <div key={index2} className="flex flex-col justify-center flex-1 gap-1">
+                                  {
+                                    subSection.h1 && <h2 className="text-lg md:text-xl font-bold text-left social-anchor-tag text-neutral-900">{parse(subSection.h1)}</h2>
+                                  }
+                                  {
+                                    subSection.h2 && <h3 className="text-base md:text-lg font-bold text-left social-anchor-tag text-neutral-600">{parse(subSection.h2)}</h3>
+                                  }
+                                  {
+                                    subSection.p && <p className="text-base md:text-lg font-light text-left social-anchor-tag text-neutral-600">{parse(subSection.p)}</p>
+                                  }
+                                  {
+                                    subSection.html && <div className="self-center text-base md:text-lg font-light text-left text-neutral-600 w-full my-6">
+                                      {
+                                        subSection.html.type === 'twitter' &&
+                                        <div className='flex flex-col justify-center items-center' data-theme="light">
+                                          <Tweet id={subSection.html.value} />
+                                        </div>
+                                      }
+                                      {
+                                        subSection.html.type === 'youtube' &&
+                                        <div className='flex flex-col justify-center items-center'>
+                                          <VideoPlayer url={subSection.html.value} />
+                                        </div>
+                                      }
+                                      {
+                                        subSection.html.type === 'instagram' &&
+                                        <div className='flex flex-col justify-center items-center w-full'>
+                                          <InstagramPost url={subSection.html.value} />
+                                        </div>
+                                      }
+                                      {
+                                        subSection.html.type === 'poll' &&
+                                        <div className='flex flex-col justify-center items-center'>
+                                          <Link href={subSection.html.value} target="_blank" rel="noopener noreferrer">
+                                            <img src={subSection.html.image.src} alt={subSection.html.image.alt} className="w-full rounded-lg h-auto" draggable={false} />
+                                          </Link>
+                                        </div>
+                                      }
+                                    </div>
+                                  }
+                                  {
+                                    subSection.image && <img src={subSection.image.src} alt={subSection.image.alt} className="w-full rounded-lg h-auto" draggable={false} />
+                                  }
+                                </div>
+                              ))
+                            }
+                          </section>
+                        )
+                      }
+                    </div>
+                  )
+                  )
                 }
+              </section>
+              <div className="flex flex-col justify-center flex-1 gap-2 bg-neutral-50">
+                <h2 className="text-lg md:text-xl font-bold text-center text-neutral-700">To share this blog on social media click on the icons below :</h2>
+                <div className="flex flex-row justify-center gap-2">
+                  <Link href={`https://www.facebook.com/sharer/sharer.php?u=${url}/social-awareness/blogs/${data.blog.slug}`} target="_blank" rel="noopener noreferrer">
+                    <AiFillFacebook className="w-8 h-8 rounded-lg text-neutral-700" />
+                  </Link>
+                  <Link href={`https://twitter.com/intent/tweet?text=${data.blog.description}\n ${url}/social-awareness/blogs/${data.blog.slug}/`} target="_blank" rel="noopener noreferrer">
+                    <RiTwitterXFill className="w-8 h-8 rounded-lg text-neutral-700" />
+                  </Link>
+                  <Link href={`https://www.linkedin.com/shareArticle?mini=true&url=${url}/social-awareness/blogs/${data.blog.slug}&title=${data.blog.title}&summary=${data.blog.summary}&source=Peepoye`} target="_blank" rel="noopener noreferrer">
+                    <BsLinkedin className="w-8 h-8 rounded-lg text-neutral-700" />
+                  </Link>
+                  <Link href={`https://api.whatsapp.com/send?text=${url}/social-awareness/blogs/${data.blog.slug}`} target="_blank" rel="noopener noreferrer">
+                    <BiLogoWhatsapp className="w-8 h-8 rounded-lg text-neutral-700" />
+                  </Link>
+                  <Link href={`https://www.reddit.com/submit?url=${url}/social-awareness/blogs/${data.blog.slug}&title=${data.blog.title}`} target="_blank" rel="noopener noreferrer">
+                    <AiFillRedditCircle className="w-8 h-8 rounded-lg text-neutral-700" />
+                  </Link>
+                </div>
               </div>
-            )
-          }
-        </section>
-        <div className='w-full flex-1 flex flex-col'>
-          <SideBar />
-        </div>
-      </div >
-    </main >
+            </div>
+            {
+              data.blog.advertisements.show && (
+                <div className="flex flex-col md:flex-row justify-center flex-1 gap-2 border-y-2 border-neutral-500 py-5">
+                  {data.blog.advertisements.image &&
+                    <div className="flex flex-col justify-center self-center gap-2 rounded-lg w-full p-4">
+                      <Link href={data.blog.advertisements.image.link} target="_blank" rel="noopener noreferrer">
+                        <img src={data.blog.advertisements.image.src} alt={data.blog.advertisements.image.alt} className="w-full rounded-lg h-auto" draggable={false} />
+                      </Link>
+                    </div>
+                  }
+                </div>
+              )
+            }
+            {
+              data.blog.referBlog.show && (
+                <div className="flex flex-col justify-center flex-1 gap-2 rounded-lg bg-neutral-300 p-4">
+                  <p className="text-base md:text-lg text-left font-bold text-neutral-900"> Also Read : <Link href={`/social-awareness/blogs/${data.blog.referBlog.slug}`} className='font-light hover:underline text-blue-700'>{data.blog.referBlog.title}</Link>
+                  </p>
+                </div>
+              )
+            }
+          </section>
+          <div className='w-full flex-1 flex flex-col'>
+            <SideBar />
+          </div>
+        </div >
+      </main >
     </>
   )
 }
