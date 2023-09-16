@@ -9,12 +9,10 @@ import { Tweet } from 'react-tweet';
 import dynamic from "next/dynamic";
 import InstagramPost from '@/components/InstagramPost'
 import Script from 'next/script'
-import Head from 'next/head'
 import { AiFillFacebook, AiFillRedditCircle } from 'react-icons/ai'
 import { RiTwitterXFill } from 'react-icons/ri'
 import { BsLinkedin } from 'react-icons/bs'
 import { BiLogoWhatsapp } from 'react-icons/bi'
-import GoogleAdv from '@/components/GoogleAdv'
 
 
 const VideoPlayer = dynamic(() => import('@/components/VideoPlayer'), { ssr: false });
