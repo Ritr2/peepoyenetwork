@@ -217,7 +217,7 @@ export default async function page({ params }) {
                           </section>
                         )
                       }
-                      {
+                      {/* {
                         (index === 1 || index === 3) && (
                           <>
                             <ins class="adsbygoogle"
@@ -228,10 +228,7 @@ export default async function page({ params }) {
                               data-ad-slot="4661045213"></ins>
                           </>
                         ) 
-                      }
-                      {
-                        <GoogleAdv />
-                      }
+                      } */}
                     </div>
                   )
                   )

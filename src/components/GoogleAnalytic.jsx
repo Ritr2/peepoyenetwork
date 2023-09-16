@@ -11,7 +11,6 @@ export default function GoogleAnalytic() {
         id="adsbygoogle-init"
         strategy="afterInteractive"
         crossOrigin="anonymous"
-        async
         src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8328474876522258"
       />
     </>
