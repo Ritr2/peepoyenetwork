@@ -97,7 +97,6 @@ export default async function page({ params }) {
     <>
       <Script
         async
-        strategy="lazyOnload"
         src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8328474876522258"
         crossOrigin="anonymous"
       />
@@ -164,6 +163,23 @@ export default async function page({ params }) {
                             </div>
                           }
                         </div>
+                      }
+                      {
+                        index === 2(
+                          <>
+                            <Script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8328474876522258"
+                              crossorigin="anonymous"></Script>
+                            <ins class="adsbygoogle"
+                              style="display:block; text-align:center;"
+                              data-ad-layout="in-article"
+                              data-ad-format="fluid"
+                              data-ad-client="ca-pub-8328474876522258"
+                              data-ad-slot="4661045213"></ins>
+                            <Script>
+                              (adsbygoogle = window.adsbygoogle || []).push({ });
+                            </Script>
+                          </>
+                        )
                       }
                       {
                         section.image && <img src={section.image.src} alt={section.image.alt} className="w-full rounded-lg h-auto" draggable={false} />
