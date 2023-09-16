@@ -14,6 +14,7 @@ import { AiFillFacebook, AiFillRedditCircle } from 'react-icons/ai'
 import { RiTwitterXFill } from 'react-icons/ri'
 import { BsLinkedin } from 'react-icons/bs'
 import { BiLogoWhatsapp } from 'react-icons/bi'
+import GoogleAdv from '@/components/GoogleAdv'
 
 
 const VideoPlayer = dynamic(() => import('@/components/VideoPlayer'), { ssr: false });
@@ -160,23 +161,6 @@ export default async function page({ params }) {
                         </div>
                       }
                       {
-                        index === 2(
-                          <>
-                            <Script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8328474876522258"
-                              crossorigin="anonymous"></Script>
-                            <ins class="adsbygoogle"
-                              style="display:block; text-align:center;"
-                              data-ad-layout="in-article"
-                              data-ad-format="fluid"
-                              data-ad-client="ca-pub-8328474876522258"
-                              data-ad-slot="4661045213"></ins>
-                            <Script>
-                              (adsbygoogle = window.adsbygoogle || []).push({ });
-                            </Script>
-                          </>
-                        )
-                      }
-                      {
                         section.image && <img src={section.image.src} alt={section.image.alt} className="w-full rounded-lg h-auto" draggable={false} />
                       }
                       {
@@ -232,6 +216,21 @@ export default async function page({ params }) {
                             }
                           </section>
                         )
+                      }
+                      {
+                        (index === 1 || index === 3) && (
+                          <>
+                            <ins class="adsbygoogle"
+                              style={{ display: 'block', textAlign: 'center' }}
+                              data-ad-layout="in-article"
+                              data-ad-format="fluid"
+                              data-ad-client="ca-pub-8328474876522258"
+                              data-ad-slot="4661045213"></ins>
+                          </>
+                        ) 
+                      }
+                      {
+                        <GoogleAdv />
                       }
                     </div>
                   )
