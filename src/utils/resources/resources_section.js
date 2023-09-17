@@ -36,7 +36,7 @@ const data = {
       },
       button: {
         text: 'Read More',
-        link: 'https://akassh.peepoye.com/guide-brb'
+        link: '/guide-brb'
       },
     },
     {

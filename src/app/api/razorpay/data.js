@@ -1,10 +1,10 @@
 const data = {
   "guide-brb": {
-    amount: 1,
+    amount: 29,
     notes: "guide-brb",
   },
   "donot": {
-    amount: 2,
+    amount: 99,
     notes: "donot",
   },
   "guide-x" : {

@@ -20,28 +20,28 @@ const data = [ {
       link: 'https://akassh.co/accelerator-prebook'
   },
   },
-  {
-    name: 'Donot Do This on YouTube',
-    image: {
-      src: 'https://i.ibb.co/rM8xPLc/image.png',
-      alt: 'Donot Do This on YouTube',
-    },
-    currency: '₹',
-    price: '999',
-    type: 'One-Time Fee',
-    features: [
-      `Experienced influencer's growth solutions`,
-      `Building a strong influencer foundation`,
-      `Comprehensive approach with mindset training`,
-      `Proven strategies for YouTube growth`,
-      `Time and effort-saving guidance`,
-    ],
-    active: true,
-    button: {
-      text: 'Read More',
-      link: '/donot',
-    },
-  }
+  // {
+  //   name: 'Donot Do This on YouTube',
+  //   image: {
+  //     src: 'https://i.ibb.co/rM8xPLc/image.png',
+  //     alt: 'Donot Do This on YouTube',
+  //   },
+  //   currency: '₹',
+  //   price: '999',
+  //   type: 'One-Time Fee',
+  //   features: [
+  //     `Experienced influencer's growth solutions`,
+  //     `Building a strong influencer foundation`,
+  //     `Comprehensive approach with mindset training`,
+  //     `Proven strategies for YouTube growth`,
+  //     `Time and effort-saving guidance`,
+  //   ],
+  //   active: true,
+  //   button: {
+  //     text: 'Read More',
+  //     link: '/donot',
+  //   },
+  // }
 ]
 
 export default data;
