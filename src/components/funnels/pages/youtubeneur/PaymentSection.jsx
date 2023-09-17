@@ -6,6 +6,7 @@ import Link2 from 'next/link'
 import url from '@/utils/url'
 import style from '@/styles/AcceleratorInd.module.css'
 import PaymentForm from './PaymentForm'
+import StripeapiCall from '@/utils/payments/stripePaymentCall'
 
 export default function PaymentSection({ loc, data }) {
   const [dataFormVisible, setDataFormVisible] = useState(false);
@@ -18,7 +19,7 @@ export default function PaymentSection({ loc, data }) {
           main: 'Book Now at $15/month',
           sub: 'Able to cancel anytime'
         },
-        successlink: `${url}/thankyou?product=accelerator`,
+        successlink: `https://www.skool.com/youtubeneur`,
       },
       yearly: {
         selectortext: 'Yearly',
@@ -47,7 +48,7 @@ export default function PaymentSection({ loc, data }) {
           main: 'Book Now at $15/month',
           sub: 'Able to cancel anytime'
         },
-        link: 'https://www.skool.com/youtubeneur',
+        successlink: 'https://www.skool.com/youtubeneur',
       },
       yearly: {
         selectortext: 'Yearly',
@@ -56,7 +57,9 @@ export default function PaymentSection({ loc, data }) {
           main: 'Book Now at $99/year',
           sub: 'Able to cancel anytime'
         },
-        link: 'https://www.skool.com/youtubeneur',
+        successlink: `${url}/thankyou?product=accelerator`,
+        price_id: 'price_1NrHVrSDli6WzERSQNpf2wUy',
+        mode: 'subscription',
       },
       lifetime: {
         selectortext: 'Lifetime',
@@ -65,7 +68,9 @@ export default function PaymentSection({ loc, data }) {
           main: 'Book Now at $199/- only',
           sub: 'Limited Time Offer'
         },
-        link: 'https://akassh.co/accelerator-pre-book',
+        successlink: `${url}/thankyou?product=accelerator`,
+        price_id: 'price_1NrHVrSDli6WzERSk4AByIdi',
+        mode: 'payment',
       },
     }
   }
@@ -84,17 +89,24 @@ export default function PaymentSection({ loc, data }) {
   ]
 
   const handlePayment = () => {
-    if(loc === 'ind') {
+    if (loc === 'ind') {
       setDataFormVisible(true)
-    }    
-    
-    // if (!data) {
-    //   setDataFormVisible(true)
-    //   window.open(dataP[loc][currentPlan].link, '_blank')
-    // }
-    // else {
-    //   window.open(data.paymentLink[currentPlan][loc], '_blank')
-    // }
+    }
+    if (loc === 'int') {
+      if (currentPlan === 'monthly') {
+        window.location.href = dataP[loc][currentPlan].successlink
+      }
+      else {
+        const products = [
+          {
+            priceId: dataP[loc][currentPlan].price_id,
+            quantity: 1,
+          }
+        ]
+        const successlink = data ? `${url}/${data.yes.query}?product=${data.yes.product}` : dataP[loc][currentPlan].successlink
+        StripeapiCall(products, dataP[loc][currentPlan].mode, successlink, `${url}/accelerator-${loc}${data ? `?product=${data.product}` : ''}`)
+      }
+    }
   }
   return (
     <div className="flex flex-col items-center gap-10" id="paymentPage">
@@ -135,7 +147,7 @@ export default function PaymentSection({ loc, data }) {
         </button>
         {
           dataFormVisible && (
-            <PaymentForm setDataFormVisible={setDataFormVisible} currentPlan={currentPlan} />
+            <PaymentForm setDataFormVisible={setDataFormVisible} currentPlan={currentPlan} successUrl={data ? `${url}/${data.yes.query}?product=${data.yes.product}` : dataP[loc][currentPlan].successlink} />
           )
         }
         {

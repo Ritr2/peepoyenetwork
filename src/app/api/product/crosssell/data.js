@@ -28,20 +28,6 @@ const data = [
       query: 'thankyou',
       product: 'guide-x',
     },
-    paymentLink: {
-      monthly: {
-        ind: 'https://www.skool.com/youtubeneur',
-        int: `https://www.skool.com/youtubeneur`
-      },
-      yearly: {
-        ind: 'https://www.skool.com/youtubeneur',
-        int: `https://www.skool.com/youtubeneur`
-      },
-      lifetime: {
-        ind: 'https://rzp.io/l/P9KwSMfp45',
-        int: `https://rzp.io/l/P9KwSMfp45`
-      }
-    }
   }
 ]
 

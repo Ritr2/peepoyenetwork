@@ -5,7 +5,6 @@ import {pagesData} from "./data";
 export async function POST(req) {
     const data = await req.json();
     const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
-    let page = pagesData.find((item) => data.page === item.title);
 
     const session = await stripe.checkout.sessions.create({
         payment_method_types: ["card"],
@@ -15,8 +14,8 @@ export async function POST(req) {
                 quantity: product.quantity,
             };
         }),
-        mode: "payment",
-        success_url: `${req.nextUrl.origin}/thankyou?product=${page.success}`,
+        mode: data.mode,
+        success_url: `${data.success}`,
         cancel_url: `${data.cancel}`,
     });
 

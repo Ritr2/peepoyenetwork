@@ -215,18 +215,6 @@ export default async function page({ params }) {
                           </section>
                         )
                       }
-                      {/* {
-                        (index === 1 || index === 3) && (
-                          <>
-                            <ins class="adsbygoogle"
-                              style={{ display: 'block', textAlign: 'center' }}
-                              data-ad-layout="in-article"
-                              data-ad-format="fluid"
-                              data-ad-client="ca-pub-8328474876522258"
-                              data-ad-slot="4661045213"></ins>
-                          </>
-                        ) 
-                      } */}
                     </div>
                   )
                   )

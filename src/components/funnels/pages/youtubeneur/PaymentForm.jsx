@@ -2,6 +2,7 @@
 import React, { useEffect } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
 import makePayment from '@/utils/payments/makePayment'
+import makeSubscriptionPayment from '@/utils/payments/makeSubscriptionPayment'
 import { IoClose } from 'react-icons/io5'
 import ls from 'localstorage-slim';
 
@@ -41,6 +42,12 @@ export default function PaymentForm({ setDataFormVisible, currentPlan, successUr
         ls.set('phone', phone)
         if (currentPlan === 'lifetime') {
             makePayment(details, setLoading, setDataFormVisible, successUrl, "accelerator")
+        }
+        if (currentPlan === 'yearly') {
+            makeSubscriptionPayment(details, setLoading, setDataFormVisible, successUrl, "plan_MdLUlvWayLs1i7", "accelerator")
+        }
+        if (currentPlan === 'monthly') {
+            window.location.href = successUrl
         }
     }
 
