@@ -10,6 +10,7 @@ import StripeapiCall from '@/utils/payments/stripePaymentCall'
 
 export default function PaymentSection({ loc, data }) {
   const [dataFormVisible, setDataFormVisible] = useState(false);
+  const [loading, setLoading] = React.useState(false)
   const dataP = {
     ind: {
       monthly: {
@@ -58,7 +59,7 @@ export default function PaymentSection({ loc, data }) {
           sub: 'Able to cancel anytime'
         },
         successlink: `${url}/thankyou?product=accelerator`,
-        price_id: 'price_1NrHVrSDli6WzERSQNpf2wUy',
+        price_id: 'price_1NrH43SDli6WzERSGDhPlBTr',
         mode: 'subscription',
       },
       lifetime: {
@@ -69,7 +70,7 @@ export default function PaymentSection({ loc, data }) {
           sub: 'Limited Time Offer'
         },
         successlink: `${url}/thankyou?product=accelerator`,
-        price_id: 'price_1NrHVrSDli6WzERSk4AByIdi',
+        price_id: 'price_1NrH4qSDli6WzERS6g0DJBXk',
         mode: 'payment',
       },
     }
@@ -104,7 +105,8 @@ export default function PaymentSection({ loc, data }) {
           }
         ]
         const successlink = data ? `${url}/${data.yes.query}?product=${data.yes.product}` : dataP[loc][currentPlan].successlink
-        StripeapiCall(products, dataP[loc][currentPlan].mode, successlink, `${url}/accelerator-${loc}${data ? `?product=${data.product}` : ''}`)
+        setLoading(true)
+        StripeapiCall(products, dataP[loc][currentPlan].mode, successlink, `${url}/accelerator-${loc}${data ? `?product=${data.product}` : ''}`, setLoading)
       }
     }
   }
@@ -148,6 +150,14 @@ export default function PaymentSection({ loc, data }) {
         {
           dataFormVisible && (
             <PaymentForm setDataFormVisible={setDataFormVisible} currentPlan={currentPlan} successUrl={data ? `${url}/${data.yes.query}?product=${data.yes.product}` : dataP[loc][currentPlan].successlink} />
+          )
+        }
+        {
+          loading && (
+            <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex flex-col gap-6 justify-center items-center z-50 backdrop-filter backdrop-blur-sm">
+              <h2 className="text-xl md:text-3xl font-bold text-center text-white">Please wait while we redirect you to the payment Gateway...</h2>
+              <div className="loader" />
+            </div>
           )
         }
         {
