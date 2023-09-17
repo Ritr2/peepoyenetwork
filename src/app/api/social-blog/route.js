@@ -11,11 +11,8 @@ export async function GET(req) {
   let page = req.nextUrl.searchParams.get("page")
   let search = req.nextUrl.searchParams.get("search")
   let all = req.nextUrl.searchParams.get("all")
+  let totalPage = 1;
 
-  let total = tempdata.length;
-  let count = 8;
-  let totalPage = Math.ceil(total / count);
-  
   if (!all) {
     if (search) {
       search = decodeURIComponent(search);
@@ -23,6 +20,9 @@ export async function GET(req) {
         return item.title.toLowerCase().includes(search.toLowerCase());
       });
     }
+    let total = tempdata.length;
+    let count = 8;
+    totalPage = Math.ceil(total / count);
     page ? page = parseInt(page) : page = 1;
     let range;
 
