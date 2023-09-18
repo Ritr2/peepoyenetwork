@@ -35,7 +35,7 @@ export async function generateMetadata({ params }) {
       images: [
         {
           url: data.blog.image.src,
-          width: 800,
+          width: 700,
           height: 500,
           alt: data.blog.image.alt,
         },

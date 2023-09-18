@@ -5778,6 +5778,117 @@ const blogdata = [
         alt: `Jaahnavi Kandula: The indian student who was killed by US cop in Seattle`,
       }
     },
+  },
+  {
+    title: `India or Bharat: The Name Change Debate- History, Pros and Cons`,
+    slug: `india-or-bharat-the-name-change-debate-history-pros-and-cons`,
+    id: 86,
+    category_id: 10,
+    description: `The debate over renaming India to Bharat, delving into its historical origins, pros, and cons in this blog.`,
+    image: {
+      src: `https://i.ibb.co/zQHKXxy/India-or-Bharat-The-Name-Change-Debate-History-Pros-and-Cons-1.png`,
+      alt: `G20 Summit Budget Controversy: The truth behind misleading claims`,
+    },
+    owner: `Ayushi Rajput`,
+    tags: ['India', 'bharat', 'constititional amendment', 'g20', 'history', 'pros and cons', 'opposition', 'support', 'BJP'],
+    date: `2023-09-18`,
+    summary: `In recent times, the discussion surrounding the renaming of India to Bharat has ignited debates across the nation. While some view it as a reconnection with India's ancient roots, others see it as a divisive move. This blog delves into the history behind both names and the pros and cons of such a change and offers a grounded opinion on the matter.`,
+    sections: [
+      {
+        h1: `Introduction`,
+        h2: false,
+        p: `Currently, we call our country with both names and The Indian Constituon uses both term ‘India’ in English and ‘Bharat’ in Hindi. Article 1 of the Constitution which prescribes name and territory of the Union, specifically says, ‘India, that is Bharat shall be a union of states.’<br/>If officially the name change will happen, then the country will be called Bharat in both Hindi and English. A constitutional amendment would be needed to change the name of India to Bharat.`,
+        image: false,
+        html: false,
+        subSections: [
+          {
+            h1: false,
+            h2: `1. Where did the controversy start?`,
+            p: `Official invitations for guests at the G20 summit dinner have sparked speculation that India may be changing its name. The invites refer to Droupadi Murmu as “President of Bharat” instead of the usual “President of India.”<br/>A tweet posted by a senior spokesperson of the ruling Bharatiya Janata Party (BJP) also referred to Narendra Modi as the “prime minister of Bharat.”`,
+            image: false,
+            html: false,
+          },
+          {
+            h1: false,
+            h2: `2. Will it officially happen?`,
+            p: `While no official confirmation has been provided regarding a name change, the timing of these events raised eyebrows.<br/>Reports emerged that the Narendra Modi-led government is planning to introduce a resolution during a special session of Parliament from September 18-22, seeking to officially change India's name to 'Bharat.'`,
+            image: false,
+            html: false,
+          },
+          {
+            h1: false,
+            h2: `3. The voices in favour and against: India or Bharat?`,
+            p: `Over the years, Modi's nationalist Bharatiya Janata Party (BJP) government has been changing colonial names of towns and cities, claiming to help India move past what it has termed a mentality of slavery.<br/>Multiple BJP leaders, including Assam chief minister Himanta Biswa Sarma, on Tuesday, came out in support of the renaming of the country 'Bharat'. BJP Rajya Sabha MP Naresh Bansal also pitched the proposal during the recently concluded monsoon session in the Upper House, saying that the name 'India' is a symbol of "colonial slavery" and "should be removed from the Constitution". “The British changed Bharat's name to India. Under Article 1, the Constitution states: 'India, that is Bharat'. Our country has been known by the name 'Bharat' for thousands of years ... it is this country's ancient name and is found in ancient Sanskrit texts. The name 'India' was given by the colonial Raj and is thus a symbol of slavery. The name India should be removed from the Constitution," ANI had quoted the Rajya Sabha MP as saying.<br/>“I have always believed a name should be one which instills pride in us. We are Bhartiyas ,India is a name given by the British & it has been long overdue to get our original name ‘Bharat’ back officially,” wrote former Indian cricketer Virender Sehwag in a post.<br/>Education Minister Dharmendra Pradhan also showed his support and shared a picture of the G20 invite.`,
+            image: false,
+            html: {
+              type: `twitter`,
+              value: `1698981206040498256`,
+            },
+          },
+          {
+            h1: false,
+            h2: false,
+            p: `However, opposition leaders like Congress leader Jairam Ramesh and Delhi Chief Minister Arvind Kejriwal have criticized the concept, raising questions about the motivations behind such a change.<br/>"Will BJP replace 'Bharat' with something else, if INDIA alliance changes its name to Bharat? If an alliance of some parties become India, would they change the name of the country? The country belongs to 140 crore people, not to a party. Let's assume if the India alliance renames itself as Bharat, would they rename Bharat as BJP then?... What's this joke?... BJP is thinking that their vote count will decrease, so they should change the name of Bharat," Arvind Kejriwal said.`,
+            image: false,
+            html: false,
+          },
+        ],
+      },
+      {
+        h1: `Tracing Back in Time: India and Bharat in Historical Perspective`,
+        h2: false,
+        p: `The debate around renaming India to Bharat takes us back in time. Both names have ancient origins, but India, the name bestowed by British colonizers, has endured for centuries. Bharat, rooted in Indian culture, has always held sentimental value for many.<br/>The name Bharat is ancient. It has Sanskrit origins and is found in the Rig Veda and Puranas. It is also said to be derived from the name of Dushyanta’s son, Bharata of Mahabharata. History forces change, and the names do evolve and change over time. So, ‘Bharat’ was substituted by ‘India’ by the travelers and invaders coming from the west. During the Mughal period, the use of the word ‘Hindustan’ was a natural progression. And the British rulers who came to the ‘Indies’ of the east, gave it the name ‘India’. India was perceived as more neutral, potentially making it easier for the British to establish and maintain control.<br/>The term ‘Bharat’ has the sentimental appeal for us that ‘India’ lacks, and so we have the Indian army has the most-used battle cry of ‘Bharat Mata ki Jai’. It is also the slogan that comes as a fitting finale to any cultural event in the country.`,
+        image: false,
+        html: false,
+      },
+      {
+        h1: `The Pros of Embracing ‘Bharat’`,
+        h2: false,
+        p: `<strong className="font-medium text-neutral-800">1. Cultural Heritage on Display:</strong> The name "Bharat" reflects the cultural heritage of the country. For centuries, before foreign invasions, this land was known as "Bharat Bhumi," "Bharat Varsh," or simply "Bharat." This name has deep historical significance, being named after the ancient king Bharat. Adopting "Bharat" as the official name will help preserve and showcase our rich cultural heritage.<br/><strong className="font-medium text-neutral-800">2. National Unity:</strong> The name ‘Bharat’ has historical significance and is mentioned in the Indian Constitution as an alternative name for India. Using it might promote a sense of national unity and pride.<br/><strong className="font-medium text-neutral-800">3. Decolonization:</strong> Changing the name from ‘India’ to ‘Bharat’ can be seen as a symbolic move towards decolonization and shedding remnants of the colonial era.<br/><strong className="font-medium text-neutral-800">4. Promoting Indian Languages:</strong> ‘Bharat’ is a name that is widely used in various Indian languages. Embracing this name may encourage the use of indigenous languages and promote linguistic diversity.`,
+        image: false,
+        html: false,
+      },
+      {
+        h1: `Cons of the Name Change`,
+        h2: false,
+        p: `<strong className="font-medium text-neutral-800">1. Administrative and Logistical Challenges:</strong> Changing the official name of a country involves significant administrative and logistical challenges, including updating official documents, passports, currency, and international treaties. This can be a costly and time-consuming process.<br/><strong className="font-medium text-neutral-800">2. Economic Costs:</strong> Rebranding can lead to economic costs for businesses and organizations that have to update their branding, marketing materials, and products.<br/><strong className="font-medium text-neutral-800">3. Constitutional Amendment Requirement:</strong> One significant con of changing India's name to Bharat is the necessity for a constitutional amendment. Amending the constitution is a complex and time-consuming process that involves legal, political, and administrative challenges.<br/><strong className="font-medium text-neutral-800">4. Implications for Online Identity:</strong> Renaming India to Bharat could disrupt the online identity of Indian businesses and entities. The current domain extension ".in" may need to change to ".bh," creating potential confusion and complications in the digital realm. This shift would require substantial adjustments and may impact the online visibility and branding of Indian entities, adding another layer of complexity to the name change debate.<br/><strong className="font-medium text-neutral-800">5. Global Recognition:</strong> India is a well-recognized name internationally, and changing it to ‘Bharat’ might lead to confusion and difficulties in terms of global recognition and diplomacy.<br/><strong className="font-medium text-neutral-800">6. Linguistic Diversity:</strong> While ‘Bharat’ is widely used in many Indian languages, there are still numerous languages and dialects spoken across the country. Some groups may feel that their linguistic identity is not adequately represented by this name.<br/><strong className="font-medium text-neutral-800">7. Symbolic Nature:</strong> Some may argue that changing the name is a symbolic gesture and that more substantial efforts should be focused on addressing pressing issues like poverty, healthcare, education, and governance.`,
+        image: false,
+        html: false,
+      },
+      {
+        h1: false,
+        h2: false,
+        p: `The potential renaming of our country from India to Bharat is a decision that deserves careful consideration. It's not just about a name; it's about our identity, unity, and place in the world.<br/>What do you think? Is it time for a change, or should we focus on more pressing issues? Is it a step in right direction?<br/>What do you think? Cast your vote now by clicking on the image.⬇️`,
+        image: false,
+        html: {
+          type: `poll`,
+          value: `https://opinions.peepoye.com/polls/politics/india_or_bharat`,
+          image: {
+            src: `https://i.ibb.co/2SgskH2/Should-India-change-its-name-to-Bharat.png`,
+            alt: `Should India change its name to Bharat?`,
+          },
+        },
+      }
+    ],
+    advertisements: {
+      show: true,
+      image: {
+        src: "https://i.ibb.co/c24wbZW/X-guide-banner.png",
+        alt: "Guide X",
+        link: "/guide-x",
+      },
+    },
+    referBlog: {
+      show: true,
+      title: `Jaahnavi Kandula: The indian student who was killed by US cop in Seattle`,
+      slug: `jaahnavi-kandula-the-indian-student-who-was-killed-by-us-cop-in-seattle`,
+    },
+    linktree: {
+      image: {
+        src: `https://i.ibb.co/j6s3z78/India-or-Bharat-The-Name-Change-Debate-History-Pros-and-Cons.png`,
+        alt: `India or Bharat: The Name Change Debate- History, Pros and Cons`,
+      }
+    },
   }
 ];
 
