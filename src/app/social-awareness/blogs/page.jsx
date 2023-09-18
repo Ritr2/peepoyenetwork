@@ -14,7 +14,7 @@ const dmSans = DM_Sans({
 export async function getSocialBlogs(page=false, search=false, all=false) {
   let res
   try {
-    res = await fetch(`${url}/api/social-blog${page ? `?page=${page}` : ''}${search ? `&search=${search}` : ''}${all ? `?all=${true}` : ''}`)
+    res = await fetch(`${url}/api/social-blog${page ? `?page=${page}` : ''}${search ? `&search=${search}` : ''}${all ? `?all=${true}` : ''}`, { cache: 'no-cache' })
     if (!res.ok) {
       throw new Error('Failed to fetch data')
     }
