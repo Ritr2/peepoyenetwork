@@ -5797,7 +5797,7 @@ const blogdata = [
       {
         h1: `Introduction`,
         h2: false,
-        p: `Currently, we call our country with both names and The Indian Constituon uses both term ‘India’ in English and ‘Bharat’ in Hindi. Article 1 of the Constitution which prescribes name and territory of the Union, specifically says, ‘India, that is Bharat shall be a union of states.’<br/>If officially the name change will happen, then the country will be called Bharat in both Hindi and English. A constitutional amendment would be needed to change the name of India to Bharat.`,
+        p: `Currently, we call our country with both names and The Indian Constitution uses both term ‘India’ in English and ‘Bharat’ in Hindi. Article 1 of the Constitution which prescribes name and territory of the Union, specifically says, ‘India, that is Bharat shall be a union of states.’<br/>If the name change officially happens, then the country will be called Bharat in both Hindi and English. A constitutional amendment would be needed to change the name of India to Bharat.`,
         image: false,
         html: false,
         subSections: [
@@ -5811,7 +5811,7 @@ const blogdata = [
           {
             h1: false,
             h2: `2. Will it officially happen?`,
-            p: `While no official confirmation has been provided regarding a name change, the timing of these events raised eyebrows.<br/>Reports emerged that the Narendra Modi-led government is planning to introduce a resolution during a special session of Parliament from September 18-22, seeking to officially change India's name to 'Bharat.'`,
+            p: `While no official confirmation has been provided regarding a name change, the timing of these events raised eyebrows.<br/>Reports emerged that the Narendra Modi-led government is planning to introduce a resolution during a special session of Parliament, from September 18-22, seeking to officially change India's name to 'Bharat.'`,
             image: false,
             html: false,
           },
