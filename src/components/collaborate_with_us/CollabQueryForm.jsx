@@ -2,6 +2,7 @@
 import React from 'react'
 import { motion, AnimatePresence } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
+import { apiUrl } from '@/utils/url';
 
 export default function CollabQueryForm() {
   const [name, setName] = React.useState('');
@@ -14,15 +15,13 @@ export default function CollabQueryForm() {
     e.preventDefault();
     setFormVisible(false);
     const data = {
-      api_key: process.env.NEXT_PUBLIC_CONVERTKIT_API_KEY,
-      email,
+      listkey: '3z0892b60ec3b1a6fec48165f45873995e6c4de1e7c26b0a7e5ad326ed9f7345c4',
       first_name: name,
-      fields: {
-        phone
-      },
+      email: email,
+      phone,
     }
     try {
-      const res = await fetch('https://api.convertkit.com/v3/forms/4877976/subscribe/', {
+      const res = await fetch(`${apiUrl}/add_contact`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

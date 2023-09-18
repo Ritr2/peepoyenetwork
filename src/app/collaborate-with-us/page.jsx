@@ -9,6 +9,7 @@ import { FaFacebookF } from 'react-icons/fa'
 import { AiFillInstagram, AiFillYoutube } from 'react-icons/ai'
 import { BsTwitter } from 'react-icons/bs'
 import { GrLinkedinOption } from 'react-icons/gr'
+import ButtonToScroll from '@/components/collaborate_with_us/ButtonToScroll'
 
 const dmSans = DM_Sans({
   weight: ['400', '500', '700'],
@@ -18,15 +19,41 @@ const dmSans = DM_Sans({
 export const metadata = {
   title: 'Collaborate with us - Peepoye',
   description: 'Partner with us to showcase your brand on our YouTube channel. Join our community and reach a diverse audience. Visit our page and collaborate with us today.',
-  url: 'https://peepoye.com',
+  images: [
+    {
+      url: 'https://i.ibb.co/rHqF2Hz/demographic-2.png',
+      width: 800,
+      height: 500,
+      alt: 'Collaborate with us - Peepoye',
+    },
+  ],
+  url: 'https://peepoye.com/collaborate-with-us',
+  keywords: ['collaborate with us', 'influencer marketing', 'social media marketing', 'brand promotion', 'brand marketing', 'brand awareness', 'branding', 'marketing', 'social media', 'social media influencers', 'social media influencers in india', 'social media influencers in delhi', 'social media influencers in mumbai', 'social media influencers in bangalore'],
   type: 'website',
   openGraph: {
     title: 'Collaborate with us - Peepoye',
     description: 'Partner with us to showcase your brand on our YouTube channel. Join our community and reach a diverse audience. Visit our page and collaborate with us today.',
-    url: 'https://peepoye.com',
+    images: [
+      {
+        url: 'https://i.ibb.co/rHqF2Hz/demographic-2.png',
+        width: 730,
+        height: 410,
+        alt: 'Collaborate with us - Peepoye',
+      },
+    ],
+    url: 'https://peepoye.com/collaborate-with-us',
     type: 'website',
   },
-  canonical: 'https://peepoye.com/collaborate-with-us'
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Collaborate with us - Peepoye',
+    description: 'Partner with us to showcase your brand on our YouTube channel. Join our community and reach a diverse audience. Visit our page and collaborate with us today.',
+    images: ['https://i.ibb.co/rHqF2Hz/demographic-2.png'],
+    creator: '@peepoye',
+  },
+  alternates: {
+    canonical: 'https://peepoye.com/collaborate-with-us',
+  },
 }
 
 export default function page() {
@@ -47,6 +74,9 @@ export default function page() {
             <div className="flex flex-col items-center gap-1">
               <p className="text-xs md:text-2xl font-medium text-center rounded-lg px-3 bg-stone-300 text-stone-900">Let us help your brand soar and reach new heights with our</p>
               <p className="text-xs md:text-2xl font-medium text-center rounded-lg px-3 bg-stone-300 text-stone-900">extensive YouTube presence!</p>
+            </div>
+            <div className='self-center'>
+              <ButtonToScroll />
             </div>
           </div>
         </div>
@@ -106,9 +136,7 @@ export default function page() {
             </div>
           </div>
           <div className='self-center'>
-            <button className="flex rounded-lg p-2 md:p-3 md:px-4 text-lg md:text-xl text-stone-800 flex-row items-center justify-center gap-2 w-full font-medium bg-yellow-600 hover:bg-yellow-300 hover:scale-105 active:bg-yellow-600 active:scale-95 transition-all duration-100">
-              Get our Media Kit
-            </button>
+            <ButtonToScroll />
           </div>
         </div>
       </section>
@@ -160,7 +188,7 @@ export default function page() {
         </div>
       </section>
       <section className="flex flex-col md:flex-row w-full gap-5 md:gap-32 py-5 px-2 md:py-10 md:px-40 bg-stone-200">
-        <div className="flex flex-col w-full md:w-1/2 gap-5">
+        <div id="collabForm" className="flex flex-col w-full md:w-1/2 gap-5">
           <h2 className="text-xl md:text-3xl font-bold text-center md:text-left text-neutral-600">CONTACT US NOW</h2>
           <CollabQueryForm />
         </div>
@@ -170,8 +198,8 @@ export default function page() {
             <h3 className="text-base md:text-xl font-bold text-center md:text-left text-neutral-600">EMAIL</h3>
             <p className="text-base md:text-lg font-normal text-center md:text-left text-neutral-600">
               <a href="mailto:hello@peepoye.com" className='hover:underline'>
-              hello@peepoye.com
-                </a>
+                hello@peepoye.com
+              </a>
             </p>
           </div>
           <div className="flex flex-col gap-2">
@@ -192,7 +220,7 @@ export default function page() {
               <a href="https://www.youtube.com/@peepoye" target="_blank" rel="noopener noreferrer" className='bg-neutral-600 rounded-full p-3 hover:underline'>
                 <AiFillYoutube className='text-2xl text-white' />
               </a>
-              </div>
+            </div>
           </div>
         </div>
       </section>
