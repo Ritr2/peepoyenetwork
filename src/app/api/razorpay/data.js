@@ -1,7 +1,7 @@
 const data = {
   "guide-brb": {
     amount: 29,
-    notes: "guide-brb",
+    notes: "guideBrb",
   },
   "donot": {
     amount: 99,
@@ -9,7 +9,7 @@ const data = {
   },
   "guide-x" : {
     amount: 199,
-    notes: "guide-x",
+    notes: "guideX",
   },
   "accelerator": {
     amount: 4999,
