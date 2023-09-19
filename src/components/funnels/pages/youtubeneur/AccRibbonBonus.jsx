@@ -8,10 +8,10 @@ import { AiOutlineCheckCircle } from 'react-icons/ai'
 export default function AccRibbonBonus({ data, loc = "ind" }) {
 
   return (
-    <div className=' flex flex-col md:flex-row gap-12 justify-center'>
+    <div className=' flex flex-col md:flex-row flex-wrap gap-12 justify-center'>
       {
         data.map((item, index) => (
-          <div key={index} className={`relative ${style.redShadow} w-full md:w-4/12 gap-8 flex flex-col border-2 border-white bg-white/5 rounded-lg px-2 md:px-4 py-3`}>
+          <div key={index} className={`relative ${style.redShadow} w-full md:w-3/12 gap-5 flex flex-col border-2 border-white bg-white/5 rounded-lg px-2 md:px-4 py-3`}>
             <div className={`${style.ribbon} z-10 ${style.ribbonTopRight}`}>
               <span><p className='text-lg md:text-xl'>Included</p></span>
             </div>
@@ -21,13 +21,12 @@ export default function AccRibbonBonus({ data, loc = "ind" }) {
               </div>
               <div className="flex flex-col w-full items-center">
                 <p className="text-base md:text-lg font-bold text-center text-red-500">Total Value: {bonus[item].symbol[loc]}<s>{bonus[item].value[loc]}</s>/-</p>
-                <p className="text-sm md:text-base font-bold text-center text-green-700">Included in This Exclusive Offer!</p>
               </div>
             </div>
             <div className="flex flex-col gap-3 w-full">
               {
                 bonus[item].h1 && (
-                  <h2 className="text-base md:text-lg font-bold text-center text-white">{bonus[item].h1}</h2>
+                  <h2 className="text-base md:text-lg font-bold text-center text-white">{index+2}. {bonus[item].h1}</h2>
                 )
               }
               {

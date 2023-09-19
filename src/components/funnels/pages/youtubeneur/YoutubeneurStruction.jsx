@@ -66,7 +66,7 @@ export default function YoutubeneurStruction() {
                 },
                 {
                     h3: '13. Build the Influence Foundation',
-                    time: '8:48',
+                    time: '8:52',
                 }
             ],
         },
@@ -75,8 +75,28 @@ export default function YoutubeneurStruction() {
             p: `The Money Engine`,
             modules: [
                 {
-                    h3: 'Day 3 will be comming soon',
-                    time: false,
+                    h3: '14. You are Unique',
+                    time: '10:00',
+                },
+                {
+                    h3: '15. Pull the Eggs out',
+                    time: '08:00',
+                },
+                {
+                    h3: '16. They Need You',
+                    time: '12:00',
+                },
+                {
+                    h3: '17. Automate and Scale',
+                    time: '18:00',
+                },
+                {
+                    h3: '18. Sprint on this Path',
+                    time: '07:00',
+                },
+                {
+                    h3: '19. A Golden Opportunity',
+                    time: '08:00',
                 }
             ],
         }

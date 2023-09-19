@@ -31,7 +31,7 @@ const data = {
     symbol: {ind: '₹', int: '$'},
   },
   donot: {
-    h1: "Donot Do This On Youtube",
+    h1: "Do Not Do This On Youtube",
     p: false,
     list: false,
     list2: [

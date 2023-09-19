@@ -25,6 +25,14 @@
     color: #c13438;
 }
 
+.aboutRed {
+    color: #fff;
+}
+
+.textYoutubeRed {
+    color: #b42228;
+}
+
 .hoverTextShadow:hover {
     text-shadow: 0px 4px 4px 0px #cf1111;
 }

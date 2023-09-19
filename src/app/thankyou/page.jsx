@@ -53,12 +53,12 @@ export default async function page({ searchParams }) {
           }
           {
             data.query.p2 && (
-              <p className="text-base md:text-lg font-medium text-center md:text-left text-neutral-700">{parse(data.query.p2)}</p>
+              <p className="text-lg md:text-xl font-medium text-center md:text-left text-neutral-700">{parse(data.query.p2)}</p>
             )
           }
           {
             data.query.p3 && (
-              <p className="text-lg md:text-xl font-medium text-center md:text-left text-neutral-700">{parse(data.query.p3)}</p>
+              <p className="text-base md:text-lg font-medium text-center md:text-left text-neutral-700">{parse(data.query.p3)}</p>
             )
           }
         </div>
