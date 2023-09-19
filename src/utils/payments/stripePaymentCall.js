@@ -1,6 +1,6 @@
 import url from "../url"
 
-const StripeapiCall = async (products,mode, success,cancel,setLoading) => {
+const StripeapiCall = async (products,mode, success,cancel,setLoading, notes = "not define") => {
     const res = await fetch(`${url}/api/stripe`, {
         method: 'POST',
         headers: {
@@ -10,7 +10,8 @@ const StripeapiCall = async (products,mode, success,cancel,setLoading) => {
             products: products,
             mode: mode,
             success: success,
-            cancel: cancel
+            cancel: cancel,
+            notes: notes,
         })
     })
     const data = await res.json()

@@ -256,7 +256,7 @@ export default function PaymentSection({ loc, data }) {
         ]
         const successlink = data ? `${url}/${data.yes.query}?product=${data.yes.product}` : dataP[loc][currentPlan].successlink
         setLoading(true)
-        StripeapiCall(products, dataP[loc][currentPlan].mode, successlink, `${url}/accelerator-${loc}${data ? `?product=${data.product}` : ''}`, setLoading)
+        StripeapiCall(products, dataP[loc][currentPlan].mode, successlink, `${url}/accelerator-${loc}${data ? `?product=${data.product}` : ''}`, setLoading, 'accelerator')
       }
     }
   }

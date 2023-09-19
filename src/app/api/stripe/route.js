@@ -17,6 +17,9 @@ export async function POST(req) {
         mode: data.mode,
         success_url: `${data.success}`,
         cancel_url: `${data.cancel}`,
+        metadata: {
+            product: data.notes,
+        },
     });
 
     return NextResponse.json({ url: session.url });
