@@ -19,6 +19,7 @@ import AccRibbonBonus from './AccRibbonBonus'
 import { FaPlay } from 'react-icons/fa'
 import VideoPlayer from './VideoPlayer'
 import FunnelFooter from '../../FunnelFooter'
+import Journey from './Journey'
 
 const sora = Sora({
   weight: ['100', '300', '400', '700'],
@@ -102,7 +103,7 @@ export default function AcceleratorInd({ loc, data }) {
                   transition={{ duration: 1, type: 'spring', bounce: 0.5, delay: 1 }}>
                   Generate 10X revenue by hacking the <span className={`${style.textYoutubeRed} font-bold ${style.lineBg}`}>YouTube<span></span></span> Algorithm!
                 </p>
-                <div className="flex flex-col md:flex-row items-center md:items-stretch flex-wrap gap-8 w-9/12">
+                <div className="flex flex-col md:flex-row items-center md:items-stretch flex-wrap gap-8 w-full md:w-9/12">
                   {
                     firstSectionData.map((item, index) => (
                       <div key={index} className={`flex flex-row w-10/12 md:w-5/12 items-center gap-2 bg-neutral-800/80 text-white px-3 py-2 rounded-md hover:scale-105 shadow-md drop-shadow-md cursor-pointer select-none ${style.hoverShadow}`}>
@@ -130,7 +131,7 @@ export default function AcceleratorInd({ loc, data }) {
                   }
                 </div>
               </motion.div>
-              <motion.div className={`flex order-1 md:order-2 flex-col flex-1 items-end`}
+              <motion.div className={`flex order-1 md:order-2 flex-col flex-1 items-center md:items-end`}
                 initial={{ opacity: 0, x: 100 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 1, type: 'spring', bounce: 0.5, delay: 1 }}
@@ -190,7 +191,7 @@ export default function AcceleratorInd({ loc, data }) {
                 <p className="text-sm md:text-lg font-bold text-center text-white">Included in this Exclusive Offer!</p>
               </div>
             </div>
-            <div className='flex flex-col gap-5 md:gap-6 w-5/12'>
+            <div className='flex flex-col gap-5 md:gap-6 w-full md:w-5/12'>
               <h3 className={`text-base md:text-xl text-left text-white font-bold ${sora.className}`}>
                 Let us resolve all your biggest and smallest &quot;YouTube Growth&quot; Challenges.
               </h3>
@@ -258,7 +259,7 @@ export default function AcceleratorInd({ loc, data }) {
               Meet Your Coach, Guide, and Mentor - Akassh Ashok Gupta
             </h2>
           </div>
-          <div className="flex flex-col md:flex-row justify-center items-center gap-10">
+          <div className="flex flex-col md:flex-row justify-center items-center gap-3 md:gap-10">
             <div className={`flex flex-col w-full md:w-6/12 rounded-xl`}>
               <img src="https://i.ibb.co/pdXR2sN/1.png" alt="Akassh Ashok Gupta" className='rounded-xl shadow-lg drop-shadow-lg' />
             </div>
@@ -268,7 +269,7 @@ export default function AcceleratorInd({ loc, data }) {
               </p>
             </div>
           </div>
-          <div className="flex flex-col md:flex-row justify-center items-center gap-10">
+          <div className="flex flex-col md:flex-row justify-center items-center gap-3 md:gap-10">
             <div className={`flex flex-col w-full md:w-6/12 rounded-xl order-1 md:order-2`}>
               <img src="https://i.ibb.co/RT3XGxt/2.png" alt="Akassh Ashok Gupta" className='rounded-xl shadow-lg drop-shadow-lg' />
             </div>
@@ -278,13 +279,13 @@ export default function AcceleratorInd({ loc, data }) {
               </p>
             </div>
           </div>
-          <div className="flex flex-col md:flex-row justify-center items-center gap-10">
+          <div className="flex flex-col md:flex-row justify-center items-center gap-3 md:gap-10">
             <div className={`flex flex-col w-full md:w-6/12 rounded-xl`}>
               <img src="https://i.ibb.co/LrvNWBp/3.png" alt="Akassh Ashok Gupta" className='rounded-xl shadow-lg drop-shadow-lg' />
             </div>
             <div className="flex flex-col flex-1">
               <p className={`text-base md:text-xl text-neutral-300 font-normal`}>
-                I believe in the power of YouTube not just as a platform for entertainment but as a strategic tool for business growth.<br /><br />Let's embark on this exciting journey together, and I'll guide you every step of the way in leveraging YouTube to its fullest potential.<br /><br />Whether you're looking to diversify your <span className={``}>revenue streams or attract valuable business leads</span>, I've got the expertise to make it happen. Let's make your YouTube venture a resounding success!<br/><br/>I'm really looking forward to you completing this course and make this about passion, fullfillment and enjoy every bit of the journey it entails.<br/><br/> 
+                I believe in the power of YouTube not just as a platform for entertainment but as a strategic tool for business growth.<br /><br />Let's embark on this exciting journey together, and I'll guide you every step of the way in leveraging YouTube to its fullest potential.<br /><br />Whether you're looking to diversify your <span className={``}>revenue streams or attract valuable business leads</span>, I've got the expertise to make it happen. Let's make your YouTube venture a resounding success!<br /><br />I'm really looking forward to you completing this course and make this about passion, fullfillment and enjoy every bit of the journey it entails.<br /><br />
               </p>
               <img src="https://i.ibb.co/6vX34KQ/akassh-signature.png" className="w-40 md:w-40 h-auto" />
             </div>
@@ -333,6 +334,16 @@ export default function AcceleratorInd({ loc, data }) {
             </h2>
           </div>
           <YoutubeneurStruction />
+        </section>
+        <section className="z-10 flex flex-col py-10 md:py-20 px-5 md:px-40 gap-5 md:gap-10 bg-white/5">
+          <div className={`flex flex-col gap-2 ${sora.className}`}>
+            <h2 className={`text-xl md:text-4xl text-center text-white font-bold`}>
+              The YouTubeneur Journey Path
+            </h2>
+          </div>
+          <div className="flex flex-col w-full">
+            <Journey />
+          </div>
         </section>
       </div>
       <section className="relative flex flex-col py-10 md:py-20 px-5 md:px-40 gap-5 bg-white/5">
