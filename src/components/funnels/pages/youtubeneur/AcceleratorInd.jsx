@@ -55,7 +55,7 @@ export default function AcceleratorInd({ loc, data }) {
 
   const faqData = [
     {
-      question: 'What is the course Language?',
+      question: 'What is the course language?',
       answer: 'All our courses are conducted in English, ensuring that learners from around the world can easily access and benefit from the valuable content provided by Youtubeneur Community.',
     },
     {
@@ -80,18 +80,18 @@ export default function AcceleratorInd({ loc, data }) {
       </div>
       <section className="relative flex flex-col py-8 px-5 md:px-40">
         <img src="https://i.ibb.co/jJ3gDDP/texture-BG.png" alt="texture" className="z-0 absolute top-0 left-0 w-full h-full object-cover opacity-20" />
-        <div className="flex flex-col z-10 md:gap-6 gap-5">
+        <div className="flex flex-col z-10 md:gap-10 gap-5">
           <div className="flex flex-col items-center gap-10">
             <motion.h2 className={`text-base ${sora.className} md:text-2xl px-2 md:px-5 py-2 font-light text-white text-center shadow-md rounded-md ${style.bgRed}`}
               initial={{ opacity: 0, x: -100 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 1, type: 'spring', bounce: 0.5, delay: 0.5 }}>
-              Join the exlusive club of <span className='font-bold'>1% successful YouTubers</span> and Influencers before it&apos;s TOO LATE!
+              Join the exclusive club of <span className='font-bold'>1% successful YouTubers</span> and Influencers before it&apos;s TOO LATE!
             </motion.h2>
           </div>
           <div className="flex flex-col items-center gap-5 md:gap-10">
             <div className="flex flex-col md:flex-row justify-center gap-5 md:gap-10">
-              <motion.div className="flex flex-col justify-center gap-5 md:gap-12 w-full md:w-6/12 order-2 md:order-1"
+              <motion.div className="flex flex-col justify-center gap-5 md:gap-12 w-full md:w-8/12 order-2 md:order-1"
                 initial={{ opacity: 0, x: -100 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 1, type: 'spring', bounce: 0.5, delay: 1 }}
@@ -100,9 +100,9 @@ export default function AcceleratorInd({ loc, data }) {
                   initial={{ opacity: 0, x: -100 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ duration: 1, type: 'spring', bounce: 0.5, delay: 1 }}>
-                  Generate 10X revenue by hacking the <br /> <span className={`${style.textYoutubeRed} font-bold ${style.lineBg}`}>YouTube<span></span></span> Algorithm!
+                  Generate 10X revenue by hacking the <span className={`${style.textYoutubeRed} font-bold ${style.lineBg}`}>YouTube<span></span></span> Algorithm!
                 </p>
-                <div className="flex flex-col md:flex-row items-center md:items-stretch flex-wrap gap-3">
+                <div className="flex flex-col md:flex-row items-center md:items-stretch flex-wrap gap-8 w-9/12">
                   {
                     firstSectionData.map((item, index) => (
                       <div key={index} className={`flex flex-row w-10/12 md:w-5/12 items-center gap-2 bg-neutral-800/80 text-white px-3 py-2 rounded-md hover:scale-105 shadow-md drop-shadow-md cursor-pointer select-none ${style.hoverShadow}`}>
@@ -130,12 +130,12 @@ export default function AcceleratorInd({ loc, data }) {
                   }
                 </div>
               </motion.div>
-              <motion.div className={`flex order-1 md:order-2 flex-col flex-1 items-center`}
+              <motion.div className={`flex order-1 md:order-2 flex-col flex-1 items-end`}
                 initial={{ opacity: 0, x: 100 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 1, type: 'spring', bounce: 0.5, delay: 1 }}
               >
-                <img src='https://i.ibb.co/JRjfHhr/accelerator.png' alt="Foundation accelerator" className='w-8/12' />
+                <img src='https://i.ibb.co/JRjfHhr/accelerator.png' alt="Foundation accelerator" className='w-10/12' />
               </motion.div>
             </div>
           </div>
@@ -173,55 +173,59 @@ export default function AcceleratorInd({ loc, data }) {
             </div>
           </div>
         </section>
-        <section className="z-10 flex flex-col py-10 md:py-20 px-5 md:px-40 gap-5">
+        <section className="z-10 flex flex-col py-10 md:py-20 px-5 md:px-36 gap-10">
           <div className={`flex flex-col gap-5 ${sora.className}`}>
             <h2 className={`text-lg ${style.bgRed} py-2 px-5 md:text-3xl text-center text-white font-bold shadow-lg drop-shadow-lg rounded-lg`}>
-              Our Unique Value Offering : A Pro YouTube Expert with you LIVE on Zoom
+              Our Unique Value Offering : A Pro YouTube Expert Live with you on Zoom
             </h2>
             <h2 className='text-base md:text-2xl text-left md:text-center text-white'>
-              1. Weekly Live Coffee Chats + Free Access to all the recorded sessions
+              <span className='font-bold text-green-700'>BONUS 1: </span>Weekly Live Coffee Chats + Free Access to the archive of all the previously recorded calls
             </h2>
           </div>
-          <div className="flex md:flex-row flex-col gap-5 items-center">
-            <div className='flex flex-col flex-1 items-center'>
+          <div className="flex md:flex-row flex-col items-center gap-2">
+            <div className='flex flex-col flex-1 items-center gap-3'>
               <img src="https://i.ibb.co/QpW4s0y/coffee-chat.png" alt="Akassh Ashok Gupta" className='w-full md:w-10/12' />
+              <div>
+                <p className="text-sm md:text-2xl font-bold text-center text-red-500">Total Value: $<s>999</s>/-</p>
+                <p className="text-sm md:text-lg font-bold text-center text-white">Included in this Exclusive Offer!</p>
+              </div>
             </div>
-            <div className='flex flex-col flex-1 gap-5 md:gap-6'>
+            <div className='flex flex-col gap-5 md:gap-6 w-5/12'>
               <h3 className={`text-base md:text-xl text-left text-white font-bold ${sora.className}`}>
                 Let us resolve all your biggest and smallest &quot;YouTube Growth&quot; Challenges.
               </h3>
               <div className="flex flex-col gap-5">
                 <div className="flex flex-row gap-2">
                   <BsCheckLg className={`${style.textRed} text-2xl w-5 md:text-4xl md:w-10`} />
-                  <span className=' flex-1 text-sm md:text-lg text-neutral-300'>Need help in applying the course in your unique youtube niche?<br /> <span className='font-semibold'> Ask Akassh directly!</span></span>
+                  <span className=' flex-1 text-sm md:text-lg text-neutral-300 font-bold'>Wondering how to <span className='text-red-500'>align</span> & hack YouTube algorithm for your <span className='text-red-500'>specific</span> YouTube niche?<br /> <span className='font-light'>Discuss and brainstorm various methods and pickup the best practices and innovative ideas during these calls.</span></span>
                 </div>
                 <div className="flex flex-row gap-2">
                   <BsCheckLg className={`${style.textRed} text-2xl w-5 md:text-4xl md:w-10`} />
-                  <span className=' flex-1 text-sm md:text-lg text-neutral-300'>Feeling alone in this struggle? <br /><span className='font-semibold'> Celebrate your wins and get rewarded in these calls.</span></span>
+                  <span className=' flex-1 text-sm md:text-lg text-neutral-300 font-bold'>Feeling <span className='text-red-500'>alone</span> in this struggle? <br /><span className='font-light'> Celebrate your wins, Collaborate & Stay motivated with the community by participating in these calls</span></span>
                 </div>
                 <div className="flex flex-row gap-2">
                   <BsCheckLg className={`${style.textRed} text-2xl w-5 md:text-4xl md:w-10`} />
-                  <span className=' flex-1 text-sm md:text-lg text-neutral-300'>Not able to stay disciplined?<br /><span className='font-semibold'> Get your accountability partner who will always keep a check on you.</span></span>
+                  <span className=' flex-1 text-sm md:text-lg text-neutral-300 font-bold'>Not able to <span className='text-red-500'>stay</span> consistent & focused?<br /><span className='font-light'> Get your accountability partner and attend these calls to keep progressing and moving towards your goals.</span></span>
                 </div>
-              </div>
-              <div className="flex flex-col gap-2 w-full md:w-9/12">
-                <Link activeClass='activestatus' spy={true} to='paymentPage' smooth={true} duration={1000} offset={-150} className={`flex flex-col items-center cursor-pointer ${style.bgRed} rounded-lg px-2 py-1 md:px-5 md:py-3 hover:scale-105 shadow-sm drop-shadow-sm`}>
-                  <span className='text-white text-xl md:text-3xl font-bold uppercase'>Grab the Launch offer</span>
-                  <span className='text-white text-center text-sm md:text-2xl'> at an unbelievable discount!</span>
-                </Link>
-                {
-                  data && (
-                    <Link2 className='self-center text-xl text-white hover:underline' href={`${url}/${data.no.query}?product=${data.no.product}`} >
-                      No, I don't want this offer
-                    </Link2>
-                  )
-                }
               </div>
             </div>
           </div>
+          <div className="flex flex-col gap-2 self-center w-full md:w-8/12">
+            <Link activeClass='activestatus' spy={true} to='paymentPage' smooth={true} duration={1000} offset={-150} className={`flex flex-col items-center cursor-pointer ${style.bgRed} rounded-lg px-2 py-1 md:px-5 md:py-3 hover:scale-105 shadow-sm drop-shadow-sm`}>
+              <span className='text-white text-xl md:text-3xl font-bold uppercase'>Grab the Launch offer</span>
+              <span className='text-white text-center text-sm md:text-2xl'> at an unbelievable discount!</span>
+            </Link>
+            {
+              data && (
+                <Link2 className='self-center text-xl text-white hover:underline' href={`${url}/${data.no.query}?product=${data.no.product}`} >
+                  No, I don't want this offer
+                </Link2>
+              )
+            }
+          </div>
         </section>
-        <section className="z-10 flex flex-col py-10 md:py-20 px-5 md:px-20 gap-5 bg-white/5">
-          <div className={`flex flex-col gap-10 items-center`}>
+        <section className="z-10 flex flex-col py-10 md:py-20 items-center px-5 md:px-20 gap-5 bg-white/5">
+          <div className={`flex flex-col gap-10 items-center w-full md:w-8/12`}>
             <div className={`flex flex-col gap-2 ${sora.className}`}>
               <h2 className={`text-xl md:text-4xl text-center text-white font-bold`}>
                 Wait, There's More...
@@ -270,7 +274,7 @@ export default function AcceleratorInd({ loc, data }) {
             </div>
             <div className="flex flex-col flex-1 order-2 md:order-1">
               <p className={`text-base md:text-xl text-neutral-300 font-normal`}>
-                Even when I was at a leadership position at my job, earning really well, I decided to quit my job and do YouTube full-time. The reason was simple- I realised my Passion. Today, <span className={``}>I breathe passion</span> by doing what I love. Quitting the job was not an easy call but still I took that step because I knew what I was truly meant for and what my passion was. Now, I am on a mission to <span className={``}>enable 1 lac people</span> like me breathe their passion and earn money by doing what they love the most.<br /><br />What sets me apart further are my incredible collaborations with legends like Sonu Nigam and Shruti Haasan. Additionally, I've gained the admiration of top YouTube influencers including Ashish Chanchlani, Harsh Beniwal, Myth Pat, Sourav Joshi, and many more."
+                Even when I was at a leadership position at my job, earning really well, I decided to quit my job and do YouTube full-time. The reason was simple- I realised my Passion. Today, <span className={``}>I breathe passion</span> by doing what I love. Quitting the job was not an easy call but still I took that step because I knew what I was truly meant for and what my passion was. Now, I am on a mission to <span className={``}>enable 1 lac people</span> like me breathe their passion and create multiple revenue streams by doing what they love the most.<br /><br />What sets me apart further are my incredible collaborations with legends like Sonu Nigam and Shruti Haasan. Additionally, I've gained the admiration of top YouTube influencers including Ashish Chanchlani, Harsh Beniwal, MythPat, Sourav Joshi, and many more.
               </p>
             </div>
           </div>
@@ -280,8 +284,9 @@ export default function AcceleratorInd({ loc, data }) {
             </div>
             <div className="flex flex-col flex-1">
               <p className={`text-base md:text-xl text-neutral-300 font-normal`}>
-                I believe in the power of YouTube not just as a platform for entertainment but as a strategic tool for business growth.<br /><br />Let's embark on this exciting journey together, and I'll guide you every step of the way in leveraging YouTube to its fullest potential.<br /><br />Whether you're looking to diversify your <span className={``}>revenue streams or attract valuable business leads</span>, I've got the expertise to make it happen. Let's make your YouTube venture a resounding success!
+                I believe in the power of YouTube not just as a platform for entertainment but as a strategic tool for business growth.<br /><br />Let's embark on this exciting journey together, and I'll guide you every step of the way in leveraging YouTube to its fullest potential.<br /><br />Whether you're looking to diversify your <span className={``}>revenue streams or attract valuable business leads</span>, I've got the expertise to make it happen. Let's make your YouTube venture a resounding success!<br/><br/>I'm really looking forward to you completing this course and make this about passion, fullfillment and enjoy every bit of the journey it entails.<br/><br/> 
               </p>
+              <img src="https://i.ibb.co/6vX34KQ/akassh-signature.png" className="w-40 md:w-40 h-auto" />
             </div>
           </div>
           <div className="flex flex-col gap-5 self-center w-full md:w-8/12">

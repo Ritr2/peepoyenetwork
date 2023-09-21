@@ -97,10 +97,10 @@ export default function PaymentSection({ loc, data }) {
       }
     },
     {
-      text: '<span className="font-normal text-neutral-300">Bonus #1:</span> Weekly Live Coffee Chats with the Youtube Growth Expert',
+      text: '<span className="font-normal text-neutral-300">Bonus #1:</span> Weekly Live Coffee Chats on Zoom',
       price: {
         ind: 9999,
-        int: 299
+        int: 199
       },
       plan: ['lifetime', 'yearly', 'monthly'],
       quantity: {
@@ -110,10 +110,10 @@ export default function PaymentSection({ loc, data }) {
       }
     },
     {
-      text: '<span className="font-normal text-neutral-300">Bonus #2:</span> Access to our Private Growth Community',
+      text: '<span className="font-normal text-neutral-300">Bonus #2:</span> Access to our Private YouTube Growth Community',
       price: {
         ind: 9999,
-        int: 150,
+        int: 199,
       },
       plan: ['lifetime', 'yearly', 'monthly'],
       quantity: {
@@ -123,10 +123,10 @@ export default function PaymentSection({ loc, data }) {
       }
     },
     {
-      text: `<span className="font-normal text-neutral-300">Bonus #3:</span> Donot Do This On Youtube Course`,
+      text: `<span className="font-normal text-neutral-300">Bonus #3:</span> Do Not Do This On YouTube Course`,
       price: {
-        ind: 2999,
-        int: 499
+        ind: 4999,
+        int: 99
       },
       plan: ['lifetime', 'yearly', 'monthly'],
       quantity: {
@@ -139,7 +139,7 @@ export default function PaymentSection({ loc, data }) {
       text: `<span className="font-normal text-neutral-300">Bonus #4:</span> Scripting Secret Course`,
       price: {
         ind: 4999,
-        int: 60,
+        int: 99,
       },
       plan: ['lifetime', 'yearly', 'monthly'],
       quantity: {
@@ -227,9 +227,9 @@ export default function PaymentSection({ loc, data }) {
       }
     },
     {
-      text: `<span className="font-normal text-red-500">Additional Bonus:</span> Channel audit report tailor made for your channel personally crated by the YouTube expert`,
+      text: `<span className="font-normal text-red-500">Additional Bonus:</span> Channel audit report tailor made for your channel personally created by the YouTube expert`,
       price: {
-        ind: 999,
+        ind: 4999,
         int: 99
       },
       plan: ['lifetime'],

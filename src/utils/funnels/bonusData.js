@@ -11,7 +11,7 @@ const data = {
       src: 'https://i.ibb.co/mHQBF7n/The-World-Class-Community.png',
       alt: 'World-Class Community',
     },
-    value:{ ind: '9,999', int: '150'},
+    value:{ ind: '9,999', int: '199'},
     symbol: {ind: '₹', int: '$'},
   },
   community2: {
@@ -20,14 +20,14 @@ const data = {
     list: false,
     list2: [
       'Get direct access to "The YouTubeneur Community"',
-      'Chat, collaborate, grow',
+      'Chat, Collaborate, Grow',
       'Learn and earn rewards',
     ],
     image: {
       src: 'https://i.ibb.co/mHQBF7n/The-World-Class-Community.png',
       alt: 'World-Class Community',
     },
-    value:{ ind: '9,999', int: '150'},
+    value:{ ind: '9,999', int: '199'},
     symbol: {ind: '₹', int: '$'},
   },
   donot: {
@@ -35,15 +35,15 @@ const data = {
     p: false,
     list: false,
     list2: [
-      '21-day YouTube course, self-paced',
-      'Expert advice for YouTube beginners',
-      'Stand out, accelerate growth with secret tips',
+      '21 secrets unveiled though this self-paced course',
+      'Expert advice for YouTube Beginners',
+      'Stand out with accelerated growth',
     ],
     image: {
       src: 'https://i.ibb.co/Y36s3QL/Donot-Do-This-On-Youtube.png',
       alt: 'Donot Do This On Youtube',
     },
-    value:{ ind: '2,999', int: '49'},
+    value:{ ind: '4,999', int: '99'},
     symbol: {ind: '₹', int: '$'},
   },
   scriptSecret: {
@@ -51,15 +51,15 @@ const data = {
     p: false,
     list: false,
     list2: [
-      'The copy+paste method to write great scripts.',
-      'Ready to use scripting templates.',
-      'Learn to write scripts in line with the YouTube algorithm.',
+      'The copy+paste method used by the biggest YouTube influencers',
+      'Ready to use scripting templates',
+      'Learn to write scripts in line with the YouTube algorithm like a Pro',
     ],
     image: {
       src: 'https://i.ibb.co/SPMN1py/Scripting-Secrets-for-You-Tube.png',
       alt: 'Scripting Secrets for YouTube',
     },
-    value:{ ind: '4,999', int: '60'},
+    value:{ ind: '4,999', int: '99'},
     symbol: {ind: '₹', int: '$'},
   },
   acc1: {
@@ -67,7 +67,7 @@ const data = {
     p: false,
     list: false,
     list2: [
-      'A great resource to refer every time you strategize your content.',
+      'A great resource to refer every time you need to strategize your content.',
       'Important notes at one place, downloadable in pdf format',
       'Practical method which is applicable in every niche',
     ],
@@ -83,9 +83,9 @@ const data = {
     p: false,
     list: false,
     list2: [
-      'A step-by-step guidance for the entire video editing process',
-      'Checklist to ensure that you never miss a crucial task.',
-      'Resource to save time and streamline your editing workflow',
+      'A step-by-step guide for the entire video editing process',
+      'Checklist to ensure that you never miss a crucial task',
+      'A great resource to bring efficiency in your editing workflow that saves hours of effort',
     ],
     image: {
       src: 'https://i.ibb.co/qnbcHVt/Video-Editing-Checklist.png',
@@ -99,9 +99,9 @@ const data = {
     p: false,
     list: false,
     list2: [
-      'A pre-structured template to help gather and organize vital information.',
-      'A ready made template to save time on data collection and analysis.',
-      'Step-by-step guide for effective research and it’s usage in the scripts.',
+      'A pre-structured template to help gather and organize vital to construct a video',
+      'A ready-made template to save time on data collection and analysis',
+      'Step-by-step guide for effective research and it’s usage in the scripts',
     ],
     image: {
       src: 'https://i.ibb.co/D5jNn1g/Video-Research-Template.png',
@@ -116,8 +116,8 @@ const data = {
     list: false,
     list2: [
       'Proven techniques for creating attention-grabbing video thumbnails',
-      'A resource to increasing click-through rates and viewership.',
-      'Hacks and shortcuts to create stunning thumbnails with minimal effort.',
+      'A resource that results in higher click-through rates and viewership on your videos',
+      'Hacks and shortcuts to create stunning thumbnails with minimal effort',
     ],
     image: {
       src: 'https://i.ibb.co/BB3m2Fy/Thumbnail-Designing-Hack.png',
@@ -131,9 +131,9 @@ const data = {
     p: false,
     list: false,
     list2: [
-      'A checklist to improve the chances of your video to rank higher in search results.',
-      `SEO techniques to tailor your video content to your target audience's preferences and interests.`,
-      'A resource doc to ensure long-term video success by driving sustainable traffic to your channel.',
+      'A checklist to improve the chances of your video to rank higher in search results',
+      `SEO techniques to tailor your video content to your target audience's preferences and interests`,
+      'A resource doc to ensure long-term video success by driving sustainable traffic to your channel',
     ],
     image: {
       src: 'https://i.ibb.co/4Vw8GCf/Video-Optimization-Doc.png',

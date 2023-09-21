@@ -39,12 +39,6 @@ export default function Testimonials() {
             image: 'https://i.ibb.co/qFgyXf7/6f2fe9c8e493e01c54517ef05fbf6398.png',
         },
         {
-            name: 'Triggered Insaan',
-            position: 'Youtuber',
-            say: 'You are literally slaying it on Youtube',
-            image: 'https://i.ibb.co/MCwBsFz/b2e227d20f33ca9767b06bbec16cdbc7.jpg',
-        },
-        {
             name: 'Carole Mercier',
             position: 'Senior Advisor - CGI',
             say: 'I would work again with Akash anytime',

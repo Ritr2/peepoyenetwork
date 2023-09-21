@@ -58,3 +58,33 @@
 .redShadow {
   box-shadow: 0 0px 1px rgba(0,0,0,.1), 0 0 10px #c13438;
 }
+
+.ribbon2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90px;
+  height: 30px;
+  top: 58px;
+  right: 32px;
+}
+
+.ribbon2Container {
+  top: -40.5px;
+  right: -40.5px;
+}
+
+@media (min-width: 768px) {
+
+  .ribbon2 {
+    width: 130px;
+    height: 50px;
+    top: 78px;
+    right: 40px;
+  }
+
+  .ribbon2Container {
+    top: -55.5px;
+    right: -55.5px;
+  }
+}

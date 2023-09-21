@@ -5,12 +5,12 @@ export default function WhoIsThisFor() {
     const data = [
         {
             h1: 'Content Creators',
-            p: `Learn how to build content strategy, produce an optimize content, understand youtube algorithm and thus get maximum reach and growth in the shortest time possible.`,
+            p: `Learn how to build content strategy, produce and optimize content, understand youtube algorithm and thus get maximum reach and growth in the shortest time possible.`,
             image: `https://i.ibb.co/3cFdQKD/who-can-take-1.webp`,
         },
         {
             h1: 'Business Owners',
-            p: `Learn how to leverage YouTube to increase brand visibility, create digital products, multiple revenue streams & get continuous flow of business lead organically.`,
+            p: `Learn how to leverage YouTube to increase brand visibility, create digital products, multiple revenue streams & get continuous flow of business leads organically.`,
             image: `https://i.ibb.co/9tQ5NSh/who-can-take-2.webp`,
         },
         {

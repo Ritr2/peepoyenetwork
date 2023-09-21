@@ -26,15 +26,15 @@ export default function FAQ({ data, bgcolor = false, textcolor = false, textSize
               }}
               className={`w-full cursor-pointer h-full ${bgcolor? bgcolor.question : 'bg-stone-300'} p-4 rounded-lg flex justify-between items-center`}>
               <h2 className={`${textSize ? textSize.question: 'text-base md:text-2xl' } font-medium ${textcolor? textcolor.question : 'text-neutral-700'}`}>{index + 1}. {parse(item.question)}</h2>
-              <AiOutlineDown className={`${textSize ? textSize.question: 'text-base md:text-2xl' } ${textcolor? textcolor.question : 'text-neutral-700'} w-6 h-6 md:w-8 md:h-8 transform transition-all duration-1000 ease-in-out ${show[index] ? 'rotate-180' : ''}`} />
+              <AiOutlineDown className={`${textSize ? textSize.question: 'text-base md:text-2xl' } ${textcolor? textcolor.question : 'text-neutral-700'} w-6 h-6 md:w-8 md:h-8 transform transition-all duration-700 ease-in-out ${show[index] ? 'rotate-180' : ''}`} />
             </motion.div>
             <AnimatePresence>
               {
                 show[index] && (
                   <motion.div
                     initial={{ height: 0 }}
-                    animate={{ height: 'auto', transition: { duration: 0.7 } }}
-                    exit={{ height: 0, transition: { duration: 0.7 } }}
+                    animate={{ height: 'auto', transition: { duration: 0.5 } }}
+                    exit={{ height: 0, transition: { duration: 0.5 } }}
                     className={`w-full h-full ${bgcolor? bgcolor.answer : 'bg-stone-200'} rounded-lg overflow-hidden`}
                   >
                     <p className={`${textSize ? textSize.answer: 'text-lg md:text-xl' } font-light p-4 ${textcolor? textcolor.answer : 'text-neutral-700'}`}>
