@@ -185,7 +185,7 @@ export default function Journey() {
                     />
                 </div>
             </div>
-            <div className='flex flex-col md:flex-row gap-5 md:w-6/12 self-center'>
+            <div className='flex flex-col md:flex-row gap-5 w-8/12 md:w-6/12 self-center'>
                 <button className={`flex-1 bg-red-500 rounded-lg py-2 text-white font-bold text-center ${value < 1 ? 'cursor-not-allowed' : ''}`} onClick={() => { value > 0 ? setValue(Math.ceil(value) - 1) : null; setRemaining(0) }}>Previous</button>
                 <button className={`flex-1 bg-red-500 rounded-lg py-2 text-white font-bold text-center ${value > 4 ? 'cursor-not-allowed' : ''}`} onClick={() => { value < 5 ? setValue(Math.floor(value) + 1) : null; setRemaining(0) }}>Next</button>
             </div>
