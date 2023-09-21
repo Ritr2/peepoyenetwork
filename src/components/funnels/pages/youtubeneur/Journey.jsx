@@ -1,5 +1,5 @@
-import React, { useState, useRef, useEffect, Fragment } from 'react'
-import { motion, useMotionValue, useTransform, useMotionTemplate, animate, AnimatePresence } from 'framer-motion'
+import React, { useState, useRef, useEffect } from 'react'
+import { motion, useMotionValue, useTransform, useMotionTemplate, AnimatePresence } from 'framer-motion'
 
 
 
