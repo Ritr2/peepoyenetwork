@@ -9,6 +9,7 @@ export default function GoogleAnalytic() {
   useEffect(() => {
     TagManager.initialize({ gtmId: 'GTM-PCN84MFT' });
 }, []);
+
   return (
     <>
       <GoogleAnalytics />
