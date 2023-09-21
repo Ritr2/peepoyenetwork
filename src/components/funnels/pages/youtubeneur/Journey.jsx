@@ -108,7 +108,7 @@ export default function Journey() {
                                         </motion.div>
                                         <motion.img
                                             initial={{ opacity: 0, x: 300 }}
-                                            animate={{ opacity: 1, x: remaining * 100 < 40 ? 0 : remaining * 600, opacity: remaining * 100 < 80 ? 1 : 0, transition: { duration: 0.7 } }}
+                                            animate={{ opacity: 1, x: remaining * 100 < 30 ? 0 : remaining * 600, opacity: remaining * 100 < 80 ? 1 : 0, transition: { duration: 0.7 } }}
                                             exit={{ display: 'none', transition: { duration: 0.1, delay: 0 } }}
                                             transition={{ duration: 0.7 }}
                                             className='h-48 md:h-96 w-full md:flex-1 object-contain object-center md:object-right order-1 md:order-2'
