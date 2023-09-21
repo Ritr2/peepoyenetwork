@@ -17,7 +17,7 @@ import AccRibbonBonus from './AccRibbonBonus'
 import { FaPlay } from 'react-icons/fa'
 import VideoPlayer from './VideoPlayer'
 import FunnelFooter from '../../FunnelFooter'
-// import Journey from './Journey'
+import Journey from './Journey'
 
 const sora = Sora({
   weight: ['100', '300', '400', '700'],
@@ -333,7 +333,7 @@ export default function AcceleratorInd({ loc, data }) {
           </div>
           <YoutubeneurStruction />
         </section>
-        {/* <section className="z-10 flex flex-col py-10 md:py-20 px-5 md:px-40 gap-5 md:gap-10 bg-white/5">
+        <section className="z-10 flex flex-col py-10 md:py-20 px-5 md:px-40 gap-5 md:gap-10 bg-white/5">
           <div className={`flex flex-col gap-2 ${sora.className}`}>
             <h2 className={`text-xl md:text-4xl text-center text-white font-bold`}>
               The YouTubeneur Journey Path
@@ -342,7 +342,7 @@ export default function AcceleratorInd({ loc, data }) {
           <div className="flex flex-col w-full">
             <Journey />
           </div>
-        </section> */}
+        </section>
       </div>
       <section className="relative flex flex-col py-10 md:py-20 px-5 md:px-40 gap-5 bg-white/5">
         <img src="https://i.ibb.co/jJ3gDDP/texture-BG.png" alt="texture" className="z-0 absolute top-0 left-0 w-full h-full object-cover opacity-20" />
