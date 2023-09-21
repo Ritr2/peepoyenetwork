@@ -24,7 +24,7 @@ const enquiryformData = {
           next: 'data',
           transferLink: {
             name: 'Youtubeneur Community',
-            link: 'https://www.skool.com/youtubeneur',
+            link: 'https://akassh.co/accelerator-help',
             text: `You are eligible for the Youtubeneur Membership Program, where you'll learn how to grow your YouTube channel and gain access to all the tools and resources you need for its expansion.`,
             send: true,
           }
@@ -79,7 +79,7 @@ const enquiryformData = {
           next: 'data',
           transferLink: {
             name: 'Youtubeneur Community',
-            link: 'https://www.skool.com/youtubeneur',
+            link: 'https://akassh.co/accelerator-help',
             text: `You are eligible for the Youtubeneur Membership Program, where you'll learn how to grow your YouTube channel and gain access to all the tools and resources you need for its expansion.`,
             send: true,
           }
@@ -94,7 +94,7 @@ const enquiryformData = {
           next: 'data',
           transferLink: {
             name: 'Youtubeneur Community',
-            link: 'https://www.skool.com/youtubeneur',
+            link: 'https://akassh.co/accelerator-help',
             text: `You are eligible for the Youtubeneur Membership Program, where you'll learn how to grow your YouTube channel and gain access to all the tools and resources you need for its expansion.`,
             send: true,
           }
@@ -177,7 +177,7 @@ export const enquiryformDataLead = {
           next: 'data',
           transferLink: {
             name: 'Youtubeneur Community',
-            link: 'https://www.skool.com/youtubeneur',
+            link: 'https://akassh.co/accelerator-help',
             text: `You are eligible for the Youtubeneur Membership Program, where you'll learn how to grow your YouTube channel and gain access to all the tools and resources you need for its expansion.`,
             send: true,
           }
@@ -192,7 +192,7 @@ export const enquiryformDataLead = {
           next: 'data',
           transferLink: {
             name: 'Youtubeneur Community',
-            link: 'https://www.skool.com/youtubeneur',
+            link: 'https://akassh.co/accelerator-help',
             text: `You are eligible for the Youtubeneur Membership Program, where you'll learn how to grow your YouTube channel and gain access to all the tools and resources you need for its expansion.`,
             send: true,
           }
