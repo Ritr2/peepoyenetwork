@@ -80,10 +80,6 @@ export default function Journey() {
     }
 
     useEffect(() => {
-        console.log(`value: ${value},\n remaining: ${Math.floor(remaining * 100)}`);
-    }, [remaining, value]);
-
-    useEffect(() => {
         let newProgress = value / (max - min);
         let progressBarBounds = progressBarRef.current.getBoundingClientRect();
 
