@@ -20,7 +20,7 @@ export default function page() {
     },
     {
       question:'HOW CAN I WORK WITH AKASSH?',
-      answer:`<p class="id-6Z-4PLxG-432"> Visit the <a href="https://www.peepoyenetwork.com/careers" className="underline text-blue-700">Careers</a> section on the website and look out for hiring updates in our email newsletter.`,
+      answer:`<p class="id-6Z-4PLxG-432"> Visit the <a href="/careers" className="underline text-blue-700">Careers</a> section on the website and look out for hiring updates in our email newsletter.`,
     }
   ]
   return (
