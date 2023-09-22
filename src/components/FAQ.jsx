@@ -1,5 +1,5 @@
 'use client'
-import React, { Fragment } from 'react'
+import React, { Fragment, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { useInView } from 'react-intersection-observer';
 import parse from 'html-react-parser'
@@ -10,6 +10,11 @@ export default function FAQ({ data, bgcolor = false, textcolor = false, textSize
 
   const [show, setShow] = React.useState(new Array(data.length).fill(false));
 
+  useEffect(() => {
+    console.log(show);
+  }
+    , [show]);
+
   return (
     <div ref={ref} className='flex flex-col w-full gap-2'>
       {
@@ -19,10 +24,7 @@ export default function FAQ({ data, bgcolor = false, textcolor = false, textSize
               initial={{ opacity: 0, x: '-100%', }}
               animate={inView ? { opacity: 1, x: 0, transition: { type: 'spring', duration: 0.7, delay: index * 0.3 } } : { opacity: 0, x: '-100%' }}
               onClick={() => {
-                setShow(prev => {
-                  prev[index] = !prev[index];
-                  return [...prev];
-                })
+                setShow(show.map((item, i) => i === index ? !item : false))
               }}
               className={`w-full cursor-pointer h-full ${bgcolor? bgcolor.question : 'bg-stone-300'} p-4 rounded-lg flex justify-between items-center`}>
               <h2 className={`${textSize ? textSize.question: 'text-base md:text-2xl' } font-medium ${textcolor? textcolor.question : 'text-neutral-700'}`}>{index + 1}. {parse(item.question)}</h2>

@@ -1,6 +1,7 @@
 import React from 'react'
 import { DM_Sans } from 'next/font/google'
 import FAQ from '@/components/FAQ'
+import Link from 'next/link'
 
 const dmSans = DM_Sans({
   weight: ['400', '500', '700'],
@@ -39,6 +40,10 @@ export default function page() {
             <div className="flex flex-col items-center justify-center gap-2 md:gap-5">
               <h2 className="text-xl md:text-3xl font-bold text-center text-neutral-700">Business Address</h2>
               <p className="text-base md:text-xl font-medium text-center text-neutral-600">Peepoye Network<br/>Plot No. 76D, Phase 4,<br/>Sector-14, Udyog Vihar,<br/>Gurgaon-122001, India</p>
+            </div>
+            <div className="flex flex-col items-center justify-center gap-2 md:gap-5">
+              <h2 className="text-xl md:text-3xl font-bold text-center text-neutral-700">Contact Us on Whatsapp</h2>
+              <p className="text-base md:text-xl font-medium text-center text-blue-700"><Link href="https://wa.me/+918282827192">+91 8282827192</Link></p>
             </div>
           </section>
     </main>
