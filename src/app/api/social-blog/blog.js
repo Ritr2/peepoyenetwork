@@ -5895,6 +5895,106 @@ const blogdata = [
     },
   },
   {
+    title: `Shubh Singh's Controversy: Understanding the Backlash and Cancel Culture`,
+    slug: `shubh-singhs-controversy-understanding-the-backlash-and-cancel-culture`,
+    id: 88,
+    category_id: 13,
+    description: `How a rising Punjab singer's Instagram story sparked outrage, brand backlash, and geopolitical tensions. Was it a lapse in judgment or intentional?`,
+    image: {
+      src: `https://i.ibb.co/1z8D3WC/Shubh-Singh-s-Controversy-Understanding-the-Backlash-and-Cancel-Culture.webp`,
+      alt: `Shubh Singh's Controversy: Understanding the Backlash and Cancel Culture`,
+    },
+    owner: `Ayushi Rajput`,
+    tags: [`Shubh Singh`, `Shubh Singh's Controversy`, `Khalistani singer`, `Khalistani singers list`],
+    date: `2023-09-22`,
+    summary: `In March, an unremarkable incident went unnoticed by many, but fast forward to September, and Punjab singer Shubh Singh is making headlines for all the wrong reasons. Why is Shubh in the news now? What's happening with him? Why are brands and companies distancing themselves from him? Was Shubh's act intentional or just a lapse in judgment? Who's the artist behind the controversial artwork, and what was the motive? And finally, should anyone be subjected to cancel culture? Let's delve into the details.`,
+    sections: [
+      {
+        h1: `Introduction: Why is Shubh in the news?`,
+        h2: false,
+        p: `In the world of music and social media, controversies are like wildfire, spreading swiftly and leaving behind a trail of consequences. Shubh Singh, a rising star in the music industry, gained immense popularity with millions of views on his YouTube tracks. His 'Still Rollin India Tour' was set to take off in September 2023. However, amidst the escalating tensions between India and Canada, Shubh's old Instagram story resurfaced, leading to severe backlash and the trending hashtag #BoycottBookMyShow.<br/>Shubh Singh's Instagram story featuring a distorted map of India, excluding Jammu and Kashmir, and Punjab and the Northeastern states, ignited a controversy. This act occurred when Punjab Police were actively searching for Khalistani terrorist Amritpal Singh, raising suspicions about Shubh's intentions.`,
+        image: false,
+      },
+      {
+        h1: `Backlash and Consequences`,
+        p: `The cancellation of Shubh's tour didn't stop at social media outrage. Several brands and companies took swift action in response to the growing backlash. Electronics brand boAt withdrew its sponsorship of Shubh's concerts, emphasizing its strong Indian identity and distancing itself from any association with Khalistan.<br/>Additionally, the short-video sharing application Moj, owned by Sharechat, removed all of Shubh's songs from its app's music library. BJYM Mumbai President Tajinder Singh Tiwana filed a memorandum against Shubh for distorting the map of India. Cricketers like Virat Kohli, KL Rahul, and Hardik Pandya unfollowed Shubh on Instagram.`,
+        html: {
+          type: "youtube",
+          value: `https://www.youtube.com/watch?v=fdQ4i5iJ0q8`,
+        }
+      },
+      {
+        h1: `Shubh's Intent: Was it Negligence or Misunderstanding?`,
+        p: `In his clarification post, Shubh Singh claimed that he intended to share the distorted map to pray for Punjab during reported electricity and internet shutdowns. However, this raises questions about his awareness and the necessity of using such a map to convey his message.`,
+        html: {
+          type: "twitter",
+          value: `1705218462887673965`,
+        }
+      },
+      {
+        h1: `Inkquisitive's Response: Playing the Victim`,
+        p: `The artist behind the controversial map, Amandeep Singh, who goes by "Inkquisitive," has come forward to support Shubh and claim victimization. Inkquisitive insisted that his artwork was intended to highlight the blackout in Punjab and expressed remorse for any offense caused. He blamed Indian social media users, actress Kangana Ranaut, and the "powerheads" of the Indian industry for the backlash he and Shubh faced. He asserted that he stands by his artwork despite the controversy.`,
+      },
+      {
+        h1: `The Geopolitical Context: Escalating Tensions Between India and Canada`,
+        p: `Amidst this controversy, it's crucial to note that tensions between India and Canada have been on the rise. On September 19, Canadian Prime Minister Justin Trudeau accused India of involvement in the June killing of Hardeep Singh Nijjar, a Canadian national and a vocal advocate for Khalistan. Canada also expelled a senior Indian diplomat, Pavan Kumar Rai. Nijjar had been designated as a terrorist in India. India vehemently denied these allegations and, in a retaliatory move, expelled a high-ranking Canadian diplomat, giving them five days to leave the country. These political tensions added fuel to the fire, making Shubh's Instagram story a focal point in the ongoing dispute.`,
+      },
+      {
+        h1: `Cancel Culture: A Necessary Consequence?`,
+        p: `The bigger question here is whether cancel culture should be the immediate response. While Shubh's actions were questionable, is it fair to cancel his India tour and career completely? A difference of opinion should not warrant the removal of an artist from a significant platform. Should individuals be swiftly engulfed by the cancel wave, or should we allow room for explanations, growth, and learning? There are better ways to address concerns and provoke thought without resorting to cancel culture.`,
+      },
+      {
+        h1: `The Role of Singers in Supporting Khalistan`,
+        h2: false,
+        p: `Pro-Khalistani Punjabi singers and artists from Western nations have been using music platforms like YouTube, Spotify, and Instagram to promote their separatist ideology in recent years. They create songs with lyrics that often undermine the sovereignty of regions such as Jammu & Kashmir, North-East, and India. These songs are designed to fuel anger against the Indian government, Modi, and the capital, 'Dilli,' to gain pro-Khalistan sentiments among listeners.`,
+        image: false,
+        subSections: [
+          {
+            p: `Prominent Punjabi singers have openly supported Khalistan:<br/><strong className="font-medium text-neutral-800">Jazzy B:</strong> A Canada-based singer residing in the UK, he glorified Khalistani leader Jarnail Singh Bhindranwale in his song "Putt Sardara De," advocating for a separate Sikh state.<br/><strong className="font-medium text-neutral-800">Kaur B:</strong> Known for posting a distorted Indian map, she has been tweeting to support Jarnail Singh Bhindranwale during the farmer's agitation.<br/><strong className="font-medium text-neutral-800">Diljit Dosanjh:</strong> He supported Gurpatwant Pannu's demand for Khalistan, leading to calls for an FIR against him.<br/><strong className="font-medium text-neutral-800">AP Dhillon:</strong> The famous singer faced criticism for seemingly sympathizing with the Khalistan movement during a crackdown on Amritpal Singh and his associates.<br/><strong className="font-medium text-neutral-800">Other Singers:</strong> Tarsem Jassar, Sharry Maan, Himmat Sandhu, Karan Aujla, and Jazz Dhami have also faced accusations of promoting the Khalistan movement through their social media posts and songs.`,
+          },
+          {
+            p: `This trend underscores the use of music to propagate divisive ideologies, raising concerns about artists' responsibility and their work's impact on sensitive geopolitical issues like Khalistan.`,
+          }
+        ],
+      },
+      {
+        h1: `Opinion`,
+        p: `In conclusion, the Shubh Singh incident serves as a reminder of the delicate balance between accountability and thoughtful response. While his actions may have raised concerns, it's essential to approach such situations with a measured approach. Rather than resorting to extreme measures like outright cancellation, we should consider allowing individuals to learn from their mistakes and foster understanding.<br/>In our fast-paced digital age, where controversies can escalate rapidly, it's imperative to exercise caution. Criticism and open dialogue are essential, but we should reserve complete cancellation as a last resort. Considering the intentions behind actions is essential in every situation. As responsible consumers, we should promote meaningful conversation and critical thinking rather than immediately passing judgment.<br/>Ultimately, the Shubh Singh incident highlights the need for thoughtful consideration in addressing such issues. Our preferred approach should be to hold individuals accountable while leaving room for growth and understanding. In a world that thrives on sensationalism, fostering a culture of empathy and dialogue is a valuable asset.`,
+      },
+      {
+        h1: `Vote for Your Opinion`,
+        p: `To share your opinion on this topic, click on the image below:`,
+        html: {
+          type: `poll`,
+          value: `https://opinions.peepoye.com/polls/entertainment/shubh_singh_cancelled`,
+          image: {
+            src: `https://i.ibb.co/0jHHJg4/Do-you-think-Shubh-Singh-should-be-canceled-in-India.webp`,
+            alt: `Do you think Shubh Singh should be canceled in India?`,
+          }
+        },
+      },
+    ],
+    advertisements: {
+      show: true,
+      image: {
+        src: "https://i.ibb.co/c24wbZW/X-guide-banner.png",
+        alt: "Guide X",
+        link: "/guide-x",
+      },
+    },
+    referBlog: {
+      show: true,
+      title: `Breaking the Silence:  Student Suicides in Kota`,
+      slug: `breaking-the-silence-student-suicides-in-kota`,
+    },
+    linktree: {
+      image: {
+        src: `https://i.ibb.co/s5pGW5m/Shubh-Singh-s-Controversy-Understanding-the-Backlash-and-Cancel-Culture-1.webp`,
+        alt: `Shubh Singh's Controversy: Understanding the Backlash and Cancel Culture`,
+      }
+    },
+  },
+  {
     title: `Breaking the Silence:  Student Suicides in Kota`,
     slug: `breaking-the-silence-student-suicides-in-kota`,
     id: 87,
@@ -5906,7 +6006,7 @@ const blogdata = [
     },
     owner: `Ayushi Rajput`,
     tags: [`Student Suicides in Kota`, `kota suicide cases`, `kota suicides`, `suicide cases in Kota`, `kota sucide case`, `kota student suicides`, `kota student death`],
-    date: '2023-09-23',
+    date: '2023-09-22',
     summary: `In a heartbreaking turn of events, Kota, India's test preparation capital, has witnessed a surge in student suicides, with 25 deaths this year alone. The relentless pressure on students and parental expectations is taking a toll on young minds. This blog delves into the stark facts surrounding these tragic incidents and the measures taken by authorities to address the crisis. It emphasizes the need for a holistic approach to education that prioritizes mental well-being, discusses the role of parents, and calls for a nationwide conversation on education reform.`,
     sections: [
       {
@@ -6042,7 +6142,7 @@ const blogdata = [
         alt: `Breaking the Silence:  Student Suicides in Kota`,
       }
     },
-  }
+  },
 ];
 
 export default blogdata;
