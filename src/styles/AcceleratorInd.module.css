@@ -45,15 +45,17 @@
     0% {
         border: 0px solid #09090951;
     }
+
     50% {
         border: 50px solid #09090951;
     }
+
     100% {
         border: 0px solid #09090951;
-    }        
+    }
 
 }
-    
+
 .borderPulseAnimation {
     animation: borderPulseAnimation 2s infinite forwards;
     box-sizing: content-box;

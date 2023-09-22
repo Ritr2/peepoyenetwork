@@ -5840,6 +5840,7 @@ const blogdata = [
         p: `The debate around renaming India to Bharat takes us back in time. Both names have ancient origins, but India, the name bestowed by British colonizers, has endured for centuries. Bharat, rooted in Indian culture, has always held sentimental value for many.<br/>The name Bharat is ancient. It has Sanskrit origins and is found in the Rig Veda and Puranas. It is also said to be derived from the name of Dushyanta’s son, Bharata of Mahabharata. History forces change, and the names do evolve and change over time. So, ‘Bharat’ was substituted by ‘India’ by the travelers and invaders coming from the west. During the Mughal period, the use of the word ‘Hindustan’ was a natural progression. And the British rulers who came to the ‘Indies’ of the east, gave it the name ‘India’. India was perceived as more neutral, potentially making it easier for the British to establish and maintain control.<br/>The term ‘Bharat’ has the sentimental appeal for us that ‘India’ lacks, and so we have the Indian army has the most-used battle cry of ‘Bharat Mata ki Jai’. It is also the slogan that comes as a fitting finale to any cultural event in the country.`,
         image: false,
         html: false,
+        subSections: false,
       },
       {
         h1: `The Pros of Embracing ‘Bharat’`,
@@ -5847,6 +5848,7 @@ const blogdata = [
         p: `<strong className="font-medium text-neutral-800">1. Cultural Heritage on Display:</strong> The name "Bharat" reflects the cultural heritage of the country. For centuries, before foreign invasions, this land was known as "Bharat Bhumi," "Bharat Varsh," or simply "Bharat." This name has deep historical significance, being named after the ancient king Bharat. Adopting "Bharat" as the official name will help preserve and showcase our rich cultural heritage.<br/><strong className="font-medium text-neutral-800">2. National Unity:</strong> The name ‘Bharat’ has historical significance and is mentioned in the Indian Constitution as an alternative name for India. Using it might promote a sense of national unity and pride.<br/><strong className="font-medium text-neutral-800">3. Decolonization:</strong> Changing the name from ‘India’ to ‘Bharat’ can be seen as a symbolic move towards decolonization and shedding remnants of the colonial era.<br/><strong className="font-medium text-neutral-800">4. Promoting Indian Languages:</strong> ‘Bharat’ is a name that is widely used in various Indian languages. Embracing this name may encourage the use of indigenous languages and promote linguistic diversity.`,
         image: false,
         html: false,
+        subSections: false,
       },
       {
         h1: `Cons of the Name Change`,
@@ -5854,6 +5856,7 @@ const blogdata = [
         p: `<strong className="font-medium text-neutral-800">1. Administrative and Logistical Challenges:</strong> Changing the official name of a country involves significant administrative and logistical challenges, including updating official documents, passports, currency, and international treaties. This can be a costly and time-consuming process.<br/><strong className="font-medium text-neutral-800">2. Economic Costs:</strong> Rebranding can lead to economic costs for businesses and organizations that have to update their branding, marketing materials, and products.<br/><strong className="font-medium text-neutral-800">3. Constitutional Amendment Requirement:</strong> One significant con of changing India's name to Bharat is the necessity for a constitutional amendment. Amending the constitution is a complex and time-consuming process that involves legal, political, and administrative challenges.<br/><strong className="font-medium text-neutral-800">4. Implications for Online Identity:</strong> Renaming India to Bharat could disrupt the online identity of Indian businesses and entities. The current domain extension ".in" may need to change to ".bh," creating potential confusion and complications in the digital realm. This shift would require substantial adjustments and may impact the online visibility and branding of Indian entities, adding another layer of complexity to the name change debate.<br/><strong className="font-medium text-neutral-800">5. Global Recognition:</strong> India is a well-recognized name internationally, and changing it to ‘Bharat’ might lead to confusion and difficulties in terms of global recognition and diplomacy.<br/><strong className="font-medium text-neutral-800">6. Linguistic Diversity:</strong> While ‘Bharat’ is widely used in many Indian languages, there are still numerous languages and dialects spoken across the country. Some groups may feel that their linguistic identity is not adequately represented by this name.<br/><strong className="font-medium text-neutral-800">7. Symbolic Nature:</strong> Some may argue that changing the name is a symbolic gesture and that more substantial efforts should be focused on addressing pressing issues like poverty, healthcare, education, and governance.`,
         image: false,
         html: false,
+        subSections: false,
       },
       {
         h1: false,
@@ -5868,6 +5871,7 @@ const blogdata = [
             alt: `Should India change its name to Bharat?`,
           },
         },
+        subSections: false,
       }
     ],
     advertisements: {
@@ -5887,6 +5891,155 @@ const blogdata = [
       image: {
         src: `https://i.ibb.co/j6s3z78/India-or-Bharat-The-Name-Change-Debate-History-Pros-and-Cons.png`,
         alt: `India or Bharat: The Name Change Debate- History, Pros and Cons`,
+      }
+    },
+  },
+  {
+    title: `Breaking the Silence:  Student Suicides in Kota`,
+    slug: `breaking-the-silence-student-suicides-in-kota`,
+    id: 87,
+    category_id: 13,
+    description: `The rise in student suicides in Kota, India's test prep hub, with 25 deaths this year. Explore the stark facts, government actions, and the need for holistic education reform to prioritize mental well-being and empower students.`,
+    image: {
+      src: 'https://i.ibb.co/qsNfkNb/Breaking-the-Silence-Student-Suicides-in-Kota.webp',
+      alt: `Breaking the Silence:  Student Suicides in Kota`,
+    },
+    owner: `Ayushi Rajput`,
+    tags: [`Student Suicides in Kota`, `kota suicide cases`, `kota suicides`, `suicide cases in Kota`, `kota sucide case`, `kota student suicides`, `kota student death`],
+    date: '2023-09-23',
+    summary: `In a heartbreaking turn of events, Kota, India's test preparation capital, has witnessed a surge in student suicides, with 25 deaths this year alone. The relentless pressure on students and parental expectations is taking a toll on young minds. This blog delves into the stark facts surrounding these tragic incidents and the measures taken by authorities to address the crisis. It emphasizes the need for a holistic approach to education that prioritizes mental well-being, discusses the role of parents, and calls for a nationwide conversation on education reform.`,
+    sections: [
+      {
+        h1: `Introduction: Kota Student Suicide Cases`,
+        h2: false,
+        p: `Kota is known as the coaching capital of India. Thousands of young minds gather here to prepare for competitive exams every year, hoping for a brighter future. However, in recent times, Kota has been marred by a series of tragic incidents.<br/>A recent incident on 12th September where a 16-year-old NEET aspirant became the 25th student to take their life this year, marking a sharp rise compared to previous years.`,
+        image: false,
+        html: false,
+        subSections: false,
+      },
+      {
+        h1: `Past Incidents`,
+        h2: false,
+        p: `On August 27, two other NEET students committed suicide within six hours of taking their weekly test at the coaching institute. On August 15, an 18-year-old JEE student from Bihar; on August 11, a 17-year-old JEE aspirant; on August 4, a 17-year-old engineering aspirant from Bihar; and a day earlier, on August 3, a NEET aspirant from Uttar Pradesh died by suicide. <br/>This surge, with seven suicides in Kota in the past month, is deeply concerning. How can we address students' intense pressure during their exam preparation?`,
+        image: false,
+        html: false,
+        subSections: false,
+      },
+      {
+        h1: `Aftermath`,
+        h2: false,
+        p: `Considering a rapid surge in such cases, the Kota district administration suspended all the tests for the next two months. The government also appointed a three-member psychiatrist team to look after the psychological health of Kota students.<br/>Chief Minister Ashok Gehlot expressed concerns over the surge in suicides among students preparing for competitive exams in the Kota district. He directed officials to form a committee with all the stakeholders, including coaching institutes, to suggest measures to check such cases.<br/>“There should not be any further rise in such cases… time has come for improvement. We cannot see young students committing suicide; even one kid's death is unfortunate and a huge loss for parents,” Gehlot said.<br/>Vice President Jagdeep Dhankar also interacted with the students and advised them to follow their passion. He referred to the failure of Chandrayaan-2 and the success of Chandrayaan-3, and he urged the students to choose careers in life as per their interests and aptitudes.<br/>The Rajasthan High Court asked for recommendations on averting suicides by students in coaching institutes of the state, particularly in Kota, and is considering introducing the Rajasthan Coaching Institute (Control and Regulation) Bill 2023, specifically tailored for coaching institutes.`,
+        image: false,
+        html: false,
+        subSections: false,
+      },
+      {
+        h1: `The Disturbing Statistics`,
+        h2: false,
+        p: `The numbers are undeniably chilling. Since 2015, the incidence of student suicides in Kota has been steadily rising, reaching a peak this year. Six young lives were lost in this crucible of academic stress in August alone. According to Rajasthan police data, the figure was 15 in 2022, 18 in 2019, 20 in 2018, 7 in 2017, 17 in 2016, and 18 in 2015. No student suicide was reported in Kota in 2020 and 2021, for the coaching institutes were shut down due to the Covid-19 pandemic. These statistics compel us to ask some tough questions. <br/>What drives so many promising young minds to such extremes? What measures can we take to reverse this alarming trajectory and ensure the safety and well-being of our students?`,
+        image: false,
+        html: false,
+        subSections: false,
+      },
+      {
+        h1: `The Gurukul System and Its Relevance in Modern Education`,
+        h2: false,
+        p: `The Gurukul system, a historical, educational approach in India dating back to around 5000 BC, emphasized a holistic, spiritually connected, and well-rounded education. In this system, students lived with their teachers (Gurus) and learned academic subjects, values, discipline, and practical skills. This relationship between guru and shishya (student) was sacred, with no fees but a token of respect offered by students.<br/>However, the modern education system introduced in 1835 has drifted from these principles. It fosters a competitive rat race, lacks holistic development, moral values, and ethical training, and leans towards commercialization. Physical activities and other essential life skills are often overlooked.`,
+        image: false,
+        html: false,
+        subSections: [
+          {
+            h1: false,
+            h2: false,
+            p: `In considering the question of whether India needs to reintroduce the Gurukul system, several key points emerge:<br/><strong className="font-medium text-neutral-800">1. Modern Infrastructure:</strong> To promote robust learning, a blend of academics, extracurricular activities, mindfulness, and spiritual awareness is essential for students' well-rounded development.<br/><strong className="font-medium text-neutral-800">2. Holistic Education:</strong> Shifting from a rank-based system to a value-based one that nurtures each child's uniqueness can reduce competition-related stress and build character.<br/><strong className="font-medium text-neutral-800">3. Teacher-Student Relationship:</strong> Building trust and a friendly relationship between teachers and students is crucial for effective education. This was a hallmark of the Gurukul system and can be fostered through activities and training workshops.`,
+            image: false,
+            html: false,
+          },
+          {
+            h1: false,
+            h2: false,
+            p: `Combining the best aspects of the Gurukul system with modern education can provide students with a more balanced and nurturing learning experience. This approach can reduce the undue pressure on young minds and empower them to make informed life decisions. It's time for India to revisit its rich educational heritage and create a system that fosters well-rounded individuals while ensuring academic success doesn't come at the cost of young lives.`,
+            image: false,
+            html: false,
+          }
+        ],
+      },
+      {
+        h1: `Opinion`,
+        h2: false,
+        p: `It is heartbreaking to learn that 25 lives have been lost this year alone. Kota's coaching institutes are renowned for their rigorous preparation methods, but they've inadvertently created a high-stress environment. Students, often far from their families, attend classes and prepare tirelessly for exams like NEET and JEE. The pressure to excel can become overwhelming.`,
+        image: false,
+        html: false,
+        subSections: [
+          {
+            h1: false,
+            h2: `A shift in focus`,
+            p: `Success in competitive exams should not come at the cost of a student's mental health. While fun activities and motivational support are steps in the right direction, a more profound shift is needed. Education should nurture well-rounded individuals, not just high scorers. How can we strike this balance?`,
+            image: false,
+            html: false,
+          },
+          {
+            h1: false,
+            h2: `The Role of Parents`,
+            p: `Parents are caught in this cycle of high expectations. The fear of failure drives them to push their children relentlessly. Parents must understand that exam scores do not solely define their child's worth. Education should be a journey, not a battleground.`,
+            image: false,
+            html: false,
+          },
+          {
+            h1: false,
+            h2: `Government and Education Institutions`,
+            p: `We commend the Kota district administration and Chief Minister Ashok Gehlot for their swift actions in forming committees and addressing this crisis. However, the long-term solution is revamping the education system to reduce the undue student burden. How can we reimagine education to prioritize mental well-being?`,
+            image: false,
+            html: false,
+          },
+          {
+            h1: false,
+            h2: `Mental Health Support`,
+            p: `The deployment of a psychiatrist's team is a positive step. Students must have access to mental health. Support is an integral part of their education. How can we ensure that students receive the necessary support consistently?`,
+            image: false,
+            html: false,
+          },
+          {
+            h1: false,
+            h2: `A Nationwide Dialogue on Education Reform`,
+            p: `Kota's story is not unique. Students across the country face similar pressures. It's time for a nationwide conversation on education reform. Let's prioritize creativity, critical thinking, and holistic development over rote learning. `,
+            image: false,
+            html: false,
+          },
+          {
+            h1: false,
+            h2: `Empowering Students`,
+            p: `The Vice President's advice to students to choose careers based on their interests and aptitude is invaluable. Let's empower students to follow their passions and dreams rather than conform to societal expectations.`,
+            image: false,
+            html: false,
+          },
+          {
+            h1: false,
+            h2: false,
+            p: `In conclusion, the alarming surge in student suicides in Kota demands immediate attention. It's a systemic issue that requires a comprehensive solution. The government, educational institutions, parents, and students all have a role to play in bringing about change. The Gurukul system offers valuable insights that can be integrated into the modern education framework to create more balanced, confident, and mindful individuals. Embracing such changes is crucial in preventing further tragedies like the student suicides in Kota and fostering a healthier education system. Let's work together to create an environment where academic success doesn't come at the cost of young lives.<br/>Can we collectively make this change a reality?`,
+            image: false,
+            html: false,
+          }
+        ],
+      },
+    ],
+    advertisements: {
+      show: true,
+      image: {
+        src: "https://i.ibb.co/c24wbZW/X-guide-banner.png",
+        alt: "Guide X",
+        link: "/guide-x",
+      },
+    },
+    referBlog: {
+      show: true,
+      title: `Jaahnavi Kandula: The indian student who was killed by US cop in Seattle`,
+      slug: `jaahnavi-kandula-the-indian-student-who-was-killed-by-us-cop-in-seattle`,
+    },
+    linktree: {
+      image: {
+        src: `https://i.ibb.co/X41hC4y/Breaking-the-Silence-Student-Suicides-in-Kota-1.webp`,
+        alt: `Breaking the Silence:  Student Suicides in Kota`,
       }
     },
   }

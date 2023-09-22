@@ -1,7 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react'
-import { motion, useMotionValue, useTransform, useMotionTemplate, AnimatePresence } from 'framer-motion'
-
-
+import { motion, useMotionValue, useTransform, useMotionTemplate, AnimatePresence,animate } from 'framer-motion'
+import style from '@/styles/AcceleratorInd.module.css'
 
 export default function Journey() {
     let data = [
@@ -88,7 +87,7 @@ export default function Journey() {
 
     return (
         <div className='flex flex-col gap-5 w-full md:w-10/12 self-center'>
-            <div className='flex flex-col md:flex-row border-2 border-white rounded-2xl p-2 md:p-10 overflow-hidden'>
+            <div className={`flex flex-col md:flex-row border-2 border-white rounded-2xl p-2 md:p-10 overflow-hidden ${style.redShadow}`}>
                 {
                     data.map((item, index) => (
                         <AnimatePresence key={index} mode='pop'>
@@ -99,16 +98,17 @@ export default function Journey() {
                                     <>
                                         <motion.div
                                             initial={{ opacity: 0, x: -300 }}
-                                            animate={{ opacity: 1, x: remaining * 100 < 30 ? 0 : -remaining * 600, opacity: remaining * 100 < 80 ? 1 : 0, transition: { duration: 0.7 } }}
+                                            animate={{ opacity: 1, x: remaining * 100 < 30 ? 0 : remaining * 600, opacity: remaining * 100 < 90 ? 1 : 0, transition: { duration: 0.7 } }}
                                             exit={{ display: 'none', transition: { duration: 0.1, delay: 0 } }}
                                             className='flex flex-col gap-1 md:gap-5 md:w-7/12 order-2 md:order-1'
                                         >
-                                            <h1 className='text-xl md:text-4xl text-center md:text-left font-bold text-white'>{item.title}</h1>
+                                            <h2 className='text-lg md:text-2xl text-center md:text-left font-bold text-green-700'>Challenge {index + 1}</h2>
+                                            <h3 className='text-xl md:text-4xl text-center md:text-left font-bold text-white'>{item.title}</h3>
                                             <p className='text-base md:text-xl text-center md:text-left text-white'>{item.description}</p>
                                         </motion.div>
                                         <motion.img
                                             initial={{ opacity: 0, x: 300 }}
-                                            animate={{ opacity: 1, x: remaining * 100 < 30 ? 0 : remaining * 600, opacity: remaining * 100 < 80 ? 1 : 0, transition: { duration: 0.7 } }}
+                                            animate={{ opacity: 1, x: remaining * 100 < 30 ? 0 : -remaining * 600, opacity: remaining * 100 < 90 ? 1 : 0, transition: { duration: 0.7 } }}
                                             exit={{ display: 'none', transition: { duration: 0.1, delay: 0 } }}
                                             transition={{ duration: 0.7 }}
                                             className='h-48 md:h-96 w-full md:flex-1 object-contain object-center md:object-right order-1 md:order-2'
@@ -174,16 +174,16 @@ export default function Journey() {
                             let position = event.pageX - left;
                             let newProgress = clamp(position / width, 0, 1);
                             let newValue = newProgress * (max - min);
-                            setValue(newValue, min, max);
+                            setValue(newValue);
                             setRemaining(newValue - Math.floor(newValue));
                             animate(handleX, newProgress * width);
                         }}
                     />
                 </div>
             </div>
-            <div className='flex flex-col md:flex-row gap-5 w-8/12 md:w-6/12 self-center'>
-                <button className={`flex-1 bg-red-500 rounded-lg py-2 text-white font-bold text-center ${value < 1 ? 'cursor-not-allowed' : ''}`} onClick={() => { value > 0 ? setValue(Math.ceil(value) - 1) : null; setRemaining(0) }}>Previous</button>
-                <button className={`flex-1 bg-red-500 rounded-lg py-2 text-white font-bold text-center ${value > 4 ? 'cursor-not-allowed' : ''}`} onClick={() => { value < 5 ? setValue(Math.floor(value) + 1) : null; setRemaining(0) }}>Next</button>
+            <div className='flex flex-row gap-5 w-full md:w-4/12 self-center'>
+                <button className={`flex-1 bg-red-500 rounded-lg py-2 text-white font-bold text-center hover:scale-105 ${value < 1 ? 'cursor-not-allowed' : ''}`} onClick={() => { value > 0 ? setValue(Math.ceil(value) - 1) : null; setRemaining(0) }}>Previous</button>
+                <button className={`flex-1 bg-red-500 rounded-lg py-2 text-white font-bold text-center hover:scale-105 ${value > 4 ? 'cursor-not-allowed' : ''}`} onClick={() => { value < 5 ? setValue(Math.floor(value) + 1) : null; setRemaining(0) }}>Next</button>
             </div>
         </div>
     );
