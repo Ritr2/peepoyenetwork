@@ -14,6 +14,7 @@ export const LayoutProvider = ({ children }) => {
     '/accelerator-int',
     '/youtubeneur-temp',
     '/linktree',
+    '/learn',
     '/dfy-ind',
     '/dfy-int',
   ]

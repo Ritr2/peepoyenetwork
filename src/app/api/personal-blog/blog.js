@@ -848,6 +848,12 @@ const blogdata = [
         link: "https://akassh.co/dfy-yt",
       },
     },
+    linktree: {
+      image: {
+        src: `https://i.ibb.co/TqkRhx7/why-doctors-need-community-building.webp`,
+        alt: `Why Doctors Need Community Building`,
+      }
+    },
   },
   {
     title: "Why You Should Get Your YouTube Channel Audited?",
@@ -947,6 +953,12 @@ const blogdata = [
         text: "learn more",
         link: "https://akassh.co/dfy-yt",
       },
+    },
+    linktree: {
+      image: {
+        src: `https://i.ibb.co/D7G9335/WHY-YOU-SHOULD-get-YOUR-YOUTUBE-CHANNEL-audited.webp`,
+        alt: `Why You Should Get Your YouTube Channel Audited?`,
+      }
     },
   },
   {
