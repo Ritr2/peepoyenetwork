@@ -10,11 +10,6 @@ export default function FAQ({ data, bgcolor = false, textcolor = false, textSize
 
   const [show, setShow] = React.useState(new Array(data.length).fill(false));
 
-  useEffect(() => {
-    console.log(show);
-  }
-    , [show]);
-
   return (
     <div ref={ref} className='flex flex-col w-full gap-2'>
       {
