@@ -6143,6 +6143,135 @@ const blogdata = [
       }
     },
   },
+  {
+    title: `Unveiling the Dark Realities of Academic Pressure and Demanding Justice`,
+    slug: `unveiling-the-dark-realities-of-academic-pressure-and-demanding-justice`,
+    id: 86,
+    category_id: 13,
+    description: `The tragic incident at NIT Silchar, where a student's suicide sparks protests and demands for justice.`,
+    image: {
+      src: `https://i.ibb.co/KshP3Ps/Unveiling-the-Dark-Realities-of-Academic-Pressure-and-Demanding-Justice.webp`,
+      alt: `Unveiling the Dark Realities of Academic Pressure and Demanding Justice`,
+    },
+    owner: `Ayushi Rajput`,
+    tags: [`NIT Silchar`, `Koj Buker`, `student protest`, `student suicide`,],
+    date: '2023-09-23',
+    summary: `Sometimes, the pressure can become unbearable in a world of academic aspirations and student dreams. NIT Silchar, a place where young minds are supposed to flourish, has recently been marred by a heart-wrenching incident that has shaken the very core of the institution. On September 15, 2023, a third-year electrical engineering student ended his life. Allegations of academic pressure and mistreatment by the Academic Dean have ignited protests among students, demanding justice for the student. This story is not just a personal tragedy; it's a reflection of the anguish that haunts countless students across our nation. What happens when institutions meant to nurture young minds fail to protect them?`,
+    sections: [
+      {
+        h1: `What Really Happened?`,
+        p: `On the evening of September 15, 2023, Koj Buker, a bright third-year electrical engineering student at NIT Silchar, took his own life in his hostel room. His friends shared their harrowing account: a desperate attempt to knock on his door, only to find him hanging lifeless. His absence hangs like a heavy cloud over the hearts of his friends and family. The aftermath saw a protest that escalated into violence, leaving many injured, including a female student with a fractured leg.`,
+      },
+      {
+        h1: `The Agony of Unanswered Questions`,
+        p: `We are left grappling with questions that haunt our souls. Why did a bright, young student, full of life and dreams, see no other way out? What pushed Koj Buker to the brink of despair? It's a pain that resonates with his family and every soul that has ever faced the crushing weight of expectations and adversity.`,
+      },
+      {
+        h1: `Aftermath`,
+        p: `What do you do when justice seems elusive? You take to the streets. And that's precisely what happened at NIT Silchar. Furious over Koj's alleged mistreatment, students staged protests, demanding the removal of Dean BK Roy, whom they held responsible for Koj's suicide. Their peaceful protests soon descended into chaos and violence, with clashes erupting between students and the police. They even vandalized the dean's residence. Did they go too far, or is this the way to shake the system to its core?<br/>Picture this: Lathi charges, injured students, and even a water bottle chucked at the Superintendent of Police! Who should bear the blame for this chaos?<br/>B.K. Roy has been temporarily replaced from his position, according to the latest news.`,
+      },
+      {
+        h1: `The Backstory: Struggles Unveiled`,
+        p: `Koj's journey was marred by personal challenges; his struggle began long before that fateful day. He faced backlogs in his first year because of internet connectivity issues during the pandemic and the loss of his mother. In his fourth semester, his father had a paralysis attack, so he couldn’t take exams, due to which he had backlogs. Desperate for a second chance, he appealed for a special examination, only to be met with a heart-wrenching rejection. His application was humiliatingly torn apart by the dean. His depression deepened as a result of this rejection.`,
+      },
+      {
+        h1: `The Director Remarks: “Chooti-Moti Baat”`,
+        p: `NIT Silchar Director Dilip Kumar Baidya expressed sympathy for Koj's tragic end and pointed to his academic record. His callous remark, calling this incident a "Chooti-Moti Baat," reveals a culture of indifference towards students' well-being, leaving us to wonder if empathy has been replaced by callousness in our educational institutions. Come on, Mr. Director, a student's suicide isn't 'Choota Mota'! Students are enraged; should the director be held accountable for his insensitivity? This stance and his absence during this crisis leave us wondering: Do our educational institutions genuinely value their students?`,
+      },
+      {
+        h1: `The Pain of Koj's Family`,
+        p: `Koj's family, grappling with the unimaginable loss of their beloved son, is now seeking justice. His father's determination to uncover the truth highlights the pain that lingers in the hearts of those left behind. <br/>Losing a child at such a tender age is unimaginable. You and I, maybe, can never imagine the pain Koj’s parents are going through. Koj's family has taken the painful step of filing an FIR because they believe there is more to their son's death than meets the eye. They have returned Koj's body to their serene village of Ziro in Arunachal Pradesh and are waiting for justice.`,
+      },
+      {
+        h1: `A Pattern of Tragedy`,
+        p: `This incident is not an isolated one. It's deeply disconcerting that NIT Silchar has a history of student suicides linked to academic pressures. In 2011-12, a student named Rajshekhar jumped from the Academic Building of the National Institute of Technology, Silchar. Students raised their voices and protested for days, demanding improvements in academic structures. However, they were threatened to lose job offers from multinational companies if they didn't stop. In 2021, a second-year student named Kushal Singh also took his own life. And in September 2020, a third-year Electrical Engineering student named Shubankar Pandit also lost his life. Shubankar's father, Rakesh Pandit, accused a dean of denying him a meeting when he requested one. He said that Shubankar was not allowed to take exams due to attendance issues, pushing him to choose this path.<br/><i>Shouldn't our educational institutions be more attentive to the emotional well-being of their students, ensuring that such tragic outcomes are prevented?</i><br/><i>Is it time to reevaluate how we structure our education system, focusing on the holistic well-being of our students rather than just academic performance?</i>`,
+      },
+      {
+        h1: `A Broken System: Is It To Blame?`,
+        p: `Let's talk about the real culprit here – the education system. Koj's friends and fellow students argue that it's not just the individuals but the entire system to blame. They claim Koj was a cheerful soul who loved playing football and strumming his guitar. So, where did it all go wrong? Was it the relentless pressure to clear backlogs? Or perhaps the institution failed to provide the support he needed when times got tough?`,
+      },
+      {
+        h1: `The Students Demands`,
+        p: `In the wake of the tragic incident at NIT Silchar, students united in their demands for justice and change. These six crucial demands reflect their anguish and determination to ensure such a tragedy does not recur.`,
+        subSections: [
+          {
+            h2: `Demand 1: Dispelling False Allegations`,
+            p: `The students passionately assert that Koj Buker was mentally and physically strong and not a drug addict. They argue that the administration unjustly labeled him mentally unstable and a drug addict, damaging his reputation. They call for the administration to clear his name and dispel these harmful rumors.`,
+          },
+          {
+            h2: `Demand 2: Resignation of the Dean`,
+            p: `Accusations have been leveled at Professor B. K. Roy, the Dean of Academics, regarding his role in Koj's tragic suicide. The students demand his resignation, believing it is vital to ensure that justice prevails in Koj Buker's case.`,
+          },
+          {
+            h2: `Demand 3: An FIR and Comprehensive Support`,
+            p: `The students insist on a thorough investigation into the circumstances surrounding Koj's alleged suicide. They call upon the college administration to file an FIR and provide comprehensive support to Koj Buker's grieving family. This support encompasses financial, legal, and security assistance and essential emotional support during this difficult time.`,
+          },
+          {
+            h2: `Demand 4: Assurance of Non-Disciplinary Actions`,
+            p: `In a bid to safeguard the rights of those involved in the protests, the students demand written assurance from NIT Silchar Administration that there will be no disciplinary or academic actions taken against them. They seek to prevent any legal repercussions by the Cachar Administration.`,
+          },
+          {
+            h2: `Demand 5: Review of Disciplinary Actions`,
+            p: `To promote students' mental health and well-being, the students demand a review of all ongoing and pending disciplinary actions taken against the victim students under the college administration. The goal is to relax these actions, thereby avoiding the recurrence of such tragic incidents in the future.`,
+          },
+          {
+            h2: `Demand 6: High-Level Committee for Academic Reforms`,
+            p: `Recognizing the need for systemic change, the students propose the establishment of a high-level committee. This committee would bring academic reforms at NIT Silchar, ultimately reducing the burden on students' minds and ensuring their overall well-being. It is to comprise members from the NIT Silchar administration, Student Representatives of NIT Silchar, as well as other Government Officials and experts.`,
+          },
+          {
+            p: `As we consider these impassioned demands made by the students of NIT Silchar, one question echoes in our minds: Are our educational institutions doing enough to safeguard our students' mental health and well-being? These demands are pleas for justice and a call for a more empathetic, supportive, and nurturing educational ecosystem.<br/>What do you believe, dear reader? Do these demands resonate with the need for change in our educational institutions?`,
+          }
+        ]
+      },
+      {
+        h1: `Our Collective Responsibility`,
+        p: `As a society, we must acknowledge our role in nurturing the mental health of our students. Their dreams, aspirations, and mental health are not just their responsibility but ours too. Violence is not the solution; a call for reform and empathy is essential.<br/>Koj Buker's death raises a question: Does our education system put so much pressure on our youth that ending their lives seems easier than moving forward and facing difficulties? Our academic institutions should listen to their students, show empathy, and understand them. Students' lives, dreams, and mental and emotional health are equally important.`,
+      },
+      {
+        h1: `Opinion`,
+        subSections: [
+          {
+            h2: `1. Disappointment in the Director’s response`,
+            p: `While it's crucial to maintain a balanced perspective and await the results of investigations, the director's response and actions during this incident were disappointing. Treating students like your children means more than words; it implies action!`,
+          },
+          {
+            h2: `2. Demand for Accountability`,
+            p: `Those allegations against Dean BK Roy? They better be investigated and, if guilty, held accountable. The students' demands for justice are valid—the alleged role of the Dean of Academics, Professor B.K. Roy, in the suicide case, cannot be ignored. If any faculty member's actions contributed to a student's suffering, accountability should be upheld. A thorough investigation must uncover the truth and ensure justice is served. No one should be above accountability, regardless of their position within the institution.`,
+          },
+          {
+            h2: `3. The Need for Compassion`,
+            p: `The incident raises serious concerns about the lack of empathy within the academic system. Koj Buker's friends revealed that he faced genuine challenges, including internet connectivity issues due to the COVID lockdown and personal family struggles. Such circumstances demand understanding and support from educational institutions. The tragic end of Koj Buker serves as a painful reminder that students are not just academic statistics but individuals with their own challenges and vulnerabilities. Institutions must prioritize their students’ well-being and offer support in times of need. The absence of compassion in the academic system is a cause for concern that cannot be ignored.`,
+          },
+          {
+            h2: `4. Prioritizing Mental Well-being`,
+            p: `It's evident that our education system, institutions, and society need to prioritize our students' mental well-being. Only then can we truly claim to stand by our youth, who are the future of our nation. Young people often face their life challenges in silence. The tragedy of Koj Buker should serve as a stark reminder that education should never come at the cost of a student's mental health and well-being. The relentless academic pressures students face have become all too common, leading to tragic consequences. We must demand a shift in our education system, one that promotes a supportive and empathetic campus culture that genuinely cares for its students. Mental health should never be sacrificed in the pursuit of education.`,
+          },
+          {
+            p: `In this saga of pain and protest, one can't help but wonder: How many more young lives must be lost before institutions wake up to their responsibility? It's time for a thorough introspection and a commitment to change at NIT Silchar and at educational institutions nationwide. It's time to rewrite the narrative and create a campus culture that truly cares for its students. In the memory of Koj Buker and others like him, let us be the catalysts of that change.<br/>We at Peepoye Network demand answers, change, and justice for Koj Buker and all students who have suffered due to the inadequacies of our education system. <br/>What are your thoughts on this issue? Do you believe the institution should be held accountable? `,
+          }
+        ]
+      }
+    ],
+    advertisements: {
+      show: true,
+      image: {
+        src: "https://i.ibb.co/c24wbZW/X-guide-banner.png",
+        alt: "Guide X",
+        link: "/guide-x",
+      },
+    },
+    referBlog: {
+      show: true,
+      title: `Breaking the Silence: Student Suicides in Kota`,
+      slug: `breaking-the-silence-student-suicides-in-kota`,
+    },
+    linktree: {
+      image: {
+        src: `https://i.ibb.co/zVbVv8g/Unveiling-the-Dark-Realities-of-Academic-Pressure-and-Demanding-Justice-1.webp`,
+        alt: `Unveiling the Dark Realities of Academic Pressure and Demanding Justice`,
+      }
+    },
+  }
 ];
 
 export default blogdata;

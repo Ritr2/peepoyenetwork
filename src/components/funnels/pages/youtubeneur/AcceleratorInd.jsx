@@ -344,7 +344,7 @@ export default function AcceleratorInd({ loc, data }) {
           </div>
         </section>
       </div>
-      <section className="relative flex flex-col py-10 md:py-20 px-5 md:px-40 gap-5 bg-white/5">
+      <section className="relative flex flex-col z-20 py-10 md:py-20 px-5 md:px-40 gap-5 bg-white/5">
         <img src="https://i.ibb.co/jJ3gDDP/texture-BG.png" alt="texture" className="z-0 absolute top-0 left-0 w-full h-full object-cover opacity-20" />
         <div className={`z-10 flex flex-col gap-2 ${sora.className}`}>
           <PaymentSection loc={loc} data={data} />

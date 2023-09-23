@@ -236,6 +236,18 @@ export default function PaymentSection({ loc, data }) {
       quantity: {
         lifetime: 1,
       }
+    },
+    {
+      text: `<span className="font-normal text-red-500">Limited Bonus:</span> Free one-on-one consulting calls for the first 25 members`,
+      price: {
+        ind: 49999,
+        int: 999
+      },
+      plan: ['lifetime', 'yearly'],
+      quantity: {
+        lifetime: 1,
+        yearly: 1,
+      }
     }
   ]
 
@@ -316,12 +328,12 @@ export default function PaymentSection({ loc, data }) {
               }
               return acc
             }, 0))
-            .toLocaleString(loc === 'ind' ? 'en-IN' : 'en-US', {
-              minimumFractionDigits: 0,
-              maximumFractionDigits: 2,
-              style: 'currency',
-              currency: loc === 'ind' ? 'INR' : 'USD'
-            })}/-<span className='absolute left-0 right-0 h-1 opacity-40 border-b-2 border-white' /></span></h2>
+              .toLocaleString(loc === 'ind' ? 'en-IN' : 'en-US', {
+                minimumFractionDigits: 0,
+                maximumFractionDigits: 2,
+                style: 'currency',
+                currency: loc === 'ind' ? 'INR' : 'USD'
+              })}/-<span className='absolute left-0 right-0 h-1 opacity-40 border-b-2 border-white' /></span></h2>
         </div>
         <div className="flex flex-col gap-2">
           <button className={`text-lg md:text-2xl ${style.bgRed} text-white px-3 py-2 rounded-md  hover:scale-105 active:scale-95 transition duration-300 ease-in-out shadow-md`} onClick={() => handlePayment()}>
@@ -338,20 +350,20 @@ export default function PaymentSection({ loc, data }) {
             )
           }
         </div>
-        {
-          dataFormVisible && (
-            <PaymentForm setDataFormVisible={setDataFormVisible} currentPlan={currentPlan} successUrl={data ? `${url}/${data.yes.query}?product=${data.yes.product}` : dataP[loc][currentPlan].successlink} />
-          )
-        }
-        {
-          loading && (
-            <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex flex-col gap-6 justify-center items-center z-50 backdrop-filter backdrop-blur-sm">
-              <h2 className="text-xl md:text-3xl font-bold text-center text-white">Please wait while we redirect you to the payment Gateway...</h2>
-              <div className="loader" />
-            </div>
-          )
-        }
       </div>
+      {
+        dataFormVisible && (
+          <PaymentForm setDataFormVisible={setDataFormVisible} currentPlan={currentPlan} successUrl={data ? `${url}/${data.yes.query}?product=${data.yes.product}` : dataP[loc][currentPlan].successlink} />
+        )
+      }
+      {
+        loading && (
+          <div className="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex flex-col gap-6 justify-center items-center z-50 backdrop-filter backdrop-blur-lg">
+            <h2 className="text-xl md:text-3xl font-bold text-center text-white">Please wait while we redirect you to the payment Gateway...</h2>
+            <div className="loader" />
+          </div>
+        )
+      }
     </div>
   )
 }

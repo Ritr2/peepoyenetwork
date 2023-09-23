@@ -77,7 +77,7 @@ export default async function page({ searchParams }) {
     const { data, totalPage } = await getSocialBlogs(page, search);
 
     return (
-        <main className={`flex flex-col items-center justify-between min-h-screen gap-2 md:gap-10 pt-10 ${robo.className}`}>
+        <main className={`flex flex-col items-center justify-between min-h-screen gap-5 md:gap-10 pt-10 ${robo.className}`}>
             <div className="flex flex-col items-center w-full gap-4 text-center">
                 <div className="flex flex-col items-center gap-2">
                     <Link href="/learn">
