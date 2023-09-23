@@ -6,7 +6,6 @@ import { AiFillFacebook, AiOutlineInstagram, AiOutlineYoutube } from 'react-icon
 import Link from 'next/link';
 import { RiTwitterXFill } from 'react-icons/ri';
 import LearnSearch from '@/components/linktree/LearnSearch';
-import FunnelFooter from '@/components/funnels/FunnelFooter';
 import Footer from '@/components/Footer';
 
 
@@ -16,8 +15,8 @@ const robo = Roboto_Serif({
 })
 
 export const metadata = {
-    title: `Learn from Akassh`,
-    description: `Read the blogs`,
+    title: `Akassh's Weekly Learning Blogs`,
+    description: `Discover valuable insights on YouTube, Business, Online Authority, Career advice, Soft Skills, and more, drawn from Akassh's 20 years in corporate leadership and his journey to 1 million YouTube subscribers with a winning strategy.`,
     images: [
         {
             url: 'https://i.ibb.co/GdRJ5sw/akasshashokgupta.webp',
@@ -28,10 +27,10 @@ export const metadata = {
     ],
     url: 'https://peepoye.com/learn',
     type: 'website',
-    keywords: [`akassh ashok gupta`, `akassh ashok gupta learn`, `peepoye akassh ashok gupta learn`],
+    keywords: [`Akassh Ashok Gupta`, `Akassh`, `Akassh Gupta`, `Akassh Ashok`, `Akassh Ashok Gupta`, `Akassh Ashok Gupta Blogs`, `Akassh Ashok Gupta Blog`, `Akassh Gupta Blogs`, `Akassh Gupta Blog`, `Akassh Ashok Blogs`, `Akassh Ashok Blog`, `Akassh Blogs`, `Akassh Blog`, `Akassh Ashok Gupta Learn`, `Akassh Gupta Learn`, `Akassh Ashok Learn`, `Akassh Learn`, `Akassh Ashok Gupta Learning`, `Akassh Gupta Learning`, `Akassh Ashok Learning`, `Akassh Learning`, `Akassh Ashok Gupta Weekly Learning`, `Akassh Gupta Weekly Learning`, `Akassh Ashok Weekly Learning`, `Akassh Weekly Learning`, `Akassh Ashok Gupta Weekly Learning Blogs`, `Akassh Gupta Weekly Learning Blogs`, `Akassh Ashok Weekly Learning Blogs`, `Akassh Weekly Learning Blogs`, `Akassh Ashok Gupta Weekly Learning Blog`, `Akassh Gupta Weekly Learning Blog`, `Akassh Ashok Weekly Learning Blog`, `Akassh Weekly Learning Blog`],
     openGraph: {
-        title: 'Learn from Akassh',
-        description: `Read the blogs`,
+        title: `Akassh's Weekly Learning Blogs`,
+        description: `Discover valuable insights on YouTube, Business, Online Authority, Career advice, Soft Skills, and more, drawn from Akassh's 20 years in corporate leadership and his journey to 1 million YouTube subscribers with a winning strategy.`,
         images: [
             {
                 url: 'https://i.ibb.co/GdRJ5sw/akasshashokgupta.webp',
@@ -45,8 +44,8 @@ export const metadata = {
     },
     twitter: {
         card: 'summary_large_image',
-        title: 'Learn from Akassh',
-        description: 'Read the blogs',
+        title: `Akassh's Weekly Learning Blogs`,
+        description: 'Discover valuable insights on YouTube, Business, Online Authority, Career advice, Soft Skills, and more, drawn from Akassh\'s 20 years in corporate leadership and his journey to 1 million YouTube subscribers with a winning strategy.',
         images: ['https://i.ibb.co/GdRJ5sw/akasshashokgupta.webp'],
         creator: '@peepoye',
     },
@@ -82,7 +81,7 @@ export default async function page({ searchParams }) {
             <div className="flex flex-col items-center w-full gap-4 text-center">
                 <div className="flex flex-col items-center gap-2">
                     <Link href="/learn">
-                    <img src="https://i.ibb.co/GdRJ5sw/akasshashokgupta.webp" alt="Akassh" className='w-24 h-24 rounded-full shadow-xl drop-shadow-xl border-2 border-neutral-300' />
+                    <img src="https://i.ibb.co/GdRJ5sw/akasshashokgupta.webp" alt="Akassh" className='w-24 h-24 object-contain object-bottom rounded-full shadow-xl drop-shadow-xl border-2 border-neutral-300' />
                     </Link>
                     <Link href="/learn">
                     <h1 className="text-sm md:text-base font-light text-neutral-800">@akasshashokgupta</h1>

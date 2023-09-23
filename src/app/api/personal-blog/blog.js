@@ -86,7 +86,13 @@ const blogdata = [
         text: "learn more",
         link: "https://akassh.co/dfy-yt",
       },
-    }
+    },
+    linktree: {
+      image: {
+        src: `https://i.ibb.co/fXZW30x/DONOT-DO-THIS-ON-YOUTUBE-1.webp`,
+        alt: `The reason you must start a YouTube Channel in the year 2023!`,
+      }
+    },
   },
   {
     title: "Grow fast on YouTube: 5 Common Mistakes to Avoid",
@@ -162,7 +168,13 @@ const blogdata = [
         text: "learn more",
         link: "https://www.peepoyenetwork.com/youtube-channel-audit-booking-ind",
       }
-    }
+    },
+    linktree: {
+      image: {
+        src: `https://i.ibb.co/ZTRqszB/DONOT-DO-THIS-ON-YOUTUBE.webp`,
+        alt: `DONOT DO THIS ON YOUTUBE`,
+      }
+    },
   },
   {
     title: "Niche Understanding: Key to Success in YouTube Video Creation",
@@ -244,6 +256,12 @@ const blogdata = [
         link: "https://akassh.co/dfy-yt",
       },
     },
+    linktree: {
+      image: {
+        src: `https://i.ibb.co/DRPzJv5/UNDERSTANDING-YOUTUBE-NICHE.webp`,
+        alt: `Niche Understanding: Key to Success in YouTube Video Creation`,
+      }
+    },
   },
   {
     title: "Why Influence Marketing is becoming the #1 tool for Modern Brands?",
@@ -313,6 +331,12 @@ const blogdata = [
         text: "learn more",
         link: "https://akassh.co/dfy-yt",
       },
+    },
+    linktree: {
+      image: {
+        src: `https://i.ibb.co/2yMywjq/Why-Influence-Marketing-is-becoming-the-1-tool-for-Modern-Brands.webp`,
+        alt: `Why Influence Marketing is becoming the #1 tool for Modern Brands?`,
+      }
     },
   },
   {
@@ -418,7 +442,13 @@ const blogdata = [
         text: "learn more",
         link: "https://akassh.co/dfy-yt",
       },
-    }
+    },
+    linktree: {
+      image: {
+        src: `https://i.ibb.co/ngF5Ry2/GET-YOUR-CHANNEL-AUDITED-BY-YOUTUBE-EXPERTS.webp`,
+        alt: `GET YOUR CHANNEL AUDITED BY YOUTUBE EXPERTS`,
+      }
+    },
   },
   {
     title: "Maximize Views: Guide to Engaging YouTube Thumbnails & Titles",
@@ -512,7 +542,13 @@ const blogdata = [
         text: "learn more",
         link: "https://akassh.co/dfy-yt",
       },
-    }
+    },
+    linktree: {
+      image: {
+        src: `https://i.ibb.co/Rz9TdSG/THE-ULTIMATE-GUIDE-TO-CREATE-ENGAGING-THUMBNAILS-TITLES.webp`,
+        alt: `THE ULTIMATE GUIDE TO CREATE ENGAGING THUMBNAILS & TITLES`,
+      }
+    },
   },
   {
     title: "Increase your audience retention: Tips to create engaging YouTube videos",
@@ -593,6 +629,12 @@ const blogdata = [
         link: "https://akassh.co/dfy-yt",
       },
     },
+    linktree: {
+      image: {
+        src: `https://i.ibb.co/G2dTQXy/CREATING-ENGAGING-CONTENT-ON-YOUTUBE.webp`,
+        alt: `CREATING-ENGAGING-CONTENT-ON-YOUTUBE`,
+      }
+    },
   },
   {
     title: "YouTube SEO: Rank your Video & Channel High on YouTube",
@@ -653,6 +695,12 @@ const blogdata = [
         text: "learn more",
         link: "https://akassh.co/dfy-yt",
       },
+    },
+    linktree: {
+      image: {
+        src: `https://i.ibb.co/7gzb8Qt/HACK-TO-RANK-HIGHER-IN-YOUTUBE-SEARCH-RESULTS.webp`,
+        alt: `HACK-TO-RANK-HIGHER-IN-YOUTUBE-SEARCH-RESULTS`,
+      }
     },
   },
   {
@@ -723,6 +771,12 @@ const blogdata = [
         text: "learn more",
         link: "https://akassh.co/namecheap",
       },
+    },
+    linktree: {
+      image: {
+        src: `https://i.ibb.co/hVQWM4z/BEST-MARKETING-WAYS-FOR-2023.webp`,
+        alt: `4 Reasons Why You Need a Website: Necessity, Not a Luxury!`,
+      }
     },
   },
   {
@@ -1027,7 +1081,13 @@ const blogdata = [
         text: "learn more",
         link: "https://akassh.co/convertkit",
       },
-    }
+    },
+    linktree: {
+      image: {
+        src: `https://i.ibb.co/WFR9q1p/BEST-MARKETING-WAYS-FOR-2023-2.webp`,
+        alt: `Best ways of Marketing in 2023`,
+      }
+    },
   },
   {
     title: "Becoming an Influencer while Studying or Working: Breaking Myths & Taking step",
@@ -1085,7 +1145,7 @@ const blogdata = [
       image: false,
       subSections: false,
     }
-  ],
+    ],
     advertisements: {
       show: true,
       h1: "Want To Become An Influencer But Still Not Sure?",
@@ -1099,7 +1159,13 @@ const blogdata = [
         text: "learn more",
         link: "/guide-brb",
       },
-    }
+    },
+    linktree: {
+      image: {
+        src: `https://i.ibb.co/fGc2hZ5/STUDIES-JOB-AND-INFLUENCING-AT-THE-SAME-TIME.webp`,
+        alt: `Becoming an Influencer while Studying or Working: Breaking Myths & Taking step`,
+      }
+    },
   },
   {
     title: "The Golden Rule of Conversation: Wearing Someone Else's Shoes",
@@ -1169,6 +1235,12 @@ const blogdata = [
         text: "learn more",
         link: "https://akassh.co/dfy-yt",
       },
+    },
+    linktree: {
+      image: {
+        src: `https://i.ibb.co/pwv582Z/The-1-rule-to-strike-a-good-conversation.webp`,
+        alt: `The Golden Rule of Conversation: Wearing Someone Else's Shoes`,
+      }
     },
   },
   {
@@ -1247,7 +1319,14 @@ const blogdata = [
         link: "https://akassh.co/dfy-yt",
       },
     },
-  },{
+    linktree: {
+      image: {
+        src: `https://i.ibb.co/tpxcqQ3/WILL-AI-TAKE-ALL-THE-JOBS.webp`,
+        alt: `Will AI Take Over All Jobs? Unveiling the Truth and Exploring New Opportunities`,
+      }
+    },
+  },
+  {
     title: "Research and Scripting: The Foundation of Great Content",
     slug: "research-and-scripting-the-foundation-of-great-content",
     id: 16,
@@ -1296,6 +1375,12 @@ const blogdata = [
         text: "learn more",
         link: "https://akassh.co/accelerator-prebook",
       },
+    },
+    linktree: {
+      image: {
+        src: `https://i.ibb.co/JRDLKNk/Why-is-Research-and-Scripting-Your-Secret-Tool.webp`,
+        alt: `Research and Scripting: The Foundation of Great Content`,
+      }
     },
   },
   {
@@ -1385,6 +1470,12 @@ const blogdata = [
         text: "learn more",
         link: "https://akassh.co/dfy-yt",
       },
+    },
+    linktree: {
+      image: {
+        src: `https://i.ibb.co/Nnh9Crk/MAKING-MONEY-ON-YOUTUBE.webp`,
+        alt: `Making Money with YouTube Has Never Been Easier!`,
+      }
     },
   },
   {
@@ -1499,6 +1590,12 @@ const blogdata = [
         link: "https://akassh.co/dfy-yt",
       },
     },
+    linktree: {
+      image: {
+        src: `https://i.ibb.co/pQwXmSg/negotiation.webp`,
+        alt: `Mastering the Art of Salary Negotiation: Unlocking Your Worth`,
+      }
+    },
   },
   {
     title: "Choosing the Right Career: The 4P Rule",
@@ -1568,6 +1665,12 @@ const blogdata = [
         text: "learn more",
         link: "https://akassh.co/dfy-yt",
       },
+    },
+    linktree: {
+      image: {
+        src: `https://i.ibb.co/6y5wRnj/WHICH-CAREER-IS-FOR-YOU.webp`,
+        alt: `Choosing the Right Career: The 4P Rule`,
+      }
     },
   },
   {
@@ -1652,6 +1755,12 @@ const blogdata = [
         text: "learn more",
         link: "https://akassh.co/dfy-yt",
       },
+    },
+    linktree: {
+      image: {
+        src: `https://i.ibb.co/TmWw6nV/THREADS-APP-AN-OPPORTUNITY-FOR-YOUTUBERS.webp`,
+        alt: `Instagram's Threads App: A Golden Opportunity for Creators`,
+      }
     },
   },
   {
@@ -1801,6 +1910,12 @@ const blogdata = [
         link: "https://akassh.co/dfy-yt",
       },
     },
+    linktree: {
+      image: {
+        src: `https://i.ibb.co/kXXBm1f/ACE-IN-YOUR-INTERVIEW.webp`,
+        alt: `Mastering the Art of Acing Interviews: Your 4-Step Guide`,
+      }
+    },
   },
   {
     title: "The New Twitter: “X” can make you RICH!",
@@ -1858,7 +1973,7 @@ const blogdata = [
       {
         h1: `Get "The Ultimate Guide to Monetize X" Now!`,
         h2: false,
-        p:`Are you excited to dive into the world of monetization on X? Well, buckle up because we're about to take you on a ride through our exclusive guidebook – "The Ultimate Guide to Monetize X," – designed to be your secret weapon for making the most out of your content. We won't leave you hanging with generic advice. This guidebook is all about YOU, your niche, and your unique style.`,
+        p: `Are you excited to dive into the world of monetization on X? Well, buckle up because we're about to take you on a ride through our exclusive guidebook – "The Ultimate Guide to Monetize X," – designed to be your secret weapon for making the most out of your content. We won't leave you hanging with generic advice. This guidebook is all about YOU, your niche, and your unique style.`,
         image: false,
         subSections: false,
       },
@@ -1880,6 +1995,12 @@ const blogdata = [
         text: "learn more",
         link: "guide-x",
       },
+    },
+    linktree: {
+      image: {
+        src: `https://i.ibb.co/HnBWs1f/Get-Rich-by-Sharing-Your-Opinions.webp`,
+        alt: `The New Twitter: “X” can make you RICH!`,
+      }
     },
   },
   {
@@ -1988,6 +2109,12 @@ const blogdata = [
         link: "https://akassh.co/accelerator-prebook",
       },
     },
+    linktree: {
+      image: {
+        src: `https://i.ibb.co/Czj4HMR/MULTIPLE-REVENUE-STREAMS-FROM-YOUTUBE.webp`,
+        alt: `Build Multiple Revenue Streams Leveraging YouTube`,
+      }
+    },
   },
   {
     title: "Time Management: Making Your Each Day Count",
@@ -2094,6 +2221,12 @@ const blogdata = [
         text: "learn more",
         link: "https://akassh.co/accelerator-prebook",
       },
+    },
+    linktree: {
+      image: {
+        src: `https://i.ibb.co/bbVmRM4/Mastering-Time-The-Ultimate-Guide.webp`,
+        alt: `Time Management: Making Your Each Day Count`,
+      }
     },
   }
 ]

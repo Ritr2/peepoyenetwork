@@ -30,7 +30,7 @@ export async function generateMetadata({ params }) {
     type: 'article',
     keywords: data.blog.tags,
     openGraph: {
-      title: `${data.blog.title} - Peepoye`,
+      title: `${data.blog.title} - Akassh`,
       description: data.blog.description,
       images: [
         {
@@ -48,7 +48,7 @@ export async function generateMetadata({ params }) {
     },
     twitter: {
       card: 'summary_large_image',
-      title: `${data.blog.title} - Peepoye`,
+      title: `${data.blog.title} - Akassh`,
       description: data.blog.description,
       images: [data.blog.image.src],
       creator: '@peepoye',
