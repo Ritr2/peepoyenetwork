@@ -129,7 +129,23 @@ export default async function page({ params }) {
                         section.p && <p className="text-base md:text-lg font-light social-anchor-tag text-left text-neutral-600">{parse(section.p)}</p>
                       }
                       {
-                        section.html && <div className="self-center text-base md:text-lg font-light text-left text-neutral-600 w-full my-6">
+                        section.list && <ul className={`text-base md:text-lg flex flex-col gap-2 font-light text-left anchor-tag ${section.p? `pt-5`: `pt-1`}`}>
+                          {
+                            section.list.map((listItem, index3) => (
+                              <li key={index3} className='text-neutral-600 flex flex-row gap-2'>
+                                <span className='text-neutral-700 font-semibold select-none'>{index3 + 1}.</span>
+                                <span className='overflow-x-hidden'>
+                                  {
+                                    listItem.h1 && <span className='text-neutral-700 font-semibold'>{parse(listItem.h1)}: </span>
+                                  }
+                                  {parse(listItem.p)}</span>
+                              </li>
+                            ))
+                          }
+                        </ul>
+                      }
+                      {
+                        section.html && <div className="self-center text-base md:text-lg font-light text-left text-neutral-600 w-full pt-5">
                           {
                             section.html.type === 'twitter' &&
                             <div className='flex flex-col justify-center items-center' data-theme="light">
@@ -159,7 +175,7 @@ export default async function page({ params }) {
                         </div>
                       }
                       {
-                        section.image && <img src={section.image.src} alt={section.image.alt} className="w-full rounded-lg h-auto" draggable={false} />
+                        section.image && <img src={section.image.src} alt={section.image.alt} className="w-full rounded-lg h-auto mt-5" draggable={false} />
                       }
                       {
                         section.subSections && (
@@ -171,10 +187,26 @@ export default async function page({ params }) {
                                     subSection.h1 && <h2 className="text-lg md:text-xl font-bold text-left social-anchor-tag text-neutral-900">{parse(subSection.h1)}</h2>
                                   }
                                   {
-                                    subSection.h2 && <h3 className="text-base md:text-lg font-bold text-left social-anchor-tag text-neutral-600">{parse(subSection.h2)}</h3>
+                                    subSection.h2 && <h3 className="text-base md:text-lg font-bold text-left social-anchor-tag text-neutral-700">{parse(subSection.h2)}</h3>
                                   }
                                   {
                                     subSection.p && <p className="text-base md:text-lg font-light text-left social-anchor-tag text-neutral-600">{parse(subSection.p)}</p>
+                                  }
+                                  {
+                                    subSection.list && <ul className={`text-base md:text-lg flex flex-col gap-2 font-light text-left anchor-tag ${subSection.p? `pt-5`: `pt-1`}`}>
+                                      {
+                                        subSection.list.map((listItem, index3) => (
+                                          <li key={index3} className='text-neutral-600 flex flex-row gap-2'>
+                                            <span className='text-neutral-700 font-semibold select-none'>{index3 + 1}.</span>
+                                            <span className='overflow-x-hidden'>
+                                              {
+                                                listItem.h1 && <span className='text-neutral-700 font-semibold'>{parse(listItem.h1)}: </span>
+                                              }
+                                              {parse(listItem.p)}</span>
+                                          </li>
+                                        ))
+                                      }
+                                    </ul>
                                   }
                                   {
                                     subSection.html && <div className="self-center text-base md:text-lg font-light text-left text-neutral-600 w-full my-6">
