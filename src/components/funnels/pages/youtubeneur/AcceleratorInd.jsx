@@ -185,7 +185,9 @@ export default function AcceleratorInd({ loc, data }) {
             <div className='flex flex-col flex-1 items-center gap-3'>
               <img src="https://i.ibb.co/QpW4s0y/coffee-chat.png" alt="Akassh Ashok Gupta" className='w-full md:w-10/12' />
               <div>
-                <p className="text-sm md:text-2xl font-bold text-center text-red-500">Total Value: $<s>999</s>/-</p>
+                <p className="text-sm md:text-2xl font-bold text-center text-red-500">Total Value: {
+                  loc === 'ind' ?  <span>₹<s>9,999</s></span> : <span>$<s>199</s></span>
+                }/-</p>
                 <p className="text-sm md:text-lg font-bold text-center text-white">Included in this Exclusive Offer!</p>
               </div>
             </div>
