@@ -5137,7 +5137,7 @@ const blogdata = [
   {
     title: `Gambhir Vs Kohli: The Asia Cup 2023 Incident`,
     slug: `gambhir-vs-kohli-the-asia-cup-2023-incident`,
-    id: 81,
+    id: 80,
     category_id: 14,
     description: `Unveiling the fiery rivalry between Gautam Gambhir and Virat Kohli in the wake of a controversial gesture during the India vs. Nepal match`,
     image: {
@@ -5241,7 +5241,7 @@ const blogdata = [
   {
     title: `Tragedy Strikes at Jadavpur University: A student lost his life due to Ragging`,
     slug: `tragedy-strikes-at-jadavpur-university-a-student-lost-his-life-due-to-ragging`,
-    id: 80,
+    id: 81,
     category_id: 13,
     description: `A horrifying incident at Kolkata's Jadavpur University Main Hostel, where a 17-year-old student tragically lost his life after enduring extreme ragging.`,
     image: {
@@ -5897,7 +5897,7 @@ const blogdata = [
   {
     title: `Shubh Singh's Controversy: Understanding the Backlash and Cancel Culture`,
     slug: `shubh-singhs-controversy-understanding-the-backlash-and-cancel-culture`,
-    id: 88,
+    id: 87,
     category_id: 13,
     description: `How a rising Punjab singer's Instagram story sparked outrage, brand backlash, and geopolitical tensions. Was it a lapse in judgment or intentional?`,
     image: {
@@ -5997,7 +5997,7 @@ const blogdata = [
   {
     title: `Breaking the Silence:  Student Suicides in Kota`,
     slug: `breaking-the-silence-student-suicides-in-kota`,
-    id: 87,
+    id: 88,
     category_id: 13,
     description: `The rise in student suicides in Kota, India's test prep hub, with 25 deaths this year. Explore the stark facts, government actions, and the need for holistic education reform to prioritize mental well-being and empower students.`,
     image: {
@@ -6146,7 +6146,7 @@ const blogdata = [
   {
     title: `Unveiling the Dark Realities of Academic Pressure and Demanding Justice`,
     slug: `unveiling-the-dark-realities-of-academic-pressure-and-demanding-justice`,
-    id: 86,
+    id: 89,
     category_id: 13,
     description: `The tragic incident at NIT Silchar, where a student's suicide sparks protests and demands for justice.`,
     image: {
@@ -6275,7 +6275,7 @@ const blogdata = [
   {
     title: `The Women Reservation Bill 2023: A Path to Gender Equality in Indian Politics`,
     slug: `the-women-reservation-bill-2023-a-path-to-gender-equality-in-indian-politics`,
-    id: 85,
+    id: 90,
     category_id: 10,
     description: `The significance of the Women Reservation Bill 2023, recently passed in Lok Sabha, aiming to reserve one-third of seats for women in the Indian Parliament and state legislative assemblies.`,
     image: {
