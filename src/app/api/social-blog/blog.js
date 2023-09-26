@@ -6418,6 +6418,62 @@ const blogdata = [
         alt: `The Women Reservation Bill 2023: A Path to Gender Equality`,
       }
     },
+  },
+  {
+    title: `Oscars and Indian Cinema: balancing stardom and authenticity in Indian Cinema`,
+    slug: `oscars-and-indian-cinema-balancing-stardom-and-authenticity-in-indian-cinema`,
+    id: 91,
+    category_id: 5,
+    description: `The Oscars' impact on Indian cinema's identity and the need to prioritize authentic storytelling over star power.`,
+    image: {
+      src: `https://i.ibb.co/7gnQZpM/Oscars-and-Indian-Cinema-balancing-stardom-and-authenticity-in-Indian-Cinema.webp`,
+      alt: `Oscars and Indian Cinema: balancing stardom and authenticity in Indian Cinema`,
+    },
+    owner: `Ayushi Rajput`,
+    tags: [`Oscars`, `Kantara`, `Indian Cinema`, `Hollywood`, `Star Power`],
+    date: '2023-09-26',
+    summary: `The Oscars, the pinnacle of recognition in the world of cinema, have always been a platform where the best of the best gather to celebrate exceptional filmmaking. However, the question has arisen in recent years: Are we truly representing ourselves on this global stage? While we produce outstanding films like "Kantara," there seems to be a trend of prioritizing big-name stars over authentic storytelling. In this blog, we delve into the nuances of Oscar nominations, their impact on our cinematic identity, and why it's high time we rethink our approach.`,
+    sections: [
+      {
+        h1: `The Glitz and Glamour Over Authenticity`,
+        p: `It's no secret that Hollywood loves its stars, and the Oscars are no exception. It's a night where Hollywood celebrates itself but also a night where the world watches closely. Our film industry's tendency to send star-studded productions to the Oscars isn't without merit; it garners attention and generates excitement. However, it's essential to ask whether we're compromising our unique storytelling and cultural identity for the sake of prestige.<br/>"Kantara," a film that beautifully represents our culture and heritage, may not have made it to the Oscars simply because it lacked the star power some other films possessed. This raises concerns about the message we're sending to the world. Are we content with being perceived as a film industry that only values celebrity status, or do we want to be known for our rich narratives and unique perspectives?`,
+      },
+      {
+        h1: `The Controversy Surrounding India's Oscar Entries`,
+        p: `India has sent its official entries to the Oscars for over five decades, but only a handful have made it to the nominations shortlist.<br/>India's official Oscar entry, decided by the Film Federation of India, has been a subject of scrutiny. The panel's choices have sparked debates about overlooking exceptional films in favor of others.<br/>Notable examples include "Black" (2005), "Gangs of Wasseypur," "Vicky Donor," "Paan Singh Tomar" (2012), and "The Lunchbox" (2013), to name a few. <br/>Several outstanding Indian films have been left out of the Oscar race despite receiving acclaim domestically and internationally. Movies like "Kantara, "The Lunchbox," and "Tumbbad" have been overlooked, leaving fans and filmmakers frustrated. These films often tell unique stories that resonate with global audiences but need help to secure a spot on the Oscar stage.<br/>Are they truly selecting films that represent India's rich cinematic diversity, or does star power sway them?`,
+        html: {
+          type: `twitter`,
+          value: `1704397264389914648`,
+        }
+      },
+      {
+        h1: `The Impact on Global Perception`,
+        p: `Our films are not just a source of entertainment; they reflect our society, our values, and our diverse narratives. We risk misrepresenting ourselves globally when we prioritize star-studded films over those that genuinely represent our identity. As a global platform, the Oscars shape the world's perception of our cinema.<br/>By consistently nominating films that cater to Hollywood's preferences. We have stories that deserve to be heard, stories that can bridge cultural gaps and foster understanding. But if we continue down this path, we risk sending a message that our cinema is all style and no substance.`,
+      },
+      {
+        h1: `Opinion`,
+        p: `In conclusion, the representation of Indian cinema at the Oscars is not merely about securing nominations; it's about showcasing the true essence of our rich and diverse storytelling traditions to the world.<br/>While star power has its merits, it should maintain the depth and diversity of our cinematic storytelling. Films like "Kantara" represent our culture with authenticity, and it's high time they get the recognition they deserve. India has a treasure trove of stories waiting to be told globally. The world needs to see the true essence of Indian cinema, and it's our responsibility to ensure it's not lost in the glittering lights of stardom. Let's choose films that reflect the heart and soul of India and, in doing so, earn the respect we deserve on the global stage.`,
+      }
+    ],
+    advertisements: {
+      show: true,
+      image: {
+        src: "https://i.ibb.co/c24wbZW/X-guide-banner.png",
+        alt: "Guide X",
+        link: "/guide-x",
+      },
+    },
+    referBlog: {
+      show: true,
+      title: `India or Bharat: The Name Change Debate- History, Pros and Cons`,
+      slug: `india-or-bharat-the-name-change-debate-history-pros-and-cons`,
+    },
+    linktree: {
+      image: {
+        src: `https://i.ibb.co/d59xg1F/Oscars-and-Indian-Cinema-stardom-and-authenticity-in-Indian-Cinema.webp`,
+        alt: `Oscars and Indian Cinema: balancing stardom and authenticity in Indian Cinema`,
+      }
+    },
   }
 ];
 
