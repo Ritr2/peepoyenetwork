@@ -39,7 +39,7 @@ export default function page() {
             </div>
             <div className="flex flex-col items-center justify-center gap-2 md:gap-5">
               <h2 className="text-xl md:text-3xl font-bold text-center text-neutral-700">Business Address</h2>
-              <p className="text-base md:text-xl font-medium text-center text-neutral-600">Peepoye Network<br/>Plot No. 76D, Phase 4,<br/>Sector-14, Udyog Vihar,<br/>Gurgaon-122001, India</p>
+              <p className="text-base md:text-xl font-medium text-center text-neutral-600">944, Block C,<br/>Sushant Lok Phase 1,<br/>Gurugram, Haryana, 122001, India</p>
             </div>
             <div className="flex flex-col items-center justify-center gap-2 md:gap-5">
               <h2 className="text-xl md:text-3xl font-bold text-center text-neutral-700">Contact Us on Whatsapp</h2>

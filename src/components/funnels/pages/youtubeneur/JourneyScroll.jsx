@@ -1,25 +1,6 @@
 import React, { Fragment } from 'react'
-import { useInView } from 'react-intersection-observer'
 import JourneyScrollElements from './JourneyScrollElements'
 import style from '@/styles/JourneyScroll.module.css'
-
-// const style = {
-//     bgImage: {
-        
-//         &:before: {
-//     },
-//     bgImagebefore: {
-//         content: 'Start',
-//         position: 'absolute',
-//         top: '50%',
-//         left: '50%',
-//         transform: 'translate(-50%, -50%)',
-//         color: '#fff',
-//         fontSize: '3rem',
-//         fontWeight: 'bold',
-//         textShadow: '0 0 10px #fff',
-//     }, 
-// }
 
 export default function JourneyScroll() {
     let data = [
@@ -35,7 +16,7 @@ export default function JourneyScroll() {
             title: '35 days Implementation Challenge',
             description: `Set up every system, tool, and process with step-by-step instructions as part of becoming a YouTubeneur.`,
             image: {
-                src: 'https://i.ibb.co/BrZHYbt/green.webp',
+                src: 'https://i.ibb.co/GnmVzF8/35-days-Implementation-Challenge.webp',
                 alt: 'jump',
             },
         },
