@@ -17,7 +17,10 @@ import AccRibbonBonus from './AccRibbonBonus'
 import { FaPlay } from 'react-icons/fa'
 import VideoPlayer from './VideoPlayer'
 import FunnelFooter from '../../FunnelFooter'
-import Journey from './Journey'
+import JourneyScroll from './JourneyScroll'
+import SocialMediaDetails from './SocialMediaDetails'
+import { useInView } from 'react-intersection-observer'
+import Experience from './Experience'
 
 const sora = Sora({
   weight: ['100', '300', '400', '700'],
@@ -26,7 +29,7 @@ const sora = Sora({
 
 export default function AcceleratorInd({ loc, data }) {
   const [videoPlayervisible, setVideoPlayervisible] = React.useState(false)
-
+  const { ref: socialMediaRef, inView: socialMediaInView } = useInView();
   const firstSectionData = [
     {
       image: 'https://i.ibb.co/VLzWq14/1.png',
@@ -186,7 +189,7 @@ export default function AcceleratorInd({ loc, data }) {
               <img src="https://i.ibb.co/QpW4s0y/coffee-chat.png" alt="Akassh Ashok Gupta" className='w-full md:w-10/12' />
               <div>
                 <p className="text-sm md:text-2xl font-bold text-center text-red-500">Total Value: {
-                  loc === 'ind' ?  <span>₹<s>9,999</s></span> : <span>$<s>199</s></span>
+                  loc === 'ind' ? <span>₹<s>9,999</s></span> : <span>$<s>199</s></span>
                 }/-</p>
                 <p className="text-sm md:text-lg font-bold text-center text-white">Included in this Exclusive Offer!</p>
               </div>
@@ -269,6 +272,11 @@ export default function AcceleratorInd({ loc, data }) {
               </p>
             </div>
           </div>
+          <div className="flex flex-col h-32" ref={socialMediaRef}>
+            {
+              socialMediaInView && <SocialMediaDetails />
+            }
+          </div>
           <div className="flex flex-col md:flex-row justify-center items-center gap-3 md:gap-10">
             <div className={`flex flex-col w-full md:w-6/12 rounded-xl order-1 md:order-2`}>
               <img src="https://i.ibb.co/RT3XGxt/2.png" alt="Akassh Ashok Gupta" className='rounded-xl shadow-lg drop-shadow-lg' />
@@ -279,6 +287,7 @@ export default function AcceleratorInd({ loc, data }) {
               </p>
             </div>
           </div>
+          <Experience />
           <div className="flex flex-col md:flex-row justify-center items-center gap-3 md:gap-10">
             <div className={`flex flex-col w-full md:w-6/12 rounded-xl`}>
               <img src="https://i.ibb.co/LrvNWBp/3.png" alt="Akassh Ashok Gupta" className='rounded-xl shadow-lg drop-shadow-lg' />
@@ -341,8 +350,8 @@ export default function AcceleratorInd({ loc, data }) {
               The YouTubeneur Journey Path
             </h2>
           </div>
-          <div className="flex flex-col w-full">
-            <Journey />
+          <div className='flex flex-col w-full'>
+            <JourneyScroll />
           </div>
         </section>
       </div>

@@ -1,0 +1,26 @@
+.backgroundLeftToRigtMovingAnimation {
+    background: url("https://i.ibb.co/HNCLHrr/rural-nature-road-scene-free-vector.jpg") repeat-x;
+    height: 100%;
+    width: 12000px;
+    background-size: contain;
+    animation: slide 35s linear infinite;
+}
+
+.paused {
+    animation-play-state: paused;
+}
+
+.playing {
+    animation-play-state: running;
+}
+
+@keyframes slide {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+
+    100% {
+        transform: translate3d(-4000px, 0, 0);
+        /* The image width */
+    }
+}

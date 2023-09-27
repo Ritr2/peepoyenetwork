@@ -1,0 +1,33 @@
+@media (min-width: 768px) {
+    .bgImage {
+        background-image: url(https://i.ibb.co/SmJgy7W/road.png);
+        background-size: 50px 300px;
+        background-repeat: repeat-y;
+        background-position: center center;
+        position: relative;
+    }
+    
+    .bgImage::before {
+        content: "Start";
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #be2424;
+        padding: 2px;
+        border-radius: 5px;
+        color: white;    
+    }
+    
+    .bgImage::after {
+        content: "End";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #be2424;
+        padding: 2px;
+        border-radius: 5px;
+        color: white; 
+    }
+}
