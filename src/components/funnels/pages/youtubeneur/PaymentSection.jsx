@@ -312,10 +312,10 @@ export default function PaymentSection({ loc, data }) {
               <div className="flex flex-col flex-1" key={index}>
                 {
                   dataP[loc][key].recommended && (
-                    <p className={`bg-green-600 text-white text-center font-bold px-2 py-1 rounded-t-md`}>Recommended</p>
+                    <p className={`bg-green-600 text-white text-center font-bold px-1 py-1 rounded-t-md`}>Recommended</p>
                   )
                 }
-                <button className={` px-2 py-1 md:px-5 md:py-2 ${dataP[loc][key].recommended ? 'rounded-b-md' : 'rounded-md'} ${currentPlan === key ? 'bg-white text-red-600' : 'bg-white/10 text-white'}`} onClick={() => setCurrentPlan(key)}>{dataP[loc][key].selectortext}</button>
+                <button className={` px-1 py-1 md:px-5 md:py-2 ${dataP[loc][key].recommended ? 'rounded-b-md' : 'rounded-md'} ${currentPlan === key ? 'bg-white text-red-600' : 'bg-white/10 text-white'}`} onClick={() => setCurrentPlan(key)}>{dataP[loc][key].selectortext}</button>
               </div>
             ))
           }

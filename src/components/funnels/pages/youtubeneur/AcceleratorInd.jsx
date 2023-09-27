@@ -21,6 +21,7 @@ import JourneyScroll from './JourneyScroll'
 import SocialMediaDetails from './SocialMediaDetails'
 import { useInView } from 'react-intersection-observer'
 import Experience from './Experience'
+import Matrix from './Matrix'
 
 const sora = Sora({
   weight: ['100', '300', '400', '700'],
@@ -347,11 +348,21 @@ export default function AcceleratorInd({ loc, data }) {
         <section className="z-10 flex flex-col py-10 md:py-20 px-5 md:px-40 gap-5 md:gap-10 bg-white/5">
           <div className={`flex flex-col gap-2 ${sora.className}`}>
             <h2 className={`text-xl md:text-4xl text-center text-white font-bold`}>
-              The YouTubeneur Journey Path
+              The YouTubeneur RoadMap
             </h2>
           </div>
           <div className='flex flex-col w-full'>
             <JourneyScroll />
+          </div>
+        </section>
+        <section className="z-10 hidden lg:flex flex-col py-10 md:py-20 px-5 md:px-40 gap-5 md:gap-10">
+          <div className={`flex flex-col gap-2 ${sora.className} items-center`}>
+            <h2 className={`text-lg ${style.bgRed} py-2 px-5 md:text-3xl text-center text-white font-bold shadow-lg drop-shadow-lg rounded-lg`}>
+            Must for all those who share any of the below need..
+            </h2>
+          </div>
+          <div className="flex flex-col w-full">
+            <Matrix />
           </div>
         </section>
       </div>

@@ -32,7 +32,7 @@ export default function JourneyScroll() {
             },
         },
         {
-            title: 'The 35-Days Jump Challenge',
+            title: '35 days Implementation Challenge',
             description: `Set up every system, tool, and process with step-by-step instructions as part of becoming a YouTubeneur.`,
             image: {
                 src: 'https://i.ibb.co/BrZHYbt/green.webp',
@@ -67,7 +67,7 @@ export default function JourneyScroll() {
             title: `Collaborate with Akassh`,
             description: `Once you have 100 members in your community and have generated 10 sales of your first product, you get an opportunity to collaborate with Akassh- The first "YouTubeneur" himself!`,
             image: {
-                src: 'https://i.ibb.co/sqDV87D/audit-call.webp',
+                src: 'https://i.ibb.co/QpW4s0y/coffee-chat.png',
                 alt: 'collaborate',
             },
         }

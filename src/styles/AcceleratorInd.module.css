@@ -60,3 +60,9 @@
     animation: borderPulseAnimation 2s infinite forwards;
     box-sizing: content-box;
 }
+
+.matrixBreaker br {
+    display: block;
+  content: "";
+  margin: 5px 0;
+}
