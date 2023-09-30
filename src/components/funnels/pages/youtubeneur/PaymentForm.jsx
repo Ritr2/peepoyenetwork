@@ -6,7 +6,7 @@ import makeSubscriptionPayment from '@/utils/payments/makeSubscriptionPayment'
 import { IoClose } from 'react-icons/io5'
 import ls from 'localstorage-slim';
 
-export default function PaymentForm({ setDataFormVisible, currentPlan, successUrl }) {
+export default function PaymentForm({ setDataFormVisible, currentPlan, successUrl, handleStripePayment = false, loc }) {
     const [name, setName] = React.useState(ls.get('name') ? ls.get('name') : '')
     const [email, setEmail] = React.useState(ls.get('email') ? ls.get('email') : '')
     const [phone, setPhone] = React.useState(ls.get('phone') ? ls.get('phone') : '')
@@ -40,14 +40,21 @@ export default function PaymentForm({ setDataFormVisible, currentPlan, successUr
         ls.set('name', name)
         ls.set('email', email)
         ls.set('phone', phone)
-        if (currentPlan === 'lifetime') {
-            makePayment(details, setLoading, setDataFormVisible, successUrl, "accelerator")
+        if(loc === 'ind') {
+            if (currentPlan === 'lifetime') {
+                makePayment(details, setLoading, setDataFormVisible, successUrl, "accelerator")
+            }
+            if (currentPlan === 'yearly') {
+                makeSubscriptionPayment(details, setLoading, setDataFormVisible, successUrl, "plan_MdLUlvWayLs1i7", "accelerator")
+            }
+            if (currentPlan === 'monthly') {
+                window.location.href = successUrl
+            }
         }
-        if (currentPlan === 'yearly') {
-            makeSubscriptionPayment(details, setLoading, setDataFormVisible, successUrl, "plan_MdLUlvWayLs1i7", "accelerator")
-        }
-        if (currentPlan === 'monthly') {
-            window.location.href = successUrl
+        else {
+            if (handleStripePayment) {
+                handleStripePayment(details)
+            }
         }
     }
 

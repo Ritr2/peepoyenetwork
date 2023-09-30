@@ -16,6 +16,7 @@ const makeSubscriptionPayment = async (details, setLoading,setDataFormVisible, s
     body: JSON.stringify({
         product: product,
         plan_id: plan_id,
+        details: details,
     }),
     headers: {
       "Content-Type": "application/json",

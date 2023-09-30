@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import data from "./data";
+import { apiUrl } from "@/utils/url";
 const Razorpay = require("razorpay");
 const shortid = require("shortid");
 
@@ -10,6 +11,19 @@ export async function POST(req) {
     key_secret: process.env.RAZORPAY_SECRET,
   });
   const body = await req.json();
+
+  await fetch(`${apiUrl}/payment_initiated`, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      first_name: body.details.name,
+      email: body.details.email,
+      phone: body.details.phone,
+      product: data[body.product].notes,
+    }),
+  });
 
   // Create an order -> generate the OrderID -> Send it to the Front-end
   const payment_capture = 1;

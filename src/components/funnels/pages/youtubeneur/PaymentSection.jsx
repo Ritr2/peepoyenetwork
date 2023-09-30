@@ -256,22 +256,27 @@ export default function PaymentSection({ loc, data }) {
       setDataFormVisible(true)
     }
     if (loc === 'int') {
-      if (currentPlan === 'monthly') {
-        window.location.href = dataP[loc][currentPlan].successlink
-      }
-      else {
-        const products = [
-          {
-            priceId: dataP[loc][currentPlan].price_id,
-            quantity: 1,
-          }
-        ]
-        const successlink = data ? `${url}/${data.yes.query}?product=${data.yes.product}` : dataP[loc][currentPlan].successlink
-        setLoading(true)
-        StripeapiCall(products, dataP[loc][currentPlan].mode, successlink, `${url}/accelerator-${loc}${data ? `?product=${data.product}` : ''}`, setLoading, 'accelerator')
-      }
+      setDataFormVisible(true)
     }
   }
+
+  const handleStripePayment = (details)=> {
+    if (currentPlan === 'monthly') {
+      window.location.href = dataP[loc][currentPlan].successlink
+    }
+    else {
+      const products = [
+        {
+          priceId: dataP[loc][currentPlan].price_id,
+          quantity: 1,
+        }
+      ]
+      const successlink = data ? `${url}/${data.yes.query}?product=${data.yes.product}` : dataP[loc][currentPlan].successlink
+      StripeapiCall(details, products, dataP[loc][currentPlan].mode, successlink, `${url}/accelerator-${loc}${data ? `?product=${data.product}` : ''}`, setLoading, 'accelerator')
+    }
+  }
+
+
   return (
     <div className="flex flex-col items-center gap-10" id="paymentPage">
       <div className={`${style.redShadow} flex flex-col gap-5 w-full md:w-7/12 bg-white/5 border-2 border-white shadow-md rounded-xl p-2 md:p-5 drop-shadow-md`}>
@@ -353,7 +358,7 @@ export default function PaymentSection({ loc, data }) {
       </div>
       {
         dataFormVisible && (
-          <PaymentForm setDataFormVisible={setDataFormVisible} currentPlan={currentPlan} successUrl={data ? `${url}/${data.yes.query}?product=${data.yes.product}` : dataP[loc][currentPlan].successlink} />
+          <PaymentForm setDataFormVisible={setDataFormVisible} currentPlan={currentPlan} successUrl={data ? `${url}/${data.yes.query}?product=${data.yes.product}` : dataP[loc][currentPlan].successlink} handleStripePayment={handleStripePayment} loc={loc} />
         )
       }
       {

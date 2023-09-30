@@ -15,6 +15,7 @@ const makePayment = async (details, setLoading,setDataFormVisible, successUrl, a
     method: "POST",
     body: JSON.stringify({
         product: amount,
+        details: details,
     }),
     headers: {
       "Content-Type": "application/json",
