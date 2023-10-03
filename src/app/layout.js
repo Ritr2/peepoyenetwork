@@ -26,6 +26,9 @@ export const metadata = {
     image: 'https://i.ibb.co/6vX34KQ/akassh-signature.png',
     site_name: 'Peepoye',
   },
+  verification: {
+    google: 'zyUxYjVWZpL5mm20P_BB5Y6drId3zCaiWQHs--8BDFY',
+  },
   canonical: 'https://peepoye.com',
 }
 

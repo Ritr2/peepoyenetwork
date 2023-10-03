@@ -40,9 +40,6 @@ export const metadata = {
     site: '@peepoye',
     creator: '@peepoye',
   },
-  verification: {
-    google: '7M0eMBnlu6jfeWTqlELOHxN5zyLkOYBd14p7M2Sw-LU',
-  },
   alternates: {
     canonical: '/',
   },
