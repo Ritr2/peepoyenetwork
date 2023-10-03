@@ -6366,16 +6366,16 @@ const blogdata = [
         h1: `The Way Forward`,
         list: [
           {
-            h1:`Unlocking the Potential of the Female Population`,
-            p:`India's large female population represents the untapped potential that, if given political representation, can propel the nation forward.`,
+            h1: `Unlocking the Potential of the Female Population`,
+            p: `India's large female population represents the untapped potential that, if given political representation, can propel the nation forward.`,
           },
           {
-            h1:`Kick-starting Democracy`,
-            p:`Including women in politics will kick-start democracy by giving the vast majority of people a voice in how their lives should be run.`,
+            h1: `Kick-starting Democracy`,
+            p: `Including women in politics will kick-start democracy by giving the vast majority of people a voice in how their lives should be run.`,
           },
           {
-            h1:`Overcoming Obstacles`,
-            p:`The current electoral system, employing the single transferable vote technique, poses a challenge to implementing the Women's Reservation Bill in the Rajya Sabha. Addressing this hurdle and considering the inclusion of SCs and STs is essential.`,
+            h1: `Overcoming Obstacles`,
+            p: `The current electoral system, employing the single transferable vote technique, poses a challenge to implementing the Women's Reservation Bill in the Rajya Sabha. Addressing this hurdle and considering the inclusion of SCs and STs is essential.`,
           }
         ]
       },
@@ -6546,10 +6546,10 @@ const blogdata = [
       alt: `Delhi's Trash Trouble: Is the 'Smart City' Dream Turning into a Nightmare?`,
     },
     owner: `Ayushi Rajput`,
-    tags: [`Delhi`, `Garbage problem in delhi`,`Garbage in delhi`, `Garbage and waste disposal system in delhi`, `Delhi garbage crisis`, `Door to door waste collection in delhi`],
+    tags: [`Delhi`, `Garbage problem in delhi`, `Garbage in delhi`, `Garbage and waste disposal system in delhi`, `Delhi garbage crisis`, `Door to door waste collection in delhi`],
     date: '2023-09-28',
     summary: `Delhi, the heart of India, is drowning in its own waste, with a population of over 32 lakh people and growing. Every day, the city churns out a whopping 1,108 tonnes of trash. It's like watching a mountain of waste grow taller by the day. But here's the real problem: the clock is ticking, and we need to act fast. In this fiery blog, we'll explore the trashy truth, raise tough questions, and ignite a spark for change.<br/><i>While bureaucracy ties knots, our streets are becoming a landfill. Is this the 'Smart City' vision we signed up for?</i>`,
-    sections:[
+    sections: [
       {
         h1: `The Growing Garbage Challenge`,
         p: `Delhi, the city that never sleeps, also seems never to stop generating trash. In 2022, it was reported that a staggering 1,108 tonnes of waste are generated daily, as per the Delhi Pollution Control Committee. Ideally, government departments were supposed to oversee the entire waste management process, starting with source segregation.<br/>Despite introducing blue and green dual-bin trash cans with colored liners and clear demarcations, Delhi struggles to recycle beyond 50% of its collected trash. Most of the city's waste still ends up in open landfills and dumps. While there is an uptick in segregation, it's not always executed correctly, according to frontline sanitation workers.<br/>Imagine a mountain of trash as tall as Qutub Minar growing each day. It's not just an eyesore; it's a ticking ecological time bomb!<br/><i>Isn't it high time we take responsibility for our waste? Why is segregation not becoming second nature to us?</i>`,
@@ -6586,6 +6586,176 @@ const blogdata = [
         alt: `Mumbiker Nikhil's Recent Vlog Incident: A Call for Responsibility Over Justification`,
       }
     },
+  },
+  {
+    title: `Pakistan Cricket Team's Arrival in India: Cheers, Controversies, and Questions`,
+    slug: `pakistan-cricket-teams-arrival-in-india-cheers-controversies-and-questions`,
+    id: 94,
+    category_id: 14,
+    description: `The buzz surrounding Pakistan's cricket team's return to India, the warm welcome, controversies, and the questions it raises.`,
+    image: {
+      src: `https://i.ibb.co/ZYjWd75/Pakistan-Cricket-Team-s-Arrival-in-India-Cheers-Controversies-and-Questions.webp`,
+      alt: `Pakistan Cricket Team's Arrival in India: Cheers, Controversies, and Questions`,
+    },
+    owner: `Ayushi Rajput`,
+    tags: [`Pakistan Cricket Team`, `India vs Pakistan`, 'Cricket Team', 'pakistan visit', 'Babar azam', 'ODI world cup'],
+    date: '2023-10-01',
+    summary: `In a surprising twist, the Pakistan cricket team made its grand return to India after seven years, creating excitement among fans and raising fiery questions. Before the Cricket World Cup 2023, this visit has ignited controversies and public enthusiasm. While some welcomed them with open arms, others questioned the decision. This blog delves into the facts, the public's mixed reactions, and our take on the matter.`,
+    sections: [
+      {
+        h1: `The Warm Welcome `,
+        p: `In a blink, Pakistan cricket was the talk of the town in India as the Pakistan cricket team landed in Hyderabad on September 27th, 2023, they were greeted with loud cheers and chants from excited Indian fans. It was their first visit since 2016. The ODI World Cup, scheduled to begin on October 5th, awaited them. The warm reception by Indian fans, with cheers and chants for captain Babar Azam and others, seemed to overshadow the long-standing political tensions between the nations momentarily.<br/>The dramatic welcome was unlike anything we've seen in recent times.`,
+      },
+      {
+        h1: `Controversy and Questions`,
+        p: `But wait, there's more! This warm welcome has not been without controversy. Addressing the concerns and questions arising after Pakistan's visit to India is crucial.`,
+        list: [
+          {
+            h1: `Security and Political Tensions`,
+            p: `India and Pakistan have a history of political tensions, and international matches between the two nations are typically restricted to global and continental tournaments. Given the security challenges and the recent rise in terror attacks in Pakistan, some have questioned the decision to host the Pakistan cricket team in India.`,
+          },
+          {
+            h1: `Public Enthusiasm`,
+            p: `The enthusiasm shown by Indian fans has raised eyebrows. While hospitality is a virtue, it's essential to distinguish between being welcoming and overly enthusiastic, especially when considering the geopolitical context`,
+          },
+          {
+            h1: `Responsibility`,
+            p: `The responsibility for allowing the Pakistan cricket team to visit India falls on the the Board of Control for Cricket in India (BCCI) and the Indian government. There are questions about whether the government should have denied visas or pressured the International Cricket Council (ICC) to move Pakistan's matches to a neutral venue.`,
+          }
+        ],
+        html: {
+          type: `twitter`,
+          value: `1707747939349885178`,
+        }
+      },
+      {
+        h1: `Our Take on the Situation`,
+        p: `At Peepoye Network, we don't shy away from expressing fearless opinions. We believe in straightforward discussion. In this context, we raise some thought-provoking questions:`,
+        list: [
+          {
+            h1: `Should BCCI and the Indian Government Have Taken a Firmer Stance`,
+            p: `Given the historical political tensions and security concerns, some argue that stronger measures should have been taken against hosting the Pakistan cricket team.`,
+          },
+          {
+            h1: `Balancing Enthusiasm and Self-Respect`,
+            p: `While the public's enthusiasm is understandable, we must strike a balance between being courteous and maintaining self-respect. Cheering for a team from a nation involved in conflicts with India raises questions about our priorities.`,
+          },
+          {
+            h1: `Supporting the Decision to Cut Cricket Ties`,
+            p: `We back the decision to cut cricketing ties with Pakistan, but this exception should serve as a reminder rather than a precedent. Stopping them from participating in the World Cup would have caused inconveniences to other teams, so we must strike a balance.`,
+          },
+          {
+            h1: `The Larger Context`,
+            p: `It's essential to maintain awareness among the public about the broader context, including incidents like the Anantnag terror attack, where three Indian officers were martyred. Such incidents should not be forgotten amidst cricketing fervor.`,
+          },
+          {
+            h1: `Boycotting as a Message`,
+            p: `Boycotting by influencers and celebrities can send a powerful message and can be a way to express solidarity with our security forces and the victims of terror attacks.`,
+          }
+        ],
+        html: {
+          type: `youtube`,
+          value: `https://www.youtube.com/watch?v=6ChEzrsTmN8`,
+        }
+      },
+      {
+        p: `In conclusion, the return of the Pakistan cricket team to India has ignited a whirlwind of emotions, controversies, and questions. It's a reminder of the delicate balance between sportsmanship and geopolitics. While we celebrate the spirit of cricket, we must also safeguard our national interests and values. This situation serves as a poignant reminder that unity and a clear message of peace can be our most potent assets in times of uncertainty. Let's remember the past lessons and continue prioritizing peace over politics.`,
+      }
+    ],
+    advertisements: {
+      show: true,
+      image: {
+        src: "https://i.ibb.co/c24wbZW/X-guide-banner.png",
+        alt: "Guide X",
+        link: "/guide-x",
+      },
+    },
+    referBlog: {
+      show: true,
+      title: `Gambhir Vs Kohli: The Asia Cup 2023 Incident`,
+      slug: `gambhir-vs-kohli-the-asia-cup-2023-incident`,
+    },
+    linktree: {
+      image: {
+        src: `https://i.ibb.co/tCWgLXx/Pakistan-Cricket-Team-s-Arrival-in-India-Cheers-Controversies-and-Questions-2.webp`,
+        alt: `Pakistan Cricket Team's Arrival in India: Cheers, Controversies, and Questions`,
+      }
+    },
+  },
+  {
+    title: `Empowering Children: The Viral Video Teaching 'Good Touch' and 'Bad Touch'`,
+    slug: `empowering-children-the-viral-video-teaching-good-touch-and-bad-touch`,
+    id: 95,
+    category_id: 13,
+    description: `A viral video sparked a national conversation on teaching kids about 'good touch' and 'bad touch.' Explore the impact, mixed reactions, and the crucial role of parents in empowering their children.`,
+    image: {
+      src: `https://i.ibb.co/yFf8rJ7/Empowering-Children-The-Viral-Video-Teaching-Good-Touch-and-Bad-Touch.webp`,
+      alt: `Empowering Children: The Viral Video Teaching 'Good Touch' and 'Bad Touch'`,
+    },
+    owner: `Ayushi Rajput`,
+    tags: [`Good touch bad touch`, `good touch bad touch video`, `good touch bad touch video viral`],
+    date: '2023-10-02',
+    summary: `In a heartwarming viral video, a teacher educates young students about the concepts of 'good touch' and 'bad touch.' The viral video has sparked a nationwide conversation about the importance of such education. While some believe this should be a standard practice in schools, others emphasize the role of parents in teaching these vital lessons. We delve into the significance of this video and provide essential tips for parents on how to empower their children. <br/> <i>Children are like sponges, absorbing information from their surroundings. It is our responsibility as adults to ensure that they learn essential life lessons, and one of the most crucial is understanding the concept of 'good touch' and 'bad touch.'</i>`,
+    sections: [
+      {
+        h1: `The Viral Video: Empowering Kids with Knowledge`,
+        p: `In a world where information travels at the speed of light through social media, some stories stand out for all the right reasons. One story involves a teacher who used simple language to teach young students about 'good touch' and 'bad touch.' The video of her classroom session has garnered widespread attention.<br/>In the video, the teacher demonstrates the difference between 'good touch,' like a friendly pat on the head, and 'bad touch,' such as touching a child's chest. What's remarkable is that the teacher conducts this workshop with both boys and girls, fostering gender-neutral education. When she initiates a 'bad touch,' the children respond by pushing her arm away, clearly understanding the concept.<br/>The teacher asks the students what they would do if someone touched them inappropriately. A young girl confidently says she would stop the person and immediately share the incident with her parents. This response reflects the importance of communication and empowerment.`,
+        html: {
+          type: `twitter`,
+          value: `1706701251570978979`,
+        },
+      },
+      {
+        h1: `Mixed Reactions on Social Media`,
+        p: `As with any viral content, this video sparked various reactions on social media. Some users praised the teacher's approach, expressing their desire to see this method implemented in schools across India. They believed it was a step in the right direction to safeguard children.<br/>However, not everyone welcomed this teaching approach. Some netizens found it problematic, expressing concerns about children being touched inappropriately, even for educational purposes.<br/><strong className="font-medium text-neutral-800">It's essential to acknowledge that the intention here is not to encourage inappropriate touch but to educate children about boundaries. However, we must ensure that teaching methods prioritize the well-being and comfort of children.<br/>The goal remains the same whether in schools or at home: equipping our children with the knowledge and confidence to protect themselves.</strong>`,
+      },
+      {
+        h1: `The Power of Education, Parental Responsibility, and Empowering Parents`,
+        p: `The impact of this video is evident as it has garnered over 1.1 million views, highlighting the widespread need for such education, especially in rural and underserved areas. However, some have rightly pointed out that parents, too, should play an active role in teaching their children about 'good touch' and 'bad touch.' It's a collective responsibility that society shares in safeguarding our children. While schools can provide a foundation, parents must reinforce these lessons at home.<br/><i>How can we ensure that children understand the concepts and feel empowered to speak up when uncomfortable?</i><br/>To further empower parents, here are some essential tips on teaching children how to prevent, confront, or respond to attempts of sexual abuse:`,
+        list: [
+          {
+            h1: `Empower Your Child`,
+            p: `Start instilling the concept of bodily autonomy as early as age two. Encourage your children to express themselves and speak up if they encounter any actions that make them uncomfortable, whether from a peer, sibling, or adult.`,
+          },
+          {
+            h1: `Respect Boundaries`,
+            p: `Teach your child that nobody should ever force them into physical contact they do not consent to. It's essential to communicate to relatives and friends that respecting your child's boundaries is crucial, regardless of age.`,
+          },
+          {
+            h1: `Continuous Communication`,
+            p: `Maintain an ongoing dialogue with your child about 'good touch' and 'bad touch' as they grow. Use age-appropriate language to ensure they understand the correct names for body parts. Create an atmosphere where they feel safe asking questions, and assure them they can always turn to you if they ever feel someone approaching them inappropriately.`,
+          },
+        ],
+        html: {
+          type: `youtube`,
+          value: `https://www.youtube.com/watch?v=C9hYqDPm2B4`,
+        },
+      },
+      {
+        h1: `Opinion`,
+        p: `In a world where children need protection and guidance, the viral video of the teacher imparting 'good touch' and 'bad touch' education is a powerful reminder of the importance of such lessons. It's heartening to see the widespread support for this approach, emphasizing the need for its inclusion in all schools.<br/>While this video has positively impacted, it also highlights the urgency of addressing this issue collectively. Parents must take the lead in reinforcing these teachings, ensuring that every child has the knowledge and confidence to protect themselves. It's a shared responsibility; we can create a safer environment for our children.<br/>Let's encourage open conversations and education on this topic, ensuring that every child knows their body is their own and their voice matters. Together, we can create a safer environment for the youngest members of our society.`,
+      }
+    ],
+    advertisements: {
+      show: true,
+      image: {
+        src: "https://i.ibb.co/c24wbZW/X-guide-banner.png",
+        alt: "Guide X",
+        link: "/guide-x",
+      },
+    },
+    referBlog: {
+      show: true,
+      title: `Delhi's Trash Trouble: Is the 'Smart City' Dream Turning into a Nightmare?`,
+      slug: `delhis-trash-trouble-is-the-smart-city-dream-turning-into-a-nightmare`,
+    },
+    linktree: {
+      image: {
+        src: `https://i.ibb.co/ZYXfHtq/Empowering-Children-The-Viral-Video-Teaching-Good-Touch-and-Bad-Touch-2.webp`,
+        alt: `Empowering Children: The Viral Video Teaching 'Good Touch' and 'Bad Touch'`,
+      }
+    },
+
   }
 ];
 
