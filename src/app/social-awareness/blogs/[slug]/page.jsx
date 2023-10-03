@@ -60,7 +60,14 @@ export async function generateMetadata({ params }) {
       card: 'summary_large_image',
       title: `${data.blog.title} - Peepoye`,
       description: data.blog.description,
-      images: [data.blog.image.src],
+      images: [
+        {
+          url: data.blog.image.src,
+          width: 730,
+          height: 410,
+          alt: data.blog.image.alt,
+        }
+      ],
       creator: '@peepoye',
     },
     alternates: {

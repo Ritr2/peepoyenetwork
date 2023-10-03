@@ -48,7 +48,12 @@ export const metadata = {
     card: 'summary_large_image',
     title: 'Collaborate with us - Peepoye',
     description: 'Partner with us to showcase your brand on our YouTube channel. Join our community and reach a diverse audience. Visit our page and collaborate with us today.',
-    images: ['https://i.ibb.co/rHqF2Hz/demographic-2.png'],
+    images: [{
+      url: 'https://i.ibb.co/rHqF2Hz/demographic-2.png',
+      width: 730,
+      height: 410,
+      alt: 'Collaborate with us - Peepoye',
+    },],
     creator: '@peepoye',
   },
   alternates: {
@@ -227,4 +232,3 @@ export default function page() {
     </main>
   )
 }
-

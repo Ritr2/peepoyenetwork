@@ -46,7 +46,12 @@ export const metadata = {
         card: 'summary_large_image',
         title: 'Social Awareness Stories - Peepoye',
         description: 'Read the stories that impact our social environment',
-        images: ['https://i.ibb.co/TcHVdR1/Linktree.png'],
+        images: [{
+            url: 'https://i.ibb.co/TcHVdR1/Linktree.png',
+            width: 500,
+            height: 500,
+            alt: 'Peepoye Social Awareness Stories Linktree',
+        },],
         creator: '@peepoye',
     },
 }

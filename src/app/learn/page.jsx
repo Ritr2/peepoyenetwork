@@ -46,7 +46,12 @@ export const metadata = {
         card: 'summary_large_image',
         title: `Akassh's Weekly Learning Blogs`,
         description: 'Discover valuable insights on YouTube, Business, Online Authority, Career advice, Soft Skills, and more, drawn from Akassh\'s 20 years in corporate leadership and his journey to 1 million YouTube subscribers with a winning strategy.',
-        images: ['https://i.ibb.co/GdRJ5sw/akasshashokgupta.webp'],
+        images: [ {
+            url: 'https://i.ibb.co/GdRJ5sw/akasshashokgupta.webp',
+            width: 500,
+            height: 500,
+            alt: 'Akassh Ashok Gupta',
+        },],
         creator: '@peepoye',
     },
 }

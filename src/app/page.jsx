@@ -36,7 +36,14 @@ export const metadata = {
     cardType: 'summary_large_image',
     title: 'Enabling Awareness & Happiness Via Content & Courses - Peepoye',
     description: 'With Peepoye, Discover the path to awareness and happiness through our transformative content, empowering courses, and engaging masterminds.',
-    images: [`https://i.ibb.co/GdRJ5sw/akasshashokgupta.webp`],
+    images: [
+      {
+      url: `https://i.ibb.co/GdRJ5sw/akasshashokgupta.webp`,
+      width: 500,
+      height: 500,
+      alt: 'Akassh Ashok Gupta'
+    },
+  ],
     site: '@peepoye',
     creator: '@peepoye',
   },

@@ -39,7 +39,14 @@ export const metadata = {
     card: 'summary_large_image',
     title: `DFY YouTube: Grow Your Channel with Professional Services`,
     description: `Grow your YouTube channel with our DFY package. Get more views, subscribers, and engagement with our professional services.`,
-    images: ['https://i.ibb.co/SwbHkzV/youtube-growth-service.png'],
+    images: [
+      {
+      url: 'https://i.ibb.co/SwbHkzV/youtube-growth-service.png',
+      width: 600,
+      height: 500,
+      alt: `DFY YouTube: Grow Your Channel with Professional Services`,
+    }
+  ],
     creator: '@peepoye',
   },
 }

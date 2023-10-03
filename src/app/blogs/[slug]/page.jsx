@@ -50,7 +50,12 @@ export async function generateMetadata({ params }) {
       card: 'summary_large_image',
       title: `${data.blog.title} - Akassh`,
       description: data.blog.description,
-      images: [data.blog.image.src],
+      images: [ {
+          url: data.blog.image.src,
+          width: 700,
+          height: 500,
+          alt: data.blog.image.alt,
+        }],
       creator: '@peepoye',
     },
   }
