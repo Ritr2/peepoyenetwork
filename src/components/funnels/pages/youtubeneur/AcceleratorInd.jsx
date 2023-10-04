@@ -103,7 +103,7 @@ export default function AcceleratorInd({ loc, data }) {
                   initial={{ opacity: 0, x: -100 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ duration: 1, type: 'spring', bounce: 0.5, delay: 1 }}>
-                  Generate 10X revenue by hacking the <span className={`${style.textYoutubeRed} font-bold ${style.lineBg}`}>YouTube<span></span></span> Algorithm!
+                  Generate <span className={`${style.textYoutubeRed} font-bold ${style.lineBg}`}>10x</span> Revenue & Reach by hacking the <span className={`${style.textYoutubeRed} font-bold ${style.lineBg}`}>YouTube<span></span></span> Algorithm!
                 </p>
                 <div className="flex flex-col md:flex-row items-center md:items-stretch flex-wrap gap-8 w-full md:w-9/12">
                   {
@@ -179,7 +179,7 @@ export default function AcceleratorInd({ loc, data }) {
         <section className="z-10 flex flex-col py-10 md:py-20 px-5 md:px-36 gap-10">
           <div className={`flex flex-col gap-5 ${sora.className}`}>
             <h2 className={`text-lg ${style.bgRed} py-2 px-5 md:text-3xl text-center text-white font-bold shadow-lg drop-shadow-lg rounded-lg`}>
-              Our Unique Value Offering : A Pro YouTube Expert Live with you on Zoom
+            Our Unique Value Offering: Live Weekly Zoom Calls with Youtube Expert
             </h2>
             <h2 className='text-base md:text-2xl text-left md:text-center text-white'>
               <span className='font-bold text-green-700'>BONUS 1: </span>Weekly Live Coffee Chats + Free Access to the archive of all the previously recorded calls
@@ -190,7 +190,7 @@ export default function AcceleratorInd({ loc, data }) {
               <img src="https://i.ibb.co/QpW4s0y/coffee-chat.png" alt="Akassh Ashok Gupta" className='w-full md:w-10/12' />
               <div>
                 <p className="text-sm md:text-2xl font-bold text-center text-red-500">Total Value: {
-                  loc === 'ind' ? <span>₹<s>9,999</s></span> : <span>$<s>199</s></span>
+                  loc === 'ind' ? <span>₹<s>2,499</s></span> : <span>$<s>99</s></span>
                 }/-</p>
                 <p className="text-sm md:text-lg font-bold text-center text-white">Included in this Exclusive Offer!</p>
               </div>

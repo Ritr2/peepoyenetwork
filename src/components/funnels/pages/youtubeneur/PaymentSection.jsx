@@ -86,8 +86,8 @@ export default function PaymentSection({ loc, data }) {
     {
       text: '<span className="font-normal text-neutral-300">Access to Youtubeneur Foundation Accelerator </span> our flagship Course with 19 Modules',
       price: {
-        ind: 19999,
-        int: 499
+        ind: 14999,
+        int: 299
       },
       plan: ['lifetime', 'yearly', 'monthly'],
       quantity: {
@@ -99,33 +99,7 @@ export default function PaymentSection({ loc, data }) {
     {
       text: '<span className="font-normal text-neutral-300">Bonus #1:</span> Weekly Live Coffee Chats on Zoom',
       price: {
-        ind: 9999,
-        int: 199
-      },
-      plan: ['lifetime', 'yearly', 'monthly'],
-      quantity: {
-        lifetime: 120,
-        yearly: 12,
-        monthly: 1
-      }
-    },
-    {
-      text: '<span className="font-normal text-neutral-300">Bonus #2:</span> Access to our Private YouTube Growth Community',
-      price: {
-        ind: 9999,
-        int: 199,
-      },
-      plan: ['lifetime', 'yearly', 'monthly'],
-      quantity: {
-        lifetime: 120,
-        yearly: 12,
-        monthly: 1
-      }
-    },
-    {
-      text: `<span className="font-normal text-neutral-300">Bonus #3:</span> Do Not Do This On YouTube Course`,
-      price: {
-        ind: 4999,
+        ind: 2499,
         int: 99
       },
       plan: ['lifetime', 'yearly', 'monthly'],
@@ -136,7 +110,7 @@ export default function PaymentSection({ loc, data }) {
       }
     },
     {
-      text: `<span className="font-normal text-neutral-300">Bonus #4:</span> Scripting Secret Course`,
+      text: '<span className="font-normal text-neutral-300">Bonus #2:</span> Access to our Private YouTube Growth Community',
       price: {
         ind: 4999,
         int: 99,
@@ -149,10 +123,36 @@ export default function PaymentSection({ loc, data }) {
       }
     },
     {
+      text: `<span className="font-normal text-neutral-300">Bonus #3:</span> Do Not Do This On YouTube Course`,
+      price: {
+        ind: 1499,
+        int: 49
+      },
+      plan: ['lifetime', 'yearly', 'monthly'],
+      quantity: {
+        lifetime: 120,
+        yearly: 12,
+        monthly: 1
+      }
+    },
+    {
+      text: `<span className="font-normal text-neutral-300">Bonus #4:</span> Scripting Secret Course`,
+      price: {
+        ind: 1499,
+        int: 49,
+      },
+      plan: ['lifetime', 'yearly', 'monthly'],
+      quantity: {
+        lifetime: 120,
+        yearly: 12,
+        monthly: 1
+      }
+    },
+    {
       text: `<span className="font-normal text-neutral-300">Bonus #5:</span> Content Strategy Doc`,
       price: {
-        ind: 2999,
-        int: 49
+        ind: 999,
+        int: 29
       },
       plan: ['lifetime', 'yearly', 'monthly'],
       quantity: {
@@ -164,8 +164,8 @@ export default function PaymentSection({ loc, data }) {
     {
       text: `<span className="font-normal text-neutral-300">Bonus #6:</span> Video Editing Checklist`,
       price: {
-        ind: 2999,
-        int: 49
+        ind: 499,
+        int: 19
       },
       plan: ['lifetime', 'yearly', 'monthly'],
       quantity: {
@@ -177,8 +177,8 @@ export default function PaymentSection({ loc, data }) {
     {
       text: `<span className="font-normal text-neutral-300">Bonus #7:</span> Video Research Template`,
       price: {
-        ind: 2999,
-        int: 49
+        ind: 499,
+        int: 19
       },
       plan: ['lifetime', 'yearly', 'monthly'],
       quantity: {
@@ -190,8 +190,8 @@ export default function PaymentSection({ loc, data }) {
     {
       text: `<span className="font-normal text-neutral-300">Bonus #8:</span> Thumbnail Designing Hack`,
       price: {
-        ind: 2999,
-        int: 49
+        ind: 499,
+        int: 19
       },
       plan: ['lifetime', 'yearly', 'monthly'],
       quantity: {
@@ -203,8 +203,8 @@ export default function PaymentSection({ loc, data }) {
     {
       text: `<span className="font-normal text-neutral-300">Bonus #9:</span> Video Optimization Doc`,
       price: {
-        ind: 2999,
-        int: 49
+        ind: 499,
+        int: 19
       },
       plan: ['lifetime', 'yearly', 'monthly'],
       quantity: {
@@ -216,8 +216,8 @@ export default function PaymentSection({ loc, data }) {
     {
       text: `<span className="font-normal text-neutral-300">Bonus #10:</span> Revenue Prediction Tool`,
       price: {
-        ind: 2999,
-        int: 49
+        ind: 499,
+        int: 19
       },
       plan: ['lifetime', 'yearly', 'monthly'],
       quantity: {
@@ -229,8 +229,8 @@ export default function PaymentSection({ loc, data }) {
     {
       text: `<span className="font-normal text-red-500">Additional Bonus:</span> Channel audit report tailor made for your channel personally created by the YouTube expert`,
       price: {
-        ind: 4999,
-        int: 99
+        ind: 1499,
+        int: 49
       },
       plan: ['lifetime'],
       quantity: {
@@ -240,8 +240,8 @@ export default function PaymentSection({ loc, data }) {
     {
       text: `<span className="font-normal text-red-500">Limited Bonus:</span> Free one-on-one consulting calls for the first 25 members`,
       price: {
-        ind: 49999,
-        int: 999
+        ind: 7999,
+        int: 499
       },
       plan: ['lifetime', 'yearly'],
       quantity: {
