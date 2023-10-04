@@ -80,6 +80,10 @@ export default function CollabQueryForm() {
               <input type="text" placeholder="Name" className='w-full px-3 py-2 rounded-lg bg-stone-100 text-neutral-700' value={name} onChange={(e) => setName(e.target.value)} required />
               <input type="email" placeholder="Email" className='w-full px-3 py-2 rounded-lg bg-stone-100 text-neutral-700' value={email} onChange={(e) => setEmail(e.target.value)} required />
               <input type="tel" placeholder="Phone" className='w-full px-3 py-2 rounded-lg bg-stone-100 text-neutral-700' value={phone} onChange={(e) => setPhone(e.target.value)} required />
+              <div className='flex flex-row w-full gap-1'>
+                <input type='checkbox' required name='privacy' />
+                <p className='text-xs md:text-sm font-normal text-left text-neutral-800'>I agree to Peepoye Network's <a href='/privacy-policy' className='text-blue-500 hover:underline' target='_blank' rel='noreferrer'>Privacy Policy</a></p>
+              </div>
               <div className='flex flex-col md:self-start self-center items-center justify-center gap-3'>
                 <button className="flex rounded-lg p-2 px-3 text-lg md:text-xl text-stone-800 flex-row items-center justify-center gap-2 w-full font-medium bg-yellow-500 hover:bg-yellow-300 hover:scale-105 active:bg-yellow-600 active:scale-95 transition-all duration-100">
                   Get our Media Kit

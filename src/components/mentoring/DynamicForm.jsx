@@ -4,7 +4,7 @@ import axios from 'axios'
 import { AnimatePresence, motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
-export default function DynamicForm({animation = true, closeFunc = false}) {
+export default function DynamicForm({ animation = true, closeFunc = false }) {
   const { ref, inView } = useInView();
   const nameRef = useRef(null);
   const emailRef = useRef(null);
@@ -74,6 +74,10 @@ export default function DynamicForm({animation = true, closeFunc = false}) {
               </div>
               <div className="flex flex-col gap-1">
                 <input ref={emailRef} type="email" name="email" id="email" className="border-2 border-neutral-400 rounded-lg p-2" placeholder='Email' required />
+              </div>
+              <div className='flex flex-row w-full justify-center gap-1'>
+                <input type='checkbox' required name='privacy' />
+                <p className='text-xs md:text-sm font-normal text-left text-neutral-800'>I agree to Peepoye Network's <a href='/privacy-policy' className='text-blue-500 hover:underline' target='_blank' rel='noreferrer'>Privacy Policy</a></p>
               </div>
               <div className="flex flex-col gap-1">
                 <button type="submit" className="text-base md:text-lg text-center bg-neutral-600 text-white p-2 px-8 rounded-lg drop-shadow-lg shadow-lg hover:bg-neutral-700 hover:shadow-xl hover:drop-shadow-xl active:bg-neutral-800 active:shadow-2xl active:drop-shadow-2xl active:translate-x-1 active:scale-95">YES! I&apos;M IN!</button>

@@ -100,7 +100,11 @@ export default function EnquiryForm({ data, closePopup = false }) {
                                 <input key={index2} className='bg-neutral-100 px-5 py-2 rounded-md placeholder:text-black border-t-4 border-blue-500' type={data.questions[question].inputs[input].type} placeholder={data.questions[question].inputs[input].placeholder} required={data.questions[question].inputs[input].required} name={data.questions[question].inputs[input].name} onChange={(e) => setAnswerList({ ...answerList, [e.target.name]: e.target.value })} />
                               )
                               )}
-                              <button type='submit' className='bg-neutral-400 px-5 py-2 rounded-md hover:scale-105'>
+                              <div className='flex flex-row w-full justify-center gap-1'>
+                                <input type='checkbox' required name='privacy' />
+                                <p className='text-xs md:text-sm font-normal text-left text-neutral-800'>I agree to Peepoye Network's <a href='/privacy-policy' className='text-blue-500 hover:underline' target='_blank' rel='noreferrer'>Privacy Policy</a></p>
+                                </div>
+                              <button type='submit' className='bg-white px-5 py-2 rounded-md hover:scale-105'>
                                 Submit
                               </button>
                             </form>

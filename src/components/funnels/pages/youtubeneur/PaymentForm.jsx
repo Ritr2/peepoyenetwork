@@ -40,7 +40,7 @@ export default function PaymentForm({ setDataFormVisible, currentPlan, successUr
         ls.set('name', name)
         ls.set('email', email)
         ls.set('phone', phone)
-        if(loc === 'ind') {
+        if (loc === 'ind') {
             if (currentPlan === 'lifetime') {
                 makePayment(details, setLoading, setDataFormVisible, successUrl, "accelerator")
             }
@@ -90,6 +90,10 @@ export default function PaymentForm({ setDataFormVisible, currentPlan, successUr
                                     <input type="text" placeholder="Name" className="flex-1 rounded-lg p-2 text-base md:text-xl font-normal text-center md:text-left text-neutral-700 bg-neutral-100 border-2 border-neutral-200 border-dashed focus:outline-none focus:ring-2 focus:ring-emerald-600 focus:border-transparent" value={name} onChange={(e) => setName(e.target.value)} required />
                                     <input type="email" placeholder="Email" className="flex-1 rounded-lg p-2 text-base md:text-xl font-normal text-center md:text-left text-neutral-700 bg-neutral-100 border-2 border-neutral-200 border-dashed focus:outline-none focus:ring-2 focus:ring-emerald-600 focus:border-transparent" value={email} onChange={(e) => setEmail(e.target.value)} required />
                                     <input type="tel" placeholder="Phone" className="flex-1 rounded-lg p-2 text-base md:text-xl font-normal text-center md:text-left text-neutral-700 bg-neutral-100 border-2 border-neutral-200 border-dashed focus:outline-none focus:ring-2 focus:ring-emerald-600 focus:border-transparent" value={phone} onChange={(e) => setPhone(e.target.value)} required />
+                                    <div className='flex flex-row w-full justify-center gap-1'>
+                                        <input type='checkbox' required name='privacy' />
+                                        <p className='text-xs md:text-sm font-normal text-left text-neutral-800'>I agree to Peepoye Network's <a href='/privacy-policy' className='text-blue-500 hover:underline' target='_blank' rel='noreferrer'>Privacy Policy</a></p>
+                                    </div>
                                     <button type="submit" className={`flex rounded-lg p-2 text-white bg-red-500 text-base md:text-xl font-bold flex-row items-center justify-center gap-2 w-full  hover:shadow-lg hover:drop-shadow-lg hover:scale-105 active:shadow-none active:drop-shadow-none active:scale-95`}>Make Payment</button>
                                 </form>
                             </div>
