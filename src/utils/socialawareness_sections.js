@@ -28,7 +28,7 @@ const data = {
     p: "Explore a world of <strong>thought-provoking</strong> content with our collection of <strong>Bekhauf opinions</strong> on various social incidents. Each perspective is meticulously researched and presented in an <strong>unbiased manner</strong>. Our aim is to provide you with insightful and challenging viewpoints that go beyond conventional narratives.<br/>At our platform, we value open dialogue and <strong>critical thinking</strong>. Our mission is to give you resource where you can reflect on diverse viewpoints, unburdened by bias, and form your own conclusions.",
     button: {
       text: 'Read Blogs',
-      link: 'https://peepoye.com/blog'
+      link: '/social-awareness/blogs'
     },
     image: {
       src: 'https://i.ibb.co/Yk5rdcG/bekhauf-blogs.png',
