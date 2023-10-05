@@ -26,11 +26,11 @@ export async function POST(req) {
   });
 
   // Create an order -> generate the OrderID -> Send it to the Front-end
-  const payment_capture = 1;
+  const payment_capture = body.quantity ? body.quantity : 1;
   const amount = data[body.product].amount;
   const currency = "INR";
   const options = {
-    amount: (amount * 100).toString(),
+    amount: (amount * payment_capture * 100).toString(),
     currency,
     receipt: shortid.generate(),
     payment_capture,

@@ -53,7 +53,7 @@ export const metadata = {
 
 export default function page() {
   return (
-    <main className={`relative flex min-h-screen flex-col items-center overflow-x-hidden ${sora.className}`}>
+    <main className={`flex flex-col items-center overflow-x-hidden ${sora.className}`}>
         <Dfy />
     </main>
   )

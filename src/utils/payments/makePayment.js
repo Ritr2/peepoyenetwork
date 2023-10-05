@@ -1,7 +1,7 @@
 import initializeRazorpay from "./initializeRazorpay";
 import url from "../url";
 
-const makePayment = async (details, setLoading,setDataFormVisible, successUrl, amount) => {
+const makePayment = async (details, setLoading,setDataFormVisible, successUrl, amount, quantity = 1) => {
   const res = await initializeRazorpay();
 
   if (!res) {
@@ -16,6 +16,7 @@ const makePayment = async (details, setLoading,setDataFormVisible, successUrl, a
     body: JSON.stringify({
         product: amount,
         details: details,
+        quantity: quantity,
     }),
     headers: {
       "Content-Type": "application/json",

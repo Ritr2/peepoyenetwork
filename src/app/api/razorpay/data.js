@@ -15,6 +15,10 @@ const data = {
     amount: 4999,
     notes: "accelerator",
   },
+  "dfy": {
+    amount: 5999,
+    notes: "dfy",
+  }
 }
 
 export default data
