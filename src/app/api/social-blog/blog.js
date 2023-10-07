@@ -6767,7 +6767,7 @@ const blogdata = [
       alt: `Unveiling the Dark Realities: The Ujjain Rape Case Exposes Society's Indifference`,
     },
     owner: `Ayushi Rajput`,
-    tags: ['Ujjain Rape case', `Madhya Pradesh police`,'Ujjain crime news'],
+    tags: ['Ujjain Rape case', `Madhya Pradesh police`, 'Ujjain crime news'],
     date: '2023-10-03',
     summary: `The recent incident in Ujjain, Madhya Pradesh, involving the rape of a 15-year-old girl, has left our hearts heavy. Despite her desperate calls for help, she was left vulnerable and alone. The Ujjain rape incident has sent shockwaves through the nation, laying bare the grim reality of our society's apathy and failures. This disheartening blog delves into the harrowing details, highlighting the questions it raises about our society and the pursuit of justice.`,
     sections: [
@@ -6813,6 +6813,82 @@ const blogdata = [
       image: {
         src: `https://i.ibb.co/dMcPNRs/Unveiling-the-Dark-Realities-The-Ujjain-Rape-Case-Exposes-Society-s-Indifference-1.webp`,
         alt: `Unveiling the Dark Realities: The Ujjain Rape Case Exposes Society's Indifference`,
+      }
+    },
+  },
+  {
+    title: `Vishal vs. Bajrang The Asian Games 2023 Selection Controversy`,
+    slug: `vishal-vs-bajrang-the-asian-games-2023-selection-controversy`,
+    id: 97,
+    category_id: 14,
+    description: `Vishal Kaliraman vs. Bajrang Punia - Unveiling the Asian Games 2023 Athlete Selection Controversy sparks outrage. Is it time to prioritize merit over seniority in sports and beyond?`,
+    image: {
+      src: `https://i.ibb.co/k5WBzk3/Vishal-vs-Bajrang-The-Asian-Games-2023-Selection-Controversy.webp`,
+      alt: `Vishal vs. Bajrang The Asian Games 2023 Selection Controversy`,
+    },
+    owner: `Ayushi Rajput`,
+    tags: [`Vishal Kaliraman`, `Bajrang Punia`, `Asian Games 2023`, `Asian Games 2023 controversy`, `Asian Games 2023 selection controversy`],
+    date: '2023-10-07',
+    summary: `The historic achievement of 100 medals for India at the Asian Games 2023 brought joy and pride to the nation. However, beneath the celebration, a controversial athlete selection process has left the sports community in turmoil. Vishal Kaliraman, who fought through injuries to win all his trials, was denied a spot as Bajrang Punia received a direct entry. This blog delves into the facts surrounding this contentious issue and questions the fairness of such selection criteria.`,
+    sections: [
+      {
+        h1: `A Historic Milestone`,
+        p: `India's joy knew no bounds as the medal tally at the Asian Games 2023 reached a historic 100. The significance of this accomplishment cannot be overstated. It was a testament to the relentless pursuit of excellence by India's athletes, who have been training day in and day out, often against formidable odds. Their performances dazzled on the international stage and inspired a nation of over a billion people.<br/>In a heartfelt post on X, Prime Minister Modi captured the essence of this momentous achievement, saying, "A momentous achievement for India at the Asian Games! The people of India are thrilled that we have reached a remarkable milestone of 100 medals. I extend my heartfelt congratulations to our phenomenal athletes whose efforts have led to this historic milestone for India. Every awe-inspiring performance has made history and filled our hearts with pride. I look forward to hosting our Asian Games contingent on the 10th and interacting with our athletes."<br/>This accomplishment was not just about numbers on a scoreboard but about the unyielding spirit of India's athletes, their dedication to their craft, and the relentless pursuit of excellence. It was a testament that remarkable achievements become possible when opportunity and talent converge.`,
+      },
+      {
+        h1: `The Controversy Unveiled`,
+        p: `The controversy began when Vishal Kaliraman, a dedicated wrestler, won all five matches in the 65kg category trials for the Asian Games despite battling injuries. However, his joy was short-lived, as the Indian Olympic Association's (IOA) ad-hoc committee granted Bajrang Punia direct entry into the games, bypassing the trials. This decision raised questions about the fairness of the selection process.<br/>It's worth noting that during the wrestlers' protests in January 2023, a conspiracy theory was circulating that these athletes' demands were not being fully addressed. Some athletes, including Olympic medalists, argued that they should be exempt from trials based on their past achievements. However, the reality is that one's current performance and health matter. When a talented and hardworking competitor emerges, it's only fair to assess their skills and abilities. Winning an Olympic medal doesn't automatically guarantee a free pass in future selections.`,
+        html: {
+          type: `youtube`,
+          value: `https://www.youtube.com/watch?v=m6cnDgJbo9g`,
+        }
+      },
+      {
+        h1:`Consequences of Unfair Selection and the Vinesh Phogat Parallel`,
+        p: `Bajrang Punia's subsequent performance at the Asian Games fueled the fire of controversy. Despite receiving a direct entry, he failed to secure a medal, raising questions about the wisdom of bypassing trials and the potential impact on team performance.<br/>Vinesh Phogat was also granted direct entry to the Asian Games without undergoing trials. Her later withdrawal due to medical issues and the subsequent success of her replacement, Antim Panghal, who had won the trials, added complexity to the situation.`,
+      },
+      {
+        h1: `Questioning the Selection Criteria`,
+        p: `In the world of sports, where hard work, dedication, and talent should be the deciding factors, the controversies surrounding Vishal Kaliraman and Vinesh Phogat raise significant concerns. Was it fair to give a free entry to Bajrang Punia without trials in the Asian Games 2023? Should selection criteria be solely based on merit, disregarding seniority or rank?<br/>Moreover, this issue is not unique to sports; it resonates in various aspects of our society. Are we prioritizing merit and fairness, or are we letting seniority and influence dictate our choices?`,
+      },
+      {
+        h1: `A Closer Look at Vishal's Perspective`,
+        p: `To truly understand the weight of this issue, let's delve into Vishal Kaliraman's perspective. He said, "It's been so hard today, fighting five bouts and only drinking water all day. I have been training at the Chhatrasal Stadium for 10–12 years and about five years in the village — for these opportunities. But if you include someone directly, then what is the point of all our hard work and performance? This is like destroying the careers of youngsters and juniors. We have been working so hard for so many years." His words underscore the importance of a level playing field in sports, where athletes are evaluated solely based on their performance and merit.<br/>He also said,”'Everyone should give trials. Sadly, after so many years of hard work, I am not getting a chance. Bajrang Punia should come here and give a trial. Whoever is the best will go and win a medal in the Asian Games,” highlights the importance of a level playing field in sports, where athletes are evaluated solely based on their performance and merit.`,
+        html: {
+          type: `twitter`,
+          value: `1683073165399048192`,
+        }
+      },
+      {
+        h1: `Opinion`,
+        p: `The controversy surrounding athlete selection for the Asian Games 2023 raises fundamental questions about fairness and transparency in sports. In the wake of these events, it is crucial to reevaluate the criteria for selecting athletes representing India. A merit-based approach is essential to ensure that deserving athletes have the opportunity to shine on the global stage.<br/>Vishal Kaliraman's statement, 'This is like destroying the careers of youngsters and juniors,' resonates with those who believe that seniority and rank should not overshadow talent and hard work. The consequences of such decisions extend beyond wrestling, sparking a necessary conversation about fairness, merit, and the future of Indian sports.<br/>When wrestlers protested in January 2023, demanding justice, one might wonder if receiving a free entry, as Bajrang Punia did, truly aligns with the concept of justice.<br/><i>Should justice not entail a fair and equal opportunity for all athletes to prove their worth on the mat, regardless of past achievements? Is it fair to grant free entry to Bajrang Punia without trials, especially when it results in an underwhelming performance?</i><br/>This question goes beyond wrestling, prompting us to consider the principles of fairness and merit in athlete selection.<br/>In the spirit of fair competition, it is imperative to uphold the purity of sports by prioritizing merit when selecting athletes to represent their nation. Such decisions can have far-reaching effects, not only on individual athletes but also on the nation's sporting progress. The time has come to examine and reform our selection processes, making them more transparent and merit-driven, ensuring every deserving athlete gets a fair chance to make their mark on the international stage.<br/>What are your opinions? Cast your vote here:`,
+        html: {
+          type: `poll`,
+          value: `https://opinions.peepoye.com/polls/sports/vishal_vs_bajrang`,
+          image: {
+            src: `https://peepoye-user-database.onrender.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBFdz09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--690b7aa35307cfda184d777515d1f13581d8d393/Was%20it%20fair%20to%20give%20a%20free%20entry%20to%20Bajrang%20Punia%20without%20trials%20in%20Asian%20Games%202023%20.webp`,
+            alt: `Was it fair to give a free entry to Bajrang Punia without trials in Asian Games 2023?`,
+          }
+        }
+      }
+    ],
+    advertisements: {
+      show: true,
+      image: {
+        src: "https://i.ibb.co/c24wbZW/X-guide-banner.png",
+        alt: "Guide X",
+        link: "/guide-x",
+      },
+    },
+    referBlog: {
+      show: true,
+      title: `Pakistan Cricket Team's Arrival in India: Cheers, Controversies, and Questions`,
+      slug: `pakistan-cricket-teams-arrival-in-india-cheers-controversies-and-questions`,
+    },
+    linktree: {
+      image: {
+        src: `https://i.ibb.co/cQtLt5S/Vishal-vs-Bajrang-The-Asian-Games-2023-Selection-Controversy2.webp`,
+        alt: `Vishal vs. Bajrang The Asian Games 2023 Selection Controversy`,
       }
     },
   }
