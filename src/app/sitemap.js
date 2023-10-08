@@ -1,5 +1,5 @@
-import { getBlogs } from "./blogs/page"
-import { getSocialBlogs } from "./social-awareness/blogs/page";
+import { getBlogs } from "@/app/(commonheadandfoot)/blogs/page"
+import { getSocialBlogs } from "@/app/(commonheadandfoot)/social-awareness/blogs/page"
 import url from "@/utils/url";
 
 export default async function sitemap() {
