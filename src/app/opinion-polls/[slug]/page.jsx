@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react'
-import { apiUrl } from '@/utils/url'
+import url, { apiUrl } from '@/utils/url'
 import { notFound } from 'next/navigation';
 import Link from 'next/link'
 
@@ -17,6 +17,58 @@ const fetchPolls = async (slug) => {
     return res.json()
 }
 
+export async function generateMetadata({ params }) {
+    const { slug } = params
+    const data = await fetchPolls(slug)
+    return {
+        title: `${data.name} Category - Peepoye`,
+        description: `Share Your Opinion on ${data.name} Category Polls and get to know what others think about it.`,
+        images: [
+            {
+                url: data.image,
+                width: 800,
+                height: 500,
+                alt: data.name,
+            },
+        ],
+        url: `${url}/opinion-polls/${data.slug}`,
+        type: 'website',
+        keywords: [data.name, 'opinion polls', 'polls', 'opinion', 'peepoye'],
+        openGraph: {
+            title: `${data.name} Category - Peepoye`,
+            description: `Share Your Opinion on ${data.name} Category Polls and get to know what others think about it.`,
+            images: [
+                {
+                    url: data.image,
+                    width: 800,
+                    height: 500,
+                    alt: data.name,
+                },
+            ],
+            url: `${url}/opinion-polls/${data.slug}`,
+            type: 'website',
+        },
+        twitter: {
+            card: 'summary_large_image',
+            title: `${data.name} Category - Peepoye`,
+            description: `Share Your Opinion on ${data.name} Category Polls and get to know what others think about it.`,
+            images: [
+                {
+                    url: data.image,
+                    width: 800,
+                    height: 500,
+                    alt: data.name,
+                },
+            ],
+            creator: '@peepoye',
+        },
+        alternates: {
+            canonical: `${url}/opinion-polls/${data.slug}`,
+        },
+    }
+}
+
+
 export default async function page({ params }) {
     const { slug } = params
     const data = await fetchPolls(slug)
@@ -30,7 +82,7 @@ export default async function page({ params }) {
     }
 
     return (
-        <div className="flex flex-col">
+        <div className="flex flex-col pb-10 px-5">
             <div className='w-full flex items-center mt-5 mb-3 md:mt-10 gap-3 justify-center flex-col md:flex-row'>
                 <h3 className="text-2xl md:text-3xl font-bold text-neutral-800">Category - {data.name}</h3>
             </div>

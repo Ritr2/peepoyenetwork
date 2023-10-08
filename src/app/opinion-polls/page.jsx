@@ -25,7 +25,7 @@ export default async function page() {
       <div className='border-neutral-950 w-full border-dashed border-b-2 my-10 border-10 h-1' />
       <div className="flex flex-col items-center">
         <h3 className="text-2xl md:text-3xl mb-5 font-bold text-neutral-800">Category of Polls</h3>
-        <div className="flex flex-col md:flex-row flex-wrap md:w-4/5 m-auto items-center justify-center gap-10 p-3">
+        <div className="flex flex-col md:flex-row flex-wrap md:w-4/5 m-auto items-center justify-center gap-10 p-3 pb-10">
           {data.map((item, index) => (
             <Link href={`opinion-polls/${item.slug}`} key={index} className="flex flex-col items-center justify-center w-full md:w-2/5 hover:scale-105">
               <img src={item.image} alt="img" className="object-cover w-full rounded-t-lg" />
