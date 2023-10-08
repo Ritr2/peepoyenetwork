@@ -72,13 +72,8 @@ const fetchPolls = async (slug) => {
 
 export default async function page({ searchParams }) {
     let [data, featuredPolls, activePolls, expiredPolls] = [[], [], [], []]
-    if (!searchParams.q) {
-        useRouter.push('/opinion-polls')
-    }
-    else {
-        data = await fetchPolls(searchParams.q)
-    }
-    console.log(data)
+    let searchText = searchParams.q || ''
+        data = await fetchPolls(searchText)
     if(data.length > 0) {
     featuredPolls = data.filter((item) => item.sub_category.name === 'Featured Polls');
     activePolls = data.filter((item) => item.sub_category.name === 'Active Polls');
@@ -93,7 +88,7 @@ export default async function page({ searchParams }) {
     return (
         <div className="flex flex-col pb-10 px-5">
             <div className='w-full flex items-center mt-5 mb-3 md:mt-10 gap-3 justify-center flex-col md:flex-row'>
-                <h3 className="text-2xl md:text-3xl font-bold text-neutral-800">{searchParams.q ? `Search Result for - ${searchParams.q}`: ''}</h3>
+                <h3 className="text-2xl md:text-3xl font-bold text-neutral-800">Search Result for - {searchText}</h3>
             </div>
             {
                 data.length > 0 ?
