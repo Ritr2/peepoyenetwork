@@ -59,7 +59,7 @@ export default function Login({ type = 'login', notificationData = false }) {
   }
 
   return (
-    <section className="px-32 py-24">
+    <section className="md:px-32 md:py-24">
       <div
         className="flex flex-col items-center justify-center h-full">
         <div className="mb-12 md:mb-0 md:w-8/12 lg:w-5/12 xl:w-5/12">
@@ -70,14 +70,14 @@ export default function Login({ type = 'login', notificationData = false }) {
                 <>
                   <div className="flex flex-row self-center">
                     <Link href='/opinion-polls/login' className={`rounded-l-xl ${type === 'login' ? 'bg-neutral-300' : 'bg-white'} px-5 border-r-2 border-black`} >
-                      <h2 className={`text-4xl px-2 font-black text-center text-transparent bg-clip-text animate-text bg-gradient-to-r from-green-400 to-blue-500 uppercase`}>Login</h2>
+                      <h2 className={`text-xl md:text-4xl px-2 font-black text-center text-transparent bg-clip-text animate-text bg-gradient-to-r from-green-400 to-blue-500 uppercase`}>Login</h2>
                     </Link>
                     <Link href='/opinion-polls/signup' className={`rounded-r-xl ${type === 'signup' ? 'bg-neutral-300' : 'bg-white'} px-5`} >
-                      <h2 className={`text-4xl px-2 font-black text-center text-transparent bg-clip-text animate-text bg-gradient-to-r from-green-400 to-blue-500 uppercase`}>Signup</h2>
+                      <h2 className={`text-xl md:text-4xl px-2 font-black text-center text-transparent bg-clip-text animate-text bg-gradient-to-r from-green-400 to-blue-500 uppercase`}>Signup</h2>
                     </Link>
                   </div>
                   <div className="relative mb-6">
-                    <h2 className="text-2xl text-neutral-600">Email</h2>
+                    <h2 className="text-lg md:text-2xl text-neutral-600">Email</h2>
                     <input
                       type="email"
                       name="email"

@@ -144,7 +144,7 @@ export default function PollAndResult({ data, category, passloading }) {
                                   <a href={`https://www.facebook.com/sharer/sharer.php?u=${url}/opinion-polls/${category}/${data.slug}`} target='_blank' rel="noreferrer" className='h-12 w-12'><img src="https://i.ibb.co/s90Nqhz/facebook.png" alt="facebook" className='w-full h-full' /></a>
                                   <a href={`https://twitter.com/intent/tweet?text=Share Your opinion Now-&url=${url}/opinion-polls/${category}/${data.slug}&hashtags=bekhaufopinion`} target='_blank' rel="noreferrer" className='h-12 w-12'><img src="https://i.ibb.co/7Kq3Rg9/twitter.png" alt="twitter" className='w-full h-full' /></a>
                                   <a href={`https://api.whatsapp.com/send?text=Share Your opinion Now- ${url}/opinion-polls/${category}/${data.slug}`} target='_blank' rel="noreferrer" className='h-12 w-12'><img src="https://i.ibb.co/y6rkDdg/Whats-App-icon.webp" alt="whatsapp" className='w-full h-full' /></a>
-                                  <a href={`https://telegram.me/share/url?url=${url}/opinion-polls/${category}/${data.slug}&text=${data.name} Share Your opinion Now.`} target='_blank' rel="noreferrer" className='h-12 w-12'><img src="https://i.ibb.co/C8c6dKB/image.png" alt="telegram" className='w-full h-full' /></a>
+                                  <a href={`https://telegram.me/share/url?url=${url}/opinion-polls/${category}/${data.slug}`} target='_blank' rel="noreferrer" className='h-12 w-12'><img src="https://i.ibb.co/C8c6dKB/image.png" alt="telegram" className='w-full h-full' /></a>
                                 </div>
                               </div>
                             }

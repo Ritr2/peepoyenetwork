@@ -12,6 +12,7 @@ export default function NavBar() {
   const router = useRouter()
   const pathname = usePathname()
   const searchParams = useSearchParams()
+  const [search, setSearch] = React.useState(searchParams.get('q') || '')
   const [loginStatus, setLoginStatus] = React.useState(false)
   const [showPopup, setShowPopup] = React.useState(false)
   const [notificationStatus, setNotificationStatus] = React.useState(false)
@@ -20,6 +21,7 @@ export default function NavBar() {
   useEffect(() => {
     const authStatus = ls.get('authStatus') || false
     setLoginStatus(authStatus)
+    setShowPopup(false)
   }, [pathname])
 
   useEffect(() => {
@@ -40,8 +42,8 @@ export default function NavBar() {
       </div>
       <div className="flex flex-row gap-4 flex-1 items-center box-border justify-center md:justify-end">
         <div className="flex flex-col gap-1 relative flex-1 max-w-lg">
-          <input type="text" placeholder="Search The Poll you want to vote for" className="flex-1 box-border bg-stone-950 text-white border-2 placeholder:text-gray-300 border-white rounded-full px-3 py-2" />
-          <div className='flex flex-col justify-center box-border items-center m-auto bg-gray-500 h-8 w-8 absolute top-0 bottom-0 right-1 rounded-full p-2 hover:scale-110 active:scale-90'><BsSearch className="text-white text-2xl w-full h-full " /></div>
+          <input type="text" placeholder="Search The Poll you want to vote for" className="flex-1 box-border bg-stone-950 text-white border-2 placeholder:text-gray-300 border-white rounded-full px-3 py-2" value={search} onChange={(e) => setSearch(e.target.value)} onKeyDown={(e) => e.key === 'Enter' && router.push(`/opinion-polls/search?q=${search}`)} />
+          <div className='flex flex-col justify-center box-border items-center m-auto bg-gray-500 h-8 w-8 absolute top-0 bottom-0 right-1 rounded-full p-2 hover:scale-110 active:scale-90'><BsSearch className="text-white text-2xl w-full h-full " onClick={() => router.push(`/opinion-polls/search?q=${search}`)}/></div>
         </div>
         <div className="relative flex flex-col gap-1 w-10 h-10">
           <CgProfile className={`w-full bg-white rounded-full h-full cursor-pointer hover:scale-110`} onClick={() => setShowPopup(!showPopup)} />
