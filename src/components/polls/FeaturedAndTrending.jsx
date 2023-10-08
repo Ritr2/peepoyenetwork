@@ -72,7 +72,7 @@ export default function FeaturedAndTrending() {
                         </Link>
                         <div className='flex flex-row items-center justify-center w-full gap-1'>
                             {item.context_text.length > 0 && item.context_button.length > 0 &&
-                                <Link href={`/context/${item.category.slug}/${item.slug}`} className='bg-neutral-900 text-white text-md md:text-base font-bold p-3 w-full text-center rounded-bl-lg hover:text-neutral-800 hover:bg-neutral-400 transition-all duration-300'>Know the Story</Link>
+                                <Link href={`/opinion-polls/context/${item.category.slug}/${item.slug}`} className='bg-neutral-900 text-white text-md md:text-base font-bold p-3 w-full text-center rounded-bl-lg hover:text-neutral-800 hover:bg-neutral-400 transition-all duration-300'>Know the Story</Link>
                             }
                             <Link href={`/opinion-polls/${item.category.slug}/${item.slug}`} className='flex flex-row w-full'>
                                 <button type='button' className={`bg-neutral-900 text-white font-bold p-3 w-full ${item.context_text.length > 0 && item.context_button.length > 0 ? 'rounded-br-lg' : 'rounded-b-lg'} hover:text-neutral-800 hover:bg-neutral-400 transition-all duration-300`}>Vote Now</button>
