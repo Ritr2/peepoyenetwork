@@ -80,9 +80,11 @@ export default function PollAndResult({ data, category, passloading }) {
       ls.set('poll', `/opinion-polls/${category}/${data.slug}`)
       router.push(`/opinion-polls/login?nm=Please login to vote&nc=red`)
     } else {
-      if (data.product.url !== 'NA') {
-        setLoading(false)
-        setProductAdView(true)
+      if (data.product) {
+        if (data.product.url !== 'NA') {
+          setLoading(false)
+          setProductAdView(true)
+        }
       }
       sendVote(email, data.id, option_id)
     }
@@ -128,10 +130,10 @@ export default function PollAndResult({ data, category, passloading }) {
                             <div className="flex flex-row flex-wrap gap-4 justify-center md:max-h-[370px] overflow-y-auto">
                               {
                                 data.options.map((option, index) => (
-                                  <div key={index} className={`relative flex flex-row justify-between items-center border-2 border-neutral-900 gap-10 rounded-lg px-4 py-2 ${option.name.length > 40 ? 'w-full' : 'w-full md:w-5/12'}`}>
+                                  <div key={index} className={`relative flex flex-row justify-between items-center border-2 border-neutral-900 gap-5 rounded-lg px-4 py-2 ${option.name.length > 40 ? 'w-full' : 'w-full md:w-5/12'}`}>
                                     <div className={`absolute z-0 top-0 left-0 bottom-0 rounded-lg ${index % 2 ? 'bg-neutral-300' : 'bg-neutral-500'} transition-all duration-500`} style={{ width: `${result.result[option.id] ? ((result.result[option.id] / result.sum) * 100).toFixed(2) : 0}%` }} />
-                                    <span className='z-10 text-sm md:text-base'>{option.name}</span>
-                                    <span className='z-10 text-sm md:text-base'>{result.result[option.id] ? ((result.result[option.id] / result.sum) * 100).toFixed(2) : 0}%</span>
+                                    <p className='z-10 text-sm md:text-base'>{option.name}</p>
+                                    <p className='z-10 text-sm md:text-base'>{result.result[option.id] ? ((result.result[option.id] / result.sum) * 100).toFixed(2) : 0}%</p>
                                   </div>
                                 ))
                               }
@@ -151,7 +153,7 @@ export default function PollAndResult({ data, category, passloading }) {
                             <div className='flex flex-wrap flex-column'>
                               <div className="flex flex-col mt-3 sm:flex-row w-full items-center justify-center gap-4">
                                 <Link href={data.result_link} target='_blank' rel="noreferrer" className='flex-1 text-sm w-full sm:text-lg text-center bg-neutral-800 text-white p-3 rounded-lg hover:text-neutral-800 hover:bg-neutral-400 duration-300 transition-all'>{data.result_button}</Link>
-                                <Link href= {`/opinion-polls/${category}`} className='flex-1 text-sm w-full sm:text-lg text-center bg-neutral-800 text-white p-3 rounded-lg hover:text-neutral-800 hover:bg-neutral-400 duration-300 transition-all'>Back to {category} Polls</Link>
+                                <Link href={`/opinion-polls/${category}`} className='flex-1 text-sm w-full sm:text-lg text-center bg-neutral-800 text-white p-3 rounded-lg hover:text-neutral-800 hover:bg-neutral-400 duration-300 transition-all'>Back to {category} Polls</Link>
                               </div>
                             </div>
                           </div> :
