@@ -29,7 +29,7 @@ export default function PollContext({ data, category }) {
         </div>
       }
       <div className="flex flex-col md:flex-row justify-center gap-5 w-full md:w-7/12">
-        <Link href={`/opinion-polls/${category}/${data.id}`} className='bg-neutral-900 text-white text-md md:text-base text-center font-bold p-3 w-full rounded-lg hover:text-neutral-800 hover:bg-neutral-400 transition-all duration-300'>Back to Poll</Link>
+        <Link href={`/opinion-polls/${category}/${data.slug}`} className='bg-neutral-900 text-white text-md md:text-base text-center font-bold p-3 w-full rounded-lg hover:text-neutral-800 hover:bg-neutral-400 transition-all duration-300'>Back to Poll</Link>
         <Link href={`/opinion-polls`} className='bg-neutral-900 text-white text-md md:text-base text-center font-bold p-3 w-full rounded-lg hover:text-neutral-800 hover:bg-neutral-400 transition-all duration-300'>Back to Home</Link>
       </div>
     </div>
