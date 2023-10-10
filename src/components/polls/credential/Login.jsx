@@ -15,7 +15,7 @@ export default function Login({ type = 'login', notificationData = false }) {
   useEffect(() => {
     const authStatus = ls.get('authStatus') || false
     if (authStatus) {
-      ls.get('poll')? router.push(`${ls.get('poll')}?nm=You are already logged in&nc=green`): router.push(`/opinion-polls?nm=You are already logged in&nc=green`)
+      ls.get('poll') ? router.push(`${ls.get('poll')}?nm=You are already logged in&nc=green`) : router.push(`/bekhauf-awaaz?nm=You are already logged in&nc=green`)
     }
   }, [])
 
@@ -39,7 +39,7 @@ export default function Login({ type = 'login', notificationData = false }) {
     const data = await res.json()
     const tempColor = data.auth ? 'green' : 'red'
     data.auth ? ls.set('authStatus', data.auth) : null
-    data.email ? data.auth ? ls.get('poll')? router.push(`${ls.get('poll')}?nm=${data.result}&nc=green`): router.push(`/opinion-polls?nm=${data.result}&nc=green`) : router.push(`/opinion-polls/login?nm=${data.result}&nc=red`) : router.push(`/opinion-polls/signup?nm=${data.result}&nc=${tempColor}`)
+    data.email ? data.auth ? ls.get('poll') ? router.push(`${ls.get('poll')}?nm=${data.result}&nc=green`) : router.push(`/bekhauf-awaaz?nm=${data.result}&nc=green`) : router.push(`/bekhauf-awaaz/login?nm=${data.result}&nc=red`) : router.push(`/bekhauf-awaaz/signup?nm=${data.result}&nc=${tempColor}`)
     data.auth ? null : setLoading(false)
   }
 
@@ -54,7 +54,7 @@ export default function Login({ type = 'login', notificationData = false }) {
     setLoading(false)
     const data = await res.json()
     data.auth ? ls.set('authStatus', data.auth) : null
-    data.auth ? ls.get('poll')? router.push(`${ls.get('poll')}?nm=${data.result}&nc=green`): router.push(`/opinion-polls?nm=${data.result}&nc=green`) : router.push(`/opinion-polls/login?nm=${data.result}&nc=green`)
+    data.auth ? ls.get('poll') ? router.push(`${ls.get('poll')}?nm=${data.result}&nc=green`) : router.push(`/bekhauf-awaaz?nm=${data.result}&nc=green`) : router.push(`/bekhauf-awaaz/login?nm=${data.result}&nc=green`)
     data.auth ? null : setLoading(false)
   }
 
@@ -69,10 +69,10 @@ export default function Login({ type = 'login', notificationData = false }) {
               loading ? <div className="loader self-center" /> :
                 <>
                   <div className="flex flex-row self-center">
-                    <Link href='/opinion-polls/login' className={`rounded-l-xl ${type === 'login' ? 'bg-neutral-300' : 'bg-white'} px-5 border-r-2 border-black`} >
+                    <Link href='/bekhauf-awaaz/login' className={`rounded-l-xl ${type === 'login' ? 'bg-neutral-300' : 'bg-white'} px-5 border-r-2 border-black`} >
                       <h2 className={`text-xl md:text-4xl px-2 font-black text-center text-transparent bg-clip-text animate-text bg-gradient-to-r from-green-400 to-blue-500 uppercase`}>Login</h2>
                     </Link>
-                    <Link href='/opinion-polls/signup' className={`rounded-r-xl ${type === 'signup' ? 'bg-neutral-300' : 'bg-white'} px-5`} >
+                    <Link href='/bekhauf-awaaz/signup' className={`rounded-r-xl ${type === 'signup' ? 'bg-neutral-300' : 'bg-white'} px-5`} >
                       <h2 className={`text-xl md:text-4xl px-2 font-black text-center text-transparent bg-clip-text animate-text bg-gradient-to-r from-green-400 to-blue-500 uppercase`}>Signup</h2>
                     </Link>
                   </div>

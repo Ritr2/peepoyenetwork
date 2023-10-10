@@ -26,12 +26,12 @@ export default async function page({ params }) {
         <div className="flex flex-col">
             {
                 data.context_text.length > 0 && data.context_button.length > 0 ?
-                <PollContext data={data} category={slug} /> :
-                <div className="flex flex-col justify-center gap-5 items-center px-5 md:px-20 py-10">
-                    <h3 className="text-2xl md:text-3xl font-medium text-neutral-800 text-center">No Context Found</h3>
-                    <p className="text-base md:text-lg text-neutral-600 text-center">We are working on it. Please check back later.</p>
-                    <Link href={`/opinion-polls/${slug}/${poll}`} className='bg-neutral-900 max-w-xs text-white text-md md:text-base text-center font-bold p-3 w-full rounded-lg hover:text-neutral-800 hover:bg-neutral-400 transition-all duration-300'>Back to Poll</Link>
-                </div>
+                    <PollContext data={data} category={slug} /> :
+                    <div className="flex flex-col justify-center gap-5 items-center px-5 md:px-20 py-10">
+                        <h3 className="text-2xl md:text-3xl font-medium text-neutral-800 text-center">No Context Found</h3>
+                        <p className="text-base md:text-lg text-neutral-600 text-center">We are working on it. Please check back later.</p>
+                        <Link href={`/bekhauf-awaaz/${slug}/${poll}`} className='bg-neutral-900 max-w-xs text-white text-md md:text-base text-center font-bold p-3 w-full rounded-lg hover:text-neutral-800 hover:bg-neutral-400 transition-all duration-300'>Back to Poll</Link>
+                    </div>
             }
         </div>
     )

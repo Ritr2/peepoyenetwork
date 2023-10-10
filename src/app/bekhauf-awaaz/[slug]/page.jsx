@@ -31,7 +31,7 @@ export async function generateMetadata({ params }) {
                 alt: data.name,
             },
         ],
-        url: `${url}/opinion-polls/${data.slug}`,
+        url: `${url}/bekhauf-awaaz/${data.slug}`,
         type: 'website',
         keywords: [data.name, 'opinion polls', 'polls', 'opinion', 'peepoye'],
         openGraph: {
@@ -45,7 +45,7 @@ export async function generateMetadata({ params }) {
                     alt: data.name,
                 },
             ],
-            url: `${url}/opinion-polls/${data.slug}`,
+            url: `${url}/bekhauf-awaaz/${data.slug}`,
             type: 'website',
         },
         twitter: {
@@ -63,7 +63,7 @@ export async function generateMetadata({ params }) {
             creator: '@peepoye',
         },
         alternates: {
-            canonical: `${url}/opinion-polls/${data.slug}`,
+            canonical: `${url}/bekhauf-awaaz/${data.slug}`,
         },
     }
 }
@@ -99,14 +99,14 @@ export default async function page({ params }) {
                                     {
                                         polls[key].map((item2, index2) => (
                                             <div className={`flex ${key === 'Expired Polls' ? 'opacity-70' : ''} flex-col items-center justify-center w-full md:w-2/5 hover:scale-105`} key={index2}>
-                                                <Link href={`/opinion-polls/${slug}/${item2.slug}`} className='w-full'>
+                                                <Link href={`/bekhauf-awaaz/${slug}/${item2.slug}`} className='w-full'>
                                                     <img src={item2.image} alt="img" className="object-cover w-full rounded-t-lg" loading='lazy' />
                                                 </Link>
                                                 <div className='flex flex-row items-center justify-center w-full gap-1'>
                                                     {item2.context_text.length > 0 && item2.context_button.length > 0 &&
-                                                        <Link href={`/opinion-polls/context/${slug}/${item2.slug}`} className='bg-neutral-900 text-white text-md md:text-base text-center font-bold p-3 w-full rounded-bl-lg hover:text-neutral-800 hover:bg-neutral-400 transition-all duration-300'>Know the Story</Link>
+                                                        <Link href={`/bekhauf-awaaz/context/${slug}/${item2.slug}`} className='bg-neutral-900 text-white text-md md:text-base text-center font-bold p-3 w-full rounded-bl-lg hover:text-neutral-800 hover:bg-neutral-400 transition-all duration-300'>Know the Story</Link>
                                                     }
-                                                    <Link href={`/opinion-polls/${slug}/${item2.slug}`} className='flex flex-row w-full'>
+                                                    <Link href={`/bekhauf-awaaz/${slug}/${item2.slug}`} className='flex flex-row w-full'>
                                                         <button type='button' className={`bg-neutral-900 text-white font-bold p-3 w-full ${item2.context_text.length > 0 && item2.context_button.length > 0 ? 'rounded-br-lg' : 'rounded-b-lg'} hover:text-neutral-800 hover:bg-neutral-400 transition-all duration-300`}>{key === 'Expired Polls' ? 'View Results' : 'Vote Now'}</button>
                                                     </Link>
                                                 </div>

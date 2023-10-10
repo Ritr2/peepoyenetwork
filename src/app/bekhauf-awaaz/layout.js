@@ -20,12 +20,12 @@ export const metadata = {
       alt: 'Bekhauf Polls for Bekhauf Community'
     },
   ],
-  url: 'https://peepoye.com/opinion-polls',
+  url: 'https://peepoye.com/bekhauf-awaaz',
   type: 'website',
   openGraph: {
     type: 'website',
     locale: 'en_IE',
-    url: 'https://peepoye.com/opinion-polls',
+    url: 'https://peepoye.com/bekhauf-awaaz',
     title: 'Bekhauf Polls for Bekhauf Community',
     description: 'Vote now and share your Bekhauf voice! Gain fresh perspectives and dive into thought-provoking discussions today. Express your opinions.',
     images: [
@@ -54,18 +54,18 @@ export const metadata = {
     creator: '@peepoye',
   },
   alternates: {
-    canonical: 'https://peepoye.com/opinion-polls',
+    canonical: 'https://peepoye.com/bekhauf-awaaz',
   },
 };
 
 
 export default function RootLayout({ children }) {
   return (
-      <div className={`${roboto.className} flex flex-col`}>
-        <NavBar />
-        <div className="mt-24 md:mt-20" />
-        {children}
-        <Footer />
-      </div>
+    <div className={`${roboto.className} flex flex-col`}>
+      <NavBar />
+      <div className="mt-24 md:mt-20" />
+      {children}
+      <Footer />
+    </div>
   )
 }

@@ -58,15 +58,15 @@ export default function PollAndResult({ data, category, passloading }) {
         setResult({ result: recievedData.result, sum: recievedData.sum })
       }
       else {
-        ls.set('poll', `/opinion-polls/${category}/${data.slug}`)
+        ls.set('poll', `/bekhauf-awaaz/${category}/${data.slug}`)
         ls.remove('authStatus')
-        router.push(`/opinion-polls/login?nm=${recievedData.result}&nc=red`)
+        router.push(`/bekhauf-awaaz/login?nm=${recievedData.result}&nc=red`)
       }
     }
     else {
-      ls.set('poll', `/opinion-polls/${category}/${data.slug}`)
+      ls.set('poll', `/bekhauf-awaaz/${category}/${data.slug}`)
       ls.remove('authStatus')
-      router.push(`/opinion-polls/signup?nm=${recievedData.result}&nc=red`)
+      router.push(`/bekhauf-awaaz/signup?nm=${recievedData.result}&nc=red`)
     }
   }
 
@@ -77,8 +77,8 @@ export default function PollAndResult({ data, category, passloading }) {
     const email = ls.get('email') || false
     const authStatus = ls.get('authStatus') || false
     if (!email || !authStatus) {
-      ls.set('poll', `/opinion-polls/${category}/${data.slug}`)
-      router.push(`/opinion-polls/login?nm=Please login to vote&nc=red`)
+      ls.set('poll', `/bekhauf-awaaz/${category}/${data.slug}`)
+      router.push(`/bekhauf-awaaz/login?nm=Please login to vote&nc=red`)
     } else {
       if (data.product) {
         if (data.product.url !== 'NA') {
@@ -92,7 +92,7 @@ export default function PollAndResult({ data, category, passloading }) {
 
   return (
     <div className={`flex flex-col px-5 py-5 pb-16 md:px-24 md:py-12 gap-3 md:gap-6 ${sora.className}`}>
-      <Link href={`/opinion-polls/${category}`}>
+      <Link href={`/bekhauf-awaaz/${category}`}>
         <h2 className="text-sm md:text-3xl font-bold text-center text-neutral-600 uppercase underline-offset-2 hover:underline">
           {
             productAdView ? 'Wait for the Result...' : `${category} Poll`
@@ -143,17 +143,17 @@ export default function PollAndResult({ data, category, passloading }) {
                               <div className='flex flex-col w-full items-center justify-center gap-4'>
                                 <h4 className='text-lg md:text-xl text-center text-stone-800 font-semibold w-full'>Share this poll with others to get to know more opinions</h4>
                                 <div className='flex flex-row w-full items-center justify-center gap-6'>
-                                  <a href={`https://www.facebook.com/sharer/sharer.php?u=${url}/opinion-polls/${category}/${data.slug}`} target='_blank' rel="noreferrer" className='h-12 w-12'><img src="https://i.ibb.co/s90Nqhz/facebook.png" alt="facebook" className='w-full h-full' /></a>
-                                  <a href={`https://twitter.com/intent/tweet?text=Share Your opinion Now-&url=${url}/opinion-polls/${category}/${data.slug}&hashtags=bekhaufopinion`} target='_blank' rel="noreferrer" className='h-12 w-12'><img src="https://i.ibb.co/7Kq3Rg9/twitter.png" alt="twitter" className='w-full h-full' /></a>
-                                  <a href={`https://api.whatsapp.com/send?text=Share Your opinion Now- ${url}/opinion-polls/${category}/${data.slug}`} target='_blank' rel="noreferrer" className='h-12 w-12'><img src="https://i.ibb.co/y6rkDdg/Whats-App-icon.webp" alt="whatsapp" className='w-full h-full' /></a>
-                                  <a href={`https://telegram.me/share/url?url=${url}/opinion-polls/${category}/${data.slug}`} target='_blank' rel="noreferrer" className='h-12 w-12'><img src="https://i.ibb.co/C8c6dKB/image.png" alt="telegram" className='w-full h-full' /></a>
+                                  <a href={`https://www.facebook.com/sharer/sharer.php?u=${url}/bekhauf-awaaz/${category}/${data.slug}`} target='_blank' rel="noreferrer" className='h-12 w-12'><img src="https://i.ibb.co/s90Nqhz/facebook.png" alt="facebook" className='w-full h-full' /></a>
+                                  <a href={`https://twitter.com/intent/tweet?text=Share Your opinion Now-&url=${url}/bekhauf-awaaz/${category}/${data.slug}&hashtags=bekhaufopinion`} target='_blank' rel="noreferrer" className='h-12 w-12'><img src="https://i.ibb.co/7Kq3Rg9/twitter.png" alt="twitter" className='w-full h-full' /></a>
+                                  <a href={`https://api.whatsapp.com/send?text=Share Your opinion Now- ${url}/bekhauf-awaaz/${category}/${data.slug}`} target='_blank' rel="noreferrer" className='h-12 w-12'><img src="https://i.ibb.co/y6rkDdg/Whats-App-icon.webp" alt="whatsapp" className='w-full h-full' /></a>
+                                  <a href={`https://telegram.me/share/url?url=${url}/bekhauf-awaaz/${category}/${data.slug}`} target='_blank' rel="noreferrer" className='h-12 w-12'><img src="https://i.ibb.co/C8c6dKB/image.png" alt="telegram" className='w-full h-full' /></a>
                                 </div>
                               </div>
                             }
                             <div className='flex flex-wrap flex-column'>
                               <div className="flex flex-col mt-3 sm:flex-row w-full items-center justify-center gap-4">
                                 <Link href={data.result_link} target='_blank' rel="noreferrer" className='flex-1 text-sm w-full sm:text-lg text-center bg-neutral-800 text-white p-3 rounded-lg hover:text-neutral-800 hover:bg-neutral-400 duration-300 transition-all'>{data.result_button}</Link>
-                                <Link href={`/opinion-polls/${category}`} className='flex-1 text-sm w-full sm:text-lg text-center bg-neutral-800 text-white p-3 rounded-lg hover:text-neutral-800 hover:bg-neutral-400 duration-300 transition-all'>Back to {category} Polls</Link>
+                                <Link href={`/bekhauf-awaaz/${category}`} className='flex-1 text-sm w-full sm:text-lg text-center bg-neutral-800 text-white p-3 rounded-lg hover:text-neutral-800 hover:bg-neutral-400 duration-300 transition-all'>Back to {category} Polls</Link>
                               </div>
                             </div>
                           </div> :

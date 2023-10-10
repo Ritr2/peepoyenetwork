@@ -67,14 +67,14 @@ export default function FeaturedAndTrending() {
             {data.length > 0 && <div className="flex flex-col md:flex-row flex-wrap md:w-4/5 m-auto items-center justify-center gap-10 p-3">
                 {data.map((item, index) => (
                     <div key={index} className={`flex flex-col items-center justify-center w-full md:w-2/5 hover:scale-105`}>
-                        <Link href={`/opinion-polls/${item.category.slug}/${item.slug}`} className='w-full'>
+                        <Link href={`/bekhauf-awaaz/${item.category.slug}/${item.slug}`} className='w-full'>
                             <img src={item.image} alt="img" className="object-cover w-full rounded-t-lg" />
                         </Link>
                         <div className='flex flex-row items-center justify-center w-full gap-1'>
                             {item.context_text.length > 0 && item.context_button.length > 0 &&
-                                <Link href={`/opinion-polls/context/${item.category.slug}/${item.slug}`} className='bg-neutral-900 text-white text-md md:text-base font-bold p-3 w-full text-center rounded-bl-lg hover:text-neutral-800 hover:bg-neutral-400 transition-all duration-300'>Know the Story</Link>
+                                <Link href={`/bekhauf-awaaz/context/${item.category.slug}/${item.slug}`} className='bg-neutral-900 text-white text-md md:text-base font-bold p-3 w-full text-center rounded-bl-lg hover:text-neutral-800 hover:bg-neutral-400 transition-all duration-300'>Know the Story</Link>
                             }
-                            <Link href={`/opinion-polls/${item.category.slug}/${item.slug}`} className='flex flex-row w-full'>
+                            <Link href={`/bekhauf-awaaz/${item.category.slug}/${item.slug}`} className='flex flex-row w-full'>
                                 <button type='button' className={`bg-neutral-900 text-white font-bold p-3 w-full ${item.context_text.length > 0 && item.context_button.length > 0 ? 'rounded-br-lg' : 'rounded-b-lg'} hover:text-neutral-800 hover:bg-neutral-400 transition-all duration-300`}>Vote Now</button>
                             </Link>
                         </div>

@@ -32,27 +32,27 @@ export async function generateMetadata({ params }) {
                 alt: data.name,
             },
         ],
-        url: `${url}/opinion-polls/${slug}/${poll}`,
+        url: `${url}/bekhauf-awaaz/${slug}/${poll}`,
         type: 'website',
         keywords: [data.name, 'opinion polls', 'polls', 'opinion', 'peepoye'],
         openGraph: {
             title: `${data.name}`,
-        description: `Share Your Bekhauf Opinion and get to know what others think about it.`,
-        images: [
-            {
-                url: data.image,
-                width: 800,
-                height: 500,
-                alt: data.name,
-            },
-        ],
-        url: `${url}/opinion-polls/${slug}/${poll}`,
+            description: `Share Your Bekhauf Opinion and get to know what others think about it.`,
+            images: [
+                {
+                    url: data.image,
+                    width: 800,
+                    height: 500,
+                    alt: data.name,
+                },
+            ],
+            url: `${url}/bekhauf-awaaz/${slug}/${poll}`,
             type: 'website',
         },
         twitter: {
             card: 'summary_large_image',
             title: `${data.name}`,
-        description: `Share Your Bekhauf Opinion and get to know what others think about it.`,
+            description: `Share Your Bekhauf Opinion and get to know what others think about it.`,
             images: [
                 {
                     url: data.image,
@@ -64,7 +64,7 @@ export async function generateMetadata({ params }) {
             creator: '@peepoye',
         },
         alternates: {
-            canonical: `${url}/opinion-polls/${slug}/${poll}`,
+            canonical: `${url}/bekhauf-awaaz/${slug}/${poll}`,
         },
     }
 }
@@ -74,7 +74,7 @@ export default async function page({ params }) {
     const data = await fetchPoll(slug, poll)
     return (
         <div className="flex flex-col">
-            <PollAndResult data={data} category={slug} passloading = {data.sub_category.name === 'Expired Polls' ? true : false} />
+            <PollAndResult data={data} category={slug} passloading={data.sub_category.name === 'Expired Polls' ? true : false} />
         </div>
     )
 }

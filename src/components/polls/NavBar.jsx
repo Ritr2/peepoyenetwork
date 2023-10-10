@@ -26,7 +26,7 @@ export default function NavBar() {
 
   useEffect(() => {
     if (searchParams.get('nm')) {
-      setNotification({ msg: searchParams.get('nm'), color: searchParams.get('nc')||'red' })
+      setNotification({ msg: searchParams.get('nm'), color: searchParams.get('nc') || 'red' })
       setNotificationStatus(true)
     }
   }, [searchParams, pathname])
@@ -34,7 +34,7 @@ export default function NavBar() {
   return (
     <div className="fixed flex w-full box-border flex-col md:flex-row bg-stone-800 justify-between px-2 md:px-6 h-24 md:h-20 gap-y-2 z-40">
       <div className="flex flex-row items-center justify-center gap-2">
-        <Link href="/opinion-polls" className='text-white text-2xl md:text-left font-bold md:text-3xl'>
+        <Link href="/bekhauf-awaaz" className='text-white text-2xl md:text-left font-bold md:text-3xl'>
           <h1>Peepoye</h1>
         </Link>
         <h1 className='hidden md:block text-white text-2xl md:text-left font-bold md:text-3xl'>|</h1>
@@ -42,8 +42,8 @@ export default function NavBar() {
       </div>
       <div className="flex flex-row gap-4 flex-1 items-center box-border justify-center md:justify-end">
         <div className="flex flex-col gap-1 relative flex-1 max-w-lg">
-          <input type="text" placeholder="Search The Poll you want to vote for" className="flex-1 box-border bg-stone-950 text-white border-2 placeholder:text-gray-300 border-white rounded-full px-3 py-2" value={search} onChange={(e) => setSearch(e.target.value)} onKeyDown={(e) => e.key === 'Enter' && router.push(`/opinion-polls/search?q=${search}`)} />
-          <div className='flex flex-col justify-center box-border items-center m-auto bg-gray-500 h-8 w-8 absolute top-0 bottom-0 right-1 rounded-full p-2 hover:scale-110 active:scale-90'><BsSearch className="text-white text-2xl w-full h-full " onClick={() => router.push(`/opinion-polls/search?q=${search}`)}/></div>
+          <input type="text" placeholder="Search The Poll you want to vote for" className="flex-1 box-border bg-stone-950 text-white border-2 placeholder:text-gray-300 border-white rounded-full px-3 py-2" value={search} onChange={(e) => setSearch(e.target.value)} onKeyDown={(e) => e.key === 'Enter' && router.push(`/bekhauf-awaaz/search?q=${search}`)} />
+          <div className='flex flex-col justify-center box-border items-center m-auto bg-gray-500 h-8 w-8 absolute top-0 bottom-0 right-1 rounded-full p-2 hover:scale-110 active:scale-90'><BsSearch className="text-white text-2xl w-full h-full " onClick={() => router.push(`/bekhauf-awaaz/search?q=${search}`)} /></div>
         </div>
         <div className="relative flex flex-col gap-1 w-10 h-10">
           <CgProfile className={`w-full bg-white rounded-full h-full cursor-pointer hover:scale-110`} onClick={() => setShowPopup(!showPopup)} />
@@ -61,10 +61,10 @@ export default function NavBar() {
                       setShowPopup(false)
                     }}>Logout</button> :
                   <>
-                    <Link href="/opinion-polls/login">
+                    <Link href="/bekhauf-awaaz/login">
                       <h3 className="text-white">Login</h3>
                     </Link>
-                    <Link href="/opinion-polls/signup">
+                    <Link href="/bekhauf-awaaz/signup">
                       <h3 className="text-white">Signup</h3>
                     </Link>
                   </>
