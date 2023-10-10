@@ -6844,7 +6844,7 @@ const blogdata = [
         }
       },
       {
-        h1:`Consequences of Unfair Selection and the Vinesh Phogat Parallel`,
+        h1: `Consequences of Unfair Selection and the Vinesh Phogat Parallel`,
         p: `Bajrang Punia's subsequent performance at the Asian Games fueled the fire of controversy. Despite receiving a direct entry, he failed to secure a medal, raising questions about the wisdom of bypassing trials and the potential impact on team performance.<br/>Vinesh Phogat was also granted direct entry to the Asian Games without undergoing trials. Her later withdrawal due to medical issues and the subsequent success of her replacement, Antim Panghal, who had won the trials, added complexity to the situation.`,
       },
       {
@@ -6889,6 +6889,76 @@ const blogdata = [
       image: {
         src: `https://i.ibb.co/cQtLt5S/Vishal-vs-Bajrang-The-Asian-Games-2023-Selection-Controversy2.webp`,
         alt: `Vishal vs. Bajrang The Asian Games 2023 Selection Controversy`,
+      }
+    },
+  },
+  {
+    title: `The Israel-Palestine Conflict: A Historical Perspective and Its Influence on India`,
+    slug: `the-israel-palestine-conflict-a-historical-perspective-and-its-influence-on-india`,
+    id: 98,
+    category_id: 7,
+    description: `The recent Israel-Palestine conflict escalation as Hamas' surprise attack on Israel sparks casualties and regional tensions. Explore the historical context and India's evolving stance.`,
+    image: {
+      src: `https://i.ibb.co/7VrNnqF/The-Israel-Palestine-Conflict-A-Historical-Perspective-and-Its-Influence-on-India-1.webp`,
+      alt: `The Israel-Palestine Conflict: A Historical Perspective and Its Influence on India`,
+    },
+    owner: `Ayushi Rajput`,
+    tags: [`Israel`, `palestine`, `Israel Palestine Conflict`],
+    date: '2023-10-10',
+    summary: `The Israel-Palestine conflict, one of the world's longest-running disputes, has recently taken a dangerous turn. In a shocking series of events, Hamas, the Palestinian militant group, launched an unprecedented attack on Israel, causing casualties. Israel responded with retaliatory airstrikes on Gaza, leading to casualties among Palestinians. This ongoing conflict dates back to the 20th century and carries significant regional implications. India's position has evolved, reflecting a nuanced diplomatic approach.<br/>Let’s break down the details.`,
+    sections: [
+      {
+        h1: `The Escalation and Tragedy: What Led to Recent Violence?`,
+        p: `To comprehend the recent events, we need to rewind a bit. The Israel-Palestine conflict isn't new; it's a long-standing struggle. But the situation escalated when Hamas, a Palestinian group, launched a massive attack on Israel on October 7th. This attack resulted in a tragic loss of life, with more than <a href="https://www.hindustantimes.com/world-news/over-700-dead-2300-injured-in-worst-massacre-by-hamas-israeli-defence-force-101696894565343.html" target="_blank">700 Israelis</a> losing their lives as of Monday morning and many others suffering injuries. Right now, Israeli forces are engaged in intense battles with the attackers.<br/>Israel, in response, declared war. They responded with strong military action, declaring their intention to dismantle Hamas's military and governing infrastructure. Regrettably, this retaliation caused over <a href="https://edition.cnn.com/middleeast/live-news/israel-hamas-gaza-attack-10-08-23/h_f1ce01dbe160c7c2f66e0b3c4e445dc1" target="_blank">400 Palestinian casualties</a>, intensifying the conflict.`,
+      },
+      {
+        h1: `The Broader Implications of the Conflict`,
+        p: `The Israel-Palestine conflict isn't just any dispute. It's one of the oldest conflicts globally, tracing back to the mid-20th century. The conflict is marked by tension, violence, and numerous attempts at peace. The recent escalation is a reminder of how fragile the situation is, with the potential to affect not only Israel and Palestine but also the entire region's stability. The potential consequences loom large and could lead to a wider geopolitical crisis.`,
+      },
+      {
+        h1: `India's Historical and Evolving Perspective`,
+        p: `India has a unique relationship with Israel and Palestine, shaped by historical support for Palestinian self-determination and evolving diplomatic considerations. During India's fight for independence, it stood by Palestine, advocating principles of decolonization and self-rule. In 1947, India was one of only a few non-Muslim majority countries that voted against the United Nations resolution that created Israel.<br/>However, India's stance evolved over time, particularly in the 1990s. In the 1990s, with the fall of the Soviet Union, India reconsidered its foreign policy. This shift led to the establishment of diplomatic relations with Israel in 1992. Since then, the relationship has grown, especially in military and technological cooperation.<br/>This shift underscores India's commitment to maintaining balanced relationships with both Israel and Palestine while navigating the complexities of a long-standing conflict.`,
+        list: [
+          {
+            h1: `The balancing act`,
+            p: `Despite strengthening ties with Israel, India continued to support Palestinian positions on specific issues, such as opposing Israel's border wall construction in 2003, advocating for Palestine's inclusion at UNESCO in 2011, and adding the Palestinian flag to the UN premises in 2015.<br/>In 2015, Prime Minister Narendra Modi became the first Indian PM to visit Israel officially. He followed this up with an official visit to Palestine in 2018. Amid the 2021 crisis, India reiterated its support for Palestine at the UN while condemning the violence. India remains committed to the two-state solution. India's evolving military relationship with Israel has led to a pragmatic approach of "de-hyphenation" between Israel and Palestine. India now engages with both sides independently, aiming not to let one policy affect the other.`,
+          },
+          {
+            h1: `Solidarity with Israel`,
+            p: `During the recent crisis in Israel-Palestine, PM Modi expressed solidarity with Israel, condemning the terrorist attacks and offering thoughts and prayers for the victims and their families. This reflects India's commitment to a peaceful resolution while recognizing Israel's right to self-defense.`,
+          }
+        ]
+      },
+      {
+        h1: `Opinion`,
+        p: `Behind these numbers are countless individual tragedies—families torn apart, communities devastated, and lives shattered. Each loss of life is a stark reminder of the urgent need for peace. The toll on civilians, especially innocent children and women, is particularly distressing. Remembering that lasting peace can only be achieved through dialogue and negotiation is essential.<br/>In situations as complex as this, taking sides isn't easy. But every nation, including Israel, has the right to protect itself when faced with unprovoked attacks.<br/>The international community must play a role in de-escalating to promote peace and protect human lives. Diplomatic efforts, humanitarian aid, and a call for an immediate ceasefire are vital steps forward. The loss of any life, whether Israeli or Palestinian, is a profound tragedy that underscores the urgency of a peaceful resolution.<br/>Now, more than ever, dialogue and negotiations must replace violence and conflict. The suffering on both sides is a painful reminder that there are no winners in war. A lasting peace that respects the rights and aspirations of Israelis and Palestinians must be pursued earnestly.<br/>The world watches with concern and calls for an immediate cessation of hostilities, paving the way for peaceful coexistence in the region.<br/>Peepoye Network is committed to sharing fearless and blunt opinions on social issues and incidents, and the Israel-Palestine conflict is no exception. Our thoughts and prayers go out to all those affected by this tragic escalation of violence, and we hope for a swift resolution to bring peace to the region.<br/>What is your opinion on this? Cast your vote:`,
+        html: {
+          type: `poll`,
+          value: `https://peepoye.com/bekhauf-awaaz/global-trends/israel_palestine_war_hamashttps://opinions.peepoye.com/polls/social-issue/manipur_violence`,
+          image: {
+            src: `https://peepoye-user-database.onrender.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBGQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--bc4f78b239f47ca45576d54d9286dd5373290eba/Bekhauf%20opinion%20poll.webp`,
+            alt: `Manipur Violence Poll`,
+          }
+        },
+      }
+    ],
+    advertisements: {
+      show: true,
+      image: {
+        src: "https://i.ibb.co/c24wbZW/X-guide-banner.png",
+        alt: "Guide X",
+        link: "/guide-x",
+      },
+    },
+    referBlog: {
+      show: true,
+      title: `Jaahnavi Kandula: The indian student who was killed by US cop in Seattle`,
+      slug: `jaahnavi-kandula-the-indian-student-who-was-killed-by-us-cop-in-seattle`,
+    },
+    linktree: {
+      image: {
+        src: `https://i.ibb.co/f9b1btX/The-Israel-Palestine-Conflict-A-Historical-Perspective-and-Its-Influence-on-India-2.webphttps://i.ibb.co/cQtLt5S/Vishal-vs-Bajrang-The-Asian-Games-2023-Selection-Controversy2.webp`,
+        alt: `The Israel-Palestine Conflict: A Historical Perspective and Its Influence on India`,
       }
     },
   }
