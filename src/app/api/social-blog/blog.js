@@ -6960,6 +6960,7 @@ const blogdata = [
         src: `https://i.ibb.co/f9b1btX/The-Israel-Palestine-Conflict-A-Historical-Perspective-and-Its-Influence-on-India-2.webphttps://i.ibb.co/cQtLt5S/Vishal-vs-Bajrang-The-Asian-Games-2023-Selection-Controversy2.webp`,
         alt: `The Israel-Palestine Conflict: A Historical Perspective and Its Influence on India`,
       }
+      
     },
   }
 ];
