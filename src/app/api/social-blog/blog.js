@@ -6934,7 +6934,7 @@ const blogdata = [
         p: `Behind these numbers are countless individual tragedies—families torn apart, communities devastated, and lives shattered. Each loss of life is a stark reminder of the urgent need for peace. The toll on civilians, especially innocent children and women, is particularly distressing. Remembering that lasting peace can only be achieved through dialogue and negotiation is essential.<br/>In situations as complex as this, taking sides isn't easy. But every nation, including Israel, has the right to protect itself when faced with unprovoked attacks.<br/>The international community must play a role in de-escalating to promote peace and protect human lives. Diplomatic efforts, humanitarian aid, and a call for an immediate ceasefire are vital steps forward. The loss of any life, whether Israeli or Palestinian, is a profound tragedy that underscores the urgency of a peaceful resolution.<br/>Now, more than ever, dialogue and negotiations must replace violence and conflict. The suffering on both sides is a painful reminder that there are no winners in war. A lasting peace that respects the rights and aspirations of Israelis and Palestinians must be pursued earnestly.<br/>The world watches with concern and calls for an immediate cessation of hostilities, paving the way for peaceful coexistence in the region.<br/>Peepoye Network is committed to sharing fearless and blunt opinions on social issues and incidents, and the Israel-Palestine conflict is no exception. Our thoughts and prayers go out to all those affected by this tragic escalation of violence, and we hope for a swift resolution to bring peace to the region.<br/>What is your opinion on this? Cast your vote:`,
         html: {
           type: `poll`,
-          value: `https://peepoye.com/bekhauf-awaaz/global-trends/israel_palestine_war_hamashttps://opinions.peepoye.com/polls/social-issue/manipur_violence`,
+          value: `https://peepoye.com/bekhauf-awaaz/global-trends/israel_palestine_war_hamas`,
           image: {
             src: `https://peepoye-user-database.onrender.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBGQT09IiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--bc4f78b239f47ca45576d54d9286dd5373290eba/Bekhauf%20opinion%20poll.webp`,
             alt: `Manipur Violence Poll`,
@@ -6960,7 +6960,7 @@ const blogdata = [
         src: `https://i.ibb.co/f9b1btX/The-Israel-Palestine-Conflict-A-Historical-Perspective-and-Its-Influence-on-India-2.webphttps://i.ibb.co/cQtLt5S/Vishal-vs-Bajrang-The-Asian-Games-2023-Selection-Controversy2.webp`,
         alt: `The Israel-Palestine Conflict: A Historical Perspective and Its Influence on India`,
       }
-      
+
     },
   }
 ];
