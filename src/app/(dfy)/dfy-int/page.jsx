@@ -54,7 +54,7 @@ export const metadata = {
 export default function page() {
   return (
     <main className={`flex flex-col items-center overflow-x-hidden ${sora.className}`}>
-        <Dfy loc='ind' />
+        <Dfy loc='int' />
     </main>
   )
 }

@@ -17,7 +17,7 @@ import SocialMediaDetails from './SocialMediaDetails'
 import FAQ from '@/components/FAQ'
 import FunnelFooter from '../../FunnelFooter'
 
-export default function Dfy() {
+export default function Dfy({loc = 'ind'}) {
     const { ref: ref1, inView: inView1 } = useInView()
     const { ref: socialMediaRef, inView: socialMediaInView } = useInView();
     const faqData = [
@@ -42,7 +42,7 @@ export default function Dfy() {
     return (
         <div className='flex flex-col md:items-center justify-center w-full'>
             <div className={`flex flex-col ${style.bgGreen} w-full px-5 py-3`}>
-                <h1 className='text-lg md:text-2xl text-center text-white'>Don't fall behind your competitors, upgrade to our DFY product now!!</h1>
+                <h1 className='text-lg md:text-2xl text-center text-white'>Don't fall behind your competitors, upgrade to our Youtube Growth Service now!!</h1>
             </div>
             <section className='flex flex-col md:items-center justify-center px-5 md:px-40 py-5 md:py-20 animate-text bg-gradient-to-r from-green-100 via-white to-emerald-200 w-full'>
                 <div className='flex flex-col-reverse md:flex-row justify-center w-full' ref={ref1}>
@@ -93,7 +93,7 @@ export default function Dfy() {
                 <div className='flex flex-col md:flex-row justify-center w-full gap-10'>
                     <div className='flex flex-col md:items-center flex-1 gap-2 md:gap-5'>
                         <h2 className='text-xl md:text-2xl font-bold text-neutral-800 leading-normal'>How do we support our <span className={`${style.textGreen}`}>Customers</span> all over the world</h2>
-                        <p className='text-base md:text-lg text-neutral-800 leading-8'>Our YouTube SaaS services are designed to support content creators and simplify the content production process. Whether you need to create stunning thumbnails, edit videos, write scripts, or build websites, our platform has got you covered. We offer a suite of services that are easy to use and accessible to anyone, regardless of technical skill level. With our SaaS services, you can focus on creating the content you love, while we handle the technical upliftment. From start to finish, we've got you covered, so you can produce professional-quality content with ease.</p>
+                        <p className='text-base md:text-lg text-neutral-800 leading-8'>Our YouTube Growth services are designed to support content creators and simplify the content production process. Whether you need to create stunning thumbnails, edit videos, write scripts, or build websites, our platform has got you covered. We offer a suite of services that are easy to use and accessible to anyone, regardless of technical skill level. With our YouTube Growth Services, you can focus on creating the content you love, while we handle the technical upliftment. From start to finish, we've got you covered, so you can produce professional-quality content with ease.</p>
                     </div>
                     <div className='flex flex-col md:items-center justify-center flex-1'>
                         <ul className='flex flex-col items-start justify-start gap-10 text-xl text-neutral-800'>
@@ -103,7 +103,7 @@ export default function Dfy() {
                                 </div>
                                 <div className='flex flex-col md:gap-2 flex-1'>
                                     <h3 className='font-bold text-lg md:text-xl text-neutral-800'>Strategy, Creation & Design</h3>
-                                    <p className='text-neutral-500 text-base'>SaaS services for thumbnail, video editing, scripting, website building etc.</p>
+                                    <p className='text-neutral-500 text-base'>Youtube Growth Service for thumbnail, video editing, scripting, website building etc.</p>
                                 </div>
                             </li>
                             <li className='flex flex-row md:items-center gap-5 text-lg'>
@@ -157,7 +157,7 @@ export default function Dfy() {
             </section>
             <section className='flex flex-col gap-5 md:gap-10 md:items-center justify-center px-5 md:px-40 py-20 w-full'>
                 <h2 className='text-xl md:text-4xl text-center font-semibold w-full text-neutral-800'>Select the <span className={`font-bold ${style.textGreen}`}>Quantity of video</span> For You</h2>
-                <PricingDfy />
+                <PricingDfy loc={loc} />
             </section>
             <section className='flex flex-col gap-5 md:gap-10 md:items-center justify-center px-5 md:px-20 py-20 animate-text bg-gradient-to-r from-green-100 via-white to-emerald-200 w-full'>
                 <BulkPrice />
