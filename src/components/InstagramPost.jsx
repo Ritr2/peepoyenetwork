@@ -3,7 +3,7 @@ import React, { useEffect } from 'react'
 import { InstagramEmbed } from 'react-social-media-embed';
 
 export default function InstagramPost({ url }) {
-  const [mobile, setMobile] = React.useState(false)
+  const [mobile, setMobile] = React.useState(true)
 
   useEffect(() => {
     if (typeof window !== "undefined") {
