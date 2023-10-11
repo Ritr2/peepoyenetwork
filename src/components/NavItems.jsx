@@ -2,8 +2,21 @@
 import React from 'react'
 import Link from 'next/link'
 import DropDown from './DropDown'
+import NavBar from './polls/NavBar'
+import { usePathname } from 'next/navigation'
 
 export default function NavItems({setIsOpen = false}) {
+  const [navVisible, setNavVisible] = React.useState(false)
+  const path = usePathname()
+  React.useEffect(() => {
+    if (path.includes('/bekhauf-awaaz')) {
+      setNavVisible(true)
+    }
+    else {
+      setNavVisible(false)
+    }
+  }, [path])
+
   return (
     <>
       <Link href="/about" className="font-medium px-2" onClick={() => setIsOpen ? setIsOpen(false) : null}>ABOUT</Link>
@@ -12,6 +25,10 @@ export default function NavItems({setIsOpen = false}) {
       <Link href="https://services.peepoye.com/" className="font-medium px-2" onClick={() => setIsOpen ? setIsOpen(false) : null}>SERVICES</Link>
       <Link href="/collaborate-with-us" className="font-medium px-2" onClick={() => setIsOpen ? setIsOpen(false) : null}>COLLABORATE</Link>
       <Link href="/resources" className="font-medium px-2" onClick={() => setIsOpen ? setIsOpen(false) : null}>RESOURCES</Link>
+      {
+        navVisible &&
+        <NavBar />
+      }
     </>
   )
 }

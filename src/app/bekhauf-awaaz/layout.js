@@ -2,6 +2,7 @@ import { Roboto } from 'next/font/google'
 import url from '@/utils/url';
 import NavBar from '@/components/polls/NavBar';
 import Footer from '@/components/Footer';
+import NavigationBar from '@/components/NavigationBar';
 
 
 const roboto = Roboto({
@@ -62,7 +63,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <div className={`${roboto.className} flex flex-col`}>
-      <NavBar />
+      <NavigationBar />
       <div className="mt-24 md:mt-20" />
       {children}
       <Footer />
