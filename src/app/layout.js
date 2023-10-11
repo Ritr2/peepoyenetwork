@@ -5,7 +5,7 @@ import GoogleAnalytic from '@/components/GoogleAnalytic';
 
 
 const roboto = Roboto({
-  weight: ['100', '300', '400', '500', '700'],
+  weight: ['100', '300', '400', '500', '700', '900'],
   subsets: ['latin'],
 })
 
