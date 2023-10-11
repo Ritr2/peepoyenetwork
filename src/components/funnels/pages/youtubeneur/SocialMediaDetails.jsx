@@ -12,10 +12,10 @@ export default function SocialMediaDetails() {
       config: { mass: 1, tension: 20, friction: 10 }
     });
     return <animated.span>{
-      number.to(n => n.toFixed(2)%1 === 0 ? n.toFixed(0) : n.toFixed(1))
+      number.to(n => n.toFixed(2)%1 === 0 ? n.toFixed(0) : (n.toFixed(2)*10)%1 === 0 ? n.toFixed(1) : n.toFixed(2))
       }</animated.span>
   }
-  
+
   const {ref, inView} = useInView();
   return (
     <section className='md:px-16 w-full'>

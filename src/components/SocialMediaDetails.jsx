@@ -13,7 +13,7 @@ const Number = (n) => {
     config: { mass: 1, tension: 20, friction: 10 }
   });
   return <animated.span>{
-    number.to(n => n.toFixed(2)%1 === 0 ? n.toFixed(0) : n.toFixed(1))
+    number.to(n => n.toFixed(2)%1 === 0 ? n.toFixed(0) : (n.toFixed(2)*10)%1 === 0 ? n.toFixed(1) : n.toFixed(2))
     }</animated.span>
 }
 
