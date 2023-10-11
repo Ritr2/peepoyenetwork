@@ -7,7 +7,7 @@ import PollAndResult from '@/components/polls/PollAndResult';
 const fetchPoll = async (slug, poll) => {
     let res;
     try {
-        res = await fetch(`${apiUrl}/categories/${slug}/questions/${poll}`, { next: { revalidate: 10000 } })
+        res = await fetch(`${apiUrl}/categories/${slug}/questions/${poll}`, {cache: "no-cache"})
         if (!res.ok) {
             throw new Error('Something went wrong')
         }
