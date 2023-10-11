@@ -6960,7 +6960,62 @@ const blogdata = [
         src: `https://i.ibb.co/f9b1btX/The-Israel-Palestine-Conflict-A-Historical-Perspective-and-Its-Influence-on-India-2.webphttps://i.ibb.co/cQtLt5S/Vishal-vs-Bajrang-The-Asian-Games-2023-Selection-Controversy2.webp`,
         alt: `The Israel-Palestine Conflict: A Historical Perspective and Its Influence on India`,
       }
-
+    },
+  },
+  {
+    title: `Rohit Sharma: The Hitman's Record-Breaking Journey`,
+    slug: `rohit-sharma-the-hitmans-record-breaking-journey`,
+    id: 99,
+    category_id: 14,
+    description: `The incredible journey of Rohit Sharma as the ‘Hitman’ in ODI Cricket with record-breaking centuries and World Cup milestones.`,
+    image: {
+      src: `https://i.ibb.co/xCxmZHC/Rohit-Sharma-The-Hitman-s-Record-Breaking-Journey-1.webp`,
+      alt: `Rohit Sharma: The Hitman's Record-Breaking Journey`,
+    },
+    owner: `Ayushi Rajput`,
+    tags: [`Rohit Sharma`, `Hitman`, `ODI World Cup`, `India's highest run-scorer`, `Rohit Sharma's achievements`],
+    date: '2023-10-11',
+    summary: `Rohit Sharma, fondly known as the 'Hitman,' has rewritten the One Day International (ODI) cricket record books. With an illustrious decade-long career, he has become the joint-fastest to reach 1000 ODI World Cup runs. He left an indelible mark in cricket history with his incredible achievements.`,
+    sections: [
+      {
+        h1: `World Cup Hero`,
+        p: `In a recent match against Afghanistan during the 2023 ODI World Cup Rohit Sharma created history by becoming the joint-fastest to score 1000 runs in World Cup tournaments equalling the legendary David Warner's record in just 19 innings. This remarkable feat makes him the fourth Indian to achieve this milestone, joining the elite company of Sachin Tendulkar, Sourav Ganguly, and Virat Kohli. Rohit's journey in World Cups began in 2015, when he scored 330 runs with a century. However, he came into his own during the 2019 World Cup, where he smashed a record-breaking five centuries, finishing as the tournament's highest run-getter. His six centuries in World Cups tie him with the iconic Sachin Tendulkar, cementing his legacy as one of the all-time greats in ODI cricket.`,
+        html: {
+          type: `instagram`,
+          value: `https://www.instagram.com/p/CyQ6XHVyBcX`,
+        }
+      },
+      {
+        h1: `The Captaincy Critique`,
+        p: `While Rohit Sharma's batting prowess is unquestionable, it's vital to recall a past incident of criticism regarding his captaincy. Some believed he fell short in this aspect, particularly after the final loss of India's World Test Championship (WTC). It's crucial to remember that cricket is a team sport, and no individual can carry a team single-handedly.<br/>Harbhajan Singh, among others, voiced his support for Rohit, asserting that he is a brilliant leader who deserves the backing of the cricket establishment. He emphasized that it's unfair to judge Rohit solely based on recent results and urged for faith and support in the 'Hitman.'`,
+      },
+      {
+        h1: `Records Galore`,
+        p: `Rohit Sharma's list of records and achievements in ODI cricket is astonishing. He is the only batsman in history to score three double centuries in ODI matches. His highest individual score of 264 remains the pinnacle in ODI cricket, and he holds the record for the highest number of fours (33) in a single ODI innings. Additionally, he's the second-highest six-hitter in an ODI innings, just behind Eoin Morgan. Rohit's journey as an opener in ODIs has been remarkable; he's the fastest Indian opener to reach 4000 and 5000 runs, achieving these milestones in 83 and 102 innings, respectively. Moreover, Rohit is India's third-highest century scorer (29) in ODIs, behind the legends Sachin Tendulkar and Virat Kohli.`,
+      },
+      {
+        h1: `The Rise of the Hitman`,
+        p: `In cricket, Rohit Sharma is not just a batsman; he's a legend in the making. His journey from Borivali to international stardom is a tale of dreams realized through sheer talent, relentless dedication, and a touch of good fortune.<br/>Rohit Sharma's achievements in ODI cricket and World Cup tournaments are legendary. His records, including multiple double centuries and the highest individual ODI score, testify to his extraordinary batting prowess. But beyond the numbers, Rohit's inspiring journey, marked by trials and tribulations, showcases the remarkable power of talent and unwavering determination.<br/>As we continue to savor the magic of Rohit's batting, let's celebrate the 'Hitman' of Indian cricket, a player who keeps us on the edge of our seats, making every cricket fan's heart skip a beat.<br/>So, here's to more fireworks from Rohit Sharma in the future, reminding us that dreams can indeed come true in sports. Rohit's incredible journey and record-breaking performances have truly made him a cricket fan's delight.<br/><span className="text-center font-bold text-black mt-5">The Hitman's Odyssey continues, and we can't wait for the next chapter in this epic saga!</span>`,
+      }
+    ],
+    advertisements: {
+      show: true,
+      image: {
+        src: "https://i.ibb.co/c24wbZW/X-guide-banner.png",
+        alt: "Guide X",
+        link: "/guide-x",
+      },
+    },
+    referBlog: {
+      show: true,
+      title: `Vishal vs. Bajrang The Asian Games 2023 Selection Controversy`,
+      slug: `vishal-vs-bajrang-the-asian-games-2023-selection-controversy`,
+    },
+    linktree: {
+      image: {
+        src: `https://i.ibb.co/HYNMdFs/Rohit-Sharma-The-Hitman-s-Record-Breaking-Journey-2.webp`,
+        alt: `Rohit Sharma: The Hitman's Record-Breaking Journey`,
+      }
     },
   }
 ];
