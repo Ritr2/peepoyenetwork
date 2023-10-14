@@ -47,16 +47,6 @@ export async function GET(req) {
     return bDate - aDate;
   })
 
-  console.log("====================================");
-  console.log("data extraction");
-  console.log(temp2);
-  console.log("====================================");
-
-  console.log("====================================");
-  console.log("data consolidation");
-  console.log(data);
-  console.log("====================================");
-
   const recentFive = data.slice(0, 5);
 
   return NextResponse.json({recentFive, monthlyArchive: [...monthlyData], category });
