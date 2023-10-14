@@ -1,17 +1,15 @@
 import { NextResponse } from "next/server";
 import blogdata from "./blog";
+import { allBlogs } from "./apiMethods";
 
 export async function GET(req) {
-  let tempdata = blogdata.sort((a, b) => {
-    let aDate = new Date(a.date);
-    let bDate = new Date(b.date);
-    return bDate - aDate;
-  });
+  let tempdata = blogdata;
 
   let page = req.nextUrl.searchParams.get("page")
   let search = req.nextUrl.searchParams.get("search")
   let all = req.nextUrl.searchParams.get("all")
   let totalPage = 1;
+  let temp
 
   if (!all) {
     if (search) {
@@ -19,7 +17,17 @@ export async function GET(req) {
       tempdata = tempdata.filter((item) => {
         return item.title.toLowerCase().includes(search.toLowerCase());
       });
+      temp = await allBlogs(search);
     }
+    else{
+      temp = await allBlogs();
+    }
+    tempdata = tempdata.concat(temp);
+    tempdata = tempdata.sort((a, b) => {
+      let aDate = new Date(a.date);
+      let bDate = new Date(b.date);
+      return bDate - aDate;
+    });
     let total = tempdata.length;
     let count = 8;
     totalPage = Math.ceil(total / count);
@@ -37,6 +45,10 @@ export async function GET(req) {
     }
 
     tempdata = tempdata.slice(range[0], range[1] + 1)
+  }
+  else {
+    let temp = await allBlogs();
+    tempdata = tempdata.concat(temp);
   }
 
   const data = tempdata.map((item) => {

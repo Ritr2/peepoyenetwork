@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import blogdata from "../../blog";
+import { blog_by_archive } from "../../apiMethods";
 
 export async function GET(req, { params }) {
   const yearMonth = params.slug;
@@ -11,21 +12,27 @@ export async function GET(req, { params }) {
     return key === yearMonth;
   });
 
-  tempdata = tempdata.sort((a, b) => {
-    const dateA = new Date(a.date);
-    const dateB = new Date(b.date);
-    return dateB - dateA;
-  });
-
   let page = req.nextUrl.searchParams.get("page")
   let search = req.nextUrl.searchParams.get("search")
+  let temp
 
   if (search) {
     search = decodeURIComponent(search);
     tempdata = tempdata.filter((item) => {
       return item.title.toLowerCase().includes(search.toLowerCase());
     });
+    temp = await blog_by_archive(yearMonth, search);
   }
+  else{
+    temp = await blog_by_archive(yearMonth);
+  }
+
+  tempdata = tempdata.concat(temp);
+  tempdata = tempdata.sort((a, b) => {
+    const dateA = new Date(a.date);
+    const dateB = new Date(b.date);
+    return dateB - dateA;
+  });
 
   let total = tempdata.length;
   let count = 8;
@@ -63,4 +70,3 @@ export async function GET(req, { params }) {
 
   return NextResponse.json({data, totalPage});
 }
-

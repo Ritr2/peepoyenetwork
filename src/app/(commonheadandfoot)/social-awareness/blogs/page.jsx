@@ -35,6 +35,7 @@ export default async function page({ searchParams }) {
     search = decodeURIComponent(searchParams.search);
   }
   const { data, totalPage } = await getSocialBlogs(page, search);
+
   return (
     <main className={`relative flex flex-col items-center mt-16 ${dmSans.className} overflow-x-hidden`}>
       <section className="flex flex-col md:flex-row w-full bg-neutral-200 items-center justify-center px-2 py-12 md:py-24 md:px-20">

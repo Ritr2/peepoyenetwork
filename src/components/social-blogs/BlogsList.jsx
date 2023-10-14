@@ -1,6 +1,8 @@
+'use client'
 import Link from 'next/link'
 import React, { Fragment } from 'react';
 import url from '@/utils/url';
+import parse from 'html-react-parser';
 
 
 export default function BlogsList({ data, totalPage, page, search, afterurl }) {
@@ -12,8 +14,8 @@ export default function BlogsList({ data, totalPage, page, search, afterurl }) {
             <div className='flex flex-col gap-2 w-full md:w-7/12 order-2 md:order-1'>
               <Link href={`/social-awareness/blogs/${blog.slug}`}><h1 className='text-xl md:text-2xl font-bold text-neutral-700'>{blog.title}</h1></Link>
               {
-                blog.summary ? <p className='text-base md:text-lg text-neutral-600 line-clamp-3'>{blog.summary}</p> :
-                  <p className='text-base md:text-lg text-neutral-600 line-clamp-3'>{blog.description}</p>
+                blog.summary ? <span className='text-base md:text-lg text-neutral-600 line-clamp-3'>{parse(blog.summary)}</span> :
+                  <p className='text-base md:text-lg text-neutral-600 line-clamp-3'>{parse(blog.description)}</p>
               }
               <Link href={`/social-awareness/blogs/${blog.slug}`} className='text-base md:text-lg text-primary-500 font-semibold text-blue-700 hover:underline'>Read More</Link>
             </div>

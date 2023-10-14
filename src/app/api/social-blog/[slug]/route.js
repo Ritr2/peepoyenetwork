@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import blogdata from "../blog";
 import categoryData from "../category";
+import { blog_by_slug } from "../apiMethods";
 
 export async function GET(req, { params }) {
   const { slug } = params;
@@ -9,12 +10,14 @@ export async function GET(req, { params }) {
   });
 
   if (!blog) {
-    return NextResponse.json({ error: "Blog not found" }, { status: 404 });
+    let blogData = await blog_by_slug(slug);
+    let categoryData = blogData.category;
+    return NextResponse.json({ blog: blogData, category: categoryData });
   }
-
-  const category = categoryData.find((cat) => {
-    return cat.id === blog.category_id;
-  });
-
-  return NextResponse.json({ blog, category });
+  else{
+    const category = categoryData.find((cat) => {
+      return cat.id === blog.category_id;
+    });
+    return NextResponse.json({ blog, category });
+  }
 }

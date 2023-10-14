@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import categoryData from "../../category";
 import blogdata from "../../blog";
+import { blog_by_category } from "../../apiMethods";
 
 export async function GET(req, { params }) {
   const categorySlug = params.slug;
@@ -15,19 +16,29 @@ export async function GET(req, { params }) {
 
   let tempdata = blogdata.filter((blog) => {
     return blog.category_id === category.id;
-  }).sort((a, b) => {
-    return new Date(b.date) - new Date(a.date);
-  });
+  })
 
   let page = req.nextUrl.searchParams.get("page")
   let search = req.nextUrl.searchParams.get("search")
+
+  let temp
 
   if (search) {
     search = decodeURIComponent(search);
     tempdata = tempdata.filter((item) => {
       return item.title.toLowerCase().includes(search.toLowerCase());
     });
+    temp = await blog_by_category(categorySlug, search);
   }
+  else {
+    temp = await blog_by_category(categorySlug);
+  }
+
+  tempdata = tempdata.concat(temp);
+
+  tempdata = tempdata.sort((a, b) => {
+    return new Date(b.date) - new Date(a.date);
+  });
 
   let total = tempdata.length;
   let count = 8;
@@ -65,4 +76,3 @@ export async function GET(req, { params }) {
 
   return NextResponse.json({blog, category, totalPage});
 }
-

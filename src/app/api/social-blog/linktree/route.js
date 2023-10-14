@@ -1,25 +1,35 @@
 import { NextResponse } from "next/server";
 import blogdata from "../blog";
 import { notFound } from 'next/navigation';
+import { blog_linktree } from "../apiMethods";
 
 export async function GET(req) {
-  let tempdata = blogdata.sort((a, b) => {
-    let aDate = new Date(a.date);
-    let bDate = new Date(b.date);
-    return bDate - aDate;
-  }).filter((item) => {
+  let tempdata = blogdata.filter((item) => {
     return item.linktree;
   });
-  
+
   let page = req.nextUrl.searchParams.get("page")
   let search = req.nextUrl.searchParams.get("search")
+  let temp
 
   if (search) {
     search = decodeURIComponent(search);
     tempdata = tempdata.filter((item) => {
       return item.title.toLowerCase().includes(search.toLowerCase());
     });
+    temp = await blog_linktree(search);
   }
+  else {
+    temp = await blog_linktree();
+  }
+
+  tempdata = temp.concat(tempdata);
+
+  tempdata = tempdata.sort((a, b) => {
+    let aDate = new Date(a.date);
+    let bDate = new Date(b.date);
+    return bDate - aDate;
+  });
 
   let total = tempdata.length;
   let count = 12;
@@ -47,6 +57,6 @@ export async function GET(req) {
       image: item.linktree.image,
     };
   });
-  
+
   return NextResponse.json({data, totalPage});
 }

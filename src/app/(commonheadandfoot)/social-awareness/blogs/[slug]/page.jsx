@@ -111,7 +111,7 @@ export default async function page({ params }) {
             </div>
             <div className="flex flex-col justify-center flex-1 gap-2">
               <h1 className="text-xl md:text-3xl font-bold text-left text-neutral-700">{data.blog.title}</h1>
-              <p className="text-xs md:text-sm text-left text-neutral-500"> Posted at {longdateConvert(data.blog.date)} / Written by {data.blog.owner}</p>
+              <span className="text-xs md:text-sm text-left text-neutral-500"> Posted at {longdateConvert(data.blog.date)} / Written by {data.blog.owner}</span>
             </div>
             <div className="flex flex-col justify-center flex-1 gap-2">
               <div className="flex flex-col justify-center flex-1 gap-2">
@@ -119,8 +119,8 @@ export default async function page({ params }) {
               </div>
               {data.blog.summary &&
                 <div className="flex flex-col justify-center flex-1 gap-2 rounded-lg bg-neutral-300 p-4">
-                  <h2 className="text-lg md:text-xl font-bold text-left text-neutral-700">30-sec summary</h2>
-                  <p className="text-base md:text-lg font-light text-left text-neutral-900">{parse(data.blog.summary)}</p>
+                  <h2 className="text-lg md:text-xl font-bold text-left text-neutral-700">10-sec summary</h2>
+                  <span className="text-base md:text-lg font-light text-left text-neutral-900">{parse(data.blog.summary)}</span>
                 </div>}
               <section className="sectionAnchor flex flex-col justify-center flex-1 gap-7 rounded-lg  p-4">
                 {
@@ -133,7 +133,7 @@ export default async function page({ params }) {
                         section.h2 && <h3 className="text-base md:text-lg font-bold text-left social-anchor-tag text-neutral-700">{parse(section.h2)}</h3>
                       }
                       {
-                        section.p && <p className="text-base md:text-lg font-light social-anchor-tag text-left text-neutral-600">{parse(section.p)}</p>
+                        section.p && <span className="text-base md:text-lg font-light social-anchor-tag text-left text-neutral-600">{parse(section.p)}</span>
                       }
                       {
                         section.list && <ul className={`text-base md:text-lg flex flex-col gap-2 font-light text-left anchor-tag ${section.p? `pt-5`: `pt-1`}`}>
@@ -156,25 +156,25 @@ export default async function page({ params }) {
                           {
                             section.html.type === 'twitter' &&
                             <div className='flex flex-col justify-center items-center' data-theme="light">
-                              <Tweet id={section.html.value} />
+                              <Tweet id={section.html.value ? section.html.value : section.html.src} />
                             </div>
                           }
                           {
                             section.html.type === 'youtube' &&
                             <div className='flex flex-col justify-center items-center'>
-                              <VideoPlayer url={section.html.value} />
+                              <VideoPlayer url={section.html.value ? section.html.value : section.html.src} />
                             </div>
                           }
                           {
                             section.html.type === 'instagram' &&
                             <div className='flex flex-col justify-center items-center w-full'>
-                              <InstagramPost url={section.html.value} />
+                              <InstagramPost url={section.html.value ? section.html.value : section.html.src} />
                             </div>
                           }
                           {
                             section.html.type === 'poll' &&
                             <div className='flex flex-col justify-center items-center'>
-                              <Link href={section.html.value} target="_blank" rel="noopener noreferrer" className='hover:scale-105'>
+                              <Link href={section.html.value ? section.html.value : section.html.src} target="_blank" rel="noopener noreferrer" className='hover:scale-105'>
                                 <img src={section.html.image.src} alt={section.html.image.alt} className="w-full rounded-lg h-auto" draggable={false} />
                               </Link>
                             </div>
@@ -197,7 +197,7 @@ export default async function page({ params }) {
                                     subSection.h2 && <h3 className="text-base md:text-lg font-bold text-left social-anchor-tag text-neutral-700">{parse(subSection.h2)}</h3>
                                   }
                                   {
-                                    subSection.p && <p className="text-base md:text-lg font-light text-left social-anchor-tag text-neutral-600">{parse(subSection.p)}</p>
+                                    subSection.p && <span className="text-base md:text-lg font-light text-left social-anchor-tag text-neutral-600">{parse(subSection.p)}</span>
                                   }
                                   {
                                     subSection.list && <ul className={`text-base md:text-lg flex flex-col gap-2 font-light text-left anchor-tag ${subSection.p? `pt-5`: `pt-1`}`}>
@@ -220,25 +220,25 @@ export default async function page({ params }) {
                                       {
                                         subSection.html.type === 'twitter' &&
                                         <div className='flex flex-col justify-center items-center' data-theme="light">
-                                          <Tweet id={subSection.html.value} />
+                                          <Tweet id={subSection.html.value ? subSection.html.value : subSection.html.src} />
                                         </div>
                                       }
                                       {
                                         subSection.html.type === 'youtube' &&
                                         <div className='flex flex-col justify-center items-center'>
-                                          <VideoPlayer url={subSection.html.value} />
+                                          <VideoPlayer url={subSection.html.value ? subSection.html.value : subSection.html.src} />
                                         </div>
                                       }
                                       {
                                         subSection.html.type === 'instagram' &&
                                         <div className='flex flex-col justify-center items-center w-full'>
-                                          <InstagramPost url={subSection.html.value} />
+                                          <InstagramPost url={subSection.html.value ? subSection.html.value : subSection.html.src} />
                                         </div>
                                       }
                                       {
                                         subSection.html.type === 'poll' &&
                                         <div className='flex flex-col justify-center items-center'>
-                                          <Link href={subSection.html.value} target="_blank" rel="noopener noreferrer">
+                                          <Link href={subSection.html.value ? subSection.html.value : subSection.html.src} target="_blank" rel="noopener noreferrer">
                                             <img src={subSection.html.image.src} alt={subSection.html.image.alt} className="w-full rounded-lg h-auto" draggable={false} />
                                           </Link>
                                         </div>
@@ -281,7 +281,7 @@ export default async function page({ params }) {
               </div>
             </div>
             {
-              data.blog.advertisements.show && (
+              data.blog.advertisements && data.blog.advertisements.show && (
                 <div className="flex flex-col md:flex-row justify-center flex-1 gap-2 border-y-2 border-neutral-500 py-5">
                   {data.blog.advertisements.image &&
                     <div className="flex flex-col justify-center self-center gap-2 rounded-lg w-full p-4">
@@ -296,8 +296,8 @@ export default async function page({ params }) {
             {
               data.blog.referBlog.show && (
                 <div className="flex flex-col justify-center flex-1 gap-2 rounded-lg bg-neutral-300 p-4">
-                  <p className="text-base md:text-lg text-left font-bold text-neutral-900"> Also Read : <Link href={`/social-awareness/blogs/${data.blog.referBlog.slug}`} className='font-light hover:underline text-blue-700'>{data.blog.referBlog.title}</Link>
-                  </p>
+                  <span className="text-base md:text-lg text-left font-bold text-neutral-900"> Also Read : <Link href={`/social-awareness/blogs/${data.blog.referBlog.slug}`} className='font-light hover:underline text-blue-700'>{data.blog.referBlog.title}</Link>
+                  </span>
                 </div>
               )
             }

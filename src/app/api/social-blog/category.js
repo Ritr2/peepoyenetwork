@@ -72,10 +72,10 @@ const categoryData = [
     description: "Scam category talks about what scams are happening around the world.",
   },
   {
-    name: "Society & Issues",
-    slug: "society-issues",
+    name: "Social Issues",
+    slug: "social-issues",
     id: 13,
-    description: "Society & Issues around the world.",
+    description: "social & Issues around the world.",
   },
   {
     name: "Sports",
