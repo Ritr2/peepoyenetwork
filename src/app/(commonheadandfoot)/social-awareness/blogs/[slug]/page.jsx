@@ -13,6 +13,7 @@ import { RiTwitterXFill } from 'react-icons/ri'
 import { BsLinkedin } from 'react-icons/bs'
 import { BiLogoWhatsapp } from 'react-icons/bi'
 import { Adsense } from "@ctrl/react-adsense";
+import style from "@/styles/blog.module.css"
 
 
 const VideoPlayer = dynamic(() => import('@/components/VideoPlayer'), { ssr: false });
@@ -101,7 +102,7 @@ export default async function page({ params }) {
   const data = await fetchPosts(slug)
   return (
     <>
-      <main className={`flex min-h-screen social-blog-section flex-col items-center mt-16 ${dmSans.className}`}>
+      <main className={`flex min-h-screen social-blog-section flex-col items-center mt-16 ${style.socialContainer} ${dmSans.className}`}>
         <div className='flex flex-col md:flex-row w-full gap-8 px-2 py-12 md:px-40 items-start'>
           <section className="flex flex-col w-full gap-5 justify-center md:w-8/12">
             <div className="flex flex-col justify-center w-full border-y-2 border-stone-200  py-2 flex-1 gap-2 md:gap-5">
