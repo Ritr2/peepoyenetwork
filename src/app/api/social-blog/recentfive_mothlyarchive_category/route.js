@@ -40,11 +40,22 @@ export async function GET(req) {
 
 
 
-  data = data.concat(temp2).sort((a, b) => {
+  data = data.concat(temp2)
+  data = data.sort((a, b) => {
     let aDate = new Date(a.date);
     let bDate = new Date(b.date);
     return bDate - aDate;
   })
+
+  console.log("====================================");
+  console.log("data extraction");
+  console.log(temp2);
+  console.log("====================================");
+
+  console.log("====================================");
+  console.log("data consolidation");
+  console.log(data);
+  console.log("====================================");
 
   const recentFive = data.slice(0, 5);
 

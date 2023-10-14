@@ -20,6 +20,7 @@ const getrecentfiveblogs = async () => {
 
 export default async function SideBar({ search, afterurl }) {
   const data = await getrecentfiveblogs();
+  console.log(data)
   return (
     <SideBarClient data={data} search={search} afterurl={afterurl} />
   )

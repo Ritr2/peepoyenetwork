@@ -11,10 +11,15 @@ export async function GET(req, { params }) {
 
   if (!blog) {
     let blogData = await blog_by_slug(slug);
-    let categoryData = blogData.category;
-    return NextResponse.json({ blog: blogData, category: categoryData });
+    if (blogData.category) {
+      let categoryData = blogData.category;
+      return NextResponse.json({ blog: blogData, category: categoryData });
+    }
+    else {
+      return NextResponse.json({ blog: blogData }, { status: 404 });
+    }
   }
-  else{
+  else {
     const category = categoryData.find((cat) => {
       return cat.id === blog.category_id;
     });
