@@ -6,9 +6,11 @@ import { allArchives,recent_five_blogs, blog_categories } from "../apiMethods";
 export async function GET(req) {
   let data = blogdata
 
-  const temp = await allArchives();
-  const temp2 = await recent_five_blogs();
-  const temp3 = await blog_categories();
+  let search = req.nextUrl.searchParams.get("search")
+
+  let temp = await allArchives();
+  let temp2 = await recent_five_blogs();
+  let temp3 = await blog_categories();
 
   let monthlyData = new Set();
 

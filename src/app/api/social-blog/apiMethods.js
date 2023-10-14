@@ -1,25 +1,25 @@
 import { apiUrl } from "@/utils/url"
 
 export async function allBlogs(search='') {
-  const res = await fetch(`${apiUrl}/social_awareness_blogs`, {cache: "no-cache"});
+  const res = await fetch(`${apiUrl}/social_awareness_blogs?s=${search}`, {cache: "no-cache"});
   const data = await res.json();
   return data.blogs;
 }
 
 export async function allArchives() {
-  const res = await fetch(`${apiUrl}/blog_archives?s=""`, {cache: "no-cache"});
+  const res = await fetch(`${apiUrl}/blog_archives`, {cache: "no-cache"});
   const data = await res.json();
   return data
 }
 
 export async function recent_five_blogs() {
-  const res = await fetch(`${apiUrl}/recent_five_blogs?s""`, {cache: "no-cache"});
+  const res = await fetch(`${apiUrl}/recent_five_blogs`, {cache: "no-cache"});
   const data = await res.json();
   return data;
 }
 
 export async function blog_categories() {
-  const res = await fetch(`${apiUrl}/blog_categories?s""`, {cache: "no-cache"});
+  const res = await fetch(`${apiUrl}/blog_categories`, {cache: "no-cache"});
   const data = await res.json();
   return data;
 }
