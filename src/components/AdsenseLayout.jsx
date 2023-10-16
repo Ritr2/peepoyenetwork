@@ -5,8 +5,8 @@ import { Adsense } from "@ctrl/react-adsense";
 export default function AdsenseLayout() {
   return (
     <Adsense
-          client="ca-pub-8328474876522258"
-          slot="4034907999"
+          client="ca-pub-4476984830702989"
+          slot="7386653586"
           style={{ display: "block" }}
           layout="in-article"
           format="fluid"

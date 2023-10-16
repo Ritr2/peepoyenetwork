@@ -12,8 +12,8 @@ import { AiFillFacebook, AiFillRedditCircle } from 'react-icons/ai'
 import { RiTwitterXFill } from 'react-icons/ri'
 import { BsLinkedin } from 'react-icons/bs'
 import { BiLogoWhatsapp } from 'react-icons/bi'
-import { Adsense } from "@ctrl/react-adsense";
 import style from "@/styles/blog.module.css"
+import AdsenseLayout from '@/components/AdsenseLayout'
 
 
 const VideoPlayer = dynamic(() => import('@/components/VideoPlayer'), { ssr: false });
@@ -257,10 +257,7 @@ export default async function page({ params }) {
                       }
                       {
                         index === 1 &&
-                        <Adsense
-                          client="ca-pub-4476984830702989"
-                          slot="7386653586"
-                        />
+                        <AdsenseLayout />
                       }
                     </div>
                   )
