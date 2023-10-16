@@ -15,7 +15,6 @@ export default function GoogleAnalytic() {
       <GoogleAnalytics />
 
       <Script
-        id="adsbygoogle-init"
         strategy="lazyOnload"
         crossOrigin="anonymous"
         async
@@ -24,7 +23,6 @@ export default function GoogleAnalytic() {
       <Script
         async
         src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
-        strategy="afterInteractive"
       />
     </>
   )
