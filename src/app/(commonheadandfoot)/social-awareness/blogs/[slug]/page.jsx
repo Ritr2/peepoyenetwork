@@ -256,7 +256,7 @@ export default async function page({ params }) {
                         )
                       }
                       {
-                        index === 1 || index === 3 &&
+                        index === 1 &&
                         <div className="flex flex-col w-full py-4 md:py-8">
                           <AdsenseLayout />
                         </div>
