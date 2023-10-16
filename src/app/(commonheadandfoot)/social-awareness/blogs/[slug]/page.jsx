@@ -137,7 +137,7 @@ export default async function page({ params }) {
                         section.p && <span className="text-base md:text-lg font-light social-anchor-tag text-left text-neutral-600">{parse(section.p)}</span>
                       }
                       {
-                        section.list && <ul className={`text-base md:text-lg flex flex-col gap-2 font-light text-left anchor-tag ${section.p? `pt-5`: `pt-1`}`}>
+                        section.list && <ul className={`text-base md:text-lg flex flex-col gap-2 font-light text-left anchor-tag ${section.p ? `pt-5` : `pt-1`}`}>
                           {
                             section.list.map((listItem, index3) => (
                               <li key={index3} className='text-neutral-600 flex flex-row gap-2'>
@@ -201,7 +201,7 @@ export default async function page({ params }) {
                                     subSection.p && <span className="text-base md:text-lg font-light text-left social-anchor-tag text-neutral-600">{parse(subSection.p)}</span>
                                   }
                                   {
-                                    subSection.list && <ul className={`text-base md:text-lg flex flex-col gap-2 font-light text-left anchor-tag ${subSection.p? `pt-5`: `pt-1`}`}>
+                                    subSection.list && <ul className={`text-base md:text-lg flex flex-col gap-2 font-light text-left anchor-tag ${subSection.p ? `pt-5` : `pt-1`}`}>
                                       {
                                         subSection.list.map((listItem, index3) => (
                                           <li key={index3} className='text-neutral-600 flex flex-row gap-2'>
@@ -255,6 +255,13 @@ export default async function page({ params }) {
                           </section>
                         )
                       }
+                      {
+                        index === 1 &&
+                        <Adsense
+                          client="ca-pub-4476984830702989"
+                          slot="7386653586"
+                        />
+                      }
                     </div>
                   )
                   )
@@ -303,7 +310,7 @@ export default async function page({ params }) {
               )
             }
           </section>
-            <SideBar />
+          <SideBar />
         </div >
       </main >
     </>
