@@ -125,7 +125,6 @@ export default function GuideX() {
       }
     } else {
       if (curImpactIndex === impactData.length - 1) {
-        console.log('here');
         setCurImpactIndex(0);
       }
       else {

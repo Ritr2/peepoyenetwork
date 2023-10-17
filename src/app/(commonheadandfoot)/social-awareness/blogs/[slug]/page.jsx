@@ -301,6 +301,19 @@ export default async function page({ params }) {
               )
             }
             {
+              data.blog.advertisement && data.blog.advertisement.show && (
+                <div className="flex flex-col md:flex-row justify-center flex-1 gap-2 border-y-2 border-neutral-500 py-5">
+                  {data.blog.advertisement.image &&
+                    <div className="flex flex-col justify-center self-center gap-2 rounded-lg w-full p-4">
+                      <Link href={data.blog.advertisement.link} target="_blank" rel="noopener noreferrer">
+                        <img src={data.blog.advertisement.image.src} alt={data.blog.advertisement.image.alt} className="w-full rounded-lg h-auto" draggable={false} />
+                      </Link>
+                    </div>
+                  }
+                </div>
+              )
+            }
+            {
               data.blog.referBlog.show && (
                 <div className="flex flex-col justify-center flex-1 gap-2 rounded-lg bg-neutral-300 p-4">
                   <span className="text-base md:text-lg text-left font-bold text-neutral-900"> Also Read : <Link href={`/social-awareness/blogs/${data.blog.referBlog.slug}`} className='font-light hover:underline text-blue-700'>{data.blog.referBlog.title}</Link>

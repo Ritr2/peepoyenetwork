@@ -34,7 +34,6 @@ export async function getBlogs() {
   }
   }
   catch(err) {
-    console.log(err)
     notFound()
   }
   return res.json()

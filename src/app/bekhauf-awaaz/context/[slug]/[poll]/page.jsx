@@ -21,7 +21,6 @@ const fetchPoll = async (slug, poll) => {
 export default async function page({ params }) {
     const { slug, poll } = params
     const data = await fetchPoll(slug, poll)
-    console.log(data)
     return (
         <div className="flex flex-col">
             {

@@ -23,7 +23,7 @@ export async function POST(req) {
           product: data[body.product].notes,
         }),
       });
-    
+
     const params = {
         plan_id: body.plan_id,
         total_count: 6,
@@ -41,7 +41,6 @@ export async function POST(req) {
             }
         );
     } catch (err) {
-        console.log(err);
         return NextResponse.json(err, {
             status: 400,
         });

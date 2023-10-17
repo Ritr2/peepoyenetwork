@@ -25,10 +25,6 @@ export default function SideBarClient({data, search, afterurl}) {
     };
   }, []);
 
-  useEffect(() => {
-    console.log(scrollDown)
-  }, [scrollDown])
-
   return (
     <div className={`w-full flex-1 flex flex-col md:sticky ${scrollDown ? 'md:-top-[1100px]' : 'md:top-24'}`}>
       <div className='flex flex-col w-full gap-5 bg-neutral-100 p-5 rounded-xl'>
