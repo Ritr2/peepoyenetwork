@@ -12,6 +12,11 @@ const nextConfig = {
             destination: '/guide-x',
             permanent: true,
           },
+          {
+            source: '/gigolo-scam-what-are-the-red-flags-to-watch-out-for',
+            destination: '/social-awareness/blogs/gigolo-scam-what-are-the-red-flags-to-watch-out-for',
+            permanent: true,
+          }
         ]
       },
 }
