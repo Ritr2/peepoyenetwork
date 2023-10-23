@@ -10,13 +10,14 @@ import { BsArrowLeftCircle, BsArrowRightCircle } from 'react-icons/bs'
 import FAQ from '@/components/FAQ'
 import FunnelFooter from '../FunnelFooter'
 import url from '@/utils/url'
+import Link from 'next/link'
 
 const roboto = Roboto({
   weight: ['100', '300', '400', '500', '700', '900'],
   subsets: ['latin'],
 })
 
-export default function GuideX() {
+export default function GuideX({ data = false }) {
   const { ref: ref1, inView } = useInView();
   const { ref: ref2, inView: inView2 } = useInView();
   const [curImpactIndex, setCurImpactIndex] = React.useState(0);
@@ -152,9 +153,22 @@ export default function GuideX() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, type: 'spring', bounce: 0.5 }}
         >
-          Tired of sleeping with regret after wasting hours on <span className='font-semibold'>Social Media</span>?
+          {
+          data ?
+          parse(data.query.message): `${parse(`Tired of sleeping with regret after wasting hours on <span className='font-semibold'>Social Media</span>?`)}`
+          }
         </motion.h1>
       </section>
+      {
+        data && (
+          <div className=" flex flex-col w-10/12 md:w-8/12 justify-center mt-8 h-10 bg-stone-300 self-center rounded-full">
+            <div className={`relative bg-blue- h-full w-16 rounded-full flex flex-col items-center bg-blue-500`} style={{ width: `${data.query.levelPercentage}%` }}>
+              <div className="absolute top-0 left-0 flex flex-col rounded-full justify-center items-center h-full animate-percentage bg-blue-700/90" />
+              <span className="flex z-10 flex-col justify-center items-center h-full text-white text-sm md:text-2xl font-medium">{data.query.levelPercentage}% Completed</span>
+            </div>
+          </div>
+        )
+      }
       <section className="flex flex-col md:flex-row justify-center py-10 px-5 md:px-28 items-center overflow-hidden gap-5 md:gap-14">
         <div className="flex flex-col flex-1 justify-center items-start gap-5 order-2 md:order-1">
           <motion.h2 className={`text-2xl md:text-5xl select-none relative text-white font-medium ${style.blueTextShadow} ${style.lineHeight}`}
@@ -178,9 +192,19 @@ export default function GuideX() {
             <div className={`flex flex-col w-full gap-5`}>
               <div className={`flex flex-col items-center w-full p-3 rounded-lg bg-neutral-100 border-2 border-neutral-200 border-dashed`}>
                 <span className="flex-1 text-base md:text-xl font-normal text-left text-neutral-700">Regular Price: <s>₹999</s>/-</span>
-                <span className="text-base md:text-2xl font-normal md:font-bold text-center md:text-left text-blue-500">Today’s Offer: ₹199/-</span>
+                {
+                  data && data.combo ? <>
+                    <span className="text-base md:text-2xl text-center md:text-left text-neutral-700"> Offer Price: <s>₹199/-</s></span>
+                    <span className="text-base md:text-2xl font-normal md:font-bold text-center md:text-left text-blue-500">Combo Offer: ₹{data.price}/-</span>
+                  </> : <span className="text-base md:text-2xl font-normal md:font-bold text-center md:text-left text-blue-500">Today’s Offer: ₹199/-</span>
+                }
               </div>
-              <Button successUrl= {`${url}/accelerator-ind?product=guide-x`} amount='guide-x' text='Buy X Guide only for today at an unbelievable 80% Discount' padding='px-5 py-2' bgcolor={{ normal: 'bg-blue-500', hover: 'bg-blue-700', active: 'bg-blue-800' }} txcolor='text-white' />
+              <div className="flex flex-col gap-1 w-full">
+                <Button successUrl={data ? data.yes_link : `${url}/accelerator-ind?product=guide-x`} amount={data ? data.amount : 'guide-x'} text={data ? 'Buy the X Guide at a combo offer only for today' : 'Buy X Guide only for today at an unbelievable 80% Discount'} padding='px-5 py-2' bgcolor={{ normal: 'bg-blue-500', hover: 'bg-blue-700', active: 'bg-blue-800' }} txcolor='text-white' />
+                {
+                  data && <Link href={data.no_link} className='text-xs md:text-sm text-neutral-400 text-center font-normal hover:underline'>No, I don’t want to make money from X</Link>
+                }
+              </div>
             </div>
           </motion.div>
         </div>
@@ -220,7 +244,12 @@ export default function GuideX() {
           }
         </div>
         <div className="flex flex-col justify-center w-full md:w-4/12 gap-5">
-          <Button successUrl= {`${url}/accelerator-ind?product=guide-x`} amount='guide-x' text='Buy X Guide only for today at an unbelievable 80% Discount' padding='px-5 py-2' bgcolor={{ normal: 'bg-blue-500', hover: 'bg-blue-700', active: 'bg-blue-800' }} txcolor='text-white' />
+          <div className="flex flex-col gap-1 w-full">
+            <Button successUrl={data ? data.yes_link : `${url}/accelerator-ind?product=guide-x`} amount={data ? data.amount : 'guide-x'} text={data ? 'Buy the X Guide at a combo offer only for today' : 'Buy X Guide only for today at an unbelievable 80% Discount'} padding='px-5 py-2' bgcolor={{ normal: 'bg-blue-500', hover: 'bg-blue-700', active: 'bg-blue-800' }} txcolor='text-white' />
+            {
+              data && <Link href={data.no_link} className='text-xs md:text-sm text-neutral-400 text-center font-normal hover:underline'>No, I don’t want to make money from X</Link>
+            }
+          </div>
         </div>
       </section>
       <section className="flex flex-col w-full justify-center py-10 px-5 md:px-28 items-center overflow-hidden gap-5">
@@ -265,9 +294,19 @@ export default function GuideX() {
             <div className={`flex flex-col w-full md:w-4/12 gap-5`}>
               <div className={`flex flex-col items-center w-full p-3 rounded-lg bg-neutral-100 border-2 border-neutral-200 border-dashed`}>
                 <span className="flex-1 text-base md:text-xl font-normal text-left text-neutral-700">Regular Price: <s>₹999</s>/-</span>
-                <span className="text-base md:text-2xl font-normal md:font-bold text-center md:text-left text-blue-500">Today’s Offer: ₹199/-</span>
+                {
+                  data && data.combo ? <>
+                    <span className="text-base md:text-2xl text-center md:text-left text-neutral-700"> Offer Price: <s>₹199/-</s></span>
+                    <span className="text-base md:text-2xl font-normal md:font-bold text-center md:text-left text-blue-500">Combo Offer: ₹{data.price}/-</span>
+                  </> : <span className="text-base md:text-2xl font-normal md:font-bold text-center md:text-left text-blue-500">Today’s Offer: ₹199/-</span>
+                }
               </div>
-              <Button successUrl= {`${url}/accelerator-ind?product=guide-x`} amount='guide-x' text='Buy X Guide only for today at an unbelievable 80% Discount' padding='px-5 py-2' bgcolor={{ normal: 'bg-blue-500', hover: 'bg-blue-700', active: 'bg-blue-800' }} txcolor='text-white' />
+              <div className="flex flex-col gap-1 w-full">
+                <Button successUrl={data ? data.yes_link : `${url}/accelerator-ind?product=guide-x`} amount={data ? data.amount : 'guide-x'} text={data ? 'Buy the X Guide at a combo offer only for today' : 'Buy X Guide only for today at an unbelievable 80% Discount'} padding='px-5 py-2' bgcolor={{ normal: 'bg-blue-500', hover: 'bg-blue-700', active: 'bg-blue-800' }} txcolor='text-white' />
+                {
+                  data && <Link href={data.no_link} className='text-xs md:text-sm text-neutral-400 text-center font-normal hover:underline'>No, I don’t want to make money from X</Link>
+                }
+              </div>
             </div>
           )
         }
@@ -298,7 +337,12 @@ export default function GuideX() {
           }
         </div>
         <div className="flex flex-col justify-center w-full md:w-4/12 gap-5">
-          <Button successUrl= {`${url}/accelerator-ind?product=guide-x`} amount='guide-x' text='Buy X Guide only for today at an unbelievable 80% Discount' padding='px-5 py-2' bgcolor={{ normal: 'bg-blue-500', hover: 'bg-blue-700', active: 'bg-blue-800' }} txcolor='text-white' />
+          <div className="flex flex-col gap-1 w-full">
+            <Button successUrl={data ? data.yes_link : `${url}/accelerator-ind?product=guide-x`} amount={data ? data.amount : 'guide-x'} text={data ? 'Buy the X Guide at a combo offer only for today' : 'Buy X Guide only for today at an unbelievable 80% Discount'} padding='px-5 py-2' bgcolor={{ normal: 'bg-blue-500', hover: 'bg-blue-700', active: 'bg-blue-800' }} txcolor='text-white' />
+            {
+              data && <Link href={data.no_link} className='text-xs md:text-sm text-neutral-400 text-center font-normal hover:underline'>No, I don’t want to make money from X</Link>
+            }
+          </div>
         </div>
       </section>
       <section className="flex flex-col w-full justify-center py-10 px-5 md:px-28 items-center overflow-hidden gap-10">
@@ -330,47 +374,52 @@ export default function GuideX() {
           </div>
         </div>
         <div className="flex flex-col justify-center w-full md:w-4/12 gap-5">
-          <Button successUrl= {`${url}/accelerator-ind?product=guide-x`} amount='guide-x' text='Buy X Guide only for today at an unbelievable 80% Discount' padding='px-5 py-2' bgcolor={{ normal: 'bg-blue-500', hover: 'bg-blue-700', active: 'bg-blue-800' }} txcolor='text-white' />
+          <div className="flex flex-col gap-1 w-full">
+            <Button successUrl={data ? data.yes_link : `${url}/accelerator-ind?product=guide-x`} amount={data ? data.amount : 'guide-x'} text={data ? 'Buy the X Guide at a combo offer only for today' : 'Buy X Guide only for today at an unbelievable 80% Discount'} padding='px-5 py-2' bgcolor={{ normal: 'bg-blue-500', hover: 'bg-blue-700', active: 'bg-blue-800' }} txcolor='text-white' />
+            {
+              data && <Link href={data.no_link} className='text-xs md:text-sm text-neutral-400 text-center font-normal hover:underline'>No, I don’t want to make money from X</Link>
+            }
+          </div>
         </div>
       </section>
       <section className="flex flex-col w-full justify-center py-10 px-5 md:px-28 items-center overflow-hidden gap-10">
         <h2 className={`text-4xl text-white font-medium ${style.blueTextShadow}`}>
           See what other People are <span className='font-semibold'>earning!!</span>
-          </h2>
-          {
-            earning.map((item, index) => (
-              <AnimatePresence key={index}>
-                {
-                  index === curEarningIndex && (
-                    <motion.div key={index}
-                      initial={{ opacity: 0, x: 100 }}
-                      animate={{ opacity: 1, x: 0 }}
-                      transition={{ duration: 1, type: 'ease' }}
-                      className={`flex flex-col rounded-xl ${style.containerShadow} md:h-96 cursor-pointer`}>
-                      {
-                        item && (
-                          <div className="flex flex-col w-full h-full flex-1 justify-center items-center">
-                            <img src={item} alt="twitter earning" className='h-full w-full rounded-xl' />
-                          </div>
-                        )
-                      }
-                    </motion.div>
-                  )
-                }
-              </AnimatePresence>
-            )
-            )
-          }
-        </section>
+        </h2>
+        {
+          earning.map((item, index) => (
+            <AnimatePresence key={index}>
+              {
+                index === curEarningIndex && (
+                  <motion.div key={index}
+                    initial={{ opacity: 0, x: 100 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 1, type: 'ease' }}
+                    className={`flex flex-col rounded-xl ${style.containerShadow} md:h-96 cursor-pointer`}>
+                    {
+                      item && (
+                        <div className="flex flex-col w-full h-full flex-1 justify-center items-center">
+                          <img src={item} alt="twitter earning" className='h-full w-full rounded-xl' />
+                        </div>
+                      )
+                    }
+                  </motion.div>
+                )
+              }
+            </AnimatePresence>
+          )
+          )
+        }
+      </section>
       <section className="flex flex-col w-full justify-center py-10 pb-16 px-5 md:px-28 items-center overflow-hidden gap-10">
         <h2 className={`text-4xl text-white font-medium ${style.blueTextShadow}`}>
           Frequently Asked Questions
         </h2>
         <div className={`flex flex-col w-full md:w-8/12 ${roboto.className}`}>
           <FAQ data={faq} bgcolor={{ question: 'bluecontainerShadow', answer: 'bluecontainerShadow' }} textcolor={{ question: 'text-white', answer: 'text-white' }} />
-          </div>
+        </div>
       </section>
-      <FunnelFooter bgcolor = {'bg-neutral-800'} />
+      <FunnelFooter bgcolor={'bg-neutral-800'} />
     </div>
   )
 }

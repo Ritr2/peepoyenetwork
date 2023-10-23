@@ -3,8 +3,10 @@ import React, { useRef } from 'react'
 import axios from 'axios'
 import { AnimatePresence, motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
+import { useRouter } from 'next/navigation';
 
 export default function DynamicForm({ animation = true, closeFunc = false }) {
+  const router = useRouter();
   const { ref, inView } = useInView();
   const nameRef = useRef(null);
   const emailRef = useRef(null);
@@ -27,6 +29,7 @@ export default function DynamicForm({ animation = true, closeFunc = false }) {
         closeFunc(false);
       }, 2000);
     }
+    router.push('/guide-x?product=mentorship');
   }
 
   const variants1 = {

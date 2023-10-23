@@ -83,6 +83,16 @@ export default function AcceleratorInd({ loc, data }) {
       </div>
       <section className="relative flex flex-col py-8 px-5 md:px-40">
         <img src="https://i.ibb.co/jJ3gDDP/texture-BG.png" alt="texture" className="z-0 absolute top-0 left-0 w-full h-full object-cover opacity-20" />
+        {
+        data && (
+          <div className=" flex flex-col w-10/12 md:w-8/12 justify-center mt-8 h-10 mb-10 bg-stone-300 self-center rounded-full">
+            <div className={`relative bg-blue- h-full w-16 rounded-full flex flex-col items-center bg-red-500`} style={{ width: `${data.query.levelPercentage}%` }}>
+              <div className="absolute top-0 left-0 flex flex-col rounded-full justify-center items-center h-full animate-percentage bg-red-700/90" />
+              <span className="flex z-10 flex-col justify-center items-center h-full text-white text-sm md:text-2xl font-medium">{data.query.levelPercentage}% Completed</span>
+            </div>
+          </div>
+        )
+      }
         <div className="flex flex-col z-10 md:gap-10 gap-5">
           <div className="flex flex-col items-center gap-10">
             <motion.h2 className={`text-base ${sora.className} md:text-2xl px-2 md:px-5 py-2 font-light text-white text-center shadow-md rounded-md ${style.bgRed}`}

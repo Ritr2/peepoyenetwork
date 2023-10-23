@@ -1,6 +1,8 @@
 import React from 'react'
 import { Roboto_Serif } from 'next/font/google'
 import GuideX from '@/components/funnels/pages/GuideX'
+import NotFound from '@/app/not-found'
+import url from '@/utils/url'
 
 
 const robo = Roboto_Serif({
@@ -50,10 +52,32 @@ export const metadata = {
   },
 }
 
-export default function page() {
+const fetchCross = async (product) => {
+  let res;
+  try {
+    res = await fetch(`${url}/api/product/crosssell/${product}`, { cache: "no-cache" })
+    if (!res.ok) {
+      throw new Error('Failed to fetch data')
+    }
+  }
+  catch (err) {
+    notFound()
+  }
+  return res.json()
+}
+
+export default async function page({searchParams}) {
+  let data = false;
+  if (searchParams.product) {
+      data = await fetchCross(searchParams.product);
+      if (data.data == false) {
+          data = false;
+      }
+  }
+
   return (
     <main className={`relative flex min-h-screen flex-col items-center overflow-x-hidden bg-gradient-to-r from-black via-neutral-800 to-black ${robo.className}`}>
-      <GuideX />
+      <GuideX data= {data} />
     </main>
   )
 }

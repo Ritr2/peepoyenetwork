@@ -18,7 +18,11 @@ const data = {
   "dfy": {
     amount: 5999,
     notes: "dfy",
-  }
+  },
+  "guide-x-brb": {
+    amount: 170,
+    notes: "guideX",
+  },
 }
 
 export default data
