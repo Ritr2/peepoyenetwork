@@ -155,7 +155,7 @@ export default function GuideX({ data = false }) {
         >
           {
           data ?
-          parse(data.query.message): `${parse(`Tired of sleeping with regret after wasting hours on <span className='font-semibold'>Social Media</span>?`)}`
+          parse(data.query.message): parse("Tired of sleeping with regret after wasting hours on <span className='font-semibold'>Social Media</span>?")
           }
         </motion.h1>
       </section>
