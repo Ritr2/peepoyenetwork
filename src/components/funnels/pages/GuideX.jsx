@@ -1,5 +1,5 @@
 'use client'
-import React, { useEffect } from 'react'
+import React, { Fragment, useEffect } from 'react'
 import style from '@/styles/GuideX.module.css'
 import { AnimatePresence, motion } from 'framer-motion'
 import { Roboto } from 'next/font/google'
@@ -212,7 +212,7 @@ export default function GuideX({ data = false }) {
           initial={{ opacity: 0, x: 100 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1, type: 'spring', bounce: 0.5, delay: 0.5 }}>
-          <img src="https://i.ibb.co/XtNM2D8/akasshashokgupta.png" alt="Akash Shashok Gupta" />
+          <img src="https://i.ibb.co/PhbgBmZ/x-guide.png" alt="Akash Shashok Gupta" className='w-9/12' />
         </motion.div>
       </section>
       <section className="flex flex-col w-full justify-center py-10 px-5 md:px-28 items-center overflow-hidden gap-10">
@@ -318,7 +318,14 @@ export default function GuideX({ data = false }) {
         <div className="flex flex-col md:flex-row flex-wrap justify-center gap-10 md:gap-16 w-full md:w-7/12" ref={ref2}>
           {
             insideData.map((item, index) => (
-              <motion.div key={index}
+              <Fragment key={index}>
+                {
+                  index === 2 &&
+                  <div className="md:flex flex-col w-full items-center -my-28 z-10 hidden">
+                  <img src="https://i.ibb.co/XtNM2D8/akasshashokgupta.png" alt="Akash Shashok Gupta" className='w-8/12' />
+                  </div>
+                }
+                <motion.div key={index}
                 initial={index % 2 === 0 ? { opacity: 0, x: -100 } : { opacity: 0, x: 100 }}
                 animate={inView2 ? { opacity: 1, x: 0 } : index % 2 === 0 ? { opacity: 0, x: -100 } : { opacity: 0, x: 100 }}
                 transition={{ duration: 1, type: 'ease' }}
@@ -332,6 +339,7 @@ export default function GuideX({ data = false }) {
                   </p>
                 </div>
               </motion.div>
+                </Fragment>
             )
             )
           }
@@ -356,7 +364,7 @@ export default function GuideX({ data = false }) {
         </div>
         <div className="flex flex-col md:flex-row justify-center items-center gap-10">
           <div className={`flex flex-col w-full md:w-6/12 rounded-xl ${style.containerShadow}`}>
-            <img src="https://i.ibb.co/SNBgrWD/akassh-1.png" alt="Akassh Ashok Gupta" className='rounded-xl' />
+            <img src="https://i.ibb.co/pdXR2sN/1.png" alt="Akassh Ashok Gupta" className='rounded-xl' />
           </div>
           <div className="flex flex-col flex-1">
             <p className={`text-base md:text-xl text-white font-light ${roboto.className} ${style.normalText}`}>
