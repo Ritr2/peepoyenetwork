@@ -321,7 +321,7 @@ export default function GuideX({ data = false }) {
               <Fragment key={index}>
                 {
                   index === 2 &&
-                  <div className="md:flex flex-col w-full items-center -my-28 z-10 hidden">
+                  <div className="md:flex flex-col items-center w-7/12 -my-28 z-10 hidden">
                   <img src="https://i.ibb.co/XtNM2D8/akasshashokgupta.png" alt="Akash Shashok Gupta" className='w-8/12' />
                   </div>
                 }
