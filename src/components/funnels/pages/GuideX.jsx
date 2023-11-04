@@ -148,7 +148,7 @@ export default function GuideX({ data = false }) {
   return (
     <div className='flex w-full flex-col'>
       <section className="flex flex-col w-full justify-center py-3 items-center bg-neutral-800 overflow-hidden">
-        <motion.h1 className={`text-lg md:text-2xl text-white text-center md:text-left font-medium ${style.blueTextShadow}`}
+        <motion.h1 className={`text-base md:text-xl text-white text-center font-medium ${style.blueTextShadow}`}
           initial={{ opacity: 0, y: -100 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, type: 'spring', bounce: 0.5 }}
