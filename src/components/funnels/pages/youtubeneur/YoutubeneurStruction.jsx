@@ -71,7 +71,7 @@ export default function YoutubeneurStruction() {
             ],
         },
         {
-            h2: 'Day-3 (To go live by 10-Nov-2023)',
+            h2: 'Day-3',
             p: `The Money Engine`,
             modules: [
                 {
