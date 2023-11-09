@@ -8,7 +8,7 @@ export default function YoutubeneurStruction() {
     const data = [
         {
             h2: 'Day-1',
-            p: `The Influence Engine`,
+            p: `The Content Engine`,
             modules: [
                 {
                     h3: '1. You have made it',
@@ -42,7 +42,7 @@ export default function YoutubeneurStruction() {
         },
         {
             h2: 'Day-2',
-            p: `The Content Engine`,
+            p: `The Influence Engine`,
             modules: [
                 {
                     h3: '8. The Platform of Choice',
