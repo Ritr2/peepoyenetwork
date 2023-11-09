@@ -20,7 +20,7 @@ export default function YoutubeneurStruction() {
                 },
                 {
                     h3: '3. Methods work, People fail',
-                    time: '23:51',
+                    time: '23:49',
                 },
                 {
                     h3: '4. Dig the Beast',
@@ -28,11 +28,11 @@ export default function YoutubeneurStruction() {
                 },
                 {
                     h3: '5. Shift the Paradigm',
-                    time: '20:25',
+                    time: '20:23',
                 },
                 {
                     h3: '6. The Success Guarantee',
-                    time: '6:08',
+                    time: '6:10',
                 },
                 {
                     h3: '7. Get that Golden Niche',
@@ -46,11 +46,11 @@ export default function YoutubeneurStruction() {
             modules: [
                 {
                     h3: '8. The Platform of Choice',
-                    time: '7:55',
+                    time: '7:58',
                 },
                 {
                     h3: '9. Building the Content Strategy',
-                    time: '15:28',
+                    time: '15:29',
                 },
                 {
                     h3: '10. Produce the Value Content',
@@ -62,7 +62,7 @@ export default function YoutubeneurStruction() {
                 },
                 {
                     h3: '12. Explode the Reach',
-                    time: '5:30',
+                    time: '5:29',
                 },
                 {
                     h3: '13. Build the Influence Foundation',
@@ -75,28 +75,24 @@ export default function YoutubeneurStruction() {
             p: `The Money Engine`,
             modules: [
                 {
-                    h3: '14. You are Unique',
-                    time: '10:00',
+                    h3: '14. Build your legacy',
+                    time: '14:07',
                 },
                 {
                     h3: '15. Pull the Eggs out',
-                    time: '08:00',
+                    time: '08:49',
                 },
                 {
-                    h3: '16. They Need You',
-                    time: '12:00',
+                    h3: '16. A Big $ Opportunity',
+                    time: '08:36',
                 },
                 {
-                    h3: '17. Automate and Scale',
-                    time: '18:00',
+                    h3: '17. Build the Money Engine',
+                    time: '11:41',
                 },
                 {
-                    h3: '18. Sprint on this Path',
-                    time: '07:00',
-                },
-                {
-                    h3: '19. A Golden Opportunity',
-                    time: '08:00',
+                    h3: '18. Choose your Journey',
+                    time: '05:08',
                 }
             ],
         }
