@@ -25,7 +25,7 @@ export const metadata = {
       alt: `The Money Engine Webinar`,
     },
   ],
-  url: 'https://peepoye.com/money-webinarY2BYT',
+  url: 'https://peepoye.com/money-webinarYTY2B',
   type: 'website',
   keywords: [],
   openGraph: {
@@ -39,7 +39,7 @@ export const metadata = {
         alt: `The Money Engine Webinar`,
       }
     ],
-    url: 'https://peepoye.com/money-webinarY2BYT',
+    url: 'https://peepoye.com/money-webinarYTY2B',
     type: 'website',
   },
   twitter: {
