@@ -28,7 +28,8 @@
   border-top: 16px solid #51c07f;
   width: 120px;
   height: 120px;
-  -webkit-animation: spin 2s linear infinite; /* Safari */
+  -webkit-animation: spin 2s linear infinite;
+  /* Safari */
   animation: spin 2s linear infinite;
 }
 
@@ -57,6 +58,7 @@
   0% {
     width: 20%;
   }
+
   100% {
     width: 100%;
   }
@@ -67,7 +69,7 @@
   animation: width0to100 20s linear infinite forwards;
 }
 
-.social-blog-section br{
+.social-blog-section br {
   display: block;
   content: "";
   margin: 5px 0;
@@ -89,15 +91,23 @@
 }
 
 .webinar-background {
-  background-image: url(https://i.ibb.co/Sv2Sndt/webinar-background-2.webp);
+  background-image: url(https://i.ibb.co/jJ3gDDP/texture-BG.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
 }
 
 .webinar-background-2 {
-  background-image: url(https://i.ibb.co/yqzc7f4/webinar-background2.webp);
-  background-repeat: no-repeat;
+  background-image: url(https://i.ibb.co/PWVzSQt/texture-BG3.jpg);
   background-size: cover;
-  background-position: center;
+  background-position: bottom;
+  
+}
+
+.red-text {
+  color: #b42228;
+}
+
+.red-bg {
+  background-color: #c13438;
 }
