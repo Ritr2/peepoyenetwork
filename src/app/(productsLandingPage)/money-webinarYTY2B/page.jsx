@@ -48,12 +48,12 @@ export const metadata = {
     description: `Learn How I Attracted 1MN+ People and Built a Powerful Money Engine for Continuous Passive Income and Business Leads from Home!`,
     images: [
       {
-      url: 'https://i.ibb.co/FY333K1/Final.webp',
-      width: 600,
-      height: 500,
-      alt: `The Money Engine Webinar`,
-    }
-  ],
+        url: 'https://i.ibb.co/FY333K1/Final.webp',
+        width: 600,
+        height: 500,
+        alt: `The Money Engine Webinar`,
+      }
+    ],
     creator: '@peepoye',
   },
 }
@@ -230,7 +230,7 @@ export default function page() {
           </div>
         </section>
         <section className='flex flex-col items-center justify-center w-full gap-10 px-5 py-10 md:py-20 backdrop-blur-md'>
-        <div className={`flex flex-col gap-10`}>
+          <div className={`flex flex-col gap-10`}>
             <h2 className='text-xl md:text-3xl text-center text-red-500/90 font-bold'>
               Featured Testimonials From The Community & Clients
             </h2>
@@ -241,6 +241,21 @@ export default function page() {
           </div>
         </section>
       </div>
+      <section className='flex flex-col items-center justify-center w-full webinar-background'>
+        <div className='flex flex-col items-center justify-center bg-black/70 gap-5 md:gap-10 w-full flex-1 px-4 lg:px-[200px] py-10 md:py-20'>
+          <span className='text-xl md:text-3xl font-bold text-center rounded-md red-bg text-white px-5'>Join Free Webinar</span>
+          <div className='flex flex-col items-center justify-center w-full gap-2'>
+            <h2 className='text-2xl md:text-4xl font-bold text-center text-white md:leading-[55px]'>All you need is an intent to thrive and <span className='red-text'>2 hours</span> to turn the struggle of trying to build online business model into the most fulfilling and interesting project you have ever been part of.</h2>
+            <p className='text-base md:text-2xl font-normal text-center text-white md:w-9/12'>
+              All I need is just 2 hours to show you this Game-Chaning Method
+            </p>
+          </div>
+          <div className='flex flex-col items-center justify-center w-full md:w-9/12'>
+            <img src='https://i.ibb.co/pdXR2sN/1.png' alt='What You Will Learn In The Webinar' className='w-full rounded-lg' draggable={false} />
+          </div>
+          <Link href='https://us06web.zoom.us/meeting/register/tZEtd--ppzgvHdagzP5cC9SbAmH3t_Q60wUf' className='red-bg text-center text-white font-bold text-xl md:text-2xl px-10 py-3 w-full md:w-8/12 rounded-3xl hover:bg-red-500 active:bg-red-700 hover:shadow-xl active:shadow-md hover:scale-105 active:scale-100 transition-all duration-200'>Register Now</Link>
+        </div>
+      </section>
       <FunnelFooter />
     </main>
   )
