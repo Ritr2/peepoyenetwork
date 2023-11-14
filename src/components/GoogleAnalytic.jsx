@@ -7,8 +7,8 @@ import TagManager from 'react-gtm-module';
 export default function GoogleAnalytic() {
 
   useEffect(() => {
-    TagManager.initialize({ gtmId: 'GTM-PCN84MFT' });
-}, []);
+    TagManager.initialize({ gtmId: 'GTM-N2W2DF4Z' });
+  }, []);
 
   return (
     <>
