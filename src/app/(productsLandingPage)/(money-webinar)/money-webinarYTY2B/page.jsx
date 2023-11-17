@@ -8,6 +8,7 @@ import SocialMediaDetails from '@/components/webinar/SocialMediaDetails';
 import Testimonials from '@/components/funnels/pages/youtubeneur/Testimonials';
 import Link from 'next/link';
 import FunnelFooter from '@/components/funnels/FunnelFooter';
+import Form from '@/components/webinar/Form';
 
 const dmSans = DM_Sans({
   weight: ['400', '500', '700', '900'],
@@ -135,7 +136,9 @@ export default function page() {
             I'm Akassh Ashok Gupta, committed to helping business owners, creators, experts, coaches, and working professionals carve out a dynamic online presence. Ready to supercharge your online presence, live life on your terms & immersing yourself in what truly ignites your passion?
             <br />Dive into our live webinar— sparking a buzz with its vibrant spirit of 'Happiness' and the collective mantra of growing with abudance through 'Value Creation'. Why let this game-changing experience slip through your fingers when it's within your reach today?. Seize the moment—sign up now and ride the wave of transformation. Ready to embark on this exciting journey? 🚀✨ Join us!
           </p>
-          <Link href='https://us06web.zoom.us/meeting/register/tZEtd--ppzgvHdagzP5cC9SbAmH3t_Q60wUf' className='red-bg text-center text-white font-bold text-xl md:text-2xl px-10 py-3 rounded-3xl hover:bg-red-500 active:bg-red-700 hover:shadow-xl active:shadow-md hover:scale-105 active:scale-100 transition-all duration-200'>Register Now</Link>
+          <div className='flex flex-col w-full md:w-7/12'>
+            <Form />
+          </div>
         </div>
       </section>
       <div className='webinar-background-2 flex flex-col'>
@@ -160,7 +163,9 @@ export default function page() {
               )
             }
           </div>
-          <Link href='https://us06web.zoom.us/meeting/register/tZEtd--ppzgvHdagzP5cC9SbAmH3t_Q60wUf' className='red-bg text-center text-white font-bold text-xl md:text-2xl px-10 py-3 rounded-3xl hover:bg-red-500 active:bg-red-700 hover:shadow-xl active:shadow-md hover:scale-105 active:scale-100 transition-all duration-200'>Register Now</Link>
+          <div className='flex flex-col w-full md:w-6/12'>
+            <Form />
+          </div>
         </section>
         <section className='flex flex-col items-center justify-center w-full py-10 md:py-20 backdrop-blur-md gap-10'>
           <Experience />
@@ -186,7 +191,9 @@ export default function page() {
                 )
               })
             }
-            <Link href='https://us06web.zoom.us/meeting/register/tZEtd--ppzgvHdagzP5cC9SbAmH3t_Q60wUf' className='red-bg text-center text-white font-bold text-xl md:text-2xl px-10 py-3 rounded-3xl hover:bg-red-500 active:bg-red-700 hover:shadow-xl active:shadow-md hover:scale-105 active:scale-100 transition-all duration-200'>Register Now</Link>
+            <div className='flex flex-col w-full md:w-7/12'>
+              <Form />
+            </div>
           </div>
         </section>
       </div>
@@ -214,7 +221,9 @@ export default function page() {
           <div className="flex flex-col md:flex-row justify-center items-center gap-3 md:gap-10 md:w-11/12">
             <div className={`flex flex-col w-full md:w-6/12 gap-10 rounded-xl`}>
               <img src="https://i.ibb.co/RT3XGxt/2.png" alt="Akassh Ashok Gupta" className='rounded-xl shadow-lg drop-shadow-lg' />
-              <Link href='https://us06web.zoom.us/meeting/register/tZEtd--ppzgvHdagzP5cC9SbAmH3t_Q60wUf' className='red-bg text-center hidden md:block text-white font-bold text-xl md:text-2xl px-10 py-3 rounded-3xl hover:bg-red-500 active:bg-red-700 hover:shadow-xl active:shadow-md hover:scale-105 active:scale-100 transition-all duration-200'>Register Now</Link>
+              <div className='md:flex hidden flex-col w-full'>
+                <Form />
+              </div>
             </div>
             <div className="flex flex-col flex-1 gap-2">
               <p className={`text-lg md:text-2xl red-text font-black`}>Hi, I'm Akassh Ashok Gupta</p>
@@ -222,7 +231,9 @@ export default function page() {
               <p className={`text-base md:text-xl text-neutral-300 font-normal`}>
                 When I was in my early 30s and at a leadership level with one of the top companies, i faced a mid-life crisis questioning my level of happiness and i have built a strong method and a model that not only fulfills your money goals but also provides you with relentless excitement, joy and fuflfillment doing what you love.<br />I re-started my life for good and have embarked on the mission to teach people the same.<br />In the last few year,s i have been able to attract 1MN+ people to follow my content and coaching programs with 10,000+ mentees who learn from me everyday and uplift their career and businesses and i believe there's more that i can offer as value to ensure everyone is able to live with the sheer joy of freedom.<br />If you resonate with this idea, then I would like to personally invite you to this Free Webinar to experience my secret formula of  "Building a Money Engine" using Youtube which is helping all the business owners, creators, experts, coaches, and working professionals all around the world.
               </p>
-              <Link href='https://us06web.zoom.us/meeting/register/tZEtd--ppzgvHdagzP5cC9SbAmH3t_Q60wUf' className='red-bg text-center md:hidden block text-white font-bold text-xl md:text-2xl px-10 py-3 rounded-3xl hover:bg-red-500 active:bg-red-700 hover:shadow-xl active:shadow-md hover:scale-105 active:scale-100 transition-all duration-200'>Register Now</Link>
+              <div className='flex md:hidden flex-col w-full'>
+                <Form />
+              </div>
             </div>
           </div>
           <div className="flex flex-col w-full md:w-11/12">
@@ -237,7 +248,9 @@ export default function page() {
             <div className="flex flex-col">
               <Testimonials />
             </div>
-            <Link href='https://us06web.zoom.us/meeting/register/tZEtd--ppzgvHdagzP5cC9SbAmH3t_Q60wUf' className='red-bg text-center text-white font-bold w-full self-center md:w-5/12 text-xl md:text-2xl px-10 py-3 rounded-3xl hover:bg-red-500 active:bg-red-700 hover:shadow-xl active:shadow-md hover:scale-105 active:scale-100 transition-all duration-200'>Register Now</Link>
+            <div className='flex self-center flex-col w-full md:w-6/12'>
+              <Form />
+            </div>
           </div>
         </section>
       </div>
@@ -253,7 +266,9 @@ export default function page() {
           <div className='flex flex-col items-center justify-center w-full md:w-9/12'>
             <img src='https://i.ibb.co/pdXR2sN/1.png' alt='What You Will Learn In The Webinar' className='w-full rounded-lg' draggable={false} />
           </div>
-          <Link href='https://us06web.zoom.us/meeting/register/tZEtd--ppzgvHdagzP5cC9SbAmH3t_Q60wUf' className='red-bg text-center text-white font-bold text-xl md:text-2xl px-10 py-3 w-full md:w-8/12 rounded-3xl hover:bg-red-500 active:bg-red-700 hover:shadow-xl active:shadow-md hover:scale-105 active:scale-100 transition-all duration-200'>Register Now</Link>
+          <div className='flex flex-col w-full md:w-7/12'>
+            <Form />
+          </div>
         </div>
       </section>
       <FunnelFooter />

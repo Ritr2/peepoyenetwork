@@ -5,7 +5,7 @@ import { AnimatePresence, motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { useRouter } from 'next/navigation';
 
-export default function DynamicForm({ animation = true, closeFunc = false, goal, formtype,keyList, meta }) {
+export default function DynamicForm({ animation = true, closeFunc = false, goal, formtype, keyList, meta }) {
   const router = useRouter();
   const { ref, inView } = useInView();
   const firstNameRef = useRef(null);
@@ -13,7 +13,7 @@ export default function DynamicForm({ animation = true, closeFunc = false, goal,
   const emailRef = useRef(null);
   const phoneRef = useRef(null);
   const cityRef = useRef(null);
-  const[age, setAge] = React.useState("");
+  const [age, setAge] = React.useState("");
   const [gender, setGender] = React.useState("");
   const [occupation, setOccupation] = React.useState("");
   const [income, setIncome] = React.useState("");
@@ -29,7 +29,7 @@ export default function DynamicForm({ animation = true, closeFunc = false, goal,
     setFormVisible(false);
     const first_name = firstNameRef.current.value;
     const email = emailRef.current.value;
-    const listkey = keyList === 'black'? '3z609acd7b211488f42b755998926f0215f8c4dc75bd861a6ed25977f0580933da' : keyList === 'green' ? '3z609acd7b211488f42b755998926f021536250480f4c22e5c504c0406e955d694' : '';
+    const listkey = keyList === 'black' ? '3z609acd7b211488f42b755998926f0215f8c4dc75bd861a6ed25977f0580933da' : keyList === 'green' ? '3z609acd7b211488f42b755998926f021536250480f4c22e5c504c0406e955d694' : '';
 
     let data = {
       listkey,
@@ -59,13 +59,13 @@ export default function DynamicForm({ animation = true, closeFunc = false, goal,
     // router.push('/guide-x?product=mentorship');
   }
 
-  const agegroup = [ 'below 18 years', '18-25 years', '26-40 years', 'more than 40 years' ]
-  const gendergroup = [ 'Male', 'Female', 'Others' ]
-  const occupationgroup = [ 'Student', 'Working Professional', 'Business Owner', 'Other' ]
-  const incomegroup = [ 'Below 1000 USD', '1000-5000 USD', '5000-10000 USD', '10000-50000 USD', 'Above 50000 USD' ]
-  const youtubeLinkgroup = [ 'Yes', 'No' ]
-  const existingCustomergroup = [ 'Yes', 'No' ]
-  const productListgroup = [ 'Accelerator', 'Guide X', 'Influencer Guide']
+  const agegroup = ['below 18 years', '18-25 years', '26-40 years', 'more than 40 years']
+  const gendergroup = ['Male', 'Female', 'Others']
+  const occupationgroup = ['Student', 'Working Professional', 'Business Owner', 'Other']
+  const incomegroup = ['Below 1000 USD', '1000-5000 USD', '5000-10000 USD', '10000-50000 USD', 'Above 50000 USD']
+  const youtubeLinkgroup = ['Yes', 'No']
+  const existingCustomergroup = ['Yes', 'No']
+  const productListgroup = ['Accelerator', 'Guide X', 'Influencer Guide']
 
   const variants1 = {
     hidden: {
@@ -136,8 +136,8 @@ export default function DynamicForm({ animation = true, closeFunc = false, goal,
                       <option key={index} value={gender}>{gender}</option>
                     ))
                   }
-                  </select>
-                  </div>
+                </select>
+              </div>
               <div className="flex flex-col gap-1">
                 <select name="occupation" id="occupation" className="border-2 border-neutral-400 rounded-lg p-2" placeholder='Occupation' required onChange={(e) => setOccupation(e.target.value)}>
                   <option value="" disabled selected>Occupation</option>
@@ -150,9 +150,9 @@ export default function DynamicForm({ animation = true, closeFunc = false, goal,
                   &&
                   <input type="text" name="occupation" id="occupation" className="border-2 border-neutral-400 rounded-lg p-2" placeholder='Occupation' required onChange={(e) => setOccupation(e.target.value)} />
                 }
-                </div>
+              </div>
               <div className="flex flex-col gap-1">
-                <select name ='income' id='income' className="border-2 border-neutral-400 rounded-lg p-2" placeholder='Income' required onChange={(e) => setIncome(e.target.value)}>
+                <select name='income' id='income' className="border-2 border-neutral-400 rounded-lg p-2" placeholder='Income' required onChange={(e) => setIncome(e.target.value)}>
                   <option value="" disabled selected>Income</option>
                   {incomegroup.map((income, index) => (
                     <option key={index} value={income}>{income}</option>
@@ -201,7 +201,7 @@ export default function DynamicForm({ animation = true, closeFunc = false, goal,
                       </div>
                     ))
                   }
-                  </div>
+                </div>
               }
               <div className='flex flex-row w-full justify-center gap-1'>
                 <input type='checkbox' required name='privacy' />
@@ -217,7 +217,7 @@ export default function DynamicForm({ animation = true, closeFunc = false, goal,
               animate="visible"
               className="flex flex-col gap-5">
               <div className="flex flex-col gap-1 bg-stone-200 p-2 rounded-lg">
-                <p className="text-base md:text-lg text-center text-neutral-600">Thank you for subscribing to our Weekly Mentoring Program. You will receive an email from us shortly.</p>
+                <p className="text-base md:text-lg text-center text-neutral-600">Thank you for joining the waitlist. You will receive an email from us shortly.</p>
               </div>
             </motion.div>
         }
