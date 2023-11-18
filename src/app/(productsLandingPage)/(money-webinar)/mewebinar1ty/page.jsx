@@ -71,7 +71,7 @@ export default function page() {
           <p className='text-lg md:text-xl font-normal text-center text-white md:w-9/12'>
           Click below to get added to our invitee list so that you  are served with all important communication regarding the event from here on.
           </p>
-          <Link href='' className='red-bg text-center text-white font-bold text-xl md:text-2xl px-10 py-3 rounded-3xl hover:bg-red-500 active:bg-red-700 hover:shadow-xl active:shadow-md hover:scale-105 active:scale-100 transition-all duration-200'>Join Now</Link>
+          <Link href='https://akassh.co/mewebinar6_2511' className='red-bg text-center text-white font-bold text-xl md:text-2xl px-10 py-3 rounded-3xl hover:bg-red-500 active:bg-red-700 hover:shadow-xl active:shadow-md hover:scale-105 active:scale-100 transition-all duration-200'>Join Now</Link>
         </div>
       </section>
 
