@@ -8,6 +8,7 @@ import style from '@/styles/AcceleratorInd.module.css'
 import PaymentForm from './PaymentForm'
 import StripeapiCall from '@/utils/payments/stripePaymentCall'
 import { Roboto } from 'next/font/google'
+import Countdown from 'react-countdown'
 
 const roboto = Roboto({
   weight: ['100', '300', '400', '500', '700'],
@@ -72,11 +73,11 @@ export default function PaymentSection({ loc, data }) {
         selectortext: 'Lifetime',
         recommended: true,
         buttonText: {
-          main: 'Book the Launch Offer at $129/- only',
+          main: 'Book the Black Friday Offer at $99/- only',
           sub: 'Limited Offer (Original Price $499/-)'
         },
         successlink: `${url}/thankyou?product=accelerator`,
-        price_id: 'price_1Ns51ZSDli6WzERSqSX38qyO',
+        price_id: 'price_1ODk9ySDli6WzERSQI5Hggh5',
         mode: 'payment',
       },
     }
@@ -260,7 +261,7 @@ export default function PaymentSection({ loc, data }) {
     }
   }
 
-  const handleStripePayment = (details)=> {
+  const handleStripePayment = (details) => {
     if (currentPlan === 'monthly') {
       window.location.href = dataP[loc][currentPlan].successlink
     }
@@ -326,6 +327,39 @@ export default function PaymentSection({ loc, data }) {
           }
         </div>
         <div className="flex flex-col gap-5">
+          {
+            loc === 'int' && (
+              <>
+                <div className="flex flex-col gap-2 w-5/12 self-center">
+                  <img src="/picture.png" alt="money back guarantee" className='w-full' />
+                </div>
+                <Countdown date={1700764200000} renderer={({ days, hours, minutes, seconds, completed }) => {
+                  if (completed) {
+                    return <span className='text-white text-center text-lg md:text-3xl'>Offer Closed</span>
+                  } else {
+                    return <p className='text-center text-sm md:text-2xl flex flex-row gap-2 self-center w-full md:w-9/12'>
+                      <span className='bg-white rounded-lg flex flex-col gap-2 p-2 md:min-w-[100px] flex-1'>
+                        <span className='red-text text-xl md:text-6xl text-center font-bold'>{days > 9 ? days : `0${days}`}</span>
+                        <span className='text-black text-center text-xs md:text-lg'>{days > 1 ? 'days' : 'day'}</span>
+                      </span>
+                      <span className='bg-white rounded-lg flex flex-col gap-2 p-2 md:min-w-[100px] flex-1'>
+                        <span className='red-text text-xl md:text-6xl text-center font-bold'>{hours > 9 ? hours : `0${hours}`}</span>
+                        <span className='text-black text-center text-xs md:text-lg'>{hours > 1 ? 'hours' : 'hour'}</span>
+                      </span>
+                      <span className='bg-white rounded-lg flex flex-col gap-2 p-2 md:min-w-[100px] flex-1'>
+                        <span className='red-text text-xl md:text-6xl text-center font-bold'>{minutes > 9 ? minutes : `0${minutes}`}</span>
+                        <span className='text-black text-center text-xs md:text-lg'>{minutes > 1 ? 'minutes' : 'minute'}</span>
+                      </span>
+                      <span className='bg-white rounded-lg flex flex-col gap-2 p-2 md:min-w-[100px] flex-1'>
+                        <span className='red-text text-xl md:text-6xl text-center font-bold'>{seconds > 9 ? seconds : `0${seconds}`}</span>
+                        <span className='text-black text-center text-xs md:text-lg'>{seconds > 1 ? 'seconds' : 'second'}</span>
+                      </span>
+                    </p>
+                  }
+                }} />
+              </>
+            )
+          }
           <h2 className={`text-white text-xl md:text-2xl text-center flex flex-row items-center justify-center`}>Total Value: &nbsp;<span className="relative flex items-center text-red-500 hover:no-underline">
             {(items.reduce((acc, item) => {
               if (item.plan.includes(currentPlan)) {

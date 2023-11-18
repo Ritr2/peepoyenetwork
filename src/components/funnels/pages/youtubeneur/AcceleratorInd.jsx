@@ -22,6 +22,7 @@ import SocialMediaDetails from './SocialMediaDetails'
 import { useInView } from 'react-intersection-observer'
 import Experience from './Experience'
 import Matrix from './Matrix'
+import Countdown from 'react-countdown'
 
 const sora = Sora({
   weight: ['100', '300', '400', '700'],
@@ -84,15 +85,15 @@ export default function AcceleratorInd({ loc, data }) {
       <section className="relative flex flex-col py-8 px-5 md:px-40">
         <img src="https://i.ibb.co/jJ3gDDP/texture-BG.png" alt="texture" className="z-0 absolute top-0 left-0 w-full h-full object-cover opacity-20" />
         {
-        data && (
-          <div className=" flex flex-col w-10/12 md:w-8/12 justify-center mt-8 h-10 mb-10 bg-stone-300 self-center rounded-full">
-            <div className={`relative bg-blue- h-full w-16 rounded-full flex flex-col items-center bg-red-500`} style={{ width: `${data.query.levelPercentage}%` }}>
-              <div className="absolute top-0 left-0 flex flex-col rounded-full justify-center items-center h-full animate-percentage bg-red-700/90" />
-              <span className="flex z-10 flex-col justify-center items-center h-full text-white text-sm md:text-2xl font-medium">{data.query.levelPercentage}% Completed</span>
+          data && (
+            <div className=" flex flex-col w-10/12 md:w-8/12 justify-center mt-8 h-10 mb-10 bg-stone-300 self-center rounded-full">
+              <div className={`relative bg-blue- h-full w-16 rounded-full flex flex-col items-center bg-red-500`} style={{ width: `${data.query.levelPercentage}%` }}>
+                <div className="absolute top-0 left-0 flex flex-col rounded-full justify-center items-center h-full animate-percentage bg-red-700/90" />
+                <span className="flex z-10 flex-col justify-center items-center h-full text-white text-sm md:text-2xl font-medium">{data.query.levelPercentage}% Completed</span>
+              </div>
             </div>
-          </div>
-        )
-      }
+          )
+        }
         <div className="flex flex-col z-10 md:gap-10 gap-5">
           <div className="flex flex-col items-center gap-10">
             <motion.h2 className={`text-base ${sora.className} md:text-2xl px-2 md:px-5 py-2 font-light text-white text-center shadow-md rounded-md ${style.bgRed}`}
@@ -104,7 +105,7 @@ export default function AcceleratorInd({ loc, data }) {
           </div>
           <div className="flex flex-col items-center gap-5 md:gap-10">
             <div className="flex flex-col md:flex-row justify-center gap-5 md:gap-10">
-              <motion.div className="flex flex-col justify-center gap-5 md:gap-12 w-full md:w-8/12 order-2 md:order-1"
+              <motion.div className="flex flex-col justify-center gap-5 md:gap-12 w-full md:w-6/12 order-2 md:order-1"
                 initial={{ opacity: 0, x: -100 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 1, type: 'spring', bounce: 0.5, delay: 1 }}
@@ -115,7 +116,7 @@ export default function AcceleratorInd({ loc, data }) {
                   transition={{ duration: 1, type: 'spring', bounce: 0.5, delay: 1 }}>
                   Generate <span className={`${style.textYoutubeRed} font-bold ${style.lineBg}`}>10x</span> Revenue & Reach by hacking the <span className={`${style.textYoutubeRed} font-bold ${style.lineBg}`}>YouTube<span></span></span> Algorithm!
                 </p>
-                <div className="flex flex-col md:flex-row items-center md:items-stretch flex-wrap gap-8 w-full md:w-9/12">
+                <div className="flex flex-col md:flex-row items-center md:items-stretch flex-wrap gap-8 w-full">
                   {
                     firstSectionData.map((item, index) => (
                       <div key={index} className={`flex flex-row w-10/12 md:w-5/12 items-center gap-2 bg-neutral-800/80 text-white px-3 py-2 rounded-md hover:scale-105 shadow-md drop-shadow-md cursor-pointer select-none ${style.hoverShadow}`}>
@@ -129,7 +130,41 @@ export default function AcceleratorInd({ loc, data }) {
                     ))
                   }
                 </div>
-                <div className="flex flex-col gap-2 w-full md:w-10/12">
+                <div className="flex flex-col gap-2 md:gap-5 w-full md:w-10/12">
+                  {
+                    loc === 'int' && (
+                      <>
+                        <div className="flex flex-col gap-2 w-5/12 self-center">
+                          <img src="/picture.png" alt="money back guarantee" className='w-full' />
+                        </div>
+                        <Countdown date={1700764200000} renderer={({ days, hours, minutes, seconds, completed }) => {
+                          if (completed) {
+                            return <span className='text-white text-center text-lg md:text-3xl'>Offer Closed</span>
+                          } else {
+                            return <p className='text-center text-sm md:text-2xl flex flex-row gap-2 self-center w-full md:w-9/12'>
+                              <span className='bg-white rounded-lg flex flex-col gap-2 p-2 md:min-w-[100px] flex-1'>
+                                {completed}
+                                <span className='red-text text-xl md:text-6xl text-center font-bold'>{days > 9 ? days : `0${days}`}</span>
+                                <span className='text-black text-center text-xs md:text-lg'>{days > 1 ? 'days' : 'day'}</span>
+                              </span>
+                              <span className='bg-white rounded-lg flex flex-col gap-2 p-2 md:min-w-[100px] flex-1'>
+                                <span className='red-text text-xl md:text-6xl text-center font-bold'>{hours > 9 ? hours : `0${hours}`}</span>
+                                <span className='text-black text-center text-xs md:text-lg'>{hours > 1 ? 'hours' : 'hour'}</span>
+                              </span>
+                              <span className='bg-white rounded-lg flex flex-col gap-2 p-2 md:min-w-[100px] flex-1'>
+                                <span className='red-text text-xl md:text-6xl text-center font-bold'>{minutes > 9 ? minutes : `0${minutes}`}</span>
+                                <span className='text-black text-center text-xs md:text-lg'>{minutes > 1 ? 'minutes' : 'minute'}</span>
+                              </span>
+                              <span className='bg-white rounded-lg flex flex-col gap-2 p-2 md:min-w-[100px] flex-1'>
+                                <span className='red-text text-xl md:text-6xl text-center font-bold'>{seconds > 9 ? seconds : `0${seconds}`}</span>
+                                <span className='text-black text-center text-xs md:text-lg'>{seconds > 1 ? 'seconds' : 'second'}</span>
+                              </span>
+                            </p>
+                          }
+                        }} />
+                      </>
+                    )
+                  }
                   <Link activeClass='activestatus' spy={true} to='paymentPage' smooth={true} duration={1000} offset={-150} className={`flex flex-col items-center cursor-pointer ${style.bgRed} rounded-lg px-2 py-1 md:px-5 md:py-3 hover:scale-105 shadow-sm drop-shadow-sm`}>
                     <span className='text-white text-xl md:text-3xl font-bold uppercase'>Grab the Launch offer</span>
                     <span className='text-white text-center text-sm md:text-2xl'> at an unbelievable discount!</span>
@@ -172,6 +207,39 @@ export default function AcceleratorInd({ loc, data }) {
               </div>
             </div>
             <div className="flex flex-col gap-2 w-full md:w-8/12">
+            {
+                    loc === 'int' && (
+                      <>
+                        <div className="flex flex-col gap-2 w-5/12 self-center">
+                          <img src="/picture.png" alt="money back guarantee" className='w-full' />
+                        </div>
+                        <Countdown date={1700764200000} renderer={({ days, hours, minutes, seconds, completed }) => {
+                          if (completed) {
+                            return <span className='text-white text-center text-lg md:text-3xl'>Offer Closed</span>
+                          } else {
+                            return <p className='text-center text-sm md:text-2xl flex flex-row gap-2 self-center w-full md:w-9/12'>
+                              <span className='bg-white rounded-lg flex flex-col gap-2 p-2 md:min-w-[100px] flex-1'>
+                                <span className='red-text text-xl md:text-6xl text-center font-bold'>{days > 9 ? days : `0${days}`}</span>
+                                <span className='text-black text-center text-xs md:text-lg'>{days > 1 ? 'days' : 'day'}</span>
+                              </span>
+                              <span className='bg-white rounded-lg flex flex-col gap-2 p-2 md:min-w-[100px] flex-1'>
+                                <span className='red-text text-xl md:text-6xl text-center font-bold'>{hours > 9 ? hours : `0${hours}`}</span>
+                                <span className='text-black text-center text-xs md:text-lg'>{hours > 1 ? 'hours' : 'hour'}</span>
+                              </span>
+                              <span className='bg-white rounded-lg flex flex-col gap-2 p-2 md:min-w-[100px] flex-1'>
+                                <span className='red-text text-xl md:text-6xl text-center font-bold'>{minutes > 9 ? minutes : `0${minutes}`}</span>
+                                <span className='text-black text-center text-xs md:text-lg'>{minutes > 1 ? 'minutes' : 'minute'}</span>
+                              </span>
+                              <span className='bg-white rounded-lg flex flex-col gap-2 p-2 md:min-w-[100px] flex-1'>
+                                <span className='red-text text-xl md:text-6xl text-center font-bold'>{seconds > 9 ? seconds : `0${seconds}`}</span>
+                                <span className='text-black text-center text-xs md:text-lg'>{seconds > 1 ? 'seconds' : 'second'}</span>
+                              </span>
+                            </p>
+                          }
+                        }} />
+                      </>
+                    )
+                  }
               <Link activeClass='activestatus' spy={true} to='paymentPage' smooth={true} duration={1000} offset={-150} className={`flex flex-col items-center cursor-pointer ${style.bgRed} rounded-lg px-2 py-1 md:px-5 md:py-3 hover:scale-105 shadow-sm drop-shadow-sm`}>
                 <span className='text-white text-xl md:text-3xl font-bold uppercase'>Grab the Launch offer</span>
                 <span className='text-white text-center text-sm md:text-2xl'> at an unbelievable discount!</span>
@@ -189,7 +257,7 @@ export default function AcceleratorInd({ loc, data }) {
         <section className="z-10 flex flex-col py-10 md:py-20 px-5 md:px-36 gap-10">
           <div className={`flex flex-col gap-5 ${sora.className}`}>
             <h2 className={`text-lg ${style.bgRed} py-2 px-5 md:text-3xl text-center text-white font-bold shadow-lg drop-shadow-lg rounded-lg`}>
-            Our Unique Value Offering: Live Weekly Zoom Calls with Youtube Expert
+              Our Unique Value Offering: Live Weekly Zoom Calls with Youtube Expert
             </h2>
             <h2 className='text-base md:text-2xl text-left md:text-center text-white'>
               <span className='font-bold text-green-700'>BONUS 1: </span>Weekly Live Coffee Chats + Free Access to the archive of all the previously recorded calls
@@ -226,6 +294,39 @@ export default function AcceleratorInd({ loc, data }) {
             </div>
           </div>
           <div className="flex flex-col gap-2 self-center w-full md:w-8/12">
+          {
+                    loc === 'int' && (
+                      <>
+                        <div className="flex flex-col gap-2 w-5/12 self-center">
+                          <img src="/picture.png" alt="money back guarantee" className='w-full' />
+                        </div>
+                        <Countdown date={1700764200000} renderer={({ days, hours, minutes, seconds, completed }) => {
+                          if (completed) {
+                            return <span className='text-white text-center text-lg md:text-3xl'>Offer Closed</span>
+                          } else {
+                            return <p className='text-center text-sm md:text-2xl flex flex-row gap-2 self-center w-full md:w-9/12'>
+                              <span className='bg-white rounded-lg flex flex-col gap-2 p-2 md:min-w-[100px] flex-1'>
+                                <span className='red-text text-xl md:text-6xl text-center font-bold'>{days > 9 ? days : `0${days}`}</span>
+                                <span className='text-black text-center text-xs md:text-lg'>{days > 1 ? 'days' : 'day'}</span>
+                              </span>
+                              <span className='bg-white rounded-lg flex flex-col gap-2 p-2 md:min-w-[100px] flex-1'>
+                                <span className='red-text text-xl md:text-6xl text-center font-bold'>{hours > 9 ? hours : `0${hours}`}</span>
+                                <span className='text-black text-center text-xs md:text-lg'>{hours > 1 ? 'hours' : 'hour'}</span>
+                              </span>
+                              <span className='bg-white rounded-lg flex flex-col gap-2 p-2 md:min-w-[100px] flex-1'>
+                                <span className='red-text text-xl md:text-6xl text-center font-bold'>{minutes > 9 ? minutes : `0${minutes}`}</span>
+                                <span className='text-black text-center text-xs md:text-lg'>{minutes > 1 ? 'minutes' : 'minute'}</span>
+                              </span>
+                              <span className='bg-white rounded-lg flex flex-col gap-2 p-2 md:min-w-[100px] flex-1'>
+                                <span className='red-text text-xl md:text-6xl text-center font-bold'>{seconds > 9 ? seconds : `0${seconds}`}</span>
+                                <span className='text-black text-center text-xs md:text-lg'>{seconds > 1 ? 'seconds' : 'second'}</span>
+                              </span>
+                            </p>
+                          }
+                        }} />
+                      </>
+                    )
+                  }
             <Link activeClass='activestatus' spy={true} to='paymentPage' smooth={true} duration={1000} offset={-150} className={`flex flex-col items-center cursor-pointer ${style.bgRed} rounded-lg px-2 py-1 md:px-5 md:py-3 hover:scale-105 shadow-sm drop-shadow-sm`}>
               <span className='text-white text-xl md:text-3xl font-bold uppercase'>Grab the Launch offer</span>
               <span className='text-white text-center text-sm md:text-2xl'> at an unbelievable discount!</span>
@@ -249,6 +350,39 @@ export default function AcceleratorInd({ loc, data }) {
             <div className="flex flex-col gap-12 w-full">
               <AccRibbonBonus data={['community2', 'donot', 'scriptSecret', 'acc1', 'acc2', 'acc3', 'acc4', 'acc5', 'acc6',]} loc={loc} />
               <div className="flex flex-col self-center gap-2 w-full md:w-8/12">
+              {
+                    loc === 'int' && (
+                      <>
+                        <div className="flex flex-col gap-2 w-5/12 self-center">
+                          <img src="/picture.png" alt="money back guarantee" className='w-full' />
+                        </div>
+                        <Countdown date={1700764200000} renderer={({ days, hours, minutes, seconds, completed }) => {
+                          if (completed) {
+                            return <span className='text-white text-center text-lg md:text-3xl'>Offer Closed</span>
+                          } else {
+                            return <p className='text-center text-sm md:text-2xl flex flex-row gap-2 self-center w-full md:w-9/12'>
+                              <span className='bg-white rounded-lg flex flex-col gap-2 p-2 md:min-w-[100px] flex-1'>
+                                <span className='red-text text-xl md:text-6xl text-center font-bold'>{days > 9 ? days : `0${days}`}</span>
+                                <span className='text-black text-center text-xs md:text-lg'>{days > 1 ? 'days' : 'day'}</span>
+                              </span>
+                              <span className='bg-white rounded-lg flex flex-col gap-2 p-2 md:min-w-[100px] flex-1'>
+                                <span className='red-text text-xl md:text-6xl text-center font-bold'>{hours > 9 ? hours : `0${hours}`}</span>
+                                <span className='text-black text-center text-xs md:text-lg'>{hours > 1 ? 'hours' : 'hour'}</span>
+                              </span>
+                              <span className='bg-white rounded-lg flex flex-col gap-2 p-2 md:min-w-[100px] flex-1'>
+                                <span className='red-text text-xl md:text-6xl text-center font-bold'>{minutes > 9 ? minutes : `0${minutes}`}</span>
+                                <span className='text-black text-center text-xs md:text-lg'>{minutes > 1 ? 'minutes' : 'minute'}</span>
+                              </span>
+                              <span className='bg-white rounded-lg flex flex-col gap-2 p-2 md:min-w-[100px] flex-1'>
+                                <span className='red-text text-xl md:text-6xl text-center font-bold'>{seconds > 9 ? seconds : `0${seconds}`}</span>
+                                <span className='text-black text-center text-xs md:text-lg'>{seconds > 1 ? 'seconds' : 'second'}</span>
+                              </span>
+                            </p>
+                          }
+                        }} />
+                      </>
+                    )
+                  }
                 <Link activeClass='activestatus' spy={true} to='paymentPage' smooth={true} duration={1000} offset={-150} className={`flex flex-col items-center cursor-pointer ${style.bgRed} rounded-lg px-2 py-1 md:px-5 md:py-3 hover:scale-105 shadow-sm drop-shadow-sm`}>
                   <span className='text-white text-xl md:text-3xl font-bold uppercase'>Grab the Launch offer</span>
                   <span className='text-white text-center text-sm md:text-2xl'> at an unbelievable discount!</span>
@@ -311,6 +445,39 @@ export default function AcceleratorInd({ loc, data }) {
             </div>
           </div>
           <div className="flex flex-col gap-5 self-center w-full md:w-8/12">
+          {
+                    loc === 'int' && (
+                      <>
+                        <div className="flex flex-col gap-2 w-5/12 self-center">
+                          <img src="/picture.png" alt="money back guarantee" className='w-full' />
+                        </div>
+                        <Countdown date={1700764200000} renderer={({ days, hours, minutes, seconds, completed }) => {
+                          if (completed) {
+                            return <span className='text-white text-center text-lg md:text-3xl'>Offer Closed</span>
+                          } else {
+                            return <p className='text-center text-sm md:text-2xl flex flex-row gap-2 self-center w-full md:w-9/12'>
+                              <span className='bg-white rounded-lg flex flex-col gap-2 p-2 md:min-w-[100px] flex-1'>
+                                <span className='red-text text-xl md:text-6xl text-center font-bold'>{days > 9 ? days : `0${days}`}</span>
+                                <span className='text-black text-center text-xs md:text-lg'>{days > 1 ? 'days' : 'day'}</span>
+                              </span>
+                              <span className='bg-white rounded-lg flex flex-col gap-2 p-2 md:min-w-[100px] flex-1'>
+                                <span className='red-text text-xl md:text-6xl text-center font-bold'>{hours > 9 ? hours : `0${hours}`}</span>
+                                <span className='text-black text-center text-xs md:text-lg'>{hours > 1 ? 'hours' : 'hour'}</span>
+                              </span>
+                              <span className='bg-white rounded-lg flex flex-col gap-2 p-2 md:min-w-[100px] flex-1'>
+                                <span className='red-text text-xl md:text-6xl text-center font-bold'>{minutes > 9 ? minutes : `0${minutes}`}</span>
+                                <span className='text-black text-center text-xs md:text-lg'>{minutes > 1 ? 'minutes' : 'minute'}</span>
+                              </span>
+                              <span className='bg-white rounded-lg flex flex-col gap-2 p-2 md:min-w-[100px] flex-1'>
+                                <span className='red-text text-xl md:text-6xl text-center font-bold'>{seconds > 9 ? seconds : `0${seconds}`}</span>
+                                <span className='text-black text-center text-xs md:text-lg'>{seconds > 1 ? 'seconds' : 'second'}</span>
+                              </span>
+                            </p>
+                          }
+                        }} />
+                      </>
+                    )
+                  }
             <Link activeClass='activestatus' spy={true} to='paymentPage' smooth={true} duration={1000} offset={-150} className={`flex flex-col items-center cursor-pointer ${style.bgRed} rounded-lg px-2 py-1 md:px-5 md:py-3 hover:scale-105 shadow-sm drop-shadow-sm`}>
               <span className='text-white text-xl md:text-3xl font-bold uppercase'>Grab the Launch offer</span>
               <span className='text-white text-center text-sm md:text-2xl'> at an unbelievable discount!</span>
@@ -334,6 +501,39 @@ export default function AcceleratorInd({ loc, data }) {
             <WhoIsThisFor />
           </div>
           <div className="flex flex-col gap-5 self-center w-full md:w-8/12">
+          {
+                    loc === 'int' && (
+                      <>
+                        <div className="flex flex-col gap-2 w-5/12 self-center">
+                          <img src="/picture.png" alt="money back guarantee" className='w-full' />
+                        </div>
+                        <Countdown date={1700764200000} renderer={({ days, hours, minutes, seconds, completed }) => {
+                          if (completed) {
+                            return <span className='text-white text-center text-lg md:text-3xl'>Offer Closed</span>
+                          } else {
+                            return <p className='text-center text-sm md:text-2xl flex flex-row gap-2 self-center w-full md:w-9/12'>
+                              <span className='bg-white rounded-lg flex flex-col gap-2 p-2 md:min-w-[100px] flex-1'>
+                                <span className='red-text text-xl md:text-6xl text-center font-bold'>{days > 9 ? days : `0${days}`}</span>
+                                <span className='text-black text-center text-xs md:text-lg'>{days > 1 ? 'days' : 'day'}</span>
+                              </span>
+                              <span className='bg-white rounded-lg flex flex-col gap-2 p-2 md:min-w-[100px] flex-1'>
+                                <span className='red-text text-xl md:text-6xl text-center font-bold'>{hours > 9 ? hours : `0${hours}`}</span>
+                                <span className='text-black text-center text-xs md:text-lg'>{hours > 1 ? 'hours' : 'hour'}</span>
+                              </span>
+                              <span className='bg-white rounded-lg flex flex-col gap-2 p-2 md:min-w-[100px] flex-1'>
+                                <span className='red-text text-xl md:text-6xl text-center font-bold'>{minutes > 9 ? minutes : `0${minutes}`}</span>
+                                <span className='text-black text-center text-xs md:text-lg'>{minutes > 1 ? 'minutes' : 'minute'}</span>
+                              </span>
+                              <span className='bg-white rounded-lg flex flex-col gap-2 p-2 md:min-w-[100px] flex-1'>
+                                <span className='red-text text-xl md:text-6xl text-center font-bold'>{seconds > 9 ? seconds : `0${seconds}`}</span>
+                                <span className='text-black text-center text-xs md:text-lg'>{seconds > 1 ? 'seconds' : 'second'}</span>
+                              </span>
+                            </p>
+                          }
+                        }} />
+                      </>
+                    )
+                  }
             <Link activeClass='activestatus' spy={true} to='paymentPage' smooth={true} duration={1000} offset={-150} className={`flex flex-col items-center cursor-pointer ${style.bgRed} rounded-lg px-2 py-1 md:px-5 md:py-3 hover:scale-105 shadow-sm drop-shadow-sm`}>
               <span className='text-white text-xl md:text-3xl font-bold uppercase'>Grab the Launch offer</span>
               <span className='text-white text-center text-sm md:text-2xl'> at an unbelievable discount!</span>
@@ -368,7 +568,7 @@ export default function AcceleratorInd({ loc, data }) {
         <section className="z-10 hidden lg:flex flex-col py-10 md:py-20 px-5 md:px-40 gap-5 md:gap-10">
           <div className={`flex flex-col gap-2 ${sora.className} items-center`}>
             <h2 className={`text-lg ${style.bgRed} py-2 px-5 md:text-3xl text-center text-white font-bold shadow-lg drop-shadow-lg rounded-lg`}>
-            Must for all those who share any of the below need..
+              Must for all those who share any of the below need..
             </h2>
           </div>
           <div className="flex flex-col w-full">
