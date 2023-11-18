@@ -142,21 +142,21 @@ export default function AcceleratorInd({ loc, data }) {
                             return <span className='text-white text-center text-lg md:text-3xl'>Offer Closed</span>
                           } else {
                             return <p className='text-center text-sm md:text-2xl flex flex-row gap-2 self-center w-full md:w-9/12'>
-                              <span className='bg-white rounded-lg flex flex-col gap-2 p-2 md:min-w-[100px] flex-1'>
+                              <span className='bg-white rounded-lg flex flex-col gap-2 p-1 flex-1'>
                                 {completed}
-                                <span className='red-text text-xl md:text-6xl text-center font-bold'>{days > 9 ? days : `0${days}`}</span>
+                                <span className='red-text text-xl md:text-4xl text-center font-bold'>{days > 9 ? days : `0${days}`}</span>
                                 <span className='text-black text-center text-xs md:text-lg'>{days > 1 ? 'days' : 'day'}</span>
                               </span>
-                              <span className='bg-white rounded-lg flex flex-col gap-2 p-2 md:min-w-[100px] flex-1'>
-                                <span className='red-text text-xl md:text-6xl text-center font-bold'>{hours > 9 ? hours : `0${hours}`}</span>
+                              <span className='bg-white rounded-lg flex flex-col gap-2 p-1 flex-1'>
+                                <span className='red-text text-xl md:text-4xl text-center font-bold'>{hours > 9 ? hours : `0${hours}`}</span>
                                 <span className='text-black text-center text-xs md:text-lg'>{hours > 1 ? 'hours' : 'hour'}</span>
                               </span>
-                              <span className='bg-white rounded-lg flex flex-col gap-2 p-2 md:min-w-[100px] flex-1'>
-                                <span className='red-text text-xl md:text-6xl text-center font-bold'>{minutes > 9 ? minutes : `0${minutes}`}</span>
+                              <span className='bg-white rounded-lg flex flex-col gap-2 p-1 flex-1'>
+                                <span className='red-text text-xl md:text-4xl text-center font-bold'>{minutes > 9 ? minutes : `0${minutes}`}</span>
                                 <span className='text-black text-center text-xs md:text-lg'>{minutes > 1 ? 'minutes' : 'minute'}</span>
                               </span>
-                              <span className='bg-white rounded-lg flex flex-col gap-2 p-2 md:min-w-[100px] flex-1'>
-                                <span className='red-text text-xl md:text-6xl text-center font-bold'>{seconds > 9 ? seconds : `0${seconds}`}</span>
+                              <span className='bg-white rounded-lg flex flex-col gap-2 p-1 flex-1'>
+                                <span className='red-text text-xl md:text-4xl text-center font-bold'>{seconds > 9 ? seconds : `0${seconds}`}</span>
                                 <span className='text-black text-center text-xs md:text-lg'>{seconds > 1 ? 'seconds' : 'second'}</span>
                               </span>
                             </p>
@@ -218,20 +218,20 @@ export default function AcceleratorInd({ loc, data }) {
                             return <span className='text-white text-center text-lg md:text-3xl'>Offer Closed</span>
                           } else {
                             return <p className='text-center text-sm md:text-2xl flex flex-row gap-2 self-center w-full md:w-9/12'>
-                              <span className='bg-white rounded-lg flex flex-col gap-2 p-2 md:min-w-[100px] flex-1'>
-                                <span className='red-text text-xl md:text-6xl text-center font-bold'>{days > 9 ? days : `0${days}`}</span>
+                              <span className='bg-white rounded-lg flex flex-col gap-2 p-1 flex-1'>
+                                <span className='red-text text-xl md:text-4xl text-center font-bold'>{days > 9 ? days : `0${days}`}</span>
                                 <span className='text-black text-center text-xs md:text-lg'>{days > 1 ? 'days' : 'day'}</span>
                               </span>
-                              <span className='bg-white rounded-lg flex flex-col gap-2 p-2 md:min-w-[100px] flex-1'>
-                                <span className='red-text text-xl md:text-6xl text-center font-bold'>{hours > 9 ? hours : `0${hours}`}</span>
+                              <span className='bg-white rounded-lg flex flex-col gap-2 p-1 flex-1'>
+                                <span className='red-text text-xl md:text-4xl text-center font-bold'>{hours > 9 ? hours : `0${hours}`}</span>
                                 <span className='text-black text-center text-xs md:text-lg'>{hours > 1 ? 'hours' : 'hour'}</span>
                               </span>
-                              <span className='bg-white rounded-lg flex flex-col gap-2 p-2 md:min-w-[100px] flex-1'>
-                                <span className='red-text text-xl md:text-6xl text-center font-bold'>{minutes > 9 ? minutes : `0${minutes}`}</span>
+                              <span className='bg-white rounded-lg flex flex-col gap-2 p-1 flex-1'>
+                                <span className='red-text text-xl md:text-4xl text-center font-bold'>{minutes > 9 ? minutes : `0${minutes}`}</span>
                                 <span className='text-black text-center text-xs md:text-lg'>{minutes > 1 ? 'minutes' : 'minute'}</span>
                               </span>
-                              <span className='bg-white rounded-lg flex flex-col gap-2 p-2 md:min-w-[100px] flex-1'>
-                                <span className='red-text text-xl md:text-6xl text-center font-bold'>{seconds > 9 ? seconds : `0${seconds}`}</span>
+                              <span className='bg-white rounded-lg flex flex-col gap-2 p-1 flex-1'>
+                                <span className='red-text text-xl md:text-4xl text-center font-bold'>{seconds > 9 ? seconds : `0${seconds}`}</span>
                                 <span className='text-black text-center text-xs md:text-lg'>{seconds > 1 ? 'seconds' : 'second'}</span>
                               </span>
                             </p>
@@ -305,20 +305,20 @@ export default function AcceleratorInd({ loc, data }) {
                             return <span className='text-white text-center text-lg md:text-3xl'>Offer Closed</span>
                           } else {
                             return <p className='text-center text-sm md:text-2xl flex flex-row gap-2 self-center w-full md:w-9/12'>
-                              <span className='bg-white rounded-lg flex flex-col gap-2 p-2 md:min-w-[100px] flex-1'>
-                                <span className='red-text text-xl md:text-6xl text-center font-bold'>{days > 9 ? days : `0${days}`}</span>
+                              <span className='bg-white rounded-lg flex flex-col gap-2 p-1 flex-1'>
+                                <span className='red-text text-xl md:text-4xl text-center font-bold'>{days > 9 ? days : `0${days}`}</span>
                                 <span className='text-black text-center text-xs md:text-lg'>{days > 1 ? 'days' : 'day'}</span>
                               </span>
-                              <span className='bg-white rounded-lg flex flex-col gap-2 p-2 md:min-w-[100px] flex-1'>
-                                <span className='red-text text-xl md:text-6xl text-center font-bold'>{hours > 9 ? hours : `0${hours}`}</span>
+                              <span className='bg-white rounded-lg flex flex-col gap-2 p-1 flex-1'>
+                                <span className='red-text text-xl md:text-4xl text-center font-bold'>{hours > 9 ? hours : `0${hours}`}</span>
                                 <span className='text-black text-center text-xs md:text-lg'>{hours > 1 ? 'hours' : 'hour'}</span>
                               </span>
-                              <span className='bg-white rounded-lg flex flex-col gap-2 p-2 md:min-w-[100px] flex-1'>
-                                <span className='red-text text-xl md:text-6xl text-center font-bold'>{minutes > 9 ? minutes : `0${minutes}`}</span>
+                              <span className='bg-white rounded-lg flex flex-col gap-2 p-1 flex-1'>
+                                <span className='red-text text-xl md:text-4xl text-center font-bold'>{minutes > 9 ? minutes : `0${minutes}`}</span>
                                 <span className='text-black text-center text-xs md:text-lg'>{minutes > 1 ? 'minutes' : 'minute'}</span>
                               </span>
-                              <span className='bg-white rounded-lg flex flex-col gap-2 p-2 md:min-w-[100px] flex-1'>
-                                <span className='red-text text-xl md:text-6xl text-center font-bold'>{seconds > 9 ? seconds : `0${seconds}`}</span>
+                              <span className='bg-white rounded-lg flex flex-col gap-2 p-1 flex-1'>
+                                <span className='red-text text-xl md:text-4xl text-center font-bold'>{seconds > 9 ? seconds : `0${seconds}`}</span>
                                 <span className='text-black text-center text-xs md:text-lg'>{seconds > 1 ? 'seconds' : 'second'}</span>
                               </span>
                             </p>
@@ -361,20 +361,20 @@ export default function AcceleratorInd({ loc, data }) {
                             return <span className='text-white text-center text-lg md:text-3xl'>Offer Closed</span>
                           } else {
                             return <p className='text-center text-sm md:text-2xl flex flex-row gap-2 self-center w-full md:w-9/12'>
-                              <span className='bg-white rounded-lg flex flex-col gap-2 p-2 md:min-w-[100px] flex-1'>
-                                <span className='red-text text-xl md:text-6xl text-center font-bold'>{days > 9 ? days : `0${days}`}</span>
+                              <span className='bg-white rounded-lg flex flex-col gap-2 p-1 flex-1'>
+                                <span className='red-text text-xl md:text-4xl text-center font-bold'>{days > 9 ? days : `0${days}`}</span>
                                 <span className='text-black text-center text-xs md:text-lg'>{days > 1 ? 'days' : 'day'}</span>
                               </span>
-                              <span className='bg-white rounded-lg flex flex-col gap-2 p-2 md:min-w-[100px] flex-1'>
-                                <span className='red-text text-xl md:text-6xl text-center font-bold'>{hours > 9 ? hours : `0${hours}`}</span>
+                              <span className='bg-white rounded-lg flex flex-col gap-2 p-1 flex-1'>
+                                <span className='red-text text-xl md:text-4xl text-center font-bold'>{hours > 9 ? hours : `0${hours}`}</span>
                                 <span className='text-black text-center text-xs md:text-lg'>{hours > 1 ? 'hours' : 'hour'}</span>
                               </span>
-                              <span className='bg-white rounded-lg flex flex-col gap-2 p-2 md:min-w-[100px] flex-1'>
-                                <span className='red-text text-xl md:text-6xl text-center font-bold'>{minutes > 9 ? minutes : `0${minutes}`}</span>
+                              <span className='bg-white rounded-lg flex flex-col gap-2 p-1 flex-1'>
+                                <span className='red-text text-xl md:text-4xl text-center font-bold'>{minutes > 9 ? minutes : `0${minutes}`}</span>
                                 <span className='text-black text-center text-xs md:text-lg'>{minutes > 1 ? 'minutes' : 'minute'}</span>
                               </span>
-                              <span className='bg-white rounded-lg flex flex-col gap-2 p-2 md:min-w-[100px] flex-1'>
-                                <span className='red-text text-xl md:text-6xl text-center font-bold'>{seconds > 9 ? seconds : `0${seconds}`}</span>
+                              <span className='bg-white rounded-lg flex flex-col gap-2 p-1 flex-1'>
+                                <span className='red-text text-xl md:text-4xl text-center font-bold'>{seconds > 9 ? seconds : `0${seconds}`}</span>
                                 <span className='text-black text-center text-xs md:text-lg'>{seconds > 1 ? 'seconds' : 'second'}</span>
                               </span>
                             </p>
@@ -456,20 +456,20 @@ export default function AcceleratorInd({ loc, data }) {
                             return <span className='text-white text-center text-lg md:text-3xl'>Offer Closed</span>
                           } else {
                             return <p className='text-center text-sm md:text-2xl flex flex-row gap-2 self-center w-full md:w-9/12'>
-                              <span className='bg-white rounded-lg flex flex-col gap-2 p-2 md:min-w-[100px] flex-1'>
-                                <span className='red-text text-xl md:text-6xl text-center font-bold'>{days > 9 ? days : `0${days}`}</span>
+                              <span className='bg-white rounded-lg flex flex-col gap-2 p-1 flex-1'>
+                                <span className='red-text text-xl md:text-4xl text-center font-bold'>{days > 9 ? days : `0${days}`}</span>
                                 <span className='text-black text-center text-xs md:text-lg'>{days > 1 ? 'days' : 'day'}</span>
                               </span>
-                              <span className='bg-white rounded-lg flex flex-col gap-2 p-2 md:min-w-[100px] flex-1'>
-                                <span className='red-text text-xl md:text-6xl text-center font-bold'>{hours > 9 ? hours : `0${hours}`}</span>
+                              <span className='bg-white rounded-lg flex flex-col gap-2 p-1 flex-1'>
+                                <span className='red-text text-xl md:text-4xl text-center font-bold'>{hours > 9 ? hours : `0${hours}`}</span>
                                 <span className='text-black text-center text-xs md:text-lg'>{hours > 1 ? 'hours' : 'hour'}</span>
                               </span>
-                              <span className='bg-white rounded-lg flex flex-col gap-2 p-2 md:min-w-[100px] flex-1'>
-                                <span className='red-text text-xl md:text-6xl text-center font-bold'>{minutes > 9 ? minutes : `0${minutes}`}</span>
+                              <span className='bg-white rounded-lg flex flex-col gap-2 p-1 flex-1'>
+                                <span className='red-text text-xl md:text-4xl text-center font-bold'>{minutes > 9 ? minutes : `0${minutes}`}</span>
                                 <span className='text-black text-center text-xs md:text-lg'>{minutes > 1 ? 'minutes' : 'minute'}</span>
                               </span>
-                              <span className='bg-white rounded-lg flex flex-col gap-2 p-2 md:min-w-[100px] flex-1'>
-                                <span className='red-text text-xl md:text-6xl text-center font-bold'>{seconds > 9 ? seconds : `0${seconds}`}</span>
+                              <span className='bg-white rounded-lg flex flex-col gap-2 p-1 flex-1'>
+                                <span className='red-text text-xl md:text-4xl text-center font-bold'>{seconds > 9 ? seconds : `0${seconds}`}</span>
                                 <span className='text-black text-center text-xs md:text-lg'>{seconds > 1 ? 'seconds' : 'second'}</span>
                               </span>
                             </p>
@@ -512,20 +512,20 @@ export default function AcceleratorInd({ loc, data }) {
                             return <span className='text-white text-center text-lg md:text-3xl'>Offer Closed</span>
                           } else {
                             return <p className='text-center text-sm md:text-2xl flex flex-row gap-2 self-center w-full md:w-9/12'>
-                              <span className='bg-white rounded-lg flex flex-col gap-2 p-2 md:min-w-[100px] flex-1'>
-                                <span className='red-text text-xl md:text-6xl text-center font-bold'>{days > 9 ? days : `0${days}`}</span>
+                              <span className='bg-white rounded-lg flex flex-col gap-2 p-1 flex-1'>
+                                <span className='red-text text-xl md:text-4xl text-center font-bold'>{days > 9 ? days : `0${days}`}</span>
                                 <span className='text-black text-center text-xs md:text-lg'>{days > 1 ? 'days' : 'day'}</span>
                               </span>
-                              <span className='bg-white rounded-lg flex flex-col gap-2 p-2 md:min-w-[100px] flex-1'>
-                                <span className='red-text text-xl md:text-6xl text-center font-bold'>{hours > 9 ? hours : `0${hours}`}</span>
+                              <span className='bg-white rounded-lg flex flex-col gap-2 p-1 flex-1'>
+                                <span className='red-text text-xl md:text-4xl text-center font-bold'>{hours > 9 ? hours : `0${hours}`}</span>
                                 <span className='text-black text-center text-xs md:text-lg'>{hours > 1 ? 'hours' : 'hour'}</span>
                               </span>
-                              <span className='bg-white rounded-lg flex flex-col gap-2 p-2 md:min-w-[100px] flex-1'>
-                                <span className='red-text text-xl md:text-6xl text-center font-bold'>{minutes > 9 ? minutes : `0${minutes}`}</span>
+                              <span className='bg-white rounded-lg flex flex-col gap-2 p-1 flex-1'>
+                                <span className='red-text text-xl md:text-4xl text-center font-bold'>{minutes > 9 ? minutes : `0${minutes}`}</span>
                                 <span className='text-black text-center text-xs md:text-lg'>{minutes > 1 ? 'minutes' : 'minute'}</span>
                               </span>
-                              <span className='bg-white rounded-lg flex flex-col gap-2 p-2 md:min-w-[100px] flex-1'>
-                                <span className='red-text text-xl md:text-6xl text-center font-bold'>{seconds > 9 ? seconds : `0${seconds}`}</span>
+                              <span className='bg-white rounded-lg flex flex-col gap-2 p-1 flex-1'>
+                                <span className='red-text text-xl md:text-4xl text-center font-bold'>{seconds > 9 ? seconds : `0${seconds}`}</span>
                                 <span className='text-black text-center text-xs md:text-lg'>{seconds > 1 ? 'seconds' : 'second'}</span>
                               </span>
                             </p>
