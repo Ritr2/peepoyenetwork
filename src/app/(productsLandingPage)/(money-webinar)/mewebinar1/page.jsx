@@ -133,19 +133,19 @@ export default function page() {
           <div className='flex flex-col items-center justify-center w-full gap-2 md:gap-4 flex-1'>
             <h1 className='text-xl md:text-6xl font-bold text-center text-white md:leading-[55px]'>Learn How To Build Your <span className='red-text'>Own Money Engine</span> Using Youtube Within 3 Days</h1>
             <p className='text-lg md:text-2xl font-normal text-center text-white'>
-              Akassh Ashok Gupta talks about the secret method that he has created that will decode the Secrets and Essence of how to leverage Youtube and add Multiple Revnue Streams that will flood the growth in ad revenue, product sales and business leads owing to his 2 decade long business consulting experience working with 200+ Compnies & Brands and training 1000+ people at various levels and 5+ years as a content creator and influencer collaborating with mulitple esteemed influencers and celebrities
+              Akassh Ashok Gupta reveals his exclusive method to unlock the secrets of YouTube, generating multiple revenue streams for substantial growth in ad revenue, product sales, and business leads. With two decades of business consulting for 200+ companies, training over 1000 individuals, and 5+ years as a content creator and influencer collaborating with esteemed personalities, his approach guarantees transformative results.
             </p>
           </div>
           <div className='flex flex-col md:flex-row justify-center gap-5 md:gap-10 w-full'>
             <div className='flex flex-col items-center justify-center w-full md:w-6/12'>
               <img src='https://i.ibb.co/FY333K1/Final.webp' alt='What You Will Learn In The Webinar' className='w-full rounded-lg' draggable={false} />
             </div>
-              <div className="flex flex-col flex-1 p-3 md:p-5 gap-1 md:gap-2 rounded-lg bg-neutral-100 border-[4px] border-red-600 border-dashed justify-start">
-                <span className='text-xl md:text-2xl font-bold text-center'>Date <span className='red-text'>|</span> Saturday <span className='red-text'>|</span> 9PM to 10PM IST</span>
-                <Form text="Signup for LIVE Webinar" />
-                <span className="flex-1 text-base md:text-xl text-center text-neutral-500 font-bold"><span className='font-black red-text text-4xl'>+</span><br />Get my Influencer Guide on how to Become a Top Influencer Fast totally Free with this webinar</span>
-                <span className="flex-1 text-base md:text-xl text-center red-text font-bold rounded-xl p-2">No Recordings. No Replays. Only Live Access</span>
-              </div>
+            <div className="relative flex flex-col items-center justify-center flex-1 p-3 md:p-5 gap-1 md:gap-2 rounded-lg bg-neutral-100 border-[4px] border-red-600 border-dashed">
+              <span className='text-xl md:text-2xl font-bold text-center'>Date <span className='red-text'>|</span> Saturday <span className='red-text'>|</span> 9PM to 10PM IST</span>
+              <Form text="Signup for LIVE Webinar" />
+              <span className="text-base md:text-xl text-center text-neutral-500 font-bold"><span className='font-black red-text text-4xl'>+</span><br />Get my Influencer Guide on how to Become a Top Influencer Fast totally Free with this webinar</span>
+              <span className="md:absolute md:bottom-0 text-base md:text-xl text-center red-text font-bold rounded-xl p-2">No Recordings. No Replays. Only Live Access</span>
+            </div>
           </div>
         </div>
       </section>
