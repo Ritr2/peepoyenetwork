@@ -24,7 +24,7 @@ export default function Form({buttonColor={normal:'red-bg', hover:'red-400', act
 
   return (
     <Fragment>
-      <button className={`flex rounded-lg py-4 text-base md:text-xl font-bold flex-row items-center justify-center gap-2 w-full text-white ${buttonColor.normal} hover:bg-${buttonColor.hover} hover:shadow-lg hover:drop-shadow-lg hover:scale-105 active:bg-${buttonColor.active} active:shadow-none active:drop-shadow-none active:scale-95`} onClick={() => setFormVisible(true)}>{text}</button>
+      <button className={`flex rounded-lg py-4 text-base md:text-3xl font-bold flex-row items-center justify-center gap-2 w-full text-white ${buttonColor.normal} hover:bg-${buttonColor.hover} hover:shadow-lg hover:drop-shadow-lg hover:scale-105 active:bg-${buttonColor.active} active:shadow-none active:drop-shadow-none active:scale-95`} onClick={() => setFormVisible(true)}>{text}</button>
       <AnimatePresence>
         {
           formVisible &&

@@ -13,9 +13,6 @@ export default function DynamicForm({ animation = true, closeFunc = false }) {
   const firstNameRef = useRef(null);
   const lastNameRef = useRef(null);
   const emailRef = useRef(null);
-  const phoneRef = useRef(null);
-  const cityRef = useRef(null);
-  const [age, setAge] = React.useState("");
   const [formVisible, setFormVisible] = React.useState(true);
 
   const handleSubmit = (e) => {
@@ -30,7 +27,6 @@ export default function DynamicForm({ animation = true, closeFunc = false }) {
       email,
       first_name,
       last_name: lastNameRef.current.value,
-      phone: phoneRef.current.value,
     }
     axios.post('https://peepoye-user-database.onrender.com/add_contact', data)
     if (closeFunc) {
@@ -88,12 +84,6 @@ export default function DynamicForm({ animation = true, closeFunc = false }) {
               </div>
               <div className="flex flex-col gap-1">
                 <input ref={emailRef} type="email" name="email" id="email" className="border-2 border-neutral-400 rounded-lg p-2" placeholder='Email' required />
-              </div>
-              <div className="flex flex-col gap-1">
-                <input ref={phoneRef} type="tel" name="phone" id="phone" className="border-2 border-neutral-400 rounded-lg p-2" placeholder='Phone' required />
-              </div>
-              <div className="flex flex-col gap-1">
-                <input ref={cityRef} type="text" name="city" id="city" className="border-2 border-neutral-400 rounded-lg p-2" placeholder='City' required />
               </div>
               <div className="flex flex-col gap-1">
                 <button type="submit" className="text-base md:text-lg text-center red-bg text-white p-2 px-8 rounded-lg drop-shadow-lg shadow-lg hover:bg-red-700 hover:shadow-xl hover:drop-shadow-xl active:bg-red-800 active:shadow-2xl active:drop-shadow-2xl active:translate-x-1 active:scale-95">Yes! Let Me In</button>
