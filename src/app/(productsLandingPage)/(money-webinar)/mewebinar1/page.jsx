@@ -137,14 +137,18 @@ export default function page() {
             </p>
           </div>
           <div className='flex flex-col md:flex-row justify-center gap-5 md:gap-10 w-full'>
-            <div className='flex flex-col items-center justify-center w-full md:w-6/12'>
-              <img src='https://i.ibb.co/FY333K1/Final.webp' alt='What You Will Learn In The Webinar' className='w-full rounded-lg' draggable={false} />
+            <div className='flex flex-col w-full md:w-6/12'>
+              <div className='relative flex-1 w-full h-auto overflow-hidden order-2 md:order-1 min-h-[160px] md:min-h-[360px]' style={{ position: 'relative' }}>
+                <iframe src="https://www.loom.com/embed/def564694cdb4d48a337b6190fd8c7d7?hide_owner=true&hide_share=true&hide_title=true&hideEmbedTopBar=true&showEmbedControls=false&show_date=false&loop=1"
+                  frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style={{ position: 'absolute', top: '0', left: '0', width: '100%', height: '100%', borderRadius: "10px" }} autoPlay
+                ></iframe>
+              </div>
             </div>
             <div className="relative flex flex-col items-center justify-center flex-1 p-3 md:p-5 gap-1 md:gap-2 rounded-lg bg-neutral-100 border-[4px] border-red-600 border-dashed">
               <span className='text-xl md:text-2xl font-bold text-center'>Date <span className='red-text'>|</span> Saturday <span className='red-text'>|</span> 9PM to 10PM IST</span>
               <Form text="Signup for LIVE Webinar" />
               <span className="text-base md:text-xl text-center text-neutral-500 font-bold"><span className='font-black red-text text-4xl'>+</span><br />Get my Influencer Guide on how to Become a Top Influencer Fast totally Free with this webinar</span>
-              <span className="md:absolute md:bottom-0 text-base md:text-xl text-center red-text font-bold rounded-xl p-2">No Recordings. No Replays. Only Live Access</span>
+              <span className="lg:absolute md:bottom-0 text-base md:text-xl text-center red-text font-bold rounded-xl p-2">No Recordings. No Replays. Only Live Access</span>
             </div>
           </div>
         </div>
