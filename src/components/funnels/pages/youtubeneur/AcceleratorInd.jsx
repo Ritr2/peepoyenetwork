@@ -29,7 +29,7 @@ const sora = Sora({
   subsets: ['latin'],
 })
 
-export default function AcceleratorInd({ loc, data }) {
+export default function AcceleratorInd({ loc, data, bf=false }) {
   const [videoPlayervisible, setVideoPlayervisible] = React.useState(false)
   const { ref: socialMediaRef, inView: socialMediaInView } = useInView();
   const firstSectionData = [
@@ -132,7 +132,7 @@ export default function AcceleratorInd({ loc, data }) {
                 </div>
                 <div className="flex flex-col gap-2 md:gap-5 w-full md:w-10/12">
                   {
-                    loc === 'int' && (
+                    bf && (
                       <>
                         <div className="flex flex-col gap-2 w-5/12 self-center">
                           <img src="/picture.png" alt="money back guarantee" className='w-full' />
@@ -166,7 +166,7 @@ export default function AcceleratorInd({ loc, data }) {
                     )
                   }
                   <Link activeClass='activestatus' spy={true} to='paymentPage' smooth={true} duration={1000} offset={-150} className={`flex flex-col items-center cursor-pointer ${style.bgRed} rounded-lg px-2 py-1 md:px-5 md:py-3 hover:scale-105 shadow-sm drop-shadow-sm`}>
-                    <span className='text-white text-base md:text-3xl font-bold uppercase'>Grab the {loc == 'int'? 'black friday': 'Launch'} offer</span>
+                    <span className='text-white text-base md:text-3xl font-bold uppercase'>Grab the {bf? 'black friday': 'Launch'} offer</span>
                     <span className='text-white text-center text-sm md:text-2xl'> at an unbelievable discount!</span>
                   </Link>
                   {
@@ -208,7 +208,7 @@ export default function AcceleratorInd({ loc, data }) {
             </div>
             <div className="flex flex-col gap-2 w-full md:w-8/12">
             {
-                    loc === 'int' && (
+                    bf && (
                       <>
                         <div className="flex flex-col gap-2 w-5/12 self-center">
                           <img src="/picture.png" alt="money back guarantee" className='w-full' />
@@ -241,7 +241,7 @@ export default function AcceleratorInd({ loc, data }) {
                     )
                   }
               <Link activeClass='activestatus' spy={true} to='paymentPage' smooth={true} duration={1000} offset={-150} className={`flex flex-col items-center cursor-pointer ${style.bgRed} rounded-lg px-2 py-1 md:px-5 md:py-3 hover:scale-105 shadow-sm drop-shadow-sm`}>
-                <span className='text-white text-base md:text-3xl font-bold uppercase'>Grab the {loc == 'int'? 'black friday': 'Launch'} offer</span>
+                <span className='text-white text-base md:text-3xl font-bold uppercase'>Grab the {bf? 'black friday': 'Launch'} offer</span>
                 <span className='text-white text-center text-sm md:text-2xl'> at an unbelievable discount!</span>
               </Link>
               {
@@ -295,7 +295,7 @@ export default function AcceleratorInd({ loc, data }) {
           </div>
           <div className="flex flex-col gap-2 self-center w-full md:w-8/12">
           {
-                    loc === 'int' && (
+                    bf && (
                       <>
                         <div className="flex flex-col gap-2 w-5/12 self-center">
                           <img src="/picture.png" alt="money back guarantee" className='w-full' />
@@ -328,7 +328,7 @@ export default function AcceleratorInd({ loc, data }) {
                     )
                   }
             <Link activeClass='activestatus' spy={true} to='paymentPage' smooth={true} duration={1000} offset={-150} className={`flex flex-col items-center cursor-pointer ${style.bgRed} rounded-lg px-2 py-1 md:px-5 md:py-3 hover:scale-105 shadow-sm drop-shadow-sm`}>
-              <span className='text-white text-base md:text-3xl font-bold uppercase'>Grab the {loc == 'int'? 'black friday': 'Launch'} offer</span>
+              <span className='text-white text-base md:text-3xl font-bold uppercase'>Grab the {bf? 'black friday': 'Launch'} offer</span>
               <span className='text-white text-center text-sm md:text-2xl'> at an unbelievable discount!</span>
             </Link>
             {
@@ -351,7 +351,7 @@ export default function AcceleratorInd({ loc, data }) {
               <AccRibbonBonus data={['community2', 'donot', 'scriptSecret', 'acc1', 'acc2', 'acc3', 'acc4', 'acc5', 'acc6',]} loc={loc} />
               <div className="flex flex-col self-center gap-2 w-full md:w-8/12">
               {
-                    loc === 'int' && (
+                    bf && (
                       <>
                         <div className="flex flex-col gap-2 w-5/12 self-center">
                           <img src="/picture.png" alt="money back guarantee" className='w-full' />
@@ -384,7 +384,7 @@ export default function AcceleratorInd({ loc, data }) {
                     )
                   }
                 <Link activeClass='activestatus' spy={true} to='paymentPage' smooth={true} duration={1000} offset={-150} className={`flex flex-col items-center cursor-pointer ${style.bgRed} rounded-lg px-2 py-1 md:px-5 md:py-3 hover:scale-105 shadow-sm drop-shadow-sm`}>
-                  <span className='text-white text-base md:text-3xl font-bold uppercase'>Grab the {loc == 'int'? 'black friday': 'Launch'} offer</span>
+                  <span className='text-white text-base md:text-3xl font-bold uppercase'>Grab the {bf? 'black friday': 'Launch'} offer</span>
                   <span className='text-white text-center text-sm md:text-2xl'> at an unbelievable discount!</span>
                 </Link>
                 {
@@ -446,7 +446,7 @@ export default function AcceleratorInd({ loc, data }) {
           </div>
           <div className="flex flex-col gap-5 self-center w-full md:w-8/12">
           {
-                    loc === 'int' && (
+                    bf && (
                       <>
                         <div className="flex flex-col gap-2 w-5/12 self-center">
                           <img src="/picture.png" alt="money back guarantee" className='w-full' />
@@ -479,7 +479,7 @@ export default function AcceleratorInd({ loc, data }) {
                     )
                   }
             <Link activeClass='activestatus' spy={true} to='paymentPage' smooth={true} duration={1000} offset={-150} className={`flex flex-col items-center cursor-pointer ${style.bgRed} rounded-lg px-2 py-1 md:px-5 md:py-3 hover:scale-105 shadow-sm drop-shadow-sm`}>
-              <span className='text-white text-base md:text-3xl font-bold uppercase'>Grab the {loc == 'int'? 'black friday': 'Launch'} offer</span>
+              <span className='text-white text-base md:text-3xl font-bold uppercase'>Grab the {bf? 'black friday': 'Launch'} offer</span>
               <span className='text-white text-center text-sm md:text-2xl'> at an unbelievable discount!</span>
             </Link>
             {
@@ -502,7 +502,7 @@ export default function AcceleratorInd({ loc, data }) {
           </div>
           <div className="flex flex-col gap-5 self-center w-full md:w-8/12">
           {
-                    loc === 'int' && (
+                    bf && (
                       <>
                         <div className="flex flex-col gap-2 w-5/12 self-center">
                           <img src="/picture.png" alt="money back guarantee" className='w-full' />
@@ -535,7 +535,7 @@ export default function AcceleratorInd({ loc, data }) {
                     )
                   }
             <Link activeClass='activestatus' spy={true} to='paymentPage' smooth={true} duration={1000} offset={-150} className={`flex flex-col items-center cursor-pointer ${style.bgRed} rounded-lg px-2 py-1 md:px-5 md:py-3 hover:scale-105 shadow-sm drop-shadow-sm`}>
-              <span className='text-white text-base md:text-3xl font-bold uppercase'>Grab the {loc == 'int'? 'black friday': 'Launch'} offer</span>
+              <span className='text-white text-base md:text-3xl font-bold uppercase'>Grab the {bf? 'black friday': 'Launch'} offer</span>
               <span className='text-white text-center text-sm md:text-2xl'> at an unbelievable discount!</span>
             </Link>
             {
@@ -579,7 +579,7 @@ export default function AcceleratorInd({ loc, data }) {
       <section className="relative flex flex-col z-20 py-10 md:py-20 px-5 md:px-40 gap-5 bg-white/5">
         <img src="https://i.ibb.co/jJ3gDDP/texture-BG.png" alt="texture" className="z-0 absolute top-0 left-0 w-full h-full object-cover opacity-20" />
         <div className={`z-10 flex flex-col gap-2 ${sora.className}`}>
-          <PaymentSection loc={loc} data={data} />
+          <PaymentSection loc={loc} data={data} bf={bf} />
         </div>
       </section>
       <div className={`flex flex-col relative`}>

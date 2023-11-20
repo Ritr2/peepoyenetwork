@@ -15,7 +15,7 @@ const roboto = Roboto({
   subsets: ['latin'],
 })
 
-export default function PaymentSection({ loc, data }) {
+export default function PaymentSection({ loc, data, bf=false }) {
   const [dataFormVisible, setDataFormVisible] = useState(false);
   const [loading, setLoading] = React.useState(false)
   const dataP = {
@@ -73,11 +73,11 @@ export default function PaymentSection({ loc, data }) {
         selectortext: 'Lifetime',
         recommended: true,
         buttonText: {
-          main: 'Book the Black Friday Offer at $99/- only',
+          main: bf ? 'Book the Black Friday Offer at $99/- only': 'Book Now at $129 only',
           sub: 'Limited Offer (Original Price $499/-)'
         },
         successlink: `${url}/thankyou?product=accelerator`,
-        price_id: 'price_1ODk9ySDli6WzERSQI5Hggh5',
+        price_id: bf ? 'price_1ODk9ySDli6WzERSQI5Hggh5' : 'price_1Ns51ZSDli6WzERSqSX38qyO',
         mode: 'payment',
       },
     }
@@ -328,7 +328,7 @@ export default function PaymentSection({ loc, data }) {
         </div>
         <div className="flex flex-col gap-5">
           {
-            loc === 'int' && (
+            bf && (
               <>
                 <div className="flex flex-col gap-2 w-5/12 self-center">
                   <img src="/picture.png" alt="money back guarantee" className='w-full' />
