@@ -41,7 +41,7 @@ export default function Form({buttonColor={normal:'red-bg', hover:'red-400', act
               className='relative flex flex-col items-center justify-center gap-5 max-w-3xl bg-white p-6 md:px-14 md:py-10 rounded-lg shadow-lg'>
               <IoClose className='absolute top-1 right-1 md:top-2 md:right-2 text-3xl text-neutral-700 cursor-pointer hover:text-red-600' onClick={() => setFormVisible(false)} />
               <div className='flex flex-col items-center justify-center gap-5'>
-                <h1 className='text-xl md:text-3xl font-bold text-center text-neutral-700'>Register for LIVE Webinar</h1>
+                <h1 className='text-xl md:text-3xl font-bold text-center text-neutral-700'>Signup for LIVE Webinar</h1>
                 <p className='text-base md:text-lg font-normal text-center text-neutral-700'>Take the first step towards your success by filling out the form</p>
                 <DynamicForm animation={false} closeFunc={setFormVisible} />
               </div>

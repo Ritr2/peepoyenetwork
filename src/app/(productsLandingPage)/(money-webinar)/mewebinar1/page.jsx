@@ -148,7 +148,7 @@ export default function page() {
               <span className='text-xl md:text-2xl font-bold text-center'>Date <span className='red-text'>|</span> Saturday <span className='red-text'>|</span> 9PM to 10PM IST</span>
               <Form text="Signup for LIVE Webinar" />
               <span className="text-base md:text-xl text-center text-neutral-500 font-bold"><span className='font-black red-text text-4xl'>+</span><br />Get my Influencer Guide on how to Become a Top Influencer Fast totally Free with this webinar</span>
-              <span className="lg:absolute md:bottom-0 text-base md:text-xl text-center red-text font-bold rounded-xl p-2">No Recordings. No Replays. Only Live Access</span>
+              <span className="text-base md:text-2xl text-center red-text font-bold rounded-xl mt-5">No Recordings. No Replays. Only LIVE Access</span>
             </div>
           </div>
         </div>
