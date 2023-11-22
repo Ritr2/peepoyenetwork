@@ -60,71 +60,6 @@ export const metadata = {
 }
 
 export default function page() {
-  const whatLearn = [{
-    question: `1 - Which area is most profitable and can turn you into <strong className='red-text font-black'>money-making machine?</strong>`,
-    answer: `Identify your Super Niche`
-  },
-  {
-    question: `2 - Which platform is most suitable to create <strong className='red-text font-black'>passive income and business leads</strong> organically?`,
-    answer: `Identify BEST platform`
-  },
-  {
-    question: `3 - What is the secret to <strong className='red-text font-black'>influence building and brand value creation</strong> in today's digital world?`,
-    answer: `Hacking the Algorithm of the most powerful social media platform`,
-  },
-  {
-    question: `4 - How to create <strong className='red-text font-black'>digital info products that you can own</strong> in 24 hours?`,
-    answer: `Design eBooks, Courses, Coaching, Consulting and Membership models.`,
-  },
-  {
-    question: `5 - How to setup <strong className='red-text font-black'>digital systems to avoid investing</strong> in your money engine?`,
-    answer: `Launch with simple tools and scale as you progress.`,
-  },
-  {
-    question: `6 - How to get continuous flow of <strong className='red-text font-black'>converting leads</strong> for your business?`,
-    answer: `Use organic mareketing without investing in ads to attract the right customers 24/7 for your business`
-  },
-  {
-    question: `7 - How to create <strong className='red-text font-black'>multiple revenue streams and digital products</strong> based on your passion and expertise?`,
-    answer: `Live your life on your own terms doing what you love instead of being stuck with uncertainty`
-  }
-  ]
-
-  const benifits = [
-    {
-      img: 'https://i.ibb.co/jJJTqsV/timeclock.png',
-      h1: 'Have More Time',
-      p: 'Take charge of your TIME and work from anywhere in the world'
-    },
-    {
-      img: 'https://i.ibb.co/r3T6Nh0/coins.png',
-      h1: 'Create More Wealth',
-      p: 'Unlimited potential to generate massive wealth online'
-    },
-    {
-      img: 'https://i.ibb.co/X2wJstK/quite-happy-1.png',
-      h1: 'Get Debt-Free',
-      p: `You don't need an office or employees to launch this model`
-    },
-    {
-      img: 'https://i.ibb.co/NKLgxNd/planets.png',
-      h1: 'Travel The World',
-      p: 'Live a life without boundaries. Build a business from your laptop'
-    },
-    {
-      img: 'https://i.ibb.co/rvsH4tS/love.png',
-      h1: 'More Family Time',
-      p: 'Play more with your kids and give quality time for your family'
-    },
-    {
-      img: 'https://i.ibb.co/2kXC15J/bulb.png',
-      h1: 'Help More People',
-      p: 'Give people the knowledge you have and create an impact'
-    },
-  ]
-
-  const clarity = [`How to build a dynamic online presence and authority`, `How to build a long-term asset i.e. a go to brand`, `How to future proof yourself by digitising your business`, `How to monetise through content, influence, and digital info products`, `How to attract quality leads without investing for your business`, `How to convert your leads into sales on total autopilot`, `How to automate your digital systems and tools`, `How to build loyal digital communities`, `LIVE demonstration of tools & success stories`]
-
 
   return (
     <main className={`flex flex-col items-center justify-center w-full ${dmSans.className}`}>
@@ -147,7 +82,7 @@ export default function page() {
             <div className="relative flex flex-col items-center justify-center flex-1 p-1 md:p-3 gap-1 md:gap-2 rounded-lg bg-neutral-100 border-[4px] border-red-600 border-dashed">
               <span className='text-xl md:text-2xl font-bold text-center'>Date <span className='red-text'>|</span> Saturday <span className='red-text'>|</span> 9PM to 10PM IST</span>
               <Form text="Signup for LIVE Webinar" />
-              <span className="text-base md:text-xl text-center text-neutral-500 font-bold"><span className='font-black red-text text-4xl'>+</span><br />Get my Influencer Guide on how to Become a Top Influencer Fast totally Free with this webinar</span>
+              <span className="text-base md:text-xl text-center text-neutral-500 font-bold"><span className='font-black red-text text-4xl'>+</span><br />Get my Influencer Guide on how to become a Top Influencer Fast totally Free with this Webinar</span>
               <span className="text-base md:text-2xl text-center red-text font-bold rounded-xl mt-5">No Recordings. No Replays. Only LIVE Access</span>
             </div>
           </div>
