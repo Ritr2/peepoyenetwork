@@ -20,7 +20,7 @@ export const metadata = {
   description: `Learn How I Attracted 1MN+ People and Built a Powerful Money Engine for Continuous Passive Income and Business Leads from Home!`,
   images: [
     {
-      url: 'https://i.ibb.co/qxRMd4t/thumbnail2.webpp',
+      url: 'https://i.ibb.co/qxRMd4t/thumbnail2.webp',
       width: 600,
       height: 500,
       alt: `The Money Engine Webinar`,
@@ -34,7 +34,7 @@ export const metadata = {
     description: `Learn How I Attracted 1MN+ People and Built a Powerful Money Engine for Continuous Passive Income and Business Leads from Home!`,
     images: [
       {
-        url: 'https://i.ibb.co/qxRMd4t/thumbnail2.webpp',
+        url: 'https://i.ibb.co/qxRMd4t/thumbnail2.webp',
         width: 600,
         height: 500,
         alt: `The Money Engine Webinar`,
@@ -49,7 +49,7 @@ export const metadata = {
     description: `Learn How I Attracted 1MN+ People and Built a Powerful Money Engine for Continuous Passive Income and Business Leads from Home!`,
     images: [
       {
-        url: 'https://i.ibb.co/qxRMd4t/thumbnail2.webpp',
+        url: 'https://i.ibb.co/qxRMd4t/thumbnail2.webp',
         width: 600,
         height: 500,
         alt: `The Money Engine Webinar`,
@@ -145,7 +145,7 @@ export default function page() {
         <section className='flex flex-col items-center justify-center w-full gap-10 px-5 py-10 md:py-20 bg-white/5 backdrop-blur-md'>
           <h2 className='text-2xl md:text-5xl font-black text-center tracking-tight text-white'>What You Will Learn In The Webinar?</h2>
           <div className='flex flex-col items-center justify-center w-full md:w-9/12'>
-            <img src='https://i.ibb.co/qxRMd4t/thumbnail2.webpp' alt='What You Will Learn In The Webinar' className='w-full rounded-lg' draggable={false} />
+            <img src='https://i.ibb.co/qxRMd4t/thumbnail2.webp' alt='What You Will Learn In The Webinar' className='w-full rounded-lg' draggable={false} />
           </div>
           <div className='flex flex-col items-center justify-center w-full md:w-9/12 gap-3 md:gap-10'>
             {

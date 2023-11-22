@@ -20,7 +20,7 @@ export const metadata = {
   description: `Learn How I Attracted 1MN+ People and Built a Powerful Money Engine for Continuous Passive Income and Business Leads from Home!`,
   images: [
     {
-      url: 'https://i.ibb.co/qxRMd4t/thumbnail2.webpp',
+      url: 'https://i.ibb.co/qxRMd4t/thumbnail2.webp',
       width: 600,
       height: 500,
       alt: `The Money Engine Webinar`,
@@ -34,7 +34,7 @@ export const metadata = {
     description: `Learn How I Attracted 1MN+ People and Built a Powerful Money Engine for Continuous Passive Income and Business Leads from Home!`,
     images: [
       {
-        url: 'https://i.ibb.co/qxRMd4t/thumbnail2.webpp',
+        url: 'https://i.ibb.co/qxRMd4t/thumbnail2.webp',
         width: 600,
         height: 500,
         alt: `The Money Engine Webinar`,
@@ -49,7 +49,7 @@ export const metadata = {
     description: `Learn How I Attracted 1MN+ People and Built a Powerful Money Engine for Continuous Passive Income and Business Leads from Home!`,
     images: [
       {
-        url: 'https://i.ibb.co/qxRMd4t/thumbnail2.webpp',
+        url: 'https://i.ibb.co/qxRMd4t/thumbnail2.webp',
         width: 600,
         height: 500,
         alt: `The Money Engine Webinar`,
