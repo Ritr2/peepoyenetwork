@@ -131,7 +131,7 @@ export default function page() {
       <section className='flex flex-col items-center justify-center w-full webinar-background'>
         <div className='flex flex-col items-center justify-center bg-black/70 gap-5 md:gap-10 w-full flex-1 px-5 py-10 md:px-24'>
           <div className='flex flex-col items-center justify-center w-full gap-2 md:gap-4 flex-1'>
-            <h1 className='text-xl md:text-6xl font-bold text-center text-white md:leading-[55px]'>Learn How To Build Your <span className='red-text'>Own Money Engine</span> Using Youtube Within 3 Days</h1>
+            <h1 className='text-xl md:text-6xl font-bold text-center text-white md:leading-[55px]'>Learn How To Build <span className='red-text'>Multiple Revenue Streams</span> Using Youtube Within 3 Days</h1>
             <p className='text-lg md:text-2xl font-normal text-center text-white'>
               Akassh Ashok Gupta reveals his exclusive method to unlock the secrets of YouTube, generating multiple revenue streams for substantial growth in ad revenue, product sales, and business leads. With two decades of business consulting for 200+ companies, training over 1000 individuals, and 5+ years as a content creator and influencer collaborating with esteemed personalities, his approach guarantees transformative results.
             </p>
