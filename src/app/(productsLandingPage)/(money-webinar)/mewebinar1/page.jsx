@@ -20,7 +20,7 @@ export const metadata = {
   description: `Learn How I Attracted 1MN+ People and Built a Powerful Money Engine for Continuous Passive Income and Business Leads from Home!`,
   images: [
     {
-      url: 'https://i.ibb.co/FY333K1/Final.webp',
+      url: 'https://i.ibb.co/qxRMd4t/thumbnail2.webpp',
       width: 600,
       height: 500,
       alt: `The Money Engine Webinar`,
@@ -34,7 +34,7 @@ export const metadata = {
     description: `Learn How I Attracted 1MN+ People and Built a Powerful Money Engine for Continuous Passive Income and Business Leads from Home!`,
     images: [
       {
-        url: 'https://i.ibb.co/FY333K1/Final.webp',
+        url: 'https://i.ibb.co/qxRMd4t/thumbnail2.webpp',
         width: 600,
         height: 500,
         alt: `The Money Engine Webinar`,
@@ -49,7 +49,7 @@ export const metadata = {
     description: `Learn How I Attracted 1MN+ People and Built a Powerful Money Engine for Continuous Passive Income and Business Leads from Home!`,
     images: [
       {
-        url: 'https://i.ibb.co/FY333K1/Final.webp',
+        url: 'https://i.ibb.co/qxRMd4t/thumbnail2.webpp',
         width: 600,
         height: 500,
         alt: `The Money Engine Webinar`,
@@ -139,7 +139,7 @@ export default function page() {
           <div className='flex flex-col md:flex-row justify-center gap-5 md:gap-10 w-full'>
             <div className='flex flex-col w-full md:w-6/12'>
               <div className='relative flex-1 w-full h-auto overflow-hidden order-2 md:order-1 min-h-[160px] md:min-h-[345px]' style={{ position: 'relative' }}>
-                <iframe src="https://www.loom.com/embed/def564694cdb4d48a337b6190fd8c7d7?hide_owner=true&hide_share=true&hide_title=true&hideEmbedTopBar=true&showEmbedControls=false&show_date=false&loop=1"
+                <iframe src="https://www.loom.com/embed/9e0c4dda20dc444cb17eee918c23649e?hide_owner=true&hide_share=true&hide_title=true&hideEmbedTopBar=true&showEmbedControls=false&show_date=false&loop=1"
                   frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style={{ position: 'absolute', top: '0', left: '0', width: '100%', height: '100%', borderRadius: "10px" }} autoPlay
                 ></iframe>
               </div>

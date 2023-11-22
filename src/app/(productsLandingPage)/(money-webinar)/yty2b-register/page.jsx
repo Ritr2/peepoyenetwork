@@ -19,7 +19,7 @@ export const metadata = {
   description: `Learn How I Attracted 1MN+ People and Built a Powerful Money Engine for Continuous Passive Income and Business Leads from Home!`,
   images: [
     {
-      url: 'https://i.ibb.co/FY333K1/Final.webp',
+      url: 'https://i.ibb.co/qxRMd4t/thumbnail2.webpp',
       width: 600,
       height: 500,
       alt: `Thank You for Registering!`,
@@ -33,7 +33,7 @@ export const metadata = {
     description: `Learn How I Attracted 1MN+ People and Built a Powerful Money Engine for Continuous Passive Income and Business Leads from Home!`,
     images: [
       {
-        url: 'https://i.ibb.co/FY333K1/Final.webp',
+        url: 'https://i.ibb.co/qxRMd4t/thumbnail2.webpp',
         width: 600,
         height: 500,
         alt: `Thank You for Registering!`,
@@ -48,7 +48,7 @@ export const metadata = {
     description: `Learn How I Attracted 1MN+ People and Built a Powerful Money Engine for Continuous Passive Income and Business Leads from Home!`,
     images: [
       {
-        url: 'https://i.ibb.co/FY333K1/Final.webp',
+        url: 'https://i.ibb.co/qxRMd4t/thumbnail2.webpp',
         width: 600,
         height: 500,
         alt: `Thank You for Registering!`,
@@ -65,7 +65,7 @@ export default function page() {
       <section className='flex flex-col items-center justify-center w-full webinar-background'>
         <div className='flex flex-col items-center justify-center bg-black/70 gap-2 md:gap-5 w-full flex-1 px-5 py-10 md:py-20 md:px-24'>
         <div className='flex flex-col items-center justify-center w-full md:w-6/12'>
-            <img src='https://i.ibb.co/FY333K1/Final.webp' alt='What You Will Learn In The Webinar' className='w-full rounded-lg' draggable={false} />
+            <img src='https://i.ibb.co/qxRMd4t/thumbnail2.webpp' alt='What You Will Learn In The Webinar' className='w-full rounded-lg' draggable={false} />
           </div>
           <h1 className='text-xl md:text-5xl font-bold text-center text-white'>Confirm your Spot🕘</h1>
           <p className='text-lg md:text-xl font-normal text-center text-white md:w-9/12'>
