@@ -21,6 +21,7 @@
     "localstorage-slim": "^2.4.0",
     "next": "^13.5.2",
     "nextjs-google-analytics": "^2.3.3",
+    "nextjs-linkedin-insight-tag": "^0.0.5",
     "postcss": "8.4.27",
     "razorpay": "^2.9.1",
     "react": "18.2.0",

@@ -3,6 +3,7 @@ import React, { useEffect } from 'react'
 import { GoogleAnalytics } from "nextjs-google-analytics";
 import Script from 'next/script';
 import TagManager from 'react-gtm-module';
+import { LinkedInInsightTag } from 'nextjs-linkedin-insight-tag'
 
 export default function GoogleAnalytic() {
 
@@ -13,7 +14,7 @@ export default function GoogleAnalytic() {
   return (
     <>
       <GoogleAnalytics />
-
+      <LinkedInInsightTag />
       <Script
         strategy="lazyOnload"
         crossOrigin="anonymous"
