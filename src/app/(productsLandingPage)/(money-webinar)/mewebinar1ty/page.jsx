@@ -8,6 +8,7 @@ import SocialMediaDetails from '@/components/webinar/SocialMediaDetails';
 import Testimonials from '@/components/funnels/pages/youtubeneur/Testimonials';
 import Link from 'next/link';
 import FunnelFooter from '@/components/funnels/FunnelFooter';
+import QuoraPage from '@/components/QuoraPage';
 
 const dmSans = DM_Sans({
   weight: ['400', '500', '700', '900'],
@@ -62,6 +63,7 @@ export default function page() {
   
   return (
     <main className={`flex flex-col items-center justify-center w-full ${dmSans.className}`}>
+      <QuoraPage />
       <section className='flex flex-col items-center justify-center w-full webinar-background'>
         <div className='flex flex-col items-center justify-center bg-black/70 gap-2 md:gap-8 w-full flex-1 px-5 py-10 md:py-20 md:px-24'>
         <div className='flex flex-col items-center justify-center w-full md:w-6/12'>

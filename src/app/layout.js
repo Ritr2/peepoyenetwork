@@ -2,6 +2,7 @@ import './globals.css'
 import { Roboto } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/react';
 import GoogleAnalytic from '@/components/GoogleAnalytic';
+import Quora from '@/components/Quora';
 
 
 const roboto = Roboto({
@@ -35,6 +36,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={roboto.className}>
+        <Quora />
           <GoogleAnalytic />
           {children}
         <Analytics />

@@ -4,6 +4,7 @@ import { GoogleAnalytics } from "nextjs-google-analytics";
 import Script from 'next/script';
 import TagManager from 'react-gtm-module';
 import { LinkedInInsightTag } from 'nextjs-linkedin-insight-tag'
+import Quora from './Quora';
 
 export default function GoogleAnalytic() {
 
