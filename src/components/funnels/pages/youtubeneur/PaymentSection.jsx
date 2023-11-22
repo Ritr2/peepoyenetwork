@@ -95,7 +95,8 @@ export default function PaymentSection({ loc, data, bf=false }) {
         lifetime: 120,
         yearly: 12,
         monthly: 1
-      }
+      },
+      bf: false
     },
     {
       text: '<span className="font-normal text-neutral-300">Bonus #1:</span> Weekly Live Coffee Chats on Zoom',
@@ -108,7 +109,8 @@ export default function PaymentSection({ loc, data, bf=false }) {
         lifetime: 120,
         yearly: 12,
         monthly: 1
-      }
+      },
+      bf: false
     },
     {
       text: '<span className="font-normal text-neutral-300">Bonus #2:</span> Access to our Private YouTube Growth Community',
@@ -121,7 +123,8 @@ export default function PaymentSection({ loc, data, bf=false }) {
         lifetime: 120,
         yearly: 12,
         monthly: 1
-      }
+      },
+      bf: false
     },
     {
       text: `<span className="font-normal text-neutral-300">Bonus #3:</span> Do Not Do This On YouTube Course`,
@@ -134,7 +137,8 @@ export default function PaymentSection({ loc, data, bf=false }) {
         lifetime: 120,
         yearly: 12,
         monthly: 1
-      }
+      },
+      bf: false
     },
     {
       text: `<span className="font-normal text-neutral-300">Bonus #4:</span> Scripting Secret Course`,
@@ -147,7 +151,8 @@ export default function PaymentSection({ loc, data, bf=false }) {
         lifetime: 120,
         yearly: 12,
         monthly: 1
-      }
+      },
+      bf: false
     },
     {
       text: `<span className="font-normal text-neutral-300">Bonus #5:</span> Content Strategy Doc`,
@@ -160,7 +165,8 @@ export default function PaymentSection({ loc, data, bf=false }) {
         lifetime: 120,
         yearly: 12,
         monthly: 1
-      }
+      },
+      bf: false
     },
     {
       text: `<span className="font-normal text-neutral-300">Bonus #6:</span> Video Editing Checklist`,
@@ -173,7 +179,8 @@ export default function PaymentSection({ loc, data, bf=false }) {
         lifetime: 120,
         yearly: 12,
         monthly: 1
-      }
+      },
+      bf: false
     },
     {
       text: `<span className="font-normal text-neutral-300">Bonus #7:</span> Video Research Template`,
@@ -186,7 +193,8 @@ export default function PaymentSection({ loc, data, bf=false }) {
         lifetime: 120,
         yearly: 12,
         monthly: 1
-      }
+      },
+      bf: false
     },
     {
       text: `<span className="font-normal text-neutral-300">Bonus #8:</span> Thumbnail Designing Hack`,
@@ -199,7 +207,8 @@ export default function PaymentSection({ loc, data, bf=false }) {
         lifetime: 120,
         yearly: 12,
         monthly: 1
-      }
+      },
+      bf: false
     },
     {
       text: `<span className="font-normal text-neutral-300">Bonus #9:</span> Video Optimization Doc`,
@@ -212,7 +221,8 @@ export default function PaymentSection({ loc, data, bf=false }) {
         lifetime: 120,
         yearly: 12,
         monthly: 1
-      }
+      },
+      bf: false
     },
     {
       text: `<span className="font-normal text-neutral-300">Bonus #10:</span> Revenue Prediction Tool`,
@@ -225,7 +235,8 @@ export default function PaymentSection({ loc, data, bf=false }) {
         lifetime: 120,
         yearly: 12,
         monthly: 1
-      }
+      },
+      bf: false
     },
     {
       text: `<span className="font-normal text-red-500">Additional Bonus:</span> Channel audit report tailor made for your channel personally created by the YouTube expert`,
@@ -236,7 +247,8 @@ export default function PaymentSection({ loc, data, bf=false }) {
       plan: ['lifetime'],
       quantity: {
         lifetime: 1,
-      }
+      },
+      bf: false
     },
     {
       text: `<span className="font-normal text-red-500">Limited Bonus:</span> Free one-on-one consulting calls for the first 25 members`,
@@ -248,7 +260,8 @@ export default function PaymentSection({ loc, data, bf=false }) {
       quantity: {
         lifetime: 1,
         yearly: 1,
-      }
+      },
+      bf: true
     }
   ]
 
@@ -291,21 +304,45 @@ export default function PaymentSection({ loc, data, bf=false }) {
               <Fragment key={index}>
                 {
                   item.plan.includes(currentPlan) && (
-                    <div className="flex flex-row gap-2 justify-between items-center" key={index}>
-                      <div className="flex flex-row gap-2 flex-1">
-                        <BsFillCaretRightFill className={`text-2xl ${style.textRed} w-6 mt-px`} />
-                        <p className="text-neutral-300 font-thin text-base md:text-lg flex-1">{parse(item.text)}</p>
-                      </div>
-                      <p className="text-white text-base md:text-lg">
-                        {item.price[loc].toLocaleString(loc === 'ind' ? 'en-IN' : 'en-US', {
-                          minimumFractionDigits: 0,
-                          maximumFractionDigits: 2,
-                          style: 'currency',
-                          currency: loc === 'ind' ? 'INR' : 'USD'
-                        })}
-                        /-
-                      </p>
-                    </div>
+                    <>
+                      {
+                        !item.bf && (<div className="flex flex-row gap-2 justify-between items-center" key={index}>
+                          <div className="flex flex-row gap-2 flex-1">
+                            <BsFillCaretRightFill className={`text-2xl ${style.textRed} w-6 mt-px`} />
+                            <p className="text-neutral-300 font-thin text-base md:text-lg flex-1">{parse(item.text)}</p>
+                          </div>
+                          <p className="text-white text-base md:text-lg">
+                            {item.price[loc].toLocaleString(loc === 'ind' ? 'en-IN' : 'en-US', {
+                              minimumFractionDigits: 0,
+                              maximumFractionDigits: 2,
+                              style: 'currency',
+                              currency: loc === 'ind' ? 'INR' : 'USD'
+                            })}
+                            /-
+                          </p>
+                        </div>
+                        )
+                      }
+                      {
+                        bf && item.bf && (
+                          <div className="flex flex-row gap-2 justify-between items-center" key={index}>
+                            <div className="flex flex-row gap-2 flex-1">
+                              <BsFillCaretRightFill className={`text-2xl ${style.textRed} w-6 mt-px`} />
+                              <p className="text-neutral-300 font-thin text-base md:text-lg flex-1">{parse(item.text)}</p>
+                            </div>
+                            <p className="text-white text-base md:text-lg">
+                              {item.price[loc].toLocaleString(loc === 'ind' ? 'en-IN' : 'en-US', {
+                                minimumFractionDigits: 0,
+                                maximumFractionDigits: 2,
+                                style: 'currency',
+                                currency: loc === 'ind' ? 'INR' : 'USD'
+                              })}
+                              /-
+                            </p>
+                          </div>
+                        )
+                      }
+                    </>
                   )
                 }
               </Fragment>
@@ -333,7 +370,7 @@ export default function PaymentSection({ loc, data, bf=false }) {
                 <div className="flex flex-col gap-2 w-5/12 self-center">
                   <img src="/picture.png" alt="money back guarantee" className='w-full' />
                 </div>
-                <Countdown date={1700764200000} renderer={({ days, hours, minutes, seconds, completed }) => {
+                <Countdown date={1700937000000} renderer={({ days, hours, minutes, seconds, completed }) => {
                   if (completed) {
                     return <span className='text-white text-center text-lg md:text-3xl'>Offer Closed</span>
                   } else {

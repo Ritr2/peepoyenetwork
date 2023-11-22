@@ -137,7 +137,7 @@ export default function AcceleratorInd({ loc, data, bf=false }) {
                         <div className="flex flex-col gap-2 w-5/12 self-center">
                           <img src="/picture.png" alt="money back guarantee" className='w-full' />
                         </div>
-                        <Countdown date={1700764200000} renderer={({ days, hours, minutes, seconds, completed }) => {
+                        <Countdown date={1700937000000} renderer={({ days, hours, minutes, seconds, completed }) => {
                           if (completed) {
                             return <span className='text-white text-center text-lg md:text-3xl'>Offer Closed</span>
                           } else {
@@ -166,7 +166,7 @@ export default function AcceleratorInd({ loc, data, bf=false }) {
                     )
                   }
                   <Link activeClass='activestatus' spy={true} to='paymentPage' smooth={true} duration={1000} offset={-150} className={`flex flex-col items-center cursor-pointer ${style.bgRed} rounded-lg px-2 py-1 md:px-5 md:py-3 hover:scale-105 shadow-sm drop-shadow-sm`}>
-                    <span className='text-white text-base md:text-3xl font-bold uppercase'>Grab the {bf? 'black friday': 'Launch'} offer</span>
+                    <span className='text-white text-base md:text-2xl font-bold uppercase'>Grab the {bf? 'black friday': 'Launch'} offer</span>
                     <span className='text-white text-center text-sm md:text-2xl'> at an unbelievable discount!</span>
                   </Link>
                   {
@@ -213,7 +213,7 @@ export default function AcceleratorInd({ loc, data, bf=false }) {
                         <div className="flex flex-col gap-2 w-5/12 self-center">
                           <img src="/picture.png" alt="money back guarantee" className='w-full' />
                         </div>
-                        <Countdown date={1700764200000} renderer={({ days, hours, minutes, seconds, completed }) => {
+                        <Countdown date={1700937000000} renderer={({ days, hours, minutes, seconds, completed }) => {
                           if (completed) {
                             return <span className='text-white text-center text-lg md:text-3xl'>Offer Closed</span>
                           } else {
@@ -241,7 +241,7 @@ export default function AcceleratorInd({ loc, data, bf=false }) {
                     )
                   }
               <Link activeClass='activestatus' spy={true} to='paymentPage' smooth={true} duration={1000} offset={-150} className={`flex flex-col items-center cursor-pointer ${style.bgRed} rounded-lg px-2 py-1 md:px-5 md:py-3 hover:scale-105 shadow-sm drop-shadow-sm`}>
-                <span className='text-white text-base md:text-3xl font-bold uppercase'>Grab the {bf? 'black friday': 'Launch'} offer</span>
+                <span className='text-white text-base md:text-2xl font-bold uppercase'>Grab the {bf? 'black friday': 'Launch'} offer</span>
                 <span className='text-white text-center text-sm md:text-2xl'> at an unbelievable discount!</span>
               </Link>
               {
@@ -260,7 +260,7 @@ export default function AcceleratorInd({ loc, data, bf=false }) {
               Our Unique Value Offering: Live Weekly Zoom Calls with Youtube Expert
             </h2>
             <h2 className='text-base md:text-2xl text-left md:text-center text-white'>
-              <span className='font-bold text-green-700'>BONUS 1: </span>Weekly Live Coffee Chats + Free Access to the archive of all the previously recorded calls
+              <span className='font-bold text-green-700'>BONUS 1: </span>Weekly Live Coffee Chats {bf && '+ Free Access to the archive of all the previously recorded calls'}
             </h2>
           </div>
           <div className="flex md:flex-row flex-col items-center gap-2">
@@ -300,7 +300,7 @@ export default function AcceleratorInd({ loc, data, bf=false }) {
                         <div className="flex flex-col gap-2 w-5/12 self-center">
                           <img src="/picture.png" alt="money back guarantee" className='w-full' />
                         </div>
-                        <Countdown date={1700764200000} renderer={({ days, hours, minutes, seconds, completed }) => {
+                        <Countdown date={1700937000000} renderer={({ days, hours, minutes, seconds, completed }) => {
                           if (completed) {
                             return <span className='text-white text-center text-lg md:text-3xl'>Offer Closed</span>
                           } else {
@@ -328,7 +328,7 @@ export default function AcceleratorInd({ loc, data, bf=false }) {
                     )
                   }
             <Link activeClass='activestatus' spy={true} to='paymentPage' smooth={true} duration={1000} offset={-150} className={`flex flex-col items-center cursor-pointer ${style.bgRed} rounded-lg px-2 py-1 md:px-5 md:py-3 hover:scale-105 shadow-sm drop-shadow-sm`}>
-              <span className='text-white text-base md:text-3xl font-bold uppercase'>Grab the {bf? 'black friday': 'Launch'} offer</span>
+              <span className='text-white text-base md:text-2xl font-bold uppercase'>Grab the {bf? 'black friday': 'Launch'} offer</span>
               <span className='text-white text-center text-sm md:text-2xl'> at an unbelievable discount!</span>
             </Link>
             {
@@ -356,7 +356,7 @@ export default function AcceleratorInd({ loc, data, bf=false }) {
                         <div className="flex flex-col gap-2 w-5/12 self-center">
                           <img src="/picture.png" alt="money back guarantee" className='w-full' />
                         </div>
-                        <Countdown date={1700764200000} renderer={({ days, hours, minutes, seconds, completed }) => {
+                        <Countdown date={1700937000000} renderer={({ days, hours, minutes, seconds, completed }) => {
                           if (completed) {
                             return <span className='text-white text-center text-lg md:text-3xl'>Offer Closed</span>
                           } else {
@@ -384,7 +384,7 @@ export default function AcceleratorInd({ loc, data, bf=false }) {
                     )
                   }
                 <Link activeClass='activestatus' spy={true} to='paymentPage' smooth={true} duration={1000} offset={-150} className={`flex flex-col items-center cursor-pointer ${style.bgRed} rounded-lg px-2 py-1 md:px-5 md:py-3 hover:scale-105 shadow-sm drop-shadow-sm`}>
-                  <span className='text-white text-base md:text-3xl font-bold uppercase'>Grab the {bf? 'black friday': 'Launch'} offer</span>
+                  <span className='text-white text-base md:text-2xl font-bold uppercase'>Grab the {bf? 'black friday': 'Launch'} offer</span>
                   <span className='text-white text-center text-sm md:text-2xl'> at an unbelievable discount!</span>
                 </Link>
                 {
@@ -451,7 +451,7 @@ export default function AcceleratorInd({ loc, data, bf=false }) {
                         <div className="flex flex-col gap-2 w-5/12 self-center">
                           <img src="/picture.png" alt="money back guarantee" className='w-full' />
                         </div>
-                        <Countdown date={1700764200000} renderer={({ days, hours, minutes, seconds, completed }) => {
+                        <Countdown date={1700937000000} renderer={({ days, hours, minutes, seconds, completed }) => {
                           if (completed) {
                             return <span className='text-white text-center text-lg md:text-3xl'>Offer Closed</span>
                           } else {
@@ -479,7 +479,7 @@ export default function AcceleratorInd({ loc, data, bf=false }) {
                     )
                   }
             <Link activeClass='activestatus' spy={true} to='paymentPage' smooth={true} duration={1000} offset={-150} className={`flex flex-col items-center cursor-pointer ${style.bgRed} rounded-lg px-2 py-1 md:px-5 md:py-3 hover:scale-105 shadow-sm drop-shadow-sm`}>
-              <span className='text-white text-base md:text-3xl font-bold uppercase'>Grab the {bf? 'black friday': 'Launch'} offer</span>
+              <span className='text-white text-base md:text-2xl font-bold uppercase'>Grab the {bf? 'black friday': 'Launch'} offer</span>
               <span className='text-white text-center text-sm md:text-2xl'> at an unbelievable discount!</span>
             </Link>
             {
@@ -507,7 +507,7 @@ export default function AcceleratorInd({ loc, data, bf=false }) {
                         <div className="flex flex-col gap-2 w-5/12 self-center">
                           <img src="/picture.png" alt="money back guarantee" className='w-full' />
                         </div>
-                        <Countdown date={1700764200000} renderer={({ days, hours, minutes, seconds, completed }) => {
+                        <Countdown date={1700937000000} renderer={({ days, hours, minutes, seconds, completed }) => {
                           if (completed) {
                             return <span className='text-white text-center text-lg md:text-3xl'>Offer Closed</span>
                           } else {
@@ -535,7 +535,7 @@ export default function AcceleratorInd({ loc, data, bf=false }) {
                     )
                   }
             <Link activeClass='activestatus' spy={true} to='paymentPage' smooth={true} duration={1000} offset={-150} className={`flex flex-col items-center cursor-pointer ${style.bgRed} rounded-lg px-2 py-1 md:px-5 md:py-3 hover:scale-105 shadow-sm drop-shadow-sm`}>
-              <span className='text-white text-base md:text-3xl font-bold uppercase'>Grab the {bf? 'black friday': 'Launch'} offer</span>
+              <span className='text-white text-base md:text-2xl font-bold uppercase'>Grab the {bf? 'black friday': 'Launch'} offer</span>
               <span className='text-white text-center text-sm md:text-2xl'> at an unbelievable discount!</span>
             </Link>
             {
