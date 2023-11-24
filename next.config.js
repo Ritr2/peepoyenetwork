@@ -26,6 +26,11 @@ const nextConfig = {
             source: '/accelerator-int',
             destination: '/accelerator-bf-int',
             permanent: true,
+          },
+          {
+            source: '/accelerator-bf',
+            destination: 'https://youtubeneur.com/accelerator',
+            permanent: true,
           }
         ]
       },

@@ -42,7 +42,7 @@ export default function PaymentSection({ loc, data, bf=false }) {
         selectortext: 'Lifetime',
         recommended: true,
         buttonText: {
-          main: 'Book Now at ₹4999/- only',
+          main: bf? 'Book the Black Friday Offer at ₹2499/- only':'Book Now at ₹4999/- only',
           sub: 'Limited Time Offer'
         },
         successlink: `${url}/thankyou?product=accelerator`,

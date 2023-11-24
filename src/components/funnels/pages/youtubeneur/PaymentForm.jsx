@@ -41,8 +41,9 @@ export default function PaymentForm({ setDataFormVisible, currentPlan, successUr
         ls.set('email', email)
         ls.set('phone', phone)
         if (loc === 'ind') {
+            let amount = bf ? "accelerator" : 'accelerator-bf' 
             if (currentPlan === 'lifetime') {
-                makePayment(details, setLoading, setDataFormVisible, successUrl, bf ? "accelerator" : 'accelerator-bf')
+                makePayment(details, setLoading, setDataFormVisible, successUrl, amount)
             }
             if (currentPlan === 'yearly') {
                 makeSubscriptionPayment(details, setLoading, setDataFormVisible, successUrl, "plan_MdLUlvWayLs1i7", "accelerator")
