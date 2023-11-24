@@ -41,7 +41,7 @@ export default function PaymentForm({ setDataFormVisible, currentPlan, successUr
         ls.set('email', email)
         ls.set('phone', phone)
         if (loc === 'ind') {
-            let amount = bf ? "accelerator" : 'accelerator-bf' 
+            let amount = bf ? "accelerator-bf" : 'accelerator' 
             if (currentPlan === 'lifetime') {
                 makePayment(details, setLoading, setDataFormVisible, successUrl, amount)
             }
