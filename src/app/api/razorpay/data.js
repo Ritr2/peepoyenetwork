@@ -15,6 +15,10 @@ const data = {
     amount: 4999,
     notes: "accelerator",
   },
+  "accelerator-bf": {
+    amount: 2499,
+    notes: "accelerator",
+  },
   "dfy": {
     amount: 5999,
     notes: "dfy",
@@ -25,4 +29,4 @@ const data = {
   },
 }
 
-export default data
+export default data;

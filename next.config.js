@@ -16,6 +16,16 @@ const nextConfig = {
             source: '/gigolo-scam-what-are-the-red-flags-to-watch-out-for',
             destination: '/social-awareness/blogs/gigolo-scam-what-are-the-red-flags-to-watch-out-for',
             permanent: true,
+          },
+          {
+            source: '/accelerator-ind',
+            destination: '/accelerator-bf-ind',
+            permanent: true,
+          },
+          {
+            source: '/accelerator-int',
+            destination: '/accelerator-bf-int',
+            permanent: true,
           }
         ]
       },

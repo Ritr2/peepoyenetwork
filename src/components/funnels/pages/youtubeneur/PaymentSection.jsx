@@ -256,7 +256,7 @@ export default function PaymentSection({ loc, data, bf=false }) {
         ind: 7999,
         int: 499
       },
-      plan: ['lifetime', 'yearly'],
+      plan: ['lifetime'],
       quantity: {
         lifetime: 1,
         yearly: 1,
@@ -429,7 +429,7 @@ export default function PaymentSection({ loc, data, bf=false }) {
       </div>
       {
         dataFormVisible && (
-          <PaymentForm setDataFormVisible={setDataFormVisible} currentPlan={currentPlan} successUrl={data ? `${url}/${data.yes.query}?product=${data.yes.product}` : dataP[loc][currentPlan].successlink} handleStripePayment={handleStripePayment} loc={loc} />
+          <PaymentForm setDataFormVisible={setDataFormVisible} currentPlan={currentPlan} successUrl={data ? `${url}/${data.yes.query}?product=${data.yes.product}` : dataP[loc][currentPlan].successlink} handleStripePayment={handleStripePayment} loc={loc} bf={bf} />
         )
       }
       {

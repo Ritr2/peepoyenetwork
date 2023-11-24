@@ -6,7 +6,7 @@ import makeSubscriptionPayment from '@/utils/payments/makeSubscriptionPayment'
 import { IoClose } from 'react-icons/io5'
 import ls from 'localstorage-slim';
 
-export default function PaymentForm({ setDataFormVisible, currentPlan, successUrl, handleStripePayment = false, loc }) {
+export default function PaymentForm({ setDataFormVisible, currentPlan, successUrl, handleStripePayment = false, loc, bf = false }) {
     const [name, setName] = React.useState(ls.get('name') ? ls.get('name') : '')
     const [email, setEmail] = React.useState(ls.get('email') ? ls.get('email') : '')
     const [phone, setPhone] = React.useState(ls.get('phone') ? ls.get('phone') : '')
@@ -42,7 +42,7 @@ export default function PaymentForm({ setDataFormVisible, currentPlan, successUr
         ls.set('phone', phone)
         if (loc === 'ind') {
             if (currentPlan === 'lifetime') {
-                makePayment(details, setLoading, setDataFormVisible, successUrl, "accelerator")
+                makePayment(details, setLoading, setDataFormVisible, successUrl, bf ? "accelerator" : 'accelerator-bf')
             }
             if (currentPlan === 'yearly') {
                 makeSubscriptionPayment(details, setLoading, setDataFormVisible, successUrl, "plan_MdLUlvWayLs1i7", "accelerator")
