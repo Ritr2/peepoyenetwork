@@ -18,13 +18,13 @@ const nextConfig = {
             permanent: true,
           },
           {
-            source: '/accelerator-ind',
-            destination: '/accelerator-bf-ind',
+            source: '/accelerator-bf-ind',
+            destination: '/accelerator-ind',
             permanent: true,
           },
           {
-            source: '/accelerator-int',
-            destination: '/accelerator-bf-int',
+            source: '/accelerator-bf-int',
+            destination: '/accelerator-int',
             permanent: true,
           },
           {
