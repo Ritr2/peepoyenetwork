@@ -46,7 +46,7 @@ export default function JourneyScroll() {
         },
         {
             title: `Collaborate with Akassh`,
-            description: `Once you have 100 members in your community and have generated 10 sales of your first product, you get an opportunity to collaborate with Akassh- The first "YouTubeneur" himself!`,
+            description: `Once you have 100 members in your community and have generated 10 sales of your first product, you get an opportunity to collaborate with Akassh - The first "YouTubeneur" himself!`,
             image: {
                 src: 'https://i.ibb.co/QpW4s0y/coffee-chat.png',
                 alt: 'collaborate',

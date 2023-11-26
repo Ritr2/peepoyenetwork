@@ -5,7 +5,7 @@ export default function WhoIsThisFor() {
     const data = [
         {
             h1: 'Content Creators',
-            p: `Learn how to build content strategy, produce and optimize content, understand youtube algorithm and thus get maximum reach and growth in the shortest time possible.`,
+            p: `Learn how to build content strategy, produce and optimize content, understand youtube algorithm and thus, get maximum reach and growth in the shortest time possible.`,
             image: `https://i.ibb.co/3cFdQKD/who-can-take-1.webp`,
         },
         {
@@ -25,7 +25,7 @@ export default function WhoIsThisFor() {
         },
         {
             h1: 'Working Professionals',
-            p: `Use YouTube for building your personal brand around your profession and expand the customer market digitally to scale-up revenue by creating a strong network with like-minded people.`,
+            p: `Use YouTube for building your personal brand around your profession and expand the customer base digitally to scale-up revenue by creating a strong network with like-minded people.`,
             image: `https://i.ibb.co/Lzr4cFt/who-can-take-5.webp`,
         },
         {

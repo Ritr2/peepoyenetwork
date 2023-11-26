@@ -85,7 +85,7 @@ export default function PaymentSection({ loc, data, bf=false }) {
   const [currentPlan, setCurrentPlan] = useState('lifetime')
   const items = [
     {
-      text: '<span className="font-normal text-neutral-300">Access to Youtubeneur Foundation Accelerator </span> our flagship Course with 19 Modules',
+      text: '<span className="font-normal text-neutral-300">Access to Youtubeneur Foundation Accelerator </span> <br/> Our flagship YouTube growth for Business Course',
       price: {
         ind: 14999,
         int: 299
@@ -239,7 +239,7 @@ export default function PaymentSection({ loc, data, bf=false }) {
       bf: false
     },
     {
-      text: `<span className="font-normal text-red-500">Additional Bonus:</span> Channel audit report tailor made for your channel personally created by the YouTube expert`,
+      text: `<span className="font-normal text-red-500">Additional Bonus:</span> Channel Audit Report, tailor-made for your channel, personally created by the YouTube Expert`,
       price: {
         ind: 1499,
         int: 49

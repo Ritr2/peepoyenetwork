@@ -100,7 +100,7 @@ export default function AcceleratorInd({ loc, data, bf=false }) {
               initial={{ opacity: 0, x: -100 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 1, type: 'spring', bounce: 0.5, delay: 0.5 }}>
-              Join the exclusive club of <span className='font-bold'>1% successful YouTubers</span> and Influencers before it&apos;s TOO LATE!
+              Join the exclusive club of <span className='font-bold'>1% successful YouTubers and Influencers</span> before it&apos;s TOO LATE!
             </motion.h2>
           </div>
           <div className="flex flex-col items-center gap-5 md:gap-10">
@@ -268,9 +268,9 @@ export default function AcceleratorInd({ loc, data, bf=false }) {
               <img src="https://i.ibb.co/QpW4s0y/coffee-chat.png" alt="Akassh Ashok Gupta" className='w-full md:w-10/12' />
               <div>
                 <p className="text-sm md:text-2xl font-bold text-center text-red-500">Total Value: {
-                  loc === 'ind' ? <span>₹<s>2,499</s></span> : <span>$<s>99</s></span>
+                  loc === 'ind' ? <span>₹<s>2,499</s></span> : <span>$99</span>
                 }/-</p>
-                <p className="text-sm md:text-lg font-bold text-center text-white">Included in this Exclusive Offer!</p>
+                <p className="text-sm md:text-lg font-bold text-center text-white">Included in this Exclusive Offer Absolutely Free!</p>
               </div>
             </div>
             <div className='flex flex-col gap-5 md:gap-6 w-full md:w-5/12'>
@@ -280,15 +280,15 @@ export default function AcceleratorInd({ loc, data, bf=false }) {
               <div className="flex flex-col gap-5">
                 <div className="flex flex-row gap-2">
                   <BsCheckLg className={`${style.textRed} text-2xl w-5 md:text-4xl md:w-10`} />
-                  <span className=' flex-1 text-sm md:text-lg text-neutral-300 font-bold'>Wondering how to <span className='text-red-500'>align</span> & hack YouTube algorithm for your <span className='text-red-500'>specific</span> YouTube niche?<br /> <span className='font-light'>Discuss and brainstorm various methods and pickup the best practices and innovative ideas during these calls.</span></span>
+                  <span className=' flex-1 text-sm md:text-lg text-neutral-300 font-bold'>Wondering how to <span className='text-red-500'>align & hack</span> YouTube algorithm for your <span className='text-red-500'>specific</span> YouTube niche?<br /> <span className='font-light'>Discuss and brainstorm various methods and pickup the best practices and innovative ideas during these calls.</span></span>
                 </div>
                 <div className="flex flex-row gap-2">
                   <BsCheckLg className={`${style.textRed} text-2xl w-5 md:text-4xl md:w-10`} />
-                  <span className=' flex-1 text-sm md:text-lg text-neutral-300 font-bold'>Feeling <span className='text-red-500'>alone</span> in this struggle? <br /><span className='font-light'> Celebrate your wins, Collaborate & Stay motivated with the community by participating in these calls</span></span>
+                  <span className=' flex-1 text-sm md:text-lg text-neutral-300 font-bold'>Feeling <span className='text-red-500'>alone</span> in this struggle? <br /><span className='font-light'> Stay motivated, Collaborate & Celebrate your wins with the community by participating in these calls.</span></span>
                 </div>
                 <div className="flex flex-row gap-2">
                   <BsCheckLg className={`${style.textRed} text-2xl w-5 md:text-4xl md:w-10`} />
-                  <span className=' flex-1 text-sm md:text-lg text-neutral-300 font-bold'>Not able to <span className='text-red-500'>stay</span> consistent & focused?<br /><span className='font-light'> Get your accountability partner and attend these calls to keep progressing and moving towards your goals.</span></span>
+                  <span className=' flex-1 text-sm md:text-lg text-neutral-300 font-bold'>Not able to stay <span className='text-red-500'>consistent & focused?</span><br /><span className='font-light'> Get your accountability partner and attend these calls to keep progressing towards your goals.</span></span>
                 </div>
               </div>
             </div>
@@ -439,7 +439,7 @@ export default function AcceleratorInd({ loc, data, bf=false }) {
             </div>
             <div className="flex flex-col flex-1">
               <p className={`text-base md:text-xl text-neutral-300 font-normal`}>
-                I believe in the power of YouTube not just as a platform for entertainment but as a strategic tool for business growth.<br /><br />Let's embark on this exciting journey together, and I'll guide you every step of the way in leveraging YouTube to its fullest potential.<br /><br />Whether you're looking to diversify your <span className={``}>revenue streams or attract valuable business leads</span>, I've got the expertise to make it happen. Let's make your YouTube venture a resounding success!<br /><br />I'm really looking forward to you completing this course and make this about passion, fullfillment and enjoy every bit of the journey it entails.<br /><br />
+                I believe in the power of YouTube, not just as a platform for entertainment, but as a strategic tool for business growth, as well.<br /><br />Let's embark on this exciting journey together, and I'll guide you every step of the way in leveraging YouTube to its fullest potential.<br /><br />Whether you're looking to diversify your <span className={``}>revenue streams or attract valuable business leads</span>, I've got the expertise to make it happen. Let's make your YouTube venture a Resounding SUCCESS!<br /><br />I'm really looking forward to you completing this course, fullfill and live your passion and enjoy every bit of the journey it entails.<br /><br />
               </p>
               <img src="https://i.ibb.co/6vX34KQ/akassh-signature.png" className="w-40 md:w-40 h-auto" />
             </div>
@@ -547,7 +547,7 @@ export default function AcceleratorInd({ loc, data, bf=false }) {
             }
           </div>
         </section>
-        <section className="z-10 flex flex-col py-10 md:py-20 px-5 md:px-40 gap-5 md:gap-10">
+        <section className="z-10 flex flex-col py-10 md:py-20 px-5 md:px-24 gap-5 md:gap-10">
           <div className={`flex flex-col gap-2 ${sora.className} items-center`}>
             <h2 className={`text-lg ${style.bgRed} py-2 px-5 md:text-3xl text-center text-white font-bold shadow-lg drop-shadow-lg rounded-lg`}>
               YouTubeneur Accelerator Course Structure

@@ -7,91 +7,91 @@ import { BsFillCaretDownFill } from 'react-icons/bs';
 export default function YoutubeneurStruction() {
     const data = [
         {
-            h2: 'Day-1',
-            p: `The Content Engine`,
+            h2: '<span className="italic">Day-1</span>',
+            p: `The Foundations of the Engine`,
             modules: [
                 {
-                    h3: '1. You have made it',
+                    h3: '1. <span className="font-bold capitalize">You have made it</span><br/>Course Overview and Objective',
                     time: '1:30',
                 },
                 {
-                    h3: '2. Launch the Missile',
+                    h3: '2. <span className="font-bold capitalize">Launch the Missile</span><br/>How to Crack the Youtubeneur Method',
                     time: '18:08',
                 },
                 {
-                    h3: '3. Methods work, People fail',
+                    h3: '3. <span className="font-bold capitalize">Methods work, People fail</span><br/>Cut, Copy & Paste Method to Accelerate',
                     time: '23:49',
                 },
                 {
-                    h3: '4. Dig the Beast',
+                    h3: '4. <span className="font-bold capitalize">Dig the Beast</span><br/>A Secret Case Study that you can Replicate',
                     time: '2:57',
                 },
                 {
-                    h3: '5. Shift the Paradigm',
+                    h3: '5. <span className="font-bold capitalize">Shift the Paradigm</span><br/>Set Goals for Success',
                     time: '20:23',
                 },
                 {
-                    h3: '6. The Success Guarantee',
+                    h3: '6. <span className="font-bold capitalize">The Success Guarantee</span><br/>How to Collaborate in Our Community',
                     time: '6:10',
                 },
                 {
-                    h3: '7. Get that Golden Niche',
+                    h3: '7. <span className="font-bold capitalize">Get that Golden Niche</span><br/>Find the Target Market that Awaits You!',
                     time: '8:02',
                 }
             ]
         },
         {
-            h2: 'Day-2',
-            p: `The Influence Engine`,
+            h2: '<span className="italic">Day-2</span>',
+            p: `The Content and Influence Engine`,
             modules: [
                 {
-                    h3: '8. The Platform of Choice',
+                    h3: '8. <span className="font-bold capitalize">The Platform of Choice</span><br/>Learn about the Magical Power of YouTube',
                     time: '7:58',
                 },
                 {
-                    h3: '9. Building the Content Strategy',
+                    h3: '9. <span className="font-bold capitalize">Building the Content Strategy</span><br/>Learn to Build the Content Strategy that promises sustained benefit over long-term',
                     time: '15:29',
                 },
                 {
-                    h3: '10. Produce the Value Content',
+                    h3: '10. <span className="font-bold capitalize">Produce the Value Content</span><br/>Learn the Secrets of Content Production from Ideation, Research to Scripting, Shooting and Editing',
                     time: '28:22',
                 },
                 {
-                    h3: '11. Optimize Content for Algorithm',
+                    h3: '11. <span className="font-bold capitalize">Optimize Content for Algorithm</span><br/>Learn How to Hack Youtube Algorithm and get more recommendations and reach for your videos',
                     time: '17:34',
                 },
                 {
-                    h3: '12. Explode the Reach',
+                    h3: '12. <span className="font-bold capitalize">Explode the Reach</span><br/>Learn how to re-use the same content and re-classify, re-purpose and re-distribute to create maximum impact and build 360 degree social media following from Youtube content',
                     time: '5:29',
                 },
                 {
-                    h3: '13. Build the Influence Foundation',
+                    h3: '13. <span className="font-bold capitalize">Build the Influence Foundation</span><br/>Cracking the Influencer Mindset',
                     time: '8:52',
                 }
             ],
         },
         {
-            h2: 'Day-3',
+            h2: '<span className="italic">Day-3</span>',
             p: `The Money Engine`,
             modules: [
                 {
-                    h3: '14. Build your legacy',
+                    h3: '14. <span className="font-bold capitalize">Build your legacy</span><br/>Branding Blocks, Learn how to crack Brand Collaborations like a Pro',
                     time: '14:07',
                 },
                 {
-                    h3: '15. Pull the Eggs out',
+                    h3: '15. <span className="font-bold capitalize">Pull the Eggs out</span><br/>Creating Multiple Digital Revenue Streams',
                     time: '08:49',
                 },
                 {
-                    h3: '16. A Big $ Opportunity',
+                    h3: '16. <span className="font-bold capitalize">A Big $ Opportunity</span><br/>Create & Promote your own Digital Product',
                     time: '08:36',
                 },
                 {
-                    h3: '17. Build the Money Engine',
+                    h3: '17. <span className="font-bold capitalize">Build the Money Engine</span><br/>My Top Money Making Tools! Shhhh',
                     time: '11:41',
                 },
                 {
-                    h3: '18. Choose your Journey',
+                    h3: '18. <span className="font-bold capitalize">Choose your Journey</span><br/>Create your Journey to the Next Level of Digital Entrepreneurship',
                     time: '05:08',
                 }
             ],
@@ -115,7 +115,7 @@ export default function YoutubeneurStruction() {
                             <div className="flex flex-row items-center gap-10 justify-between w-full">
                                 <div className="flex flex-col justify-center">
                                     <h2 className="text-sm md:text-lg text-white" >{parse(item.h2)}</h2>
-                                    <p className="text-lg md:text-xl font-bold text-white" >{parse(item.p)}</p>
+                                    <p className="text-lg md:text-xl font-bold text-white uppercase" >{parse(item.p)}</p>
                                 </div>
                                 <BsFillCaretDownFill className={`text-3xl w-10 text-white transform transition-all duration-700 ease-in-out ${show[index] ? 'rotate-180' : ''}`} onClick={() => {
                                     setShow(prev => {
@@ -138,7 +138,7 @@ export default function YoutubeneurStruction() {
                                             className="flex flex-col gap-5 justify-center overflow-hidden bg-white/25 p-2 rounded-lg w-full box-content"
                                         >
                                             <h2 className="text-lg md:text-xl font-bold text-white" >Modules</h2>
-                                            <div className="flex flex-col gap-1 justify-center">
+                                            <div className="flex flex-col gap-3 justify-center">
                                                 {
                                                     item.modules.map((module, index2) => (
                                                         <div key={index2} className="flex flex-col items-center justify-center w-full">

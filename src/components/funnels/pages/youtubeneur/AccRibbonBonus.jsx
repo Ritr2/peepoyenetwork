@@ -42,8 +42,8 @@ export default function AccRibbonBonus({ data, loc = "ind" }) {
                 <img src={bonus[item].image.src} alt={bonus[item].image.alt} className={`object-contain object-center w-full max-h-52 md:max-h-72`} draggable={false} />
               </div>
               <div className="flex flex-col w-full items-center">
-                <p className="text-sm md:text-2xl font-bold text-center text-red-500">Total Value: {bonus[item].symbol[loc]}<s>{bonus[item].value[loc]}</s>/-</p>
-                <p className="text-sm md:text-lg font-bold text-center text-green-700">Included in this Exclusive Offer!</p>
+                <p className="text-sm md:text-2xl font-bold text-center text-red-500">Total Value: {bonus[item].symbol[loc]}{bonus[item].value[loc]}/-</p>
+                <p className="text-sm md:text-2xl font-bold text-center text-green-700">Included in this Exclusive Offer Absolutely Free!</p>
               </div>
             </div>
           </div>
