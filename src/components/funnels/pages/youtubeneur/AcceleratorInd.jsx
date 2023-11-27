@@ -7,6 +7,7 @@ import PaymentSection from './PaymentSection'
 import { Sora } from 'next/font/google'
 import style from '@/styles/AcceleratorInd.module.css'
 import { BsCheckLg } from 'react-icons/bs'
+import { BsCheck } from 'react-icons/bs'
 import WhoIsThisFor from './WhoIsThisFor'
 import YoutubeneurStruction from './YoutubeneurStruction'
 import Testimonials from './Testimonials'
@@ -254,6 +255,74 @@ export default function AcceleratorInd({ loc, data, bf = false }) {
                 )
               }
             </div>
+          </div>
+        </section>
+        <section className="z-10 flex flex-col justify-center items-center py-10 md:py-20 px-5 md:px-40 gap-2 md:gap-14">
+          <h2 className={`text-lg ${style.bgRed} py-2 px-5 md:text-3xl text-center text-white font-bold shadow-lg drop-shadow-lg rounded-lg`}>
+            Here's What You Get In Today's Launch Offer:
+          </h2>
+          <div className="flex flex-col md:flex-row items-center gap-2">
+            <div className='flex flex-col w-full md:w-6/12 gap-4'>
+              <span className='text-base md:text-2xl md:tracking-wide text-left text-neutral-100'>
+                1. Our Flagship Youtube Growth Course for Multiple Revenue Streams
+              </span>
+              <span className='text-base md:text-2xl md:tracking-wide text-left text-neutral-100'>
+                2. Our World-Class Collaboration and Gamification based Community
+              </span>
+              <span className='text-base md:text-2xl md:tracking-wide text-left text-neutral-100'>
+                3. Our unique value offering i.e Access to Weekly Coffee Calls
+              </span>
+              <span className='text-base md:text-2xl md:tracking-wide text-left text-neutral-100'>
+                4. 10 Bonuses
+              </span>
+              <span className='text-base md:text-2xl md:tracking-wide text-left text-neutral-100'>
+                5. Life time Membership Option with Free Video Zoom Consulting Call with Akassh on
+              </span>
+            </div>
+            <div className="flex flex-col gap-5 items-center justify-end flex-1 ">
+              <img src="https://i.ibb.co/JRjfHhr/accelerator.png" alt="struction" className="w-8/12" draggable={false} />
+            </div>
+          </div>
+        </section>
+        <section className="z-10 flex flex-col py-10 md:py-20 px-5 md:px-24 gap-5 md:gap-10 bg-white/5">
+          <div className={`flex flex-col gap-2 ${sora.className} items-center`}>
+            <h2 className={`text-lg ${style.bgRed} py-2 px-5 md:text-3xl text-center text-white font-bold shadow-lg drop-shadow-lg rounded-lg`}>
+              Our Flagship YouTubeneur Accelerator Course Structure
+            </h2>
+          </div>
+          <YoutubeneurStruction />
+        </section>
+        <section className="z-10 flex flex-col items-center py-10 md:py-20 px-5 md:px-24 gap-5 md:gap-14">
+          <h2 className={`text-lg ${style.bgRed} py-2 px-5 md:text-3xl text-center text-white font-bold shadow-lg drop-shadow-lg rounded-lg`}>
+            Our World-Class Collaboration and Gamification based Community
+          </h2>
+          <div className={`flex flex-col md:flex-row gap-8 ${sora.className} items-center`}>
+            <div className={`flex flex-col gap-2 md:gap-5 ${sora.className} md:w-6/12`}>
+              <h2 className={`text-lg md:text-4xl text-center md:text-left text-white font-bold shadow-lg drop-shadow-lg rounded-lg`}>
+                What is Unique about our Youtubeneur Community?
+              </h2>
+              <p className={`text-base md:text-xl text-neutral-300 font-normal`}>
+                A new-age learning platform that has both classroom and community capabilities combined at one place that promotes collaboration with other members on the go that enables learning in a community format instead of a one-one format powered by Gamification and Rewards that keeps you engaged and motivated at all times
+              </p>
+            </div>
+            <div className="flex flex-col flex-1">
+              <img src="https://i.ibb.co/Lp1JF83/2d56d4316ca88f30b804aab0c3776da1.jpg" alt="Akassh Ashok Gupta" className='rounded-xl shadow-lg drop-shadow-lg w-full' />
+            </div>
+          </div>
+        </section>
+        <section className="z-10 flex flex-col justify-center items-center py-10 md:py-20 px-5 md:px-24 gap-2 md:gap-7">
+          <h2 className={`text-xl md:text-5xl text-center text-white font-bold shadow-lg drop-shadow-lg rounded-lg`}>
+          Our Youtubeneur community is simple, engaging & fun to use
+          </h2>
+          <p className={`text-lg md:text-2xl text-neutral-300 font-normal`}>
+            Meet and Collaborate with many others who are on the same journey & make it a fun ride. You are not alone.
+          </p>
+          <div className="flex flex-col gap-5">
+            {
+              Object.keys(aboutcommunitydata).map((key, index) => (
+                <AboutCommunity key={index} key2={key} data={aboutcommunitydata[key]} backgroundColor={'bg-white/0'} reverse={index % 2 === 0 ? false : true} />
+              ))
+            }
           </div>
         </section>
         <section className="z-10 flex flex-col py-10 md:py-20 px-5 md:px-36 gap-10">
@@ -548,44 +617,6 @@ export default function AcceleratorInd({ loc, data, bf = false }) {
               )
             }
           </div>
-        </section>
-        <section className="z-10 flex flex-col py-10 md:py-20 px-5 md:px-24 gap-5 md:gap-10">
-          <div className={`flex flex-col gap-2 ${sora.className} items-center`}>
-            <h2 className={`text-lg ${style.bgRed} py-2 px-5 md:text-3xl text-center text-white font-bold shadow-lg drop-shadow-lg rounded-lg`}>
-              YouTubeneur Accelerator Course Structure
-            </h2>
-          </div>
-          <YoutubeneurStruction />
-        </section>
-        <section className="z-10 flex flex-col py-10 md:py-20 px-5 md:px-24 gap-5 md:gap-10 bg-white/5">
-          <div className={`flex flex-col md:flex-row gap-8 ${sora.className} items-center`}>
-            <div className={`flex flex-col gap-2 ${sora.className} md:w-6/12`}>
-              <h2 className={`text-lg md:text-4xl text-center md:text-left text-white font-bold shadow-lg drop-shadow-lg rounded-lg`}>
-                What is Youtubeneur Community?
-              </h2>
-              <p className={`text-base md:text-xl text-neutral-300 font-normal`}>
-                a new-age learning platform  that has both classroom and community capabilities combined at one place that promotes collaboration with other members on the go that enables learning in a community format instead of a one-one format powered by Gamification and Rewards that keeps you engaged and motivated at all times
-              </p>
-            </div>
-            <div className="flex flex-col flex-1">
-              <img src="https://i.ibb.co/Lp1JF83/2d56d4316ca88f30b804aab0c3776da1.jpg" alt="Akassh Ashok Gupta" className='rounded-xl shadow-lg drop-shadow-lg w-full' />
-            </div>
-          </div>
-        </section>
-        <section className="z-10 flex flex-col justify-center items-center py-10 md:py-20 px-5 md:px-24 gap-2 md:gap-5">
-          <h2 className={`text-lg md:text-4xl text-center md:text-left text-white font-bold shadow-lg drop-shadow-lg rounded-lg`}>
-            Youtubeneur is a community, that's simple, engaging & fun to use
-          </h2>
-          <p className={`text-base md:text-xl text-neutral-300 font-normal`}>
-            Meet and Collaborate with many others who are on the same journey & make it a fun ride. You are not alone.
-          </p>
-          <div className="flex flex-col gap-5">
-          {
-          Object.keys(aboutcommunitydata).map((key, index) => (
-            <AboutCommunity key={index} key2={key} data={aboutcommunitydata[key]} backgroundColor={'bg-white/0'} reverse={index % 2 === 0 ? false : true} />
-          ))
-        }
-            </div>
         </section>
         <section className="z-10 flex flex-col py-10 md:py-20 px-5 md:px-40 gap-5 md:gap-10 bg-white/5">
           <div className={`flex flex-col gap-2 ${sora.className}`}>

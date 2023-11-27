@@ -108,7 +108,7 @@ export default function YoutubeneurStruction() {
 
     return (
         <div className="flex flex-row justify-center w-full gap-10 py-5 ">
-            <div className="flex flex-col gap-5 self-center items-center justify-center w-full md:w-6/12 p-4 bg-white/5 rounded-3xl border-2 border-white">
+            <div className="flex flex-col gap-5 self-center items-center justify-center w-full md:w-7/12 p-4 bg-white/5 rounded-3xl border-2 border-white">
                 {
                     data.map((item, index) => (
                         <div key={index} className="flex flex-col items-center w-full">
@@ -161,9 +161,6 @@ export default function YoutubeneurStruction() {
                         </div>
                     ))
                 }
-            </div>
-            <div className=" hidden md:flex flex-col gap-5 items-center justify-end flex-1 ">
-                <img src="https://i.ibb.co/JRjfHhr/accelerator.png" alt="struction" className="w-8/12" draggable={false} />
             </div>
         </div>
     )
