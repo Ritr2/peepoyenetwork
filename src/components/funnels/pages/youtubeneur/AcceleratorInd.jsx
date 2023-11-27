@@ -23,13 +23,15 @@ import { useInView } from 'react-intersection-observer'
 import Experience from './Experience'
 import Matrix from './Matrix'
 import Countdown from 'react-countdown'
+import aboutcommunitydata from '@/utils/funnels/aboutCommunity'
+import AboutCommunity from './AboutCommunity'
 
 const sora = Sora({
   weight: ['100', '300', '400', '700'],
   subsets: ['latin'],
 })
 
-export default function AcceleratorInd({ loc, data, bf=false }) {
+export default function AcceleratorInd({ loc, data, bf = false }) {
   const [videoPlayervisible, setVideoPlayervisible] = React.useState(false)
   const { ref: socialMediaRef, inView: socialMediaInView } = useInView();
   const firstSectionData = [
@@ -166,7 +168,7 @@ export default function AcceleratorInd({ loc, data, bf=false }) {
                     )
                   }
                   <Link activeClass='activestatus' spy={true} to='paymentPage' smooth={true} duration={1000} offset={-150} className={`flex flex-col items-center cursor-pointer ${style.bgRed} rounded-lg px-2 py-1 md:px-5 md:py-3 hover:scale-105 shadow-sm drop-shadow-sm`}>
-                    <span className='text-white text-base md:text-2xl font-bold uppercase'>Grab the {bf? 'black friday': 'Launch'} offer</span>
+                    <span className='text-white text-base md:text-2xl font-bold uppercase'>Grab the {bf ? 'black friday' : 'Launch'} offer</span>
                     <span className='text-white text-center text-sm md:text-2xl'> at an unbelievable discount!</span>
                   </Link>
                   {
@@ -207,41 +209,41 @@ export default function AcceleratorInd({ loc, data, bf=false }) {
               </div>
             </div>
             <div className="flex flex-col gap-2 w-full md:w-8/12">
-            {
-                    bf && (
-                      <>
-                        <div className="flex flex-col gap-2 w-5/12 self-center">
-                          <img src="/picture.png" alt="money back guarantee" className='w-full' />
-                        </div>
-                        <Countdown date={1700937000000} renderer={({ days, hours, minutes, seconds, completed }) => {
-                          if (completed) {
-                            return <span className='text-white text-center text-lg md:text-3xl'>Offer Closed</span>
-                          } else {
-                            return <p className='text-center text-sm md:text-2xl flex flex-row gap-2 self-center w-full md:w-9/12'>
-                              <span className='bg-white rounded-lg flex flex-col gap-2 p-1 flex-1'>
-                                <span className='red-text text-xl md:text-4xl text-center font-bold'>{days > 9 ? days : `0${days}`}</span>
-                                <span className='text-black text-center text-xs md:text-lg'>{days > 1 ? 'days' : 'day'}</span>
-                              </span>
-                              <span className='bg-white rounded-lg flex flex-col gap-2 p-1 flex-1'>
-                                <span className='red-text text-xl md:text-4xl text-center font-bold'>{hours > 9 ? hours : `0${hours}`}</span>
-                                <span className='text-black text-center text-xs md:text-lg'>{hours > 1 ? 'hours' : 'hour'}</span>
-                              </span>
-                              <span className='bg-white rounded-lg flex flex-col gap-2 p-1 flex-1'>
-                                <span className='red-text text-xl md:text-4xl text-center font-bold'>{minutes > 9 ? minutes : `0${minutes}`}</span>
-                                <span className='text-black text-center text-xs md:text-lg'>{minutes > 1 ? 'minutes' : 'minute'}</span>
-                              </span>
-                              <span className='bg-white rounded-lg flex flex-col gap-2 p-1 flex-1'>
-                                <span className='red-text text-xl md:text-4xl text-center font-bold'>{seconds > 9 ? seconds : `0${seconds}`}</span>
-                                <span className='text-black text-center text-xs md:text-lg'>{seconds > 1 ? 'seconds' : 'second'}</span>
-                              </span>
-                            </p>
-                          }
-                        }} />
-                      </>
-                    )
-                  }
+              {
+                bf && (
+                  <>
+                    <div className="flex flex-col gap-2 w-5/12 self-center">
+                      <img src="/picture.png" alt="money back guarantee" className='w-full' />
+                    </div>
+                    <Countdown date={1700937000000} renderer={({ days, hours, minutes, seconds, completed }) => {
+                      if (completed) {
+                        return <span className='text-white text-center text-lg md:text-3xl'>Offer Closed</span>
+                      } else {
+                        return <p className='text-center text-sm md:text-2xl flex flex-row gap-2 self-center w-full md:w-9/12'>
+                          <span className='bg-white rounded-lg flex flex-col gap-2 p-1 flex-1'>
+                            <span className='red-text text-xl md:text-4xl text-center font-bold'>{days > 9 ? days : `0${days}`}</span>
+                            <span className='text-black text-center text-xs md:text-lg'>{days > 1 ? 'days' : 'day'}</span>
+                          </span>
+                          <span className='bg-white rounded-lg flex flex-col gap-2 p-1 flex-1'>
+                            <span className='red-text text-xl md:text-4xl text-center font-bold'>{hours > 9 ? hours : `0${hours}`}</span>
+                            <span className='text-black text-center text-xs md:text-lg'>{hours > 1 ? 'hours' : 'hour'}</span>
+                          </span>
+                          <span className='bg-white rounded-lg flex flex-col gap-2 p-1 flex-1'>
+                            <span className='red-text text-xl md:text-4xl text-center font-bold'>{minutes > 9 ? minutes : `0${minutes}`}</span>
+                            <span className='text-black text-center text-xs md:text-lg'>{minutes > 1 ? 'minutes' : 'minute'}</span>
+                          </span>
+                          <span className='bg-white rounded-lg flex flex-col gap-2 p-1 flex-1'>
+                            <span className='red-text text-xl md:text-4xl text-center font-bold'>{seconds > 9 ? seconds : `0${seconds}`}</span>
+                            <span className='text-black text-center text-xs md:text-lg'>{seconds > 1 ? 'seconds' : 'second'}</span>
+                          </span>
+                        </p>
+                      }
+                    }} />
+                  </>
+                )
+              }
               <Link activeClass='activestatus' spy={true} to='paymentPage' smooth={true} duration={1000} offset={-150} className={`flex flex-col items-center cursor-pointer ${style.bgRed} rounded-lg px-2 py-1 md:px-5 md:py-3 hover:scale-105 shadow-sm drop-shadow-sm`}>
-                <span className='text-white text-base md:text-2xl font-bold uppercase'>Grab the {bf? 'black friday': 'Launch'} offer</span>
+                <span className='text-white text-base md:text-2xl font-bold uppercase'>Grab the {bf ? 'black friday' : 'Launch'} offer</span>
                 <span className='text-white text-center text-sm md:text-2xl'> at an unbelievable discount!</span>
               </Link>
               {
@@ -294,41 +296,41 @@ export default function AcceleratorInd({ loc, data, bf=false }) {
             </div>
           </div>
           <div className="flex flex-col gap-2 self-center w-full md:w-8/12">
-          {
-                    bf && (
-                      <>
-                        <div className="flex flex-col gap-2 w-5/12 self-center">
-                          <img src="/picture.png" alt="money back guarantee" className='w-full' />
-                        </div>
-                        <Countdown date={1700937000000} renderer={({ days, hours, minutes, seconds, completed }) => {
-                          if (completed) {
-                            return <span className='text-white text-center text-lg md:text-3xl'>Offer Closed</span>
-                          } else {
-                            return <p className='text-center text-sm md:text-2xl flex flex-row gap-2 self-center w-full md:w-9/12'>
-                              <span className='bg-white rounded-lg flex flex-col gap-2 p-1 flex-1'>
-                                <span className='red-text text-xl md:text-4xl text-center font-bold'>{days > 9 ? days : `0${days}`}</span>
-                                <span className='text-black text-center text-xs md:text-lg'>{days > 1 ? 'days' : 'day'}</span>
-                              </span>
-                              <span className='bg-white rounded-lg flex flex-col gap-2 p-1 flex-1'>
-                                <span className='red-text text-xl md:text-4xl text-center font-bold'>{hours > 9 ? hours : `0${hours}`}</span>
-                                <span className='text-black text-center text-xs md:text-lg'>{hours > 1 ? 'hours' : 'hour'}</span>
-                              </span>
-                              <span className='bg-white rounded-lg flex flex-col gap-2 p-1 flex-1'>
-                                <span className='red-text text-xl md:text-4xl text-center font-bold'>{minutes > 9 ? minutes : `0${minutes}`}</span>
-                                <span className='text-black text-center text-xs md:text-lg'>{minutes > 1 ? 'minutes' : 'minute'}</span>
-                              </span>
-                              <span className='bg-white rounded-lg flex flex-col gap-2 p-1 flex-1'>
-                                <span className='red-text text-xl md:text-4xl text-center font-bold'>{seconds > 9 ? seconds : `0${seconds}`}</span>
-                                <span className='text-black text-center text-xs md:text-lg'>{seconds > 1 ? 'seconds' : 'second'}</span>
-                              </span>
-                            </p>
-                          }
-                        }} />
-                      </>
-                    )
-                  }
+            {
+              bf && (
+                <>
+                  <div className="flex flex-col gap-2 w-5/12 self-center">
+                    <img src="/picture.png" alt="money back guarantee" className='w-full' />
+                  </div>
+                  <Countdown date={1700937000000} renderer={({ days, hours, minutes, seconds, completed }) => {
+                    if (completed) {
+                      return <span className='text-white text-center text-lg md:text-3xl'>Offer Closed</span>
+                    } else {
+                      return <p className='text-center text-sm md:text-2xl flex flex-row gap-2 self-center w-full md:w-9/12'>
+                        <span className='bg-white rounded-lg flex flex-col gap-2 p-1 flex-1'>
+                          <span className='red-text text-xl md:text-4xl text-center font-bold'>{days > 9 ? days : `0${days}`}</span>
+                          <span className='text-black text-center text-xs md:text-lg'>{days > 1 ? 'days' : 'day'}</span>
+                        </span>
+                        <span className='bg-white rounded-lg flex flex-col gap-2 p-1 flex-1'>
+                          <span className='red-text text-xl md:text-4xl text-center font-bold'>{hours > 9 ? hours : `0${hours}`}</span>
+                          <span className='text-black text-center text-xs md:text-lg'>{hours > 1 ? 'hours' : 'hour'}</span>
+                        </span>
+                        <span className='bg-white rounded-lg flex flex-col gap-2 p-1 flex-1'>
+                          <span className='red-text text-xl md:text-4xl text-center font-bold'>{minutes > 9 ? minutes : `0${minutes}`}</span>
+                          <span className='text-black text-center text-xs md:text-lg'>{minutes > 1 ? 'minutes' : 'minute'}</span>
+                        </span>
+                        <span className='bg-white rounded-lg flex flex-col gap-2 p-1 flex-1'>
+                          <span className='red-text text-xl md:text-4xl text-center font-bold'>{seconds > 9 ? seconds : `0${seconds}`}</span>
+                          <span className='text-black text-center text-xs md:text-lg'>{seconds > 1 ? 'seconds' : 'second'}</span>
+                        </span>
+                      </p>
+                    }
+                  }} />
+                </>
+              )
+            }
             <Link activeClass='activestatus' spy={true} to='paymentPage' smooth={true} duration={1000} offset={-150} className={`flex flex-col items-center cursor-pointer ${style.bgRed} rounded-lg px-2 py-1 md:px-5 md:py-3 hover:scale-105 shadow-sm drop-shadow-sm`}>
-              <span className='text-white text-base md:text-2xl font-bold uppercase'>Grab the {bf? 'black friday': 'Launch'} offer</span>
+              <span className='text-white text-base md:text-2xl font-bold uppercase'>Grab the {bf ? 'black friday' : 'Launch'} offer</span>
               <span className='text-white text-center text-sm md:text-2xl'> at an unbelievable discount!</span>
             </Link>
             {
@@ -350,41 +352,41 @@ export default function AcceleratorInd({ loc, data, bf=false }) {
             <div className="flex flex-col gap-12 w-full">
               <AccRibbonBonus data={['community2', 'donot', 'scriptSecret', 'acc1', 'acc2', 'acc3', 'acc4', 'acc5', 'acc6',]} loc={loc} />
               <div className="flex flex-col self-center gap-2 w-full md:w-8/12">
-              {
-                    bf && (
-                      <>
-                        <div className="flex flex-col gap-2 w-5/12 self-center">
-                          <img src="/picture.png" alt="money back guarantee" className='w-full' />
-                        </div>
-                        <Countdown date={1700937000000} renderer={({ days, hours, minutes, seconds, completed }) => {
-                          if (completed) {
-                            return <span className='text-white text-center text-lg md:text-3xl'>Offer Closed</span>
-                          } else {
-                            return <p className='text-center text-sm md:text-2xl flex flex-row gap-2 self-center w-full md:w-9/12'>
-                              <span className='bg-white rounded-lg flex flex-col gap-2 p-1 flex-1'>
-                                <span className='red-text text-xl md:text-4xl text-center font-bold'>{days > 9 ? days : `0${days}`}</span>
-                                <span className='text-black text-center text-xs md:text-lg'>{days > 1 ? 'days' : 'day'}</span>
-                              </span>
-                              <span className='bg-white rounded-lg flex flex-col gap-2 p-1 flex-1'>
-                                <span className='red-text text-xl md:text-4xl text-center font-bold'>{hours > 9 ? hours : `0${hours}`}</span>
-                                <span className='text-black text-center text-xs md:text-lg'>{hours > 1 ? 'hours' : 'hour'}</span>
-                              </span>
-                              <span className='bg-white rounded-lg flex flex-col gap-2 p-1 flex-1'>
-                                <span className='red-text text-xl md:text-4xl text-center font-bold'>{minutes > 9 ? minutes : `0${minutes}`}</span>
-                                <span className='text-black text-center text-xs md:text-lg'>{minutes > 1 ? 'minutes' : 'minute'}</span>
-                              </span>
-                              <span className='bg-white rounded-lg flex flex-col gap-2 p-1 flex-1'>
-                                <span className='red-text text-xl md:text-4xl text-center font-bold'>{seconds > 9 ? seconds : `0${seconds}`}</span>
-                                <span className='text-black text-center text-xs md:text-lg'>{seconds > 1 ? 'seconds' : 'second'}</span>
-                              </span>
-                            </p>
-                          }
-                        }} />
-                      </>
-                    )
-                  }
+                {
+                  bf && (
+                    <>
+                      <div className="flex flex-col gap-2 w-5/12 self-center">
+                        <img src="/picture.png" alt="money back guarantee" className='w-full' />
+                      </div>
+                      <Countdown date={1700937000000} renderer={({ days, hours, minutes, seconds, completed }) => {
+                        if (completed) {
+                          return <span className='text-white text-center text-lg md:text-3xl'>Offer Closed</span>
+                        } else {
+                          return <p className='text-center text-sm md:text-2xl flex flex-row gap-2 self-center w-full md:w-9/12'>
+                            <span className='bg-white rounded-lg flex flex-col gap-2 p-1 flex-1'>
+                              <span className='red-text text-xl md:text-4xl text-center font-bold'>{days > 9 ? days : `0${days}`}</span>
+                              <span className='text-black text-center text-xs md:text-lg'>{days > 1 ? 'days' : 'day'}</span>
+                            </span>
+                            <span className='bg-white rounded-lg flex flex-col gap-2 p-1 flex-1'>
+                              <span className='red-text text-xl md:text-4xl text-center font-bold'>{hours > 9 ? hours : `0${hours}`}</span>
+                              <span className='text-black text-center text-xs md:text-lg'>{hours > 1 ? 'hours' : 'hour'}</span>
+                            </span>
+                            <span className='bg-white rounded-lg flex flex-col gap-2 p-1 flex-1'>
+                              <span className='red-text text-xl md:text-4xl text-center font-bold'>{minutes > 9 ? minutes : `0${minutes}`}</span>
+                              <span className='text-black text-center text-xs md:text-lg'>{minutes > 1 ? 'minutes' : 'minute'}</span>
+                            </span>
+                            <span className='bg-white rounded-lg flex flex-col gap-2 p-1 flex-1'>
+                              <span className='red-text text-xl md:text-4xl text-center font-bold'>{seconds > 9 ? seconds : `0${seconds}`}</span>
+                              <span className='text-black text-center text-xs md:text-lg'>{seconds > 1 ? 'seconds' : 'second'}</span>
+                            </span>
+                          </p>
+                        }
+                      }} />
+                    </>
+                  )
+                }
                 <Link activeClass='activestatus' spy={true} to='paymentPage' smooth={true} duration={1000} offset={-150} className={`flex flex-col items-center cursor-pointer ${style.bgRed} rounded-lg px-2 py-1 md:px-5 md:py-3 hover:scale-105 shadow-sm drop-shadow-sm`}>
-                  <span className='text-white text-base md:text-2xl font-bold uppercase'>Grab the {bf? 'black friday': 'Launch'} offer</span>
+                  <span className='text-white text-base md:text-2xl font-bold uppercase'>Grab the {bf ? 'black friday' : 'Launch'} offer</span>
                   <span className='text-white text-center text-sm md:text-2xl'> at an unbelievable discount!</span>
                 </Link>
                 {
@@ -445,41 +447,41 @@ export default function AcceleratorInd({ loc, data, bf=false }) {
             </div>
           </div>
           <div className="flex flex-col gap-5 self-center w-full md:w-8/12">
-          {
-                    bf && (
-                      <>
-                        <div className="flex flex-col gap-2 w-5/12 self-center">
-                          <img src="/picture.png" alt="money back guarantee" className='w-full' />
-                        </div>
-                        <Countdown date={1700937000000} renderer={({ days, hours, minutes, seconds, completed }) => {
-                          if (completed) {
-                            return <span className='text-white text-center text-lg md:text-3xl'>Offer Closed</span>
-                          } else {
-                            return <p className='text-center text-sm md:text-2xl flex flex-row gap-2 self-center w-full md:w-9/12'>
-                              <span className='bg-white rounded-lg flex flex-col gap-2 p-1 flex-1'>
-                                <span className='red-text text-xl md:text-4xl text-center font-bold'>{days > 9 ? days : `0${days}`}</span>
-                                <span className='text-black text-center text-xs md:text-lg'>{days > 1 ? 'days' : 'day'}</span>
-                              </span>
-                              <span className='bg-white rounded-lg flex flex-col gap-2 p-1 flex-1'>
-                                <span className='red-text text-xl md:text-4xl text-center font-bold'>{hours > 9 ? hours : `0${hours}`}</span>
-                                <span className='text-black text-center text-xs md:text-lg'>{hours > 1 ? 'hours' : 'hour'}</span>
-                              </span>
-                              <span className='bg-white rounded-lg flex flex-col gap-2 p-1 flex-1'>
-                                <span className='red-text text-xl md:text-4xl text-center font-bold'>{minutes > 9 ? minutes : `0${minutes}`}</span>
-                                <span className='text-black text-center text-xs md:text-lg'>{minutes > 1 ? 'minutes' : 'minute'}</span>
-                              </span>
-                              <span className='bg-white rounded-lg flex flex-col gap-2 p-1 flex-1'>
-                                <span className='red-text text-xl md:text-4xl text-center font-bold'>{seconds > 9 ? seconds : `0${seconds}`}</span>
-                                <span className='text-black text-center text-xs md:text-lg'>{seconds > 1 ? 'seconds' : 'second'}</span>
-                              </span>
-                            </p>
-                          }
-                        }} />
-                      </>
-                    )
-                  }
+            {
+              bf && (
+                <>
+                  <div className="flex flex-col gap-2 w-5/12 self-center">
+                    <img src="/picture.png" alt="money back guarantee" className='w-full' />
+                  </div>
+                  <Countdown date={1700937000000} renderer={({ days, hours, minutes, seconds, completed }) => {
+                    if (completed) {
+                      return <span className='text-white text-center text-lg md:text-3xl'>Offer Closed</span>
+                    } else {
+                      return <p className='text-center text-sm md:text-2xl flex flex-row gap-2 self-center w-full md:w-9/12'>
+                        <span className='bg-white rounded-lg flex flex-col gap-2 p-1 flex-1'>
+                          <span className='red-text text-xl md:text-4xl text-center font-bold'>{days > 9 ? days : `0${days}`}</span>
+                          <span className='text-black text-center text-xs md:text-lg'>{days > 1 ? 'days' : 'day'}</span>
+                        </span>
+                        <span className='bg-white rounded-lg flex flex-col gap-2 p-1 flex-1'>
+                          <span className='red-text text-xl md:text-4xl text-center font-bold'>{hours > 9 ? hours : `0${hours}`}</span>
+                          <span className='text-black text-center text-xs md:text-lg'>{hours > 1 ? 'hours' : 'hour'}</span>
+                        </span>
+                        <span className='bg-white rounded-lg flex flex-col gap-2 p-1 flex-1'>
+                          <span className='red-text text-xl md:text-4xl text-center font-bold'>{minutes > 9 ? minutes : `0${minutes}`}</span>
+                          <span className='text-black text-center text-xs md:text-lg'>{minutes > 1 ? 'minutes' : 'minute'}</span>
+                        </span>
+                        <span className='bg-white rounded-lg flex flex-col gap-2 p-1 flex-1'>
+                          <span className='red-text text-xl md:text-4xl text-center font-bold'>{seconds > 9 ? seconds : `0${seconds}`}</span>
+                          <span className='text-black text-center text-xs md:text-lg'>{seconds > 1 ? 'seconds' : 'second'}</span>
+                        </span>
+                      </p>
+                    }
+                  }} />
+                </>
+              )
+            }
             <Link activeClass='activestatus' spy={true} to='paymentPage' smooth={true} duration={1000} offset={-150} className={`flex flex-col items-center cursor-pointer ${style.bgRed} rounded-lg px-2 py-1 md:px-5 md:py-3 hover:scale-105 shadow-sm drop-shadow-sm`}>
-              <span className='text-white text-base md:text-2xl font-bold uppercase'>Grab the {bf? 'black friday': 'Launch'} offer</span>
+              <span className='text-white text-base md:text-2xl font-bold uppercase'>Grab the {bf ? 'black friday' : 'Launch'} offer</span>
               <span className='text-white text-center text-sm md:text-2xl'> at an unbelievable discount!</span>
             </Link>
             {
@@ -501,41 +503,41 @@ export default function AcceleratorInd({ loc, data, bf=false }) {
             <WhoIsThisFor />
           </div>
           <div className="flex flex-col gap-5 self-center w-full md:w-8/12">
-          {
-                    bf && (
-                      <>
-                        <div className="flex flex-col gap-2 w-5/12 self-center">
-                          <img src="/picture.png" alt="money back guarantee" className='w-full' />
-                        </div>
-                        <Countdown date={1700937000000} renderer={({ days, hours, minutes, seconds, completed }) => {
-                          if (completed) {
-                            return <span className='text-white text-center text-lg md:text-3xl'>Offer Closed</span>
-                          } else {
-                            return <p className='text-center text-sm md:text-2xl flex flex-row gap-2 self-center w-full md:w-9/12'>
-                              <span className='bg-white rounded-lg flex flex-col gap-2 p-1 flex-1'>
-                                <span className='red-text text-xl md:text-4xl text-center font-bold'>{days > 9 ? days : `0${days}`}</span>
-                                <span className='text-black text-center text-xs md:text-lg'>{days > 1 ? 'days' : 'day'}</span>
-                              </span>
-                              <span className='bg-white rounded-lg flex flex-col gap-2 p-1 flex-1'>
-                                <span className='red-text text-xl md:text-4xl text-center font-bold'>{hours > 9 ? hours : `0${hours}`}</span>
-                                <span className='text-black text-center text-xs md:text-lg'>{hours > 1 ? 'hours' : 'hour'}</span>
-                              </span>
-                              <span className='bg-white rounded-lg flex flex-col gap-2 p-1 flex-1'>
-                                <span className='red-text text-xl md:text-4xl text-center font-bold'>{minutes > 9 ? minutes : `0${minutes}`}</span>
-                                <span className='text-black text-center text-xs md:text-lg'>{minutes > 1 ? 'minutes' : 'minute'}</span>
-                              </span>
-                              <span className='bg-white rounded-lg flex flex-col gap-2 p-1 flex-1'>
-                                <span className='red-text text-xl md:text-4xl text-center font-bold'>{seconds > 9 ? seconds : `0${seconds}`}</span>
-                                <span className='text-black text-center text-xs md:text-lg'>{seconds > 1 ? 'seconds' : 'second'}</span>
-                              </span>
-                            </p>
-                          }
-                        }} />
-                      </>
-                    )
-                  }
+            {
+              bf && (
+                <>
+                  <div className="flex flex-col gap-2 w-5/12 self-center">
+                    <img src="/picture.png" alt="money back guarantee" className='w-full' />
+                  </div>
+                  <Countdown date={1700937000000} renderer={({ days, hours, minutes, seconds, completed }) => {
+                    if (completed) {
+                      return <span className='text-white text-center text-lg md:text-3xl'>Offer Closed</span>
+                    } else {
+                      return <p className='text-center text-sm md:text-2xl flex flex-row gap-2 self-center w-full md:w-9/12'>
+                        <span className='bg-white rounded-lg flex flex-col gap-2 p-1 flex-1'>
+                          <span className='red-text text-xl md:text-4xl text-center font-bold'>{days > 9 ? days : `0${days}`}</span>
+                          <span className='text-black text-center text-xs md:text-lg'>{days > 1 ? 'days' : 'day'}</span>
+                        </span>
+                        <span className='bg-white rounded-lg flex flex-col gap-2 p-1 flex-1'>
+                          <span className='red-text text-xl md:text-4xl text-center font-bold'>{hours > 9 ? hours : `0${hours}`}</span>
+                          <span className='text-black text-center text-xs md:text-lg'>{hours > 1 ? 'hours' : 'hour'}</span>
+                        </span>
+                        <span className='bg-white rounded-lg flex flex-col gap-2 p-1 flex-1'>
+                          <span className='red-text text-xl md:text-4xl text-center font-bold'>{minutes > 9 ? minutes : `0${minutes}`}</span>
+                          <span className='text-black text-center text-xs md:text-lg'>{minutes > 1 ? 'minutes' : 'minute'}</span>
+                        </span>
+                        <span className='bg-white rounded-lg flex flex-col gap-2 p-1 flex-1'>
+                          <span className='red-text text-xl md:text-4xl text-center font-bold'>{seconds > 9 ? seconds : `0${seconds}`}</span>
+                          <span className='text-black text-center text-xs md:text-lg'>{seconds > 1 ? 'seconds' : 'second'}</span>
+                        </span>
+                      </p>
+                    }
+                  }} />
+                </>
+              )
+            }
             <Link activeClass='activestatus' spy={true} to='paymentPage' smooth={true} duration={1000} offset={-150} className={`flex flex-col items-center cursor-pointer ${style.bgRed} rounded-lg px-2 py-1 md:px-5 md:py-3 hover:scale-105 shadow-sm drop-shadow-sm`}>
-              <span className='text-white text-base md:text-2xl font-bold uppercase'>Grab the {bf? 'black friday': 'Launch'} offer</span>
+              <span className='text-white text-base md:text-2xl font-bold uppercase'>Grab the {bf ? 'black friday' : 'Launch'} offer</span>
               <span className='text-white text-center text-sm md:text-2xl'> at an unbelievable discount!</span>
             </Link>
             {
@@ -554,6 +556,36 @@ export default function AcceleratorInd({ loc, data, bf=false }) {
             </h2>
           </div>
           <YoutubeneurStruction />
+        </section>
+        <section className="z-10 flex flex-col py-10 md:py-20 px-5 md:px-24 gap-5 md:gap-10 bg-white/5">
+          <div className={`flex flex-col md:flex-row gap-8 ${sora.className} items-center`}>
+            <div className={`flex flex-col gap-2 ${sora.className} md:w-6/12`}>
+              <h2 className={`text-lg md:text-4xl text-center md:text-left text-white font-bold shadow-lg drop-shadow-lg rounded-lg`}>
+                What is Youtubeneur Community?
+              </h2>
+              <p className={`text-base md:text-xl text-neutral-300 font-normal`}>
+                a new-age learning platform  that has both classroom and community capabilities combined at one place that promotes collaboration with other members on the go that enables learning in a community format instead of a one-one format powered by Gamification and Rewards that keeps you engaged and motivated at all times
+              </p>
+            </div>
+            <div className="flex flex-col flex-1">
+              <img src="https://i.ibb.co/Lp1JF83/2d56d4316ca88f30b804aab0c3776da1.jpg" alt="Akassh Ashok Gupta" className='rounded-xl shadow-lg drop-shadow-lg w-full' />
+            </div>
+          </div>
+        </section>
+        <section className="z-10 flex flex-col justify-center items-center py-10 md:py-20 px-5 md:px-24 gap-2 md:gap-5">
+          <h2 className={`text-lg md:text-4xl text-center md:text-left text-white font-bold shadow-lg drop-shadow-lg rounded-lg`}>
+            Youtubeneur is a community, that's simple, engaging & fun to use
+          </h2>
+          <p className={`text-base md:text-xl text-neutral-300 font-normal`}>
+            Meet and Collaborate with many others who are on the same journey & make it a fun ride. You are not alone.
+          </p>
+          <div className="flex flex-col gap-5">
+          {
+          Object.keys(aboutcommunitydata).map((key, index) => (
+            <AboutCommunity key={index} key2={key} data={aboutcommunitydata[key]} backgroundColor={'bg-white/0'} reverse={index % 2 === 0 ? false : true} />
+          ))
+        }
+            </div>
         </section>
         <section className="z-10 flex flex-col py-10 md:py-20 px-5 md:px-40 gap-5 md:gap-10 bg-white/5">
           <div className={`flex flex-col gap-2 ${sora.className}`}>
