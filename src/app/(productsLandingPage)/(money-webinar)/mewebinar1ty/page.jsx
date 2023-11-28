@@ -62,18 +62,24 @@ export const metadata = {
 export default function page() {
   
   return (
-    <main className={`flex flex-col items-center justify-center w-full ${dmSans.className}`}>
+    <main className={`flex flex-col items-center justify-center w-full ${dmSans.className} min-h-screen`}>
       <QuoraPage />
       <section className='flex flex-col items-center justify-center w-full webinar-background'>
         <div className='flex flex-col items-center justify-center bg-black/70 gap-2 md:gap-8 w-full flex-1 px-5 py-10 md:py-20 md:px-24'>
+          <h1 className='text-3xl md:text-5xl font-bold text-center text-white'>Thank You for Sharing your Details!</h1>
+          <p className='text-lg md:text-4xl font-normal text-center red-text md:w-7/12 uppercase'> Warning: Please Complete the below 2 Steps to confirm your Spot</p>
         <div className='flex flex-col items-center justify-center w-full md:w-6/12'>
             <img src='https://i.ibb.co/qxRMd4t/thumbnail2.webp' alt='What You Will Learn In The Webinar' className='w-full rounded-lg' draggable={false} />
           </div>
-          <h1 className='text-xl md:text-5xl font-bold text-center text-white'>Confirm your Spot🕘</h1>
+          <h1 className='text-xl md:text-5xl font-bold text-center text-white mt-5'>Confirm your Spot🕘</h1>
           <p className='text-lg md:text-2xl font-normal text-center text-white md:w-7/12'>
-          Click below to get added to our invitee list so that you  are served with all important communication regarding the event from here on.
+          <span className='red-text font-bold'>Step 1-</span> Click below to register on Zoom to get the invitation Link for the webinar
           </p>
-          <Link href='https://akassh.co/mewebinar6_2511' className='red-bg text-center text-white font-bold text-xl md:text-2xl px-10 py-3 rounded-3xl hover:bg-red-500 active:bg-red-700 hover:shadow-xl active:shadow-md hover:scale-105 active:scale-100 transition-all duration-200'>Join Now</Link>
+          <Link href='https://us06web.zoom.us/meeting/register/tZEtd--ppzgvHdagzP5cC9SbAmH3t_Q60wUf#/registration' className='red-bg text-center text-white font-bold text-xl md:text-2xl px-10 py-3 rounded-3xl hover:bg-red-500 active:bg-red-700 hover:shadow-xl active:shadow-md hover:scale-105 active:scale-100 transition-all duration-200'>Register Now</Link>
+          <p className='text-lg md:text-2xl font-normal text-center text-white md:w-7/12'>
+          <span className='red-text font-bold'>Step 2</span>- Click below to get added to our exclusive webinar group so that you  are served with all important communication regarding the event from here on.
+          </p>
+          <Link href='https://akassh.co/mewebinar6_2511' className='red-bg text-center text-white font-bold text-xl md:text-2xl px-10 py-3 rounded-3xl hover:bg-red-500 active:bg-red-700 hover:shadow-xl active:shadow-md hover:scale-105 active:scale-100 transition-all duration-200'>Join The Group</Link>
         </div>
       </section>
 

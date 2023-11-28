@@ -134,40 +134,6 @@ export default function AcceleratorInd({ loc, data, bf = false }) {
                   }
                 </div>
                 <div className="flex flex-col gap-2 md:gap-5 w-full md:w-10/12">
-                  {
-                    bf && (
-                      <>
-                        <div className="flex flex-col gap-2 w-5/12 self-center">
-                          <img src="/picture.png" alt="money back guarantee" className='w-full' />
-                        </div>
-                        <Countdown date={1700937000000} renderer={({ days, hours, minutes, seconds, completed }) => {
-                          if (completed) {
-                            return <span className='text-white text-center text-lg md:text-3xl'>Offer Closed</span>
-                          } else {
-                            return <p className='text-center text-sm md:text-2xl flex flex-row gap-2 self-center w-full md:w-9/12'>
-                              <span className='bg-white rounded-lg flex flex-col gap-2 p-1 flex-1'>
-                                {completed}
-                                <span className='red-text text-xl md:text-4xl text-center font-bold'>{days > 9 ? days : `0${days}`}</span>
-                                <span className='text-black text-center text-xs md:text-lg'>{days > 1 ? 'days' : 'day'}</span>
-                              </span>
-                              <span className='bg-white rounded-lg flex flex-col gap-2 p-1 flex-1'>
-                                <span className='red-text text-xl md:text-4xl text-center font-bold'>{hours > 9 ? hours : `0${hours}`}</span>
-                                <span className='text-black text-center text-xs md:text-lg'>{hours > 1 ? 'hours' : 'hour'}</span>
-                              </span>
-                              <span className='bg-white rounded-lg flex flex-col gap-2 p-1 flex-1'>
-                                <span className='red-text text-xl md:text-4xl text-center font-bold'>{minutes > 9 ? minutes : `0${minutes}`}</span>
-                                <span className='text-black text-center text-xs md:text-lg'>{minutes > 1 ? 'minutes' : 'minute'}</span>
-                              </span>
-                              <span className='bg-white rounded-lg flex flex-col gap-2 p-1 flex-1'>
-                                <span className='red-text text-xl md:text-4xl text-center font-bold'>{seconds > 9 ? seconds : `0${seconds}`}</span>
-                                <span className='text-black text-center text-xs md:text-lg'>{seconds > 1 ? 'seconds' : 'second'}</span>
-                              </span>
-                            </p>
-                          }
-                        }} />
-                      </>
-                    )
-                  }
                   <Link activeClass='activestatus' spy={true} to='paymentPage' smooth={true} duration={1000} offset={-150} className={`flex flex-col items-center cursor-pointer ${style.bgRed} rounded-lg px-2 py-1 md:px-5 md:py-3 hover:scale-105 shadow-sm drop-shadow-sm`}>
                     <span className='text-white text-base md:text-2xl font-bold uppercase'>Grab the {bf ? 'black friday' : 'Launch'} offer</span>
                     <span className='text-white text-center text-sm md:text-2xl'> at an unbelievable discount!</span>
@@ -210,39 +176,6 @@ export default function AcceleratorInd({ loc, data, bf = false }) {
               </div>
             </div>
             <div className="flex flex-col gap-2 w-full md:w-8/12">
-              {
-                bf && (
-                  <>
-                    <div className="flex flex-col gap-2 w-5/12 self-center">
-                      <img src="/picture.png" alt="money back guarantee" className='w-full' />
-                    </div>
-                    <Countdown date={1700937000000} renderer={({ days, hours, minutes, seconds, completed }) => {
-                      if (completed) {
-                        return <span className='text-white text-center text-lg md:text-3xl'>Offer Closed</span>
-                      } else {
-                        return <p className='text-center text-sm md:text-2xl flex flex-row gap-2 self-center w-full md:w-9/12'>
-                          <span className='bg-white rounded-lg flex flex-col gap-2 p-1 flex-1'>
-                            <span className='red-text text-xl md:text-4xl text-center font-bold'>{days > 9 ? days : `0${days}`}</span>
-                            <span className='text-black text-center text-xs md:text-lg'>{days > 1 ? 'days' : 'day'}</span>
-                          </span>
-                          <span className='bg-white rounded-lg flex flex-col gap-2 p-1 flex-1'>
-                            <span className='red-text text-xl md:text-4xl text-center font-bold'>{hours > 9 ? hours : `0${hours}`}</span>
-                            <span className='text-black text-center text-xs md:text-lg'>{hours > 1 ? 'hours' : 'hour'}</span>
-                          </span>
-                          <span className='bg-white rounded-lg flex flex-col gap-2 p-1 flex-1'>
-                            <span className='red-text text-xl md:text-4xl text-center font-bold'>{minutes > 9 ? minutes : `0${minutes}`}</span>
-                            <span className='text-black text-center text-xs md:text-lg'>{minutes > 1 ? 'minutes' : 'minute'}</span>
-                          </span>
-                          <span className='bg-white rounded-lg flex flex-col gap-2 p-1 flex-1'>
-                            <span className='red-text text-xl md:text-4xl text-center font-bold'>{seconds > 9 ? seconds : `0${seconds}`}</span>
-                            <span className='text-black text-center text-xs md:text-lg'>{seconds > 1 ? 'seconds' : 'second'}</span>
-                          </span>
-                        </p>
-                      }
-                    }} />
-                  </>
-                )
-              }
               <Link activeClass='activestatus' spy={true} to='paymentPage' smooth={true} duration={1000} offset={-150} className={`flex flex-col items-center cursor-pointer ${style.bgRed} rounded-lg px-2 py-1 md:px-5 md:py-3 hover:scale-105 shadow-sm drop-shadow-sm`}>
                 <span className='text-white text-base md:text-2xl font-bold uppercase'>Grab the {bf ? 'black friday' : 'Launch'} offer</span>
                 <span className='text-white text-center text-sm md:text-2xl'> at an unbelievable discount!</span>
@@ -276,8 +209,21 @@ export default function AcceleratorInd({ loc, data, bf = false }) {
                 4. 10 Bonuses
               </span>
               <span className='text-base md:text-2xl md:tracking-wide text-left text-neutral-100'>
-                5. Life time Membership Option with Free Video Zoom Consulting Call with Akassh on
+                5. Life time Membership Option with Free Video Zoom Consulting Call with Akassh
               </span>
+              <div className="flex flex-col gap-5 w-full md:w-8/12 mt-5">
+            <Link activeClass='activestatus' spy={true} to='paymentPage' smooth={true} duration={1000} offset={-150} className={`flex flex-col items-center cursor-pointer ${style.bgRed} rounded-lg px-2 py-1 md:px-5 md:py-3 hover:scale-105 shadow-sm drop-shadow-sm`}>
+              <span className='text-white text-base md:text-2xl font-bold uppercase'>Grab the {bf ? 'black friday' : 'Launch'} offer</span>
+              <span className='text-white text-center text-sm md:text-2xl'> at an unbelievable discount!</span>
+            </Link>
+            {
+              data && (
+                <Link2 className='self-center text-xl text-white hover:underline' href={`${url}/${data.no.query}?product=${data.no.product}`} >
+                  No, I don't want this offer
+                </Link2>
+              )
+            }
+          </div>
             </div>
             <div className="flex flex-col gap-5 items-center justify-end flex-1 ">
               <img src="https://i.ibb.co/JRjfHhr/accelerator.png" alt="struction" className="w-8/12" draggable={false} />
@@ -291,6 +237,19 @@ export default function AcceleratorInd({ loc, data, bf = false }) {
             </h2>
           </div>
           <YoutubeneurStruction />
+          <div className="flex flex-col gap-5 self-center w-full md:w-5/12">
+            <Link activeClass='activestatus' spy={true} to='paymentPage' smooth={true} duration={1000} offset={-150} className={`flex flex-col items-center cursor-pointer ${style.bgRed} rounded-lg px-2 py-1 md:px-5 md:py-3 hover:scale-105 shadow-sm drop-shadow-sm`}>
+              <span className='text-white text-base md:text-2xl font-bold uppercase'>Grab the {bf ? 'black friday' : 'Launch'} offer</span>
+              <span className='text-white text-center text-sm md:text-2xl'> at an unbelievable discount!</span>
+            </Link>
+            {
+              data && (
+                <Link2 className='self-center text-xl text-white hover:underline' href={`${url}/${data.no.query}?product=${data.no.product}`} >
+                  No, I don't want this offer
+                </Link2>
+              )
+            }
+          </div>
         </section>
         <section className="z-10 flex flex-col items-center py-10 md:py-20 px-5 md:px-24 gap-5 md:gap-14">
           <h2 className={`text-lg ${style.bgRed} py-2 px-5 md:text-3xl text-center text-white font-bold shadow-lg drop-shadow-lg rounded-lg`}>
@@ -322,6 +281,19 @@ export default function AcceleratorInd({ loc, data, bf = false }) {
               Object.keys(aboutcommunitydata).map((key, index) => (
                 <AboutCommunity key={index} key2={key} data={aboutcommunitydata[key]} backgroundColor={'bg-white/0'} reverse={index % 2 === 0 ? false : true} />
               ))
+            }
+          </div>
+          <div className="flex flex-col gap-5 self-center w-full md:w-8/12">
+            <Link activeClass='activestatus' spy={true} to='paymentPage' smooth={true} duration={1000} offset={-150} className={`flex flex-col items-center cursor-pointer ${style.bgRed} rounded-lg px-2 py-1 md:px-5 md:py-3 hover:scale-105 shadow-sm drop-shadow-sm`}>
+              <span className='text-white text-base md:text-2xl font-bold uppercase'>Grab the {bf ? 'black friday' : 'Launch'} offer</span>
+              <span className='text-white text-center text-sm md:text-2xl'> at an unbelievable discount!</span>
+            </Link>
+            {
+              data && (
+                <Link2 className='self-center text-xl text-white hover:underline' href={`${url}/${data.no.query}?product=${data.no.product}`} >
+                  No, I don't want this offer
+                </Link2>
+              )
             }
           </div>
         </section>
@@ -365,39 +337,6 @@ export default function AcceleratorInd({ loc, data, bf = false }) {
             </div>
           </div>
           <div className="flex flex-col gap-2 self-center w-full md:w-8/12">
-            {
-              bf && (
-                <>
-                  <div className="flex flex-col gap-2 w-5/12 self-center">
-                    <img src="/picture.png" alt="money back guarantee" className='w-full' />
-                  </div>
-                  <Countdown date={1700937000000} renderer={({ days, hours, minutes, seconds, completed }) => {
-                    if (completed) {
-                      return <span className='text-white text-center text-lg md:text-3xl'>Offer Closed</span>
-                    } else {
-                      return <p className='text-center text-sm md:text-2xl flex flex-row gap-2 self-center w-full md:w-9/12'>
-                        <span className='bg-white rounded-lg flex flex-col gap-2 p-1 flex-1'>
-                          <span className='red-text text-xl md:text-4xl text-center font-bold'>{days > 9 ? days : `0${days}`}</span>
-                          <span className='text-black text-center text-xs md:text-lg'>{days > 1 ? 'days' : 'day'}</span>
-                        </span>
-                        <span className='bg-white rounded-lg flex flex-col gap-2 p-1 flex-1'>
-                          <span className='red-text text-xl md:text-4xl text-center font-bold'>{hours > 9 ? hours : `0${hours}`}</span>
-                          <span className='text-black text-center text-xs md:text-lg'>{hours > 1 ? 'hours' : 'hour'}</span>
-                        </span>
-                        <span className='bg-white rounded-lg flex flex-col gap-2 p-1 flex-1'>
-                          <span className='red-text text-xl md:text-4xl text-center font-bold'>{minutes > 9 ? minutes : `0${minutes}`}</span>
-                          <span className='text-black text-center text-xs md:text-lg'>{minutes > 1 ? 'minutes' : 'minute'}</span>
-                        </span>
-                        <span className='bg-white rounded-lg flex flex-col gap-2 p-1 flex-1'>
-                          <span className='red-text text-xl md:text-4xl text-center font-bold'>{seconds > 9 ? seconds : `0${seconds}`}</span>
-                          <span className='text-black text-center text-xs md:text-lg'>{seconds > 1 ? 'seconds' : 'second'}</span>
-                        </span>
-                      </p>
-                    }
-                  }} />
-                </>
-              )
-            }
             <Link activeClass='activestatus' spy={true} to='paymentPage' smooth={true} duration={1000} offset={-150} className={`flex flex-col items-center cursor-pointer ${style.bgRed} rounded-lg px-2 py-1 md:px-5 md:py-3 hover:scale-105 shadow-sm drop-shadow-sm`}>
               <span className='text-white text-base md:text-2xl font-bold uppercase'>Grab the {bf ? 'black friday' : 'Launch'} offer</span>
               <span className='text-white text-center text-sm md:text-2xl'> at an unbelievable discount!</span>
@@ -421,39 +360,6 @@ export default function AcceleratorInd({ loc, data, bf = false }) {
             <div className="flex flex-col gap-12 w-full">
               <AccRibbonBonus data={['community2', 'donot', 'scriptSecret', 'acc1', 'acc2', 'acc3', 'acc4', 'acc5', 'acc6',]} loc={loc} />
               <div className="flex flex-col self-center gap-2 w-full md:w-8/12">
-                {
-                  bf && (
-                    <>
-                      <div className="flex flex-col gap-2 w-5/12 self-center">
-                        <img src="/picture.png" alt="money back guarantee" className='w-full' />
-                      </div>
-                      <Countdown date={1700937000000} renderer={({ days, hours, minutes, seconds, completed }) => {
-                        if (completed) {
-                          return <span className='text-white text-center text-lg md:text-3xl'>Offer Closed</span>
-                        } else {
-                          return <p className='text-center text-sm md:text-2xl flex flex-row gap-2 self-center w-full md:w-9/12'>
-                            <span className='bg-white rounded-lg flex flex-col gap-2 p-1 flex-1'>
-                              <span className='red-text text-xl md:text-4xl text-center font-bold'>{days > 9 ? days : `0${days}`}</span>
-                              <span className='text-black text-center text-xs md:text-lg'>{days > 1 ? 'days' : 'day'}</span>
-                            </span>
-                            <span className='bg-white rounded-lg flex flex-col gap-2 p-1 flex-1'>
-                              <span className='red-text text-xl md:text-4xl text-center font-bold'>{hours > 9 ? hours : `0${hours}`}</span>
-                              <span className='text-black text-center text-xs md:text-lg'>{hours > 1 ? 'hours' : 'hour'}</span>
-                            </span>
-                            <span className='bg-white rounded-lg flex flex-col gap-2 p-1 flex-1'>
-                              <span className='red-text text-xl md:text-4xl text-center font-bold'>{minutes > 9 ? minutes : `0${minutes}`}</span>
-                              <span className='text-black text-center text-xs md:text-lg'>{minutes > 1 ? 'minutes' : 'minute'}</span>
-                            </span>
-                            <span className='bg-white rounded-lg flex flex-col gap-2 p-1 flex-1'>
-                              <span className='red-text text-xl md:text-4xl text-center font-bold'>{seconds > 9 ? seconds : `0${seconds}`}</span>
-                              <span className='text-black text-center text-xs md:text-lg'>{seconds > 1 ? 'seconds' : 'second'}</span>
-                            </span>
-                          </p>
-                        }
-                      }} />
-                    </>
-                  )
-                }
                 <Link activeClass='activestatus' spy={true} to='paymentPage' smooth={true} duration={1000} offset={-150} className={`flex flex-col items-center cursor-pointer ${style.bgRed} rounded-lg px-2 py-1 md:px-5 md:py-3 hover:scale-105 shadow-sm drop-shadow-sm`}>
                   <span className='text-white text-base md:text-2xl font-bold uppercase'>Grab the {bf ? 'black friday' : 'Launch'} offer</span>
                   <span className='text-white text-center text-sm md:text-2xl'> at an unbelievable discount!</span>
@@ -516,39 +422,6 @@ export default function AcceleratorInd({ loc, data, bf = false }) {
             </div>
           </div>
           <div className="flex flex-col gap-5 self-center w-full md:w-8/12">
-            {
-              bf && (
-                <>
-                  <div className="flex flex-col gap-2 w-5/12 self-center">
-                    <img src="/picture.png" alt="money back guarantee" className='w-full' />
-                  </div>
-                  <Countdown date={1700937000000} renderer={({ days, hours, minutes, seconds, completed }) => {
-                    if (completed) {
-                      return <span className='text-white text-center text-lg md:text-3xl'>Offer Closed</span>
-                    } else {
-                      return <p className='text-center text-sm md:text-2xl flex flex-row gap-2 self-center w-full md:w-9/12'>
-                        <span className='bg-white rounded-lg flex flex-col gap-2 p-1 flex-1'>
-                          <span className='red-text text-xl md:text-4xl text-center font-bold'>{days > 9 ? days : `0${days}`}</span>
-                          <span className='text-black text-center text-xs md:text-lg'>{days > 1 ? 'days' : 'day'}</span>
-                        </span>
-                        <span className='bg-white rounded-lg flex flex-col gap-2 p-1 flex-1'>
-                          <span className='red-text text-xl md:text-4xl text-center font-bold'>{hours > 9 ? hours : `0${hours}`}</span>
-                          <span className='text-black text-center text-xs md:text-lg'>{hours > 1 ? 'hours' : 'hour'}</span>
-                        </span>
-                        <span className='bg-white rounded-lg flex flex-col gap-2 p-1 flex-1'>
-                          <span className='red-text text-xl md:text-4xl text-center font-bold'>{minutes > 9 ? minutes : `0${minutes}`}</span>
-                          <span className='text-black text-center text-xs md:text-lg'>{minutes > 1 ? 'minutes' : 'minute'}</span>
-                        </span>
-                        <span className='bg-white rounded-lg flex flex-col gap-2 p-1 flex-1'>
-                          <span className='red-text text-xl md:text-4xl text-center font-bold'>{seconds > 9 ? seconds : `0${seconds}`}</span>
-                          <span className='text-black text-center text-xs md:text-lg'>{seconds > 1 ? 'seconds' : 'second'}</span>
-                        </span>
-                      </p>
-                    }
-                  }} />
-                </>
-              )
-            }
             <Link activeClass='activestatus' spy={true} to='paymentPage' smooth={true} duration={1000} offset={-150} className={`flex flex-col items-center cursor-pointer ${style.bgRed} rounded-lg px-2 py-1 md:px-5 md:py-3 hover:scale-105 shadow-sm drop-shadow-sm`}>
               <span className='text-white text-base md:text-2xl font-bold uppercase'>Grab the {bf ? 'black friday' : 'Launch'} offer</span>
               <span className='text-white text-center text-sm md:text-2xl'> at an unbelievable discount!</span>
@@ -572,39 +445,6 @@ export default function AcceleratorInd({ loc, data, bf = false }) {
             <WhoIsThisFor />
           </div>
           <div className="flex flex-col gap-5 self-center w-full md:w-8/12">
-            {
-              bf && (
-                <>
-                  <div className="flex flex-col gap-2 w-5/12 self-center">
-                    <img src="/picture.png" alt="money back guarantee" className='w-full' />
-                  </div>
-                  <Countdown date={1700937000000} renderer={({ days, hours, minutes, seconds, completed }) => {
-                    if (completed) {
-                      return <span className='text-white text-center text-lg md:text-3xl'>Offer Closed</span>
-                    } else {
-                      return <p className='text-center text-sm md:text-2xl flex flex-row gap-2 self-center w-full md:w-9/12'>
-                        <span className='bg-white rounded-lg flex flex-col gap-2 p-1 flex-1'>
-                          <span className='red-text text-xl md:text-4xl text-center font-bold'>{days > 9 ? days : `0${days}`}</span>
-                          <span className='text-black text-center text-xs md:text-lg'>{days > 1 ? 'days' : 'day'}</span>
-                        </span>
-                        <span className='bg-white rounded-lg flex flex-col gap-2 p-1 flex-1'>
-                          <span className='red-text text-xl md:text-4xl text-center font-bold'>{hours > 9 ? hours : `0${hours}`}</span>
-                          <span className='text-black text-center text-xs md:text-lg'>{hours > 1 ? 'hours' : 'hour'}</span>
-                        </span>
-                        <span className='bg-white rounded-lg flex flex-col gap-2 p-1 flex-1'>
-                          <span className='red-text text-xl md:text-4xl text-center font-bold'>{minutes > 9 ? minutes : `0${minutes}`}</span>
-                          <span className='text-black text-center text-xs md:text-lg'>{minutes > 1 ? 'minutes' : 'minute'}</span>
-                        </span>
-                        <span className='bg-white rounded-lg flex flex-col gap-2 p-1 flex-1'>
-                          <span className='red-text text-xl md:text-4xl text-center font-bold'>{seconds > 9 ? seconds : `0${seconds}`}</span>
-                          <span className='text-black text-center text-xs md:text-lg'>{seconds > 1 ? 'seconds' : 'second'}</span>
-                        </span>
-                      </p>
-                    }
-                  }} />
-                </>
-              )
-            }
             <Link activeClass='activestatus' spy={true} to='paymentPage' smooth={true} duration={1000} offset={-150} className={`flex flex-col items-center cursor-pointer ${style.bgRed} rounded-lg px-2 py-1 md:px-5 md:py-3 hover:scale-105 shadow-sm drop-shadow-sm`}>
               <span className='text-white text-base md:text-2xl font-bold uppercase'>Grab the {bf ? 'black friday' : 'Launch'} offer</span>
               <span className='text-white text-center text-sm md:text-2xl'> at an unbelievable discount!</span>
