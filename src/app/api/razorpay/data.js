@@ -19,6 +19,10 @@ const data = {
     amount: 2499,
     notes: "accelerator",
   },
+  "accelerator-2": {
+    amount: 4999,
+    notes: "accelerator",
+  },
   "dfy": {
     amount: 5999,
     notes: "dfy",

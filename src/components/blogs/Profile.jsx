@@ -22,7 +22,7 @@ export default async function Profile() {
   return (
     <div className='flex flex-col flex-1 gap-1 items-center self-center md:self-start max-w-xs justify-center w-full bg-neutral-200 p-2 md:p-4 pb-5 md:pb-10 rounded-lg'>
       <div className='flex flex-col gap-1 items-center justify-center'>
-        <img src='https://i.ibb.co/Xy50XVK/image.png' alt='Akassh Ashok Gupta' className='w-full' draggable={false} />
+        <img src='http://peepoyenetwork.com/wp-content/uploads/2023/12/image.png' alt='Akassh Ashok Gupta' className='w-full' draggable={false} />
       </div>
       <div className='flex flex-col gap-1 md:gap-2 justify-center w-full'>
         <h2 className='text-xl md:text-2xl font-bold text-left text-neutral-800'>Hi, I Am Akassh</h2>
