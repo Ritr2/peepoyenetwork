@@ -20,7 +20,7 @@ const data = {
     notes: "accelerator",
   },
   "accelerator-2": {
-    amount: 1,
+    amount: 4999,
     notes: "accelerator",
   },
   "dfy": {
