@@ -3,7 +3,7 @@ const data = {
       h2: 'Discuss, chat, connect',
       p: `Robust and intuitive, Youtubeneur Skool gets out of the way and let's you and your group communicate together.`,
       image: {
-        src: 'https://i.ibb.co/ZMPqkDF/COMMUNITY.png',
+        src: 'https://i.ibb.co/LhW39hQ/COMMUNITY-2.png',
         alt: 'Community',
       },
     },
@@ -11,7 +11,7 @@ const data = {
       h2: 'Watch & Learn At Your Own Pace',
       p: `From masterclass to mastermind, Youtubeneur Skool gives you the tools you need to learn & collaborate seamlessly.`,
       image: {
-        src: 'https://i.ibb.co/HCPZSNJ/CLASSROOM.png',
+        src: 'https://i.ibb.co/FsVh4t9/CLASSROOM-1.png',
         alt: 'Classrooms',
       },
     },

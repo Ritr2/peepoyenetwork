@@ -265,7 +265,7 @@ export default function AcceleratorInd({ loc, data, bf = false }) {
               </p>
             </div>
             <div className="flex flex-col flex-1">
-              <img src="https://i.ibb.co/Lp1JF83/2d56d4316ca88f30b804aab0c3776da1.jpg" alt="Akassh Ashok Gupta" className='rounded-xl shadow-lg drop-shadow-lg w-full' />
+              <img src="https://i.ibb.co/LRptmdY/community-1.png" alt="Akassh Ashok Gupta" className='rounded-xl shadow-lg drop-shadow-lg w-full' />
             </div>
           </div>
         </section>
