@@ -80,7 +80,7 @@ export default function page() {
               </div>
             </div>
             <div className="relative flex flex-col items-center justify-center flex-1 p-1 md:p-3 gap-1 md:gap-2 rounded-lg bg-neutral-100 border-[4px] border-red-600 border-dashed">
-              <span className='text-xl md:text-2xl font-bold text-center'>Date <span className='red-text'>|</span> Saturday <span className='red-text'>|</span> 9PM to 10:30PM IST</span>
+              <span className='text-xl md:text-2xl font-bold text-center'>Date <span className='red-text'>|</span> 12th December 2023<span className='red-text'>|</span> 8PM to 9:30PM IST</span>
               <Form text="Signup for LIVE Webinar" />
               <span className="text-base md:text-xl text-center text-neutral-500 font-bold"><span className='font-black red-text text-4xl'>+</span><br />Get my Influencer Guide on how to become a Top Influencer Fast totally Free with this Webinar</span>
               <span className="text-base md:text-2xl text-center red-text font-bold rounded-xl mt-5">No Recordings. No Replays. Only LIVE Access</span>
