@@ -14,7 +14,7 @@ export async function GET(req) {
 
   let monthlyData = new Set();
 
-  const monthlyArchive = data.reduce((acc, curr) => {
+  data.reduce((acc, curr) => {
     const date = new Date(curr.date);
     const month = date.getMonth() + 1;
     const year = date.getFullYear();
@@ -31,6 +31,8 @@ export async function GET(req) {
     const bDate = new Date(b);
     return bDate - aDate;
   });
+
+  monthlyData = monthlyData.slice(0, 12)
 
 
   const category = temp3.map((cat) => {
