@@ -122,6 +122,18 @@ const data = [
         width: 'w-full',
       },
     },
+  },
+  {
+    product: 'audit-call',
+    query: {
+      h1: "Congratulations!!! <br/> YOUR <span className='text-red-600'>AUDIT CALL LINK</span> WILL BE SENT TO YOUR EMAIL...",
+      p1: "<span className='text-red-700'>Warning: It's has been observed that sometimes the emails land in the spam folder, so make sure that you add 'akassh@peepoye.com' in the contact list of your email account or check your spam folder.</span>",
+      image: {
+        src: 'http://peepoyenetwork.com/wp-content/uploads/2023/12/audit-call.png',
+        alt: 'Audit-call',
+        width: 'w-8/12',
+      },
+    },
   }
 ]
 
