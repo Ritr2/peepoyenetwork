@@ -13,6 +13,50 @@ const dmSans = DM_Sans({
   subsets: ['latin'],
 })
 
+export const metadata = {
+  title: `YouTube Channel Audit Call`,
+  description: `Are you struggling to grow your YouTube channel? Get a personalized roadmap to success with our 45-minute 1x1 video call.`,
+  images: [
+    {
+      url: 'http://peepoyenetwork.com/wp-content/uploads/2023/12/audit-call.png',
+      width: 600,
+      height: 500,
+      alt: `YouTube Channel Audit Call`,
+    },
+  ],
+  url: 'https://peepoye.com/audit-call',
+  type: 'website',
+  keywords: [ 'youtube channel audit', 'youtube channel audit call', 'youtube channel audit call india', 'youtube channel audit call inr', 'youtube channel audit call price', 'youtube channel audit call cost', 'youtube channel audit call price inr', 'youtube channel audit call cost inr', 'youtube channel audit call price india', 'youtube channel audit call cost india', 'youtube channel audit call price inr india', 'youtube channel audit call cost inr india', 'youtube channel audit call price inr in india', 'youtube channel audit call cost inr in india', 'youtube channel audit call price india inr', 'youtube channel audit call cost india inr', 'youtube channel audit call price inr india inr', 'youtube channel audit call cost inr india inr', 'youtube channel audit call price inr in india inr', 'youtube channel audit call cost inr in india inr', 'youtube channel audit call price inr in india inr', 'youtube channel audit call cost inr in india inr' ],
+  openGraph: {
+    title: `YouTube Channel Audit Call`,
+    description: `Are you struggling to grow your YouTube channel? Get a personalized roadmap to success with our 45-minute 1x1 video call.`,
+    images: [
+      {
+        url: 'http://peepoyenetwork.com/wp-content/uploads/2023/12/audit-call.png',
+        width: 600,
+        height: 500,
+        alt: `YouTube Channel Audit Call`,
+      }
+    ],
+    url: 'https://peepoye.com/audit-call',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: `YouTube Channel Audit Call`,
+    description: `Are you struggling to grow your YouTube channel? Get a personalized roadmap to success with our 45-minute 1x1 video call.`,
+    images: [
+      {
+      url: 'http://peepoyenetwork.com/wp-content/uploads/2023/12/audit-call.png',
+      width: 600,
+      height: 500,
+      alt: `YouTube Channel Audit Call`,
+    }
+  ],
+    creator: '@peepoye',
+  },
+}
+
 const roadmap = [
   {
     title: 'In-Depth Analysis',
