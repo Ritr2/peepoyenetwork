@@ -26,7 +26,7 @@ export async function getSocialBlogs(page=false, search=false, all=false) {
 }
 
 const getDailyQuote = async() => {
-  const res = await fetch(`${apiUrl}/global_configs/daily_quote`, { next: { revalidate: 10000 } })
+  const res = await fetch(`${apiUrl}/global_configs/daily_quote`, { cache: 'no-cache' })
   if (!res.ok) {
     throw new Error('Failed to fetch data')
   }
