@@ -1,7 +1,7 @@
 import React from 'react'
 import { DM_Sans } from 'next/font/google'
 import { notFound } from 'next/navigation'
-import url from '@/utils/url'
+import url, {apiUrl} from '@/utils/url'
 import Link from 'next/link'
 import SideBar from '@/components/social-blogs/SideBar'
 import BlogsList from '@/components/social-blogs/BlogsList'
@@ -25,6 +25,14 @@ export async function getSocialBlogs(page=false, search=false, all=false) {
   return res.json()
 }
 
+const getDailyQuote = async() => {
+  const res = await fetch(`${apiUrl}/global_configs/daily_quote`, { next: { revalidate: 10000 } })
+  if (!res.ok) {
+    throw new Error('Failed to fetch data')
+  }
+  return res.json()
+}
+
 export default async function page({ searchParams }) {
   let page = 1;
   let search = false;
@@ -36,11 +44,13 @@ export default async function page({ searchParams }) {
   }
   const { data, totalPage } = await getSocialBlogs(page, search);
 
+  const {config_value} = await getDailyQuote();
+
   return (
     <main className={`relative flex flex-col items-center mt-16 ${dmSans.className} overflow-x-hidden`}>
       <section className="flex flex-col md:flex-row w-full bg-neutral-200 items-center justify-center px-2 py-12 md:py-24 md:px-20">
         <div className="flex flex-col justify-center items-center flex-1 gap-2 md:gap-5">
-          <h1 className="text-3xl md:text-5xl font-bold text-center md:text-left text-neutral-700">STORIES THAT IMPACT OUR SOCIAL ENVIRONMENT</h1>
+          <h1 className="text-3xl md:text-5xl font-bold text-center md:text-left text-neutral-700">{config_value}</h1>
           {
             search && (
               <p className='text-base md:text-lg text-center md:text-left text-neutral-600'>Search Results for "{search}"</p>
