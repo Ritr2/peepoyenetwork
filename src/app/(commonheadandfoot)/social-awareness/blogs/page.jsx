@@ -50,7 +50,7 @@ export default async function page({ searchParams }) {
     <main className={`relative flex flex-col items-center mt-16 ${dmSans.className} overflow-x-hidden`}>
       <section className="flex flex-col md:flex-row w-full bg-neutral-200 items-center justify-center px-2 py-12 md:py-24 md:px-20">
         <div className="flex flex-col justify-center items-center flex-1 gap-2 md:gap-5">
-          <h1 className="text-3xl md:text-5xl font-bold text-center md:text-left text-neutral-700">{config_value}</h1>
+          <h1 className="text-3xl md:text-5xl font-bold text-center text-neutral-700">{config_value}</h1>
           {
             search && (
               <p className='text-base md:text-lg text-center md:text-left text-neutral-600'>Search Results for "{search}"</p>
