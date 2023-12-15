@@ -72,7 +72,7 @@ export default function Home() {
             <p className="text-md md:text-2xl text-center md:text-left text-neutral-700">Content, Courses & Masterminds</p>
             <img src="https://i.ibb.co/L0LvZhh/akassh-signature.png" alt="Akassh ashok Gupta" className="w-8/12 md:w-5/12 mt-3 self-center md:self-start" />
           </div>
-          <div className="flex flex-col items-center justify-center flex-1">
+          <div className="flex flex-col items-center justify-center md:w-6/12">
             <img src="https://i.ibb.co/GdRJ5sw/akasshashokgupta.webp" alt="Akassh ashok Gupta" className="w-full" draggable={false} />
           </div>
         </section>
