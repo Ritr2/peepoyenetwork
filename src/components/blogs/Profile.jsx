@@ -1,12 +1,12 @@
 import React from 'react'
-import url from '@/utils/url'
+import url, {apiUrl} from '@/utils/url'
 import { notFound } from 'next/navigation'
 import Link from 'next/link';
 
 const fetchCategories = async () => {
   let res;
   try {
-    res = await fetch(`${url}/api/personal-blog/categories`)
+    res = await fetch(`${apiUrl}/blog_categories?blog_category_type=personal`)
     if (!res.ok) {
       throw new Error('Failed to fetch data')
     }
