@@ -57,7 +57,7 @@ export default async function page({ searchParams }) {
             <h1 className="text-3xl md:text-5xl font-bold text-center md:text-left text-neutral-700">BLOG</h1>
           </div>
         </section>
-        <div className='flex flex-col md:flex-row w-full gap-8 px-7 py-7 md:py-14 md:px-36'>
+        <div className='flex flex-col md:flex-row w-full gap-8 px-7 py-7 md:py-14 md:px-24'>
           <div className=' flex flex-col w-full flex-1'>
           <BlogsList data={blogs} totalPage={pageCount} page={page} search={search} afterurl='blogs' />
           </div>
