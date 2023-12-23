@@ -3,10 +3,10 @@ import React, { useEffect, useState } from 'react'
 import Link from 'next/link'
 import converblogtomonth from '@/utils/social-blogs/convertblogtomonths'
 import Search from './Search'
+import ReactPlayer from "react-player/lazy";
 
-export default function SideBarClient({data, search, afterurl}) {
+export default function SideBarClient({ data, search, afterurl, videoLink }) {
   const [scrollDown, setScrollDown] = useState(true); // Initialize with false
-
   useEffect(() => {
     let oldScroll = 0;
     const handleScroll = () => {
@@ -18,7 +18,6 @@ export default function SideBarClient({data, search, afterurl}) {
       oldScroll = window.scrollY;
     };
     window.addEventListener('scroll', handleScroll);
-
     // Cleanup the event listener when component unmounts
     return () => {
       window.removeEventListener('scroll', handleScroll);
@@ -30,6 +29,20 @@ export default function SideBarClient({data, search, afterurl}) {
       <div className='flex flex-col w-full gap-5 bg-neutral-100 p-5 rounded-xl'>
         <div className='flex flex-row gap-2 border-b-2 border-neutral-300 pb-8'>
           <Search search={search} afterurl={afterurl} />
+        </div>
+        <div className='flex flex-row gap-2 border-b-2 border-neutral-300 pb-8'>
+          <div className='w-full md:h-[195px] rounded-lg overflow-hidden'>
+            <ReactPlayer
+              url={videoLink}
+              width={'100%'}
+              height={'100%'}
+              style={{
+                selfAlign: 'center',
+                margin: 'auto',
+              }}
+              controls={true}
+            />
+          </div>
         </div>
         <div className='flex flex-col gap-2 pb-8 border-b-2 border-neutral-300'>
           <h2 className='text-2xl font-bold text-blue-800'>Recent Blogs</h2>
