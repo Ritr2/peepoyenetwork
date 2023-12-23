@@ -3,14 +3,14 @@ import { getSocialBlogs } from "@/app/(commonheadandfoot)/social-awareness/blogs
 import url from "@/utils/url";
 
 export default async function sitemap() {
-  let blogs = await getBlogs();
+  // let blogs = await getBlogs();
   let socialBlogs = await getSocialBlogs(false,false,true);
-  let blogUrls = blogs.map(blog => {
-    return {
-      url: `${url}/blogs/${blog.slug}`,
-      lastModified: new Date(blog.date),
-    }
-  })
+  // let blogUrls = blogs.map(blog => {
+  //   return {
+  //     url: `${url}/blogs/${blog.slug}`,
+  //     lastModified: new Date(blog.date),
+  //   }
+  // })
   let socialBlogUrls = socialBlogs.data.map(blog => {
     return {
       url: `${url}/social-awareness/blogs/${blog.slug}`,
@@ -84,7 +84,7 @@ export default async function sitemap() {
       url: `${url}/terms-of-service`,
       lastModified: date,
     },
-    ...blogUrls,
+    // ...blogUrls,
     ...socialBlogUrls,
   ]
 }

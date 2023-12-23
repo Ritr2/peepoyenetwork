@@ -29,7 +29,6 @@ const getVideoLink = async() => {
 export default async function SideBar({ search, afterurl }) {
   const data = await getrecentfiveblogs();
   const {config_value} = await getVideoLink();
-  console.log(config_value);
   return (
     <SideBarClient data={data} search={search} afterurl={afterurl} videoLink={config_value} />
   )
