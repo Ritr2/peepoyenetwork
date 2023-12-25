@@ -71,11 +71,11 @@ export default async function page({ searchParams }) {
           <img src='https://i.ibb.co/D77w8qy/thankyou.png' alt="Akassh ashok Gupta" className="w-full" draggable={false} />
         </div>
         <div className="flex flex-col justify-center gap-2 md:gap-5 pb-8 w-full md:w-6/12">
-          <h1 className="text-xl md:text-4xl font-bold text-center md:text-left text-neutral-700">To Learn More from <br /><span className='text-red-600'>Akassh Ashok Gupta</span>
+          <h1 className="text-xl md:text-4xl font-bold text-center md:text-left text-neutral-700">To Learn More from <br /><span className={`${data?.specialTextColor ?? 'text-red-700'}`}>Akassh Ashok Gupta</span>
           </h1>
           <p className="text-lg md:text-xl font-medium text-center md:text-left text-neutral-600">You can start your learning by reading some insightful Blog by Akassh.</p>
           <div className="flex flex-col w-full md:w-8/12">
-            <Link href='/blogs' className='flex flex-col items-center text-white font-bold w-full p-3 rounded-lg bg-red-700 hover:scale-105 active:scale-95 transform transition-all duration-200 ease-in-out'>
+            <Link href='/blogs' className={`flex flex-col items-center text-white font-bold w-full p-3 rounded-lg ${data?.specialBgColor ?? 'bg-red-700'} hover:scale-105 active:scale-95 transform transition-all duration-200 ease-in-out`}>
               CLICK TO READ THE BLOG
             </Link>
           </div>

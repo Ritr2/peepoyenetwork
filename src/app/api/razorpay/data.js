@@ -35,6 +35,10 @@ const data = {
     amount: 2499,
     notes: "auditCall",
   },
+  "viral-video-script": {
+    amount: 499,
+    notes: "viralVideoScript",
+  },
 }
 
 export default data;

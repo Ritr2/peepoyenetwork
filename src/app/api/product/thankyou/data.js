@@ -134,6 +134,20 @@ const data = [
         width: 'w-8/12',
       },
     },
+  },
+  {
+    product: 'scripting-template',
+    query: {
+      h1: "Congratulations!!! <br/> YOUR <span className='red-text'>SCRIPTING TEMPLATE</span> WILL BE SENT TO YOUR EMAIL...",
+      p1: "<span className='red-text'>Warning: It's has been observed that sometimes the emails land in the spam folder, so make sure that you add 'akassh@peepoye.com' in the contact list of your email account or check your spam folder.</span>",
+      image: {
+        src: 'https://peepoyenetwork.com/wp-content/uploads/2023/12/scripting-template.png',
+        alt: 'Audit-call',
+        width: 'w-8/12',
+      },
+    },
+    specialTextColor: 'red-text',
+    specialBgColor: 'red-bg',
   }
 ]
 
