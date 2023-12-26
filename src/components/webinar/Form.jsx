@@ -5,7 +5,7 @@ import { IoClose } from 'react-icons/io5';
 import DynamicForm from './DynamicForm';
 
 
-export default function Form({buttonColor={normal:'red-bg', hover:'red-400', active:'red-900'}, text='Register Now'}) {
+export default function Form({buttonColor={normal:'red-bg', hover:'red-400', active:'red-900'}, text='Register Now', textSize='text-base md:text-3xl'}) {
   const [formVisible, setFormVisible] = React.useState(false);
   const variants = {
     hidden: {
@@ -24,7 +24,7 @@ export default function Form({buttonColor={normal:'red-bg', hover:'red-400', act
 
   return (
     <Fragment>
-      <button className={`flex rounded-lg py-4 text-base md:text-3xl font-bold flex-row items-center justify-center gap-2 w-full text-white ${buttonColor.normal} hover:bg-${buttonColor.hover} hover:shadow-lg hover:drop-shadow-lg hover:scale-105 active:bg-${buttonColor.active} active:shadow-none active:drop-shadow-none active:scale-95`} onClick={() => setFormVisible(true)}>{text}</button>
+      <button className={`flex rounded-lg py-4 ${textSize} font-bold flex-row items-center justify-center gap-2 w-full text-white ${buttonColor.normal} hover:bg-${buttonColor.hover} hover:shadow-lg hover:drop-shadow-lg hover:scale-105 active:bg-${buttonColor.active} active:shadow-none active:drop-shadow-none active:scale-95`} onClick={() => setFormVisible(true)}>{text}</button>
       <AnimatePresence>
         {
           formVisible &&
@@ -32,7 +32,7 @@ export default function Form({buttonColor={normal:'red-bg', hover:'red-400', act
             initial={{ opacity: 1 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1 }}
-            className='fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 z-50 flex flex-col items-center justify-center backdrop-filter backdrop-blur-sm overflow-hidden'>
+            className='fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 z-50 flex flex-col items-center justify-center backdrop-filter backdrop-blur-sm'>
             <motion.div
               variants={variants}
               initial="hidden"

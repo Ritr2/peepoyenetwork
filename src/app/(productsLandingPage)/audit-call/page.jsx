@@ -116,7 +116,7 @@ export default function page() {
             </div>
           </div>
           <div className="flex flex-col">
-            <Button successUrl={`${url}/thankyou?product=audit-call`} amount='audit-call' text='Secure Your Audit Now' padding='py-4' bgcolor={{ normal: 'bg-sky-600', hover: 'bg-sky-700', active: 'bg-sky-800' }} txcolor='text-white' />
+            <Button successUrl={`${url}/thankyou?product=audit-call`} amount='audit-call' text='SECURE YOUR AUDIT CALL' padding='py-4' bgcolor={{ normal: 'bg-sky-600', hover: 'bg-sky-700', active: 'bg-sky-800' }} txcolor='text-white' />
           </div>
         </div>
         <div className="flex flex-col items-center justify-center flex-1 order-2">
@@ -149,7 +149,7 @@ export default function page() {
             </div>
           </div>
           <div className="flex flex-col">
-            <Button successUrl={`${url}/thankyou?product=audit-call`} amount='audit-call' text='Secure Your Audit Now' padding='py-4' bgcolor={{ normal: 'bg-sky-600', hover: 'bg-sky-700', active: 'bg-sky-800' }} txcolor='text-white' />
+            <Button successUrl={`${url}/thankyou?product=audit-call`} amount='audit-call' text='SECURE YOUR AUDIT CALL' padding='py-4' bgcolor={{ normal: 'bg-sky-600', hover: 'bg-sky-700', active: 'bg-sky-800' }} txcolor='text-white' />
           </div>
           </div>
         </div>
