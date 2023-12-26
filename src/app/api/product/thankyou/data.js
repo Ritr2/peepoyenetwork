@@ -126,14 +126,16 @@ const data = [
   {
     product: 'audit-call',
     query: {
-      h1: "Congratulations!!! <br/> YOUR <span className='text-red-600'>AUDIT CALL LINK</span> WILL BE SENT TO YOUR EMAIL...",
-      p1: "<span className='text-red-700'>Warning: It's has been observed that sometimes the emails land in the spam folder, so make sure that you add 'akassh@peepoye.com' in the contact list of your email account or check your spam folder.</span>",
+      h1: "Congratulations!!! <br/> YOUR <span className='text-sky-600'>AUDIT CALL LINK</span> WILL BE SENT TO YOUR EMAIL...",
+      p1: "<span className='text-sky-700'>Warning: It's has been observed that sometimes the emails land in the spam folder, so make sure that you add 'akassh@peepoye.com' in the contact list of your email account or check your spam folder.</span>",
       image: {
         src: 'http://peepoyenetwork.com/wp-content/uploads/2023/12/audit-call.png',
         alt: 'Audit-call',
         width: 'w-8/12',
       },
     },
+    specialTextColor: 'text-sky-600',
+    specialBgColor: 'bg-sky-600',
   },
   {
     product: 'scripting-template',
@@ -142,7 +144,21 @@ const data = [
       p1: "<span className='red-text'>Warning: It's has been observed that sometimes the emails land in the spam folder, so make sure that you add 'akassh@peepoye.com' in the contact list of your email account or check your spam folder.</span>",
       image: {
         src: 'https://peepoyenetwork.com/wp-content/uploads/2023/12/scripting-template.png',
-        alt: 'Audit-call',
+        alt: 'Scripiting template',
+        width: 'w-8/12',
+      },
+    },
+    specialTextColor: 'red-text',
+    specialBgColor: 'red-bg',
+  },
+  {
+    product: 'scripting-template-2',
+    query: {
+      h1: "Congratulations!!! <br/> YOUR <span className='red-text'>SCRIPTING TEMPLATE AND VIRAL VIDEO SCRIPT</span> WILL BE SENT TO YOUR EMAIL...",
+      p1: "<span className='red-text'>Warning: It's has been observed that sometimes the emails land in the spam folder, so make sure that you add 'akassh@peepoye.com' in the contact list of your email account or check your spam folder.</span>",
+      image: {
+        src: 'https://peepoyenetwork.com/wp-content/uploads/2023/12/scripting-template.png',
+        alt: 'Scripiting template and viral video script',
         width: 'w-8/12',
       },
     },

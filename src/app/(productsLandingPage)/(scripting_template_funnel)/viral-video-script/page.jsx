@@ -109,7 +109,7 @@ export default function page() {
           </div>
           <div className="flex flex-col gap-2">
             {/* <Form text="Download Your Template Now" /> */}
-            <Button successUrl={`${url}/thankyou?product=audit-call`} amount='viral-video-script' text='Download Your Script Now' padding='py-4' bgcolor={{ normal: 'red-bg', hover: 'bg-red-700', active: 'bg-red-800' }} txcolor='text-white' />
+            <Button successUrl={`${url}/thankyou?product=scripting-template-2`} amount='viral-video-script' text='Download Your Script Now' padding='py-4' bgcolor={{ normal: 'red-bg', hover: 'bg-red-700', active: 'bg-red-800' }} txcolor='text-white' />
             <Link className='self-center text-xl text-neutral-500 hover:underline' href={`/thankyou?product=scripting-template`} >
               No, I don't want this offer
             </Link>
@@ -150,7 +150,7 @@ export default function page() {
             </div>
             </div>
             <div className="flex flex-col gap-2">
-            <Button successUrl={`${url}/thankyou?product=audit-call`} amount='viral-video-script' text='Download Your Script Now' padding='py-4' bgcolor={{ normal: 'red-bg', hover: 'bg-red-700', active: 'bg-red-800' }} txcolor='text-white' />
+            <Button successUrl={`${url}/thankyou?product=scripting-template-2`} amount='viral-video-script' text='Download Your Script Now' padding='py-4' bgcolor={{ normal: 'red-bg', hover: 'bg-red-700', active: 'bg-red-800' }} txcolor='text-white' />
             <Link className='self-center text-xl text-neutral-500 hover:underline' href={`/thankyou?product=scripting-template`} >
               No, I don't want this offer
             </Link>
