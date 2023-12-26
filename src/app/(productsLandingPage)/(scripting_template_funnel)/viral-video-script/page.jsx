@@ -23,7 +23,7 @@ export const metadata = {
   description: `Are you struggling to write a script for your YouTube video? Get a copy of our Viral Video Script and create a viral video in no time.`,
   images: [
     {
-      url: 'https://peepoyenetwork.com/wp-content/uploads/2023/12/audit-call.png',
+      url: 'https://peepoyenetwork.com/wp-content/uploads/2023/12/scripting-template.png',
       width: 600,
       height: 500,
       alt: `Viral Video Script`,
@@ -37,7 +37,7 @@ export const metadata = {
     description: `Are you struggling to write a script for your YouTube video? Get a copy of our Viral Video Script and create a viral video in no time.`,
     images: [
       {
-        url: 'https://peepoyenetwork.com/wp-content/uploads/2023/12/audit-call.png',
+        url: 'https://peepoyenetwork.com/wp-content/uploads/2023/12/scripting-template.png',
         width: 600,
         height: 500,
         alt: `Viral Video Script`,
@@ -52,7 +52,7 @@ export const metadata = {
     description: `Are you struggling to write a script for your YouTube video? Get a copy of our Viral Video Script and create a viral video in no time.`,
     images: [
       {
-        url: 'https://peepoyenetwork.com/wp-content/uploads/2023/12/audit-call.png',
+        url: 'https://peepoyenetwork.com/wp-content/uploads/2023/12/scripting-template.png',
         width: 600,
         height: 500,
         alt: `Viral Video Script`,
