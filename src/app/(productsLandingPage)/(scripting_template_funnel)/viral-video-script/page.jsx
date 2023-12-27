@@ -23,7 +23,7 @@ export const metadata = {
   description: `Are you struggling to write a script for your YouTube video? Get a copy of our Viral Video Script and create a viral video in no time.`,
   images: [
     {
-      url: 'https://peepoyenetwork.com/wp-content/uploads/2023/12/scripting-template.png',
+      url: 'http://peepoyenetwork.com/wp-content/uploads/2023/12/viral-video.png',
       width: 600,
       height: 500,
       alt: `Viral Video Script`,
@@ -37,7 +37,7 @@ export const metadata = {
     description: `Are you struggling to write a script for your YouTube video? Get a copy of our Viral Video Script and create a viral video in no time.`,
     images: [
       {
-        url: 'https://peepoyenetwork.com/wp-content/uploads/2023/12/scripting-template.png',
+        url: 'http://peepoyenetwork.com/wp-content/uploads/2023/12/viral-video.png',
         width: 600,
         height: 500,
         alt: `Viral Video Script`,
@@ -52,7 +52,7 @@ export const metadata = {
     description: `Are you struggling to write a script for your YouTube video? Get a copy of our Viral Video Script and create a viral video in no time.`,
     images: [
       {
-        url: 'https://peepoyenetwork.com/wp-content/uploads/2023/12/scripting-template.png',
+        url: 'http://peepoyenetwork.com/wp-content/uploads/2023/12/viral-video.png',
         width: 600,
         height: 500,
         alt: `Viral Video Script`,
@@ -116,7 +116,7 @@ export default function page() {
           </div>
         </div>
         <div className="flex flex-col items-center justify-center flex-1 order-2">
-          <img src="https://peepoyenetwork.com/wp-content/uploads/2023/12/scripting-template.png" alt="Guide" className="w-full shadow-xl drop-shadow-xl rounded-xl" draggable={false} />
+          <img src="http://peepoyenetwork.com/wp-content/uploads/2023/12/viral-video.png" alt="Guide" className="w-full shadow-xl drop-shadow-xl rounded-xl" draggable={false} />
         </div>
       </section>
       <section className="flex w-full mb-10">
