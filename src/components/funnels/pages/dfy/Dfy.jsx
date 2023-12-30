@@ -40,8 +40,8 @@ export default function Dfy({loc = 'ind'}) {
     ]
 
     return (
-        <div className='flex flex-col md:items-center justify-center w-full'>
-            <div className={`flex flex-col ${style.bgGreen} w-full px-5 py-3`}>
+        <div className='flex flex-col md:items-center justify-center w-full mt-16'>
+            <div className={`flex flex-col ${style.bgGreen} w-full px-5 py-4`}>
                 <h1 className='text-lg md:text-2xl text-center text-white'>Don't fall behind your competitors, upgrade to our Youtube Growth Service now!!</h1>
             </div>
             <section className='flex flex-col md:items-center justify-center px-5 md:px-40 py-5 md:py-20 animate-text bg-gradient-to-r from-green-100 via-white to-emerald-200 w-full'>
@@ -217,7 +217,6 @@ export default function Dfy({loc = 'ind'}) {
                     <FAQ data={faqData} textSize={{ question: 'text-lg md:text-xl', answer: 'text-base md:text-lg' }} textcolor={{ question: 'text-neutral-800', answer: 'text-neutral-700' }} bgcolor={{ question: 'bg-neutral-100', answer: 'bg-green-100' }} />
                 </div>
             </section>
-            <FunnelFooter />
         </div>
     )
 }

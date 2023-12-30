@@ -5,6 +5,7 @@ const data = {
     image: {
       src: 'http://peepoyenetwork.com/wp-content/uploads/2023/12/about-1.png',
       alt: 'about_Akassh',
+      size: 'w-8/12'
     },
   },
   about_2: {
@@ -13,6 +14,7 @@ const data = {
     image: {
       src: 'http://peepoyenetwork.com/wp-content/uploads/2023/12/about-2.png',
       alt: 'about_Akassh',
+      size: 'w-8/12'
     },
   },
   about_3: {
@@ -21,6 +23,7 @@ const data = {
     image: {
       src: 'http://peepoyenetwork.com/wp-content/uploads/2023/12/about-3.png',
       alt: 'about_Akassh',
+      size: 'w-8/12'
     },
   },
 }

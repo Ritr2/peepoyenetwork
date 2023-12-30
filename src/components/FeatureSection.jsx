@@ -59,7 +59,7 @@ export default function FeatureSection({ data, reverse, backgroundColor, about =
         initial="hidden"
         animate={inView ? "visible" : "hidden"}
         className={`flex flex-col items-center justify-center flex-1 order-1 ${reverse ? 'md:order-1' : 'md:order-3'}`}>
-        <img src={data.image.src} alt={data.image.alt} width={1000} height={1000} className={`${about? 'w-8/12': 'w-full drop-shadow-lg shadow-lg rounded-lg'}`} />
+        <img src={data.image.src} alt={data.image.alt} width={1000} height={1000} className={`${about || data.image.size ? data.image.size : 'w-full drop-shadow-lg shadow-lg rounded-lg'}`}/>
       </motion.div>
     </section>
   )

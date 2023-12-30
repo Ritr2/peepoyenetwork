@@ -27,12 +27,14 @@ export default function page() {
                   <img src={course.image.src} alt={course.image.alt} className="w-auto h-40 md:h-64" draggable={false} />
                 </div>
                 <h1 className="text-lg md:text-xl font-bold text-center md:text-left text-neutral-700">{course.name}</h1>
+                <h2 className="text-xl md:text-3xl font-bold text-center md:text-left text-neutral-700">{course.currency}{course.price}/-</h2>
+                <p className="text-base md:text-lg font-bold text-center md:text-left text-neutral-500">{course.type}</p>
                 <div className="flex flex-1 flex-col justify-around gap-5 w-full">
                   {
                     course.features.map((feature, index2) => (
-                      <div key={index2} className="flex flex-row w-full items-center justify-start gap-2 px-5 md:px-10">
-                        <BsFillCheckCircleFill className="text-neutral-400 text-lg md:text-xl" />
-                        <p className="font-normal text-neutral-700 text-sm md:text-base">{feature}</p>
+                      <div key={index2} className="flex flex-row w-full justify-start gap-2 px-3 md:px-5">
+                        <BsFillCheckCircleFill className="text-neutral-400 text-lg md:text-xl w-5" />
+                        <p className="font-normal text-neutral-700 text-sm md:text-base flex-1">{feature}</p>
                       </div>
                     ))
                   }
