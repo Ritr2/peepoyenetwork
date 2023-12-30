@@ -20,11 +20,10 @@ export default function NavItems({setIsOpen = false}) {
   return (
     <>
       <Link href="/about" className="font-medium px-2" onClick={() => setIsOpen ? setIsOpen(false) : null}>ABOUT</Link>
-      <DropDown name="SOCIAL AWARENESS" links={{ "SOCIAL AWARENESS": "/social-awareness", "OPINION PLATFORM": "/bekhauf-awaaz", "BLOG": "/social-awareness/blogs" }} setIsOpen2={setIsOpen} />
-      <DropDown name="LEARN" links={{ "SUCCESS MENTORING": "/mentoring", COURSES: "/courses", BLOG:'/blogs', COMMUNITY: "https://www.skool.com/youtubeneur" }} setIsOpen2={setIsOpen} />
+      <DropDown name="SOCIAL AWARENESS" links={{ "HOME": "/social-awareness", "BEKHAUF OPINION": "/bekhauf-awaaz", "BEKHAUF BLOG": "/social-awareness/blogs" }} setIsOpen2={setIsOpen} />
+      <DropDown name="LEARNING HUB" links={{ "SUCCESS MENTORING": "/mentoring", COURSES: "/courses", "SUCCESS BLOG":'/blogs', COMMUNITY: "https://www.skool.com/youtubeneur", "RESOURCES": "/resources" }} setIsOpen2={setIsOpen} />
       <Link href="https://akassh.co/dfy" className="font-medium px-2" onClick={() => setIsOpen ? setIsOpen(false) : null}>SERVICES</Link>
       <Link href="/collaborate-with-us" className="font-medium px-2" onClick={() => setIsOpen ? setIsOpen(false) : null}>COLLABORATE</Link>
-      <Link href="/resources" className="font-medium px-2" onClick={() => setIsOpen ? setIsOpen(false) : null}>RESOURCES</Link>
       {
         navVisible &&
         <NavBar />
