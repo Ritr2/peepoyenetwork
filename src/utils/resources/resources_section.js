@@ -14,16 +14,16 @@ const data = {
       },
     },
     {
-      headline: 'YouTube Channel Audit Report by Akassh',
-      description: "Benefit from Akassh's 1 Million+ subscriber expertise. Receive personalized insights and proven strategies in a report to enhance your YouTube channel's performance and growth potential.",
+      headline: 'Align Your Videos To YouTube Algorithm To Get 10x Reach',
+      description: `Not Sure About Scripting For YouTube? Struggling to get more views and new subscribers? Not being able to retain auidence on your YouTube videos? Uncertain about Scripting structure for YouTube? Not able to build loyal subscriber base and engagement?`,
       image: {
-        src: 'https://i.ibb.co/0tyKd3X/tool-1.png',
-        alt: 'Audit Report',
+        src: 'http://peepoyenetwork.com/wp-content/uploads/2024/01/Scripting-template.png',
+        alt: 'scripting-template',
 
       },
       button: {
         text: 'Read More',
-        link: 'https://akassh.peepoye.com/audit-report'
+        link: '/scripting-template'
       },
     },
     {
