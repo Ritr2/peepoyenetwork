@@ -105,13 +105,13 @@ export default async function Home() {
         </section>
         <Experience />
         <section className={`flex flex-col md:flex-row px-5 md:px-40 items-center justify-center py-6 md:py-12 gap-4 md:gap-14 bg-neutral-300`}>
-          <div className="flex flex-col md:flex-row items-center justify-center gap-5 md:gap-10 bg-white shadow-lg rounded-lg p-8 drop-shadow-xl">
-          <div className={`flex flex-col w-7/12 gap-2 md:gap-5 order-2`}>
-            <h2 className="text-xl md:text-4xl md:tracking-wide font-bold text-left text-neutral-600">{mentoring.h2}</h2>
-            <p className="text-base md:text-xl text-left text-neutral-700">{parse(mentoring.p)}</p>
+          <div className="flex flex-col md:flex-row items-center justify-center gap-5 md:gap-10 bg-white shadow-lg rounded-lg p-2 md:p-8 drop-shadow-xl">
+          <div className={`flex flex-col md:w-7/12 gap-2 md:gap-5 order-2 items-center`}>
+            <h2 className="text-xl md:text-4xl md:tracking-wide font-bold text-center md:text-left text-neutral-600">{mentoring.h2}</h2>
+            <p className="text-base md:text-xl text-center md:text-left text-neutral-700">{parse(mentoring.p)}</p>
             {
               mentoring.hasOwnProperty('button') &&
-              <Link href={mentoring.button.link} className="text-lg md:text-xl text-left self-start bg-neutral-600 text-white p-2 md:p-4 px-8 rounded-lg drop-shadow-lg shadow-lg hover:bg-neutral-700 hover:shadow-xl hover:drop-shadow-xl active:bg-neutral-800 active:shadow-2xl active:drop-shadow-2xl active:translate-x-1 active:scale-95">
+              <Link href={mentoring.button.link} className="text-lg md:text-xl text-left md:self-start bg-neutral-600 text-white p-2 md:p-4 px-8 rounded-lg drop-shadow-lg shadow-lg hover:bg-neutral-700 hover:shadow-xl hover:drop-shadow-xl active:bg-neutral-800 active:shadow-2xl active:drop-shadow-2xl active:translate-x-1 active:scale-95">
                 {mentoring.button.text}</Link>
             }
           </div>
@@ -122,7 +122,7 @@ export default async function Home() {
           </div>
         </section>
         <section className="flex flex-col md:flex-row items-center justify-center md:gap-20 py-10 px-2 md:px-40 w-full bg-neutral-100">
-          <div className="flex flex-col md:flex-row items-center justify-center gap-5 md:gap-10 bg-white shadow-lg rounded-lg p-8 drop-shadow-xl">
+          <div className="flex flex-col md:flex-row items-center justify-center gap-5 md:gap-10 bg-white shadow-lg rounded-lg p-2 md:p-8 drop-shadow-xl">
             <div className="flex flex-col items-center justify-center flex-1">
               <img src="http://peepoyenetwork.com/wp-content/uploads/2023/12/banner.png" alt="Akassh ashok Gupta" className="w-full object-contain rounded-lg" draggable={false} />
             </div>
@@ -138,10 +138,10 @@ export default async function Home() {
         <section className="flex flex-col items-center justify-center py-10 px-2 md:px-10 w-full bg-neutral-300">
           <div className="flex flex-col items-center justify-center gap-5 md:gap-10 bg-white shadow-lg rounded-lg p-5 drop-shadow-xl w-full md:w-10/12">
             <h2 className="text-xl md:text-4xl md:tracking-wide font-bold text-center text-neutral-600">Featured Social Awareness Blogs</h2>
-            <div className="flex flex-col md:flex-row justify-between flex-wrap w-full gap-2">
+            <div className="flex flex-col md:flex-row justify-between flex-wrap w-full gap-6 md:gap-2">
               {
                 blog_details.map((blog, index) => (
-                  <div className="flex flex-col items-center justify-between w-[30.5%] gap-5" key={index}>
+                  <div className="flex flex-col items-center justify-between w-full md:w-[30.5%] gap-5" key={index}>
                     <div className="flex flex-col items-center gap-2">
                       <Link href={`/social_awareness/blog/${blog.slug}`}><img src={blog.image.src} alt={blog.title} className="w-full rounded-lg" /></Link>
                       <Link href={`/social_awareness/blog/${blog.slug}`}><h2 className="text-lg md:text-xl font-normal text-center text-neutral-900">{blog.title}</h2></Link>
@@ -162,11 +162,11 @@ export default async function Home() {
         <section className="flex flex-col items-center justify-center py-10 px-2 md:px-10 w-full bg-neutral-300">
           <div className="flex flex-col items-center justify-center gap-5 md:gap-10 bg-white shadow-lg rounded-lg p-5 drop-shadow-xl w-full md:w-10/12">
             <h2 className="text-xl md:text-4xl md:tracking-wide font-bold text-center text-neutral-600">Our Trending Short Videos</h2>
-            <div className="flex flex-col md:flex-row justify-between flex-wrap items-center w-full">
+            <div className="flex flex-col md:flex-row justify-between flex-wrap items-center w-full gap-10 md:gap-0">
               {
                 popular_shorts.map((video, index) => (
-                  <div className="flex flex-col items-center justify-center w-[30.5%]" key={index}>
-                    <VideoPlayer url={video} height="h-[200px] md:h-[600px]" />
+                  <div className="flex flex-col items-center justify-center w-full md:w-[30.5%]" key={index}>
+                    <VideoPlayer url={video} height="h-[600px] md:h-[600px]" />
                   </div>
                 ))
               }

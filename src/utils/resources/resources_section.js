@@ -14,6 +14,19 @@ const data = {
       },
     },
     {
+      headline: 'YouTube Channel Audit Report by Akassh',
+      description: "Benefit from Akassh's 1 Million+ subscriber expertise. Receive personalized insights and proven strategies in a report to enhance your YouTube channel's performance and growth potential.",
+      image: {
+        src: 'https://i.ibb.co/0tyKd3X/tool-1.png',
+        alt: 'Audit Report',
+
+      },
+      button: {
+        text: 'Read More',
+        link: 'https://akassh.peepoye.com/audit-report'
+      },
+    },
+    {
       headline: "YouTube Income Prediction Tool",
       description: "Discover Your Monthly Earnings Potential with Our YouTube Income Prediction Tool. Calculate Your Channel's Income and Gain Insights into Your YouTube Revenue Stream.",
       image: {
