@@ -99,7 +99,7 @@ export default function Mentoring() {
           <h1 className="text-2xl md:text-4xl font-bold text-center md:text-left text-neutral-700">Join our new 'Mentorship for Success Program' for 2024</h1>
           <p className="text-base md:text-lg font-normal text-center md:text-left text-neutral-700">Discover a thrilling journey with our upcoming <b>"Mentorship for Success Program."</b> Building on our past success, This new program is designed to take your professional and personal growth to unprecedented heights by enabling your success journey daily. As we expand our mentorship program, we want you to be among the first to embark on this transformative journey.</p>
           <div className="flex flex-col w-full md:w-9/12 mt-2 md:mt-3">
-            <ScrollButton bgColor={{normal: 'bg-sky-600', hover: 'bg-sky-500', active: 'bg-sky-700'}} />
+            <ScrollButton bgColor={{ normal: 'bg-sky-600', hover: 'bg-sky-500', active: 'bg-sky-700' }} />
           </div>
         </div>
         <div className="flex flex-col items-end flex-1 order-2">
@@ -142,42 +142,42 @@ export default function Mentoring() {
           </div>
         </div>
       </section> */}
-      <section id="plan" className="flex flex-col items-center w-full justify-center gap-8 bg-white px-5 pt-16 pb-0 md:py-16 md:px-32 overflow-hidden">
+      <section id="plan" className="flex flex-col items-center w-full justify-center gap-8 bg-white px-5 pt-16 pb-0 md:py-16 md:px-52 overflow-hidden">
         <div className="flex flex-col items-center justify-center gap-5 md:gap-10 bg-white shadow-lg rounded-lg drop-shadow-xl w-full">
           {
             whatYouWillGain.map((item, index) => (
               <Fragment key={index}>
-              <div className={`flex flex-col items-center justify-center gap-5 md:gap-10 w-full p-5`}>
-                <h2 className="text-2xl md:text-4xl font-bold text-center text-neutral-700">{item.title}</h2>
-                <div className="flex flex-col md:flex-row justify-center gap-10 w-full">
-                  {
-                    item.section.map((section, index2) => (
-                      <div key={index2} className={`flex flex-col justify-between w-full md:w-1/2 gap-5`}>
-                        <div className="flex flex-col justify-center gap-5">
-                          <h3 className="text-xl md:text-2xl font-bold text-center text-neutral-700">{section.title}</h3>
-                          <p className="text-base md:text-lg font-normal text-center text-neutral-700">{parse(section.paragraph)}</p>
-                        </div>
-                        <div className="flex flex-col justify-center items-center gap-5">
-                        <div className="flex flex-col justify-center items-center gap-1 w-full">
-                        <Link href="https://pages.razorpay.com/successblue" className='flex flex-row w-full bg-sky-500 hover:bg-sky-600 text-white font-bold py-2 px-4 rounded-xl justify-center items-center gap-2 uppercase'>
-                          Join Blue Tier Now
-                          </Link>
-                          <Link href="https://pages.razorpay.com/successgrey" className='hover:underline text-base md:text-lg font-normal text-center text-neutral-500'>
-                            No Thanks, I&apos;ll Join Grey Tier
-                          </Link>
+                <div className={`flex flex-col items-center justify-center gap-5 md:gap-10 w-full p-5`}>
+                  <h2 className="text-2xl md:text-4xl font-bold text-center text-neutral-700">{item.title}</h2>
+                  <div className="flex flex-col justify-center gap-16 w-full">
+                    {
+                      item.section.map((section, index2) => (
+                        <div key={index2} className={`flex flex-col md:flex-row justify-between w-full gap-5`}>
+                          <div className={`flex flex-col items-start justify-center gap-5 w-full md:w-8/12 ${index2 % 2 === 0 ? 'order-1 md:order-2' : 'order-2 md:order-1'}`}>
+                            <h3 className="text-xl md:text-2xl font-bold text-center md:text-left text-neutral-700">{section.title}</h3>
+                            <p className="text-base md:text-lg font-normal text-center md:text-left text-neutral-700">{parse(section.paragraph)}</p>
+                            <div className="flex flex-col justify-center gap-1 w-full md:w-auto md:min-w-[300px]">
+                              <Link href="https://pages.razorpay.com/successblue" className='flex flex-row w-full bg-sky-500 md:max-w-[400px] hover:bg-sky-600 text-white font-bold py-2 px-4 rounded-lg justify-center items-center gap-2 uppercase'>
+                                Join Blue Tier Now
+                              </Link>
+                              <Link href="https://pages.razorpay.com/successgrey" className='hover:underline text-base md:text-lg font-normal text-center text-neutral-500'>
+                                No Thanks, I&apos;ll Join Grey Tier
+                              </Link>
+                            </div>
                           </div>
-                          <img src={section.image} alt={section.title} className="w-full rounded-xl" draggable={false} />
+                          <div className="flex flex-col justify-center items-center gap-5 flex-1 order-2 md:order-1">
+                            <img src={section.image} alt={section.title} className="w-full rounded-xl" draggable={false} />
+                          </div>
                         </div>
-                      </div>
-                    ))
-                  }
+                      ))
+                    }
+                  </div>
                 </div>
-              </div>
-              {
-                index === 0 && (
-                  <div className="border-b-[4px] border-neutral-600 border-double w-full"></div>
-                )
-              }
+                {
+                  index === 0 && (
+                    <div className="border-b-[4px] border-neutral-600 border-double w-full"></div>
+                  )
+                }
               </Fragment>
             ))
           }
