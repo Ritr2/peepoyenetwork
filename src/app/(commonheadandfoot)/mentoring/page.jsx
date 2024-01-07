@@ -11,6 +11,8 @@ import { BsCheck } from 'react-icons/bs';
 import parse from 'html-react-parser';
 import Link from 'next/link'
 import ScrollButton from '@/components/mentoring/ScrollButton'
+import SocialMediaDetails from '@/components/SocialMediaDetails'
+import Experience from '@/components/Experience'
 
 const dmSans = DM_Sans({
   weight: '500',
@@ -28,7 +30,7 @@ const whoIsThisFor2 = [
   {
     title: 'Students',
     image: 'http://peepoyenetwork.com/wp-content/uploads/2024/01/student1.png',
-    paragraph: `<b>Students,</b> seeking to enhance their personality development, acquire effective time management techniques, boost productivity, concentrate on their studies, and cultivate the skills required to excel as future professionals`,
+    paragraph: `<b>Students,</b> seeking to enhance their personality, acquire effective time management techniques, boost productivity and focus, and cultivate the skills required to grab the desired opportunities to take their career to the next level and excel as future professionals`,
   },
   {
     title: 'Corporate Professionals',
@@ -73,7 +75,7 @@ const plans = [
 
 const whatYouWillGain = [
   {
-    title: 'Benefits of our Mentorship Program',
+    title: 'Key Features of our Mentorship Program',
     section: [
       {
         title: `Daily Success Dose for 365 Days`,
@@ -110,7 +112,7 @@ export default function Mentoring() {
           <h1 className="text-2xl md:text-4xl font-bold text-center md:text-left text-neutral-700">Unlock Your Success Potential with Our Innovative Mentorship</h1>
           <p className="text-base md:text-lg font-normal text-center md:text-left text-neutral-700">"Our groundbreaking Success Mentorship Program is meticulously crafted to provide you with the tools, methods, and concepts that ensure not just learning but practical implementation, enabling a transformation of your ingrained patterns over time. Through a gamified and enjoyable setting, you'll receive daily success boosts, tackle weekly challenges, and engage in monthly workshops, igniting a relentless pursuit of success within you."</p>
           <div className="flex flex-col w-full md:w-9/12 mt-2 md:mt-3">
-            <ScrollButton text='Explore the Benefits' />
+            <ScrollButton text='Explore the Key Features' />
           </div>
         </div>
         <div className="flex flex-col items-end flex-1 order-2">
@@ -166,9 +168,9 @@ export default function Mentoring() {
           {
             whatYouWillGain.map((item, index) => (
               <Fragment key={index}>
-                <div className={`flex flex-col items-center justify-center gap-5 md:gap-10 w-full p-5`}>
+                <div className={`flex flex-col items-center justify-center gap-5 md:gap-20 w-full p-5`}>
                   <h2 className="text-2xl md:text-4xl font-bold text-center text-neutral-700">{item.title}</h2>
-                  <div className="flex flex-col justify-center gap-16 w-full">
+                  <div className="flex flex-col justify-center gap-20 w-full">
 
                     {
                       item.section.map((section, index2) => (
@@ -199,6 +201,53 @@ export default function Mentoring() {
               </Fragment>
             ))
           }
+        </div>
+      </section>
+      <section className="z-10 flex flex-col py-10 md:py-20 px-5 md:px-40 gap-5 md:gap-14">
+        <div className={`flex flex-col items-center gap-2`}>
+          <h2 className={`text-xl md:text-4xl text-center text-neutral-800 font-bold`}>
+            Meet Your Coach, Guide, and Mentor - <span className={`text-neutral-600`}> Akassh Ashok Gupta </span>
+          </h2>
+        </div>
+        <div className="flex flex-col md:flex-row justify-center items-center gap-3 md:gap-10">
+          <div className={`flex flex-col w-full md:w-6/12 rounded-xl`}>
+            <img src="https://i.ibb.co/pdXR2sN/1.png" alt="Akassh Ashok Gupta" className='rounded-xl shadow-lg drop-shadow-lg' />
+          </div>
+          <div className="flex flex-col flex-1">
+            <p className={`text-base md:text-xl text-neutral-600 font-normal`}>
+              Hey there, I'm Akassh Ashok Gupta! Thanks for stopping by to learn more about me. With over <span className={``}>19 years of experience</span> in the corporate world and more than <span className={``}>5 years dedicated</span> to mastering the art of YouTube, I bring a unique blend of skills to the table. My background as a business consultant, coupled with my status as an influencer, sets me apart as the ideal mentor for this journey.<br /><br /><span className={``}>Imagine this:</span> in less than a year after leaving a high-profile leadership position, I managed to build an impressive online presence with over 1 million followers across various social media platforms. This success is a result of my distinctive approach to consulting and influence, all fueled by the vast experience I gained from mentoring some of the world's biggest brands.
+            </p>
+          </div>
+        </div>
+        <div className="flex flex-col h-32">
+          <SocialMediaDetails />
+        </div>
+        <div className="flex flex-col md:flex-row justify-center items-center gap-3 md:gap-10">
+          <div className={`flex flex-col w-full md:w-6/12 rounded-xl order-1 md:order-2`}>
+            <img src="https://i.ibb.co/RT3XGxt/2.png" alt="Akassh Ashok Gupta" className='rounded-xl shadow-lg drop-shadow-lg' />
+          </div>
+          <div className="flex flex-col flex-1 order-2 md:order-1">
+            <p className={`text-base md:text-xl text-neutral-600 font-normal`}>
+              Even when I was at a leadership position at my job, earning really well, I decided to quit my job and do YouTube full-time. The reason was simple- I realised my Passion. Today, <span className={``}>I breathe passion</span> by doing what I love. Quitting the job was not an easy call but still I took that step because I knew what I was truly meant for and what my passion was. Now, I am on a mission to <span className={``}>enable 1 lac people</span> like me breathe their passion and create multiple revenue streams by doing what they love the most.<br /><br />What sets me apart further are my incredible collaborations with legends like Sonu Nigam and Shruti Haasan. Additionally, I've gained the admiration of top YouTube influencers including Ashish Chanchlani, Harsh Beniwal, MythPat, Sourav Joshi, and many more.
+            </p>
+          </div>
+        </div>
+        <Experience />
+        <div className="flex flex-col md:flex-row justify-center items-center gap-3 md:gap-10">
+          <div className={`flex flex-col w-full md:w-6/12 rounded-xl`}>
+            <img src="https://i.ibb.co/LrvNWBp/3.png" alt="Akassh Ashok Gupta" className='rounded-xl shadow-lg drop-shadow-lg' />
+          </div>
+          <div className="flex flex-col flex-1">
+            <p className={`text-base md:text-xl text-neutral-600 font-normal`}>
+              I believe in the power of YouTube not just as a platform for entertainment but as a strategic tool for business growth.<br /><br />Let's embark on this exciting journey together, and I'll guide you every step of the way in leveraging YouTube to its fullest potential.<br /><br />Whether you're looking to diversify your <span className={``}>revenue streams or attract valuable business leads</span>, I've got the expertise to make it happen. Let's make your YouTube venture a resounding success!<br /><br />I'm really looking forward to you completing this course and make this about passion, fullfillment and enjoy every bit of the journey it entails.<br /><br />
+            </p>
+          </div>
+        </div>
+        <div className="flex flex-col gap-5 self-center w-full md:w-8/12">
+          <FormPopup />
+          {/* <Link to='dfyPricingSection' smooth={true} duration={500} className='flex-1 flex flex-row items-center justify-center gap-2 md:gap-5 bg-emerald-700 cursor-pointer text-white text-lg md:text-xl font-bold rounded-xl py-2 md:py-3 px-5 md:px-8 hover:bg-emerald-600'>
+            Book Now
+          </Link> */}
         </div>
       </section>
       <section className="flex flex-col items-center w-full justify-center gap-8 bg-stone-100 px-5 py-16 md:px-52 overflow-hidden">

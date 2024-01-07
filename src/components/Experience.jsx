@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import images from '@/utils/experience_images';
 import { BsArrowRightCircleFill } from 'react-icons/bs';
 
-export default function Experience() {
+export default function Experience({theme = 'light'}) {
   const [visibleRange, setVisibleRange] = React.useState([0, 1]);
 
   const handlescrollright = () => {
@@ -28,7 +28,8 @@ export default function Experience() {
 
   return (
     <section className='px-2 md:px-20 w-full'>
-      <div className='flex flex-col gap-3 py-3 z-10 w-full shadow-lg drop-shadow-lg border-2 rounded-3xl border-stone-200'>
+      <div className={`flex flex-col gap-3 py-3 z-10 w-full shadow-lg drop-shadow-lg border-2 rounded-3xl border-stone-200 ${theme = 'dark' ? 'bg-white/90': ''}
+      `}>
         <h2 className="text-sm md:text-2xl tracking-wide font-bold text-center text-neutral-600">A YOUTUBER WITH 20+ YRS OF EXP. CONSULTING TOP BRANDS</h2>
         <div className='flex flex-row items-center px-2'>
           <div className='overflow-hidden flex-1'>
