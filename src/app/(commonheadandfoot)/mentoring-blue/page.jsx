@@ -135,7 +135,7 @@ export default function Mentoring() {
                               <Link href="https://pages.razorpay.com/successblue" className='flex flex-row w-full blue-bg-button md:max-w-[400px] hover:bg-sky-600 text-white font-bold py-2 px-4 rounded-lg justify-center items-center gap-2 uppercase'>
                                 Join Blue Tier Now
                               </Link>
-                              <Link href="https://pages.razorpay.com/successgrey" className='hover:underline text-base md:text-lg font-normal text-center text-neutral-500'>
+                              <Link href="https://docs.google.com/forms/d/e/1FAIpQLSfZMcBcbzVnHJHAfzs1jzOuVx0HrbGCVyJxKD6LU81d_IxkKw" className='hover:underline text-base md:text-lg font-normal text-center text-neutral-500'>
                                 No Thanks, I&apos;ll Join Grey Tier
                               </Link>
                             </div>
