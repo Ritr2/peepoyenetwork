@@ -23,6 +23,28 @@ const whoIsThisFor = [
   `A comprehensive program aiming to equip participants with the knowledge needed for success in various fields.`
 ]
 
+const whoIsThisFor2 = [
+  {
+    title: 'Students',
+    image: 'http://peepoyenetwork.com/wp-content/uploads/2024/01/student1.png',
+    paragraph: `<b>Students,</b> seeking to enhance their personality development, acquire effective time management techniques, boost productivity, concentrate on their studies, and cultivate the skills required to excel as future professionals`,
+  },
+  {
+    title: 'Corporate Professionals',
+    image: 'http://peepoyenetwork.com/wp-content/uploads/2024/01/corporate-employee.png',
+    paragraph: `<b>Corporate Professionals,</b> seeking to acquire methods for boosting productivity, building confidence, and honing effective communication skills to engage customers and stakeholders, thereby promoting continuous career growth`,
+  },
+  {
+    title: 'Entrepreneurs',
+    image: 'http://peepoyenetwork.com/wp-content/uploads/2024/01/business-owner.png',
+    paragraph: `<b>Small Business Owners,</b> seeking to gain communication and collaboration skills that will enable them to attract new clients and enhance their business management capabilities by implementing the efficient operational methods utilized by larger companies`,
+  },
+  {
+    title: 'Working Professionals',
+    image: 'http://peepoyenetwork.com/wp-content/uploads/2024/01/working-professionals.png',
+    paragraph: `<b>Working Professionals,</b> seeking to acquire skills in networking, time management, communication, problem-solving, decision-making, emotional intelligence development, and conflict resolution, with the aim of achieving professional success at an expert level`,
+  },
+]
 const plans = [
   {
     title: 'Grey Membership',
@@ -50,11 +72,11 @@ const plans = [
 
 const whatYouWillGain = [
   {
-    title: 'Grey-Tier Benefits',
+    title: 'Benefits of our Mentorship Program',
     section: [
       {
         title: `Daily Success Dose for 365 Days`,
-        paragraph: `Receive daily emails filled with valuable insights on achieving success in life through reflection, visualization, thought-provoking tasks, and other empowering techniques.`,
+        paragraph: `Unlock daily emails brimming with invaluable wisdom to empower your journey to success through reflection, visualization, thought-provoking tasks, and transformative techniques that bring absolute clarity toward your success`,
         image: `http://peepoyenetwork.com/wp-content/uploads/2024/01/Daily-Success-Dose-for-365-Days.png`,
       },
       {
@@ -80,14 +102,14 @@ export default function Mentoring() {
   return (
     <main className={`flex flex-col items-center mt-16 ${dmSans.className}`}>
       <div className="flex flex-col w-full justify-center py-3 items-center bg-neutral-400">
-        <span className="text-base md:text-xl font-normal md:font-bold text-center md:text-left text-white">Unlock unlimited potential with our Mentorship for Success Program</span>
+        <span className="text-base md:text-xl font-normal md:font-bold text-center md:text-left text-white">Experience Unstoppable Success with Our Leading Mentorship Program</span>
       </div>
-      <section className="flex flex-col md:flex-row items-center justify-center md:gap-5 pt-5 px-5 md:px-52 pb-5 md:pb-10">
+      <section className="flex flex-col md:flex-row items-center justify-center md:gap-5 pt-10 px-5 md:px-52 pb-5 md:pb-10">
         <div className="flex flex-col justify-center gap-5 order-3 md:order-1 w-full md:w-6/12">
-          <h1 className="text-2xl md:text-4xl font-bold text-center md:text-left text-neutral-700">Join our new 'Mentorship for Success Program' for 2024</h1>
-          <p className="text-base md:text-lg font-normal text-center md:text-left text-neutral-700">Discover a thrilling journey with our upcoming <b>"Mentorship for Success Program."</b> Building on our past success, This new program is designed to take your professional and personal growth to unprecedented heights by enabling your success journey daily. As we expand our mentorship program, we want you to be among the first to embark on this transformative journey.</p>
+          <h1 className="text-2xl md:text-4xl font-bold text-center md:text-left text-neutral-700">Unlock Your Success Potential with Our Innovative Mentorship</h1>
+          <p className="text-base md:text-lg font-normal text-center md:text-left text-neutral-700">"Our groundbreaking Success Mentorship Program is meticulously crafted to provide you with the tools, methods, and concepts that ensure not just learning but practical implementation, enabling a transformation of your ingrained patterns over time. Through a gamified and enjoyable setting, you'll receive daily success boosts, tackle weekly challenges, and engage in monthly workshops, igniting a relentless pursuit of success within you."</p>
           <div className="flex flex-col w-full md:w-9/12 mt-2 md:mt-3">
-            <ScrollButton />
+            <ScrollButton text='Explore the Benefits' />
           </div>
         </div>
         <div className="flex flex-col items-end flex-1 order-2">
@@ -96,8 +118,16 @@ export default function Mentoring() {
       </section>
       <section className="flex flex-col items-center w-full justify-center gap-10 bg-stone-100 px-5 py-16 md:px-52 overflow-hidden">
         <h2 className="text-2xl md:text-4xl font-bold text-center md:text-left text-neutral-700">Who is This For?</h2>
-        <div className="flex flex-col md:flex-row items-center justify-center gap-10 w-full">
-          <div className="flex flex-col flex-1 gap-2 md:gap-5 self-stretch border-[4px] border-neutral-200 rounded-lg shadow-inner">
+        <div className="flex flex-col md:flex-row flex-wrap justify-center gap-24 w-full shadow-lg rounded-lg bg-white p-5 md:p-10">
+          {
+            whoIsThisFor2.map((item, index) => (
+              <div key={index} className="flex flex-col gap-5 w-full md:w-[40%]">
+                <img src={item.image} alt={item.title} className="w-full rounded-xl" draggable={false} />
+                <p className="text-base md:text-lg font-normal text-center md:text-left text-neutral-700">{parse(item.paragraph)}</p>
+              </div>
+            ))
+          }
+          {/* <div className="flex flex-col flex-1 gap-2 md:gap-5 self-stretch border-[4px] border-neutral-200 rounded-lg shadow-inner">
             <img src='http://peepoyenetwork.com/wp-content/uploads/2023/12/who-is-this-for.png' alt="Who is this for?" className="w-full object-contain object-bottom h-full" draggable={false} />
           </div>
           <div className="flex flex-col justify-center w-full md:w-7/12 gap-2 md:gap-5">
@@ -112,7 +142,7 @@ export default function Mentoring() {
                 ))
               }
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
       {/* <section className="flex flex-col items-center w-full justify-center gap-8 bg-white px-5 pt-16 pb-0 md:py-16 md:px-52 overflow-hidden">
@@ -131,14 +161,14 @@ export default function Mentoring() {
         </div>
       </section> */}
       <section id="plan" className="flex flex-col items-center w-full justify-center gap-8 bg-white px-5 pt-16 pb-0 md:py-16 md:px-52">
-        <div className="flex flex-col items-center justify-center gap-5 md:gap-10 bg-white shadow-lg rounded-lg w-full">  
+        <div className="flex flex-col items-center justify-center gap-5 md:gap-10 bg-white shadow-lg rounded-lg w-full p-5">
           {
             whatYouWillGain.map((item, index) => (
               <Fragment key={index}>
                 <div className={`flex flex-col items-center justify-center gap-5 md:gap-10 w-full p-5`}>
                   <h2 className="text-2xl md:text-4xl font-bold text-center text-neutral-700">{item.title}</h2>
                   <div className="flex flex-col justify-center gap-16 w-full">
-                    
+
                     {
                       item.section.map((section, index2) => (
                         <div key={index2} className={`flex flex-col md:flex-row justify-between w-full gap-16`}>

@@ -74,7 +74,7 @@ export default function Mentoring() {
           <h1 className="text-2xl md:text-4xl font-bold text-center md:text-left text-neutral-700">Join our new 'Mentorship for Success Program' for 2024</h1>
           <p className="text-base md:text-lg font-normal text-center md:text-left text-neutral-700">Discover a thrilling journey with our upcoming <b>"Mentorship for Success Program."</b> Building on our past success, This new program is designed to take your professional and personal growth to unprecedented heights by enabling your success journey daily. As we expand our mentorship program, we want you to be among the first to embark on this transformative journey.</p>
           <div className="flex flex-col w-full md:w-9/12 mt-2 md:mt-3">
-            <ScrollButton bgColor={{ normal: 'blue-bg-button', hover: 'bg-sky-500', active: 'bg-sky-700' }} />
+            <ScrollButton text= 'Explore the Benefits' bgColor={{ normal: 'blue-bg-button', hover: 'bg-sky-500', active: 'bg-sky-700' }} />
           </div>
         </div>
         <div className="flex flex-col items-end flex-1 order-2">
