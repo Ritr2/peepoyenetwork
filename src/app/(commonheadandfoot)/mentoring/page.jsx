@@ -4,6 +4,7 @@ import data from '@/utils/mentoring/expect_sections'
 import BoxContainer from '@/components/mentoring/BoxContainer'
 import DynamicForm from '@/components/mentoring/DynamicForm'
 import testimonials from '@/utils/mentoring/testimonials_section'
+import testimonials2 from '@/utils/mentoring/testimonials_2_section'
 import Testimonials from '@/components/mentoring/Testimonials'
 import FormPopup from '@/components/mentoring/FormPopup'
 import { BsCheck } from 'react-icons/bs';
@@ -201,7 +202,26 @@ export default function Mentoring() {
         </div>
       </section>
       <section className="flex flex-col items-center w-full justify-center gap-8 bg-stone-100 px-5 py-16 md:px-52 overflow-hidden">
-        <h2 className="text-2xl md:text-4xl font-bold text-center text-neutral-700">Hear What Our Mentees Have To Say About This Program</h2>
+        <h2 className="text-2xl md:text-4xl font-bold text-center text-neutral-700">A sneak peek at the enthusiasm in 2024 surrounding our Revamped Success Mentorship Program 2.0</h2>
+        <div className='flex flex-col items-center w-full justify-center gap-8'>
+          {
+            testimonials2.map((testimonial, index) => (
+              <div key={index} className='flex flex-col items-center w-full justify-center gap-5'>
+                <Testimonials data={testimonial} index={index} />
+                {
+                  ((index + 1) % 3 === 0 && index > 0) && (
+                    <div className="flex flex-col w-full md:w-1/2">
+                      <FormPopup />
+                    </div>
+                  )
+                }
+              </div>
+            ))
+          }
+        </div>
+      </section>
+      <section className="flex flex-col items-center w-full justify-center gap-8 px-5 py-16 md:px-52 overflow-hidden">
+        <h2 className="text-2xl md:text-4xl font-bold text-center text-neutral-700">Hear What Our Mentees said about this Program in 2023</h2>
         <div className='flex flex-col items-center w-full justify-center gap-8'>
           {
             testimonials.map((testimonial, index) => (
@@ -210,7 +230,7 @@ export default function Mentoring() {
                 {
                   ((index + 1) % 3 === 0 && index > 0) && (
                     <div className="flex flex-col w-full md:w-1/2">
-                      <ScrollButton />
+                      <FormPopup />
                     </div>
                   )
                 }

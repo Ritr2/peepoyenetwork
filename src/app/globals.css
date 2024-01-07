@@ -132,3 +132,22 @@
   color: #1274F3;
 }
 
+.navy-blue-bg {
+  background-color: #0f192f;;
+}
+
+.golden-bg {
+  background-color: #fd8401;
+}
+
+.golden-bg-button {
+  background-color: #fd8401;
+}
+
+.golden-bg-button:hover {
+  background-color: #e88f00;
+}
+
+.golden-bg-button:active {
+  background-color: #e88f00;
+}
