@@ -29,7 +29,7 @@ export default function DynamicForm({ animation = true, closeFunc = false }) {
         closeFunc(false);
       }, 2000);
     }
-    router.push('/guide-x?product=mentorship');
+    router.push('/mentoring-blue');
   }
 
   const variants1 = {

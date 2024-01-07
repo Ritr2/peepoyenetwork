@@ -32,7 +32,7 @@ export default function FormPopup() {
         initial={{ opacity: 1 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
-        className='fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 z-50 flex flex-col items-center justify-center backdrop-filter backdrop-blur-sm overflow-hidden'>
+        className='fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 z-50 flex flex-col items-center justify-center backdrop-filter backdrop-blur-sm'>
         <motion.div
           variants={variants}
           initial="hidden"

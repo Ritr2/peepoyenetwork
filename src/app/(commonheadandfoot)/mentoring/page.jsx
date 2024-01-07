@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import { DM_Sans } from 'next/font/google'
 import data from '@/utils/mentoring/expect_sections'
 import BoxContainer from '@/components/mentoring/BoxContainer'
@@ -48,9 +48,37 @@ const plans = [
   }
 ]
 
+const whatYouWillGain = [
+  {
+    title: 'Grey-Tier Benefits',
+    section: [
+      {
+        title: `Daily Success Dose for 365 Days`,
+        paragraph: `Receive daily emails filled with valuable insights on achieving success in life through reflection, visualization, thought-provoking tasks, and other empowering techniques.`,
+        image: `http://peepoyenetwork.com/wp-content/uploads/2024/01/Daily-Success-Dose-for-365-Days.png`,
+      },
+      {
+        title: `Weekly Success Challenges`,
+        paragraph: `Engage in a weekly success challenge that encourages you to apply the concepts and methods you've learned during the week. This practical approach will enable you to integrate your newfound knowledge into your daily personal life, job, or business, providing you with the opportunity to witness and experience tangible transformation while benefiting from mentorship.`,
+        image: `http://peepoyenetwork.com/wp-content/uploads/2024/01/Weekly-Success-Challenges.png`,
+      },
+      {
+        title: `Monthly Success Newsletter`,
+        paragraph: `Experience a monthly success newsletter that encapsulates the month's cumulative learning journey. This includes a compilation of daily insights, weekly challenges, and the shared experiences of diverse mentees. These stories serve as a source of motivation, allowing everyone to draw inspiration from the experiences of others and gain valuable insights into various applications of the methods, concepts, and tools learned.`,
+        image: `http://peepoyenetwork.com/wp-content/uploads/2024/01/Monthly-Success-Newsletter.png`,
+      },
+      {
+        title: `Early Access to Monthly Success Workshops`,
+        paragraph: `Unlock an enticing advantage by gaining VIP early access and exclusive invitations to our premium virtual monthly success workshops, held at the end of each month. These workshops are dedicated to dynamic live discussions, delving deep into vital concepts and methods from our esteemed success mentorship program. Plus, as a VIP participant, you'll have the unique opportunity to pose questions and participate in an engaging interactive Q&A session.`,
+        image: `http://peepoyenetwork.com/wp-content/uploads/2024/01/Early-Access-to-Monthly-Success-Workshops.png`,
+      }
+    ]
+  },
+]
+
 export default function Mentoring() {
   return (
-    <main className={`relative flex min-h-screen flex-col items-center mt-16 ${dmSans.className} overflow-x-hidden`}>
+    <main className={`flex flex-col items-center mt-16 ${dmSans.className}`}>
       <div className="flex flex-col w-full justify-center py-3 items-center bg-neutral-400">
         <span className="text-base md:text-xl font-normal md:font-bold text-center md:text-left text-white">Unlock unlimited potential with our Mentorship for Success Program</span>
       </div>
@@ -102,46 +130,42 @@ export default function Mentoring() {
           </div>
         </div>
       </section> */}
-      <section id="plan" className="flex flex-col items-center w-full justify-center gap-8 bg-white px-5 pt-16 pb-0 md:py-16 md:px-52 overflow-hidden">
-        <h2 className="text-xl md:text-4xl font-bold text-center text-neutral-700">What You'll Gain</h2>
-        <div className="flex flex-col md:flex-row justify-center gap-3 md:gap-10">
+      <section id="plan" className="flex flex-col items-center w-full justify-center gap-8 bg-white px-5 pt-16 pb-0 md:py-16 md:px-52">
+        <div className="flex flex-col items-center justify-center gap-5 md:gap-10 bg-white shadow-lg rounded-lg w-full">  
           {
-            plans.map((plan, index) => (
-              <div key={index} className="flex flex-col justify-between items-center gap-2 w-full md:w-4/12 shadow-lg drop-shadow-lg rounded-lg p-5 bg-neutral-100">
-                <div className="flex flex-col justify-center items-center gap-2 w-full">
-                  <img src={plan.image} alt={plan.title} className="w-20 h-20" draggable={false} />
-                  <h3 className="text-xl md:text-2xl font-bold text-center text-neutral-700">{plan.title}</h3>
-                  <h4 className="text-base md:text-lg font-bold text-center text-neutral-700">{plan.subtitle}</h4>
+            whatYouWillGain.map((item, index) => (
+              <Fragment key={index}>
+                <div className={`flex flex-col items-center justify-center gap-5 md:gap-10 w-full p-5`}>
+                  <h2 className="text-2xl md:text-4xl font-bold text-center text-neutral-700">{item.title}</h2>
+                  <div className="flex flex-col justify-center gap-16 w-full">
+                    
+                    {
+                      item.section.map((section, index2) => (
+                        <div key={index2} className={`flex flex-col md:flex-row justify-between w-full gap-16`}>
+                          <div className={`flex flex-col items-start justify-center gap-5 w-full md:w-6/12 ${index2 % 2 === 0 ? 'order-1 md:order-2' : 'order-2 md:order-1'}`}>
+                            <h3 className="text-xl md:text-2xl font-bold text-center md:text-left text-neutral-700">{section.title}</h3>
+                            <p className="text-base md:text-lg font-normal text-center md:text-left text-neutral-700">{parse(section.paragraph)}</p>
+                            <div className="flex flex-col justify-center gap-1 w-full md:w-auto md:min-w-[300px]">
+                              {/* <Link href="/mentoring-blue" className='text-lg md:text-xl text-center bg-neutral-600 text-white p-3 rounded-lg drop-shadow-lg shadow-lg hover:bg-neutral-700 hover:shadow-xl hover:drop-shadow-xl active:bg-neutral-800 active:shadow-2xl active:drop-shadow-2xl active:translate-x-1 active:scale-95 uppercase'>
+                              Join Grey Tier Now free
+                              </Link> */}
+                              <FormPopup />
+                            </div>
+                          </div>
+                          <div className="flex flex-col justify-center items-center gap-5 flex-1 order-2 md:order-1">
+                            <img src={section.image} alt={section.title} className="w-full rounded-xl" draggable={false} />
+                          </div>
+                        </div>
+                      ))
+                    }
+                  </div>
                 </div>
-                <ul className="flex flex-col gap-2 w-full mb-5">
-                  {
-                    plan.items.map((item, index) => (
-                      <li key={index} className="flex flex-row gap-2 mt">
-                        <BsCheck className="text-4xl w-6 text-neutral-700" />
-                        <p className=" flex-1 text-base md:text-lg font-normal text-neutral-700">
-                          {parse(item)}
-                        </p>
-                      </li>
-                    ))
-                  }
-                </ul>
-                {
-                  plan.title === 'Grey Membership' ? (
-                    <div className="flex flex-col w-full md:w-9/12">
-                      {/* <FormPopup /> */}
-                      <Link href='https://akassh.co/mfsp2023' className="text-lg md:text-xl text-center bg-neutral-600 text-white p-3 rounded-lg drop-shadow-lg shadow-lg hover:bg-neutral-700 hover:shadow-xl hover:drop-shadow-xl active:bg-neutral-800 active:shadow-2xl active:drop-shadow-2xl active:translate-x-1 active:scale-95  uppercase">
-                         Apply Now
-                      </Link>
-                    </div>
-                  ) : (
-                    <div className="flex flex-col w-full md:w-9/12">
-                      <Link href='https://akassh.co/mfsp2023' className="text-lg md:text-xl text-center bg-blue-500 text-white p-3 rounded-lg drop-shadow-lg shadow-lg hover:bg-blue-700 hover:shadow-xl hover:drop-shadow-xl active:bg-blue-800 active:shadow-2xl active:drop-shadow-2xl active:translate-x-1 active:scale-95 uppercase">
-                         Apply Now
-                      </Link>
-                    </div>
+                {/* {
+                  index === 0 && (
+                    <div className="border-b-[4px] border-neutral-600 border-double w-full"></div>
                   )
-                }
-              </div>
+                } */}
+              </Fragment>
             ))
           }
         </div>

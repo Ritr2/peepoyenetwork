@@ -23,31 +23,6 @@ const whoIsThisFor = [
   `A comprehensive program aiming to equip participants with the knowledge needed for success in various fields.`
 ]
 
-const plans = [
-  {
-    title: 'Grey Membership',
-    subtitle: '(Free)',
-    image: 'http://peepoyenetwork.com/wp-content/uploads/2023/12/grey.png',
-    items: [
-      'Daily Success Dose',
-      'Weekly Success Gamification-based Challenge with a New Concept every week.',
-      'Monthly Success Letter flashing Gamification results and Highlighting Success Stories',
-      'Early access to register for Success workshops (paid basis)'
-    ]
-  },
-  {
-    title: 'Blue Membership',
-    subtitle: '(₹1/Day)',
-    image: 'http://peepoyenetwork.com/wp-content/uploads/2023/12/blue.png',
-    items: [
-      `All benefits of Grey Membership+`,
-      `<b className="text-blue-500">Access to Blue Card</b> that provides a Free Pass x 12 to Join Success Workshops that will be held once a Month in the calendar year`,
-      `Private Access to the Telegram Community to Stay Connected for Frequent Updates, Alerts, etc.`,
-      `24/7 email support`,
-    ]
-  }
-]
-
 const whatYouWillGain = [
   {
     title: 'New Upgrade Insight',
@@ -89,7 +64,7 @@ const whatYouWillGain = [
 export default function Mentoring() {
   return (
     <main className={`relative flex min-h-screen flex-col items-center mt-16 ${dmSans.className} overflow-x-hidden`}>
-      <div className="flex flex-col w-full justify-center py-3 items-center bg-blue-500">
+      <div className="flex flex-col w-full justify-center py-3 items-center blue-bg">
         <span className="text-base md:text-xl font-normal md:font-bold text-center md:text-left text-white">
           Wait! We have a special offer for you. Join our new 'Mentorship for Success Program' for 2024
         </span>
@@ -99,7 +74,7 @@ export default function Mentoring() {
           <h1 className="text-2xl md:text-4xl font-bold text-center md:text-left text-neutral-700">Join our new 'Mentorship for Success Program' for 2024</h1>
           <p className="text-base md:text-lg font-normal text-center md:text-left text-neutral-700">Discover a thrilling journey with our upcoming <b>"Mentorship for Success Program."</b> Building on our past success, This new program is designed to take your professional and personal growth to unprecedented heights by enabling your success journey daily. As we expand our mentorship program, we want you to be among the first to embark on this transformative journey.</p>
           <div className="flex flex-col w-full md:w-9/12 mt-2 md:mt-3">
-            <ScrollButton bgColor={{ normal: 'bg-sky-600', hover: 'bg-sky-500', active: 'bg-sky-700' }} />
+            <ScrollButton bgColor={{ normal: 'blue-bg-button', hover: 'bg-sky-500', active: 'bg-sky-700' }} />
           </div>
         </div>
         <div className="flex flex-col items-end flex-1 order-2">
@@ -152,12 +127,12 @@ export default function Mentoring() {
                   <div className="flex flex-col justify-center gap-16 w-full">
                     {
                       item.section.map((section, index2) => (
-                        <div key={index2} className={`flex flex-col md:flex-row justify-between w-full gap-5`}>
-                          <div className={`flex flex-col items-start justify-center gap-5 w-full md:w-8/12 ${index2 % 2 === 0 ? 'order-1 md:order-2' : 'order-2 md:order-1'}`}>
+                        <div key={index2} className={`flex flex-col md:flex-row justify-between w-full gap-16`}>
+                          <div className={`flex flex-col items-start justify-center gap-5 w-full md:w-6/12 ${index2 % 2 === 0 ? 'order-1 md:order-2' : 'order-2 md:order-1'}`}>
                             <h3 className="text-xl md:text-2xl font-bold text-center md:text-left text-neutral-700">{section.title}</h3>
                             <p className="text-base md:text-lg font-normal text-center md:text-left text-neutral-700">{parse(section.paragraph)}</p>
                             <div className="flex flex-col justify-center gap-1 w-full md:w-auto md:min-w-[300px]">
-                              <Link href="https://pages.razorpay.com/successblue" className='flex flex-row w-full bg-sky-500 md:max-w-[400px] hover:bg-sky-600 text-white font-bold py-2 px-4 rounded-lg justify-center items-center gap-2 uppercase'>
+                              <Link href="https://pages.razorpay.com/successblue" className='flex flex-row w-full blue-bg-button md:max-w-[400px] hover:bg-sky-600 text-white font-bold py-2 px-4 rounded-lg justify-center items-center gap-2 uppercase'>
                                 Join Blue Tier Now
                               </Link>
                               <Link href="https://pages.razorpay.com/successgrey" className='hover:underline text-base md:text-lg font-normal text-center text-neutral-500'>
