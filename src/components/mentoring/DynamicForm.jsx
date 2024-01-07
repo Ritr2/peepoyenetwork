@@ -14,12 +14,12 @@ export default function DynamicForm({ animation = true, closeFunc = false }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setFormVisible(false);
+    // setFormVisible(false);
     const first_name = nameRef.current.value;
     const email = emailRef.current.value;
 
     const data = {
-      listkey: "3z23b92183b64713c40ed71feef5794847a9f98c9edd98244826c9cc05288735d8",
+      listkey: "3zef1b291c4c6981a44c5c725ccba11f11dfe795ce724df121cc01fef24b9d1ac6",
       email,
       first_name,
     }

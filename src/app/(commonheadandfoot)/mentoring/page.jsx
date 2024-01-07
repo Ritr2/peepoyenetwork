@@ -243,7 +243,7 @@ export default function Mentoring() {
             </p>
           </div>
         </div>
-        <div className="flex flex-col gap-5 self-center w-full md:w-8/12">
+        <div className="flex flex-col self-center w-full md:w-8/12">
           <FormPopup />
           {/* <Link to='dfyPricingSection' smooth={true} duration={500} className='flex-1 flex flex-row items-center justify-center gap-2 md:gap-5 bg-emerald-700 cursor-pointer text-white text-lg md:text-xl font-bold rounded-xl py-2 md:py-3 px-5 md:px-8 hover:bg-emerald-600'>
             Book Now

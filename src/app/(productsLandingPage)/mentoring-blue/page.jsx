@@ -102,7 +102,7 @@ export default function Mentoring() {
           <h1 className="text-2xl md:text-4xl font-bold text-center md:text-left text-white">Premium Blue Tier Unlocked! Designed for ambitious go-getters aiming for 10x faster success</h1>
           <p className="text-base md:text-xl font-normal text-center md:text-left text-white">Our Premium Blue Tier of Mentorship combines all the Grey Tier features with exciting new benefits that ensure your membership guarantees success. Enjoy perks such as a Gamified Reward Program, complete access to the Mentorship Archive, a Blue Card granting free entry to Live Success Workshops held on Zoom throughout the year, VIP discounts for Success Workshops, exclusive access to a private community, and much more.</p>
           <div className="flex flex-col w-full md:w-9/12 mt-2 md:mt-3">
-            <ScrollButton text='Explore the Benefits' bgColor={{ normal: 'golden-bg-button', hover: '', active: '' }} />
+          <ScrollButton text='Explore the Key Features of Premium Blue' bgColor={{ normal: 'golden-bg-button', hover: '', active: '' }} />
           </div>
         </div>
         <div className="flex flex-col items-end flex-1 order-2">

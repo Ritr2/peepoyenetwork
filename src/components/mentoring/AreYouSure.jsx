@@ -50,16 +50,16 @@ export default function AreYouSure() {
               className='relative flex flex-col items-center justify-center gap-5 max-w-5xl bg-white p-6 md:px-14 md:py-10 rounded-lg shadow-lg'>
               <IoClose className='absolute top-1 right-1 md:top-2 md:right-2 text-3xl text-neutral-700 cursor-pointer hover:text-red-600' onClick={() => setFormVisible(false)} />
               <div className='flex flex-col items-center justify-center gap-2 md:gap-10'>
-                <div className='flex flex-col gap-2'>
+                <div className='flex flex-col gap-5'>
                 <h1 className='text-xl md:text-3xl font-bold text-center text-neutral-700'>Are you absolutely certain you want to pass up the extraordinary opportunity of our Premium Blue Tier that cost only Rs 1 per day?</h1>
-                <p className='text-base md:text-xl font-normal text-center text-neutral-700'>Remember, declining means missing out on these exclusive benefits given below which may never be offered at such a low price ever again!</p>
+                <p className='text-base md:text-xl font-normal text-center blue-text'>Remember, declining means missing out on these exclusive benefits given below which may never be offered at such a low price ever again!</p>
                 </div>
                 <div className='flex flex-col w-full gap-2'>
                 {
                   points.map((point, index) => (
                     <div key={index} className='flex flex-row items-center gap-2'>
                       <div className='flex flex-row gap-2'>
-                        <div className='w-3 h-3 rounded-full bg-blue-500'></div>
+                        <div className='w-3 h-3 rounded-full blue-bg'></div>
                       </div>
                       <p className='text-base md:text-xl font-normal text-center text-neutral-700'>{point}</p>
                     </div>
@@ -68,8 +68,8 @@ export default function AreYouSure() {
                   </div>
                 <div className='flex flex-col md:flex-row items-center justify-center gap-5 w-full'>
                   <button className='text-base md:text-lg text-center golden-bg text-white p-2 px-8 rounded-lg drop-shadow-lg shadow-lg hover:shadow-xl hover:drop-shadow-xl active:shadow-2xl active:drop-shadow-2xl active:translate-x-1 active:scale-95 w-6/12 uppercase' onClick={() => setFormVisible(false)}>I want to upgrade to Blue!</button>
-                  <Link href='https://forms.gle/5Kh5uPWoFkB5P6ZS8' className='text-base md:text-lg text-center bg-neutral-400 text-white p-2 px-8 rounded-lg drop-shadow-lg shadow-lg hover:bg-neutral-200 hover:shadow-xl hover:drop-shadow-xl active:bg-neutral-400 active:shadow-2xl active:drop-shadow-2xl active:translate-x-1 active:scale-95 flex-1'>
-                    Yes, Take me to Free Grey Application Form
+                  <Link href='https://forms.gle/5Kh5uPWoFkB5P6ZS8' className='text-base md:text-lg text-center bg-neutral-400 text-white p-2 px-8 rounded-lg drop-shadow-lg shadow-lg hover:bg-neutral-200 hover:shadow-xl hover:drop-shadow-xl active:bg-neutral-400 active:shadow-2xl active:drop-shadow-2xl active:translate-x-1 active:scale-95 flex-1 capitalize'>
+                    Yes, I want to apply for Free Grey Mentorship
                   </Link>
                 </div>
               </div>
