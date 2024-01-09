@@ -15,6 +15,8 @@ import FunnelFooter from '@/components/funnels/FunnelFooter'
 import AreYouSure from '@/components/mentoring/AreYouSure'
 import Experience from '@/components/Experience'
 import SocialMediaDetails from '@/components/SocialMediaDetails'
+import CountDown from '@/components/mentoring/CountDown'
+import BottonTag from '@/components/mentoring/BottonTag'
 
 const dmSans = Lato({
   weight: ['100', '300', '400', '700', '900'],
@@ -92,6 +94,7 @@ const whatYouWillGain = [
 export default function Mentoring() {
   return (
     <main className={`relative flex min-h-screen flex-col items-center ${dmSans.className}  overflow-x-hidden navy-blue-bg`}>
+      <BottonTag />
       <div className="flex flex-col w-full justify-center py-3 items-center golden-bg">
         <span className="text-base md:text-xl font-normal md:font-bold text-center md:text-left text-white uppercase">
           ⌛ Wait! The Higher Tier Blue Mentorship with premium perks is now available for you!
@@ -102,7 +105,7 @@ export default function Mentoring() {
           <h1 className="text-2xl md:text-4xl font-bold text-center md:text-left text-white">Premium Blue Tier Unlocked! Designed for ambitious go-getters aiming for 10x faster success</h1>
           <p className="text-base md:text-xl font-normal text-center md:text-left text-white">Our Premium Blue Tier of Mentorship combines all the Grey Tier features with exciting new benefits that ensure your membership guarantees success. Enjoy perks such as a Gamified Reward Program, complete access to the Mentorship Archive, a Blue Card granting free entry to Live Success Workshops held on Zoom throughout the year, VIP discounts for Success Workshops, exclusive access to a private community, and much more.</p>
           <div className="flex flex-col w-full md:w-9/12 mt-2 md:mt-3">
-          <ScrollButton text='Explore the Key Features of Premium Blue' bgColor={{ normal: 'golden-bg-button', hover: '', active: '' }} />
+            <ScrollButton text='Explore the Key Features of Premium Blue' bgColor={{ normal: 'golden-bg-button', hover: '', active: '' }} />
           </div>
         </div>
         <div className="flex flex-col items-end flex-1 order-2">
@@ -124,7 +127,7 @@ export default function Mentoring() {
                             <h3 className="text-xl md:text-3xl font-bold text-center md:text-left text-white">{section.title}</h3>
                             <p className="text-base md:text-xl font-normal text-center md:text-left text-white">{parse(section.paragraph)}</p>
                             <div className="flex flex-col justify-center gap-1 w-full md:w-auto md:min-w-[300px]">
-                              <Link href="https://pages.razorpay.com/successblue" className='flex flex-row w-full golden-bg-button md:max-w-[400px] text-white font-bold py-2 px-4 rounded-lg justify-center items-center gap-2 uppercase'>
+                              <Link href="https://pages.razorpay.com/successblue" className='flex flex-row w-full golden-bg-button md:max-w-[400px] text-white font-bold md:py-2 py-1 px-1 text-sm md:px-4 md:text-base rounded-lg justify-center items-center gap-2 uppercase'>
                                 Upgrade to Blue Tier at ₹ 1/day only
                               </Link>
                               <AreYouSure />
@@ -218,7 +221,7 @@ export default function Mentoring() {
           </div>
         </div>
         <div className="flex flex-col gap-5 self-center items-center w-full md:w-8/12">
-          <Link href="https://pages.razorpay.com/successblue" className='flex flex-row w-full golden-bg-button md:max-w-[400px] text-white font-bold py-2 px-4 rounded-lg justify-center items-center gap-2 uppercase'>
+          <Link href="https://pages.razorpay.com/successblue" className='flex flex-row w-full golden-bg-button md:max-w-[400px] text-white font-bold md:py-2 py-1 px-1 text-sm md:px-4 md:text-base rounded-lg justify-center items-center gap-2 uppercase'>
             Upgrade to Blue Tier at ₹ 1/day only
           </Link>
           <AreYouSure />
@@ -237,7 +240,7 @@ export default function Mentoring() {
                 {
                   ((index + 1) % 3 === 0 && index > 0) && (
                     <div className="flex flex-col w-full items-center">
-                      <Link href="https://pages.razorpay.com/successblue" className='flex flex-row w-full golden-bg-button md:max-w-[400px] text-white font-bold py-2 px-4 rounded-lg justify-center items-center gap-2 uppercase'>
+                      <Link href="https://pages.razorpay.com/successblue" className='flex flex-row w-full golden-bg-button md:max-w-[400px] text-white font-bold md:py-2 py-1 px-1 text-sm md:px-4 md:text-base rounded-lg justify-center items-center gap-2 uppercase'>
                         Upgrade to Blue Tier at ₹ 1/day only
                       </Link>
                       <AreYouSure />
@@ -259,7 +262,7 @@ export default function Mentoring() {
                 {
                   ((index + 1) % 3 === 0 && index > 0) && (
                     <div className="flex flex-col w-full items-center md:w-1/2">
-                      <Link href="https://pages.razorpay.com/successblue" className='flex flex-row w-full golden-bg-button md:max-w-[400px] text-white font-bold py-2 px-4 rounded-lg justify-center items-center gap-2 uppercase'>
+                      <Link href="https://pages.razorpay.com/successblue" className='flex flex-row w-full golden-bg-button md:max-w-[400px] text-white font-bold md:py-2 py-1 px-1 text-sm md:px-4 md:text-base rounded-lg justify-center items-center gap-2 uppercase'>
                         Upgrade to Blue Tier at ₹ 1/day only
                       </Link>
                       <AreYouSure />
