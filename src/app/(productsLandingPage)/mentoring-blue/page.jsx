@@ -30,6 +30,21 @@ const whoIsThisFor = [
   `A comprehensive program aiming to equip participants with the knowledge needed for success in various fields.`
 ]
 
+const whatYouWillLearn = [
+  'Time Management',
+'Goal Setting',
+'Developing Success Mindset',
+'Mindset Hacks',
+'Wellness',
+'Digital Authority',
+'Mindset Hacks',
+'Networking',
+'Digital Collaboration',
+'Productivity Hacks',
+'Work Life Balance',
+'Code of Success',
+]
+
 const whoIsThisFor2 = [
   {
     title: 'Students',
@@ -94,7 +109,7 @@ const whatYouWillGain = [
 export default function Mentoring() {
   return (
     <main className={`relative flex min-h-screen flex-col items-center ${dmSans.className}  overflow-x-hidden navy-blue-bg`}>
-      <BottonTag />
+      <BottonTag /> 
       <div className="flex flex-col w-full justify-center py-3 items-center golden-bg">
         <span className="text-base md:text-xl font-normal md:font-bold text-center md:text-left text-white uppercase">
           ⌛ Wait! The Higher Tier Blue Mentorship with premium perks is now available for you!
@@ -178,6 +193,28 @@ export default function Mentoring() {
               }
             </div>
           </div> */}
+        </div>
+      </section>
+      <section className="flex flex-col items-center w-full justify-center gap-8 bg-stone-100 px-5 py-16 md:px-52 overflow-hidden">
+        <div className="flex flex-col md:flex-row items-center justify-center md:gap-5 w-full">
+          <div className="flex flex-col items-center justify-center gap-2 w-full">
+            <h2 className="text-lg md:text-2xl font-bold text-neutral-700">
+              Our Program Strucutre includes Monthly Success Workshops and Premium Content on the below listed Key Success Themes
+            </h2>
+            <div className="flex flex-col gap-1 w-full">
+              {
+                whatYouWillLearn.map((item, index) => (
+                  <div key={index} className="flex flex-row gap-2">
+                  <span key={index} className="text-base md:text-lg text-neutral-700">{index+1}.</span>
+                  <span className="text-base md:text-lg text-neutral-700">{item}</span>
+                  </div>
+                ))
+              }
+              </div>
+          </div>
+          <div className="flex flex-col items-center justify-center gap-5 md:gap-10 w-full p-5">
+            <img src="https://i.ibb.co/GdRJ5sw/akasshashokgupta.webp" alt="Akassh ashok Gupta" className="w-full" draggable={false} />
+          </div>
         </div>
       </section>
       <section className="z-10 flex flex-col py-10 md:py-20 px-5 md:px-40 gap-5 md:gap-14 bg-white/5">
