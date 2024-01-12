@@ -31,18 +31,22 @@ const whoIsThisFor = [
 ]
 
 const whatYouWillLearn = [
-  'Time Management',
-'Goal Setting',
-'Developing Success Mindset',
-'Mindset Hacks',
-'Wellness',
-'Digital Authority',
-'Mindset Hacks',
-'Networking',
-'Digital Collaboration',
-'Productivity Hacks',
-'Work Life Balance',
-'Code of Success',
+  [
+    'Time Management',
+    'Goal Setting',
+    'Developing Success Mindset',
+    'Mindset Hacks',
+    'Wellness',
+    'Digital Authority',
+  ],
+  [
+    'Mindset Hacks',
+    'Networking',
+    'Digital Collaboration',
+    'Productivity Hacks',
+    'Work Life Balance',
+    'Code of Success',
+  ]
 ]
 
 const whoIsThisFor2 = [
@@ -196,23 +200,29 @@ export default function Mentoring() {
         </div>
       </section>
       <section className="flex flex-col items-center w-full justify-center gap-8 bg-stone-100 px-5 py-16 md:px-52 overflow-hidden">
-        <div className="flex flex-col md:flex-row items-center justify-center md:gap-5 w-full">
-          <div className="flex flex-col items-center justify-center gap-2 w-full">
+      <div className="flex flex-col md:flex-row items-center justify-center md:gap-5 w-full">
+          <div className="flex flex-col items-center justify-center gap-2 w-full md:w-7/12">
             <h2 className="text-lg md:text-2xl font-bold text-neutral-700">
-              Our Program Strucutre includes Monthly Success Workshops and Premium Content on the below listed Key Success Themes
+            Our Program Structure
             </h2>
-            <div className="flex flex-col gap-1 w-full">
+            <div className="flex flex-row gap-1 w-full">
               {
                 whatYouWillLearn.map((item, index) => (
-                  <div key={index} className="flex flex-row gap-2">
-                  <span key={index} className="text-base md:text-lg text-neutral-700">{index+1}.</span>
-                  <span className="text-base md:text-lg text-neutral-700">{item}</span>
+                  <div key={index} className="flex flex-col bg-neutral-300 rounded-lg shadow-lg p-5 flex-1">
+                      {
+                        item.map((section, index2) => (
+                          <div key={index2} className="flex flex-row items-center gap-2">
+                            <span key={index} className="text-base md:text-lg text-neutral-700 w-3 h-3 bg-neutral-700 rounded-full"></span>
+                            <span className="text-base md:text-lg text-neutral-700">{section}</span>
+                          </div>
+                        ))
+                      }
                   </div>
                 ))
               }
-              </div>
+            </div>
           </div>
-          <div className="flex flex-col items-center justify-center gap-5 md:gap-10 w-full p-5">
+          <div className="flex flex-col items-center justify-center gap-5 md:gap-10 flex-1 p-5">
             <img src="https://i.ibb.co/GdRJ5sw/akasshashokgupta.webp" alt="Akassh ashok Gupta" className="w-full" draggable={false} />
           </div>
         </div>

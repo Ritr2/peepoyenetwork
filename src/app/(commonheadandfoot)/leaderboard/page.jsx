@@ -125,7 +125,6 @@ const sectionStyle = {
   backgroundSize: 'cover',
   backgroundPosition: 'center',
   color: 'white',
-  padding: '2rem',
   borderRadius: '0.75rem',
   boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
   textAlign: 'center',
@@ -135,13 +134,19 @@ export default function Mentoring() {
   return (
     <main className={`flex flex-col items-center mt-16 ${dmSans.className}`}>
       <section className="flex flex-col items-center justify-center md:gap-5 pt-10 px-5 md:px-52 pb-5 md:pb-10">
-        <div className="flex flex-col justify-center items-center gap-5 w-full">
-          <h1 className="text-2xl md:text-4xl font-bold text-center text-neutral-700">Success Mentorship Program Gamified Leaderboard</h1>
-        </div>
         <div className="flex flex-col md:flex-row justify-center items-center gap-5 w-full">
-          <div className="flex flex-col justify-center items-center gap-5 w-full md:w-1/2">
+        <div className="flex flex-col justify-center items-center gap-5 flex-1">
+          <h1 className="text-2xl md:text-5xl font-bold text-center text-neutral-700">Success Mentorship Program Gamified Leaderboard</h1>
+        </div>
+          <div className="flex flex-col items-center justify-center w-full md:w-6/12">
+            <img src='http://peepoyenetwork.com/wp-content/uploads/2024/01/gamification-leaderboard.jpg' alt="Akassh ashok Gupta" className="w-full rounded-lg" draggable={false} />
+          </div>
+        </div>
+      </section>
+      <section className="flex flex-col md:flex-row items-center w-full justify-center gap-8 bg-stone-100 px-5 py-16 md:px-52 overflow-hidden">
+      <div className="flex flex-col justify-center items-center gap-5 w-full md:w-[32%]">
             <div className="flex flex-col justify-center items-center gap-1 w-full">
-              <h2 className="text-xl md:text-2xl font-bold text-center text-neutral-700 border-b-[4px] border-neutral-600 border-double">Weekly Leaderboard</h2>
+              <h2 className="tlgt-xl md:txt-2xl font-bold text-center text-neutral-700 border-b-[4px] border-neutral-600 border-double">Weekly Leaderboard</h2>
               {
                 weeklyScores.map((item, index) => (
                   <Badge item={item} key={index} />
@@ -149,15 +154,9 @@ export default function Mentoring() {
               }
             </div>
           </div>
-          <div className="flex flex-col items-center justify-center w-full md:w-6/12">
-            <img src='http://peepoyenetwork.com/wp-content/uploads/2024/01/gamification-leaderboard.jpg' alt="Akassh ashok Gupta" className="w-full rounded-lg" draggable={false} />
-          </div>
-        </div>
-      </section>
-      <section className="flex flex-col md:flex-row items-center w-full justify-center gap-8 bg-stone-100 px-5 py-16 md:px-52 overflow-hidden">
-        <div className="flex flex-col justify-center items-center gap-5 w-full md:w-1/2">
+        <div className="flex flex-col justify-center items-center gap-5 w-full md:w-[32%]">
           <div className="flex flex-col justify-center items-center gap-1 w-full">
-            <h2 className="text-xl md:text-2xl font-bold text-center text-neutral-700 border-b-[4px] border-neutral-600 border-double">Monthly Leaderboard</h2>
+            <h2 className="text-lg md:text-xl font-bold text-center text-neutral-700 border-b-[4px] border-neutral-600 border-double">Monthly Leaderboard</h2>
             {
               monthlyScores.map((item, index) => (
                 <Badge item={item} key={index} />
@@ -165,9 +164,9 @@ export default function Mentoring() {
             }
           </div>
         </div>
-        <div className="flex flex-col justify-center items-center gap-5 w-full md:w-1/2">
+        <div className="flex flex-col justify-center items-center gap-5 w-full md:w-[32%]">
           <div className="flex flex-col justify-center items-center gap-1 w-full">
-            <h2 className="text-xl md:text-2xl font-bold text-center text-neutral-700 border-b-[4px] border-neutral-600 border-double">All Time Leaderboard</h2>
+            <h2 className="text-lg md:text-xl font-bold text-center text-neutral-700 border-b-[4px] border-neutral-600 border-double">All Time Leaderboard</h2>
             {
               allTimeScores.map((item, index) => (
                 <Badge item={item} key={index} />
@@ -177,7 +176,8 @@ export default function Mentoring() {
         </div>
       </section>
       <section className="flex flex-col items-center justify-center gap-1 pt-10 px-5 md:px-52 pb-5 md:pb-10 w-full">
-        <div style={sectionStyle} className='flex flex-col justify-center items-center w-full'>
+        <div style={sectionStyle} className='flex flex-col w-full shadow-md rounded-xl'>
+          <div className="flex flex-col justify-center items-center w-full h-full bg-black/30 p-4 rounded-xl">
           <div className="flex flex-col justify-center items-center w-full md:w-3/12">
             <img src={surpriseImage} alt="Akassh ashok Gupta" className="w-full rounded-lg" draggable={false} />
           </div>
@@ -186,6 +186,7 @@ export default function Mentoring() {
           </p>
           <p className="text-sm md:text-2xl text-gray-100 mb-6">(Please note: Only Blue Tier Mentees will be eligible for the Rewards)</p>
           <p className="text-lg md:text-xl">Stay tuned for a delightful surprise! 🌟</p>
+          </div>
         </div>
       </section>
       <section className="flex flex-col items-center justify-center md:gap-5 pt-10 px-5 md:px-52 pb-5 md:pb-10 bg-stone-100 w-full">

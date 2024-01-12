@@ -143,10 +143,10 @@ export default async function Home() {
                 blog_details.map((blog, index) => (
                   <div className="flex flex-col items-center justify-between w-full md:w-[30.5%] gap-5" key={index}>
                     <div className="flex flex-col items-center gap-2">
-                      <Link href={`/social_awareness/blog/${blog.slug}`}><img src={blog.image.src} alt={blog.title} className="w-full rounded-lg" /></Link>
-                      <Link href={`/social_awareness/blog/${blog.slug}`}><h2 className="text-lg md:text-xl font-normal text-center text-neutral-900">{blog.title}</h2></Link>
+                      <Link href={`/social-awareness/blogs${blog.slug}`}><img src={blog.image.src} alt={blog.title} className="w-full rounded-lg" /></Link>
+                      <Link href={`/social-awareness/blogs${blog.slug}`}><h2 className="text-lg md:text-xl font-normal text-center text-neutral-900">{blog.title}</h2></Link>
                     </div>
-                    <Link className='w-11/12' href={`/social_awareness/blog/${blog.slug}`}><button className="flex rounded-lg py-2 px-4 text-base md:text-xl font-bold flex-row items-center justify-center gap-2 w-full text-white bg-neutral-600 hover:bg-neutral-400 hover:shadow-lg hover:drop-shadow-lg hover:scale-105 active:bg-neutral-900 active:shadow-none active:drop-shadow-none active:scale-95">Read More</button></Link>
+                    <Link className='w-11/12' href={`/social-awareness/blogs${blog.slug}`}><button className="flex rounded-lg py-2 px-4 text-base md:text-xl font-bold flex-row items-center justify-center gap-2 w-full text-white bg-neutral-600 hover:bg-neutral-400 hover:shadow-lg hover:drop-shadow-lg hover:scale-105 active:bg-neutral-900 active:shadow-none active:drop-shadow-none active:scale-95">Read More</button></Link>
                   </div>
                 ))
               }
