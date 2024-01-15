@@ -1,159 +1,159 @@
 const weeklyScores = [
     {
         "rank": 1,
-        "name": "Sahil Khan",
-        "score": 16
+        "name": "Sanjeet Kumar",
+        "score": 21
     },
     {
         "rank": 2,
-        "name": "Sanjeet Kumar",
-        "score": 15
+        "name": "Sahil Khan",
+        "score": 20
     },
     {
         "rank": 3,
         "name": "Sanidhay Grover",
-        "score": 13
+        "score": 16
     },
     {
         "rank": 4,
         "name": "Shivangi Jajoo",
-        "score": 6
+        "score": 10
     },
     {
         "rank": 5,
-        "name": "Himanshu Pandey",
-        "score": 5
+        "name": "Akarsh Pratap Singh",
+        "score": 9
     },
     {
         "rank": 6,
-        "name": "Akarsh Pratap Singh",
-        "score": 5
+        "name": "Kunal Priyadarshi",
+        "score": 6
     },
     {
         "rank": 7,
         "name": "Tanmoy Singha",
-        "score": 5
+        "score": 6
     },
     {
         "rank": 8,
-        "name": "Bhaskar Garain",
-        "score": 4
+        "name": "Akarshit Mehta",
+        "score": 6
     },
     {
         "rank": 9,
-        "name": "Rajat Singhal",
-        "score": 3
+        "name": "Himanshu  Pandey",
+        "score": 5
     },
     {
         "rank": 10,
-        "name": "Kunal Priyadarshi",
-        "score": 3
+        "name": "Shashank Selvarajan Pillay",
+        "score": 4
     }
 ]
 
 const monthlyScores = [
     {
         "rank": 1,
-        "name": "Sahil Khan",
-        "score": 16
+        "name": "Sanjeet Kumar",
+        "score": 21
     },
     {
         "rank": 2,
-        "name": "Sanjeet Kumar",
-        "score": 15
+        "name": "Sahil Khan",
+        "score": 20
     },
     {
         "rank": 3,
         "name": "Sanidhay Grover",
-        "score": 13
+        "score": 16
     },
     {
         "rank": 4,
         "name": "Shivangi Jajoo",
-        "score": 6
+        "score": 10
     },
     {
         "rank": 5,
-        "name": "Himanshu Pandey",
-        "score": 5
+        "name": "Akarsh Pratap Singh",
+        "score": 9
     },
     {
         "rank": 6,
-        "name": "Akarsh Pratap Singh",
-        "score": 5
+        "name": "Kunal Priyadarshi",
+        "score": 6
     },
     {
         "rank": 7,
         "name": "Tanmoy Singha",
-        "score": 5
+        "score": 6
     },
     {
         "rank": 8,
-        "name": "Bhaskar Garain",
-        "score": 4
+        "name": "Akarshit Mehta",
+        "score": 6
     },
     {
         "rank": 9,
-        "name": "Rajat Singhal",
-        "score": 3
+        "name": "Himanshu  Pandey",
+        "score": 5
     },
     {
         "rank": 10,
-        "name": "Kunal Priyadarshi",
-        "score": 3
+        "name": "Shashank Selvarajan Pillay",
+        "score": 4
     }
 ]
 
 const allTimeScores = [
     {
         "rank": 1,
-        "name": "Sahil Khan",
-        "score": 16
+        "name": "Sanjeet Kumar",
+        "score": 21
     },
     {
         "rank": 2,
-        "name": "Sanjeet Kumar",
-        "score": 15
+        "name": "Sahil Khan",
+        "score": 20
     },
     {
         "rank": 3,
         "name": "Sanidhay Grover",
-        "score": 13
+        "score": 16
     },
     {
         "rank": 4,
         "name": "Shivangi Jajoo",
-        "score": 6
+        "score": 10
     },
     {
         "rank": 5,
-        "name": "Himanshu Pandey",
-        "score": 5
+        "name": "Akarsh Pratap Singh",
+        "score": 9
     },
     {
         "rank": 6,
-        "name": "Akarsh Pratap Singh",
-        "score": 5
+        "name": "Kunal Priyadarshi",
+        "score": 6
     },
     {
         "rank": 7,
         "name": "Tanmoy Singha",
-        "score": 5
+        "score": 6
     },
     {
         "rank": 8,
-        "name": "Bhaskar Garain",
-        "score": 4
+        "name": "Akarshit Mehta",
+        "score": 6
     },
     {
         "rank": 9,
-        "name": "Rajat Singhal",
-        "score": 3
+        "name": "Himanshu  Pandey",
+        "score": 5
     },
     {
         "rank": 10,
-        "name": "Kunal Priyadarshi",
-        "score": 3
+        "name": "Shashank Selvarajan Pillay",
+        "score": 4
     }
 ]
 
