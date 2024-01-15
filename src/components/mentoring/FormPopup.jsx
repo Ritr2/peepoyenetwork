@@ -5,7 +5,7 @@ import { IoClose } from 'react-icons/io5';
 import DynamicForm from './DynamicForm';
 
 
-export default function FormPopup() {
+export default function FormPopup({showsubheadline = true}) {
   const [formVisible, setFormVisible] = React.useState(false);
   const variants = {
     hidden: {
@@ -25,7 +25,7 @@ export default function FormPopup() {
   return (
     <Fragment>
       <button className="text-lg md:text-xl text-center bg-neutral-600 text-white p-3 rounded-lg drop-shadow-lg shadow-lg hover:bg-neutral-700 hover:shadow-xl hover:drop-shadow-xl active:bg-neutral-800 active:shadow-2xl active:drop-shadow-2xl active:translate-x-1 active:scale-95" onClick={() => setFormVisible(true)}>Apply Now for Free</button>
-      <h2 className='text-sm md:text-base font-normal text-center text-red-600 mt-2 drop-shadow-lg'>Act now! Limited free spots only for today</h2>
+      {showsubheadline && <h2 className='text-sm md:text-base font-normal text-center text-red-600 mt-2 drop-shadow-lg'>Act now! Limited free spots only for today</h2>}
       <AnimatePresence>
       {
         formVisible &&

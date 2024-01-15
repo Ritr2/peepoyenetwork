@@ -113,7 +113,7 @@ const whatYouWillGain = [
 export default function Mentoring() {
   return (
     <main className={`relative flex min-h-screen flex-col items-center ${dmSans.className}  overflow-x-hidden navy-blue-bg`}>
-      <BottonTag /> 
+      <BottonTag ptext='⏰ THIS OFFER IS ONLY AVAILABLE FOR THE NEXT' time= {86400000} btext='Upgrade to Blue now' blink='https://pages.razorpay.com/successblue' />
       <div className="flex flex-col w-full justify-center py-3 items-center golden-bg">
         <span className="text-base md:text-xl font-normal md:font-bold text-center md:text-left text-white uppercase">
           ⌛ Wait! The Higher Tier Blue Mentorship with premium perks is now available for you!

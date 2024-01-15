@@ -14,6 +14,7 @@ import ScrollButton from '@/components/mentoring/ScrollButton'
 import SocialMediaDetails from '@/components/SocialMediaDetails'
 import Experience from '@/components/Experience'
 import VideoPlay from '@/components/mentoring/VideoPlay'
+import BottonTagGrey from '@/components/mentoring/BottonTagGrey'
 
 const dmSans = DM_Sans({
   weight: '500',
@@ -132,6 +133,7 @@ export default function Mentoring() {
   }
   return (
     <main className={`flex flex-col items-center mt-16 ${dmSans.className}`}>
+      <BottonTagGrey ptext='APPLY FOR THE SUCCESS MENTORSHIP PROGRAM' time={604800000} btext='Register Now' blink='#plan' />
       <div className="flex flex-col w-full justify-center py-3 items-center bg-neutral-600">
         <span className="text-base md:text-xl font-normal md:font-bold text-center md:text-left text-white">Experience Unstoppable Success with Our Leading Mentorship Program</span>
       </div>
