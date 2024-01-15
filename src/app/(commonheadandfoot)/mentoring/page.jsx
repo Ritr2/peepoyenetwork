@@ -13,6 +13,7 @@ import Link from 'next/link'
 import ScrollButton from '@/components/mentoring/ScrollButton'
 import SocialMediaDetails from '@/components/SocialMediaDetails'
 import Experience from '@/components/Experience'
+import VideoPlay from '@/components/mentoring/VideoPlay'
 
 const dmSans = DM_Sans({
   weight: '500',
@@ -120,22 +121,31 @@ const whatYouWillGain = [
   },
 ]
 
+const bg_image = 'http://peepoyenetwork.com/wp-content/uploads/2024/01/Site-Banner.webp'
+
 export default function Mentoring() {
+  const bgImageStyle = {
+    backgroundImage: `url(${bg_image})`,
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    backgroundRepeat: 'no-repeat',
+  }
   return (
     <main className={`flex flex-col items-center mt-16 ${dmSans.className}`}>
-      <div className="flex flex-col w-full justify-center py-3 items-center bg-neutral-400">
+      <div className="flex flex-col w-full justify-center py-3 items-center bg-neutral-600">
         <span className="text-base md:text-xl font-normal md:font-bold text-center md:text-left text-white">Experience Unstoppable Success with Our Leading Mentorship Program</span>
       </div>
-      <section className="flex flex-col md:flex-row items-center justify-center md:gap-5 pt-10 px-5 md:px-52 pb-5 md:pb-10">
+      <section className="flex flex-col md:flex-row justify-center md:gap-5 pt-10 px-5 md:px-52 pb-5 md:pb-10" style={bgImageStyle}>
         <div className="flex flex-col justify-center gap-5 order-3 md:order-1 w-full md:w-6/12">
-          <h1 className="text-2xl md:text-4xl font-bold text-center md:text-left text-neutral-700">Unlock Your Success Potential with Our Innovative Mentorship</h1>
-          <p className="text-base md:text-lg font-normal text-center md:text-left text-neutral-700">"Our groundbreaking Success Mentorship Program is meticulously crafted to provide you with the tools, methods, and concepts that ensure not just learning but practical implementation, enabling a transformation of your ingrained patterns over time. Through a gamified and enjoyable setting, you'll receive daily success boosts, tackle weekly challenges, and engage in monthly workshops, igniting a relentless pursuit of success within you."</p>
+          <h1 className="text-2xl md:text-4xl font-bold text-center md:text-left text-white">Unlock Your Success Potential with Our Innovative Mentorship</h1>
+          <p className="text-base md:text-lg font-normal text-center md:text-left text-white">"Our groundbreaking Success Mentorship Program is meticulously crafted to provide you with the tools, methods, and concepts that ensure not just learning but practical implementation, enabling a transformation of your ingrained patterns over time. Through a gamified and enjoyable setting, you'll receive daily success boosts, tackle weekly challenges, and engage in monthly workshops, igniting a relentless pursuit of success within you."</p>
           <div className="flex flex-col w-full md:w-9/12 mt-2 md:mt-3">
             <ScrollButton text='Explore the Key Features' />
           </div>
         </div>
-        <div className="flex flex-col items-end flex-1 order-2">
-          <img src='http://peepoyenetwork.com/wp-content/uploads/2023/12/mentoring-logo.png' alt="Akassh ashok Gupta" className="w-full md:w-9/12" draggable={false} />
+        <div className="flex flex-col flex-1 order-2">
+          {/* <img src='http://peepoyenetwork.com/wp-content/uploads/2023/12/mentoring-logo.png' alt="Akassh ashok Gupta" className="w-full md:w-9/12" draggable={false} /> */}
+          <VideoPlay />
         </div>
       </section>
       <section className="flex flex-col items-center w-full justify-center gap-10 bg-stone-100 px-5 py-16 md:px-52 overflow-hidden">
