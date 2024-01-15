@@ -4,11 +4,11 @@ import React from 'react'
 const getRankColor = (rank) => {
     switch (rank) {
         case 1:
-            return 'bg-yellow-500 text-white';
+            return '';
         case 2:
-            return 'bg-gray-500 text-white';
+            return '';
         case 3:
-            return 'bg-yellow-700 text-white';
+            return '';
         default:
             return 'text-neutral-700';
     }
@@ -21,9 +21,28 @@ export default function Badge({item, index}) {
     };
 
     return (
-        <div key={index} className="flex flex-row justify-between items-center w-full border-[4px] border-neutral-200 rounded-lg shadow-inner p-1">
+        <div key={index} className="flex flex-row justify-between items-center w-full p-1">
             <div className="flex flex-row justify-between items-center gap-2">
-                <p className={`${badgeStyle.base} rounded-full w-7 text-center ${badgeStyle.rank}`}>{item.rank}</p>
+                {
+                    item.rank > 3 && (
+                        <p className={`${badgeStyle.base} rounded-full w-7 text-center ${badgeStyle.rank}`}>{item.rank}</p>
+                    )
+                }
+                {
+                    item.rank === 1 && (
+                        <img src="http://peepoyenetwork.com/wp-content/uploads/2024/01/gold.webp" alt="gold" className="w-7" />
+                    )
+                }
+                {
+                    item.rank === 2 && (
+                        <img src="http://peepoyenetwork.com/wp-content/uploads/2024/01/silver.webp" alt="silver" className="w-7" />
+                    )
+                }
+                {
+                    item.rank === 3 && (
+                        <img src="http://peepoyenetwork.com/wp-content/uploads/2024/01/bronze.webp" alt="bronze" className="w-7" />
+                    )
+                }
                 <p className={`${badgeStyle.base} text-center md:text-left text-neutral-700 flex-1`}>{item.name}</p>
             </div>
             <p className={`${badgeStyle.base} text-center md:text-left text-neutral-700`}>{item.score}</p>

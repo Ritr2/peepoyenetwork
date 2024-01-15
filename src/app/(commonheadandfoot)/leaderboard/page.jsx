@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react'
-import { DM_Sans } from 'next/font/google'
+import { Roboto } from 'next/font/google'
 import data from '@/utils/mentoring/expect_sections'
 import BoxContainer from '@/components/mentoring/BoxContainer'
 import DynamicForm from '@/components/mentoring/DynamicForm'
@@ -16,8 +16,8 @@ import Experience from '@/components/Experience'
 import { weeklyScores, monthlyScores, allTimeScores } from '@/utils/leaderboard/scores'
 import Badge from '@/components/leaderboard/Badge'
 
-const dmSans = DM_Sans({
-  weight: '500',
+const dmSans = Roboto({
+  weight: ['100', '300', '400', '500', '700', '900'],
   subsets: ['latin'],
 })
 
@@ -130,33 +130,40 @@ const sectionStyle = {
   textAlign: 'center',
 };
 
+const blueText = {
+  color: '#297BDF',
+}
+
 export default function Mentoring() {
   return (
     <main className={`flex flex-col items-center mt-16 ${dmSans.className}`}>
-      <section className="flex flex-col items-center justify-center md:gap-5 pt-10 px-5 md:px-52 pb-5 md:pb-10">
+      <section className="flex flex-col items-center justify-center md:gap-5 pt-10 px-5 md:px-60 pb-5 md:pb-10">
         <div className="flex flex-col md:flex-row justify-center items-center gap-5 w-full">
-        <div className="flex flex-col justify-center items-center gap-5 flex-1">
-          <h1 className="text-2xl md:text-5xl font-bold text-center text-neutral-700">Success Mentorship Program Gamified Leaderboard</h1>
-        </div>
-          <div className="flex flex-col items-center justify-center w-full md:w-6/12">
-            <img src='http://peepoyenetwork.com/wp-content/uploads/2024/01/gamification-leaderboard.jpg' alt="Akassh ashok Gupta" className="w-full rounded-lg" draggable={false} />
+          <div className="flex flex-col justify-center items-center gap-5 w-full md:w-6/12">
+            <h1 className="text-2xl md:text-4xl font-bold text-center md:text-left text-neutral-700">Success Mentorship Program Gamified Leaderboard</h1>
+            <p className="text-lg md:text-xl font-normal text-center md:text-left text-neutral-700">Say Hello to the Gamified Leaderboard in the Blue Mentorship Tier! Now, earn points by completing tasks from the Daily Success Dose and Weekly Challenges, unlocking exciting rewards and the chance to be featured on our website based on your leaderboard ranking</p>
+          </div>
+          <div className="flex flex-col items-end justify-center flex-1">
+            <div className="flex flex-col w-full md:w-7/12">
+              <img src='http://peepoyenetwork.com/wp-content/uploads/2024/01/gamification-leaderboard.jpg' alt="Akassh ashok Gupta" className="w-full rounded-lg shadow-lg drop-shadow-lg" draggable={false} />
+            </div>
           </div>
         </div>
       </section>
       <section className="flex flex-col md:flex-row items-center w-full justify-center gap-8 bg-stone-100 px-5 py-16 md:px-52 overflow-hidden">
-      <div className="flex flex-col justify-center items-center gap-5 w-full md:w-[32%]">
-            <div className="flex flex-col justify-center items-center gap-1 w-full">
-              <h2 className="tlgt-xl md:txt-2xl font-bold text-center text-neutral-700 border-b-[4px] border-neutral-600 border-double">Weekly Leaderboard</h2>
-              {
-                weeklyScores.map((item, index) => (
-                  <Badge item={item} key={index} />
-                ))
-              }
-            </div>
-          </div>
         <div className="flex flex-col justify-center items-center gap-5 w-full md:w-[32%]">
-          <div className="flex flex-col justify-center items-center gap-1 w-full">
-            <h2 className="text-lg md:text-xl font-bold text-center text-neutral-700 border-b-[4px] border-neutral-600 border-double">Monthly Leaderboard</h2>
+          <div className="flex flex-col justify-center items-center gap-3 w-full bg-white shadow-lg rounded-xl drop-shadow-lg p-4">
+            <h2 className="text-lg md:text-xl font-medium text-black mb-1 pb-4 w-full border-b-[1px] border-neutral-200">Leaderboard (7-day)</h2>
+            {
+              weeklyScores.map((item, index) => (
+                <Badge item={item} key={index} />
+              ))
+            }
+          </div>
+        </div>
+        <div className="flex flex-col justify-center items-center gap-5 w-full md:w-[32%]">
+          <div className="flex flex-col justify-center items-center gap-3 w-full bg-white shadow-lg rounded-xl drop-shadow-lg p-4">
+            <h2 className="text-lg md:text-xl font-medium text-black mb-1 pb-4 w-full border-b-[1px] border-neutral-200">Leaderboard (30-day)</h2>
             {
               monthlyScores.map((item, index) => (
                 <Badge item={item} key={index} />
@@ -165,8 +172,8 @@ export default function Mentoring() {
           </div>
         </div>
         <div className="flex flex-col justify-center items-center gap-5 w-full md:w-[32%]">
-          <div className="flex flex-col justify-center items-center gap-1 w-full">
-            <h2 className="text-lg md:text-xl font-bold text-center text-neutral-700 border-b-[4px] border-neutral-600 border-double">All Time Leaderboard</h2>
+          <div className="flex flex-col justify-center items-center gap-3 w-full bg-white shadow-lg rounded-xl drop-shadow-lg p-4">
+            <h2 className="text-lg md:text-xl font-medium text-black mb-1 pb-4 w-full border-b-[1px] border-neutral-200">Leaderboard (all-time)</h2>
             {
               allTimeScores.map((item, index) => (
                 <Badge item={item} key={index} />
@@ -175,31 +182,21 @@ export default function Mentoring() {
           </div>
         </div>
       </section>
-      <section className="flex flex-col items-center justify-center gap-1 pt-10 px-5 md:px-52 pb-5 md:pb-10 w-full">
-        <div style={sectionStyle} className='flex flex-col w-full shadow-md rounded-xl'>
-          <div className="flex flex-col justify-center items-center w-full h-full bg-black/30 p-4 rounded-xl">
-          <div className="flex flex-col justify-center items-center w-full md:w-3/12">
-            <img src={surpriseImage} alt="Akassh ashok Gupta" className="w-full rounded-lg" draggable={false} />
+      <section className="flex flex-col items-center justify-center md:gap-5 pt-10 px-5 md:px-60 pb-5 md:pb-10">
+        <div className="flex flex-col md:flex-row justify-center items-center gap-5 w-full">
+          <div className="flex flex-col justify-center gap-5 w-full md:w-7/12">
+            <h1 className="text-2xl md:text-3xl font-bold text-center md:text-left uppercase" style={blueText}>Exciting Reward Program COMING SOON for the Top Rankholders!</h1>
+            <h2 className="text-lg md:text-xl font-medium text-center md:text-left text-neutral-700"> Exclusive Rewards Await Blue Tier Mentees on our Mentorship Leaderboard – Stay Tuned for a Thrilling Surprise!</h2>
+            <p className="text-sm md:text-base font-normal text-center md:text-left text-neutral-700">Unlock exclusive benefits and advance your experience for just Rs 1 per day by joining the premium blue mentorship tier. Don't miss out on premium features and rewards! Elevate your journey today. 🚀"</p>
+            <Link href="/mentoring-blue" className='flex flex-row w-full golden-bg-button mt-2 md:max-w-[400px] text-white font-bold md:py-2 py-1 px-1 text-sm md:px-4 md:text-base rounded-lg justify-center items-center gap-2 uppercase'>
+              Upgrade to Blue Tier at ₹ 1/day only
+            </Link>
           </div>
-          <p className="text-lg md:text-3xl">
-            Monthly Reward Program to be announced shortly for the Top Rankholders on the leaderboard.
-          </p>
-          <p className="text-sm md:text-2xl text-gray-100 mb-6">(Please note: Only Blue Tier Mentees will be eligible for the Rewards)</p>
-          <p className="text-lg md:text-xl">Stay tuned for a delightful surprise! 🌟</p>
+          <div className="flex flex-col items-end justify-center flex-1">
+            <div className="flex flex-col w-full md:w-10/12">
+              <img src='http://peepoyenetwork.com/wp-content/uploads/2024/01/image_mentoring.webp' alt="Akassh ashok Gupta" className="w-full rounded-lg shadow-lg drop-shadow-lg" draggable={false} />
+            </div>
           </div>
-        </div>
-      </section>
-      <section className="flex flex-col items-center justify-center md:gap-5 pt-10 px-5 md:px-52 pb-5 md:pb-10 bg-stone-100 w-full">
-        <div className="bg-blue-500 text-white p-6 rounded-lg shadow-md text-center w-full">
-          <h2 className="text-2xl md:text-3xl font-bold mb-4">Upgrade to Blue Tier Now!</h2>
-          <p className="text-lg md:text-xl mb-4">
-            Unlock exclusive benefits and advance your experience for just Rs 1 per day.
-          </p>
-          <p className="text-sm text-gray-300 mb-6">Don't miss out on premium features and rewards!</p>
-          <p className="text-lg md:text-xl mb-4">Elevate your journey today. 🚀</p>
-          <Link href='/mentoring-blue' className="bg-yellow-500 text-gray-800 hover:bg-yellow-600 md:text-xl px-4 py-2 rounded-full focus:outline-none">
-            Learn More
-          </Link>
         </div>
       </section>
     </main>
