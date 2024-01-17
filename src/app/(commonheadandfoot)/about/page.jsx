@@ -17,7 +17,7 @@ export default function About() {
           <h1 className="text-3xl md:text-6xl font-bold text-center md:text-left text-neutral-700 md:mb-3">Founder&apos;s Journey</h1>
         </div>
         <div className="flex flex-col items-center justify-center flex-1">
-          <img src="http://peepoyenetwork.com/wp-content/uploads/2023/12/image.png" alt="Akassh ashok Gupta" className="w-full"  draggable={false} />
+          <img src="https://peepoyenetwork.com/wp-content/uploads/2023/12/image.png" alt="Akassh ashok Gupta" className="w-full"  draggable={false} />
         </div>
       </section>
       <Experience />

@@ -30,17 +30,17 @@ export default function Badge({item, index}) {
                 }
                 {
                     item.rank === 1 && (
-                        <img src="http://peepoyenetwork.com/wp-content/uploads/2024/01/gold.webp" alt="gold" className="w-7" />
+                        <img src="https://peepoyenetwork.com/wp-content/uploads/2024/01/gold.webp" alt="gold" className="w-7" />
                     )
                 }
                 {
                     item.rank === 2 && (
-                        <img src="http://peepoyenetwork.com/wp-content/uploads/2024/01/silver.webp" alt="silver" className="w-7" />
+                        <img src="https://peepoyenetwork.com/wp-content/uploads/2024/01/silver.webp" alt="silver" className="w-7" />
                     )
                 }
                 {
                     item.rank === 3 && (
-                        <img src="http://peepoyenetwork.com/wp-content/uploads/2024/01/bronze.webp" alt="bronze" className="w-7" />
+                        <img src="https://peepoyenetwork.com/wp-content/uploads/2024/01/bronze.webp" alt="bronze" className="w-7" />
                     )
                 }
                 <p className={`${badgeStyle.base} text-center md:text-left text-neutral-700 flex-1`}>{item.name}</p>

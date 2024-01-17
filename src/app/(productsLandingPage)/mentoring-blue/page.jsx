@@ -52,22 +52,22 @@ const whatYouWillLearn = [
 const whoIsThisFor2 = [
   {
     title: 'Students',
-    image: 'http://peepoyenetwork.com/wp-content/uploads/2024/01/student1.png',
+    image: 'https://peepoyenetwork.com/wp-content/uploads/2024/01/student1.png',
     paragraph: `<b>Students,</b> seeking to enhance their personality development, acquire effective time management techniques, boost productivity, concentrate on their studies, and cultivate the skills required to excel as future professionals`,
   },
   {
     title: 'Corporate Professionals',
-    image: 'http://peepoyenetwork.com/wp-content/uploads/2024/01/corporate-employee.png',
+    image: 'https://peepoyenetwork.com/wp-content/uploads/2024/01/corporate-employee.png',
     paragraph: `<b>Corporate Professionals,</b> seeking to acquire methods for boosting productivity, building confidence, and honing effective communication skills to engage customers and stakeholders, thereby promoting continuous career growth`,
   },
   {
     title: 'Entrepreneurs',
-    image: 'http://peepoyenetwork.com/wp-content/uploads/2024/01/business-owner.png',
+    image: 'https://peepoyenetwork.com/wp-content/uploads/2024/01/business-owner.png',
     paragraph: `<b>Small Business Owners,</b> seeking to gain communication and collaboration skills that will enable them to attract new clients and enhance their business management capabilities by implementing the efficient operational methods utilized by larger companies`,
   },
   {
     title: 'Working Professionals',
-    image: 'http://peepoyenetwork.com/wp-content/uploads/2024/01/working-professionals.png',
+    image: 'https://peepoyenetwork.com/wp-content/uploads/2024/01/working-professionals.png',
     paragraph: `<b>Working Professionals,</b> seeking to acquire skills in networking, time management, communication, problem-solving, decision-making, emotional intelligence development, and conflict resolution, with the aim of achieving professional success at an expert level`,
   },
 ]
@@ -79,12 +79,12 @@ const whatYouWillGain = [
       {
         title: `Gamification Leaderboard`,
         paragraph: `"Say Hello to the Gamified Leaderboard in the Blue Mentorship Tier! Now, earn points by completing tasks from the Daily Success Dose and Weekly Challenges, unlocking exciting rewards and the chance to be featured on our website based on your leaderboard ranking.`,
-        image: `http://peepoyenetwork.com/wp-content/uploads/2024/01/gamification-leaderboard.jpg`,
+        image: `https://peepoyenetwork.com/wp-content/uploads/2024/01/gamification-leaderboard.jpg`,
       },
       {
         title: `Success Mentorship Archive`,
         paragraph: `This archive guarantees that no member of the blue tier misses out on any information, Akash. With secure online storage and lifetime access, you can simply log in and explore the complete 365-day content tailored to your access and tier-level`,
-        image: `http://peepoyenetwork.com/wp-content/uploads/2024/01/Success-Mentorship-Archive.jpg`,
+        image: `https://peepoyenetwork.com/wp-content/uploads/2024/01/Success-Mentorship-Archive.jpg`,
       }
     ]
   },
@@ -94,17 +94,17 @@ const whatYouWillGain = [
       {
         title: `Blue Card`,
         paragraph: `"As a benefit for Blue Members, this card grants you complimentary entry to our monthly LIVE Success Workshops, covering a diverse range of topics and concepts. That's a total of 12 workshops throughout the year, all included in your membership at no extra charge."`,
-        image: `http://peepoyenetwork.com/wp-content/uploads/2024/01/Blue-Card.jpg`,
+        image: `https://peepoyenetwork.com/wp-content/uploads/2024/01/Blue-Card.jpg`,
       },
       {
         title: `Private Community`,
         paragraph: `"As a valued Blue Member, you gain privileged entry to our private Telegram community, where you'll receive instant updates via both text and audio messages. Be the first to stay informed about tasks and updates, and enjoy priority access to feedback & change requests."`,
-        image: `http://peepoyenetwork.com/wp-content/uploads/2024/01/Private-Community.jpg`,
+        image: `https://peepoyenetwork.com/wp-content/uploads/2024/01/Private-Community.jpg`,
       },
       {
         title: `Permanent Access`,
         paragraph: `"Blue Tier members enjoy continuous program access for a full year, whereas Grey memberships may be deactivated if left inactive. Our dedication is to those who demonstrate commitment to their success and actively engage in the program."`,
-        image: `http://peepoyenetwork.com/wp-content/uploads/2024/01/Permanent-Access.jpg`,
+        image: `https://peepoyenetwork.com/wp-content/uploads/2024/01/Permanent-Access.jpg`,
       },
     ]
   }
@@ -128,7 +128,7 @@ export default function Mentoring() {
           </div>
         </div>
         <div className="flex flex-col items-end flex-1 order-2">
-          <img src='http://peepoyenetwork.com/wp-content/uploads/2024/01/premium-blue-tier-unlocked.png' alt="Akassh ashok Gupta" className="w-full md:w-11/12 rounded-xl" draggable={false} />
+          <img src='https://peepoyenetwork.com/wp-content/uploads/2024/01/premium-blue-tier-unlocked.png' alt="Akassh ashok Gupta" className="w-full md:w-11/12 rounded-xl" draggable={false} />
         </div>
       </section>
       <section id="plan" className="flex flex-col items-center w-full justify-center gap-8 bg-white/5 px-5 pt-16 pb-0 md:py-16 md:px-52 overflow-hidden">
@@ -182,7 +182,7 @@ export default function Mentoring() {
             ))
           }
           {/* <div className="flex flex-col flex-1 gap-2 md:gap-5 self-stretch border-[4px] border-neutral-200 rounded-lg shadow-inner">
-            <img src='http://peepoyenetwork.com/wp-content/uploads/2023/12/who-is-this-for.png' alt="Who is this for?" className="w-full object-contain object-bottom h-full" draggable={false} />
+            <img src='https://peepoyenetwork.com/wp-content/uploads/2023/12/who-is-this-for.png' alt="Who is this for?" className="w-full object-contain object-bottom h-full" draggable={false} />
           </div>
           <div className="flex flex-col justify-center w-full md:w-7/12 gap-2 md:gap-5">
 

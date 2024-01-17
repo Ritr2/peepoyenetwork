@@ -82,7 +82,7 @@ export default async function Home() {
       link: '/mentoring'
     },
     image: {
-      src: 'http://peepoyenetwork.com/wp-content/uploads/2023/12/mentoring-logo.png',
+      src: 'https://peepoyenetwork.com/wp-content/uploads/2023/12/mentoring-logo.png',
       alt: 'Mentorship',
       size: 'w-full'
     },
@@ -124,7 +124,7 @@ export default async function Home() {
         <section className="flex flex-col md:flex-row items-center justify-center md:gap-20 py-10 px-2 md:px-40 w-full bg-neutral-100">
           <div className="flex flex-col md:flex-row items-center justify-center gap-5 md:gap-10 bg-white shadow-lg rounded-lg p-2 md:p-8 drop-shadow-xl">
             <div className="flex flex-col items-center justify-center flex-1">
-              <img src="http://peepoyenetwork.com/wp-content/uploads/2023/12/banner.png" alt="Akassh ashok Gupta" className="w-full object-contain rounded-lg" draggable={false} />
+              <img src="https://peepoyenetwork.com/wp-content/uploads/2023/12/banner.png" alt="Akassh ashok Gupta" className="w-full object-contain rounded-lg" draggable={false} />
             </div>
             <div className="flex flex-col justify-center gap-3 md:gap-8 w-full md:w-5/12">
               <span className="text-lg md:text-3xl text-center text-neutral-700 uppercase">Join our FREE Webinar</span>

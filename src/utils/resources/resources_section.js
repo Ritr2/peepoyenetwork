@@ -17,7 +17,7 @@ const data = {
       headline: 'Align Your Videos To YouTube Algorithm To Get 10x Reach',
       description: `Not Sure About Scripting For YouTube? Struggling to get more views and new subscribers? Not being able to retain auidence on your YouTube videos? Uncertain about Scripting structure for YouTube? Not able to build loyal subscriber base and engagement?`,
       image: {
-        src: 'http://peepoyenetwork.com/wp-content/uploads/2024/01/Scripting-template.png',
+        src: 'https://peepoyenetwork.com/wp-content/uploads/2024/01/Scripting-template.png',
         alt: 'scripting-template',
 
       },

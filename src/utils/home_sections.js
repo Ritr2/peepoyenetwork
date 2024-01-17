@@ -19,7 +19,7 @@ const data = {
       link: '/mentoring'
     },
     image: {
-      src: 'http://peepoyenetwork.com/wp-content/uploads/2023/12/mentoring-logo.png',
+      src: 'https://peepoyenetwork.com/wp-content/uploads/2023/12/mentoring-logo.png',
       alt: 'Mentorship',
       size: 'w-7/12'
     },

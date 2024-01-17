@@ -133,7 +133,7 @@ export default function page() {
       </section>
       {/* <section className="flex flex-col md:flex-row justify-center md:gap-20 pt-10 px-2 md:px-40">
         <div className="flex flex-col w-full">
-          <img src="http://peepoyenetwork.com/wp-content/uploads/2023/12/akassh.webp" alt="Akassh ashok Gupta" className="w-full h-full object-contain object-bottom animate-text bg-gradient-to-r from-sky-100 via-green-50 to-sky-200 -scale-x-100 border-[4px] border-sky-700" draggable={false} />
+          <img src="https://peepoyenetwork.com/wp-content/uploads/2023/12/akassh.webp" alt="Akassh ashok Gupta" className="w-full h-full object-contain object-bottom animate-text bg-gradient-to-r from-sky-100 via-green-50 to-sky-200 -scale-x-100 border-[4px] border-sky-700" draggable={false} />
         </div>
         <div className="flex flex-col justify-center gap-2 md:gap-5 pb-8">
           <h2 className="text-2xl md:text-4xl font-bold text-center md:text-left text-neutral-700">Our 45-Minute YouTube Channel Audit is your personalized roadmap to YouTube success</h2>

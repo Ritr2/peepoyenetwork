@@ -50,22 +50,22 @@ const whatYouWillLearn = [
 const whoIsThisFor2 = [
   {
     title: 'Students',
-    image: 'http://peepoyenetwork.com/wp-content/uploads/2024/01/student1.png',
+    image: 'https://peepoyenetwork.com/wp-content/uploads/2024/01/student1.png',
     paragraph: `<b>Students,</b> seeking to enhance their personality, acquire effective time management techniques, boost productivity and focus, and cultivate the skills required to grab the desired opportunities to take their career to the next level and excel as future professionals`,
   },
   {
     title: 'Corporate Professionals',
-    image: 'http://peepoyenetwork.com/wp-content/uploads/2024/01/corporate-employee.png',
+    image: 'https://peepoyenetwork.com/wp-content/uploads/2024/01/corporate-employee.png',
     paragraph: `<b>Corporate Professionals,</b> seeking to acquire methods for boosting productivity, building confidence, and honing effective communication skills to engage customers and stakeholders, thereby promoting continuous career growth`,
   },
   {
     title: 'Entrepreneurs',
-    image: 'http://peepoyenetwork.com/wp-content/uploads/2024/01/business-owner.png',
+    image: 'https://peepoyenetwork.com/wp-content/uploads/2024/01/business-owner.png',
     paragraph: `<b>Small Business Owners,</b> seeking to gain communication and collaboration skills that will enable them to attract new clients and enhance their business management capabilities by implementing the efficient operational methods utilized by larger companies`,
   },
   {
     title: 'Working Professionals',
-    image: 'http://peepoyenetwork.com/wp-content/uploads/2024/01/working-professionals.png',
+    image: 'https://peepoyenetwork.com/wp-content/uploads/2024/01/working-professionals.png',
     paragraph: `<b>Working Professionals,</b> seeking to acquire skills in networking, time management, communication, problem-solving, decision-making, emotional intelligence development, and conflict resolution, with the aim of achieving professional success at an expert level`,
   },
 ]
@@ -73,7 +73,7 @@ const plans = [
   {
     title: 'Grey Membership',
     subtitle: '(Free)',
-    image: 'http://peepoyenetwork.com/wp-content/uploads/2023/12/grey.png',
+    image: 'https://peepoyenetwork.com/wp-content/uploads/2023/12/grey.png',
     items: [
       'Daily Success Dose',
       'Weekly Success Gamification-based Challenge with a New Concept every week.',
@@ -84,7 +84,7 @@ const plans = [
   {
     title: 'Blue Membership',
     subtitle: '(₹1/Day)',
-    image: 'http://peepoyenetwork.com/wp-content/uploads/2023/12/blue.png',
+    image: 'https://peepoyenetwork.com/wp-content/uploads/2023/12/blue.png',
     items: [
       `All benefits of Grey Membership+`,
       `<b className="text-blue-500">Access to Blue Card</b> that provides a Free Pass x 12 to Join Success Workshops that will be held once a Month in the calendar year`,
@@ -101,28 +101,28 @@ const whatYouWillGain = [
       {
         title: `Daily Success Dose for 365 Days`,
         paragraph: `Unlock daily emails brimming with invaluable wisdom to empower your journey to success through reflection, visualization, thought-provoking tasks, and transformative techniques that bring absolute clarity toward your success`,
-        image: `http://peepoyenetwork.com/wp-content/uploads/2024/01/Daily-Success-Dose-for-365-Days.png`,
+        image: `https://peepoyenetwork.com/wp-content/uploads/2024/01/Daily-Success-Dose-for-365-Days.png`,
       },
       {
         title: `Weekly Success Challenges`,
         paragraph: `Engage in a weekly success challenge that encourages you to apply the concepts and methods you've learned during the week. This practical approach will enable you to integrate your newfound knowledge into your daily personal life, job, or business, providing you with the opportunity to witness and experience tangible transformation while benefiting from mentorship.`,
-        image: `http://peepoyenetwork.com/wp-content/uploads/2024/01/Weekly-Success-Challenges.png`,
+        image: `https://peepoyenetwork.com/wp-content/uploads/2024/01/Weekly-Success-Challenges.png`,
       },
       {
         title: `Monthly Success Newsletter`,
         paragraph: `Experience a monthly success newsletter that encapsulates the month's cumulative learning journey. This includes a compilation of daily insights, weekly challenges, and the shared experiences of diverse mentees. These stories serve as a source of motivation, allowing everyone to draw inspiration from the experiences of others and gain valuable insights into various applications of the methods, concepts, and tools learned.`,
-        image: `http://peepoyenetwork.com/wp-content/uploads/2024/01/Monthly-Success-Newsletter.png`,
+        image: `https://peepoyenetwork.com/wp-content/uploads/2024/01/Monthly-Success-Newsletter.png`,
       },
       {
         title: `Early Access to Monthly Success Workshops`,
         paragraph: `Unlock an enticing advantage by gaining VIP early access and exclusive invitations to our premium virtual monthly success workshops, held at the end of each month. These workshops are dedicated to dynamic live discussions, delving deep into vital concepts and methods from our esteemed success mentorship program. Plus, as a VIP participant, you'll have the unique opportunity to pose questions and participate in an engaging interactive Q&A session.`,
-        image: `http://peepoyenetwork.com/wp-content/uploads/2024/01/Early-Access-to-Monthly-Success-Workshops.png`,
+        image: `https://peepoyenetwork.com/wp-content/uploads/2024/01/Early-Access-to-Monthly-Success-Workshops.png`,
       }
     ]
   },
 ]
 
-const bg_image = 'http://peepoyenetwork.com/wp-content/uploads/2024/01/banner-1-1.png'
+const bg_image = 'https://peepoyenetwork.com/wp-content/uploads/2024/01/banner-1-1.png'
 
 export default function Mentoring() {
   const bgImageStyle = {
@@ -137,7 +137,7 @@ export default function Mentoring() {
       <div className="flex flex-col w-full justify-center py-3 items-center bg-neutral-600">
         <span className="text-base md:text-xl font-normal md:font-bold text-center md:text-left text-white">Experience Unstoppable Success with Our Leading Mentorship Program</span>
       </div>
-      <section className="flex flex-col md:flex-row justify-center md:gap-5 pt-10 px-5 md:px-52 pb-5 md:pb-10" style={bgImageStyle}>
+      <section className="flex flex-col md:flex-row justify-center md:gap-5 pt-10 px-5 md:px-52 pb-5 md:py-40" style={bgImageStyle}>
         <div className="flex flex-col justify-center gap-5 order-3 md:order-1 w-full md:w-6/12">
           <h1 className="text-2xl md:text-4xl font-bold text-center md:text-left text-white">Unlock Your Success Potential with Our Innovative Mentorship</h1>
           <p className="text-base md:text-lg font-normal text-center md:text-left text-white">"Our groundbreaking Success Mentorship Program is meticulously crafted to provide you with the tools, methods, and concepts that ensure not just learning but practical implementation, enabling a transformation of your ingrained patterns over time. Through a gamified and enjoyable setting, you'll receive daily success boosts, tackle weekly challenges, and engage in monthly workshops, igniting a relentless pursuit of success within you."</p>
@@ -146,7 +146,7 @@ export default function Mentoring() {
           </div>
         </div>
         <div className="flex flex-col flex-1 order-2">
-          {/* <img src='http://peepoyenetwork.com/wp-content/uploads/2023/12/mentoring-logo.png' alt="Akassh ashok Gupta" className="w-full md:w-9/12" draggable={false} /> */}
+          {/* <img src='https://peepoyenetwork.com/wp-content/uploads/2023/12/mentoring-logo.png' alt="Akassh ashok Gupta" className="w-full md:w-9/12" draggable={false} /> */}
           <VideoPlay />
         </div>
       </section>
@@ -162,7 +162,7 @@ export default function Mentoring() {
             ))
           }
           {/* <div className="flex flex-col flex-1 gap-2 md:gap-5 self-stretch border-[4px] border-neutral-200 rounded-lg shadow-inner">
-            <img src='http://peepoyenetwork.com/wp-content/uploads/2023/12/who-is-this-for.png' alt="Who is this for?" className="w-full object-contain object-bottom h-full" draggable={false} />
+            <img src='https://peepoyenetwork.com/wp-content/uploads/2023/12/who-is-this-for.png' alt="Who is this for?" className="w-full object-contain object-bottom h-full" draggable={false} />
           </div>
           <div className="flex flex-col justify-center w-full md:w-7/12 gap-2 md:gap-5">
 
