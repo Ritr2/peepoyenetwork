@@ -122,7 +122,7 @@ const whatYouWillGain = [
   },
 ]
 
-const bg_image = 'http://peepoyenetwork.com/wp-content/uploads/2024/01/Site-Banner.webp'
+const bg_image = 'http://peepoyenetwork.com/wp-content/uploads/2024/01/banner-1-1.png'
 
 export default function Mentoring() {
   const bgImageStyle = {
