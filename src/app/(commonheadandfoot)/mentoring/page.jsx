@@ -147,7 +147,7 @@ export default function Mentoring() {
         </div>
         <div className="flex flex-col flex-1 order-2">
           {/* <img src='https://peepoyenetwork.com/wp-content/uploads/2023/12/mentoring-logo.png' alt="Akassh ashok Gupta" className="w-full md:w-9/12" draggable={false} /> */}
-          <VideoPlay />
+          <VideoPlay img = {bg_image} />
         </div>
       </section>
       <section className="flex flex-col items-center w-full justify-center gap-10 bg-stone-100 px-5 py-16 md:px-52 overflow-hidden">

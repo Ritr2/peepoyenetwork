@@ -9,8 +9,10 @@ import Link from 'next/link';
 import dynamic from "next/dynamic";
 import { getPopularSocialBlogsData, getVideoLink } from '@/utils/GlobalApiCall/apiCalls';
 import parse from 'html-react-parser';
+import VideoPlay from '@/components/mentoring/VideoPlay';
 
 const VideoPlayer = dynamic(() => import('@/components/VideoPlayer'), { ssr: false });
+const bg_image = 'https://peepoyenetwork.com/wp-content/uploads/2024/01/banner-1-1.png'
 
 export const metadata = {
   title: 'Enabling Awareness & Happiness Via Content & Courses - Peepoye',
@@ -73,6 +75,13 @@ export default async function Home() {
   let { config_value: popular_blogs } = await getVideoLink('popular_blogs');
   let blog_details = await getPopularSocialBlogsData(popular_blogs);
   popular_shorts = popular_shorts.split(',');
+  
+  const bgImageStyle = {
+    backgroundImage: `url(${bg_image})`,
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    backgroundRepeat: 'no-repeat',
+  }
 
   const mentoring = {
     h2: `Join our new 'Mentorship for Success Program' for 2024`,
@@ -91,8 +100,22 @@ export default async function Home() {
   return (
     <>
       <NavigationBar />
-      <main className={`flex flex-col items-center mt-20 ${dmSans.className} overflow-x-hidden`}>
-        <section className="flex flex-col md:flex-row items-center justify-center px-5 md:px-20">
+      <main className={`flex flex-col items-center mt-16 ${dmSans.className} overflow-x-hidden`}>
+      <section className="flex flex-col md:flex-row justify-center gap-10 md:gap-5 pt-10 px-5 md:px-52 pb-5 md:py-40" style={bgImageStyle}>
+        <div className="flex flex-col justify-center gap-5 order-1 w-full md:w-6/12">
+          <h1 className="text-2xl md:text-4xl font-bold text-center md:text-left text-white">Unlock Your Success Potential with Our Innovative Mentorship</h1>
+          <p className="text-base md:text-lg font-normal text-center md:text-left text-white">"Our groundbreaking Success Mentorship Program is meticulously crafted to provide you with the tools, methods, and concepts that ensure not just learning but practical implementation, enabling a transformation of your ingrained patterns over time. Through a gamified and enjoyable setting, you'll receive daily success boosts, tackle weekly challenges, and engage in monthly workshops, igniting a relentless pursuit of success within you."</p>
+          <div className="flex flex-col w-full md:w-9/12 mt-2 md:mt-3">
+          <Link href="/mentoring" className={`text-lg md:text-xl text-center bg-neutral-600 hover:bg-neutral-700 active:bg-neutral-800 text-white p-3 rounded-lg drop-shadow-lg shadow-lg hover:shadow-xl hover:drop-shadow-xl active:shadow-2xl active:drop-shadow-2xl active:translate-x-1 active:scale-95 cursor-pointer`}>
+              Read More
+            </Link>
+          </div>
+        </div>
+        <div className="flex flex-col flex-1 order-2">
+          <VideoPlay img = {bg_image} />
+        </div>
+      </section>
+        {/* <section className="flex flex-col md:flex-row items-center justify-center px-5 md:px-20">
           <div className="flex flex-col justify-center flex-1 md:gap-2">
             <h1 className="text-3xl md:text-6xl font-bold text-center md:text-left text-neutral-700 md:mb-3">I Breathe Passion</h1>
             <p className="text-md md:text-2xl text-center md:text-left text-neutral-700">Enabling Awareness & Happiness Via</p>
@@ -102,9 +125,9 @@ export default async function Home() {
           <div className="flex flex-col items-center justify-center w-full md:w-6/12">
             <img src="https://i.ibb.co/GdRJ5sw/akasshashokgupta.webp" alt="Akassh ashok Gupta" className="w-full" draggable={false} />
           </div>
-        </section>
+        </section> */}
         <Experience />
-        <section className={`flex flex-col md:flex-row px-5 md:px-40 items-center justify-center py-6 md:py-12 gap-4 md:gap-14 bg-neutral-300`}>
+        {/* <section className={`flex flex-col md:flex-row px-5 md:px-40 items-center justify-center py-6 md:py-12 gap-4 md:gap-14 bg-neutral-300`}>
           <div className="flex flex-col md:flex-row items-center justify-center gap-5 md:gap-10 bg-white shadow-lg rounded-lg p-2 md:p-8 drop-shadow-xl">
           <div className={`flex flex-col md:w-7/12 gap-2 md:gap-5 order-2 items-center`}>
             <h2 className="text-xl md:text-4xl md:tracking-wide font-bold text-center md:text-left text-neutral-600">{mentoring.h2}</h2>
@@ -120,8 +143,8 @@ export default async function Home() {
             <img src={mentoring.image.src} alt={mentoring.image.alt} width={1000} height={1000} className={`${mentoring.image.size ? mentoring.image.size : 'w-full drop-shadow-lg shadow-lg rounded-lg'}`} />
           </div>
           </div>
-        </section>
-        <section className="flex flex-col md:flex-row items-center justify-center md:gap-20 py-10 px-2 md:px-40 w-full bg-neutral-100">
+        </section> */}
+        {/* <section className="flex flex-col md:flex-row items-center justify-center md:gap-20 py-10 px-2 md:px-40 w-full bg-neutral-100">
           <div className="flex flex-col md:flex-row items-center justify-center gap-5 md:gap-10 bg-white shadow-lg rounded-lg p-2 md:p-8 drop-shadow-xl">
             <div className="flex flex-col items-center justify-center flex-1">
               <img src="https://peepoyenetwork.com/wp-content/uploads/2023/12/banner.png" alt="Akassh ashok Gupta" className="w-full object-contain rounded-lg" draggable={false} />
@@ -134,7 +157,7 @@ export default async function Home() {
               </Link>
             </div>
           </div>
-        </section>
+        </section> */}
         <section className="flex flex-col items-center justify-center py-10 px-2 md:px-10 w-full bg-neutral-300">
           <div className="flex flex-col items-center justify-center gap-5 md:gap-10 bg-white shadow-lg rounded-lg p-5 drop-shadow-xl w-full md:w-10/12">
             <h2 className="text-xl md:text-4xl md:tracking-wide font-bold text-center text-neutral-600">Featured Social Awareness Blogs</h2>

@@ -3,12 +3,17 @@ import React from 'react'
 import { FaPlay } from 'react-icons/fa'
 import { IoClose } from 'react-icons/io5'
 
-export default function VideoPlay() {
+export default function VideoPlay({img}) {
     const [videoPlayervisible, setVideoPlayervisible] = React.useState(false)
     return (
         <div className="flex flex-col items-center justify-center w-full h-full">
-            <div className="flex flex-col w-20 h-20 justify-center cursor-pointer items-center bg-gradient-to-r from-red-700 to-red-800 rounded-full hover:scale-105" onClick={() => setVideoPlayervisible(true)}>
-                <FaPlay className='text-white text-3xl' />
+            <div className='relative flex flex-col items-center justify-center w-full min-h-[200px] md:min-h-[0]'>
+            <div className='absolute md:hidden z-5 w-full top-0 bottom-0'>
+            <img src={img} alt="Akassh ashok Gupta" className="w-full h-full object-right object-cover rounded-lg shadow-lg drop-shadow-lg" draggable={false} />
+            </div>
+            <div className="relative flex flex-col w-20 h-20 justify-center cursor-pointer items-center bg-gradient-to-r from-red-700 to-red-800 rounded-full hover:scale-105" onClick={() => setVideoPlayervisible(true)}>
+                <FaPlay className='text-white text-3xl z-20' />
+            </div>
             </div>
             {
                 videoPlayervisible && (
