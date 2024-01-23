@@ -2,7 +2,7 @@ const weeklyScores = [
   {
     "rank": 1,
     "name": "Sahil Khan",
-    "score": 22
+    "score": 26
   },
   {
     "rank": 2,
